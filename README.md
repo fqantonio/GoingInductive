@@ -1,2 +1,4 @@
 # GoingInductive
-This the data repository for the paper on inductive metodologies
+This is the data repository for the paper on inductive metodologies: Going Inductive?
+The R code used for statistical analysis is also available here.
+Organization of the folders?????
