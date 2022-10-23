@@ -1,8 +1,9 @@
 # Tasks
-- [] Data gathering, validation and cleaning
-- [] Statistics analysis: methods;
-- [] Statistics analysis: normal data;
-- [] Statistics analysis: regression analysis;
+- [x] Data gathering, validation and cleaning
+- [x] Data exploratory analisys
+- [x] Statistics analysis: methods;
+- [x] Statistics analysis: normal data;
+- [x] Statistics analysis: regression (discontinuity) design analysis;
 - [] list of table p-values
 - [] Write: intro;
 - [] Write: summary;
