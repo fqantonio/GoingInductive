@@ -31,5 +31,15 @@ Overall, the changes were positive, but if we look closely, there are grouops th
 2. gender: the male
 3. school adapt
 
+Repeats the last paragraph of the introduction
+Reiterate results
+Policy implications
+Futures research
+Tie loose hands???
+Clarify
+robustness
+discussion: it should be used data from the school in general in order to define the rank; another comparision should be data from other disciplines that mostly use deductive methods
+
+
 [^1]
 [^2]
