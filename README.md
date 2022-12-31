@@ -1,13 +1,10 @@
-# GoingInductive
+# Summary
 
-This is the data repository for the paper on inductive metodologies: Going Inductive?
-The R code used for statistical analysis is also available here as well as the ongoing documentation (wiki) and the raw data sample used.
+This is the site with all the work done for the paper "Going Inductive?": the documentation generated and the code in R using RStudio, statistical analysis methods included is also available here as well as the ongoing documentation (wiki), sample data and raw data.
 
 # Goal
 
-Changing the learning methodologies from one mainly deductive (Direct Instruction[^1]) to another one mostly inductive (4C/ID [^2]), means what for your students? Who benefits? What are the pros and cons about this methodological decision.
-
-# Summary
+The main goal is to understand the impact of the use of Indcutive Methodology 4C/ID answering the questions: changing the learning methodologies from one mainly deductive (Direct Instruction[^1]) to another one mostly inductive (4C/ID [^2]), means what for your students? Who benefits? What are the pros and cons about this methodological decision?
 
 # Motivation
 
