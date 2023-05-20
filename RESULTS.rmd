@@ -1,30 +1,47 @@
-### Results
+# RESULTS
 
-results in tanle
-describe in text and interpret in text
+## Resume
 
-# Results
-The inner goal of a teacher is always to have their students engaged in their subject, to have them wanted to know more, and tease their curiosity towards life and knowledge in general. The idea of changing the methodological strategy was compelling, not only because it seems a more natural, more BBL suitable, way to address the Science subject wording by adopting this 4C/ID learning flux strategy, but also to engage in its conceptual and mental model. So, when introducing concepts, there was a neuro network of lab experiences that facilitate that understanding, so important in Science subjects. What were the consequences for the student's academic results?
+| SAMPLE | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES |
+|---|---|---|---|---|---|
+|All sample|-|+|-|-||
 
-```
-Interpret results in text
-```
+Hypothesis: does the patterns showned in the last graphs where there was a negative bump during the transition to the second between the schools showed earlier in the graphs should be considered? Is there a school effect on the results? should the data between schools in the same 4CID conditions 0 be assessed? yes, but only the junior school should be compared we should use the CLASS to study the differences between schools and not the other variables; if we use the variable because it is a math relation qith the others just with class variable
+Variable TEST, LAB, CLASS greater in school 0 then in school 1
+Variable BEHAV is less for the School 0 then in the school 1
+So, this pivotal moment, take this research to consider that there is a school effect, that biased all variables, in the negative way except for the BEHAV variable, in the positive way for school 1. So this is going to be restricted to school 1: it is considered an analysis for the school 1 as a global data sample, and an analysis only at the junior level in school 1. Secondary school wil not be analized because there is no scondary sample with no 4CID.  
+SCHOOL efect
+Inference sample analysis, 4C/ID, taking in account the school effect
+prepararing the sample to take into account the differences; in the case of TEST, LAB and CLASS, it will
+be added to the sample of school 1 the differences computed in this variables. In the case of the variable BEHAV, 
+it will be added to school 0, in order to not create negative numbers, consequently, to keep the variables between 0 and 100;
+compare data_junior_computed
+compare samples after the computation explained just now:
+data_JUNIOR_SCHOOL0 and data_junior_computed_SCHOOL1_M4CID0: are they from the same distribution?
+Conlusion: yes, they are from the same sample distribution
 
-## Qualitative
+Only RANK 3, the more adapted, benefit more with the 4CID methodology
+RANK 1 and 2, the less adapted benefit only on the LAB variable;
+Female, averall, benefit more
 
-| Qualitative Results    | Description | Notes|
-| ----------- | ----------- |-----|
-|Students inquire about the teacher |||
-|teacher available to interact with the students while they are following the online lessons activities|||
-|students feel happy to pass to the next level, high motivation|||
-|They claim that the way they like to learn|||
-|massive hours of teacher work, more than 55 hours a week|Health issues||
-|Students help on lessons faults: missing information, fault links|||
+table 11 : computed school differences for the junior sample school 0 and 1 without 4C/ID methodology
 
-This qualitative and quantitative data will be analyzed recurring to usual statistical analysis and gather qualitative data to reinforce the main goals of the work.
-
-What others have done and how what you doing fits that
-The work done so far shows that the results are not clear. Well normally, the results on the social side are never a clear 80%. In this case, we are happy if things are 60% positive. 
+| SAMPLE | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES |
+|---|---|---|---|---|---|
+|Junior (school effect)|~|+|-|~|school 1 with 4C/ID variable 1|
+|Junior and junior high|-|~|-|-|junior and junior high school 0 and 1 (exclude school 1 without 4C/ID)|
+|Junior and Junior High||||||
+|All sample (school effect)|-|+|-|-||
+|SCHOOL 1 junior and high junior|~|+|-|+||
+|Junior for school 1|+|+|-|+||
+|GRADE 7|~|+|-|~||
+|GRADE 8|+|+|-|~|M4CID=="1",#71 entrances, less then 100 entrances|
+|GRADE 9|~|+|+|+||
+|RANK 1|-|+|-|-||
+|RANK 2|~|+|-|~||
+|RANK 3|~|+|-|-||
+|FEMALE|+|+|~|+||
+|MALE|~|+|-|~||
 
 ## Quantitative
 
@@ -256,6 +273,22 @@ IMPORTANT NOTE: using sampling with 100 random entries confirms the effect
 ```
 IMPORTANT NOTE: using sampling with 86 entries confirms the effect
 ´´´
+
+## Qualitative
+
+| Qualitative Results    | Description | Notes|
+| ----------- | ----------- |-----|
+|Students inquire about the teacher |||
+|teacher available to interact with the students while they are following the online lessons activities|||
+|students feel happy to pass to the next level, high motivation|||
+|They claim that the way they like to learn|||
+|massive hours of teacher work, more than 55 hours a week|Health issues||
+|Students help on lessons faults: missing information, fault links|||
+
+This qualitative and quantitative data will be analyzed recurring to usual statistical analysis and gather qualitative data to reinforce the main goals of the work.
+
+What others have done and how what you doing fits that
+The work done so far shows that the results are not clear. Well normally, the results on the social side are never a clear 80%. In this case, we are happy if things are 60% positive. 
 
 
 

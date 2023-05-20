@@ -1,6 +1,9 @@
-# Conclusions and remarks
+# CONCLUSIONS and REMARKS
 
 (`under construction`)
+
+The inner goal of a teacher is always to have their students engaged in their subject, to have them wanted to know more, and tease their curiosity towards life and knowledge in general. The idea of changing the methodological strategy was compelling, not only because it seems a more natural way, more BBL suitable, to address the Science subject wording by adopting this 4C/ID learning flux strategy, but also to engage in its conceptual and mental model, that is, improve learning. So, when introducing concepts, there was a neuro network of lab experiences that facilitate that understanding, so important in Science subjects. What were the consequences for the student's academic results?
+
 
 ???RESEARCH QUESTIONS
 
@@ -21,3 +24,14 @@ Remarks:
 11. Using bLearning improves the time of individual exchange??? because the teacher can use their time to help students while they are following the online activities (MOODLE lessons, ????)
 12. There is a descent curve starting in 2014 that can't be explained by the methodology difference
 13. questions and other research paths????
+
+It seems that the 4CID effect is not positive for all the variables neither for the overall perspective it seems that school 0 as better TEST grades them school 2, while there a jump when the 4CID is implemented; That is not so obvious for the LAB variable. Clearly that the BEHAV variable suuffers a loss with the implementation of 4CID. for the CLASS variable, after a positive effect it goes down, perhaps following the BEHAV variable only the LAB variable show an increase. The red dot and the skewness showed in figure 7, show that could be no positive overall 4C/ID effect and the sample are not normal, which corroborate upper analysis
+
+Overall, over time, it seems that there is a negative 4C/ID effect. 
+However, R^2 values are very weak. It can be seen that a school effect could be undeway these R2 low doesn't mean that the variables are dependent nor the 
+There is some degree of correlation that doesn't permit to conclude of the variable dependency
+The clear correlation between TEST and CLASS variable show that they are dependent and Kendal correlation test corroborates that variables are dependent but with a levell degree arround 20 to 40%: not high; meaning that the way the variables are assessed are different. They correlate, but at a low levell, showing a bad levell, which means that they were assessed with different techniques.the class test correlation is just a refence that we know, in advance, that there is a math relationship
+
+data seems to be not normal, except the CLASS variable sample data don't behav as a normal distribution under both tests, nor if we do the same analysis for the school 0 and shcool 1. Meaning that we should use a non-parametric . diferent SAMPLES for the 4C/ID treatment effect
+sample data don't behav as a normal distribution under both tests, nor if we do the same analysis for the school 0 and shcool 1. Meaning that we should use a non-parametric 
+

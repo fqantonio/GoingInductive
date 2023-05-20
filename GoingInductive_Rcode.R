@@ -2472,7 +2472,8 @@ saljshldjahsd
 #   5 - And within the different grades?
 #   6 - Student more adapted to school have benefit more with the use of 4CID methodology?
 
-# sample are independent, and generaly not normal
+# sample are independent, and genneraly not normal
+
 # conclusion: 
 # It seems that the 4CID effect is not positive for all the variables neither for the overall perspective 
 # it seems that school 0 as better TEST grades them school 2, while there a jump when the 4CID is implemented;
