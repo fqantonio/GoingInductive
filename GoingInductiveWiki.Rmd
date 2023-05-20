@@ -1,0 +1,521 @@
+---
+title: "GoingInductiveWiki"
+author: "António Gonçalves"
+date: "`r Sys.Date()`"
+output: html_document
+---
+# Welcome
+
+This is the **`Going Inductive`** wiki paper DRAFT roadmap! This wiki is used for documenting and managing the work done so far. Hopefully, there will be, at least, one paper about this.
+
+# Introduction 
+
+Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning? And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results?
+
+The conclusions descibed in this work are drawn from 14 years of data (2003-2017), both qualitative and quantitative, from actual teacher day-to-day practice learning strategies: deductive and inductive. This transition from deductive to inductive educational methods strategy,  over this period of time, is higlighted and, the learning flux elaborated for the integration of bLearning environments are also presented. 
+
+The data used in this research covers learning transfer, lab practice and classroom behavior within the specific subject of chemistry and physics for the basic and secondary classes of the portuguese curriculum. 
+
+The analysis uses the common inference statistical techniques, where the control group was not subjected to the inductive methodology, namely, the 4C/ID. The software used in this work is the opensource R in the RStudio distribution.
+
+# Research question
+
+Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning? And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results? 
+
+# To Do List
+
+- [x] DATA: Sample: for cross-checking
+- [x] DATA: Variable definitions on table
+- [x] DATA: differences between the samples;
+- [x] DATA: structure and sources
+- [ ] Work flow: merge RStudio with Github
+- [ ] Copy code to wiki
+- [ ] Reorganize github pages: INTRODUCTION (CONTEXT, STATE OF TEH ART); DATA; METHODS; RESULTS; OBSERVATION/NOTES; CONCLUSION
+- [ ] METHODS: wilcoxon assumptions; Man-witney!?!?!
+- [ ] REVIEW RESULTS;
+- [ ] DATA: organize graphs;
+- [ ] DATA: Learning flux: cmap tools
+- [ ] RESULTS: Check the p-value table presentation
+- [ ] RESULTS: Qualitative results: read notes
+- [ ] RESULTS: Interpret results in text
+- [ ] Write CONCLUSION;
+- [ ] Write METHODS: describe, ASSUMPTIONS, normality (lillie.test(x), use this one also?) and Regression discontinuity design
+- [ ] Write OBSERVATIONS and NOTES;
+- [ ] INTRODUCTION: context: read felder paper and reference for LO
+- [ ] INTRODUCTION: clearly state the research question and describe (in nontechnical terms) how you will analyze
+- [ ] OBSERVATIONS and NOTES: Info in the text consistent with the info in the tables (more info in the tables)
+- [ ] CONTEXT: State of the art
+- [ ] Glossary
+- [ ] References
+- [ ] Revisite: Organize ideas before writing; Define important terms and use terms consistently; State hypothesis/goal/research question; Describe methods; Interpret results (in addition to stating them); Avoid excess verbiage; 
+- [ ] Edit, Edit, Edit
+- [ ] Have others read and critique; Edit, edit, edit
+
+# Milestones
+
+| date     | Action | Notes|
+| ----------- | ----------- |-----|
+|August 2019 | Gathering data ||
+|January 2020  | Cleaning data ||
+|2019-2021|EDX course|Statistical procedures|
+|September 2022|data analysis: descriptive data summary|testing the limits|
+|September 2022|Statistical Analysis results|Normality; RDD; inference; regression|
+|October 2022|Writing|Paper chapters: summary; introduction; #DATA; Descriptive Analysis; Normality; METHODS;RESULTS|
+|November 2022|Conclusion and EDIT; Glossary; references||
+|December 2022|Readings||
+|January 2023|send to be [hopefully] published with peer review|postponed|
+
+Note: for several contextual reasons this went on until april 2023, when the paper was to be ready for experts to read it for the first time.
+
+| date     | Action | Notes|
+| ----------- | ----------- |-----|
+| April 2023      | Draft ||
+| June 2023  | EDIT, EDIT, EDIT ||
+|September|Release the paper to journal peer review||
+
+# State of the art
+
+
+# Context
+
+The inner goal of a teacher is always to have their students engaged and motivated in their subject, to have them wanted to know more, and tease their curiosity towards real life applications and knowledge. At a point, I felt the need to study more in order to know how to better engage students with their learning process.
+
+Since 1992, I work at several different public schools as a teacher of chemistry and physics of young student, from Junior to Junior High School. I start to teach Science, without any background on educational methods, only with what I learned as a student, with what I think it's a better way to learn: organizing lab activities, hands-on situations, trying to have students in an informal, trial-and-error environment, having them try their hypotheses, whatever they are, even the most naive, even when schools didn’t have the laboratory facilities. Sometimes, students were engaged by trying to organize and run a small lab projects. 
+
+Along with this, I organized the Lab Aberto project, after school program, continuing the idea of letting students trial and error environment, consequently, to profit with their errors and own conclusions. 
+
+???The first focuses on the Direct Instruction[^1] (DI) traditional methodologies, Brain Based Learning (BBL)[^2], Multiple Intelligence[^3] (MI) theory and the former, the 4C/ID[^4] instruction design proposed by Merrionboer , based on Cognitive Load Theory[^5] (CLT) and inductive educational strategy. 
+
+Multimedia learning
+
+In 2005, I started to introduce the concept of Learning Objects from ()??? along with eLearning environment, exploring bLearning (based on MOODLE built-in activities), reading about Brain-Based Learning (BBL), Multi-intelligent theory (MI), Learning Styles (LS), Emotional Intelligence (EI). During this readings I found in the paper of FELDER (???) several different methodologies, inclunding the inductive approach which seems appealing. After that,??? I found the book 4C/ID of Merrionboer, talking about Inductive Learning Methods (ILM): only them I noticed that I used only deductive Learning Methodologies (DLM). Consequently, I found several other educational methods but on strike me more, the inductive one. So, Cognitive Load Theory were there already, the idea of learning flux was there to, because this 4C/ID needed concept maps toolto organize all the paths if you want to addapt this to a bLearning environment: anchor points, task practices, supoortive information, assessment, recurrent and non-recurrent learning objectives. All of this organized in time and in more deep and learning conceptual subject depth, or from concrete to concept, and from simple to complex, where scaffolding is a major concern.
+
+Merrionboer blueprint,  has a steep learning curve (for me anyway), explain is theory based on the idea that we need to think about learning by starting with (almost) real practical problems situations, moving towards the concepts in time but going deep into to more complex issues related with the subject, identifying anchors, recurrent and non-recurrent learning objectives, given time for automatization procedures, and give same generalization environment recurring to variability to facilitate the integration of knowledge and skills. Cognitive load theory is of utmost importance because it proposes scaffolding, that is, taking care of the amount of information, prior knowledge and level of difficulty that is proposed in the learning task.
+
+During the course of this work there was the need to engange througout data science knowledge analysis, so I took the online course EDX and then at MTx [^3].???
+
+## Methodologies: changing over time.
+|year| Methodology     | Description | Notes|
+|------| ----------- | ----------- |-----|
+| 2003-2007| Personal instruction: what I believe to be the best way to teach and to learn     | Lab Experimentation, expositive, lab reports, exercises, organized with the knowledge logic in order to acquire more and more information from concepts to concrete activities ||
+|2008-2010|Direct instrution|Something with extensive research on it and based on more then 200 years experimental findings can be summarized on these principles: Task centered approach; prepare pupils to be ready; Activation principle (prior knowledge): present the new lesson; Demonstration Principle: associate it with prior knowledge; Application Principle: use examples; Integration Principle: test pupils to ensure they learn it;|([Merrill, 2007](https://mdavidmerrill.files.wordpress.com/2019/04/task_centered_strategy_published.pdf)); BBL; emotion; MI|
+|2010-2013|Personal instrution +|Adding to the second row: LO, MOOdlE, BBL, MI, Emottional intelligence, concpetual maps, blearning flux|Transition to inductive methodology were all of this is already in place with the 4C/ID method|
+|2013-2017| Inductive Methodology | 4C/ID methodology implies designing a learning flux with four components in mind, in two directions: practice to concepts (time schedule) and simple to complex (learning deeper and more complex knowledge): it means identifying crucial moments and design a lot of repetitive activities in order to master redundant/transversal learning objectives. In this design, it's important to identify anchor moments that serve as connector to other parts of the lessons |the learning include bLearning environment, merrionboer|
+
+## Learning Flux
+
+Cmap tools???
+
+
+# Glossary
+
+4C/ID instruction
+transfer tests, 
+behavior skill
+social skills
+Recurrent goals
+
+# References
+
+[^1]: Direct Instruction
+
+[^2]: Brain Based Learning (BBL).
+
+[^3]: Multiple Intelligence (MI) theory 
+
+[^4]: 4C/ID[ instruction design proposed by Merrionboer.
+
+[^5]: based on Cognitive Load Theory
+
+[^6]: [Data Analysis for Social Scientists, MITx online](https://courses.mitxonline.mit.edu/learn/course/course-v1:MITxT+14.310x+3T2022/home).
+
+[^7]: https://www.r-project.org/.
+
+
+# Data
+
+This work compares data from student school results, specifically on the Physics and Chemistry subject: learning transfer and observational in class assessment registering, for primary and secondary education levels, over 14 years (from 2003 to 2017), graded in percentage (from 0 to 100 %). During this time period the educational methodology changed (see section Introduction, Methodologies: changing over time) toward inductive and a bLearning environment.
+
+So, it's a longitudinal study, with time serial data, with three variables: ID, GRADE, GENDER, TEST, LAB, and BEHAV (see section bellow, Variable Definition). There are three added variables, one is RANDOM, CLASS, and RANK. The first one is just to be aware that the process represented by this data is not RANDOM, they have a distribution, and so, something is happening, it's real. CLASS is used to calculate a weighted average (CLASS=0.5*TEST+0.3*LAB+0.2*BEHAV) in order to define a student RANK: this intended to represent the levell of adaptation of students to the school.
+
+- Data as a overall 1157, but the sample used for the final conclusions were restricted to 683 entrances and 14 variables, ID, included, where RANDOM, CLASS, and RANK are calculated. 
+- Students are from grades 7,8,9,10 and 11, identified in the data by 1,2,3 respectively (note: during the analysis students from 10 and 11 grade were removed): 
+  - 25% are from grade 7; 
+  - 34% from grade 8; 
+  - 30% from grade 9.48% of the students are females. 
+  - 42 % of the data are from classes where there was application of 4C/ID method. 
+
+> Data from 2008 to 2012 is not used: in those years there was a transition. So, I considered that only after 2013, the inductive methodology was sufficiently mature. There are also some data gaps, namely, 2007, 2015, and 2018, corresponding to teacher gap years for reasons of scholarships or same work outside the school.
+
+> After some discussion (see section results) the data effectively used in the results and conclusions is restricted to junior school (7,8 and 9th grades) for school 1, for both groups, with and without the 4C/ID methodology. The conclusons are based ont the variables already mentioned and defined in the next section. This sample as a 683 entries distributed like this:
+
+|Group|Number|Percentage|notes|
+|---|---|----|---|
+|Female|326|48%||
+|with 4C/ID|289|42%||
+
+**Average grade student** for each variable, at school 1, with 4C/ID and without:
+
+|Variable|Median/Average without 4C/ID|Median/Average with 4C/ID|Notes|
+|---|---|---|---|
+|TEST|54/56|60/60||
+|LAB|53/51|66/66||
+|BEHAV|82/80|74/72||
+|CLASS|59/59|61/64||
+
+> This results suggest a **preliminar conclusion**: some averall positive effect by looking at the CLASS variable and also, in the TEST and LAB variables, but a negative effect at the BEHAV variable. It seems that students behave worse with the inductive methodology.
+
+## Rank averages with and without 4C/ID
+
+|RANK|Number|%|TEST without/with|LAB without/with|BEHAV without/with|
+|---|---|---|---|--|---|
+|1|75|11|36/31|24/36|66/56|
+|2|435|64|53/54|51/62|79/66|
+|3|173|25|79/79|72/81|91/88|
+
+> This results suggest that students categorized by RANK only benefit at the LAB variable, while they get worse in the BEHAV variable. Only 25% of the students addapt very well to the school.
+
+## Variable Definition
+
+|Variable|Description|notes|
+|---|---|---|
+|ID| data is identified with an entry number that doesn't have any special meaning; the data was introduced by date order.||
+|DATE| In Portugal, the school year involves two years, from September to July of the next year: in this case, it was used the date of the first year as the reference of the data.|Example: school year, 2003/2004, the year used is 2003|
+|SCHOOL|Schools are identified with numbers: there are only two schools identified by 0 and 1: 0 is the school from 2004 to 2008: the first with students from 7th to the 8th grade, D.João II, Caldas da Rainha, Portugal; the second, a larger school with grades from 7th to 12th (Madeira Torres Secondary School).|| 
+|GENDER| M-male and F-Female.||
+|TEST| classification in transfer tests |in percentage|
+|LAB| classification in the lab experimental work, that involves reports and managing tool lab and following lab protocols: |also in percentage|
+|BEHAV| Behavior in the classroom: students should follow school and teacher directives for classroom management and security procedures: percentage; |this data was gathered in-class observational sheets;|
+|RANDOM| Random numbers;||
+|CLASS| Classification using this weight average formula: CLASS=0.5*TEST+0.3*LAB+0.2*BEHAV; |in percentage|
+|RANK| Students with CLASS less or equal to 55% are ranked with 0; Students with CLASS equal or bigger than 70% are ranked with 2, the rest with 1; |the ranked 0, are considered students that don't adapt well to the school, the ranked 2 are considerer very well adapted and the rest more or less adapted.|
+
+## Descriptive Summary statistics
+     
+|Parameters|TEST|LAB|BEHAV|CLASS|RANK|RANDOM|
+|---|---|---|---|---|---|---|
+|Min.   | 11.00 |    0.0  |29.00|14.40|1|0|
+|1st Qu.| 50.00 | 48.0  |66.00|54.50|1|28.00|
+|Median |62.00 | 60.0  |78.00|63.60|2|53.00|
+| Mean  |62.07 | 59.5 |76.21 |64.13|2.069|51.78|
+|3rd Qu.| 75.00  |73.0  |88.00|73.60|3|76.00|
+|Max.   |100.00  |100.0 |100.00 |98.70|3|100.00|
+|Variable entries|683|683|683|683|683|683|
+
+## Data Structure
+
+|Methodology|DATA entries|GENDER|Average TEST|Average LAB|Average BEHAV|
+|---|---|---|---|---|---|
+|Direct Instruction (without 4C/ID)|868|51% female|62%|61%|81%|
+|With 4C/ID|289|48% female|63%|71%|77%|
+
+Interesting facts, observations, problems (graphs???)
+Behavior (BEHAV) after 2014 falls down very rapidly. Is it a major change in society, or is it only for gender or grade diferences????
+Only 25% of the students addapt very well to the school.
+
+
+# METHODS
+
+The conclusion was based on the usual statistical analysis and qualitative assessement notes using data from the usual day-to-day teacher database, spreadsheets assessments, notes, registers, inquiries, and teacher interactions with the students. This work, as well as the raw data, is also presented on the blog “https://4cidchange.edublogs.org/” and in this GitHub account. The quantitative assessment used statistical inference made with R software tool [^4] and is based on three learning outcomes: transfer tests (TEST), behavior (BEHAV), and lab skills (LAB). Two groups are compared groups, with and without the application of 4CID methodology (M4CID), in GENDER, RANK and SCHOOL. 
+
+
+Describe the methods
+no normal, Wilcox
+errors not normal, no heterochedasticity???, no Regression discontinuity design
+??? Triangulation ???
+??? Balance methods ???
+
+# Software
+
+In this work, I use R in the RStudio distribution. Mostly because it's "free" but also because it's really adaptable to what we want to do.
+
+RStudio
+2023.03.0 Build 386
+© 2009-2023 Posit Software, PBC
+"Cherry Blossom" Release (3c53477a, 2023-03-09) for macOS
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) RStudio/2023.03.0+386 Chrome/108.0.5359.179 Electron/22.0.3 Safari/537.36
+
+### Results
+
+# Results
+The inner goal of a teacher is always to have their students engaged in their subject, to have them wanted to know more, and tease their curiosity towards life and knowledge in general. The idea of changing the methodological strategy was compelling, not only because it seems a more natural way to adress the Science subject wording by adopting this 4C/ID learning flux strategy, but also to engage in its conceptual and mental model. So, when introducing concepts, there was a neuro network of lab experiences that facilitate that understanding, so important in Science subjects. What were the consequences for the student's academic results?
+
+```
+Interpret results in text
+```
+
+## Qualitative
+
+| Qualitative Results    | Description | Notes|
+| ----------- | ----------- |-----|
+|Students inquire about the teacher |||
+|teacher available to interact with the students while they are following the online lessons activities|||
+|students feel happy to pass to the next level, high motivation|||
+|They claim that the way they like to learn|||
+|massive hours of teacher work, more than 55 hours a week|Health issues||
+|Students help on lessons faults: missing information, fault links|||
+
+This qualitative and quantitative data will be analyzed recurring to usual statistical analysis and gather qualitative data to reinforce the main goals of the work.
+
+What others have done and how what you doing fits that
+The work done so far shows that the results are not clear. Well normally, the results on the social side are never a clear 80%. In this case, we are happy if things are 60% positive. 
+
+## Quantitative
+
+Treatment, implies the presence of the methodology 4C/ID, signalized with 1; control, implies direct instruction methodology, signalized with 0;
+
+Alternative: true location shift is greater than 0;
+Using boxplot two compare means, knowing that what is shown is the median;
+Using paired default in Wilcox stats, means, FALSE;
+
+Effect column meaning:
+positive - The use of methodology 4C/ID has the same effect on the mean, increasing the mean
+Negative - The use of methodology 4C/ID has the same negative effect on the mean, decreasing the mean
+No effect - The use of methodology 4C/ID had no effect on the mean, with no increase or decrease the mean
+
+A sample analysis with 100 entries is also done and referred to whenever the results are contradictory.
+
+### Data
+|Parameters|TEST|LAB|BEHAV|CLASS|RANK|RANDOM|
+|---|---|---|---|---|---|---|
+|Min.   | 11.00 |    0.0  |29.00|14.40|1|0|
+|1st Qu.| 50.00 | 48.0  |66.00|54.50|1|28.00|
+|Median |62.00 | 60.0  |78.00|63.60|2|53.00|
+| Mean  |62.07 | 59.5 |76.21 |64.13|2.069|51.78|
+|3rd Qu.| 75.00  |73.0  |88.00|73.60|3|76.00|
+|Max.   |100.00  |100.0 |100.00 |98.70|3|100.00|
+
+|Condition|Observations|
+|---|---|
+|for each variable|1157|
+|without M4CID|868|
+|with M4CID|289|
+
+
+| Sample     |Mean without 4C/ID is greater/less/equal then with 4C/ID?|Variable | p-value (Wilcox) |4C/ID effect |Notes|
+| ----------- | ----------- |-----|-----|---|---| 
+| All sample |greater|CLASS|0.4358|no effect|Does the variable SCHOOL as same effect?|
+|All sample|greater|TEST|0.01419|negative|Does the variable SCHOOL as same effect?|
+|All sample|less|LAB|1.341e-10|positive|Does the variable SCHOOL as same effect?|
+|All sample|greater|BEHAV|5.937e-06|negative|Does the variable SCHOOL as same effect?|
+
+Discussion: perhaps the school differences as some effect here
+
+## Compare schools without 4C/ID
+
+### DATA
+
+|Condition|Observations|
+|---|---|
+|Schools without M4CID|868|
+|school 0 (without M4CID)|474|
+|school 1 (without M4CID)|394|
+
+
+### RESULTS
+
+| Sample     |Mean school 0 is greater/less/equal than school 1?|Variable | p-value (Wilcox) |School effect |Notes|
+| ----------- | ----------- |-----|-----|---|---| 
+|Schools without 4C/ID|greater|CLASS|2.2e-16|positive|School 0 as a greater CLASS mean|
+|Schools without 4C/ID|greater|TEST|2.2e-16|positive|School 0 as a greater TEST mean|
+|Schools without 4C/ID|greater|LAB|6.946e-16|positive|School 0 as a greater LAB mean|
+|Schools without 4C/ID|less|BEHAV|8.526e-06|positive|School 0 as a less BEHAV mean|
+
+Discussion: schools are different in all of the variables, so it's better to use school 1 only to assess the 4C/ID effect.
+
+## Inference for SCHOOL 1 with or without 4C/ID
+
+### DATA
+|Condition|Observations|
+|---|---|
+|Schools 1|683|
+|school 1 (without M4CID)|394|
+|school 1 (with M4CID)|289|
+
+
+### RESULTS
+
+| Sample     |Mean without 4C/ID is greater/less/equal then with 4C/ID?|Variable | p-value (Wilcox) |4C/ID effect |Notes|
+| ----------- | ----------- |-----|-----|---|---| 
+| sample with SCHOOL = 1 |less|CLASS|6.394e-06|positive||
+| sample with SCHOOL = 1 |less|TEST|6.394e-06|positive||
+| sample with SCHOOL = 1 |less|LAB|2.2e-16|positive||
+| sample with SCHOOL = 1 |less|BEHAV|0.5001|no effect???|For the 100 sample size analysis, p-value = 0.000376, so there is a positive effect|
+
+
+## Inference for SCHOOL 1, gender Male, with or without 4C/ID
+
+### DATA
+|Condition|Observations|
+|---|---|
+|Schools 1 MALE|357|
+|school 1 MALE (without M4CID)|203|
+|school 1 MALE (with M4CID)|154|
+
+### RESULTS
+
+| Sample     |Mean without 4C/ID is greater/less/equal then with 4C/ID?|Variable | p-value (Wilcox) |4C/ID effect |Notes|
+| ----------- | ----------- |-----|-----|---|---| 
+| Male for school 1 |less|CLASS|0.03987|positive???|Sample analysis with 100 entries, gives a p-value=0.4125|
+| Male for school 1 |less|TEST|0.3295|no effect||
+| Male for school 1 |less|LAB|5.333e-10|positive||
+| Male for school 1 |greater|BEHAV|3.378e-07|negative||
+|observations||||||
+
+## Inference for SCHOOL 1, gender Female, with or without 4C/ID
+
+### data
+|Condition|Observations|
+|---|---|
+|Schools 1 MALE|326|
+|school 1 MALE (without M4CID)|191|
+|school 1 MALE (with M4CID)|135|
+
+| Sample     |Mean without 4C/ID is greater/less/equal then with 4C/ID?|Variable | p-value (Wilcox) |4C/ID effect |Notes|
+| ----------- | ----------- |-----|-----|---|---| 
+| Female for school 1 |less|CLASS|1.638e-06|positive||
+| Female for school 1 |less|TEST|0.0002003|positive||
+| Female for school 1 |less|LAB|2.009e-15|positive||
+| Female for school 1 |greater|BEHAV|0.003575|negative||
+
+
+## Inference for SCHOOL 1, grades 7,8 and 9, with or without 4C/ID
+
+### DATA
+|Condition|GRADE 7|GRADE 8|GRADE 9|
+|---|---|
+|School 1 |222|239|222|
+|school 1 (without M4CID)|123|168|103|
+|school 1 (with M4CID)|99|71|119|
+
+### RESULTS
+
+| Sample     |Mean for grade 7 without 4C/ID is greater/less/equal then with 4C/ID?|Variable | p-value (Wilcox) |4C/ID effect |Notes|
+| ----------- | ----------- |-----|-----|---|---| 
+| school 1 |less|CLASS|0.02623|positive||
+| school 1 |less|TEST|0.1487|no effect||
+| school 1 |less|LAB|1.702e-05|positive||
+| school 1 |less|BEHAV|0.02623|positive||
+
+| Sample     |Mean for grade 8 without 4C/ID is greater/less/equal then with 4C/ID?|Variable | p-value (Wilcox) |4C/ID effect |Notes|
+| ----------- | ----------- |-----|-----|---|---| 
+| school 1 |less|CLASS| 0.2201|no effect|a lot of outliers in the boxplot with the median close to the upper limit???|
+| school 1 |less|TEST|0.0006568|positive||
+| school 1 |less|LAB|0.0001906|positive| boxplot with the median close to the lower limit???|
+| school 1 |greater|BEHAV|2.2e-16|negative|a lot of outliers in the boxplot with the median close to the lower limit??? Huge dropdown!!!|
+
+```
+IMPORTANT note: median is close to the first quarter (line on R #651)
+```
+
+| Sample     |Mean for grade 9 without 4C/ID is greater/less/equal then with 4C/ID?|Variable | p-value (Wilcox) |4C/ID effect |Notes|
+| ----------- | ----------- |-----|-----|---|---| 
+| school 1 |less|CLASS| 9.012e-06|positive||
+| school 1 |less|TEST|0.15258|no effect||
+| school 1 |less|LAB|2.2e-16|positive||
+| school 1 |greater|BEHAV|0.04297|positive||
+
+## Inference for SCHOOL 1, RANKS 1, 2, and 3, with or without 4C/ID
+
+There is no scientific justification to construct the categories around de column CLASS with these definitions: 
+
+|categories| condition (CLASS) |RANK| % data school 1 (683 entries) | % data school 0 (474 entries)^* |
+|---|---| ---|---|---|
+|1 |=<55%|1| 34% (229)|16% (76)|
+|2 | 55-70%|2| 41 % (281)|39% (186)|
+|3| >=70|3| 25 % (173)|45% (212)|
+
+Just comparing the schools to double-check for the differences in schools in competence/adaptation edu system
+
+Conclusion: it seems that students in school 0 are more adapted than those in school 1.
+
+summary(data_s1_RANK1)
+ |     TEST      |     LAB    |        BEHAV    |
+|---|---|---| 
+| Min.   :11.0 |  Min.   : 0.00  | Min.   : 29.00 |  
+| 1st Qu.:34.0 |  1st Qu.:31.00  | 1st Qu.: 59.00 | 
+| Median :42.0 |  Median :41.00  | Median : 67.00 |  
+| Mean   :41.79 |  Mean   :40.45  | Mean   : 68.04 | 
+| 3rd Qu.:48.00 |  3rd Qu.:53.00  | 3rd Qu.: 78.00 |
+| Max.   :72.0 |  Max.   :80.00  | Max.   :100.00 |
+
+summary(data_s1_RANK2)
+|      TEST       |     LAB       |     BEHAV      |
+|---|---|---|
+| Min.   :34.00 |  Min.   : 4.00 |  Min.   : 40.00 | 
+| 1st Qu.:51.00  | 1st Qu.:53.00 |  1st Qu.: 67.00  | 
+| Median :57.00 |  Median :60.00 |  Median : 77.00 |
+| Mean   :58.21 |  Mean   :59.74 |  Mean   : 74.98 |  
+| 3rd Qu.:67.00  | 3rd Qu.:67.00 |  3rd Qu.: 87.00 |
+| Max.   :87.00 |  Max.   :87.00  | Max.   :100.00 |
+
+summary(data_s1_RANK3)
+|      TEST       |      LAB        |     BEHAV      |
+|---|---|---|---| 
+| Min.   : 53.00 |  Min.   : 34.00 |  Min.   : 64.00 |
+| 1st Qu.: 71.00  | 1st Qu.: 70.00 |  1st Qu.: 84.00 | 
+| Median : 79.00 |  Median : 80.00 |  Median : 92.00 |
+| Mean   : 79.27 |  Mean   : 76.52 |  Mean   : 89.49 |
+| 3rd Qu.: 86.00 |  3rd Qu.: 85.00 |  3rd Qu.: 96.00 |
+| Max.   :100 |  Max.   :100.00 |  Max.   :100.00 |
+
+## Results
+
+| Sample     |Mean for RANK 1 without 4C/ID is greater/less/equal then with 4C/ID?|Variable | p-value (Wilcox) |4C/ID effect |Notes|
+| ----------- | ----------- |-----|-----|---|---| 
+| school 1 |greater|TEST| 0.05162|no effect||
+| school 1 |less|LAB|8.549e-10|positive||
+| school 1 |greater|BEHAV|1.345e-07|negative||
+
+## Using a sampling of 68 entries
+
+There are several different results: should I use a for statement, for the no effect result????
+
+| Sample     |Mean for RANK 2 without 4C/ID is greater/less/equal then with 4C/ID?|Variable | p-value (Wilcox) |4C/ID effect |Notes|
+| ----------- | ----------- |-----|-----|---|---| 
+| school 1 |less|TEST|0.3329|no effect||
+| school 1 |less|LAB|2.991e-07|positive||
+| school 1 |greater|BEHAV|4.755e-14|negative||
+
+```
+IMPORTANT NOTE: using sampling with 100 random entries confirms the effect
+```
+
+| Sample     |Mean for RANK 3 without 4C/ID is greater/less/equal then with 4C/ID?|Variable | p-value (Wilcox) |4C/ID effect |Notes|
+| ----------- | ----------- |-----|-----|---|---| 
+| school 1 |less|TEST| 0.5236|no effect||
+| school 1 |less|LAB|4.814e-07|positive||
+| school 1 |greater|BEHAV|0.003234|negative||
+
+```
+IMPORTANT NOTE: using sampling with 86 entries confirms the effect
+´´´
+
+# Conclusions and remarks
+
+(`under construction`)
+
+???RESEARCH QUESTIONS
+
+The answer is yes, you should, but... you need, according with this work, to take in account some crucial remarks, that related to the outcames and the risks, namely: 
+
+1. In general, students will benefit from moving to an inductive methodology and, particularly, the 4C/ID used here;
+2. Students transfer TEST and LAB improve in general;
+3. Student's behavior suffers a little loss;
+4. 8 graders benefit more...
+5. Gender...
+6. put the learning responsablity on the student...
+7. When changing the methodology, some students feel lost: it's important to give some text support, using books or written documents (called Supportive information in 4C/ID methodology), in order for students to have a logical work flow line to follow.
+8. Motivation and understanding improve, not only because of practical, hands-on, LAB activities but because students understand what the teacher discourse meanings is, when listening.´
+9. The use of intensive ??? for learning objectives??? create a sense of control and the joy of achievement.
+
+Remarks:
+10. If you are using also bLearning you should be part of a team: it's overwhelming for one person alone, to manage, organize, create content, plan and assess the learning flux;
+11. Using bLearning improves the time of individual exchange??? because the teacher can use their time to help students while they are following the online activities (MOODLE lessons, ????)
+12. There is a descent curve starting in 2014 that can't be explained by the methodology difference
+13. questions and other research paths????
+
+
+
+
+

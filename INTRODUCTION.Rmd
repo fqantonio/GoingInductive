@@ -1,0 +1,152 @@
+# Summary
+
+- [ ] why is it interesting/important
+- [ ] clearly state the research question and describe (in nontechnical terms) how you will analyze
+- [ ] What others have done
+- [ ] pre-results
+
+#FOCUS
+- [ ] Research questions
+- [ ] How will it be analysed
+
+This is the site with all the work done for the paper "Going Inductive?": the documentation generated and the code in R using RStudio, statistical analysis methods included is also available here as well as the ongoing documentation (wiki), sample data and raw data.
+
+# Abstract
+
+The question addressed here, has consequences for the two main stakeholders in the learning process, students and teachers, and probability policy implications also: should you, as a teacher of science and tech, move to an inductive strategy, for the design of the learning activities that you prepare and organize, even if you include bLearning? In overall, the answer is yes, but with some crucial remarks. If you decide to do it, there will be consequences for the students in different categories that need to be accommodated. The data was gathered along 20 years of teacher practice and reflection. The conclusions are innovative, not only because of the sample used but as well as the specific outcomes that are proposed. After a descriptive summary of the quantitative data, it is discussing the data normality and presented statistical analysis using Wilcox test. Raw data and code are available online[^1].
+
+[^1] Github???
+
+**Keywords**
+Inductive strategy; 4C/ID; Direct Instruction; regression analysis
+
+# Introduction 
+
+Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning? And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results?
+
+The conclusions descibed in this work are drawn from 14 years of data (2003-2017), both qualitative and quantitative, from actual teacher day-to-day practice learning strategies: deductive and inductive. This transition from deductive to inductive educational methods strategy,  over this period of time, is higlighted and, the learning flux elaborated for the integration of bLearning environments are also presented. 
+
+The data used in this research covers learning transfer, lab practice and classroom behavior within the specific subject of chemistry and physics for the basic and secondary classes of the portuguese curriculum. 
+
+The analysis uses the common inference statistical techniques, where the control group was not subjected to the inductive methodology, namely, the 4C/ID. The software used in this work is the opensource R in the RStudio distribution.
+
+#INTRODUCTION
+Since 2009 the search for other methodologies available brings to Cognitive Load Theories, BBL, Multiples Inteligences Gardner,  Emotional approaches (???) readings until the idea of inductive came with the specific 4C/ID instructional design of Merrionboer???. Since then, it took four years until there was same mastering of the approach and in 2013, in full speed using also a bLearning environmet wth MOODLE.
+
+and  will be used, the former will be discussed using the teacher reflections about is own day-to-day practice. Two learning strategies are used: deductive and inductive. The first focuses on the direct instruction traditional methodologies, the later on the 4C/ID instruction design proposed by Merrionboer???. This work compares learning data gathering from students at the basic level, in the discipline of Physics and Chemistry, students in the Portuguese curriculum. The assessment was made in 3 learning outcomes: transfer tests, behavior and social skills. The conclusion was based on the usual statistical analysis and qualitative analysis. This work, as well as the data, is presented at the blog “https://4cidchange.edublogs.org/”.
+
+#INTRODUCTION
+Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities that you prepare and organize, even if you include bLearning? In my opinion, and based on the results, you should, but with some specific remarks that are explained at the conclusion, below and in the document **CONCLUSION**.
+
+The **DATA** gathered for this works integrated 16 years, time period 2003-2019 (with some gap years) and is a real day-to-day teacher struggling to motivate and engage student in knowledge. Two learning strategies are used: deductive and inductive. The first focuses on the direct instruction traditional methodologies, the later on the 4C/ID instruction design proposed by Merrionboer??? in a bLearning environment as well. This work compares learning data gathering from students at the basic level, in the discipline of Physics and Chemistry, in the Portuguese curriculum context. 
+
+The **analysis** was made based in 3 learning outcomes: transfer tests, behavior and social skills registered in specific forms. The results were based on the usual inference statistical and qualitative analysis. This work, as well as the data, is also presented at the blog “https://4cidchange.edublogs.org/”.
+
+# Goal
+
+The main goal is to understand the impact of the use of Indcutive Methodology 4C/ID answering the questions: changing the learning methodologies from one mainly deductive (Direct Instruction[^1]) to another one mostly inductive (4C/ID [^2]), means what for your students? Who benefits? What are the pros and cons about this methodological decision?
+
+# Motivation
+
+Most of the time the professional, specific, day-to-day teacher work gathered data is rarely or never investigated. At least in the portuguese educational environment. For the teachers, there is not much time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are possible. Worse, even if someone did it, it's normal to not share it. Research and discussion with peers are crucial to better adjust our decisions regarding the way students learn today. The way learning happens and motivation changes, are so fast! So, teaching, at least in Portugal, is a very solitary job with all of its directly related drawbacks.
+
+On the other end, the organizational environment of schools and teachers in Portugal doesn't help either. Focused on managing the schools as enterprises with a lot of controlling bureaucracy, putting numbers and paperwork ahead of the crucial and significant decisions around teaching, real assessment is barely used, and when it is, its just at the university level. This means:
+1. The crucial planning and individual teacher-student interaction is less important for this organization;
+2. Time spent on research and discussions is useless: numbers constrain our job, of course, it's normal, but with the same money we can do better if we can get together and discuss the way we could be organized.
+
+Luckily, the knowledge and the tools available online today, permit that we can go further with peer contribution and go beyond a simple Average Treatment Effect (some of us, at least do some mean computations): statistical knowledge is not something that we are prepared for and the statistical tools are very expensive. Now this tools are available in opensource licences: so, time is crucial: teacher need it to study, get the necessary knowledge and interpret the results. And publish it.
+
+Back to the issue here, my personal goal was to know if the strategic decisions I did in 2008 were positive for my students. The motivations are at least two: 
+
+1. Did my students benefit from the educational strategic change? It was a global benefit or some groups benefited more.
+2. To share this conclusion in order to exchange knowledge with others around the world, and see if they corroborate with this findings.
+
+
+# Research question
+
+Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning? And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results? 
+
+# Milestones
+
+| date     | Action | Notes|
+| ----------- | ----------- |-----|
+|August 2019 | Gathering data ||
+|January 2020  | Cleaning data ||
+|2019-2021|EDX course|Statistical procedures|
+|September 2022|data analysis: descriptive data summary|testing the limits|
+|September 2022|Statistical Analysis results|Normality; RDD; inference; regression|
+|October 2022|Writing|Paper chapters: summary; introduction; #DATA; Descriptive Analysis; Normality; METHODS;RESULTS|
+|November 2022|Conclusion and EDIT; Glossary; references||
+|December 2022|Readings||
+|January 2023|send to be [hopefully] published with peer review|postponed|
+
+Note: for several contextual reasons this went on until april 2023, when the paper was to be ready for experts to read it for the first time.
+
+| date     | Action | Notes|
+| ----------- | ----------- |-----|
+| April 2023      | Draft ||
+| June 2023  | EDIT, EDIT, EDIT ||
+|September|Release the paper to journal peer review||
+
+# State of the art
+
+
+# Context
+Since 2003 the search for other methodologies available brings me to the Cognitive Load Theories, Brain Based Learning (BBL), Gardner's Multiintelligence Theory (MIT),  Emotional Intelligence approaches of (???) and bLearning. These  readings started with the work of FELDER []. Until then I use laboratory work exploration Direct Instruction, lectures, exercises, discussions, inquiries, challenges or a misture of all of this. The idea of inductive edu environment took me to 4C/ID four component instructional design of Merrionboer???. Since then, it took me four years to integrate this ideas and build concrete edcuational workflows by using CMAP tools until there was same mastering of the approach and in 2013, in full speed using also a bLearning environmet wth MOODLE.
+
+The inner goal of a teacher is always to have their students engaged and motivated in their subject, to have them wanted to know more, and tease their curiosity towards real life applications and knowledge. At a point, I felt the need to study more in order to know how to better engage students with their learning process.
+
+Since 1992, I work at several different public schools as a teacher of chemistry and physics of young student, from Junior to Junior High School. I start to teach Science, without any background on educational methods, only with what I learned as a student, with what I think it's a better way to learn: organizing lab activities, hands-on situations, trying to have students in an informal, trial-and-error environment, having them try their hypotheses, whatever they are, even the most naive, even when schools didn’t have the laboratory facilities. Sometimes, students were engaged by trying to organize and run a small lab projects. 
+
+Along with this, I organized the Lab Aberto project, after school program, continuing the idea of letting students trial and error environment, consequently, to profit with their errors and own conclusions. 
+
+???The first focuses on the Direct Instruction[^1] (DI) traditional methodologies, Brain Based Learning (BBL)[^2], Multiple Intelligence[^3] (MI) theory and the former, the 4C/ID[^4] instruction design proposed by Merrionboer , based on Cognitive Load Theory[^5] (CLT) and inductive educational strategy. 
+
+Multimedia learning
+
+In 2005, I started to introduce the concept of Learning Objects from ()??? along with eLearning environment, exploring bLearning (based on MOODLE built-in activities), reading about Brain-Based Learning (BBL), Multi-intelligent theory (MI), Learning Styles (LS), Emotional Intelligence (EI). During this readings I found in the paper of FELDER (???) several different methodologies, inclunding the inductive approach which seems appealing. After that,??? I found the book 4C/ID of Merrionboer, talking about Inductive Learning Methods (ILM): only them I noticed that I used only deductive Learning Methodologies (DLM). Consequently, I found several other educational methods but on strike me more, the inductive one. So, Cognitive Load Theory were there already, the idea of learning flux was there to, because this 4C/ID needed concept maps toolto organize all the paths if you want to addapt this to a bLearning environment: anchor points, task practices, supoortive information, assessment, recurrent and non-recurrent learning objectives. All of this organized in time and in more deep and learning conceptual subject depth, or from concrete to concept, and from simple to complex, where scaffolding is a major concern.
+
+Merrionboer blueprint,  has a steep learning curve (for me anyway), explain is theory based on the idea that we need to think about learning by starting with (almost) real practical problems situations, moving towards the concepts in time but going deep into to more complex issues related with the subject, identifying anchors, recurrent and non-recurrent learning objectives, given time for automatization procedures, and give same generalization environment recurring to variability to facilitate the integration of knowledge and skills. Cognitive load theory is of utmost importance because it proposes scaffolding, that is, taking care of the amount of information, prior knowledge and level of difficulty that is proposed in the learning task.
+
+During the course of this work there was the need to engange througout data science knowledge analysis, so I took the online course EDX and then at MTx [^3].???
+
+## Methodologies: changing over time.
+|year| Methodology     | Description | Notes|
+|------| ----------- | ----------- |-----|
+| 2003-2007| Personal instruction: what I believe to be the best way to teach and to learn     | Lab Experimentation, expositive, lab reports, exercises, organized with the knowledge logic in order to acquire more and more information from concepts to concrete activities ||
+|2008-2010|Direct instrution|Something with extensive research on it and based on more then 200 years experimental findings can be summarized on these principles: Task centered approach; prepare pupils to be ready; Activation principle (prior knowledge): present the new lesson; Demonstration Principle: associate it with prior knowledge; Application Principle: use examples; Integration Principle: test pupils to ensure they learn it;|([Merrill, 2007](https://mdavidmerrill.files.wordpress.com/2019/04/task_centered_strategy_published.pdf)); BBL; emotion; MI|
+|2010-2013|Personal instrution +|Adding to the second row: LO, MOOdlE, BBL, MI, Emottional intelligence, concpetual maps, blearning flux|Transition to inductive methodology were all of this is already in place with the 4C/ID method|
+|2013-2017| Inductive Methodology | 4C/ID methodology implies designing a learning flux with four components in mind, in two directions: practice to concepts (time schedule) and simple to complex (learning deeper and more complex knowledge): it means identifying crucial moments and design a lot of repetitive activities in order to master redundant/transversal learning objectives. In this design, it's important to identify anchor moments that serve as connector to other parts of the lessons |the learning include bLearning environment, merrionboer|
+
+## Learning Flux
+
+Cmap tools???
+
+
+# Glossary
+
+4C/ID instruction
+transfer tests, 
+behavior skill
+social skills
+Recurrent goals
+
+# References
+
+[^1]: Direct Instruction
+
+[^2]: Brain Based Learning (BBL).
+
+[^3]: Multiple Intelligence (MI) theory 
+
+[^4]: 4C/ID[ instruction design proposed by Merrionboer.
+
+[^5]: based on Cognitive Load Theory
+
+[^6]: [Data Analysis for Social Scientists, MITx online](https://courses.mitxonline.mit.edu/learn/course/course-v1:MITxT+14.310x+3T2022/home).
+
+[^7]: https://www.r-project.org/.
+
+
+
+

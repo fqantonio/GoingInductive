@@ -1,0 +1,26 @@
+# METHODS
+
+
+
+The conclusion was based on the usual statistical analysis and qualitative assessement notes using data from the usual day-to-day teacher database, spreadsheets assessments, notes, registers, inquiries, and teacher interactions with the students. This work, as well as the raw data, is also presented on the blog “https://4cidchange.edublogs.org/” and in this GitHub account. The quantitative assessment used statistical inference made with R software tool [^4] and is based on three learning outcomes: transfer tests (TEST), behavior (BEHAV), and lab skills (LAB). Two groups are compared groups, with and without the application of 4CID methodology (M4CID), in GENDER, RANK and SCHOOL. 
+
+Goals
+Describe the methods
+no normal, Wilcox
+errors not normal, no heterochedasticity???, no Regression discontinuity design
+??? Triangulation ???
+??? Balance methods ???
+
+Conclusion: samples not normal but idenpendent: so, non-parametric inferene: wilcoxon can be used because of independency
+
+# Software
+
+In this work, I use R in the RStudio distribution. Mostly because it's "free" but also because it's really adaptable to what we want to do.
+
+RStudio
+2023.03.0 Build 386
+© 2009-2023 Posit Software, PBC
+"Cherry Blossom" Release (3c53477a, 2023-03-09) for macOS
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) RStudio/2023.03.0+386 Chrome/108.0.5359.179 Electron/22.0.3 Safari/537.36
+
+
