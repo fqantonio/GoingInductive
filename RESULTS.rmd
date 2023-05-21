@@ -1,15 +1,9 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # RESULTS
 
 ## Resume
 
 | SAMPLE                          | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES                                                     |
-|------------|------------|------------|------------|------------|------------|
+|:------------|:------------:|:------------:|:------------:|:------------:|:------------:|
 | All sample                      | \-   | \+  | \-    | \-    | School effect identifyed                                               |
 | Junior (school effect)          | \~   | \+  | \-    | \~    | school 1 with 4C/ID variable 1                                         |
 | Junior and junior high          | \-   | \~  | \-    | \-    | junior and junior high school 0 and 1 (exclude school 1 without 4C/ID) |
