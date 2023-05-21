@@ -1,15 +1,18 @@
-# Welcome
+# WELCOME
+
 Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities that you prepare and organize, even if you include bLearning?
 
 This is the **`Going Inductive`** paper DRAFT roadmap! This repository [^1] is used for documenting, managing and making available the outcame **knowledge base source** about the work done so far in order to answer the former research question. Here is shared, not only the results and conclusions, but also procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flux and blearning. Hopefully, there will be, at least, one paper based on this. There is also a **wiki** where the comments and R code is presented.
 
-# Abstract
+# ABSTRACT
+
 Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some crucial remarks. If you decide to do it, there will be consequences for the students in different categories that need to be **accommodated**. The question addressed here has also consequences for the stakeholders in the learning process: students, teachers, policy and school management implications. After the exploratory data analysis (EDA), this work used inference treatment effect, regression analysis and a regression discontinuity design for the results and subsquently conclusions.
 
 **Keywords**
 Inductive strategy; 4C/ID; Direct Instruction; Learning Flux; concept maps; Statistical inference; Quantitative and Qualitative analysis.
 
 #INTRODUCTION
+
 Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities that you prepare and organize, even if you include bLearning? In my opinion, and based on the results, you should, but with some specific remarks that are explained at the conclusion, below and in the document **CONCLUSION**.
 
 The data was gathered along 16 years of teacher practice and reflection. The conclusions are very specific because of the longitudinal sample used: Junior and junior high for the physics and chemistry content of the Portuguese curriculum. 
@@ -42,14 +45,16 @@ My personal goal was to know if the strategic decisions I did in 2008 were posit
 2. To share this conclusion in order to exchange knowledge with others around the world, and see if they corroborate with this findings.
 
 # CONTEXT
+
 On the other end, the organizational environment of schools and teachers in Portugal doesn't help either. Focused on managing the schools as enterprises with a lot of controlling bureaucracy, putting numbers and paperwork ahead of the crucial and significant decisions around teaching, real assessment is barely used, and when it is, its just at the university level. This means:
   1 - The crucial planning and individual teacher-student interaction is less important for this organization;
   2 - Time spent on research and discussions is useless: numbers constrain our job, of course, it's normal, but with the same money we can do better if we can get together and discuss the way we could be organized.
 
 Luckily, the knowledge and the tools available online today, permit that we can go further with peer contribution and go beyond a simple Average Treatment Effect (some of us, at least do some mean computations): statistical knowledge is not something that we are prepared for and the statistical tools are very expensive. Now this tools are available in opensource licences: so, time is crucial: teacher need it to study, get the necessary knowledge and interpret the results. And publish it.
 
-# MAJOR RESULT
-The next two tables present the results for the most reliable sample used in this work. This is because it only uses JUNIOR sample for SCHOOL 1, which means not having the school effect nor the problem of using the less numbered entrances of the junior high sample. 
+# RESULT
+
+The next two tables present the results only for the most reliable sample used in this work. This is because it only uses JUNIOR sample for SCHOOL 1, which means not having the school effect nor the problem of using the less numbered entrances of the junior high sample. 
 
 | SAMPLE | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES |
 |:------------|:------------:|:------------:|:------------:|:------------:|:------------:|
@@ -69,7 +74,9 @@ The next two tables present the results for the most reliable sample used in thi
 |BEHAV (Following social and behavioral classroom rules)|11%|11%|78%|GRADE 9|FEMALE|Junior; GRADE 7 and 8; all RANKs; MALE ||
 |CLASS (weight average learning outcome) |33%|44%|22%|junior; 9th grade; FEMALE|grades 7 and 8; RANK 2 e MALE|RANK 1 and 3 ||
 
-# Conclusion (need more editing and discussion)
+# CONCLUSION
+
+(need more editing and discussion)
   
 The conclusions presented here are using what I considered the most reliable sample (table above). For more, please read the conclusion file.
 
@@ -81,12 +88,13 @@ The conclusions presented here are using what I considered the most reliable sam
   5. The **academic results** decrease in the case of the less adapted students and females benefit more;
   6. 9th grade benefit more.
 
+# DISCUSSION 
+
 Reiterate results
 Policy implications
 Future research
 Tie loose hands???
 world research corroboration???
-
 Clarify
 robustness
 
