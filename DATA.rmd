@@ -7,6 +7,9 @@ variable definitions
 Summary stats
 Interesting facts
 
+The **DATA** gathered for this works integrated 16 years, time period 2003-2019 (with some gap years) and is a real day-to-day teacher struggling to motivate and engage student in knowledge. Two learning strategies are used: deductive and inductive. The first focuses on the direct instruction traditional methodologies, the later on the 4C/ID instruction design proposed by Merrionboer??? in a bLearning environment as well. This work compares learning data gathering from students at the junior level, in the discipline of Physics and Chemistry, in the Portuguese curriculum context. 
+
+
 This work compares data from student school results, specifically on the Physics and Chemistry subject: learning transfer and observational in class assessment registering, for primary and secondary education levels, over 14 years (from 2003 to 2017), graded in percentage (from 0 to 100 %). During this time period the educational methodology changed (see section Introduction, Methodologies: changing over time) toward inductive and a bLearning environment.
 
 So, it's a longitudinal study, with time serial data, with three variables: ID, GRADE, GENDER, TEST, LAB, and BEHAV (see section bellow, Variable Definition). There are three added variables, one is RANDOM, CLASS, and RANK. The first one is just to be aware that the process represented by this data is not RANDOM, they have a distribution, and so, something is happening, it's real. CLASS is used to calculate a weighted average (CLASS=0.5*TEST+0.3*LAB+0.2*BEHAV) in order to define a student RANK: this intended to represent the levell of adaptation of students to the school.

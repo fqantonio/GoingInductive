@@ -20,7 +20,7 @@
   ## Inference SCHOOL 1, Grade 7  - 1383
   ## Inference SCHOOL 1, Grade 8 - 1501
   ## Inference SCHOOL 1, Grade 9 -1618
-  ## Rank - 1753
+  ## RANK - 1753
   ## GENDER - 2129
 # REGRESSION ANALYSIS -2317
 # Regression discontinuity design (RDD) - 2355

@@ -1,16 +1,17 @@
 # RESULTS
+This file contains the results of the inference statistical analysis methods used in this research work. The initial tables resume the work. The latest present the same results but with more details. 
 
-## Resume
+## Inference Analysis Table Resume
+The symbols +, ~ and - in the table represent a positive treatment effect, no effect and a negative treatment effect.
 
-| SAMPLE                          | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES                                                     |
+| SAMPLE| TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES |
 |:------------|:------------:|:------------:|:------------:|:------------:|:------------:|
 | All sample                      | \-   | \+  | \-    | \-    | School effect identifyed                                               |
 | Junior (school effect)          | \~   | \+  | \-    | \~    | school 1 with 4C/ID variable 1                                         |
 | Junior and junior high          | \-   | \~  | \-    | \-    | junior and junior high school 0 and 1 (exclude school 1 without 4C/ID) |
-| Junior and Junior High          |      |     |       |       |                                                                        |
 | All sample (school effect)      | \-   | \+  | \-    | \-    |                                                                        |
 | SCHOOL 1 junior and high junior | \~   | \+  | \-    | \+    |                                                                        |
-| Junior for school 1             | \+   | \+  | \-    | \+    |                                                                        |
+| *Junior for school 1*             | \+   | \+  | \-    | \+    | AFTER this road sample is junior grade for SCHOOL 1                                                                        |
 | GRADE 7                         | \~   | \+  | \-    | \~    |                                                                        |
 | GRADE 8                         | \+   | \+  | \-    | \~    | M4CID=="1",#71 entrances, less then 100 entrances                      |
 | GRADE 9                         | \~   | \+  | \+    | \+    |                                                                        |
@@ -18,58 +19,39 @@
 | RANK 2                          | \~   | \+  | \-    | \~    |                                                                        |
 | RANK 3                          | \~   | \+  | \-    | \-    |                                                                        |
 | FEMALE                          | \+   | \+  | \~    | \+    |                                                                        |
-| MALE                            | \~   | \+  | \-    | \~    |                                                                        |
+| MALE                            | \~   | \+  | \-    | \~    |              |
+
+TABLE ???: Legend: + means positive effect, -, negative effect and ~ no effect
+
+| Variable | + | ~ | -| SAMPLE + | no effect sample | sample - | Notes | 
+| TEST (Learning Transfer) | 21% | 50% | 29% | Junior, 8th grade and FEMALE ||
+| LAB (Lab practice) |93%|7%|0%||all samples|Junior and Junior High|no samples||
+| BEHAV (Following social and behavioral classroom rules)|7%|86%|7%|GRADE 9|FEMALE|REMAINING SAMPLES|||
+| CLASS |29%|36%|29%|SCHOOL 1 junior and high junior; 9th grade; FEMALE|Junior (school effect); grades 7 and 8|RANK 2; MALE |All sample; junior; RANK 1 and 3|||
+
+## Sample JUNIOR for SCHOOL 1
+The next two tables present the results for the most reliable sample used in this work. This is because it only uses JUNIOR sample for SCHOOL 1, which means not having the school effect nor the problem of using the less numbered entrances of the junior high sample. 
+
+| SAMPLE | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES |
+|:------------|:------------:|:------------:|:------------:|:------------:|:------------:|
+| *Junior for school 1*             | \+   | \+  | \-    | \+    | AFTER this road sample is junior grade for SCHOOL 1                                                                        |
+| GRADE 7                         | \~   | \+  | \-    | \~    |                                                                        |
+| GRADE 8                         | \+   | \+  | \-    | \~    | M4CID=="1",#71 entrances, less then 100 entrances                      |
+| GRADE 9                         | \~   | \+  | \+    | \+    |                                                                        |
+| RANK 1                          | \-   | \+  | \-    | \-    |                                                                        |
+| RANK 2                          | \~   | \+  | \-    | \~    |                                                                        |
+| RANK 3                          | \~   | \+  | \-    | \-    |                                                                        |
+| FEMALE                          | \+   | \+  | \~    | \+    |                                                                        |
+| MALE                            | \~   | \+  | \-    | \~    |              |
+
+| Variable | + | ~ | -| SAMPLE + | no effect sample | sample - | Notes | 
+| TEST (Learning Transfer) | 22% | 56% | 0% | All Junior sample, 8th grade and FEMALE |GRADE 7, 9; |RANK1||
+| LAB (Lab practice) |100%|0%|0%||all samples||||
+|BEHAV (Following social and behavioral classroom rules)|11%|11%|78%|GRADE 9|FEMALE|Junior; GRADE 7 and 8; all RANKs; MALE ||
+|CLASS |33%|44%|22%|junior; 9th grade; FEMALE|grades 7 and 8; RANK 2 e MALE|RANK 1 and 3 ||
 
 ## Quantitative
-
-Treatment, implies the presence of the methodology 4C/ID, signalized
-with 1; control, implies direct instruction methodology, signalized with
-0;
-
-Alternative: true location shift is greater than 0; Using boxplot two
-compare means, knowing that what is shown is the median; Using paired
-default in Wilcox stats, means, FALSE;
-
-Effect column meaning: positive - The use of methodology 4C/ID has the
-same effect on the mean, increasing the mean Negative - The use of
-methodology 4C/ID has the same negative effect on the mean, decreasing
-the mean No effect - The use of methodology 4C/ID had no effect on the
-mean, with no increase or decrease the mean
-
-A sample analysis with 100 entries is also done and referred to whenever
-the results are contradictory.
-
-Hypothesis: does the patterns showned in the last graphs where there was
-a negative bump during the transition to the second between the schools
-showed earlier in the graphs should be considered? Is there a school
-effect on the results? should the data between schools in the same 4CID
-conditions 0 be assessed? yes, but only the junior school should be
-compared we should use the CLASS to study the differences between
-schools and not the other variables; if we use the variable because it
-is a math relation qith the others just with class variable Variable
-TEST, LAB, CLASS greater in school 0 then in school 1 Variable BEHAV is
-less for the School 0 then in the school 1 So, this pivotal moment, take
-this research to consider that there is a school effect, that biased all
-variables, in the negative way except for the BEHAV variable, in the
-positive way for school 1. So this is going to be restricted to school
-1: it is considered an analysis for the school 1 as a global data
-sample, and an analysis only at the junior level in school 1. Secondary
-school wil not be analized because there is no scondary sample with no
-4CID.\
-SCHOOL efect Inference sample analysis, 4C/ID, taking in account the
-school effect prepararing the sample to take into account the
-differences; in the case of TEST, LAB and CLASS, it will be added to the
-sample of school 1 the differences computed in this variables. In the
-case of the variable BEHAV, it will be added to school 0, in order to
-not create negative numbers, consequently, to keep the variables between
-0 and 100; compare data_junior_computed compare samples after the
-computation explained just now: data_JUNIOR_SCHOOL0 and
-data_junior_computed_SCHOOL1_M4CID0: are they from the same
-distribution? Conlusion: yes, they are from the same sample distribution
-
-Only RANK 3, the more adapted, benefit more with the 4CID methodology
-RANK 1 and 2, the less adapted benefit only on the LAB variable; Female,
-averall, benefit more
+From this session on, the tables presented, details all the specific results from the analysis statistical methods used. Remember that, in this work, the Treatment effect implies the presence of the methodology 4C/ID, variable M4CID =1: the control sample, implies direct instruction methodology, signalized with M4CID = 0;
 
 table 11 : computed school differences for the junior sample school 0
 and 1 without 4C/ID methodology
