@@ -11,7 +11,7 @@ Should you, as a teacher of science and tech, **move to an inductive strategy**,
 **Keywords**
 Inductive strategy; 4C/ID; Direct Instruction; Learning Flux; concept maps; Statistical inference; Quantitative and Qualitative analysis.
 
-#INTRODUCTION
+# INTRODUCTION
 
 Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities that you prepare and organize, even if you include bLearning? In my opinion, and based on the results, you should, but with some specific remarks that are explained at the conclusion, below and in the document **CONCLUSION**.
 
