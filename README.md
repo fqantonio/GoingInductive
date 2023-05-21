@@ -68,9 +68,9 @@ The next two tables present the results only for the most reliable sample used i
 | FEMALE                          | \+   | \+  | \~    | \+    |                                                                        |
 | MALE                            | \~   | \+  | \-    | \~    |              |
 
-| Variable | + | ~ | -| SAMPLE + | no effect sample | sample - | Notes | 
-| TEST (Learning Transfer) | 22% | 56% | 0% | All Junior sample, 8th grade and FEMALE |GRADE 7, 9; |RANK1||
-| LAB (Lab practice) |100%|0%|0%||all samples||||
+| Variable | + | ~ | -| SAMPLE + | no effect sample | SAMPLE - | Notes | 
+| TEST (Learning Transfer) | 22% | 56% | 0% | All Junior sample, 8th grade and FEMALE | GRADE 7, 9; | RANK1 ||
+| LAB (Lab practice) |100%|0%|0%||all samples|||
 |BEHAV (Following social and behavioral classroom rules)|11%|11%|78%|GRADE 9|FEMALE|Junior; GRADE 7 and 8; all RANKs; MALE ||
 |CLASS (weight average learning outcome) |33%|44%|22%|junior; 9th grade; FEMALE|grades 7 and 8; RANK 2 e MALE|RANK 1 and 3 ||
 
