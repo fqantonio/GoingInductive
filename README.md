@@ -49,30 +49,30 @@ Luckily, the knowledge and the tools available online today, allows us to go fur
 
 # RESULT
 
-The next two tables present the **results**, only for the most **reliable sample** used in this work, in spite of the fact that the sample is much large. So, they showed results about the JUNIOR sample for SCHOOL 1, which means not having the school effect nor the problem of using the less numbered entrances of the junior high students sample. CLASS is an weight average of the **variables**, TEST, LAB and BEHAV with formula: CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV. The RANK variable is categorized using the variable CLASS and is a measured of the level of adaptation of students to the school system: RANK 1, for CLASS less or equal to 45%; RANK 2, for CLASS between 45% and 70% and RANK 3, for CLASS greater or equal to 70%. MALE and FEMALE are variables related to the gender of students: categorized by F if students are female gender and M if male.
+The next two tables present the **results**, only for the most **reliable sample** used in this work, in spite of the fact that the sample is much large. So, they showed results about the JUNIOR sample for SCHOOL 1, which means not having the school effect nor the problem of using the less numbered entrances of the junior high students sample. CLASS is an weight average of the **variables**, TEST, LAB and BEHAV with formula: CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV. The RANK variable is categorized using the variable CLASS and is a measured of the level of adaptation of students to the school system: RANK 1, for CLASS less or equal to 45%; RANK 2, for CLASS between 45% and 70% and RANK 3, for CLASS greater or equal to 70%. MALE and FEMALE are variables related to the gender of students: categorized by F if students are female gender and M if male. nThe values showned in the table are median changes in the variable group.
 
 | SAMPLE | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES |
 |:------------|:------------:|:------------:|:------------:|:------------:|:------------:|
-| *Junior for school 1*             | \+   | \+  | \-    | \+    |                  |
-| GRADE 7                          | \~   | \+  | \-    | \~    |                   |
-| GRADE 8                         | \+   | \+  | \-    | \~    | M4CID=="1", 71 entrances, less then 100 entrances|
-| GRADE 9                         | \~   | \+  | \+    | \+    |          |
-| RANK 1                          | \-   | \+  | \-    | \-    |           |
-| RANK 2                          | \~   | \+  | \-    | \~    |            |
-| RANK 3                          | \~   | \+  | \-    | \-    |            |
-| FEMALE                          | \+   | \+  | \~    | \+    |          |
-| MALE                            | \~   | \+  | \-    | \~    |          |
+| *Junior for school 1*             | \+ (54 to 58)  | \+ (53 to 66)  | \- (81 to 74)    | \+ (59 to 62)    |   Median values presented in %               |
+| GRADE 7                          | \~   | \+ (56 to 64)  | \- (77 to 71)   | \~    |                   |
+| GRADE 8                         | \+ (54 to 58)   | \+ (55 to 68)  | \-    | \~    | M4CID=="1", 71 entrances, less then 100 entrances|
+| GRADE 9                         | \~   | \+ (44 to 66)  | \+ (80 to 85)   | \+ (55 to 64)   |          |
+| RANK 1                          | \- (34 to 29)  | \+ (26 to 35) | \- (65 to 50)    | \- (39 to 37)    |           |
+| RANK 2                          | \~   | \+ (51 to 62) | \- (80 to 67)    | \~    |            |
+| RANK 3                          | \~   | \+  (73 to 80) | \- (94 to 90)   | \+ (77 to 81)    |            |
+| FEMALE                          | \+ (54 to 56)   | \+ (52 to 70)  | \~    | \+ (59 to 67)    |          |
+| MALE                            | \~   | \+ (53 to 62) | \- (81 to 66)    | \~    |          |
 
 Resuming the former table, this next one shows the percentage of "positive", "negative" and "no effects" for each sample.
 
-3/9
+2/9
 
 | Variable | + | ~ | -| SAMPLE + | no effect sample | SAMPLE - | Notes | 
 |---|:---:|:---:|:---:|:---:|:---:|:---:|---|
 | TEST (Learning Transfer) | 33% | 56% | 11% | All Junior sample, 8th grade and FEMALE | GRADE 7, 9; | RANK1 ||
 | LAB (Lab practice) |100%|0%|0%||all samples|||
 |BEHAV (behavior)|11%|11%|78%|GRADE 9|FEMALE|Junior; GRADE 7 and 8; all RANK's; MALE ||
-|CLASS (academic results) |33%|45%|22%|junior; 9th grade; FEMALE|grades 7 and 8; RANK 2 e MALE|RANK 1 and 3 ||
+|CLASS (academic results) |22%|45%|33%|junior; 9th grade; FEMALE|grades 7 and 8; RANK 2 e MALE|RANK 1 and 3 ||
 
 # CONCLUSION
 
@@ -83,18 +83,18 @@ The conclusions presented here are using only the table above. For more, please 
 **Overall**, as a teacher of science and tech, you should move to implement the inductive strategy as your methodology for learning but there are risks and concerns to be accommodated:
 
 RISKS:
-  1. In the **learning transfer** there is the risk that the less adapted to the school environment have a negative impact;
-  2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^???] impact in all samples, except in the case the 9th grade, positive effect: The **risks** loosing control of the students group inside the classroom but in this case, in spite of decreasing, they were all positive;
-  3. In the aspect of the **academic results**, there is a need to accomodate the negative inpact for groups of the less addated to school and the most: RANK 1 and 3.
+  1. In the **learning transfer** there is the risk that the less adapted to the school environment suffer more with this strategic change: median change 34 to 29%;
+  2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^???] impact in all samples, except in the case the 9th grade, positive effect: the risk of loosing control of the students group inside the classroom is real, but in this case, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50%;
+  3. In the aspect of the **academic results**, there is a need to accommodate the negative inpact for groups of the less adapted to school and the most: RANK 1 (median change from 39 to 37) and 3 (77 to 81).
 
 CONCERNS:
-  1. There seems to be no effect for the **lerniang transferGrade 7 and 9, rank2 and 3,and MALE 
-  For the **academic results** there is a decrease in the case of the less adapted students;
-  6. 9th grade benefit more.
-
+  1. There seems to be no effect for the **learning transfer** Grade 7 and 9, rank2 and 3,and MALE 
+  2. For the **academic results** there is a decrease in the case of the less adapted students;
+  3. 
+  
 BENEFITS:
-  1. Learning transfer
-  2. Lab practice is a positive effect;
+  1. In overall, the change has a positive impact on students academic results; 
+  2. Lab practice has a large positive effect: ;
   2. 
 
 # DISCUSSION 
