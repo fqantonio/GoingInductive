@@ -65,21 +65,30 @@ The next two tables present the **results**, only for the most **reliable sample
 
 Resuming the former table, this next one shows the percentage of "positive", "negative" and "no effects" for each sample.
 
+3/9
+
 | Variable | + | ~ | -| SAMPLE + | no effect sample | SAMPLE - | Notes | 
 |---|:---:|:---:|:---:|:---:|:---:|:---:|---|
-| TEST (Learning Transfer) | 22% | 56% | 0% | All Junior sample, 8th grade and FEMALE | GRADE 7, 9; | RANK1 ||
+| TEST (Learning Transfer) | 33% | 56% | 11% | All Junior sample, 8th grade and FEMALE | GRADE 7, 9; | RANK1 ||
 | LAB (Lab practice) |100%|0%|0%||all samples|||
-|BEHAV (Following social and behavioral classroom rules)|11%|11%|78%|GRADE 9|FEMALE|Junior; GRADE 7 and 8; all RANKs; MALE ||
-|CLASS (weight average learning outcome) |33%|44%|22%|junior; 9th grade; FEMALE|grades 7 and 8; RANK 2 e MALE|RANK 1 and 3 ||
+|BEHAV (Following social and behavioral classroom rules)|11%|11%|78%|GRADE 9|FEMALE|Junior; GRADE 7 and 8; all RANK's; MALE ||
+|CLASS (weight average learning outcome) |33%|45%|22%|junior; 9th grade; FEMALE|grades 7 and 8; RANK 2 e MALE|RANK 1 and 3 ||
 
 # CONCLUSION
 
 (need more editing and discussion)
   
-The conclusions presented here are using what I considered the most reliable sample (table above). For more, please read the conclusion file.
+The conclusions presented here are using only the table above. For more, please read the conclusion file in this github repository.
 
-**Overall**, as a teacher of science and tech, you should move to implement the inductive strategy as your methodology for learning but... 
-  1. there is a need accommodate the probability of a large negative effect in the behavior context, that is, following social and behavioral classroom rules. 
+**Overall**, as a teacher of science and tech, you should move to implement the inductive strategy as your methodology for learning but there are risks and concerns to be accommodated:
+
+RISKS:
+  1. In the **learning transfer** there is the risk that the less adapted to the school environment have a negative impact;
+  2. For **Social Skills**, specifically in aspect of following the classroom rules, there is a major negative impact in all samples, except in the case the 9th grade, positive effect;
+  3. In the aspect of the **learning outcomes**, there is a negative impact for RANK 1 and 3.
+
+CONCERNS:
+1. there is a need accommodate the probability of a large negative effect in the behavior context, that is, following social and behavioral classroom rules. 
   2. along with the fact that the **9th grade** seems to benefit more from this treatment effect, students **more adapted** to the school and **females** benefit more;
   3. the **lab practice** is what students benefit more with this strategic change;
   4. The **risks** of this change are in the loosing control of the students group inside the classroom but in this case, in spite of decreasing, they were all positive;
