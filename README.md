@@ -33,21 +33,23 @@ The **main goal** is to understand the impact of the use of Inductive Methodolog
 
 # MOTIVATION
 
-Most of the time the professional, specific, day-to-day teacher work gathered data is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is not much time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are possible. Worse, even if someone did it, it's normal to not share it. Research and discussion with peers are crucial to better adjust our decisions regarding the way students learn today. The way learning happens and motivation changes, is so fast! So, teaching, at least in Portugal, is a very solitary job with all of its directly related drawbacks.
+Most of the time the professional, specific, **day-to-day teacher work** gathered data is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is not much time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are possible. Worse, even if someone did it, it's normal to not share it. Research and discussion with peers are crucial to better adjust our decisions regarding the way students learn today. The way learning happens and motivation changes, is so fast! So, teaching, at least in Portugal, is a very solitary job with all of its directly related drawbacks.
 
 My **personal goal** was to know if the strategic decisions I did in 2008 were positive for my students: did they benefit from the educational strategic change? It was a global benefit or some groups benefited more? Does anyone have the same kind of research? Can anyone corroborate this results or criticize them? Sharing is the way to go in order to exchange results an find knowledge.
 
 # CONTEXT
 
-The organizational environment of schools and teachers in Portugal doesn't help either. Focused on managing the schools as enterprises with a lot of controlling bureaucracy, putting numbers and paperwork ahead of the crucial and significant decisions around teaching, real assessment is barely used, research also, and when it happens, its just shared at the university level. Meaning:
+This work includes junior and junior high students of two different schools, from different regions, at the chemistry and physics subjects of the Portuguese curriculum, in the time scale 2003 to 2019.
+
+The organizational environment of schools and teachers in Portugal doesn't help this type of research work. Focused on managing the schools as enterprises with a lot of controlling bureaucracy, putting numbers and paperwork ahead of the crucial and significant decisions around teaching, real assessment is barely used, research also, and when it happens, its just shared at the university level. Meaning:
   1 - The crucial planning and individual teacher-student interaction is less important for this organization;
   2 - Time spent on research and discussions is useless: numbers constrain our job, of course, it's normal, but with the same money we can do better if we can get together and discuss the way we could be organized.
 
-Luckily, the knowledge and the tools available online today, allows that we can go further with peer contribution and go beyond a simple Average Treatment Effect (some of us, at least do some mean computations): statistical knowledge is not something that we are prepared for and the statistical tools are very expensive. Now this tools are available in opensource licences: so, time is crucial: teacher need it to study, get the necessary knowledge and interpret the results. And publish it.
+Luckily, the knowledge and the tools available online today, allows us to go further with peer contribution, beyond a simple Average Treatment Effect (some of us, at least, do some mean computations): statistical knowledge is not something that we are prepared for and the statistical tools are very expensive. Today, this tools are available with opensource licences: so, time is crucial: teacher need it to study, get the necessary knowledge and interpret the results. And publish it!
 
 # RESULT
 
-The next two tables present the results only for the most reliable sample used in this work. This is because it only uses JUNIOR sample for SCHOOL 1, which means not having the school effect nor the problem of using the less numbered entrances of the junior high sample. 
+The next two tables present the **results**, only for the most **reliable sample** used in this work, in spite of the fact that the sample is much large. So, they showed results about the JUNIOR sample for SCHOOL 1, which means not having the school effect nor the problem of using the less numbered entrances of the junior high students sample. 
 
 | SAMPLE | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES |
 |:------------|:------------:|:------------:|:------------:|:------------:|:------------:|
