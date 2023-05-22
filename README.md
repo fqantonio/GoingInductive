@@ -15,7 +15,7 @@ Should you, as a teacher of science and tech, **move to an inductive strategy**,
 
 The **conclusions** of this work are very specific because of the longitudinal sample used: Junior and junior high for the physics and chemistry content of the Portuguese curriculum. They are drawn from 16 years of data (2003-2019), both qualitative and quantitative, from actual teacher day-to-day practice learning strategies: deductive and inductive. The transition, over this period of time, is highlighted and the learning flux elaborated for the integration of bLearning environments is also presented.
 
-The **statistical analysis** uses R Code (RStudio) and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative and qualitative data. It goes into a discussion of the data structure, normality and sample independence, and it ends with an explanation about the statistical methodology, results and conclusions. The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used 3 learning outcomes: transfer learning, laboratory practice and social skills, represented respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classrrom observational paper forms.
+The **statistical analysis** uses R Code (RStudio) and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative and qualitative data. It goes into a discussion of the data structure, normality and sample independence, and it ends with an explanation about the statistical methodology, results and conclusions. The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used 3 learning outcomes: transfer learning, laboratory practice and social skills, represented respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper forms.
 
 There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to 4C/ID (four component instructional design). The concept map's that helped to elaborate the learning flux for this learning environmental process are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with cmaptools [^2] and used merrionboer´s 4C/ID [^3] map structure. 
 
@@ -49,19 +49,19 @@ Luckily, the knowledge and the tools available online today, allows us to go fur
 
 # RESULT
 
-The next two tables present the **results**, only for the most **reliable sample** used in this work, in spite of the fact that the sample is much large. So, they showed results about the JUNIOR sample for SCHOOL 1, which means not having the school effect nor the problem of using the less numbered entrances of the junior high students sample. 
+The next two tables present the **results**, only for the most **reliable sample** used in this work, in spite of the fact that the sample is much large. So, they showed results about the JUNIOR sample for SCHOOL 1, which means not having the school effect nor the problem of using the less numbered entrances of the junior high students sample. CLASS is an weight average of the **variables**, TEST, LAB and BEHAV with formula: CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV. The RANK variable is categorized using the variable CLASS and is a measured of the level of adaptation of students to the school system: RANK 1, for CLASS less or equal to 45%; RANK 2, for CLASS between 45% and 70% and RANK 3, for CLASS greater or equal to 70%. MALE and FEMALE are variables related to the gender of students: categorized by F if students are female gender and M if male.
 
 | SAMPLE | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES |
 |:------------|:------------:|:------------:|:------------:|:------------:|:------------:|
-| *Junior for school 1*             | \+   | \+  | \-    | \+    | AFTER this road sample is junior grade for SCHOOL 1                                                                        |
-| GRADE 7                          | \~   | \+  | \-    | \~    |                                                                        |
-| GRADE 8                         | \+   | \+  | \-    | \~    | M4CID=="1",#71 entrances, less then 100 entrances                      |
-| GRADE 9                         | \~   | \+  | \+    | \+    |                                                                        |
-| RANK 1                          | \-   | \+  | \-    | \-    |                                                                        |
-| RANK 2                          | \~   | \+  | \-    | \~    |                                                                        |
-| RANK 3                          | \~   | \+  | \-    | \-    |                                                                        |
-| FEMALE                          | \+   | \+  | \~    | \+    |                                                                        |
-| MALE                            | \~   | \+  | \-    | \~    |              |
+| *Junior for school 1*             | \+   | \+  | \-    | \+    |                  |
+| GRADE 7                          | \~   | \+  | \-    | \~    |                   |
+| GRADE 8                         | \+   | \+  | \-    | \~    | M4CID=="1", 71 entrances, less then 100 entrances|
+| GRADE 9                         | \~   | \+  | \+    | \+    |          |
+| RANK 1                          | \-   | \+  | \-    | \-    |           |
+| RANK 2                          | \~   | \+  | \-    | \~    |            |
+| RANK 3                          | \~   | \+  | \-    | \-    |            |
+| FEMALE                          | \+   | \+  | \~    | \+    |          |
+| MALE                            | \~   | \+  | \-    | \~    |          |
 
 | Variable | + | ~ | -| SAMPLE + | no effect sample | SAMPLE - | Notes | 
 |---|:---:|:---:|:---:|:---:|:---:|:---:|---|
