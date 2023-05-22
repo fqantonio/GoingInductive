@@ -7,6 +7,35 @@ The inner goal of a teacher is always to have their students engaged in their su
 
 ???RESEARCH QUESTIONS
 
+The conclusions presented here focus on the junior sample of school 1 (table above). 
+
+**Overall**, as a teacher of science and tech, you should move to implement the inductive strategy as your methodology for learning because it improves the **academic results** with a huge impact on **lab practice**.
+
+However there are risks and concerns to be accommodated during the process, namely: 
+
+  1. the less adapted to the school system;
+  2. in the **behavior** aspect of the classroom managment and in the **learning transfer**;
+  3. in less degree of concern, Grade 7 and males seems to benefit less from this change.
+
+**Bottom of line**, if you don't want to have the less risks as possible, change if you have a student group more adapted to school and if you want to increase the lab practices skills.
+
+RISKS:
+  1. In the **learning transfer** and **academic results**, there is the risk that the less adapted to the school environment suffer more with this strategic change;
+  2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^???] impact in all samples: the risk of loosing control of the students group inside the classroom is real, but in this case, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment;
+
+CONCERNS:
+  1. There seems to be a positive effect only in GRADE 8 and FEMALE groups for the **learning transfer**, the other groups the change don't have any effect. 
+  2. On the **behavior field** only grade 9 seems to get some positive effect;
+  3. In general, Female gender group tend to benefit more them male;
+  4. In general, RANK 3 tends to benefit more then the other rank groups;
+  5. grade 9th benefit more then the other grades;
+  
+BENEFITS:
+  1. In overall, the change has a positive impact on junior grade students for the **academic results**; 
+  2. **Lab practice** has a large positive effect in all samples;
+
+------------------------------
+
 The answer is yes, you should, but... you need, according with this work, to take in account some crucial remarks, that related to the outcames and the risks, namely: 
 
 1. In general, students will benefit from moving to an inductive methodology and, particularly, the 4C/ID used here;
@@ -34,4 +63,34 @@ The clear correlation between TEST and CLASS variable show that they are depende
 
 data seems to be not normal, except the CLASS variable sample data don't behav as a normal distribution under both tests, nor if we do the same analysis for the school 0 and shcool 1. Meaning that we should use a non-parametric . diferent SAMPLES for the 4C/ID treatment effect
 sample data don't behav as a normal distribution under both tests, nor if we do the same analysis for the school 0 and shcool 1. Meaning that we should use a non-parametric 
+
+# DISCUSSION 
+
+Reiterate results
+Policy implications
+Future research
+Tie loose hands???
+world research corroboration???
+Clarify
+robustness
+
+# KEYWORDS
+
+Inductive learning strategy; 
+4C/ID; 
+Direct Instruction; 
+Learning Flux - Concept Maps; 
+Statistical Non-parametric Inference; 
+Quantitative and Qualitative analysis
+Learning transfer - the hability of pass information to the students measured in the tests (online or paper supported),directly related to the TEST avriable
+Lab Practice - Laboratory activities directly related to the variable LAB
+Behavior - Following social and behavioral classroom rules directly related to the BEHAV variable.
+Academic results - weight average variable directly related to the other variables: TEST, LAB and BEHAV.
+
+# REFERENCES
+
+[^1] https://github.com/fqantonio/GoingInductive
+[^2] https://cmap.ihmc.us/
+[^3] https://www.4cid.org/
+[^???] there is a need to make some anlysis of this data because it seems that there is an underlying effect
 
