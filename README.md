@@ -88,6 +88,8 @@ The conclusions presented here focus on the junior sample of school 1 (table abo
 
 However there are risks and concerns to be accommodated during the process, namely the less adapted to the school system, in the **behavior** aspect of the classroom managment and in the **learning transfer**. In less degree of concern, Grade 7 and males seems to benefit less from this change.
 
+**Bottom of line**, if you don't want to have the less risks as possible, change if you have a student group more adapted to school and if you want to increase the lab practices skills.
+
 RISKS:
   1. In the **learning transfer** and **academic results** there is the risk that the less adapted to the school environment suffer more with this strategic change;
   2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^???] impact in all samples: the risk of loosing control of the students group inside the classroom is real, but in this case, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment;
