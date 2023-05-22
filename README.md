@@ -84,7 +84,9 @@ The next table resumes the former table in another order: this next one shows th
   
 The conclusions presented here focus on the junior sample of school 1 (table above). 
 
-**Overall**, as a teacher of science and tech, you should move to implement the inductive strategy as your methodology for learning but there are risks and concerns to be accommodated:
+**Overall**, as a teacher of science and tech, you should move to implement the inductive strategy as your methodology for learning because it improves the **academic results** and have a huge impact on **lab practice**.
+
+However there are risks and concerns to be accommodated during the process, namely the less adapted to the school system, in the **behavior** aspect of the classroom managment and in the **learning transfer**. In less degree of concern, Grade 7 and males seems to benefit less from this change.
 
 RISKS:
   1. In the **learning transfer** and **academic results** there is the risk that the less adapted to the school environment suffer more with this strategic change;
