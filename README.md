@@ -7,7 +7,7 @@ This is a **`Going Inductive`** paper DRAFT roadmap, not only to address the res
 Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities, that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some crucial remarks. If you decide to do it, there will be consequences for the students, different for different categories, that need to be **accommodated**. The question addressed here has also consequences all of the stakeholders in the learning process: students, teachers, policy makers and school management. The sequence starts in the exploratory data analysis (EDA), includes the inference treatment effect, regression analysis and a regression discontinuity design, and ends with the results and conclusions and some remarks about the findings and future research.
 
 **Keywords**
-Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flux; Concept Maps; Statistical Non-parametric Inference; Quantitative and Qualitative analysis; academic results; learning transfer; behavior; lab practice; 
+Inductive learning strategy; 4C/ID; Principles Instruction; Learning Flux; Concept Maps; Statistical Non-parametric Inference; Quantitative and Qualitative analysis; academic results; learning transfer; behavior; lab practice; 
 
 # INTRODUCTION
 
@@ -121,15 +121,15 @@ robustness
 
 # KEYWORDS
 
-Inductive learning strategy; 
-4C/ID; 
-Direct Instruction; 
+Inductive learning strategy - the learning flux starts by facts, experiences and real problems to move towards knowledge and conceptual mental model; 
+4C/ID - instructional design approach for complex learning. It provides guidelines for the analysis of real-life tasks and the transition into a blueprint for an educational program.
+Principles Instruction - These principles prescribe a cycle of instruction consisting of activation, demonstration, application, and integration;
 Learning Flux - Concept Maps; 
 Statistical Non-parametric Inference; 
 Quantitative and Qualitative analysis
-Learning transfer - the hability of pass information to the students measured in the tests (online or paper supported),directly related to the TEST avriable
+Learning transfer - the ability of pass information to the students measured in the tests (online or paper supported),directly related to the TEST avriable
 Lab Practice - Laboratory activities directly related to the variable LAB
-Behavior - Following social and behavioral classroom rules directly related to the BEHAV variable.
+Behavior - Ability to follow social and behavioral classroom rules directly related to the BEHAV variable.
 Academic results - weight average variable directly related to the other variables: TEST, LAB and BEHAV.
 
 # REFERENCES
@@ -138,3 +138,5 @@ Academic results - weight average variable directly related to the other variabl
 [^2] https://cmap.ihmc.us/
 [^3] https://www.4cid.org/
 [^???] there is a need to make some anlysis of this data because it seems that there is an underlying effect
+[^tt] - Journal of Research on Technology in Education, 2007, 40(1), A Task-Centered Instructional Strategy, M. David Merrill
+[^???] https://www.4cid.org/publications/
