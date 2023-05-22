@@ -7,7 +7,7 @@ This is a **`Going Inductive`** paper DRAFT roadmap, not only to address the res
 Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities, that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some crucial remarks. If you decide to do it, there will be consequences for the students, different for different categories, that need to be **accommodated**. The question addressed here has also consequences all of the stakeholders in the learning process: students, teachers, policy makers and school management. The sequence starts in the exploratory data analysis (EDA), includes the inference treatment effect, regression analysis and a regression discontinuity design, and ends with the results and conclusions and some remarks about the findings and future research.
 
 **Keywords**
-Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flux; Concept Maps; Statistical Non-parametric Inference; Quantitative and Qualitative analysis.
+Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flux; Concept Maps; Statistical Non-parametric Inference; Quantitative and Qualitative analysis; academic results; learning transfer; behavior; lab practice; 
 
 # INTRODUCTION
 
@@ -71,8 +71,8 @@ Resuming the former table, this next one shows the percentage of "positive", "ne
 |---|:---:|:---:|:---:|:---:|:---:|:---:|---|
 | TEST (Learning Transfer) | 33% | 56% | 11% | All Junior sample, 8th grade and FEMALE | GRADE 7, 9; | RANK1 ||
 | LAB (Lab practice) |100%|0%|0%||all samples|||
-|BEHAV (Following social and behavioral classroom rules)|11%|11%|78%|GRADE 9|FEMALE|Junior; GRADE 7 and 8; all RANK's; MALE ||
-|CLASS (weight average learning outcome) |33%|45%|22%|junior; 9th grade; FEMALE|grades 7 and 8; RANK 2 e MALE|RANK 1 and 3 ||
+|BEHAV (behavior)|11%|11%|78%|GRADE 9|FEMALE|Junior; GRADE 7 and 8; all RANK's; MALE ||
+|CLASS (academic results) |33%|45%|22%|junior; 9th grade; FEMALE|grades 7 and 8; RANK 2 e MALE|RANK 1 and 3 ||
 
 # CONCLUSION
 
@@ -84,16 +84,18 @@ The conclusions presented here are using only the table above. For more, please 
 
 RISKS:
   1. In the **learning transfer** there is the risk that the less adapted to the school environment have a negative impact;
-  2. For **Social Skills**, specifically in aspect of following the classroom rules, there is a major negative impact in all samples, except in the case the 9th grade, positive effect;
-  3. In the aspect of the **learning outcomes**, there is a negative impact for RANK 1 and 3.
+  2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^???] impact in all samples, except in the case the 9th grade, positive effect: The **risks** loosing control of the students group inside the classroom but in this case, in spite of decreasing, they were all positive;
+  3. In the aspect of the **academic results**, there is a need to accomodate the negative inpact for groups of the less addated to school and the most: RANK 1 and 3.
 
 CONCERNS:
-1. there is a need accommodate the probability of a large negative effect in the behavior context, that is, following social and behavioral classroom rules. 
-  2. along with the fact that the **9th grade** seems to benefit more from this treatment effect, students **more adapted** to the school and **females** benefit more;
-  3. the **lab practice** is what students benefit more with this strategic change;
-  4. The **risks** of this change are in the loosing control of the students group inside the classroom but in this case, in spite of decreasing, they were all positive;
-  5. The **academic results** decrease in the case of the less adapted students and females benefit more;
+  1. There seems to be no effect for the **lerniang transferGrade 7 and 9, rank2 and 3,and MALE 
+  For the **academic results** there is a decrease in the case of the less adapted students;
   6. 9th grade benefit more.
+
+BENEFITS:
+  1. Learning transfer
+  2. Lab practice is a positive effect;
+  2. 
 
 # DISCUSSION 
 
@@ -105,6 +107,22 @@ world research corroboration???
 Clarify
 robustness
 
+# KEYWORDS
+
+Inductive learning strategy; 
+4C/ID; 
+Direct Instruction; 
+Learning Flux - Concept Maps; 
+Statistical Non-parametric Inference; 
+Quantitative and Qualitative analysis
+Learning transfer - the hability of pass information to the students measured in the tests (online or paper supported),directly related to the TEST avriable
+Lab Practice - Laboratory activities directly related to the variable LAB
+Behavior - Following social and behavioral classroom rules directly related to the BEHAV variable.
+Academic results - weight average variable directly related to the other variables: TEST, LAB and BEHAV.
+
+# REFERENCES
+
 [^1] https://github.com/fqantonio/GoingInductive
 [^2] https://cmap.ihmc.us/
 [^3] https://www.4cid.org/
+[^???] there is a need to make some anlysis of this data because it seems that there is an underlying effect
