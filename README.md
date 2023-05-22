@@ -63,6 +63,8 @@ The next two tables present the **results**, only for the most **reliable sample
 | FEMALE                          | \+   | \+  | \~    | \+    |          |
 | MALE                            | \~   | \+  | \-    | \~    |          |
 
+Resuming the former table, this next one shows the percentage of "positive", "negative" and "no effects" for each sample.
+
 | Variable | + | ~ | -| SAMPLE + | no effect sample | SAMPLE - | Notes | 
 |---|:---:|:---:|:---:|:---:|:---:|:---:|---|
 | TEST (Learning Transfer) | 22% | 56% | 0% | All Junior sample, 8th grade and FEMALE | GRADE 7, 9; | RANK1 ||
