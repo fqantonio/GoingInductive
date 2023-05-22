@@ -1,33 +1,29 @@
 # WELCOME
 
-Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities that you prepare and organize, even if you include bLearning?
-
-This is the **`Going Inductive`** paper DRAFT roadmap! This repository [^1] is used for documenting, managing and making available the outcame **knowledge base source** about the work done so far in order to answer the former research question. Here is shared, not only the results and conclusions, but also procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flux and blearning. Hopefully, there will be, at least, one paper based on this. There is also a **wiki** where the comments and R code is presented.
+This is a **`Going Inductive`** paper DRAFT roadmap, not only to address the research question but also to share the work done: a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flux and blearning practice. Hopefully, there will be, at least, one paper based on this. There is also a **wiki** where the comments and R code is presented.
 
 # ABSTRACT
 
-Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some crucial remarks. If you decide to do it, there will be consequences for the students in different categories that need to be **accommodated**. The question addressed here has also consequences for the stakeholders in the learning process: students, teachers, policy and school management implications. After the exploratory data analysis (EDA), this work used inference treatment effect, regression analysis and a regression discontinuity design for the results and subsquently conclusions.
+Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities, that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some crucial remarks. If you decide to do it, there will be consequences for the students, different for different categories, that need to be **accommodated**. The question addressed here has also consequences all of the stakeholders in the learning process: students, teachers, policy makers and school management. The sequence starts in the exploratory data analysis (EDA), includes the inference treatment effect, regression analysis and a regression discontinuity design, and ends with the results and conclusions and some remarks about the findings and future research.
 
 **Keywords**
-Inductive strategy; 4C/ID; Direct Instruction; Learning Flux; concept maps; Statistical inference; Quantitative and Qualitative analysis.
+Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flux; Concept Maps; Statistical Non-parametric Inference; Quantitative and Qualitative analysis.
 
 # INTRODUCTION
 
-Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities that you prepare and organize, even if you include bLearning? In my opinion, and based on the results, you should, but with some specific remarks that are explained at the conclusion, below and in the document **CONCLUSION**.
+Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities that you prepare and organize, even if you include bLearning? In my opinion, and based on the results, you should, but with some specific remarks that are explained at the conclusion, below and in the document 
 
-The data was gathered along 16 years of teacher practice and reflection. The conclusions are very specific because of the longitudinal sample used: Junior and junior high for the physics and chemistry content of the Portuguese curriculum. 
+The **conclusions** of this work are very specific because of the longitudinal sample used: Junior and junior high for the physics and chemistry content of the Portuguese curriculum. They are drawn from 16 years of data (2003-2019), both qualitative and quantitative, from actual teacher day-to-day practice learning strategies: deductive and inductive. The transition, over this period of time, is highlighted and the learning flux elaborated for the integration of bLearning environments is also presented.
 
-The **analysis work flow** uses R Code (RStudio) and starts with a exploratory data analysis (EDA), a descriptive summary of the quantitative and qualitative data. It goes into a discussion of the data structure, normality and sample independence and ends with an explanation about the methodology used, results and conclusions. The statistical methodology used is non-parametric inferencial and clustering. 
+The **statistical analysis** uses R Code (RStudio) and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative and qualitative data. It goes into a discussion of the data structure, normality and sample independence, and it ends with an explanation about the statistical methodology, results and conclusions. The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used 3 learning outcomes: transfer learning, laboratory practice and social skills, represented respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classrrom observational paper forms.
 
-There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to 4C/ID, four component instructional design. It is presented the concept map's that helped to elaborate the learning flux for the learning environments. The inductive methodology that supported the educational worlflow was designed with cmaptools [^2] and used merrionboer´s 4C/ID [^3] structure. 
+There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to 4C/ID (four component instructional design). The concept map's that helped to elaborate the learning flux for this learning environmental process are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with cmaptools [^2] and used merrionboer´s 4C/ID [^3] map structure. 
 
-The **conclusions** described in this work are drawn from 16 years of data (2003-2019), both qualitative and quantitative, from actual teacher day-to-day practice learning strategies: deductive and inductive. This transition, over this period of time, is highlighted and the learning flux elaborated for the integration of bLearning environments is also presented. 
+This work, as well as the data, is also presented at the blog “https://4cidchange.edublogs.org/”.
 
-The **analysis** was made based in 3 learning outcomes: transfer tests, behavior and social skills registered in specific forms. The results were based on the usual inference statistical and qualitative analysis. This work, as well as the data, is also presented at the blog “https://4cidchange.edublogs.org/”.
+# GOALS and RESEARCH QUESTIONS
 
-# GOAL (Research questions)
-
-The **main goal** is to understand the impact of the use of Inductive Methodology 4C/ID by answering the questions: 
+The **main goal** is to understand the impact of the use of Inductive Methodology 4C/ID, by answering the following the **research questions**: 
   1 - changing the learning methodologies from one mainly deductive (Direct Instruction[^1]) to another one mostly inductive (4C/ID [^2]), means what for your students? Who benefits? What are the pros and cons about this methodological decision?
   2 - Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning? 
   3 - And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results? 
@@ -37,20 +33,17 @@ The **main goal** is to understand the impact of the use of Inductive Methodolog
 
 # MOTIVATION
 
-Most of the time the professional, specific, day-to-day teacher work gathered data is rarely or never investigated. At least in the portuguese educational environment. For the teachers, there is not much time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are possible. Worse, even if someone did it, it's normal to not share it. Research and discussion with peers are crucial to better adjust our decisions regarding the way students learn today. The way learning happens and motivation changes, are so fast! So, teaching, at least in Portugal, is a very solitary job with all of its directly related drawbacks.
+Most of the time the professional, specific, day-to-day teacher work gathered data is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is not much time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are possible. Worse, even if someone did it, it's normal to not share it. Research and discussion with peers are crucial to better adjust our decisions regarding the way students learn today. The way learning happens and motivation changes, is so fast! So, teaching, at least in Portugal, is a very solitary job with all of its directly related drawbacks.
 
-My personal goal was to know if the strategic decisions I did in 2008 were positive for my students. Well, was it? The questions are at least two: 
-
-1. Did my students benefit from the educational strategic change? It was a global benefit or some groups benefited more.
-2. To share this conclusion in order to exchange knowledge with others around the world, and see if they corroborate with this findings.
+My **personal goal** was to know if the strategic decisions I did in 2008 were positive for my students: did they benefit from the educational strategic change? It was a global benefit or some groups benefited more? Does anyone have the same kind of research? Can anyone corroborate this results or criticize them? Sharing is the way to go in order to exchange results an find knowledge.
 
 # CONTEXT
 
-On the other end, the organizational environment of schools and teachers in Portugal doesn't help either. Focused on managing the schools as enterprises with a lot of controlling bureaucracy, putting numbers and paperwork ahead of the crucial and significant decisions around teaching, real assessment is barely used, and when it is, its just at the university level. This means:
+The organizational environment of schools and teachers in Portugal doesn't help either. Focused on managing the schools as enterprises with a lot of controlling bureaucracy, putting numbers and paperwork ahead of the crucial and significant decisions around teaching, real assessment is barely used, research also, and when it happens, its just shared at the university level. Meaning:
   1 - The crucial planning and individual teacher-student interaction is less important for this organization;
   2 - Time spent on research and discussions is useless: numbers constrain our job, of course, it's normal, but with the same money we can do better if we can get together and discuss the way we could be organized.
 
-Luckily, the knowledge and the tools available online today, permit that we can go further with peer contribution and go beyond a simple Average Treatment Effect (some of us, at least do some mean computations): statistical knowledge is not something that we are prepared for and the statistical tools are very expensive. Now this tools are available in opensource licences: so, time is crucial: teacher need it to study, get the necessary knowledge and interpret the results. And publish it.
+Luckily, the knowledge and the tools available online today, allows that we can go further with peer contribution and go beyond a simple Average Treatment Effect (some of us, at least do some mean computations): statistical knowledge is not something that we are prepared for and the statistical tools are very expensive. Now this tools are available in opensource licences: so, time is crucial: teacher need it to study, get the necessary knowledge and interpret the results. And publish it.
 
 # RESULT
 
