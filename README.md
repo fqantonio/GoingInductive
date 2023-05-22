@@ -80,7 +80,7 @@ The next table resumes the former table in another order: this next one shows th
 
 # CONCLUSION
 
-(need more editing and discussion)
+(need more editing ;) )
   
 The conclusions presented here focus on the junior sample of school 1 (table above). 
 
