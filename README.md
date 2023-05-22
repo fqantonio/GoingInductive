@@ -55,7 +55,7 @@ The next two tables present the **results**, only for the most **reliable sample
 |:------------|:------------:|:------------:|:------------:|:------------:|:------------:|
 | *Junior for school 1*             | \+ (54 to 58)  | \+ (53 to 66)  | \- (81 to 74)    | \+ (59 to 62)    |   Median values presented in %               |
 | GRADE 7                          | \~   | \+ (56 to 64)  | \- (77 to 71)   | \~    |                   |
-| GRADE 8                         | \+ (54 to 58)   | \+ (55 to 68)  | \-    | \~    | M4CID=="1", 71 entrances, less then 100 entrances|
+| GRADE 8                         | \+ (54 to 58)   | \+ (55 to 68)  | \- (85 to 60)   | \~    | M4CID=="1", 71 entrances, less then 100 entrances|
 | GRADE 9                         | \~   | \+ (44 to 66)  | \+ (80 to 85)   | \+ (55 to 64)   |          |
 | RANK 1                          | \- (34 to 29)  | \+ (26 to 35) | \- (65 to 50)    | \- (39 to 37)    |           |
 | RANK 2                          | \~   | \+ (51 to 62) | \- (80 to 67)    | \~    |            |
@@ -78,14 +78,14 @@ Resuming the former table, this next one shows the percentage of "positive", "ne
 
 (need more editing and discussion)
   
-The conclusions presented here are using only the table above. For more, please read the conclusion file in this github repository.
+The conclusions presented here focus on the junior sample of school 1 (table above). 
 
 **Overall**, as a teacher of science and tech, you should move to implement the inductive strategy as your methodology for learning but there are risks and concerns to be accommodated:
 
 RISKS:
-  1. In the **learning transfer** there is the risk that the less adapted to the school environment suffer more with this strategic change: median change 34 to 29%;
-  2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^???] impact in all samples, except in the case the 9th grade, positive effect: the risk of loosing control of the students group inside the classroom is real, but in this case, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50%;
-  3. In the aspect of the **academic results**, there is a need to accommodate the negative inpact for groups of the less adapted to school and the most: RANK 1 (median change from 39 to 37) and 3 (77 to 81).
+  1. In the **learning transfer** there is the risk that the less adapted to the school environment suffer more with this strategic change;
+  2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^???] impact in all samples: the risk of loosing control of the students group inside the classroom is real, but in this case, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment;
+  3. In the aspect of the **academic results**, there is a need to accommodate the negative impact for groups of the less adapted to school (RANK 1);
 
 CONCERNS:
   1. There seems to be no effect for the **learning transfer** Grade 7 and 9, rank2 and 3,and MALE 
