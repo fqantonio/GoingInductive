@@ -135,23 +135,23 @@ robustness
 
 # KEYWORDS
 
-**´Inductive learning strategy´** - the learning flux starts by facts, experiences and real problems and move towards knowledge and a conceptual mental model; 
+**`Inductive learning strategy`** - the learning flux starts by facts, experiences and real problems and move towards knowledge and a conceptual mental model; 
 
-**´4C/ID´** - instructional design approach for complex learning. It provides guidelines for the analysis of real-life tasks and the transition into a blueprint for an educational program.
+**`4C/ID`** - instructional design approach for complex learning. It provides guidelines for the analysis of real-life tasks and the transition into a blueprint for an educational program.
 
-**´Direct Instruction´** - Principles of Instruction that prescribe a cycle of instruction consisting of activation, demonstration, application, and integration ([^???]Merril, 2007);
+**`Direct Instruction`** - Principles of Instruction that prescribe a cycle of instruction consisting of activation, demonstration, application, and integration ([^???]Merril, 2007);
 
-**´Learning Flux´** - longitudinal (temporal) map with sequenced activities organized in time, by complexity and logical learning coherence; 
+**`Learning Flux`** - longitudinal (temporal) map with sequenced activities organized in time, by complexity and loical learning coherence; 
 
-**´Statistical Non-parametric Inference´** -  statistical techniques that use data to test if two sample came from the same non-normality distribution; 
+**`Statistical Non-parametric Inference`** -  statistical techniques that use data to test if two sample came from the same non-normality distribution; 
 
-**´Learning transfer´** - the ability of pass information to the students measured by tests (online or paper supported), directly related to the TEST variable
+**`Learning transfer`** - the ability of pass information to the students measured by tests (online or paper supported), directly related to the TEST variable
 
-**´Lab Practice´** - Laboratory activities directly related to the variable LAB
+**`Lab Practice`** - Laboratory activities directly related to the variable LAB
 
-**´Behavior´** - Ability to follow social and behavioral classroom rules directly related to the BEHAV variable.
+**`Behavior`** - Ability to follow social and behavioral classroom rules directly related to the BEHAV variable.
 
-**´Academic results´** - weight average variable directly related to the other variables: TEST, LAB and BEHAV.
+**`Academic results`** - weight average variable directly related to the other variables: TEST, LAB and BEHAV.
 
 # REFERENCES
 
