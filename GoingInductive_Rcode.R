@@ -58,8 +58,8 @@ library(gridExtra) #arrange graphs in rows
 #AT this point I will do an exploratory data analysis (EDA)
 #Use this step before any of the analysis bellow
 #perhaps you need to set your set working directory: setwd: setwd("/Users/novo/Desktop/Doutoramento/GoingInductive")
-setwd("/Users/novo/Desktop/Doutoramento/GoingInductive")
-data<-read.csv("./DATA/DATA_4CID_2023.csv")
+setwd("/Users/novo/Desktop/Doutoramento/GoingInductivePaper/DATA")
+data<-read.csv("./DATA_4CID_2023.csv")
 data<-data %>% mutate(CLASS=0.5*TEST+0.3*LAB+0.2*BEHAV)
 colnames(data) <- c("ID","DATE" ,"SCHOOL" ,"GENDER" ,"TEST" ,"LAB" ,"BEHAV" ,"GRADE" ,"M4CID","CLASS")
 head(data)

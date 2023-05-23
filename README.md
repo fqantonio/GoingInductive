@@ -1,23 +1,27 @@
 # WELCOME
 
-This is a **`Going Inductive`** paper DRAFT roadmap, not only to address the research question but also to share the work done: a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flux and blearning practice. Hopefully, there will be, at least, one paper based on this. There is also a **wiki** where the comments and R code is presented.
+This is a **`Going Inductive`** paper DRAFT roadmap, not only to address the research question but also to share the work done: a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flux and blearning practice. Hopefully, there will be, at least, one paper based on this.
 
 # ABSTRACT
 
-Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities, that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some crucial remarks. If you decide to do it, there will be consequences for the students, different for different categories, that need to be **accommodated**. The question addressed here has also consequences all of the stakeholders in the learning process: students, teachers, policy makers and school management. The sequence starts in the exploratory data analysis (EDA), includes the inference treatment effect, regression analysis and a regression discontinuity design, and ends with the results and conclusions and some remarks about the findings and future research.
+Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities, that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some crucial remarks. If you decide to do it, there will be consequences for the students, different for different categories, that need to be **accommodated**. The question addressed here has direct consequences usefull for the stakeholders in the learning process: students, teachers, policy makers and school management. 
+
+The work sequence starts with the exploratory data analysis (EDA); next, there is an presentation of the non-parametric inference treatment effect results, regression analysis, a regression discontinuity design, cluster analysis and it ends with the results, conclusions, some remarks about the findings and future research.
 
 **Keywords**
-Inductive learning strategy; 4C/ID; Principles Instruction; Learning Flux; Concept Maps; Statistical Non-parametric Inference; Quantitative and Qualitative analysis; academic results; learning transfer; behavior; lab practice; 
+Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flux; Statistical Non-parametric Inference; academic results; learning transfer; behavior; lab practice;
 
 # INTRODUCTION
 
-Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities that you prepare and organize, even if you include bLearning? In my opinion, and based on the results, you should, but with some specific remarks that are explained at the conclusion, below and in the document 
+Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of learning activities that you prepare and organize, even if you include bLearning? In my opinion, and based on the results, you should, but with some specific remarks that are discussed and explained at the conclusion.
 
-The **conclusions** of this work are very specific because of the longitudinal sample used: Junior and junior high for the physics and chemistry content of the Portuguese curriculum. They are drawn from 16 years of data (2003-2019), both qualitative and quantitative, from actual teacher day-to-day practice learning strategies: deductive and inductive. The transition, over this period of time, is highlighted and the learning flux elaborated for the integration of bLearning environments is also presented.
+The **conclusions** of this work are very specific because of the longitudinal sample used: Junior and junior high for the physics and chemistry content of the Portuguese school curriculum. They are drawn from 13 years of data, in the period from 2003 to 2019, both qualitative and quantitative, from actual teacher day-to-day practice learning strategies: deductive and inductive. The transition made over this period of time, is highlighted and the learning flux elaborated for the integration also of bLearning environments.
 
-The **statistical analysis** uses R Code (RStudio) and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative and qualitative data. It goes into a discussion of the data structure, normality and sample independence, and it ends with an explanation about the statistical methodology, results and conclusions. The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used 3 learning outcomes: transfer learning, laboratory practice and social skills, represented respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper forms.
+The **statistical analysis** uses R Code (RStudio) and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data. It goes into a discussion of the data structure, normality and sample independence, and it ends with an explanation about the statistical methodology, results and conclusions. 
 
-There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to 4C/ID (four component instructional design). The concept map's that helped to elaborate the learning flux for this learning environmental process are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with cmaptools [^2] and used merrionboer´s 4C/ID [^3] map structure. 
+The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used 3 learning outcomes: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper register forms.
+
+There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to 4C/ID (four component instructional design). The concept map's that helped to elaborate the learning flux for this learning environmental process use cmaptools [^???] are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with merrionboer´s 4C/ID [^3] map structure. 
 
 This work, as well as the data, is also presented at the blog “https://4cidchange.edublogs.org/”.
 
@@ -121,13 +125,12 @@ robustness
 
 # KEYWORDS
 
-Inductive learning strategy - the learning flux starts by facts, experiences and real problems to move towards knowledge and conceptual mental model; 
+Inductive learning strategy - the learning flux starts by facts, experiences and real problems and move towards knowledge and a conceptual mental model; 
 4C/ID - instructional design approach for complex learning. It provides guidelines for the analysis of real-life tasks and the transition into a blueprint for an educational program.
-Principles Instruction - These principles prescribe a cycle of instruction consisting of activation, demonstration, application, and integration;
-Learning Flux - Concept Maps; 
-Statistical Non-parametric Inference; 
-Quantitative and Qualitative analysis
-Learning transfer - the ability of pass information to the students measured in the tests (online or paper supported),directly related to the TEST avriable
+Direct Instruction - Principles of Instruction that prescribe a cycle of instruction consisting of activation, demonstration, application, and integration ([^???]Merril, 2007);
+Learning Flux - longitudinal (temporal) map with sequenced activities organized in time, by complexity and logical learning coherence; 
+Statistical Non-parametric Inference -  statistical techniques that use data to test if two sample came from the same non-normality distribution; 
+Learning transfer - the ability of pass information to the students measured by tests (online or paper supported), directly related to the TEST variable
 Lab Practice - Laboratory activities directly related to the variable LAB
 Behavior - Ability to follow social and behavioral classroom rules directly related to the BEHAV variable.
 Academic results - weight average variable directly related to the other variables: TEST, LAB and BEHAV.
