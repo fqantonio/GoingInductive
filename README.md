@@ -110,7 +110,7 @@ However, there are risks and concerns to be accommodated during the process, nam
 
 RISKS:
   1. In the **learning transfer** and **academic results**, there is the risk that the less adapted to the school environment suffer more with this strategic change;
-  2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^???] impact in all samples: the risk of loosing control of the students group inside the classroom is real, but in this case, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment;
+  2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^???] impact in all samples: the risk of loosing control of the students group inside the classroom is real, but note that, although, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment;
 
 CONCERNS:
   1. There seems to be a positive effect only in GRADE 8 and FEMALE groups for the **learning transfer**, the other groups the change don't have any effect. 
