@@ -135,26 +135,34 @@ robustness
 
 # KEYWORDS
 
-Inductive learning strategy - the learning flux starts by facts, experiences and real problems and move towards knowledge and a conceptual mental model; 
-4C/ID - instructional design approach for complex learning. It provides guidelines for the analysis of real-life tasks and the transition into a blueprint for an educational program.
-Direct Instruction - Principles of Instruction that prescribe a cycle of instruction consisting of activation, demonstration, application, and integration ([^???]Merril, 2007);
-Learning Flux - longitudinal (temporal) map with sequenced activities organized in time, by complexity and logical learning coherence; 
-Statistical Non-parametric Inference -  statistical techniques that use data to test if two sample came from the same non-normality distribution; 
-Learning transfer - the ability of pass information to the students measured by tests (online or paper supported), directly related to the TEST variable
-Lab Practice - Laboratory activities directly related to the variable LAB
-Behavior - Ability to follow social and behavioral classroom rules directly related to the BEHAV variable.
-Academic results - weight average variable directly related to the other variables: TEST, LAB and BEHAV.
+**´Inductive learning strategy´** - the learning flux starts by facts, experiences and real problems and move towards knowledge and a conceptual mental model; 
+
+**´4C/ID´** - instructional design approach for complex learning. It provides guidelines for the analysis of real-life tasks and the transition into a blueprint for an educational program.
+
+**´Direct Instruction´** - Principles of Instruction that prescribe a cycle of instruction consisting of activation, demonstration, application, and integration ([^???]Merril, 2007);
+
+**´Learning Flux´** - longitudinal (temporal) map with sequenced activities organized in time, by complexity and logical learning coherence; 
+
+**´Statistical Non-parametric Inference´** -  statistical techniques that use data to test if two sample came from the same non-normality distribution; 
+
+**´Learning transfer´** - the ability of pass information to the students measured by tests (online or paper supported), directly related to the TEST variable
+
+**´Lab Practice´** - Laboratory activities directly related to the variable LAB
+
+**´Behavior´** - Ability to follow social and behavioral classroom rules directly related to the BEHAV variable.
+
+**´Academic results´** - weight average variable directly related to the other variables: TEST, LAB and BEHAV.
 
 # REFERENCES
 
-  [^1] https://github.com/fqantonio/GoingInductive
+[^1] https://github.com/fqantonio/GoingInductive
   
-  [^2] https://cmap.ihmc.us/
+[^2] https://cmap.ihmc.us/
   
-  [^3] https://www.4cid.org/
+[^3] https://www.4cid.org/
   
-  [^???] there is a need to make some anlysis of this data because it seems that there is an underlying effect
+[^???] there is a need to make some anlysis of this data because it seems that there is an underlying effect
   
-  [^tt] - Journal of Research on Technology in Education, 2007, 40(1), A Task-Centered Instructional Strategy, M. David Merrill
+[^tt] - Journal of Research on Technology in Education, 2007, 40(1), A Task-Centered Instructional Strategy, M. David Merrill
   
-  [^???] https://www.4cid.org/publications/
+[^???] https://www.4cid.org/publications/
