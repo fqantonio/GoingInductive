@@ -148,9 +148,9 @@ Academic results - weight average variable directly related to the other variabl
 
 # REFERENCES
 
-[^1] https://github.com/fqantonio/GoingInductive
-[^2] https://cmap.ihmc.us/
-[^3] https://www.4cid.org/
-[^???] there is a need to make some anlysis of this data because it seems that there is an underlying effect
-[^tt] - Journal of Research on Technology in Education, 2007, 40(1), A Task-Centered Instructional Strategy, M. David Merrill
-[^???] https://www.4cid.org/publications/
+  [^1] https://github.com/fqantonio/GoingInductive
+  [^2] https://cmap.ihmc.us/
+  [^3] https://www.4cid.org/
+  [^???] there is a need to make some anlysis of this data because it seems that there is an underlying effect
+  [^tt] - Journal of Research on Technology in Education, 2007, 40(1), A Task-Centered Instructional Strategy, M. David Merrill
+  [^???] https://www.4cid.org/publications/
