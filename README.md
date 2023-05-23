@@ -84,8 +84,6 @@ The values showned in the table represent median changes.
 
 The next table resumes the former table in another order: this next one shows the percentage of "positive", "negative" and "no effects", for each sample.
 
-2/9
-
 | Variable | + | ~ | -| SAMPLE + | no effect sample | SAMPLE - | Notes | 
 |---|:---:|:---:|:---:|:---:|:---:|:---:|---|
 | TEST (Learning Transfer) | 33% | 56% | 11% | All Junior sample, 8th grade and FEMALE | GRADE 7, 9; | RANK1 ||
@@ -99,15 +97,16 @@ The next table resumes the former table in another order: this next one shows th
   
 The conclusions presented here focus on the junior sample of school 1 (table above). 
 
-**Overall**, as a teacher of science and tech, you should move to implement the inductive strategy as your methodology for learning because it improves the **academic results** with a huge impact on **lab practice**.
+**Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **academic results** with a huge impact on **lab practice**.
 
-However there are risks and concerns to be accommodated during the process, namely: 
+However, there are risks and concerns to be accommodated during the process, namely: 
 
   1. the less adapted to the school system;
-  2. in the **behavior** aspect of the classroom managment and in the **learning transfer**;
-  3. in less degree of concern, Grade 7 and males seems to benefit less from this change.
+  2. the classroom management students behavior;
+  3. in the **learning transfer** process;
+  3. Grade 7 and males, in less degree of concern, seems to benefit less from this change.
 
-**Bottom of line**, if you don't want to have the less risks as possible, change if you have a student group more adapted to school and if you want to increase the lab practices skills.
+**Bottom of line**, if you don't want to take the risks, change conditional to have a student group more adapted to school and if you want to increase the lab practices skills.
 
 RISKS:
   1. In the **learning transfer** and **academic results**, there is the risk that the less adapted to the school environment suffer more with this strategic change;
