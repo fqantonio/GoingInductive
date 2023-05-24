@@ -21,12 +21,12 @@ The **statistical analysis** uses R Code software in the RStudio [^2] IDE releas
 
 The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used a data base [^3] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper register forms.
 
-There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). The concept map's software that helped to elaborate the learning flux for this learning environmental process use cmap tools [^4] are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with Merrienboer´s 4C/ID instructional design theory map structure, described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
+There is also a discussion about the **educational methodologies** used, from Direct Instruction (Merrill, 2007), bLearning to Cognitive Load Theory (Sweller, 1998), Brain Based Leaning (???), Gardner Multi Intelligences Theory (Gardner, 2011)  four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). The concept map's software cmap tools [^4] was used for the learning flux map are that is presented in this workflow. The respective inductive methodology that supported the educational worlflow was designed with Merrienboer´s 4C/ID instructional design theory map structure, described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
 
 # GOALS and RESEARCH QUESTIONS
 
 The **main goal** is to understand the impact of the use of Inductive Methodology 4C/ID, by answering the following the **research questions**: 
-  1 - changing the learning methodologies from one mainly deductive, denominated by Direct Instruction (Merril, 2007) to another one mostly inductive, Merrionboer 4C/ID instructional design theory (van Merriënboer; Kirschner, 2007), means what for your students? Who benefits? What are the pros and cons about this methodological decision?
+  1 - changing the learning methodologies from one mainly deductive, denominated by Direct Instruction (Merrill, 2007) to another one mostly inductive, Merrionboer 4C/ID instructional design theory (van Merriënboer; Kirschner, 2007), means what for your students? Who benefits? What are the pros and cons about this methodological decision?
   2 - Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning? 
   3 - And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results? 
   4 - Is there a different impact between female and male? 
@@ -154,11 +154,11 @@ robustness
 
 **`Academic results`** - weight average variable directly related to the other variables: TEST, LAB and BEHAV.
 
-Cognitive Load Theory; 
+Cognitive Load Theory - Cognitive load theory provides empirically-based guidelines that help instructional designers decrease extraneous cognitive load during learning and thus refocus the learner's attention toward germane materials, thereby increasing germane (schema related) cognitive load. This theory differentiates between three types of cognitive load: intrinsic cognitive load, germane cognitive load, and extraneous cognitive load; 
 
 **`Multiintelligences Theory`** - Multiple intelligences refers to a theory describing the different ways students learn and acquire information. These multiple intelligences range from the use of words, numbers, pictures and music, to the importance of social interactions, introspection, physical movement and being in tune with nature; 
 
-Brain Based Learning;
+**`Brain Based Learning`** - refers to teaching methods, lesson designs, and school programs that are based on the latest neurologic scientific research about how the brain learns;
 
 # NOTES
 
@@ -174,8 +174,9 @@ Brain Based Learning;
 
 [^6] Is there an underlying effect?
 
-
 # REFERENCES
+
+Gardner, Howard; (2011) Frames Of Mind: The Theory Of Multiple Intelligences, ISBN-13: 978-0465024339;
 
 Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
 
@@ -184,5 +185,6 @@ https://github.com/fqantonio/GoingInductive
   
 van Merriënboer, Jeroen J. G. ; Kirschner, Paul A.; Ten Steps to Complex Learning, Routledge; 1st edition, 2007, SBN-10:0805857931; ISBN-13:978-0805857931 ;
 
+Sweller, John et al. (1998) “Cognitive Architecture and Instructional Design.” Educational Psychology Review 10 (1998): 251-296.
 
-[^???] https://www.4cid.org/publications/
+Brain Based Leaning book???
