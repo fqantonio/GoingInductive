@@ -1,6 +1,6 @@
 # WELCOME
 
-This is a **`Going Inductive`** paper DRAFT roadmap, not only to address the research question but also to share the work done: a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flux and blearning practice. Hopefully, there will be, at least, one paper based on this.
+This is a **`Going Inductive`** paper DRAFT roadmap [^1], not only to address the research question but also to share the work done: a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flux and blearning practice. Hopefully, there will be, at least, one paper based on this.
 
 # ABSTRACT
 
@@ -9,7 +9,7 @@ Should you, as a teacher of science and tech, **move to an inductive strategy**,
 The work sequence starts with the exploratory data analysis (EDA); next, there is an presentation of the non-parametric inference treatment effect results, regression analysis, a regression discontinuity design, cluster analysis and it ends with the results, conclusions, some remarks about the findings and future research.
 
 **Keywords**
-Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flux; Statistical Non-parametric Inference; academic results; learning transfer; behavior; lab practice; Cognitive Load Theory; Multiintelligences Theory; Brain Based Learning;
+Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flux; Statistical Non-parametric Inference; academic results; learning transfer; behavior; lab practice; Cognitive Load Theory; Multi Intelligences Theory; Brain Based Learning;
 
 # INTRODUCTION
 
@@ -17,13 +17,11 @@ Should you, as a teacher of science and tech, **move to an inductive strategy**,
 
 The **conclusions** of this work are very specific because of the longitudinal sample used: Junior and junior high for the physics and chemistry content of the Portuguese school curriculum. They are drawn from 13 years of data, in the period from 2003 to 2019, both qualitative and quantitative, from actual teacher day-to-day practice learning strategies: deductive and inductive. The transition made over this period of time, is highlighted and the learning flux elaborated for the integration also of bLearning environments.
 
-The **statistical analysis** uses R Code (RStudio) and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data. It goes into a discussion of the data structure, normality and sample independence, and it ends with an explanation about the statistical methodology, results and conclusions. 
+The **statistical analysis** uses R Code software in the RStudio [^2] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data. It goes into a discussion of the data structure, normality and sample independence, and it ends with an explanation about the statistical methodology, results and conclusions. 
 
-The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used 3 learning outcomes: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper register forms.
+The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used a data base [^3] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper register forms.
 
-There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to four component instructional design (4C/ID) [^(Merrienboer, 2002)]. The concept map's software that helped to elaborate the learning flux for this learning environmental process use cmaptools [^2] are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with merrionboer´s 4C/ID [^3book blueprint] map structure. 
-
-This work, as well as the data, is also presented at the blog “https://4cidchange.edublogs.org/”.
+There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). The concept map's software that helped to elaborate the learning flux for this learning environmental process use cmaptools [^1] are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with Merrienboer´s 4C/ID instructional design theory map structure, described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
 
 # GOALS and RESEARCH QUESTIONS
 
@@ -157,19 +155,28 @@ robustness
 
 Cognitive Load Theory; 
 
-Multiintelligences Theory; 
+**`Multiintelligences Theory`** - Multiple intelligences refers to a theory describing the different ways students learn and acquire information. These multiple intelligences range from the use of words, numbers, pictures and music, to the importance of social interactions, introspection, physical movement and being in tune with nature; 
 
 Brain Based Learning;
 
+# NOTES
+
+[^1]This work, as well as the data, is also presented at the blog “https://4cidchange.edublogs.org/” and in the github repository https://github.com/fqantonio/GoingInductive.
+
+[^2] RStudio, https://posit.co/products/open-source/rstudio/ 
+
+[^3] Data base sample
+
+[^4] with the real concept maps??? https://cmap.ihmc.us/
+
+
 # REFERENCES
 
-[^1] Van Merrienboer, Jeroen J. G. & Clark, Richard & Croock, Marcel. (2002). Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993. 
+Van Merrienboer, Jeroen J. G. & Clark, Richard & Croock, Marcel. (2002). Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993. 
 https://github.com/fqantonio/GoingInductive
   
-[^2???] with the real concept maps??? https://cmap.ihmc.us/
-  
-[^3???] book blueprint https://www.4cid.org/
-  
+van Merriënboer, Jeroen J. G. ; Kirschner, Paul A.; Ten Steps to Complex Learning, Routledge; 1st edition, 2007;
+
 [^???] there is a need to make some anlysis of this data because it seems that there is an underlying effect
   
 [^tt] - Journal of Research on Technology in Education, 2007, 40(1), A Task-Centered Instructional Strategy, M. David Merrill
