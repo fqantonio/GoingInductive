@@ -147,6 +147,92 @@ Recurrent goals
 
 [^7]: https://www.r-project.org/.
 
+===============
+Organize!?!?!
+
+EDU Theory
+
+academic results; 
+
+learning transfer; behavior; lab practice; 
+
+Cognitive Load Theory; 
+
+
+Multi Intelligences Theory; 
+
+Brain Based Learning;
+
+
+Instructional Design
+https://pz.harvard.edu/resources/frames-of-mind-the-theory-of-multiple-intelligences
+
+https://www.semanticscholar.org/paper/Cognitive-Architecture-and-Instructional-Design-Sweller-Merrienboer/efa6ed36bfeaccb63b5e408c976bea0961873f90#citing-papers
+
+https://en.wikipedia.org/wiki/Cognitive_load#cite_note-Sweller_et_al.,_1998-7
+
+https://www.amazon.es/-/pt/dp/0805857931/ref=sr_1_2?keywords=ten+steps+to+complex+learning&qid=1684935087&sprefix=ten+steps%2Caps%2C125&sr=8-2
+
+https://www.daveswhiteboard.com/archives/1899
+
+https://link.springer.com/article/10.1007/s10984-021-09373-y
+
+https://journals.sagepub.com/doi/10.2466/pms.1997.84.3.784
+
+https://www.sciencedirect.com/science/article/abs/pii/S0747563201000139?via%3Dihub
+
+https://www.tandfonline.com/doi/abs/10.1080/69032000072809?journalCode=tsed20
+
+https://link.springer.com/article/10.1007/BF02504799
+
+https://www.tandfonline.com/doi/abs/10.1080/13803610500110125?journalCode=nere20
+
+https://onlinelibrary.wiley.com/doi/10.1002/acp.1250
+
+https://www.sciencedirect.com/science/article/abs/pii/S095947520600017X?via%3Dihub
+
+https://www.tandfonline.com/doi/abs/10.1207/s15326985ep4102_1
+
+https://link.springer.com/article/10.1007/s11423-017-9539-9
+
+https://www.sciencedirect.com/science/article/abs/pii/S0959475207000497?via%3Dihub
+
+https://link.springer.com/article/10.1007/s11423-007-9085-y
+
+https://www.sciencedirect.com/science/article/abs/pii/S0747563208002227?via%3Dihub
+
+https://www.sciencedirect.com/science/article/abs/pii/S0747563208002203?via%3Dihub
+
+https://www.sciencedirect.com/science/article/abs/pii/S0747563210001664?via%3Dihub
+
+https://www.tandfonline.com/doi/full/10.3109/0142159X.2014.889290
+
+https://link.springer.com/chapter/10.1007/978-3-319-28197-1_30
+
+https://www.informingscience.org/Publications/2281
+
+https://journals.lww.com/academicmedicine/Fulltext/2015/11000/Designing_Evidence_Based_Medicine_Training_to.13.aspx
+
+Blearning
+https://dl.acm.org/doi/10.1145/3279720.3279739
+https://link.springer.com/article/10.1007/s10648-014-9262-6
+
+https://www.tandfonline.com/doi/abs/10.1080/00461520.2013.804395
+
+Inductive learning strategy; 
+
+4C/ID; 
+
+https://www.researchgate.net/publication/225798787_Blueprints_for_complex_learning_The_4CID-model
+
+Direct Instruction; 
+
+Learning Flux; 
+
+Statistical 
+
+Non-parametric Inference; 
+
 
 
 
