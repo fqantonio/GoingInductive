@@ -21,12 +21,12 @@ The **statistical analysis** uses R Code software in the RStudio [^2] IDE releas
 
 The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used a data base [^3] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper register forms.
 
-There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). The concept map's software that helped to elaborate the learning flux for this learning environmental process use cmaptools [^1] are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with Merrienboer´s 4C/ID instructional design theory map structure, described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
+There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). The concept map's software that helped to elaborate the learning flux for this learning environmental process use cmap tools [^4] are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with Merrienboer´s 4C/ID instructional design theory map structure, described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
 
 # GOALS and RESEARCH QUESTIONS
 
 The **main goal** is to understand the impact of the use of Inductive Methodology 4C/ID, by answering the following the **research questions**: 
-  1 - changing the learning methodologies from one mainly deductive (Direct Instruction[^1]) to another one mostly inductive (4C/ID [^2]), means what for your students? Who benefits? What are the pros and cons about this methodological decision?
+  1 - changing the learning methodologies from one mainly deductive, denominated by Direct Instruction (Merril, 2007) to another one mostly inductive, Merrionboer 4C/ID instructional design theory (van Merriënboer; Kirschner, 2007), means what for your students? Who benefits? What are the pros and cons about this methodological decision?
   2 - Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning? 
   3 - And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results? 
   4 - Is there a different impact between female and male? 
@@ -43,7 +43,7 @@ My **personal goal** was to know if the strategic decisions I did in 2008 were p
 
 # CONTEXT
 
-This work includes junior and junior high students of two different schools, from different regions, at the chemistry and physics subjects of the Portuguese curriculum, in the time scale 2003 to 2019.
+This work includes junior and junior high students of two different schools, from different regions, for the chemistry and physics subjects of the Portuguese curriculum, in the time scale 2003 to 2019.
 
 The organizational environment of schools and teachers in Portugal doesn't help this type of research work. Focused on managing the schools as enterprises with a lot of controlling bureaucracy, putting numbers and paperwork ahead of the crucial and significant decisions around teaching, real assessment is barely used, research folows teh same pattern, and when it happens, its just shared at the university level. Meaning:
   1 - The crucial planning and individual teacher-student interaction is less important for this organization;
@@ -53,9 +53,9 @@ Luckily, the knowledge and the tools available online today, allows us to go fur
 
 # RESULTS
 
-The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work, in spite of the fact that the sample is much large. So, they show results about the JUNIOR sample for SCHOOL 1, which means not having the school effect, nor the problem of using the less numbered entrances of the junior high students sample. 
+The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work, in spite of the fact that the sample is much large. So, they show results about the JUNIOR sample for SCHOOL 1, which means not having the school effect [^5], nor the problem of using the less numbered entrances of the junior high students sample. 
 
-The variables used in the sample:
+The description of the **variables** used in the sample:
 ID: Identification entry row data;
 DATE: year of the sample: it belongs, actually to 2003/2004, lective year;
 SCHOOL: categorical variable, 0 and 1, represent two schools, identified by 0 (till 2008) and 1 (after 2009);
@@ -104,11 +104,11 @@ However, there are risks and concerns to be accommodated during the process, nam
   3. in the **learning transfer** process;
   3. Grade 7 and males, in less degree of concern, seems to benefit less from this change.
 
-**Bottom of line**, if you don't want to take the risks, change conditional to have a student group more adapted to school and if you want to increase the lab practices skills.
+**Bottom line**, if you don't want to take the risks, change conditional to have a student group more adapted to school and if you want to increase the lab practices skills.
 
 RISKS:
   1. In the **learning transfer** and **academic results**, there is the risk that the less adapted to the school environment suffer more with this strategic change;
-  2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^???] impact in all samples: the risk of loosing control of the students group inside the classroom is real, but note that, although, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment;
+  2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^6] impact in all samples: the risk of loosing control of the students group inside the classroom is real, but note that, although, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment;
 
 CONCERNS:
   1. There seems to be a positive effect only in GRADE 8 and FEMALE groups for the **learning transfer**, the other groups the change don't have any effect. 
@@ -124,6 +124,7 @@ BENEFITS:
 # DISCUSSION 
 
 dd I implemented the methods correctly
+Is there an underlying effect?
 
 Reiterate results
 Policy implications
@@ -161,24 +162,27 @@ Brain Based Learning;
 
 # NOTES
 
-[^1]This work, as well as the data, is also presented at the blog “https://4cidchange.edublogs.org/” and in the github repository https://github.com/fqantonio/GoingInductive.
+[^1] This work, as well as the data, is also presented at the blog “https://4cidchange.edublogs.org/” and in the github repository https://github.com/fqantonio/GoingInductive.
 
 [^2] RStudio, https://posit.co/products/open-source/rstudio/ 
 
-[^3] Data base sample
+[^3] Data base sample (R dataframe): https://github.com/fqantonio/GoingInductive/tree/main/DATA
 
-[^4] with the real concept maps??? https://cmap.ihmc.us/
+[^4] https://cmap.ihmc.us/
+
+[^5] there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence.
+
+[^6] Is there an underlying effect?
 
 
 # REFERENCES
 
+Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
+
 Van Merrienboer, Jeroen J. G. & Clark, Richard & Croock, Marcel. (2002). Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993. 
 https://github.com/fqantonio/GoingInductive
   
-van Merriënboer, Jeroen J. G. ; Kirschner, Paul A.; Ten Steps to Complex Learning, Routledge; 1st edition, 2007;
+van Merriënboer, Jeroen J. G. ; Kirschner, Paul A.; Ten Steps to Complex Learning, Routledge; 1st edition, 2007, SBN-10:0805857931; ISBN-13:978-0805857931 ;
 
-[^???] there is a need to make some anlysis of this data because it seems that there is an underlying effect
-  
-[^tt] - Journal of Research on Technology in Education, 2007, 40(1), A Task-Centered Instructional Strategy, M. David Merrill
-  
+
 [^???] https://www.4cid.org/publications/
