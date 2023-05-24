@@ -9,7 +9,7 @@ Should you, as a teacher of science and tech, **move to an inductive strategy**,
 The work sequence starts with the exploratory data analysis (EDA); next, there is an presentation of the non-parametric inference treatment effect results, regression analysis, a regression discontinuity design, cluster analysis and it ends with the results, conclusions, some remarks about the findings and future research.
 
 **Keywords**
-Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flux; Statistical Non-parametric Inference; academic results; learning transfer; behavior; lab practice;
+Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flux; Statistical Non-parametric Inference; academic results; learning transfer; behavior; lab practice; Cognitive Load Theory; Multiintelligences Theory; Brain Based Learning;
 
 # INTRODUCTION
 
@@ -21,7 +21,7 @@ The **statistical analysis** uses R Code (RStudio) and starts with a exploratory
 
 The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used 3 learning outcomes: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper register forms.
 
-There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to 4C/ID (four component instructional design). The concept map's that helped to elaborate the learning flux for this learning environmental process use cmaptools [^???] are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with merrionboer´s 4C/ID [^3] map structure. 
+There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to four component instructional design (4C/ID) ^[(Merrienboer, 2002)]. The concept map's software that helped to elaborate the learning flux for this learning environmental process use cmaptools [^2] are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with merrionboer´s 4C/ID [^3book blueprint] map structure. 
 
 This work, as well as the data, is also presented at the blog “https://4cidchange.edublogs.org/”.
 
@@ -125,6 +125,8 @@ BENEFITS:
 
 # DISCUSSION 
 
+dd I implemented the methods correctly
+
 Reiterate results
 Policy implications
 Future research
@@ -153,13 +155,20 @@ robustness
 
 **`Academic results`** - weight average variable directly related to the other variables: TEST, LAB and BEHAV.
 
+Cognitive Load Theory; 
+
+Multiintelligences Theory; 
+
+Brain Based Learning;
+
 # REFERENCES
 
-[^1] https://github.com/fqantonio/GoingInductive
+[^1] Van Merrienboer, Jeroen J. G. & Clark, Richard & Croock, Marcel. (2002). Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993. 
+https://github.com/fqantonio/GoingInductive
   
-[^2] https://cmap.ihmc.us/
+[^2???] with the real concept maps??? https://cmap.ihmc.us/
   
-[^3] https://www.4cid.org/
+[^3???] book blueprint https://www.4cid.org/
   
 [^???] there is a need to make some anlysis of this data because it seems that there is an underlying effect
   

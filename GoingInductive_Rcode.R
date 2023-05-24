@@ -2655,8 +2655,24 @@ saljshldjahsd
 
 # ARTICLES
 
+Van Merrienboer, Jeroen J. G. & Clark, Richard & Croock, Marcel. (2002). Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993. This article provides an overview description of the four-component instructional design system (4C/ID-model) developed originally
+by van Merriënboer and others in the early 1990s (van Merriënboer, Jelsma, & Paas, 1992) for the design of training programs
+for complex skills. It discusses the structure of training blueprints for complex learning and associated instructional methods.
+The basic claim is that four interrelated components are essential in blueprints for complex learning: (a) learning tasks,
+(b) supportive information, (c) just-in-time (JIT) information, and (d) part-task practice. Instructional methods for each
+component are coupled to the basic learning processes involved in complex learning and a fully worked-out example of a training
+blueprint for “searching for literature” is provided. Readers who benefit from a structured advance organizer should consider
+reading the appendix at the end of this article before reading the entire article.
+
+??? Van Merriënboer, J. J. G., & Kester, L. (2008). Whole-task models in education. 
+In J. M. Spector, M. D. Merrill, J. J. G. van Merriënboer, & M. P. Driscoll (Eds.), 
+Handbook of research on educational communications and technology (3rd ed, pp. 441–456). 
+Mahwah, NJ: Erlbaum/Routledge.
+
+
 # BOOKS
 
-
+blueprint 4cdi
+stats...
 
 
