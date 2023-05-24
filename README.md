@@ -172,7 +172,7 @@ robustness
 
 [^5] there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence.
 
-[^6] Is there an underlying effect?
+[^6] Is there an underlying behavioral effect?
 
 # REFERENCES
 
@@ -183,8 +183,8 @@ Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Rese
 Van Merrienboer, Jeroen J. G. & Clark, Richard & Croock, Marcel. (2002). Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993. 
 https://github.com/fqantonio/GoingInductive
   
-van Merriënboer, Jeroen J. G. ; Kirschner, Paul A.; Ten Steps to Complex Learning, Routledge; 1st edition, 2007, SBN-10:0805857931; ISBN-13:978-0805857931 ;
+van Merriënboer, Jeroen J. G.; Kirschner, Paul A.; Ten Steps to Complex Learning, Routledge; 1st edition, 2007, SBN-10:0805857931; ISBN-13:978-0805857931;
 
 Sweller, John et al. (1998) “Cognitive Architecture and Instructional Design.” Educational Psychology Review 10 (1998): 251-296.
 
-Brain Based Leaning book???
+Brain Based Learning book???
