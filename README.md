@@ -21,7 +21,7 @@ The **statistical analysis** uses R Code (RStudio) and starts with a exploratory
 
 The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used 3 learning outcomes: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper register forms.
 
-There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to four component instructional design (4C/ID) ^[(Merrienboer, 2002)]. The concept map's software that helped to elaborate the learning flux for this learning environmental process use cmaptools [^2] are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with merrionboer´s 4C/ID [^3book blueprint] map structure. 
+There is also a discussion about the **educational methodologies** used, from Direct Instruction, bLearning to four component instructional design (4C/ID) [^(Merrienboer, 2002)]. The concept map's software that helped to elaborate the learning flux for this learning environmental process use cmaptools [^2] are presented along with the workflow. The respective inductive methodology that supported the educational worlflow was designed with merrionboer´s 4C/ID [^3book blueprint] map structure. 
 
 This work, as well as the data, is also presented at the blog “https://4cidchange.edublogs.org/”.
 
