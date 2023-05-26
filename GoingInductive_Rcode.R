@@ -154,7 +154,7 @@ length(which(data_JUNIOR$GENDER=="M"))/length(data_JUNIOR$ID)
 lsec<-length(which(data$GRADE==3))+length(which(data$GRADE==4))+length(which(data$GRADE==5))+length(which(data$GRADE==6))
 lsec
 lsec/length(data$ID)
-# sample entries seconndary 390, 24% of the global sample
+# sample entries secondary 390, 24% of the global sample
 #it seems good to use secondary grade data compared with the other parts
 data_sec <- filter(data,GRADE >="3" & GRADE <="6") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
 summary(data_sec)

@@ -1,27 +1,29 @@
 # WELCOME
 
-This is a **`Going Inductive`** paper DRAFT roadmap [^1], not only to address the research question but also to share the work done: a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flux and blearning practice. Hopefully, there will be, at least, one paper based on this.
+This is a **`Going Inductive`** paper DRAFT roadmap [^1], with two major goals: show the conclusions and share the work worldwide the work done: this is a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and blearning practice. Hopefully, there will be, at least, one paper based on this.
 
 # ABSTRACT
 
-Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities, that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some crucial remarks. If you decide to do it, there will be consequences for the students, different for different categories, that need to be **accommodated**. The question addressed here has direct consequences usefull for the stakeholders in the learning process: students, teachers, policy makers and school management. 
-
-The work sequence starts with the exploratory data analysis (EDA); next, there is an presentation of the non-parametric inference treatment effect results, regression analysis, a regression discontinuity design, cluster analysis and it ends with the results, conclusions, some remarks about the findings and future research.
+Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning activities design flow, that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some remarks. If you decide to do it, there will be specific impacts for the students that need to be **accommodated** as well implications for the stakeholders in the learning process: policy makers and school management. The sample covers 13 years of teacher data assessment, during the period 2003 to 2019, with conclusions about the impact in the learning transfer, Lab Practice, classroom behavior and academic results.
 
 **Keywords**
-Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flux; Statistical Non-parametric Inference; academic results; learning transfer; behavior; lab practice; Cognitive Load Theory; Multi Intelligences Theory; Brain Based Learning;
+Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flow; Statistical Non-parametric Inference; academic results; learning transfer; behavior; lab practice; Cognitive Load Theory; Multi Intelligence Theory; Brain Based Learning; bLearning.
 
 # INTRODUCTION
 
-Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of learning activities that you prepare and organize, even if you include bLearning? In my opinion, and based on the results, you should, but with some specific remarks that are discussed and explained at the conclusion.
+The work presented here deals with the impact of changing from a mostly deductive type of methodology to a mostly inductive one: more precisely, this means a major change from a, **direct instruction** (Merril, 2007) classroom setting to an inductive strategy, **four components instructional design** (4C/ID) (Van Merrienboer, Clark, Croock, 2002), in a bLearning environment (book???). This leads directly to a major and crucial teacher concern that transform into the main research question: what are the accommodations, risks, concerns that you have to deal, if you make this strategic change? 
 
-The **conclusions** of this work are very specific because of the longitudinal sample used: Junior and junior high for the physics and chemistry content of the Portuguese school curriculum. They are drawn from 13 years of data, in the period from 2003 to 2019, both qualitative and quantitative, from actual teacher day-to-day practice learning strategies: deductive and inductive. The transition made over this period of time, is highlighted and the learning flux elaborated for the integration also of bLearning environments.
+This work flow starts, with a exploratory data analysis (EDA) and a presentation of the non-parametric inference treatment effect results. The treatment group is the one that experienced the 4C/ID instructional design in the bLearning environment. The regression analysis done and the regression discontinuity design are presented, as well as the cluster analysis, just to confirm/corroborate the former inference results. It ends with the results table, conclusions, some remarks about the data patterns findings and future research.
 
-The **statistical analysis** uses R Code software in the RStudio [^2] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data. It goes into a discussion of the data structure, normality and sample independence, and it ends with an explanation about the statistical methodology, results and conclusions. 
+Since this is a longitudinal data sample, Junior and junior high for the physics and chemistry content of the Portuguese school curriculum, the **conclusions** extrapolation should be used carefully. 
 
-The statistical methodology used is the usual treatment effect inferencial non-parametric, regression non-parametric inference, regression discontinuity design and clustering. For this, it was used a data base [^3] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper register forms.
+This data was gathered for 13 years, over the period 2003 to 2019, from actual teacher day-to-day practice assessments about students learning transfer, Lab Practice, classroom behavior and academic results. After starting to be interested in the differents ways students learning I came across with the work of Felder learning  styles (FELDER???) and Learning Objects (???). This showed me a complete different methodology that seems very promissing and more adapted to the way brain learns. After four years of readings and tests, in 2013, the 4C/ID methodology was applied and a bLearning environment online set with MOODLE (book????) lessons that were mostly accomplished in the classroom: off course they could be also accessed in other place and they were, about 20%(VER O OUTRO ARTIGO???) of the logs into the system were outside of school. So, the treatment group is mostly the students of school 1 and after 2013.
 
-There is also a discussion about the **educational methodologies** used, from Direct Instruction (Merrill, 2007), bLearning to Cognitive Load Theory (Sweller, 1998), Brain Based Leaning (???), Gardner Multi Intelligences Theory (Gardner, 2011)  four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). The concept map's software cmap tools [^4] was used for the learning flux map are that is presented in this workflow. The respective inductive methodology that supported the educational worlflow was designed with Merrienboer´s 4C/ID instructional design theory map structure, described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
+There is also a discussion in some detail about the theoretical arguments about the **educational methodologies** used, from Direct Instruction (Merrill, 2007), bLearning (???) to Cognitive Load Theory (Sweller, 1998), Brain Based Leaning (???), Gardner Multi Intelligences Theory (Gardner, 2011)  four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). 
+
+The concept map's software cmap tools [^4] that was used for the design of the learning flow maps are presented online [^???] showing the four components and the structure based in the four component instructional design (4C/ID), described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
+
+The **statistical analysis** uses R Code software in the RStudio [^2] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data and several plots showing patterns and relationships between variables. Afterwards there is of data normality and sample independence. The principal methodology used is the non-parametric inferential treatment effect, but there is a discussion towards the non-parametric regression inference, regression discontinuity design and clustering. this last ones just to try to corroborate the upper first results. For this, it was used a data base [^3] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper register forms.
 
 # GOALS and RESEARCH QUESTIONS
 
@@ -64,7 +66,7 @@ TEST, LAB, BEHAV: variables of the score in the tests and observational forms at
 GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p(techical) and 11p (Technical) 
 M4CID, categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID;
 CLASS, continuous variable, 0 to 100, height average, CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV
-RANK: a categorical variable that measures the adaptability of students to school.
+RANK: a categorical variable, 1,2,3, that measures the adaptability of students to school.
 
 The values showned in the table represent median changes.
 
@@ -125,7 +127,8 @@ BENEFITS:
 
 dd I implemented the methods correctly
 Is there an underlying effect?
-
+other stakeholders in the learning process: teachers, policy makers and school management. 
+blearning move: team work imprescindible
 Reiterate results
 Policy implications
 Future research
@@ -136,13 +139,13 @@ robustness
 
 # KEYWORDS
 
-**`Inductive learning strategy`** - the learning flux starts by facts, experiences and real problems and move towards knowledge and a conceptual mental model; 
+**`Inductive learning strategy`** - the learning flow starts by facts, experiences and real problems and move towards knowledge and a conceptual mental model; 
 
 **`4C/ID`** - instructional design approach for complex learning. It provides guidelines for the analysis of real-life tasks and the transition into a blueprint for an educational program.
 
 **`Direct Instruction`** - Principles of Instruction that prescribe a cycle of instruction consisting of activation, demonstration, application, and integration ([^???]Merril, 2007);
 
-**`Learning Flux`** - longitudinal (temporal) map with sequenced activities organized in time, by complexity and loical learning coherence; 
+**`Learning flow`** - longitudinal (temporal) map with sequenced activities organized in time, by complexity and loical learning coherence; 
 
 **`Statistical Non-parametric Inference`** -  statistical techniques that use data to test if two sample came from the same non-normality distribution; 
 
@@ -159,6 +162,8 @@ robustness
 **`Multi Intelligences Theory`** - Multiple intelligences refers to a theory describing the different ways students learn and acquire information. These multiple intelligences range from the use of words, numbers, pictures and music, to the importance of social interactions, introspection, physical movement and being in tune with nature; 
 
 **`Brain Based Learning`** - refers to teaching methods, lesson designs, and school programs that are based on the latest neurologic scientific research about how the brain learns;
+
+**`bLearning`** - Means Blended learning for education combines classroom-based learning with distance learning (eLearning). 
 
 # NOTES
 
