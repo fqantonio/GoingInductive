@@ -124,7 +124,7 @@ BENEFITS:
 
 # DISCUSSION 
 
-notes to discussion:
+notes for discussion:
  - The conlsuions meet the goals and answer th research question?
  - Did I implemented the methods correctly?
  - Is there an underlying effect for the behav variable?
