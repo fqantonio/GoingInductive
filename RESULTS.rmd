@@ -10,16 +10,16 @@ The symbols +, ~ and - in the table represent a positive treatment effect, no ef
 | Junior (school effect)          | \~   | \+  | \-    | \~    | school 1 with 4C/ID variable 1                                         |
 | Junior and junior high          | \-   | \~  | \-    | \-    | junior and junior high school 0 and 1 (exclude school 1 without 4C/ID) |
 | All sample (school effect)      | \-   | \+  | \-    | \-    |                                                                        |
-| SCHOOL 1 junior and high junior | \~   | \+  | \-    | \+    |                                                                        |
-| *Junior for school 1*             | \+   | \+  | \-    | \+    | AFTER this road sample is junior grade for SCHOOL 1                                                                        |
-| GRADE 7                         | \~   | \+  | \-    | \~    |                                                                        |
-| GRADE 8                         | \+   | \+  | \-    | \~    | M4CID=="1",#71 entrances, less then 100 entrances                      |
-| GRADE 9                         | \~   | \+  | \+    | \+    |                                                                        |
-| RANK 1                          | \-   | \+  | \-    | \-    |                                                                        |
-| RANK 2                          | \~   | \+  | \-    | \~    |                                                                        |
-| RANK 3                          | \~   | \+  | \-    | \-    |                                                                        |
-| FEMALE                          | \+   | \+  | \~    | \+    |                                                                        |
-| MALE                            | \~   | \+  | \-    | \~    |              |
+| SCHOOL 1 junior and high junior | \~   | \+  | \-    | \+    |          |
+| *Junior for school 1*             | \+ (54 to 58)  | \+ (53 to 66)  | \- (81 to 74)    | \+ (59 to 62)    |   Median values presented in %; AFTER this road sample is junior grade for SCHOOL 1                                     |
+| GRADE 7                          | \~   | \+ (56 to 64)  | \- (77 to 71)   | \~    |                   |
+| GRADE 8                         | \+ (54 to 58)   | \+ (55 to 68)  | \- (85 to 60)   | \~    | M4CID=="1", 71 entrances, less then 100 entrances|
+| GRADE 9                         | \~   | \+ (44 to 66)  | \+ (80 to 85)   | \+ (55 to 64)   |          |
+| RANK 1                          | \- (34 to 29)  | \+ (26 to 35) | \- (65 to 50)    | \- (39 to 37)    |           |
+| RANK 2                          | \~   | \+ (51 to 62) | \- (80 to 67)    | \~    |            |
+| RANK 3                          | \~   | \+  (73 to 80) | \- (94 to 90)   | \+ (77 to 81)    |            |
+| FEMALE                          | \+ (54 to 56)   | \+ (52 to 70)  | \~    | \+ (59 to 67)    |          |
+| MALE                            | \~   | \+ (53 to 62) | \- (81 to 66)    | \~    |          |
 
 TABLE ???: Legend: + means positive effect, -, negative effect and ~ no effect
 
