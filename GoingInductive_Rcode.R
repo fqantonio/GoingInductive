@@ -2606,7 +2606,7 @@ rdplot(y,x)
 
 # Resume results table to present them in a more readable table
 results <- data.frame(
-  samples=c("GLOBAL","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
+  samples=c("JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
   TEST1=c(54,0,54,0,-34,0,0,54,0),
   TEST2=c(58,0,58,0,-29,0,0,56,0),
   LAB1=c(53,56,55,44,26,51,73,52,53),
@@ -2614,13 +2614,12 @@ results <- data.frame(
   BEHAV1=c(-81,-77,-85,80,-65,-80,-94,0,-81),
   BEHAV2=c(-74,-71,-60,85,-50,-67,-90,0,-66),
   CLASS1=c(59,0,0,55,-39, 0,77,59,0),
-  CLASS2=c(62,0,0,64,-37, 0,81,67,0),
-  SAMPLE=c(1,1,1,1,1,1,1,1,1)
+  CLASS2=c(62,0,0,64,-37, 0,81,67,0)
 )
 results
 ?geom_errorbar
 ggplot(results) +
-  geom_errorbar( aes(x=factor(samples, levels = c("GLOBAL","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE")), ymin=TEST1, ymax=TEST2), colour="orange",width=0.2,alpha=0.9, size=1) +
+  geom_errorbar( aes(x=factor(samples, levels = c("JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE")), ymin=TEST1, ymax=TEST2), colour="orange",width=0.2,alpha=0.9, size=1) +
   geom_errorbar( aes(x=samples, ymin=LAB1, ymax=LAB2), width=0.4, colour="red", alpha=0.9, size=1) +
   geom_errorbar( aes(x=samples, ymin=BEHAV1, ymax=BEHAV2), width=0.4, colour="green", alpha=0.9, size=1) +
   geom_errorbar( aes(x=samples, ymin=CLASS1, ymax=CLASS2), width=0.4, colour="blue", alpha=0.9, size=1) +
