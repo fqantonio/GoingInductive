@@ -70,7 +70,7 @@ RANK: a categorical variable, 1,2,3, that measures the adaptability of students 
 The values showed in the table represent changes in the variables median.
 
 | VARIABLES | (negative) | (no effect) | (positive) | OBSERVATIONS/NOTES |
-|:------------|:------------:|:------------:|:------------:|
+|:------------|:------------:|:------------:|:------------:|----|
 | TEST |  | | (54 to 58) |  |
 | LAB |  | | (53 to 66) |  |
 | BEHAV | (81 to 74)   | | |  |
