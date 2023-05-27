@@ -69,6 +69,15 @@ RANK: a categorical variable, 1,2,3, that measures the adaptability of students 
 
 The values showed in the table represent changes in the variables median.
 
+| VARIABLES | (negative) | (no effect) | (positive) | OBSERVATIONS/NOTES |
+|:------------|:------------:|:------------:|:------------:|
+| TEST |  | | (54 to 58) |  |
+| LAB |  | | (53 to 66) |  |
+| BEHAV | (81 to 74)   | | |  |
+| CLASS |||(59 to 62) ||
+
+Table results resume
+
 | SAMPLE | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES |
 |:------------|:------------:|:------------:|:------------:|:------------:|:------------:|
 | *Junior for school 1*             | \+ (54 to 58)  | \+ (53 to 66)  | \- (81 to 74)    | \+ (59 to 62)    |   Median values presented in %               |
