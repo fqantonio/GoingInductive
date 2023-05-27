@@ -2454,12 +2454,12 @@ y<-data_SCHOOL1$TEST
 plot(x,y)
 rdrobust(y,x)
 rdplot(y,x)
-saljshldjahsd
+
 ########## METHODOLOGY
 
 ## Hypothesis test discussion
 
-## Independent samples
+## Normality and Independent samples
 
 
 ########## Summary results and notes
@@ -2587,7 +2587,6 @@ saljshldjahsd
 # 4CID has no impact on TEST Variable;
 # 4CID has positive impact in LAB, BEHAV and CLASS Variable;
 
-
 # Conclusion RANK
 
 # RANK 1: negative effect for TEST, BEHAV, CLASS and positive on LAB
@@ -2612,8 +2611,6 @@ saljshldjahsd
 ## Future research
 
 ## Tie loose hands together
-
-
 
 ########## doubts and discussions
 # 802!?!?!? - scale change

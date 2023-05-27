@@ -11,24 +11,22 @@ Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flow; Statistic
 
 # INTRODUCTION
 
-The work presented here deals with the impact of changing from a mostly deductive type of methodology to a mostly inductive one: more precisely, this means a major change from a, **direct instruction** (Merril, 2007) classroom setting to an inductive strategy, **four components instructional design** (4C/ID) (Van Merrienboer, Clark, Croock, 2002), in a bLearning environment (book???). This leads directly to a major and crucial teacher concern that transform into the main research question: what are the accommodations, risks, concerns that you have to deal, if you make this strategic change? 
+The work presented here deals with the impact of changing from a mostly deductive type of methodology to a mostly inductive one: more precisely, this means a major change from a, **direct instruction** (Merril, 2007) classroom setting to an inductive strategy, **four components instructional design** (4C/ID) (Van Merrienboer, Clark, Coock, 2002), in a bLearning environment (book???). This leads directly to a major and crucial teacher concern that transform into the main **research question**: what are the accommodations, risks and concerns about the impact on students learning that you have to deal, if you make this strategic change? 
 
-This work flow starts, with a exploratory data analysis (EDA) and a presentation of the non-parametric inference treatment effect results. The treatment group is the one that experienced the 4C/ID instructional design in the bLearning environment. The regression analysis done and the regression discontinuity design are presented, as well as the cluster analysis, just to confirm/corroborate the former inference results. It ends with the results table, conclusions, some remarks about the data patterns findings and future research.
+This work flow starts, with a exploratory data analysis (EDA) and a presentation of the non-parametric inference treatment effect results. The treatment group is the one that where students experienced the 4C/ID instructional design in the bLearning environment. The control group is mainly the time length between 2003 and 2012. The regression analysis done and the regression discontinuity design are presented, as well as the cluster analysis, just to confirm/corroborate the former inference results. The last part deals with the results, conclusions, some remarks about the data patterns findings and future research.
 
 Since this is a longitudinal data sample, Junior and junior high for the physics and chemistry content of the Portuguese school curriculum, the **conclusions** extrapolation should be used carefully. 
 
-This data was gathered for 13 years, over the period 2003 to 2019, from actual teacher day-to-day practice assessments about students learning transfer, Lab Practice, classroom behavior and academic results. After starting to be interested in the differents ways students learning I came across with the work of Felder learning  styles (FELDER???) and Learning Objects (???). This showed me a complete different methodology that seems very promissing and more adapted to the way brain learns. After four years of readings and tests, in 2013, the 4C/ID methodology was applied and a bLearning environment online set with MOODLE (book????) lessons that were mostly accomplished in the classroom: off course they could be also accessed in other place and they were, about 20%(VER O OUTRO ARTIGO???) of the logs into the system were outside of school. So, the treatment group is mostly the students of school 1 and after 2013.
+The data used in this work was gathered over 13 years, in the period 2003 to 2019, from actual teacher day-to-day practice assessments about students **Learning Transfer**, **Lab Practice**, **Classroom Behavior**, that include Social Skills, and **Academic Results**. After starting to be interested about the different ways students lear I came across with the work of Felder´s learning  styles (Felder; Silverman; 1988) and Wiley's Learning Objects (Wiley, 2002). These paper's showed me a complete list of different methodology that seems very promising and more adapted to the way brain learns. Furthermore, the readings about alternative **educational methodologies** went on also into the Cognitive Load Theory (Sweller, 1998), Brain Based Leaning (Jensen, 2005), Gardner Multi Intelligences Theory (Gardner, 2011) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013, the 4C/ID methodology was applied and a bLearning environment online set with MOODLE (book????) lessons that were mostly accomplished in the classroom: about 20%(VER O OUTRO ARTIGO???) of the logs into the system were outside of school.
 
-There is also a discussion in some detail about the theoretical arguments about the **educational methodologies** used, from Direct Instruction (Merrill, 2007), bLearning (???) to Cognitive Load Theory (Sweller, 1998), Brain Based Leaning (???), Gardner Multi Intelligences Theory (Gardner, 2011)  four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). 
+The concept map's software cmap tools [^4] was used for the design of the learning flow maps and they are presented online [^???] showing the four components and the structure based in the four component instructional design (4C/ID), described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
 
-The concept map's software cmap tools [^4] that was used for the design of the learning flow maps are presented online [^???] showing the four components and the structure based in the four component instructional design (4C/ID), described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
-
-The **statistical analysis** uses R Code software in the RStudio [^2] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data and several plots showing patterns and relationships between variables. Afterwards there is of data normality and sample independence. The principal methodology used is the non-parametric inferential treatment effect, but there is a discussion towards the non-parametric regression inference, regression discontinuity design and clustering. this last ones just to try to corroborate the upper first results. For this, it was used a data base [^3] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. They were assessed by paper/online tests and in classroom observational paper register forms.
+The **statistical analysis** uses R code software in the RStudio [^2] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data and several plots showing patterns and relationships between variables. Afterwards there is a data normality and sample independence investigation. The principal methodology used is the non-parametric inferential treatment effect, but there is a discussion towards the non-parametric regression inference, regression discontinuity design and clustering. this last ones just to try to corroborate the upper first results. For this, it was used a data base [^3] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. The CLASS variable is directly related to the academic results and is a weigth average of TEST, LAB and BEHAV. TEST, LAB and BEHAV were assessed by paper transfer tests, online trasfer tests and in classroom observational paper registering forms.
 
 # GOALS and RESEARCH QUESTIONS
 
-The **main goal** is to understand the impact of the use of Inductive Methodology 4C/ID, by answering the following the **research questions**: 
-  1 - changing the learning methodologies from one mainly deductive, denominated by Direct Instruction (Merrill, 2007) to another one mostly inductive, Merrionboer 4C/ID instructional design theory (van Merriënboer; Kirschner, 2007), means what for your students? Who benefits? What are the pros and cons about this methodological decision?
+The **main goal** is to understand the impact of the use of Inductive Methodology 4C/ID in a bLearning setting, by answering the following **research questions**: 
+  1 - changing the learning methodologies from one mainly deductive, denominated by Direct Instruction (Merrill, 2007) to another one mostly inductive, Merrionboer 4C/ID instructional design theory (van Merriënboer; Kirschner, 2007), means what for students learning outcames? Who benefits? What are the pros and cons about this methodological decision?
   2 - Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning? 
   3 - And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results? 
   4 - Is there a different impact between female and male? 
@@ -37,15 +35,11 @@ The **main goal** is to understand the impact of the use of Inductive Methodolog
 
 # MOTIVATION
 
-Most of the time the professional, specific, **day-to-day teacher work** data is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are possible. Worse, even if someone did it, it's normal to not share it. 
+Most of the time the professional, specific, **day-to-day teacher work** data is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are possible. Worse, even if someone does it, it's normal not to share it. 
 
-In my view, both research and discussion with peers are crucial to better adjust our decisions regarding the way students learn today. The way learning happens and motivation changes, is so fast! So, teaching, at least in Portugal, is a very solitary job with all of its directly related drawbacks.
+In my view, both research and discussion with peers are crucial to better adjust our decisions regarding the specific strategies, activities and learning flux presented that must also be adapted to the way students learn today. The way learning happens and motivation changes, is so fast! So, teaching, at least in Portugal, is a very solitary job with all of its directly related drawbacks.
 
 My **personal goal** was to know if the strategic decisions I did in 2008 were positive for my students: did they benefit from the educational strategic change? It was a global benefit or some groups benefited more? Does anyone have the same kind of research? Can anyone corroborate this results or criticize them? Sharing is the way to go in order to exchange results an find knowledge.
-
-# CONTEXT
-
-This work includes junior and junior high students of two different schools, from different regions, for the chemistry and physics subjects of the Portuguese curriculum, in the time scale 2003 to 2019.
 
 The organizational environment of schools and teachers in Portugal doesn't help this type of research work. Focused on managing the schools as enterprises with a lot of controlling bureaucracy, putting numbers and paperwork ahead of the crucial and significant decisions around teaching, real assessment is barely used, research folows teh same pattern, and when it happens, its just shared at the university level. Meaning:
   1 - The crucial planning and individual teacher-student interaction is less important for this organization;
@@ -53,22 +47,27 @@ The organizational environment of schools and teachers in Portugal doesn't help 
 
 Luckily, the knowledge and the tools available online today, allows us to go further with peer contribution, beyond a simple Average Treatment Effect (some of us, at least, do some mean computations): statistical knowledge is not something that we are prepared for and the statistical tools are very expensive. Today, this tools are available with opensource licences: so, time is crucial: teacher need it to study, get the necessary knowledge and interpret the results. And publish it!
 
+# CONTEXT
+
+This work includes junior and junior high students of two different schools data, from different regions, for the chemistry and physics subjects of the Portuguese curriculum, in the time scale 2003 to 2019. Raw data was gathered during 13 years, from actual day-to-day assessment registering in three different areas: transfer tests, lab practice and classroom behavior. 
+
 # RESULTS
 
-The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work, in spite of the fact that the sample is much large. So, they show results about the JUNIOR sample for SCHOOL 1, which means not having the school effect [^5], nor the problem of using the less numbered entrances of the junior high students sample. 
+The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means not having the school effect [^5], nor the problem of using the less numbered entrances of the junior high students sample.
 
-The description of the **variables** used in the sample:
+**variables** descrition in the data frame:
+
 ID: Identification entry row data;
-DATE: year of the sample: it belongs, actually to 2003/2004, lective year;
-SCHOOL: categorical variable, 0 and 1, represent two schools, identified by 0 (till 2008) and 1 (after 2009);
-GENDER: categorical vairable, F and M
-TEST, LAB, BEHAV: variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment) and BEHAV related to accomplishment school rules behavior LAB work and Behavior, normally if they follow the rules stablished at school
-GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p(techical) and 11p (Technical) 
+DATE: year of the sample: it belongs, actually to 2003/2004, school year;
+SCHOOL: categorical variable, 0 and 1, represent two schools, identified by 0 (till 2008) and 1 (after 2009, included);
+GENDER: categorical variable, F and M
+TEST, LAB, BEHAV: variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment) and BEHAV related to accomplishment school rules behavior LAB work and Behavior, normally if they follow the rules established by the school;
+GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p(techical) and 11p (Technical);
 M4CID, categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID;
-CLASS, continuous variable, 0 to 100, height average, CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV
+CLASS, continuous variable, 0 to 100, height average, CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV;
 RANK: a categorical variable, 1,2,3, that measures the adaptability of students to school.
 
-The values showned in the table represent median changes.
+The values showed in the table represent changes in the variables median.
 
 | SAMPLE | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES |
 |:------------|:------------:|:------------:|:------------:|:------------:|:------------:|
@@ -102,18 +101,18 @@ The conclusions presented here focus on the junior sample of school 1 (table abo
 However, there are risks and concerns to be accommodated during the process, namely: 
 
   1. the less adapted to the school system;
-  2. the classroom management students behavior;
-  3. in the **learning transfer** process;
+  2. the classroom management referening to students behavior;
+  3. in the **learning transfer** process: there must be some additional activities planned to accommodate this loss;
   3. Grade 7 and males, in less degree of concern, seems to benefit less from this change.
 
 **Bottom line**, if you don't want to take the risks, change conditional to have a student group more adapted to school and if you want to increase the lab practices skills.
 
 RISKS:
-  1. In the **learning transfer** and **academic results**, there is the risk that the less adapted to the school environment suffer more with this strategic change;
-  2. For **behavior**, specifically in aspect of following social and behavioral classroom rules, there is a major negative [^6] impact in all samples: the risk of loosing control of the students group inside the classroom is real, but note that, although, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment;
+  1. In the **learning transfer** and **academic results** learning areas, there is the risk that the less adapted to the school environment have a decreased with this strategic change;
+  2. For **behavior**, specifically in the aspect of following social and behavioral classroom rules, there is a major negative [^6] impact in all samples: the risk of loosing control of the students group inside the classroom is real; however, but note that, although, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment.
 
 CONCERNS:
-  1. There seems to be a positive effect only in GRADE 8 and FEMALE groups for the **learning transfer**, the other groups the change don't have any effect. 
+  1. There seems to be a positive effect only in GRADE 8 and FEMALE groups for the **learning transfer**: the changes in the other groups don't have any effect. 
   2. On the **behavior field** only grade 9 seems to get some positive effect;
   3. In general, Female gender group tend to benefit more them male;
   4. In general, RANK 3 tends to benefit more then the other rank groups;
@@ -121,21 +120,21 @@ CONCERNS:
   
 BENEFITS:
   1. In overall, the change has a positive impact on junior grade students for the **academic results**; 
-  2. **Lab practice** has a large positive effect in all samples;
+  2. **Lab practice** has a large positive effect in all samples.
 
 # DISCUSSION 
 
-dd I implemented the methods correctly
-Is there an underlying effect?
-other stakeholders in the learning process: teachers, policy makers and school management. 
-blearning move: team work imprescindible
-Reiterate results
-Policy implications
+notes to discussion:
+ - The conlsuions meet the goals and answer th research question?
+ - Did I implemented the methods correctly?
+ - Is there an underlying effect for the behav variable?
+ - Conclusions for the stakeholders in the learning process: teachers, Policy implications and school management. 
+ - blearning change: team work impressible
+ - Reiterate results
+ - world research corroboration
+
 Future research
-Tie loose hands???
-world research corroboration???
-Clarify
-robustness
+Tie loose hands: Clarify, robustness
 
 # KEYWORDS
 
@@ -155,7 +154,7 @@ robustness
 
 **`Behavior`** - Ability to follow social and behavioral classroom rules directly related to the BEHAV variable.
 
-**`Academic results`** - weight average variable directly related to the other variables: TEST, LAB and BEHAV.
+**`Academic results`** - weight average variable directly related to the variables: TEST, LAB and BEHAV: CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV.
 
 **`Cognitive Load Theory`** - Cognitive load theory provides empirically-based guidelines that help instructional designers decrease extraneous cognitive load during learning and thus refocus the learner's attention toward germane materials, thereby increasing germane (schema related) cognitive load. This theory differentiates between three types of cognitive load: intrinsic cognitive load, germane cognitive load, and extraneous cognitive load; 
 
@@ -181,7 +180,11 @@ robustness
 
 # REFERENCES
 
-Gardner, Howard; (2011) Frames Of Mind: The Theory Of Multiple Intelligences, ISBN-13: 978-0465024339;
+Felder, Richard M. ; Silverman, Linda K.; (1988), Engr. Education, 78(7), 674–681;
+
+Gardner, Howard (2011) Frames Of Mind: The Theory Of Multiple Intelligences, ISBN-13: 978-0465024339;
+
+Jensen, Eric (2005); Teaching with the Brain in Mind, ASCD, ISBN-10: 146600302; ISBN-13:978-1416600305  
 
 Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
 
@@ -190,6 +193,9 @@ https://github.com/fqantonio/GoingInductive
   
 van Merriënboer, Jeroen J. G.; Kirschner, Paul A.; (2007) Ten Steps to Complex Learning, Routledge; 1st edition, SBN-10:0805857931; ISBN-13:978-0805857931;
 
-Sweller, John et al. (1998) “Cognitive Architecture and Instructional Design.” Educational Psychology Review 10 (1998): 251-296.
+Sweller, John et al. (1998) “Cognitive Architecture and Instructional Design.” Educational Psychology Review 10 (1998): 251-296; 
 
-Brain Based Learning book???
+Wiley, David A. (Editor) (2002) The Instructional Use
+of Learning Objects, Agency for Instructional Technology
+Association for Educational Communications & Technology; First Edition; ISBN: 0-7842-0892-1;
+
