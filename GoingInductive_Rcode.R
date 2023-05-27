@@ -58,7 +58,7 @@ library(gridExtra) #arrange graphs in rows
 #AT this point I will do an exploratory data analysis (EDA)
 #Use this step before any of the analysis bellow
 #perhaps you need to set your set working directory: setwd: setwd("/Users/novo/Desktop/Doutoramento/GoingInductive")
-setwd("/Users/novo/Desktop/Doutoramento/GoingInductivePaper/DATA")
+setwd("/Users/novo/Desktop/Doutoramento/GoingInductivePaper/GoingInductive/DATA")
 data<-read.csv("./DATA_4CID_2023.csv")
 data<-data %>% mutate(CLASS=0.5*TEST+0.3*LAB+0.2*BEHAV)
 colnames(data) <- c("ID","DATE" ,"SCHOOL" ,"GENDER" ,"TEST" ,"LAB" ,"BEHAV" ,"GRADE" ,"M4CID","CLASS")
@@ -2603,6 +2603,28 @@ rdplot(y,x)
 # Female, averall, benefit more
 
 # Figure 16: overview inference graph analysis results 
+
+results <- data.frame(
+  samples=c("JUNIOR","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
+  TEST1=c(54,0,54,0,-34,0,0,54,0),
+  TEST2=c(58,0,58,0,-29,0,0,56,0),
+  LAB1=c(53,56,55,44,26,51,73,52,53),
+  LAB2=c(66,74,68,66,35,62,80,70,72),
+  BEHAV1=c(-81,-77,-85,80,-65,-80,-94,0,-81),
+  BEHAV2=c(-74,-71,-60,85,-50,-67,-90,0,-66),
+  CLASS1=c(59,0,0,55,-39, 0,77,59,0),
+  CLASS2=c(62,0,0,64,-37, 0,81,67,0),
+  SAMPLE=c(1,1,1,1,1,1,1,1,1)
+)
+results
+?geom_errorbar
+ggplot(results) +
+  geom_errorbar( aes(x=factor(samples, levels = c("JUNIOR","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE")), ymin=TEST1, ymax=TEST2), colour="orange",width=0.2,alpha=0.9, size=1) +
+  geom_errorbar( aes(x=samples, ymin=LAB1, ymax=LAB2), width=0.4, colour="red", alpha=0.9, size=1) +
+  geom_errorbar( aes(x=samples, ymin=BEHAV1, ymax=BEHAV2), width=0.4, colour="green", alpha=0.9, size=1) +
+  geom_errorbar( aes(x=samples, ymin=CLASS1, ymax=CLASS2), width=0.4, colour="blue", alpha=0.9, size=1) +
+  coord_flip()
+
 
 ## NOTES and OBSERVATIONS
 
