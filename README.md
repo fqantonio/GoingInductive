@@ -18,11 +18,11 @@ Should you, as a teacher of science and tech of young students, **move to an ind
 
 **Keywords** Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flow; Statistical Non-parametric Inference; academic results; learning transfer; behavior; lab practice; Cognitive Load Theory; Multi Intelligence Theory; Brain Based Learning; bLearning.
 
-# GOALS, RESEARCH QUESTIONS and Hyphotesis
+# GOALS, RESEARCH QUESTIONS and HYPHOTESIS
 
-The **main goal** is to understand the impact of the use of Inductive Methodology 4C/ID in a bLearning setting, by answering the following **research questions**:
+The **main goal** is to understand the impact of the use of Inductive Methodology four component instructional (4C/ID) in a bLearning setting, by answering the following **research questions**:
 
-1 - changing the learning methodologies from one mainly deductive, denominated by Direct Instruction (Merrill, 2007) to another one mostly inductive, Merriënboer's 4C/ID instructional design theory (van Merriënboer, Kirschner, 2007), means what for students learning outcomes? Who benefits? What are the pros and cons about this methodological decision?
+1 - changing the learning methodologies from one mainly deductive, denominated by Direct Instruction (Merrill, 2007) to another one mostly inductive, Merriënboer's 4C/ID design theory (van Merriënboer, Kirschner, 2007), means what for students learning outcomes? Who benefits? What are the pros and cons about this methodological decision?
 
 2 - Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning?
 
@@ -34,7 +34,7 @@ The **main goal** is to understand the impact of the use of Inductive Methodolog
 
 6 - Student more adapted to school have benefit more with the use of 4CID methodology?
 
-The **hypothesis** is that this change will have a positive impact in all learning areas researched for samples included in this work.
+The **hypothesis** is that this change will have a positive impact in all learning areas researched for samples included in this work, because, in overall, it bases on the 4C/ID methodology: that in itself is anchored on Brain Based Learning (BBL), Cognitive Load Theory (CLT), Multi-Intelligence Theory (MIT) and Multimedia Learning (ML).
 
 # INTRODUCTION
 
@@ -208,6 +208,8 @@ notes for discussion: - The conlsuions meet the goals and answer th research que
 **`Cognitive Load Theory`** - Cognitive load theory provides empirically-based guidelines that help instructional designers decrease extraneous cognitive load during learning and thus refocus the learner's attention toward germane materials, thereby increasing germane (schema related) cognitive load. This theory differentiates between three types of cognitive load: intrinsic cognitive load, germane cognitive load, and extraneous cognitive load;
 
 **`Multi Intelligences Theory`** - Multiple intelligences refers to a theory describing the different ways students learn and acquire information. These multiple intelligences range from the use of words, numbers, pictures and music, to the importance of social interactions, introspection, physical movement and being in tune with nature;
+
+**Multimedia Learning** - Set of principles based on scientific evidence for learning from words (spoken or printed) and pictures (video, graphs, illustrations, map or photos) 
 
 **`Brain Based Learning`** - refers to teaching methods, lesson designs, and school programs that are based on the latest neurologic scientific research about how the brain learns;
 
