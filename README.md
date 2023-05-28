@@ -91,7 +91,7 @@ schools have different learning outcomes and after 2015 there is a crash
 in the student behavior skills.
 
 ![Figure 2: all sample variables time
-series](/Users/novo/Desktop/Doutoramento/GoingInductivePaper/Figures/figure2_boxplot_allSample.png)
+series](/Users/novo/Desktop/Doutoramento/GoingInductivePaper/GoingInductive/Figures/figure2_boxplot_allSample.png)
 
 The concept map's software cmap tools [\^4] was used for the design of
 the learning flow maps and they are presented online [\^???] showing the
@@ -232,7 +232,7 @@ median.
 Table results resume
 
 | SAMPLE                |     TEST      |      LAB      |     BEHAV     |     CLASS     |                OBSERVATIONS/NOTES                 |
-|:-----------|:----------:|:----------:|:----------:|:----------:|:----------:|
+|:----------------------|:-------------:|:-------------:|:-------------:|:-------------:|:-------------------------------------------------:|
 | *Junior for school 1* | \+ (54 to 58) | \+ (53 to 66) | \- (81 to 74) | \+ (59 to 62) |           Median values presented in %            |
 | GRADE 7               |      \~       | \+ (56 to 64) | \- (77 to 71) |      \~       |                                                   |
 | GRADE 8               | \+ (54 to 58) | \+ (55 to 68) | \- (85 to 60) |      \~       | M4CID=="1", 71 entrances, less then 100 entrances |
@@ -248,7 +248,7 @@ shows the percentage of "positive", "negative" and "no effects", for
 each sample.
 
 | Variable                 |  \+  | \~  | \-  |                SAMPLE +                 |       no effect sample        |                SAMPLE -                 | Notes |
-|---------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|---------|
+|--------------------------|:----:|:---:|:---:|:---------------------------------------:|:-----------------------------:|:---------------------------------------:|-------|
 | TEST (Learning Transfer) | 33%  | 56% | 11% | All Junior sample, 8th grade and FEMALE |          GRADE 7, 9;          |                  RANK1                  |       |
 | LAB (Lab practice)       | 100% | 0%  | 0%  |                                         |          all samples          |                                         |       |
 | BEHAV (behavior)         | 11%  | 11% | 78% |                 GRADE 9                 |            FEMALE             | Junior; GRADE 7 and 8; all RANK's; MALE |       |
