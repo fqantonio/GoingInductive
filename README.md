@@ -8,7 +8,7 @@ Nelson Mandela
 
 # WELCOME
 
-This is a **`Going Inductive`** paper DRAFT roadmap [\^1] , with two major goals: show the conclusions and share the work worldwide the work done: this is a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and blearning practice. Hopefully, there will be, at least, one paper based on this.
+This is a **`Going Inductive`** paper DRAFT roadmap[\^1] , with two major goals: show the conclusions and share the work worldwide the work done: this is a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
 
 # ABSTRACT
 
