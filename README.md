@@ -8,7 +8,9 @@ Nelson Mandela
 
 # WELCOME
 
-This is a **`Going Inductive`** paper DRAFT roadmap[^1], with two major goals: show the conclusions and share the work worldwide the work done: this is a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
+This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with two major goals: show the conclusions and share the work worldwide the work done: this is a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
+
+[^readme-1]: This work, as well as the data, is also presented at the blog "<https://4cidchange.edublogs.org/>" and in the github repository <https://github.com/fqantonio/GoingInductive>.
 
 # ABSTRACT
 
@@ -42,7 +44,9 @@ This work flow starts, with a exploratory data analysis (EDA) and a presentation
 
 Since this is a longitudinal data sample, Junior and junior high for the physics and chemistry content of the Portuguese school curriculum, the **conclusions** extrapolation should be used carefully.
 
-The data used in this work was gathered over 13 years, in the period 2003 to 2019, from actual teacher day-to-day practice assessments about students **Learning Transfer**, **Lab Practice**, **Classroom Behavior**, that include Social Skills, and **Academic Results**. After starting to be interested about the different ways students lear I came across with the work of Felder´s learning styles (Felder; Silverman; 1988) and Wiley's Learning Objects (Wiley, 2002). These paper's showed me a complete list of different methodology that seems very promising and more adapted to the way brain learns. Furthermore, the readings about alternative **educational methodologies** went on also into the Cognitive Load Theory (Sweller, 1998), Brain Based Leaning[^2] (Jensen, 2005), Gardner Multi Intelligences Theory (Gardner, 2011) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID methodology was applied and a bLearning environment online set with MOODLE Learning Management System (LMS) (Rice, 2006) lessons that were mostly accomplished in the classroom: fewer logs into the system were from outside.
+The data used in this work was gathered over 13 years, in the period 2003 to 2019, from actual teacher day-to-day practice assessments about students **Learning Transfer**, **Lab Practice**, **Classroom Behavior**, that include Social Skills, and **Academic Results**. After starting to be interested about the different ways students lear I came across with the work of Felder´s learning styles (Felder; Silverman; 1988) and Wiley's Learning Objects (Wiley, 2002). These paper's showed me a complete list of different methodology that seems very promising and more adapted to the way brain learns. Furthermore, the readings about alternative **educational methodologies** went on also into the Cognitive Load Theory (Sweller, 1998), Brain Based Leaning[^readme-2] (Jensen, 2005), Gardner Multi Intelligences Theory (Gardner, 2011) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID methodology was applied and a bLearning environment online set with MOODLE Learning Management System (LMS) (Rice, 2006) lessons that were mostly accomplished in the classroom: fewer logs into the system were from outside.
+
+[^readme-2]: How brain learns? <https://learningobjectslearningstyles.edublogs.org/2019/11/02/brain-based-learning/><https://cmap.ihmc.us/>
 
 # CONTEXT
 
@@ -52,9 +56,17 @@ Figure 2 show the variable longitudinal patterns for all sample time series, whi
 
 ![Figure 2: all sample variables time series](Figures/figure2_boxplot_allSample.png)
 
-The concept map's software cmap tools[^3] was used for the design of the learning flow maps and they are presented online[^4] showing the four components and the structure based in the four component instructional design (4C/ID), described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
+The concept map's software cmap tools[^readme-3] was used for the design of the learning flow maps and they are presented online[^readme-4] showing the four components and the structure based in the four component instructional design (4C/ID), described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
 
-The **statistical analysis** uses R code software in the RStudio[^5] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data and several plots showing patterns and relationships between variables. Afterwards there is a data normality and sample independence investigation. The principal methodology used is the non-parametric inferential treatment effect, but there is a discussion towards the non-parametric regression inference, regression discontinuity design and clustering. this last ones just to try to corroborate the upper first results. For this, it was used a data base[^6] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. The CLASS variable is directly related to the academic results and is a weigth average of TEST, LAB and BEHAV. TEST, LAB and BEHAV were assessed by paper transfer tests, online transfer tests and in classroom observational paper registering forms.
+[^readme-3]: <https://cmap.ihmc.us/>
+
+[^readme-4]: Flow charts (missing details to be updated) Data base sample (R data frame): <https://cmap.ihmc.us/> ;
+
+The **statistical analysis** uses R code software in the RStudio[^readme-5] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data and several plots showing patterns and relationships between variables. Afterwards there is a data normality and sample independence investigation. The principal methodology used is the non-parametric inferential treatment effect, but there is a discussion towards the non-parametric regression inference, regression discontinuity design and clustering. this last ones just to try to corroborate the upper first results. For this, it was used a data base[^readme-6] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. The CLASS variable is directly related to the academic results and is a weigth average of TEST, LAB and BEHAV. TEST, LAB and BEHAV were assessed by paper transfer tests, online transfer tests and in classroom observational paper registering forms.
+
+[^readme-5]: RStudio, <https://posit.co/products/open-source/rstudio/>
+
+[^readme-6]: there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence. <https://github.com/fqantonio/GoingInductive/tree/main/DATA>
 
 # MOTIVATION
 
@@ -74,7 +86,9 @@ Luckily, the knowledge and the tools available online today, allows us to go fur
 
 # RESULTS
 
-The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means not having the school effect [^7], nor the problem of using the less numbered entrances of the junior high students sample.
+The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means not having the school effect [^readme-7], nor the problem of using the less numbered entrances of the junior high students sample.
+
+[^readme-7]: Is there an underlying behavioral underlying effect?
 
 **Variables** description in the data frame:
 
@@ -145,27 +159,27 @@ However, there are risks and concerns to be accommodated during the process, nam
 
 RISKS:
 
-1. In the **learning transfer** and **academic results** learning areas, there is the risk that the less adapted to the school environment have a decreased with this strategic change;
+1.  In the **learning transfer** and **academic results** learning areas, there is the risk that the less adapted to the school environment have a decreased with this strategic change;
 
-2. For **behavior**, specifically in the aspect of following social and behavioral classroom rules, there is a major negative [\^6] impact in all samples: the risk of loosing control of the students group inside the classroom is real; however, but note that, although, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment.
+2.  For **behavior**, specifically in the aspect of following social and behavioral classroom rules, there is a major negative [\^6] impact in all samples: the risk of loosing control of the students group inside the classroom is real; however, but note that, although, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment.
 
 CONCERNS:
 
-1. There seems to be a positive effect only in GRADE 8 and FEMALE groups for the **learning transfer**: the changes in the other groups don't have any effect.
+1.  There seems to be a positive effect only in GRADE 8 and FEMALE groups for the **learning transfer**: the changes in the other groups don't have any effect.
 
-2. On the **behavior field** only grade 9 seems to get some positive effect;
+2.  On the **behavior field** only grade 9 seems to get some positive effect;
 
-3. In general, Female gender group tend to benefit more them male;
+3.  In general, Female gender group tend to benefit more them male;
 
-4. In general, RANK 3 tends to benefit more then the other rank groups;
+4.  In general, RANK 3 tends to benefit more then the other rank groups;
 
-5. grade 9th benefit more then the other grades;
+5.  grade 9th benefit more then the other grades;
 
 BENEFITS:
 
-1. In overall, the change has a positive impact on junior grade students for the **academic results**;
+1.  In overall, the change has a positive impact on junior grade students for the **academic results**;
 
-2. **Lab practice** has a large positive effect in all samples.
+2.  **Lab practice** has a large positive effect in all samples.
 
 # DISCUSSION
 
@@ -199,22 +213,6 @@ notes for discussion: - The conlsuions meet the goals and answer th research que
 
 **`bLearning`** - Means Blended learning for education combines classroom-based learning with distance learning (eLearning).
 
-# NOTES
-
-[^1]: This work, as well as the data, is also presented at the blog "<https://4cidchange.edublogs.org/>" and in the github repository <https://github.com/fqantonio/GoingInductive>.
-
-[^2]: How brain learns? <https://learningobjectslearningstyles.edublogs.org/2019/11/02/brain-based-learning/><https://cmap.ihmc.us/> 
-
-[^3]: <https://cmap.ihmc.us/> 
-
-[^4]: Flow charts (missing details to be updated) Data base sample (R data frame): <https://cmap.ihmc.us/> ; 
-
-[^5]: RStudio, <https://posit.co/products/open-source/rstudio/>
-
-[^6]: there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence. https://github.com/fqantonio/GoingInductive/tree/main/DATA
-
-[^7]: Is there an underlying behavioral underlying effect?
-
 # REFERENCES
 
 Felder, Richard M. ; Silverman, Linda K.; (1988), Engr. Education, 78(7), 674--681;
@@ -236,3 +234,5 @@ Rice, William (2006); Moodle, E-Learning Course Development, Packt Publishing, I
 Sweller, John et al. (1998) "Cognitive Architecture and Instructional Design." Educational Psychology Review 10 (1998): 251-296;
 
 Wiley, David A. (Editor) (2002) The Instructional Use of Learning Objects, Agency for Instructional Technology Association for Educational Communications & Technology; First Edition; ISBN: 0-7842-0892-1;
+
+# NOTES
