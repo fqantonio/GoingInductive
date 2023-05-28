@@ -44,7 +44,7 @@ This work flow starts, with a exploratory data analysis (EDA) and a presentation
 
 Since this is a longitudinal data sample, Junior and junior high for the physics and chemistry content of the Portuguese school curriculum, the **conclusions** extrapolation should be used carefully.
 
-The data used in this work was gathered over 13 years, in the period 2003 to 2019, from actual teacher day-to-day practice assessments about students **Learning Transfer**, **Lab Practice**, **Classroom Behavior**, that include Social Skills, and **Academic Results**. After starting to be interested about the different ways students lear I came across with the work of Felder´s learning styles (Felder; Silverman; 1988) and Wiley's Learning Objects (Wiley, 2002). These paper's showed me a complete list of different methodology that seems very promising and more adapted to the way brain learns. Furthermore, the readings about alternative **educational methodologies** went on also into the Cognitive Load Theory (Sweller, 1998), Brain Based Leaning[^readme-2] (Jensen, 2005), Gardner Multi Intelligences Theory (Gardner, 2011) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID methodology was applied and a bLearning environment online set with MOODLE Learning Management System (LMS) (Rice, 2006) lessons that were mostly accomplished in the classroom: fewer logs into the system were from outside.
+The data used in this work was gathered over 13 years, in the period 2003 to 2019, from actual teacher day-to-day practice assessments about students **Learning Transfer**, **Lab Practice**, **Classroom Behavior**, that include Social Skills, and **Academic Results**. After starting to be interested about the different ways students lear I came across with the work of Felder´s learning styles (Felder; Silverman; 1988) and Wiley's Learning Objects (Wiley, 2002). These paper's showed me a complete list of different methodology that seems very promising and more adapted to the way brain learns. Furthermore, the readings about alternative **educational methodologies** went on also into the Cognitive Load Theory (Sweller, 1998), Brain Based Learning[^2] (Jensen, 2005), Gardner Multi-Intelligence Theory (Gardner, 2011) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID methodology was applied and a bLearning environment online set with MOODLE Learning Management System (LMS) (Rice, 2006) lessons that were mostly accomplished in the classroom: fewer logs into the system were from outside.
 
 [^readme-2]: How brain learns? <https://learningobjectslearningstyles.edublogs.org/2019/11/02/brain-based-learning/><https://cmap.ihmc.us/>
 
@@ -104,7 +104,7 @@ TEST, LAB, BEHAV: variables of the score in the tests and observational forms at
 
 M4CID, categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID; CLASS, continuous variable, 0 to 100, height average:
 
-$$ CLASS = 0.5 \times TEST + 0.3 \times LAB + 0.2 \times BEHAV $$;
+$` CLASS = 0.5 \times TEST + 0.3 \times LAB + 0.2 \times BEHAV `$;
 
 RANK: a categorical variable, 1,2,3, that measures the adaptability of students to school.
 
