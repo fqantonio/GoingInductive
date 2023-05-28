@@ -51,7 +51,7 @@ library(gridExtra) #arrange graphs in rows
 #   6 - Student more adapted to school have benefit more with the use of 4CID methodology?
 
 ########## HYPOTHESIS
-# In overall, 4C/ID improves the learning process because it anchors on BBL, CLT, MI and IM
+# The **hypothesis** is that this change will have a positive impact in all learning areas researched for samples included in this work, because, in overall, it bases on the 4C/ID methodology: that in itself is anchored on Brain Based Learning (BBL), Cognitive Load Theory (CLT), Multi-Intelligence Theory (MIT) and Multimedia Learning (ML).
 
 ######### DATA - exploratory data analysis - EDA
 
@@ -619,6 +619,8 @@ cor.test(sample1$sample.data_M4CID0.TEST..600.,sample2$sample.data_M4CID1.TEST..
 # sample estimates: tau -0.004717915 
 # samples are independent, so its possible to use Wilcoxon inference test
 ggplot(data) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
+median(data_M4CID0$TEST)#62
+median(data_M4CID1$TEST)#57
 wilcox.test(data_M4CID0$TEST,data_M4CID1$TEST,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0$TEST and data_M4CID1$TEST
@@ -637,6 +639,8 @@ cor.test(sample1$sample.data_M4CID0.LAB..600.,sample2$sample.data_M4CID1.LAB..60
 # sample estimates: tau -0.01897084
 # samples are independent, so its possible to use Wilcoxon inference test
 ggplot(data) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
+median(data_M4CID0$LAB)#60
+median(data_M4CID1$LAB)#63
 wilcox.test(data_M4CID0$LAB,data_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0$LAB and data_M4CID1$LAB
@@ -655,6 +659,8 @@ cor.test(sample1$sample.data_M4CID0.BEHAV..600.,sample2$sample.data_M4CID1.BEHAV
 # sample estimates: tau 0.0330701
 # samples are independent, so its possible to use Wilcoxon inference test
 ggplot(data) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
+median(data_M4CID0$BEHAV)#79
+median(data_M4CID1$BEHAV)#73
 wilcox.test(data_M4CID0$BEHAV,data_M4CID1$BEHAV,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0$BEHAV and data_M4CID1$BEHAV
@@ -673,6 +679,8 @@ cor.test(sample1$sample.data_M4CID0.CLASS..600.,sample2$sample.data_M4CID1.CLASS
 # sample estimates: tau 0.002753148 
 # samples are independent, so its possible to use Wilcoxon inference test
 ggplot(data) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
+median(data_M4CID0$CLASS)#64
+median(data_M4CID1$CLASS)#61
 wilcox.test(data_M4CID0$CLASS,data_M4CID1$CLASS,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0$CLASS and data_M4CID1$CLASS
@@ -720,6 +728,8 @@ shapiro.test(data_M4CID0$TEST)
 # p-value << 0,05 so, conclusion: not normal
 # The indeoendency is not measured because we are talking about two different schools in diffrent towns
 ggplot(data_M4CID0) + geom_boxplot(aes(y=TEST, x=factor(SCHOOL)))
+median(data_M4CID0_SCHOOL0$TEST)#68
+median(data_M4CID0_SCHOOL1$TEST)#54
 wilcox.test(data_M4CID0_SCHOOL0$TEST,data_M4CID0_SCHOOL1$TEST,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0_SCHOOL0$TEST and data_M4CID0_SCHOOL1$TEST
@@ -734,6 +744,8 @@ ks.test(data_M4CID0$LAB,dnorm(mean(data_M4CID0$LAB),sd(data_M4CID0$LAB)))
 shapiro.test(data_M4CID0$LAB)
 #p-value << 0,05 so, conclusion: not normal
 ggplot(data_M4CID0) + geom_boxplot(aes(y=LAB, x=factor(SCHOOL)))
+median(data_M4CID0_SCHOOL0$LAB)#62
+median(data_M4CID0_SCHOOL1$LAB)#53
 wilcox.test(data_M4CID0_SCHOOL0$LAB,data_M4CID0_SCHOOL1$LAB,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0_SCHOOL0$LAB and data_M4CID0_SCHOOL1$LAB
@@ -748,6 +760,8 @@ ks.test(data_M4CID0$BEHAV,dnorm(mean(data_M4CID0$BEHAV),sd(data_M4CID0$BEHAV)))
 shapiro.test(data_M4CID0$BEHAV)
 # p-vaue << 0,05, so conclusion: not normal
 ggplot(data_M4CID0) + geom_boxplot(aes(y=BEHAV, x=factor(SCHOOL)))
+median(data_M4CID0_SCHOOL0$BEHAV)#77
+median(data_M4CID0_SCHOOL1$BEHAV)#81
 wilcox.test(data_M4CID0_SCHOOL0$BEHAV,data_M4CID0_SCHOOL1$BEHAV,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0_SCHOOL0$BEHAV and data_M4CID0_SCHOOL1$BEHAV
@@ -762,6 +776,8 @@ ks.test(data_M4CID0$CLASS,dnorm(mean(data_M4CID0$CLASS),sd(data_M4CID0$CLASS)))
 shapiro.test(data_M4CID0$CLASS)
 #p-value < 0,05, so conclusion: not normal
 ggplot(data_M4CID0) + geom_boxplot(aes(y=CLASS, x=factor(SCHOOL)))
+median(data_M4CID0_SCHOOL0$CLASS)#69
+median(data_M4CID0_SCHOOL1$CLASS)#59
 wilcox.test(data_M4CID0_SCHOOL0$CLASS,data_M4CID0_SCHOOL1$CLASS,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0_SCHOOL0$CLASS and data_M4CID0_SCHOOL1$CLASS
@@ -831,27 +847,30 @@ data_SCHOOL0<-filter(data,SCHOOL=="0") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,G
 data_junior_computed_SCHOOL1_M4CID0<-filter(data_junior_computed,GRADE <= "2" & M4CID =="0" & SCHOOL=="1") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
 summary(data_SCHOOL0)
 summary(data_junior_computed_SCHOOL1_M4CID0)
+
 #TEST
 length(data_SCHOOL0$ID)#476
 length(data_junior_computed_SCHOOL1_M4CID0$ID)#394
-median(data_SCHOOL0$TEST)
-median(data_junior_computed_SCHOOL1_M4CID0$TEST)
+median(data_SCHOOL0$TEST)#68
+median(data_junior_computed_SCHOOL1_M4CID0$TEST)#65
 wilcox.test(data_SCHOOL0$TEST,data_junior_computed_SCHOOL1_M4CID0$TEST,alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL0$TEST and data_junior_computed_SCHOOL1_M4CID0$TEST
 # W = 97434, p-value = 0.321
 # alternative hypothesis: true location shift is not equal to 0
+
 #LAB
-median(data_SCHOOL0$LAB)
-median(data_junior_computed_SCHOOL1_M4CID0$LAB)
+median(data_SCHOOL0$LAB)#62
+median(data_junior_computed_SCHOOL1_M4CID0$LAB)#64
 wilcox.test(data_SCHOOL0$LAB,data_junior_computed_SCHOOL1_M4CID0$LAB,alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL0$LAB and data_junior_computed_SCHOOL1_M4CID0$LAB
 # W = 92456, p-value = 0.7213
 # alternative hypothesis: true location shift is not equal to 0
+
 #BEHAV
-median(data_SCHOOL0$BEHAV)
-median(data_junior_computed_SCHOOL1_M4CID0$BEHAV)
+median(data_SCHOOL0$BEHAV)#77
+median(data_junior_computed_SCHOOL1_M4CID0$BEHAV)#78
 hist(data_SCHOOL0$BEHAV)
 hist(data_junior_computed_SCHOOL1_M4CID0$BEHAV)
 wilcox.test(data_SCHOOL0$BEHAV,data_junior_computed_SCHOOL1_M4CID0$BEHAV,alternative = "two.sided")
@@ -861,8 +880,8 @@ wilcox.test(data_SCHOOL0$BEHAV,data_junior_computed_SCHOOL1_M4CID0$BEHAV,alterna
 # alternative hypothesis: true location shift is not equal to 0
 
 #CLASS
-median(data_SCHOOL0$CLASS)
-median(data_junior_computed_SCHOOL1_M4CID0$CLASS)
+median(data_SCHOOL0$CLASS)#69
+median(data_junior_computed_SCHOOL1_M4CID0$CLASS)#67
 wilcox.test(data_SCHOOL0$CLASS,data_junior_computed_SCHOOL1_M4CID0$CLASS,alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL0$CLASS and data_junior_computed_SCHOOL1_M4CID0$CLASS
@@ -870,6 +889,80 @@ wilcox.test(data_SCHOOL0$CLASS,data_junior_computed_SCHOOL1_M4CID0$CLASS,alterna
 # alternative hypothesis: true location shift is not equal to 0
 
 #Conclusion: yes, they are from the same sample distribution
+
+# Inference for computed junior differences with and without 4C/ID, between school 0 and school 1
+data_junior_computed_M4CID0<-filter(data_junior_computed,GRADE <= "2" & M4CID =="0") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
+data_junior_computed_M4CID1<-filter(data_junior_computed,GRADE <= "2" & M4CID =="1") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
+length(data_junior_computed_M4CID0$ID)#870
+length(data_junior_computed_M4CID1$ID)#365
+
+#TEST
+summary(data_junior_computed)
+hist(data_junior_computed$TEST)
+qqnorm(data_junior_computed$TEST)
+qqline(data_junior_computed$TEST)
+ks.test(data_junior_computed$TEST,dnorm(mean(data_junior_computed$TEST),sd(data_junior_computed$TEST)))
+shapiro.test(data_junior_computed$TEST)
+#conclusion: not normal and the samples are indedependent considering that they are from differents schools
+ggplot(data_junior_computed) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
+median(data_junior_computed_M4CID0$TEST)#68
+median(data_junior_computed_M4CID1$TEST)#69
+wilcox.test(data_junior_computed_M4CID0$TEST,data_junior_computed_M4CID1$TEST,alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_junior_computed_M4CID0$TEST and data_junior_computed_M4CID1$TEST
+# W = 146616, p-value = 0.9833
+# alternative hypothesis: true location shift is greater than 0
+
+#LAB
+summary(data_junior_computed)
+hist(data_junior_computed$LAB)
+qqnorm(data_junior_computed$LAB)
+qqline(data_junior_computed$LAB)
+ks.test(data_junior_computed$LAB,dnorm(mean(data_junior_computed$LAB),sd(data_junior_computed$LAB)))
+shapiro.test(data_junior_computed$LAB)
+#conclusion: not normal and the samples are indedependent considering that they are from differents schools
+ggplot(data_junior_computed) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
+median(data_junior_computed_M4CID0$LAB)#63
+median(data_junior_computed_M4CID1$LAB)#77
+wilcox.test(data_junior_computed_M4CID0$LAB,data_junior_computed_M4CID1$LAB,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_junior_computed_M4CID0$LAB and data_junior_computed_M4CID1$LAB
+# W = 95486, p-value < 2.2e-16
+# alternative hypothesis: true location shift is less than 0
+
+#BEHAV
+summary(data_junior_computed)
+hist(data_junior_computed$BEHAV)
+qqnorm(data_junior_computed$BEHAV)
+qqline(data_junior_computed$BEHAV)
+ks.test(data_junior_computed$BEHAV,dnorm(mean(data_junior_computed$BEHAV),sd(data_junior_computed$BEHAV)))
+shapiro.test(data_junior_computed$LAB)
+#conclusion: not normal and the samples are indedependent considering that they are from differents schools
+ggplot(data_junior_computed) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
+median(data_junior_computed_M4CID0$BEHAV)#78
+median(data_junior_computed_M4CID1$BEHAV)#71
+wilcox.test(data_junior_computed_M4CID0$BEHAV,data_junior_computed_M4CID1$BEHAV,alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_junior_computed_M4CID0$BEHAV and data_junior_computed_M4CID1$BEHAV
+# W = 195777, p-value = 4.886e-11
+# alternative hypothesis: true location shift is greater than 0
+
+#CLASS
+summary(data_junior_computed)
+hist(data_junior_computed$CLASS)
+qqnorm(data_junior_computed$CLASS)
+qqline(data_junior_computed$CLASS)
+ks.test(data_junior_computed$CLASS,dnorm(mean(data_junior_computed$CLASS),sd(data_junior_computed$CLASS)))
+shapiro.test(data_junior_computed$LAB)
+#conclusion: not normal and the samples are indedependent considering that they are from differents schools
+ggplot(data_junior_computed) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
+median(data_junior_computed_M4CID0$CLASS)#68
+median(data_junior_computed_M4CID1$CLASS)#70
+wilcox.test(data_junior_computed_M4CID0$CLASS,data_junior_computed_M4CID1$CLASS,alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_junior_computed_M4CID0$CLASS and data_junior_computed_M4CID1$CLASS
+# W = 134652, p-value = 1
+# alternative hypothesis: true location shift is greater than 0
 
 # Inference for computed junior differences with and without 4C/ID, between school 0 and school 1 (with 4C/ID)
 data_junior_computed_SCHOOL0_M4CID0<-filter(data_junior_computed,GRADE <= "2" & M4CID =="0",SCHOOL=="0") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
@@ -999,7 +1092,7 @@ shapiro.test(data_computed$LAB)
 #conclusion: not normal
 ggplot(data_computed) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))#not accurate, it includes school 1 and M4CID0
 median(data_computed_SCHOOL0_M4CID0$LAB)#62
-median(data_computed_SCHOOL1_M4CID1$LAB)#53
+median(data_computed_SCHOOL1_M4CID1$LAB)#63
 wilcox.test(data_computed_SCHOOL0_M4CID0$LAB,data_computed_SCHOOL1_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_SCHOOL0_M4CID0$LAB and data_computed_SCHOOL1_M4CID1$LAB
@@ -1054,17 +1147,17 @@ wilcox.test(data_computed_SCHOOL0_M4CID0$CLASS,data_computed_SCHOOL1_M4CID1$CLAS
 # see Table 11: Differences computed for junior school 0 and 1
 
 # sample with all sample
-data_computed_all<-data # G for all sample
+data_computed_all<-data # all for all sample
 
 # values added to variables only of school 1
-data_compute_alld$TEST<-ifelse(data_computed_all$M4CID==1,data_computed_all$TEST+dif_mean_TEST,data_computed_all$TEST)
-data_computed_all$LAB<-ifelse(data_computed_all$M4CID==1,data_computed_all$LAB+dif_mean_LAB,data_computed_all$LAB)
-data_computed_all$CLASS<-ifelse(data_computed_all$M4CID==1,data_computed_all$CLASS+dif_mean_CLASS,data_computed_all$CLASS)
+data_computed_all$TEST<-ifelse(data_computed_all$SCHOOL==1,data_computed_all$TEST+dif_mean_TEST,data_computed_all$TEST)
+data_computed_all$LAB<-ifelse(data_computed_all$SCHOOL==1,data_computed_all$LAB+dif_mean_LAB,data_computed_all$LAB)
+data_computed_all$CLASS<-ifelse(data_computed_all$SCHOOL==1,data_computed_all$CLASS+dif_mean_CLASS,data_computed_all$CLASS)
 data_computed_all$BEHAV<-ifelse(data_computed_all$SCHOOL==1,data_computed_all$BEHAV+dif_mean_BEHAV,data_computed_all$BEHAV)
 
 #sample with and without 4C/ID, no matter which school
-data_computed_all_M4CID0<-filter(data,M4CID == "0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
-data_computed_all_M4CID1<-filter(data,M4CID == "1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_computed_all_M4CID0<-filter(data_computed_all,M4CID == "0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_computed_all_M4CID1<-filter(data_computed_all,M4CID == "1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 summary(data_computed_all)
 
 length(data_computed_all_M4CID0$ID)#931
@@ -1078,13 +1171,13 @@ ks.test(data_computed_all$TEST,dnorm(mean(data_computed_all$TEST),sd(data_comput
 shapiro.test(data_computed_all$TEST)
 #conclusion: not normal
 ggplot(data_computed_all) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
-median(data_computed_all_M4CID0$TEST)#62
-median(data_computed_all_M4CID1$TEST)#57
-wilcox.test(data_computed_all_M4CID0$TEST,data_computed_all_M4CID1$TEST,alternative = "greater")
+median(data_computed_all_M4CID0$TEST)#67
+median(data_computed_all_M4CID1$TEST)#68
+wilcox.test(data_computed_all_M4CID0$TEST,data_computed_all_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_all_M4CID0$TEST and data_computed_all_M4CID1$TEST
-# W = 367208, p-value = 1.183e-06
-# alternative hypothesis: true location shift is greater than 0
+# W = 312418, p-value = 0.1278
+# alternative hypothesis: true location shift is less than 0
 
 #LAB
 hist(data_computed_all$LAB)
@@ -1094,12 +1187,12 @@ ks.test(data_computed_all$LAB,dnorm(mean(data_computed_all$LAB),sd(data_computed
 shapiro.test(data_computed_all$LAB)
 #conclusion: not normal
 ggplot(data_computed_all) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
-median(data_computed_all_M4CID0$LAB)#60
-median(data_computed_all_M4CID1$LAB)#53
+median(data_computed_all_M4CID0$LAB)#63
+median(data_computed_all_M4CID1$LAB)#74
 wilcox.test(data_computed_all_M4CID0$LAB,data_computed_all_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_all_M4CID0$LAB and data_computed_all_M4CID1$LAB
-# W = 281090, p-value = 3.606e-06
+# W = 220724, p-value < 2.2e-16
 # alternative hypothesis: true location shift is less than 0
 
 # BEHAV
@@ -1110,12 +1203,12 @@ ks.test(data_computed_all$BEHAV,dnorm(mean(data_computed_all$BEHAV),sd(data_comp
 shapiro.test(data_computed_all$BEHAV)
 #conclusion: not normal
 ggplot(data_computed_all) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
-median(data_computed_all_M4CID0$BEHAV)#79
-median(data_computed_all_M4CID1$BEHAV)#73
+median(data_computed_all_M4CID0$BEHAV)#78
+median(data_computed_all_M4CID1$BEHAV)#70
 wilcox.test(data_computed_all_M4CID0$BEHAV,data_computed_all_M4CID1$BEHAV,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_all_M4CID0$BEHAV and data_computed_all_M4CID1$BEHAV
-# W = 393301, p-value = 2.976e-14
+# W = 413964, p-value < 2.2e-16
 # alternative hypothesis: true location shift is greater than 0
 
 # CLASS
@@ -1126,16 +1219,17 @@ ks.test(data_computed_all$CLASS,dnorm(mean(data_computed_all$CLASS),sd(data_comp
 shapiro.test(data_computed_all$CLASS)
 #conclusion: normal
 ggplot(data_computed_all) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
-median(data_computed_all_M4CID0$CLASS)#64
-median(data_computed_all_M4CID1$CLASS)#61
+median(data_computed_all_M4CID0$CLASS)#68
+median(data_computed_all_M4CID1$CLASS)#69
 wilcox.test(data_computed_all_M4CID0$CLASS,data_computed_all_M4CID1$CLASS,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_all_M4CID0$CLASS and data_computed_all_M4CID1$CLASS
-# W = 349682, p-value = 0.002217
+# W = 295902, p-value = 0.9981
 # alternative hypothesis: true location shift is greater than 0
 
 # Conclusions 4C/ID treatment effect with computed samples for the entire sample
-# TEST, BEHAV and CLASS negative
+# TEST and CLASS no effect
+# BEHAV negative
 # LAB positive
 
 # Table 13: Inference for computed differences for the entire sample
@@ -1174,8 +1268,8 @@ cor.test(sample1$sample.data_SCHOOL1_M4CID0.TEST..400.,sample2$sample.data_SCHOO
 # sample estimates: tau 0.01441653 
 # sample independency, so it is possible to use Wilcoxon non-parametric inference test
 ggplot(data_SCHOOL1) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
-median(data_SCHOOL1_M4CID0$TEST)#59
-median(data_SCHOOL1_M4CID1$TEST)#61
+median(data_SCHOOL1_M4CID0$TEST)#54
+median(data_SCHOOL1_M4CID1$TEST)#57
 wilcox.test(data_SCHOOL1_M4CID0$TEST,data_SCHOOL1_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL1_M4CID0$TEST and data_SCHOOL1_M4CID1$TEST
@@ -2549,13 +2643,14 @@ rdplot(y,x)
 # negative on BEHAV
 # Positive effect for LAB
 
-# Conclusion computed (school effect) diferences for junior and junior high school 0 and 1 
+# Conclusion computed (school effect) differences for junior and junior high school 0 and 1 
 #(exclude school 1 without 4C/ID)
 # TEST, BEHAV and CLASS negative
 # No effect for LAB 
 
-# Conclusions 4C/ID treatment effect with computed (school effect) variables sample diferences for the entire sample
-# TEST, BEHAV and CLASS negative
+# Conclusions 4C/ID treatment effect with computed samples for the entire sample
+# TEST and CLASS no effect
+# BEHAV negative
 # LAB positive
 
 # 4C/ID tretament effect just for SCHOOL 1 sample
@@ -2606,20 +2701,20 @@ rdplot(y,x)
 
 # Resume results table to present them in a more readable table
 results <- data.frame(
-  samples=c("JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
-  TEST1=c(54,0,54,0,-34,0,0,54,0),
-  TEST2=c(58,0,58,0,-29,0,0,56,0),
-  LAB1=c(53,56,55,44,26,51,73,52,53),
-  LAB2=c(66,74,68,66,35,62,80,70,72),
-  BEHAV1=c(-81,-77,-85,80,-65,-80,-94,0,-81),
-  BEHAV2=c(-74,-71,-60,85,-50,-67,-90,0,-66),
-  CLASS1=c(59,0,0,55,-39, 0,77,59,0),
-  CLASS2=c(62,0,0,64,-37, 0,81,67,0)
+  samples=c("SCHOOL 1 junior and high junior","All sample school effect","Junior and junior high (both schools but exclude school 1 without 4C/ID)","Junior (school effect and school 1 sample only with 4C/ID)","Junior (school effect)","All sample","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
+  TEST1=c(0,0,-68,0,0,-62,54,0,54,0,-34,0,0,54,0),
+  TEST2=c(0,0,-57,0,0,-57,58,0,58,0,-29,0,0,56,0),
+  LAB1=c(53,63,0,62,63,60,53,56,55,44,26,51,73,52,53),
+  LAB2=c(63,74,0,77,77,63,66,74,68,66,35,62,80,70,72),
+  BEHAV1=c(-81,-78,-68,-77,-70,-79,-81,-77,-85,80,-65,-80,-94,0,-81),
+  BEHAV2=c(-73,-70,-57,-71,-71,-73,-74,-71,-60,85,-50,-67,-90,0,-66),
+  CLASS1=c(59,0,-69,0,0,-64,59,0,0,55,-39, 0,77,59,0),
+  CLASS2=c(61,0,-61,0,0,-61,62,0,0,64,-37, 0,81,67,0)
 )
 results
 ?geom_errorbar
 ggplot(results) +
-  geom_errorbar( aes(x=factor(samples, levels = c("JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE")), ymin=TEST1, ymax=TEST2), colour="orange",width=0.2,alpha=0.9, size=1) +
+  geom_errorbar( aes(x=factor(samples, levels = c("SCHOOL 1 junior and high junior","All sample school effect","Junior and junior high (both schools but exclude school 1 without 4C/ID)","Junior (school effect and school 1 sample only with 4C/ID)","Junior (school effect)","All sample","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE")), ymin=TEST1, ymax=TEST2), colour="orange",width=0.2,alpha=0.9, size=1) +
   geom_errorbar( aes(x=samples, ymin=LAB1, ymax=LAB2), width=0.4, colour="red", alpha=0.9, size=1) +
   geom_errorbar( aes(x=samples, ymin=BEHAV1, ymax=BEHAV2), width=0.4, colour="green", alpha=0.9, size=1) +
   geom_errorbar( aes(x=samples, ymin=CLASS1, ymax=CLASS2), width=0.4, colour="blue", alpha=0.9, size=1) +

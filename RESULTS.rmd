@@ -2,16 +2,17 @@
 This file contains the results of the inference statistical analysis methods used in this research work. The initial tables resume the work. The latest present the same results but with more details. 
 
 ## Inference Analysis Table Resume
-The symbols +, ~ and - in the table represent a positive treatment effect, no effect and a negative treatment effect.
+The symbols +, ~ and - in the table represent a positive treatment effect, no effect and a negative treatment effect. Median values presented in %.
 
 | SAMPLE| TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES |
 |:------------|:------------:|:------------:|:------------:|:------------:|:------------:|
-| All sample                      | \-   | \+  | \-    | \-    | School effect identifyed                                               |
-| Junior (school effect)          | \~   | \+  | \-    | \~    | school 1 with 4C/ID variable 1                                         |
-| Junior and junior high          | \-   | \~  | \-    | \-    | junior and junior high school 0 and 1 (exclude school 1 without 4C/ID) |
-| All sample (school effect)      | \-   | \+  | \-    | \-    |                                                                        |
-| SCHOOL 1 junior and high junior | \~   | \+  | \-    | \+    |          |
-| *Junior for school 1*             | \+ (54 to 58)  | \+ (53 to 66)  | \- (81 to 74)    | \+ (59 to 62)    |   Median values presented in %; AFTER this road sample is junior grade for SCHOOL 1                                     |
+| All sample                      | \- (62 to 57)  | \+ (60 to 63)  | \- (79 to 73)   | \- (64 to 61)   | School effect identified  |
+| Junior (considering the school effect)          |  ~  |  (63 to 77)  |  - (70 to 71)    |  ~  |  |
+| Junior (considering the school effect, school 1 sample only with 4C/ID)          | \~   | \+ (62 to 77)  | \- (77 to 71)    | \~    | |
+| Junior and junior high (both schools but exclude school 1 without 4C/ID)          | \- (68 to 57)  | \~  | \- (68 to 57)    | \- (69 to 61)    |  |
+| All sample (school effect)      | \~   | \+ (63 to 74)  | \- (78 to 70)    | \~    |       |
+| SCHOOL 1 junior and high junior | \~   | \+ (53 to 63) | \- (81 to 73)   | \+ (59 to 61)   |          |
+| *Junior for school 1*             | \+ (54 to 58)  | \+ (53 to 66)  | \- (81 to 74)    | \+ (59 to 62)  |AFTER this road sample is junior grade for SCHOOL 1|
 | GRADE 7                          | \~   | \+ (56 to 64)  | \- (77 to 71)   | \~    |                   |
 | GRADE 8                         | \+ (54 to 58)   | \+ (55 to 68)  | \- (85 to 60)   | \~    | M4CID=="1", 71 entrances, less then 100 entrances|
 | GRADE 9                         | \~   | \+ (44 to 66)  | \+ (80 to 85)   | \+ (55 to 64)   |          |
@@ -21,7 +22,7 @@ The symbols +, ~ and - in the table represent a positive treatment effect, no ef
 | FEMALE                          | \+ (54 to 56)   | \+ (52 to 70)  | \~    | \+ (59 to 67)    |          |
 | MALE                            | \~   | \+ (53 to 62) | \- (81 to 66)    | \~    |          |
 
-TABLE ???: Legend: + means positive effect, -, negative effect and ~ no effect
+TABLE ???: Legend: + means positive effect, -, negative effect and ~ no effect; Median values presented in %;
 
 | Variable | + | ~ | -| SAMPLE + | no effect sample | sample - | Notes | 
 | TEST (Learning Transfer) | 21% | 50% | 29% | Junior, 8th grade and FEMALE ||

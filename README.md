@@ -82,7 +82,7 @@ Luckily, the knowledge and the tools available online today, allows us to go fur
 
 # RESULTS
 
-The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means not having the school effect [^readme-7], nor the problem of using the less numbered entrances of the junior high students sample.
+The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means not having the school effect [^readme-7], the sample has students with the same age and it doesn't have the problem of using the less numbered entrances of the junior high students sample.
 
 [^readme-7]: Is there an underlying behavioral underlying effect?
 
@@ -105,14 +105,6 @@ $` CLASS = 0.5 \times TEST + 0.3 \times LAB + 0.2 \times BEHAV `$;
 RANK: a categorical variable, 1,2,3, that measures the adaptability of students to school.
 
 The values showed in the table represent changes in the variables median.
-
-| VARIABLES | (negative) | (no effect) | (positive) | OBSERVATIONS/NOTES |
-|:----------|:----------:|:-----------:|:----------:|--------------------|
-| TEST      |            |             | (54 to 58) |                    |
-| LAB       |            |             | (53 to 66) |                    |
-| BEHAV     | (81 to 74) |             |            |                    |
-| CLASS     |            |             | (59 to 62) |                    |
-
 Table results resume
 
 | SAMPLE                |     TEST      |      LAB      |     BEHAV     |     CLASS     |                OBSERVATIONS/NOTES                 |
