@@ -203,17 +203,17 @@ notes for discussion: - The conlsuions meet the goals and answer th research que
 
 [^1]: This work, as well as the data, is also presented at the blog "<https://4cidchange.edublogs.org/>" and in the github repository <https://github.com/fqantonio/GoingInductive>.
 
-[^2] RStudio, <https://posit.co/products/open-source/rstudio/>
+[^2]: How brain learns? <https://learningobjectslearningstyles.edublogs.org/2019/11/02/brain-based-learning/><https://cmap.ihmc.us/> 
 
-[^3] How brain learns? <https://learningobjectslearningstyles.edublogs.org/2019/11/02/brain-based-learning/>
+[^3]: <https://cmap.ihmc.us/> 
 
-[^4] Data base sample (R dataframe): <https://github.com/fqantonio/GoingInductive/tree/main/DATA>
+[^4]: Flow charts (missing details to be updated) Data base sample (R data frame): <https://cmap.ihmc.us/> ; 
 
-[^5] <https://cmap.ihmc.us/>
+[^5]: RStudio, <https://posit.co/products/open-source/rstudio/>
 
-[^6] there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence.
+[^6]: there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence. https://github.com/fqantonio/GoingInductive/tree/main/DATA
 
-[^7] Is there an underlying behavioral underlying effect?
+[^7]: Is there an underlying behavioral underlying effect?
 
 # REFERENCES
 
