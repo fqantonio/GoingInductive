@@ -4,8 +4,9 @@ This is a **`Going Inductive`** paper DRAFT roadmap [\^1] , with two major goals
 
 \`\`\`
 
-\"Education is the most powerful
-weapon which you can use to change the world.\"
+Education is the most powerful weapon which you can use to change the world.
+
+Nelson Mandela
 
 ´´´
 
@@ -105,7 +106,7 @@ The values showed in the table represent changes in the variables median.
 Table results resume
 
 | SAMPLE                |     TEST      |      LAB      |     BEHAV     |     CLASS     |                OBSERVATIONS/NOTES                 |
-|:-----------|:----------:|:----------:|:----------:|:----------:|:----------:|
+|:----------------------|:-------------:|:-------------:|:-------------:|:-------------:|:-------------------------------------------------:|
 | *Junior for school 1* | \+ (54 to 58) | \+ (53 to 66) | \- (81 to 74) | \+ (59 to 62) |           Median values presented in %            |
 | GRADE 7               |      \~       | \+ (56 to 64) | \- (77 to 71) |      \~       |                                                   |
 | GRADE 8               | \+ (54 to 58) | \+ (55 to 68) | \- (85 to 60) |      \~       | M4CID=="1", 71 entrances, less then 100 entrances |
@@ -119,7 +120,7 @@ Table results resume
 The next table resumes the former table in another order: this next one shows the percentage of "positive", "negative" and "no effects", for each sample.
 
 | Variable                 |  \+  | \~  | \-  |                SAMPLE +                 |       no effect sample        |                SAMPLE -                 | Notes |
-|---------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|---------|
+|--------------------------|:----:|:---:|:---:|:---------------------------------------:|:-----------------------------:|:---------------------------------------:|-------|
 | TEST (Learning Transfer) | 33%  | 56% | 11% | All Junior sample, 8th grade and FEMALE |          GRADE 7, 9;          |                  RANK1                  |       |
 | LAB (Lab practice)       | 100% | 0%  | 0%  |                                         |          all samples          |                                         |       |
 | BEHAV (behavior)         | 11%  | 11% | 78% |                 GRADE 9                 |            FEMALE             | Junior; GRADE 7 and 8; all RANK's; MALE |       |
