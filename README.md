@@ -32,6 +32,34 @@ Learning Flow; Statistical Non-parametric Inference; academic results;
 learning transfer; behavior; lab practice; Cognitive Load Theory; Multi
 Intelligence Theory; Brain Based Learning; bLearning.
 
+# GOALS, RESEARCH QUESTIONS and Hyphotesis
+
+The **main goal** is to understand the impact of the use of Inductive
+Methodology 4C/ID in a bLearning setting, by answering the following
+**research questions**:
+
+1 - changing the learning methodologies from one mainly deductive,
+denominated by Direct Instruction (Merrill, 2007) to another one mostly
+inductive, Merriënboer's 4C/ID instructional design theory (van
+Merriënboer, Kirschner, 2007), means what for students learning
+outcomes? Who benefits? What are the pros and cons about this
+methodological decision?
+
+2 - Should you, as a teacher of science and tech, move to implement the
+inductive strategy as your methodology for learning?
+
+3 - And if you do, what are the outcomes? What are the risks? What were
+the consequences for the student's academic results?
+
+4 - Is there a different impact between female and male?
+
+5 - And within the different grades?
+
+6 - Student more adapted to school have benefit more with the use of
+4CID methodology?
+
+The **hypothesis** is that this change will have a positive impact in all learning areas researched for samples included in this work.
+
 # INTRODUCTION
 
 The work presented here deals with the impact of changing from a mostly
@@ -78,6 +106,15 @@ MOODLE Learning Management System (LMS) (Rice, 2006) lessons that were
 mostly accomplished in the classroom: fewer logs into the system were
 from outside.
 
+# CONTEXT
+
+This work includes junior and junior high students of two different
+schools data, from different regions, for the chemistry and physics
+subjects of the Portuguese curriculum, in the time scale 2003 to 2019.
+Raw data was gathered during 13 years, from actual day-to-day assessment
+registering in three different areas: transfer tests, lab practice and
+classroom behavior.
+
 Figure 2 show the variable longitudinal patterns for all sample time
 series, which includes junior and junior high students data for the two
 schools. The red vertical line shows the school change and the blue one
@@ -93,8 +130,8 @@ in the student behavior skills.
 ![Figure 2: all sample variables time
 series](Figures/figure2_boxplot_allSample.png)
 
-The concept map's software cmap tools [\^4] was used for the design of
-the learning flow maps and they are presented online [\^???] showing the
+The concept map's software cmap tools [^4] was used for the design of
+the learning flow maps and they are presented online [^???] showing the
 four components and the structure based in the four component
 instructional design (4C/ID), described in the book *Ten Steps to
 Complex Learning* (van Merriënboer; Kirschner, 2007).
@@ -113,24 +150,7 @@ laboratory practice and social skills, addressed respectively by 3
 variables, TEST, LAB and BEHAV. The CLASS variable is directly related
 to the academic results and is a weigth average of TEST, LAB and BEHAV.
 TEST, LAB and BEHAV were assessed by paper transfer tests, online
-trasfer tests and in classroom observational paper registering forms.
-
-# GOALS and RESEARCH QUESTIONS
-
-The **main goal** is to understand the impact of the use of Inductive
-Methodology 4C/ID in a bLearning setting, by answering the following
-**research questions**: 1 - changing the learning methodologies from one
-mainly deductive, denominated by Direct Instruction (Merrill, 2007) to
-another one mostly inductive, Merriënboer's 4C/ID instructional design
-theory (van Merriënboer; Kirschner, 2007), means what for students
-learning outcomes? Who benefits? What are the pros and cons about this
-methodological decision? 2 - Should you, as a teacher of science and
-tech, move to implement the inductive strategy as your methodology for
-learning? 3 - And if you do, what are the outcomes? What are the risks?
-What were the consequences for the student's academic results? 4 - Is
-there a different impact between female and male? 5 - And within the
-different grades? 6 - Student more adapted to school have benefit more
-with the use of 4CID methodology?
+transfer tests and in classroom observational paper registering forms.
 
 # MOTIVATION
 
@@ -161,11 +181,14 @@ as enterprises with a lot of controlling bureaucracy, putting numbers
 and paperwork ahead of the crucial and significant decisions around
 teaching, real assessment is barely used, research follows the same
 pattern, and when it happens, its just shared at the university level.
-Meaning: 1 - The crucial planning and individual teacher-student
-interaction is less important for this organization; 2 - Time spent on
-research and discussions is useless: numbers constrain our job, of
-course, it's normal, but with the same money we can do better if we can
-get together and discuss the way we could be organized.
+Meaning:
+
+1 - The crucial planning and individual teacher-student interaction is
+less important for this organization;
+
+2 - Time spent on research and discussions is useless: numbers constrain
+our job, of course, it's normal, but with the same money we can do
+better if we can get together and discuss the way we could be organized.
 
 Luckily, the knowledge and the tools available online today, allows us
 to go further with peer contribution, beyond a simple Average Treatment
@@ -174,15 +197,6 @@ knowledge is not something that we are prepared for and the statistical
 tools are very expensive. Today, this tools are available with
 opensource licences: so, time is crucial: teacher need it to study, get
 the necessary knowledge and interpret the results. And publish it!
-
-# CONTEXT
-
-This work includes junior and junior high students of two different
-schools data, from different regions, for the chemistry and physics
-subjects of the Portuguese curriculum, in the time scale 2003 to 2019.
-Raw data was gathered during 13 years, from actual day-to-day assessment
-registering in three different areas: transfer tests, lab practice and
-classroom behavior.
 
 # RESULTS
 
