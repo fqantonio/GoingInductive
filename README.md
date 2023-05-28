@@ -39,8 +39,8 @@ deductive type of methodology to a mostly inductive one: more precisely,
 this means a major change from a, **direct instruction** (Merril, 2007)
 classroom setting to an inductive strategy, **four components
 instructional design** (4C/ID) (Van Merrienboer, Clark, Coock, 2002), in
-a bLearning environment (book???). This leads directly to a major and
-crucial teacher concern that transform into the main **research
+a bLearning environment (Mayer, 2005). This leads directly to a major
+and crucial teacher concern that transform into the main **research
 question**: what are the accommodations, risks and concerns about the
 impact on students learning that you have to deal, if you make this
 strategic change?
@@ -84,7 +84,7 @@ schools. The red vertical line shows the school change and the blue one
 is the starting point for the implementation of 4C/ID strategic
 inductive methodology for the treatment group. Its clear that near each
 vertical line there is a change showed by the blue smooth line
-(polynomial local regression). So, something happened! Ferthermore, it
+(polynomial local regression). So, something happened! Furthermore, it
 seems that there no positive effect of the methodological change and its
 clear that there must be a school and behavior effect. Meaning that, the
 schools have different learning outcomes and after 2015 there is a crash
@@ -232,7 +232,7 @@ median.
 Table results resume
 
 | SAMPLE                |     TEST      |      LAB      |     BEHAV     |     CLASS     |                OBSERVATIONS/NOTES                 |
-|:----------------------|:-------------:|:-------------:|:-------------:|:-------------:|:-------------------------------------------------:|
+|:-----------|:----------:|:----------:|:----------:|:----------:|:----------:|
 | *Junior for school 1* | \+ (54 to 58) | \+ (53 to 66) | \- (81 to 74) | \+ (59 to 62) |           Median values presented in %            |
 | GRADE 7               |      \~       | \+ (56 to 64) | \- (77 to 71) |      \~       |                                                   |
 | GRADE 8               | \+ (54 to 58) | \+ (55 to 68) | \- (85 to 60) |      \~       | M4CID=="1", 71 entrances, less then 100 entrances |
@@ -248,7 +248,7 @@ shows the percentage of "positive", "negative" and "no effects", for
 each sample.
 
 | Variable                 |  \+  | \~  | \-  |                SAMPLE +                 |       no effect sample        |                SAMPLE -                 | Notes |
-|--------------------------|:----:|:---:|:---:|:---------------------------------------:|:-----------------------------:|:---------------------------------------:|-------|
+|---------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|---------|
 | TEST (Learning Transfer) | 33%  | 56% | 11% | All Junior sample, 8th grade and FEMALE |          GRADE 7, 9;          |                  RANK1                  |       |
 | LAB (Lab practice)       | 100% | 0%  | 0%  |                                         |          all samples          |                                         |       |
 | BEHAV (behavior)         | 11%  | 11% | 78% |                 GRADE 9                 |            FEMALE             | Junior; GRADE 7 and 8; all RANK's; MALE |       |
@@ -405,6 +405,9 @@ Intelligences, ISBN-13: 978-0465024339;
 
 Jensen, Eric (2005); Teaching with the Brain in Mind, ASCD, ISBN-10:
 146600302; ISBN-13:978-1416600305
+
+Mayer, Richard (editor)(2005); The Cambridge Handbook of Multimedia
+Learning, Cambridge University Press; ISBN: 0-521-83873-8;
 
 Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal
 of Research on Technology in Education, 40:1, 5-22, DOI:
