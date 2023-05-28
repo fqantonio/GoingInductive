@@ -87,7 +87,9 @@ GENDER: categorical variable, F and M;
 
 TEST, LAB, BEHAV: variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment) and BEHAV related to accomplishment school rules behavior LAB work and Behavior, normally if they follow the rules established by the school; GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p (Technical) and 11p (Technical);
 
-M4CID, categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID; CLASS, continuous variable, 0 to 100, height average, CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV;
+M4CID, categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID; CLASS, continuous variable, 0 to 100, height average:
+
+$$ CLASS = 0.5 \times TEST + 0.3 \times LAB + 0.2 \times BEHAV $$;
 
 RANK: a categorical variable, 1,2,3, that measures the adaptability of students to school.
 
@@ -134,25 +136,39 @@ The conclusions presented here focus on the junior sample of school 1 (table abo
 However, there are risks and concerns to be accommodated during the process, namely:
 
 1.  the less adapted to the school system;
-2.  the classroom management refering to students behavior;
+2.  the classroom management referring to students behavior;
 3.  in the **learning transfer** process: there must be some additional activities planned to accommodate this loss;
 4.  Grade 7 and males, in less degree of concern, seems to benefit less from this change.
 
 **Bottom line**, if you don't want to take the risks, change conditional to have a student group more adapted to school and if you want to increase the lab practices skills.
 
-RISKS: 1. In the **learning transfer** and **academic results** learning areas, there is the risk that the less adapted to the school environment have a decreased with this strategic change; 2. For **behavior**, specifically in the aspect of following social and behavioral classroom rules, there is a major negative [\^6] impact in all samples: the risk of loosing control of the students group inside the classroom is real; however, but note that, although, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment.
+RISKS:
 
-CONCERNS: 1. There seems to be a positive effect only in GRADE 8 and FEMALE groups for the **learning transfer**: the changes in the other groups don't have any effect. 2. On the **behavior field** only grade 9 seems to get some positive effect; 3. In general, Female gender group tend to benefit more them male; 4. In general, RANK 3 tends to benefit more then the other rank groups; 5. grade 9th benefit more then the other grades;
+1\. In the **learning transfer** and **academic results** learning areas, there is the risk that the less adapted to the school environment have a decreased with this strategic change;
 
-BENEFITS: 1. In overall, the change has a positive impact on junior grade students for the **academic results**; 2. **Lab practice** has a large positive effect in all samples.
+2\. For **behavior**, specifically in the aspect of following social and behavioral classroom rules, there is a major negative [\^6] impact in all samples: the risk of loosing control of the students group inside the classroom is real; however, but note that, although, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment.
+
+CONCERNS:
+
+1\. There seems to be a positive effect only in GRADE 8 and FEMALE groups for the **learning transfer**: the changes in the other groups don't have any effect.
+
+2\. On the **behavior field** only grade 9 seems to get some positive effect;
+
+3\. In general, Female gender group tend to benefit more them male;
+
+4\. In general, RANK 3 tends to benefit more then the other rank groups;
+
+5\. grade 9th benefit more then the other grades;
+
+BENEFITS:
+
+1\. In overall, the change has a positive impact on junior grade students for the **academic results**;
+
+2\. **Lab practice** has a large positive effect in all samples.
 
 # DISCUSSION
 
-notes for discussion: - The conlsuions meet the goals and answer th research question? - Did I implemented the methods correctly? - Is there an underlying effect for the behav variable? - Conclusions for the stakeholders in the learning process: teachers, Policy implications and school management. - blearning change: team work impressible - Reiterate results - world research corroboration
-
-Future research Tie loose hands: Clarify, robustness
-
-after 2015 there is a crash in the student behavior skills.: need extra data
+notes for discussion: - The conlsuions meet the goals and answer th research question? - Did I implemented the methods correctly? - Is there an underlying effect for the behav variable? - Conclusions for the stakeholders in the learning process: teachers, Policy implications and school management. - blearning change: team work impressible - Reiterate results - world research corroboration ; Future research Tie loose hands: Clarify, robustness; after 2015 there is a crash in the student behavior skills.: need extra data
 
 # KEYWORDS
 
