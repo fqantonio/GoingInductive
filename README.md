@@ -45,9 +45,6 @@ question**: what are the accommodations, risks and concerns about the
 impact on students learning that you have to deal, if you make this
 strategic change?
 
-![Figure 2: all sample variables time
-series](/Users/novo/Desktop/Doutoramento/GoingInductivePaper/Figures/figure2_boxplot_allSample.png)
-
 This work flow starts, with a exploratory data analysis (EDA) and a
 presentation of the non-parametric inference treatment effect results.
 The treatment group is the one where students experienced the 4C/ID
@@ -72,14 +69,29 @@ across with the work of Felder´s learning styles (Felder; Silverman;
 me a complete list of different methodology that seems very promising
 and more adapted to the way brain learns. Furthermore, the readings
 about alternative **educational methodologies** went on also into the
-Cognitive Load Theory (Sweller, 1998), Brain Based Leaning (Jensen,
-2005), Gardner Multi Intelligences Theory (Gardner, 2011) and four
-component instructional design (4C/ID) (Van Merrienboer, Clark, Croock,
-2002). After four years of readings and tests, in 2013, the 4C/ID
+Cognitive Load Theory (Sweller, 1998), Brain Based Leaning [\^3]
+(Jensen, 2005), Gardner Multi Intelligences Theory (Gardner, 2011) and
+four component instructional design (4C/ID) (Van Merrienboer, Clark,
+Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID
 methodology was applied and a bLearning environment online set with
-MOODLE (book????) lessons that were mostly accomplished in the
-classroom: about 20%(VER O OUTRO ARTIGO???) of the logs into the system
-were outside of school.
+MOODLE Learning Management System (LMS) (Rice, 2006) lessons that were
+mostly accomplished in the classroom: fewer logs into the system were
+from outside.
+
+Figure 2 show the variable longitudinal patterns for all sample time
+series, which includes junior and junior high students data for the two
+schools. The red vertical line shows the school change and the blue one
+is the starting point for the implementation of 4C/ID strategic
+inductive methodology for the treatment group. Its clear that near each
+vertical line there is a change showed by the blue smooth line
+(polynomial local regression). So, something happened! Ferthermore, it
+seems that there no positive effect of the methodological change and its
+clear that there must be a school and behavior effect. Meaning that, the
+schools have different learning outcomes and after 2015 there is a crash
+in the student behavior skills.
+
+![Figure 2: all sample variables time
+series](/Users/novo/Desktop/Doutoramento/GoingInductivePaper/Figures/figure2_boxplot_allSample.png)
 
 The concept map's software cmap tools [\^4] was used for the design of
 the learning flow maps and they are presented online [\^???] showing the
@@ -109,9 +121,9 @@ The **main goal** is to understand the impact of the use of Inductive
 Methodology 4C/ID in a bLearning setting, by answering the following
 **research questions**: 1 - changing the learning methodologies from one
 mainly deductive, denominated by Direct Instruction (Merrill, 2007) to
-another one mostly inductive, Merrionboer 4C/ID instructional design
+another one mostly inductive, Merriënboer's 4C/ID instructional design
 theory (van Merriënboer; Kirschner, 2007), means what for students
-learning outcames? Who benefits? What are the pros and cons about this
+learning outcomes? Who benefits? What are the pros and cons about this
 methodological decision? 2 - Should you, as a teacher of science and
 tech, move to implement the inductive strategy as your methodology for
 learning? 3 - And if you do, what are the outcomes? What are the risks?
@@ -147,7 +159,7 @@ The organizational environment of schools and teachers in Portugal
 doesn't help this type of research work. Focused on managing the schools
 as enterprises with a lot of controlling bureaucracy, putting numbers
 and paperwork ahead of the crucial and significant decisions around
-teaching, real assessment is barely used, research folows teh same
+teaching, real assessment is barely used, research follows the same
 pattern, and when it happens, its just shared at the university level.
 Meaning: 1 - The crucial planning and individual teacher-student
 interaction is less important for this organization; 2 - Time spent on
@@ -181,22 +193,31 @@ SCHOOL 1, which means not having the school effect [\^5], nor the
 problem of using the less numbered entrances of the junior high students
 sample.
 
-**variables** descrition in the data frame:
+**Variables** description in the data frame:
 
-ID: Identification entry row data; DATE: year of the sample: it belongs,
-actually to 2003/2004, school year; SCHOOL: categorical variable, 0 and
-1, represent two schools, identified by 0 (till 2008) and 1 (after 2009,
-included); GENDER: categorical variable, F and M TEST, LAB, BEHAV:
-variables of the score in the tests and observational forms at LAB
-(Laboratory practical skills assessment) and BEHAV related to
-accomplishment school rules behavior LAB work and Behavior, normally if
-they follow the rules established by the school; GRADE: categories 0 to
-6, representing, respectively, 7,8,9,10,11, 10p(techical) and 11p
-(Technical); M4CID, categorical 0 and 1 variable, respectively, without
-4C/ID and with 4CID; CLASS, continuous variable, 0 to 100, height
-average, CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV; RANK: a
-categorical variable, 1,2,3, that measures the adaptability of students
-to school.
+ID: Identification entry row data;
+
+DATE: year of the sample: it belongs, actually to 2003/2004, school
+year;
+
+SCHOOL: categorical variable, 0 and 1, represent two schools, identified
+by 0 (till 2008) and 1 (after 2009, included);
+
+GENDER: categorical variable, F and M;
+
+TEST, LAB, BEHAV: variables of the score in the tests and observational
+forms at LAB (Laboratory practical skills assessment) and BEHAV related
+to accomplishment school rules behavior LAB work and Behavior, normally
+if they follow the rules established by the school; GRADE: categories 0
+to 6, representing, respectively, 7,8,9,10,11, 10p (Technical) and 11p
+(Technical);
+
+M4CID, categorical 0 and 1 variable, respectively, without 4C/ID and
+with 4CID; CLASS, continuous variable, 0 to 100, height average, CLASS =
+0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV;
+
+RANK: a categorical variable, 1,2,3, that measures the adaptability of
+students to school.
 
 The values showed in the table represent changes in the variables
 median.
@@ -249,7 +270,7 @@ However, there are risks and concerns to be accommodated during the
 process, namely:
 
 1.  the less adapted to the school system;
-2.  the classroom management referening to students behavior;
+2.  the classroom management refering to students behavior;
 3.  in the **learning transfer** process: there must be some additional
     activities planned to accommodate this loss;
 4.  Grade 7 and males, in less degree of concern, seems to benefit less
@@ -291,6 +312,9 @@ school management. - blearning change: team work impressible - Reiterate
 results - world research corroboration
 
 Future research Tie loose hands: Clarify, robustness
+
+after 2015 there is a crash in the student behavior skills.: need extra
+data
 
 # KEYWORDS
 
@@ -357,6 +381,9 @@ classroom-based learning with distance learning (eLearning).
 
 [\^2] RStudio, <https://posit.co/products/open-source/rstudio/>
 
+[\^3] How brain learns?
+<https://learningobjectslearningstyles.edublogs.org/2019/11/02/brain-based-learning/>
+
 [\^3] Data base sample (R dataframe):
 <https://github.com/fqantonio/GoingInductive/tree/main/DATA>
 
@@ -391,6 +418,9 @@ Research and Development. 50. 39-61. 10.1007/BF02504993.
 van Merriënboer, Jeroen J. G.; Kirschner, Paul A.; (2007) Ten Steps to
 Complex Learning, Routledge; 1st edition, SBN-10:0805857931;
 ISBN-13:978-0805857931;
+
+Rice, William (2006); Moodle, E-Learning Course Development, Packt
+Publishing, ISBN: 1-904811-29-9;
 
 Sweller, John et al. (1998) "Cognitive Architecture and Instructional
 Design." Educational Psychology Review 10 (1998): 251-296;
