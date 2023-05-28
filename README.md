@@ -2,6 +2,13 @@
 
 This is a **`Going Inductive`** paper DRAFT roadmap [\^1] , with two major goals: show the conclusions and share the work worldwide the work done: this is a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and blearning practice. Hopefully, there will be, at least, one paper based on this.
 
+\`\`\`
+
+\"Education is the most powerful
+weapon which you can use to change the world.\"
+
+´´´
+
 # ABSTRACT
 
 Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning activities design flow, that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some remarks. If you decide to do it, there will be specific impacts for the students that need to be **accommodated** as well implications for the stakeholders in the learning process: policy makers and school management. The sample covers 13 years of teacher data assessment, during the period 2003 to 2019, with conclusions about the impact in the learning transfer, Lab Practice, classroom behavior and academic results.
