@@ -2,11 +2,9 @@
 
 This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with two major goals: show the conclusions and share the work worldwide the work done: this is a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
 
-> Education is the most powerful weapon which you can use to change the world.
-> Nelson Mandela
-
-
 [^readme-1]: This work, as well as the data, is also presented at the blog "<https://4cidchange.edublogs.org/>" and in the github repository <https://github.com/fqantonio/GoingInductive>.
+
+> Education is the most powerful weapon which you can use to change the world. Nelson Mandela
 
 # ABSTRACT
 
@@ -40,9 +38,7 @@ This work flow starts, with a exploratory data analysis (EDA) and a presentation
 
 Since this is a longitudinal data sample, Junior and junior high for the physics and chemistry content of the Portuguese school curriculum, the **conclusions** extrapolation should be used carefully.
 
-The data used in this work was gathered over 13 years, in the period 2003 to 2019, from actual teacher day-to-day practice assessments about students **Learning Transfer**, **Lab Practice**, **Classroom Behavior**, that include Social Skills, and **Academic Results**. After starting to be interested about the different ways students lear I came across with the work of Felder´s learning styles (Felder; Silverman; 1988) and Wiley's Learning Objects (Wiley, 2002). These paper's showed me a complete list of different methodology that seems very promising and more adapted to the way brain learns. Furthermore, the readings about alternative **educational methodologies** went on also into the Cognitive Load Theory (Sweller, 1998), Brain Based Learning[^2] (Jensen, 2005), Gardner Multi-Intelligence Theory (Gardner, 2011) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID methodology was applied and a bLearning environment online set with MOODLE Learning Management System (LMS) (Rice, 2006) lessons that were mostly accomplished in the classroom: fewer logs into the system were from outside.
-
-[^readme-2]: How brain learns? <https://learningobjectslearningstyles.edublogs.org/2019/11/02/brain-based-learning/><https://cmap.ihmc.us/>
+The data used in this work was gathered over 13 years, in the period 2003 to 2019, from actual teacher day-to-day practice assessments about students **Learning Transfer**, **Lab Practice**, **Classroom Behavior**, that include Social Skills, and **Academic Results**. After starting to be interested about the different ways students lear I came across with the work of Felder´s learning styles (Felder; Silverman; 1988) and Wiley's Learning Objects (Wiley, 2002). These paper's showed me a complete list of different methodology that seems very promising and more adapted to the way brain learns. Furthermore, the readings about alternative **educational methodologies** went on also into the Cognitive Load Theory (Sweller, 1998), Brain Based Learning[\^2] (Jensen, 2005), Gardner Multi-Intelligence Theory (Gardner, 2011) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID methodology was applied and a bLearning environment online set with MOODLE Learning Management System (LMS) (Rice, 2006) lessons that were mostly accomplished in the classroom: fewer logs into the system were from outside.
 
 # CONTEXT
 
@@ -50,19 +46,19 @@ This work includes junior and junior high students of two different schools data
 
 Figure 2 show the variable longitudinal patterns for all sample time series, which includes junior and junior high students data for the two schools. The red vertical line shows the school change and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology for the treatment group. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression). So, something happened! Furthermore, it seems that there no positive effect of the methodological change and its clear that there must be a school and behavior effect. Meaning that, the schools have different learning outcomes and after 2015 there is a crash in the student behavior skills.
 
-![Figure 2: all sample variables time series](Figures/figure2_boxplot_allSample.png)
+![Figure 1: all sample variables time series](Figures/figure1_boxplot_allSample.png)
 
-The concept map's software cmap tools[^readme-3] was used for the design of the learning flow maps and they are presented online[^readme-4] showing the four components and the structure based in the four component instructional design (4C/ID), described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
+The concept map's software cmap tools[^readme-2] was used for the design of the learning flow maps and they are presented online[^readme-3] showing the four components and the structure based in the four component instructional design (4C/ID), described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
 
-[^readme-3]: <https://cmap.ihmc.us/>
+[^readme-2]: <https://cmap.ihmc.us/>
 
-[^readme-4]: Flow charts (missing details to be updated) Data base sample (R data frame): <https://cmap.ihmc.us/> ;
+[^readme-3]: Flow charts (missing details to be updated) Data base sample (R data frame): <https://cmap.ihmc.us/> ;
 
-The **statistical analysis** uses R code software in the RStudio[^readme-5] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data and several plots showing patterns and relationships between variables. Afterwards there is a data normality and sample independence investigation. The principal methodology used is the non-parametric inferential treatment effect, but there is a discussion towards the non-parametric regression inference, regression discontinuity design and clustering. this last ones just to try to corroborate the upper first results. For this, it was used a data base[^readme-6] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. The CLASS variable is directly related to the academic results and is a weigth average of TEST, LAB and BEHAV. TEST, LAB and BEHAV were assessed by paper transfer tests, online transfer tests and in classroom observational paper registering forms.
+The **statistical analysis** uses R code software in the RStudio[^readme-4] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data and several plots showing patterns and relationships between variables. Afterwards there is a data normality and sample independence investigation. The principal methodology used is the non-parametric inferential treatment effect, but there is a discussion towards the non-parametric regression inference, regression discontinuity design and clustering. this last ones just to try to corroborate the upper first results. For this, it was used a data base[^readme-5] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. The CLASS variable is directly related to the academic results and is a weigth average of TEST, LAB and BEHAV. TEST, LAB and BEHAV were assessed by paper transfer tests, online transfer tests and in classroom observational paper registering forms.
 
-[^readme-5]: RStudio, <https://posit.co/products/open-source/rstudio/>
+[^readme-4]: RStudio, <https://posit.co/products/open-source/rstudio/>
 
-[^readme-6]: there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence. <https://github.com/fqantonio/GoingInductive/tree/main/DATA>
+[^readme-5]: there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence. <https://github.com/fqantonio/GoingInductive/tree/main/DATA>
 
 # MOTIVATION
 
@@ -82,44 +78,30 @@ Luckily, the knowledge and the tools available online today, allows us to go fur
 
 # RESULTS
 
-The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means not having the school effect [^readme-7], the sample has students with the same age and it doesn't have the problem of using the less numbered entrances of the junior high students sample.
+The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means not having the school effect [^readme-6], the sample has students with the same age and it doesn't have the problem of using the less numbered entrances of the junior high students sample.
 
-[^readme-7]: Is there an underlying behavioral underlying effect?
+[^readme-6]: Is there an underlying behavioral underlying effect?
 
-**Variables** description in the data frame:
+The **Variables** are described in this next table.
 
-ID: Identification entry row data;
+|     VARIABLE     | Description                                                                                                                                                                                                                                                                                                                                                      |
+|:----------:|------------------------------------------------------------|
+|        ID        | Identification entry row data                                                                                                                                                                                                                                                                                                                                    |
+|       DATE       | First Year of the school year period                                                                                                                                                                                                                                                                                                                             |
+|      SCHOOL      | Categorical variable, 0 and 1, represent two schools, identified by 0 (till 2008) and 1 (after 2009, included)                                                                                                                                                                                                                                                   |
+|      GENDER      | Categorical variable, F and M                                                                                                                                                                                                                                                                                                                                    |
+| TEST, LAB, BEHAV | Variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment) and BEHAV related to accomplishment school rules behavior LAB work and Behavior, normally if they follow the rules established by the school; GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p (Technical) and 11p (Technical) |
+|      M4CID       | Categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID                                                                                                                                                                                                                                                                                          |
+|      CLASS       | Continuous variable, 0 to 100, height average [^readme-7]                                                                                                                                                                                                                                                                                                        |
+|       RANK       | Categorical variable, 1,2,3, that measures the adaptability of students to school: 1 less adapted, 3, more adapted.                                                                                                                                                                                                                                              |
 
-DATE: year of the sample: it belongs, actually to 2003/2004, school year;
+[^readme-7]: $` CLASS = 0.5 \times TEST + 0.3 \times LAB + 0.2 \times BEHAV `$
 
-SCHOOL: categorical variable, 0 and 1, represent two schools, identified by 0 (till 2008) and 1 (after 2009, included);
-
-GENDER: categorical variable, F and M;
-
-TEST, LAB, BEHAV: variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment) and BEHAV related to accomplishment school rules behavior LAB work and Behavior, normally if they follow the rules established by the school; GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p (Technical) and 11p (Technical);
-
-M4CID, categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID; CLASS, continuous variable, 0 to 100, height average:
-
-$` CLASS = 0.5 \times TEST + 0.3 \times LAB + 0.2 \times BEHAV `$;
-
-RANK: a categorical variable, 1,2,3, that measures the adaptability of students to school.
+![Figure 2: Resume results for the 4C/ID treatment effect](Figures/Figure2_resumeResults.png)
 
 The values showed in the table represent changes in the variables median.
-Table results resume
 
-| SAMPLE                |     TEST      |      LAB      |     BEHAV     |     CLASS     |                OBSERVATIONS/NOTES                 |
-|:-----------|:----------:|:----------:|:----------:|:----------:|:----------:|
-| *Junior for school 1* | \+ (54 to 58) | \+ (53 to 66) | \- (81 to 74) | \+ (59 to 62) |           Median values presented in %            |
-| GRADE 7               |      \~       | \+ (56 to 64) | \- (77 to 71) |      \~       |                                                   |
-| GRADE 8               | \+ (54 to 58) | \+ (55 to 68) | \- (85 to 60) |      \~       | M4CID=="1", 71 entrances, less then 100 entrances |
-| GRADE 9               |      \~       | \+ (44 to 66) | \+ (80 to 85) | \+ (55 to 64) |                                                   |
-| RANK 1                | \- (34 to 29) | \+ (26 to 35) | \- (65 to 50) | \- (39 to 37) |                                                   |
-| RANK 2                |      \~       | \+ (51 to 62) | \- (80 to 67) |      \~       |                                                   |
-| RANK 3                |      \~       | \+ (73 to 80) | \- (94 to 90) | \+ (77 to 81) |                                                   |
-| FEMALE                | \+ (54 to 56) | \+ (52 to 70) |      \~       | \+ (59 to 67) |                                                   |
-| MALE                  |      \~       | \+ (53 to 62) | \- (81 to 66) |      \~       |                                                   |
-
-The next table resumes the former table in another order: this next one shows the percentage of "positive", "negative" and "no effects", for each sample.
+The next table resumes the former graph in another order: it shows the percentage of "positive", "negative" and "no effects", detected for each sample.
 
 | Variable                 |  \+  | \~  | \-  |                SAMPLE +                 |       no effect sample        |                SAMPLE -                 | Notes |
 |---------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|---------|
@@ -197,7 +179,7 @@ notes for discussion: - The conlsuions meet the goals and answer th research que
 
 **`Multi Intelligences Theory`** - Multiple intelligences refers to a theory describing the different ways students learn and acquire information. These multiple intelligences range from the use of words, numbers, pictures and music, to the importance of social interactions, introspection, physical movement and being in tune with nature;
 
-**Multimedia Learning** - Set of principles based on scientific evidence for learning from words (spoken or printed) and pictures (video, graphs, illustrations, map or photos) 
+**Multimedia Learning** - Set of principles based on scientific evidence for learning from words (spoken or printed) and pictures (video, graphs, illustrations, map or photos)
 
 **`Brain Based Learning`** - refers to teaching methods, lesson designs, and school programs that are based on the latest neurologic scientific research about how the brain learns;
 

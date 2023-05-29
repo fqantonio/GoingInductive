@@ -399,7 +399,7 @@ p40<-ggplot(data_junior,aes(TEST,after_stat(density))) + geom_histogram(binwidth
 p41<-ggplot(data_junior,aes(LAB,after_stat(density))) + geom_histogram(binwidth=10,colour = 1, fill = "white") + geom_density(lwd = 1, colour = 4,fill = 2, alpha = 0.50)
 p42<-ggplot(data_junior,aes(BEHAV,after_stat(density))) + geom_histogram(binwidth=10,colour = 1, fill = "white") + geom_density(lwd = 1, colour = 4,fill = 2, alpha = 0.50)
 p43<-ggplot(data_junior,aes(CLASS,after_stat(density))) + geom_histogram(binwidth=10,colour = 1, fill = "white") + geom_density(lwd = 1, colour = 4,fill = 2, alpha = 0.50)
-#Figue 10: normality testing for the junior grade sample
+#Figure 10: normality testing for the junior grade sample
 grid.arrange(p40, p41, p42, p43,  nrow = 2, top="Junior grade histograms", bottom="Figure 10: normality testing for the junior grade sample")
 
 # (secondary) junior high
@@ -2701,25 +2701,39 @@ rdplot(y,x)
 
 # Resume results table to present them in a more readable table
 results <- data.frame(
-  samples=c("All sample (school effect)","Junior/junior high (both schs. sch. 1 only with 4C/ID)","Junior (school effect) sch. 1 only with 4C/ID)","Junior (school effect)","All sample","SCHOOL 1 junior and high junior","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
-  TEST1=c(0,-68,0,0,-62,0,54,0,54,0,-34,0,0,54,0),
-  TEST2=c(0,-57,0,0,-57,0,58,0,58,0,-29,0,0,56,0),
-  LAB1=c(63,0,62,63,60,53,53,56,55,44,26,51,73,52,53),
-  LAB2=c(74,0,77,77,63,63,66,74,68,66,35,62,80,70,72),
-  BEHAV1=c(-78,-68,-77,-70,-79,-81,-81,-77,-85,80,-65,-80,-94,0,-81),
-  BEHAV2=c(-70,-57,-71,-71,-73,-73,-74,-71,-60,85,-50,-67,-90,0,-66),
-  CLASS1=c(0,-69,0,0,-64,59,59,0,0,55,-39, 0,77,59,0),
-  CLASS2=c(0,-61,0,0,-61,61,62,0,0,64,-37, 0,81,67,0)
+  samples=c("Junior/junior high (both schs. sch. 1 only with 4C/ID)","Junior (school effect) sch. 1 only with 4C/ID)","Junior (school effect)","All sample (school effect)","All sample","SCHOOL 1 junior and high junior","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
+  TEST1=c(-68,0,0,0,-62,0,54,0,54,0,-34,0,0,54,0),
+  TEST2=c(-57,0,0,0,-57,0,58,0,58,0,-29,0,0,56,0),
+  LAB1=c(0,62,63,63,60,53,53,56,55,44,26,51,73,52,53),
+  LAB2=c(0,77,77,74,63,63,66,74,68,66,35,62,80,70,72),
+  BEHAV1=c(-68,-77,-70,-78,-79,-81,-81,-77,-85,80,-65,-80,-94,0,-81),
+  BEHAV2=c(-57,-71,-71,-70,-73,-73,-74,-71,-60,85,-50,-67,-90,0,-66),
+  CLASS1=c(-69,0,0,0,-64,59,59,0,0,55,-39, 0,77,59,0),
+  CLASS2=c(-61,0,0,0,-61,61,62,0,0,64,-37, 0,81,67,0)
 )
 results
+?ylab
+?labs
+?ggtitle
+?theme
+?legend.box
 ?geom_errorbar
+?geom_t
+?ggplot_add
+?ggplot
+?object
+?legend
 ggplot(results) +
-  geom_errorbar( aes(x=factor(samples, levels = c("All sample (school effect)","Junior/junior high (both schs. sch. 1 only with 4C/ID)","Junior (school effect) sch. 1 only with 4C/ID)","Junior (school effect)","All sample","SCHOOL 1 junior and high junior","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE")), ymin=TEST1, ymax=TEST2), colour="orange",width=0.2,alpha=0.9, size=1) +
-  geom_errorbar( aes(x=samples, ymin=LAB1, ymax=LAB2), width=0.4, colour="red", alpha=0.9, size=1) +
-  geom_errorbar( aes(x=samples, ymin=BEHAV1, ymax=BEHAV2), width=0.4, colour="green", alpha=0.9, size=1) +
-  geom_errorbar( aes(x=samples, ymin=CLASS1, ymax=CLASS2), width=0.4, colour="blue", alpha=0.9, size=1) +
-  coord_flip()
-
+  geom_errorbar(aes(x=factor(samples,levels = c("Junior/junior high (both schs. sch. 1 only with 4C/ID)","Junior (school effect) sch. 1 only with 4C/ID)","Junior (school effect)","All sample (school effect)","All sample","SCHOOL 1 junior and high junior","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE")), ymin=TEST1, ymax=TEST2,color='TEST'),width=0.8,alpha=1, size=1) +
+  geom_errorbar(aes(x=samples, ymin=LAB1, ymax=LAB2,color='LAB'), width=0.4, alpha=1, size=1) +
+  geom_errorbar(aes(x=samples, ymin=BEHAV1, ymax=BEHAV2, color='BEHAV'), width=0.4, alpha=1, size=1) +
+  geom_errorbar(aes(x=samples, ymin=CLASS1, ymax=CLASS2, color='CLASS'), width=0.4, alpha=1, size=1) +
+  xlab("Samples")+labs(title="4C/ID treatment effect resume results",y="4C/ID negative effect, no effect, 4C/ID positive effect")+
+  scale_color_manual(name='Variables',
+                     breaks=c('TEST','LAB', 'BEHAV', 'CLASS'),
+                     values=c('TEST'='red', 'LAB'='blue', 'BEHAV'='green', 'CLASS'='yellow'))+
+  
+  coord_flip(ylim = c(-100,100))
 
 ## NOTES and OBSERVATIONS
 
@@ -2777,7 +2791,8 @@ The basic claim is that four interrelated components are essential in blueprints
 component are coupled to the basic learning processes involved in complex learning and a fully worked-out example of a training
 blueprint for “searching for literature” is provided. Readers who benefit from a structured advance organizer should consider
 reading the appendix at the end of this article before reading the entire article.
-
+legend: https://www.statology.org/ggplot-manual-legend/
+  
 ??? Van Merriënboer, J. J. G., & Kester, L. (2008). Whole-task models in education. 
 In J. M. Spector, M. D. Merrill, J. J. G. van Merriënboer, & M. P. Driscoll (Eds.), 
 Handbook of research on educational communications and technology (3rd ed, pp. 441–456). 
