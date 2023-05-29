@@ -1,6 +1,6 @@
 # WELCOME
 
-This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with two major goals: show the conclusions and share the work worldwide the work done: this is a **knowledge base source**, with the results and conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
+This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with two major goals: show the conclusions and share the work done worldwide. This **knowledge base source** share results, conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
 
 [^readme-1]: This work, as well as the data, is also presented at the blog "<https://4cidchange.edublogs.org/>" and in the github repository <https://github.com/fqantonio/GoingInductive>.
 
@@ -8,7 +8,7 @@ This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with two major g
 
 # ABSTRACT
 
-Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning activities design flow, that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some remarks. If you decide to do it, there will be specific impacts for the students that need to be **accommodated** as well implications for the stakeholders in the learning process: policy makers and school management. The sample covers 13 years of teacher data assessment, during the period 2003 to 2019, with conclusions about the impact in the learning transfer, Lab Practice, classroom behavior and academic results.
+Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning activities design flow, that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some remarks. If you decide to do it, there will be specific impacts for the students learning that need to be **accommodated**, as well as implications for the stakeholders in the learning process: policy makers and school management. The sample covers 13 years of teacher data assessment, during the period 2003 to 2019, with conclusions about the impact in the learning transfer, Lab Practice, social skills and academic results.
 
 **Keywords** Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flow; Statistical Non-parametric Inference; academic results; learning transfer; behavior; lab practice; Cognitive Load Theory; Multi Intelligence Theory; Brain Based Learning; bLearning.
 
@@ -26,7 +26,7 @@ The **main goal** is to understand the impact of the use of Inductive Methodolog
 
 5 - And within the different grades?
 
-6 - Student more adapted to school have benefit more with the use of 4CID methodology?
+6 - Student more adapted to school benefit more?
 
 The **hypothesis** is that this change will have a positive impact in all learning areas because, in overall, it is based on the 4C/ID methodology: that, in itself is anchored on Brain Based Learning (BBL), Cognitive Load Theory (CLT), Multi-Intelligence Theory (MIT) and Multimedia Learning (ML).
 
@@ -42,7 +42,7 @@ The data used in this work was gathered over 13 years, in the period 2003 to 201
 
 This work includes junior and junior high students of two different schools data, from different regions, for the chemistry and physics subjects of the Portuguese curriculum, in the time scale 2003 to 2019. Raw data was gathered during 13 years, from actual day-to-day assessment registering in three different areas: transfer tests, lab practice and classroom behavior.
 
-Figure 1 show the variable longitudinal patterns for all sample time series, which includes junior and junior high students data for the two schools. The red vertical line shows the school change and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology for the treatment group. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression). So, something happened! Furthermore, it seems that there no positive effect of the methodological change and its clear that there must be a school and behavior effect. Meaning that, the schools have different learning outcomes and after 2015 there is a crash in the student behavior skills.
+Figure 1 show the variable longitudinal patterns for all sample time series, which includes junior and junior high students data for the two schools. The red vertical line shows the school change and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology for the treatment group. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression). So, something happened! Furthermore, it seems that there no positive effect of the methodological change and its clear that there must be a school and behavior effect. Meaning that, the schools have different learning outcomes and after 2015 there is a crash in the student social skills.
 
 ![Figure 1: all sample variables time series](Figures/figure1_boxplot_allSample.png)
 
@@ -60,25 +60,25 @@ The **statistical analysis** uses R code software in the RStudio[^readme-4] IDE 
 
 The **Variables** are described in this next table.
 
-|     VARIABLE     | Description                                                                                                                                                                                                                                                                                                                                                      |
-|:--------------:|--------------------------------------------------------|
-|        ID        | Identification entry row data                                                                                                                                                                                                                                                                                                                                    |
-|       DATE       | First Year of the school year period                                                                                                                                                                                                                                                                                                                             |
-|      SCHOOL      | Categorical variable, 0 and 1, represent two schools, identified by 0 (till 2008) and 1 (after 2009, included)                                                                                                                                                                                                                                                   |
-|      GENDER      | Categorical variable, F and M                                                                                                                                                                                                                                                                                                                                    |
-| TEST, LAB, BEHAV | Variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment) and BEHAV related to accomplishment school rules behavior LAB work and Behavior, normally if they follow the rules established by the school; GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p (Technical) and 11p (Technical) |
-|      M4CID       | Categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID                                                                                                                                                                                                                                                                                          |
-|      CLASS       | Continuous variable, 0 to 100, height average [^readme-6]                                                                                                                                                                                                                                                                                                        |
-|       RANK       | Categorical variable, 1,2,3, that measures the adaptability of students to school: 1 less adapted, 3, more adapted.                                                                                                                                                                                                                                              |
+|     VARIABLE     | Description                                                                                                                                                                              |
+|:----------------:|------------------------------------------------------|
+|        ID        | Identification entry row data                                                                                                                                                            |
+|       DATE       | First Year of the school year period                                                                                                                                                     |
+|      SCHOOL      | Categorical variable, 0 and 1, represent two schools, identified by 0 (till 2008) and 1 (after 2009, included)                                                                           |
+|      GENDER      | Categorical variable, F and M                                                                                                                                                            |
+| TEST, LAB, BEHAV | Score variables in the tests and observational forms at TEST (Learning transfer), LAB (Laboratory practical skills assessment) and BEHAV (Social skills and school rules accomplishment) |
+|      GRADE       | categories 0 to 6, representing, respectively, 7,8,9,10,11, 10 p (Technical) and 11p (Technical) grades                                                                                  |
+|      M4CID       | Categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID                                                                                                                  |
+|      CLASS       | Continuous variable, 0 to 100, height average [^readme-6]                                                                                                                                |
+|       RANK       | Categorical variable, 1,2,3, that measures the adaptability of students to school: 1 less adapted, 3, more adapted.                                                                      |
 
 [^readme-6]: CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV
 
-
 # MOTIVATION
 
-Most of the time the professional, specific, **day-to-day teacher work** data is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are possible. Worse, even if someone does it, it's normal not to share it.
+Most of the time the professional, specific, **day-to-day teacher work** data is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are drowned and worse, it's normal not to share it.
 
-My **personal motivation** is to know if the strategic decisions I did in 2008 were positive for my students: did they benefit from the educational strategic change? It was a global benefit or some groups benefited more? Does anyone have the same kind of research for comparition? Can anyone corroborate this results or criticize them? Sharing is the way to go to find knowledge.
+My **personal motivation** is to know if the strategic decisions I did in 2008 were positive for my students: did they benefit from the educational strategic change? It was a global benefit or some groups benefited more? Does anyone have the same kind of research for comparision? Can anyone corroborate this results or criticize them? Sharing is the way to go to find knowledge.
 
 # RESULTS
 
