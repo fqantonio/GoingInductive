@@ -64,6 +64,15 @@ The clear correlation between TEST and CLASS variable show that they are depende
 data seems to be not normal, except the CLASS variable sample data don't behav as a normal distribution under both tests, nor if we do the same analysis for the school 0 and shcool 1. Meaning that we should use a non-parametric . diferent SAMPLES for the 4C/ID treatment effect
 sample data don't behav as a normal distribution under both tests, nor if we do the same analysis for the school 0 and shcool 1. Meaning that we should use a non-parametric 
 
+only for the most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means:
+
+  1. not having the school effect [^readme-7];
+
+[^readme-7]: Is there an underlying behavioral underlying effect?
+
+  2.  the sample has students with the same age;
+  3.  it doesn't have the problem of using the less numbered entrances of the junior high students sample.
+
 # DISCUSSION 
 
 Reiterate results

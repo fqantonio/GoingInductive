@@ -30,6 +30,9 @@ The data used in this research covers learning transfer, lab practice and classr
 
 The analysis uses the common inference statistical techniques, where the control group was not subjected to the inductive methodology, namely, the 4C/ID. The software used in this work is the opensource R in the RStudio distribution.
 
+This work flow starts, with a exploratory data analysis (EDA) and a presentation of the non-parametric inference treatment effect results. The treatment group is the one where students experienced the 4C/ID instructional design in the bLearning environment. The control group is mainly the time length between 2003 and 2012. The regression analysis done and the regression discontinuity design are presented, as well as the cluster analysis, just to confirm/corroborate the former inference results. The last part deals with the results, conclusions, some remarks about the data patterns findings and future research.
+
+
 #INTRODUCTION
 Since 2009 the search for other methodologies available brings to Cognitive Load Theories, BBL, Multiples Inteligences Gardner,  Emotional approaches (???) readings until the idea of inductive came with the specific 4C/ID instructional design of Merrionboer???. Since then, it took four years until there was same mastering of the approach and in 2013, in full speed using also a bLearning environmet wth MOODLE.
 
@@ -60,6 +63,16 @@ Back to the issue here, my personal goal was to know if the strategic decisions 
 
 1. Did my students benefit from the educational strategic change? It was a global benefit or some groups benefited more.
 2. To share this conclusion in order to exchange knowledge with others around the world, and see if they corroborate with this findings.
+
+The organizational environment of schools and teachers in Portugal doesn't help this type of research work. Focused on managing the schools as enterprises with a lot of controlling bureaucracy, putting numbers and paperwork ahead of the crucial and significant decisions around teaching, real assessment is barely used, research follows the same pattern, and when it happens, its just shared at the university level. Meaning:
+
+1 - The crucial planning and individual teacher-student interaction is less important for this organization;
+
+2 - Time spent on research and discussions is useless: numbers constrain our job, of course, it's normal, but with the same money we can do better if we can get together and discuss the way we could be organized.
+
+In my view, both research and discussion with peers are crucial to better adjust our decisions regarding the specific strategies, activities and learning flux presented that must also be adapted to the way students learn today. The way learning happens and motivation changes, is so fast! So, teaching, at least in Portugal, is a very solitary job with all of its directly related drawbacks.
+
+Luckily, the knowledge and the tools available online today, allows us to go further with peer contribution, beyond a simple Average Treatment Effect (some of us, at least, do some mean computations): statistical knowledge is not something that we are prepared for and the statistical tools are very expensive. Today, this tools are available with opensource licences: so, time is crucial: teacher need it to study, get the necessary knowledge and interpret the results. And publish it!
 
 
 # Research question
