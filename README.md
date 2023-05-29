@@ -28,7 +28,7 @@ The **main goal** is to understand the impact of the use of Inductive Methodolog
 
 6 - Student more adapted to school have benefit more with the use of 4CID methodology?
 
-The **hypothesis** is that this change will have a positive impact in all learning areas researched for samples included in this work, because, in overall, it bases on the 4C/ID methodology: that in itself is anchored on Brain Based Learning (BBL), Cognitive Load Theory (CLT), Multi-Intelligence Theory (MIT) and Multimedia Learning (ML).
+The **hypothesis** is that this change will have a positive impact in all learning areas because, in overall, it is based on the 4C/ID methodology: that, in itself is anchored on Brain Based Learning (BBL), Cognitive Load Theory (CLT), Multi-Intelligence Theory (MIT) and Multimedia Learning (ML).
 
 # INTRODUCTION
 
@@ -60,6 +60,22 @@ The **statistical analysis** uses R code software in the RStudio[^readme-4] IDE 
 
 [^readme-5]: there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence. <https://github.com/fqantonio/GoingInductive/tree/main/DATA>
 
+The **Variables** are described in this next table.
+
+|     VARIABLE     | Description                                                                                                                                                                                                                                                                                                                                                      |
+|:--------------:|--------------------------------------------------------|
+|        ID        | Identification entry row data                                                                                                                                                                                                                                                                                                                                    |
+|       DATE       | First Year of the school year period                                                                                                                                                                                                                                                                                                                             |
+|      SCHOOL      | Categorical variable, 0 and 1, represent two schools, identified by 0 (till 2008) and 1 (after 2009, included)                                                                                                                                                                                                                                                   |
+|      GENDER      | Categorical variable, F and M                                                                                                                                                                                                                                                                                                                                    |
+| TEST, LAB, BEHAV | Variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment) and BEHAV related to accomplishment school rules behavior LAB work and Behavior, normally if they follow the rules established by the school; GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p (Technical) and 11p (Technical) |
+|      M4CID       | Categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID                                                                                                                                                                                                                                                                                          |
+|      CLASS       | Continuous variable, 0 to 100, height average [^readme-6]                                                                                                                                                                                                                                                                                                        |
+|       RANK       | Categorical variable, 1,2,3, that measures the adaptability of students to school: 1 less adapted, 3, more adapted.                                                                                                                                                                                                                                              |
+
+[^readme-6]: CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV
+
+
 # MOTIVATION
 
 Most of the time the professional, specific, **day-to-day teacher work** data is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are possible. Worse, even if someone does it, it's normal not to share it.
@@ -78,24 +94,14 @@ Luckily, the knowledge and the tools available online today, allows us to go fur
 
 # RESULTS
 
-The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means not having the school effect [^readme-6], the sample has students with the same age and it doesn't have the problem of using the less numbered entrances of the junior high students sample.
+The next two tables present a resume of the **results**, only for the most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means:
 
-[^readme-6]: Is there an underlying behavioral underlying effect?
+  1. not having the school effect [^readme-7];
 
-The **Variables** are described in this next table.
+[^readme-7]: Is there an underlying behavioral underlying effect?
 
-|     VARIABLE     | Description                                                                                                                                                                                                                                                                                                                                                      |
-|:----------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|        ID        | Identification entry row data                                                                                                                                                                                                                                                                                                                                    |
-|       DATE       | First Year of the school year period                                                                                                                                                                                                                                                                                                                             |
-|      SCHOOL      | Categorical variable, 0 and 1, represent two schools, identified by 0 (till 2008) and 1 (after 2009, included)                                                                                                                                                                                                                                                   |
-|      GENDER      | Categorical variable, F and M                                                                                                                                                                                                                                                                                                                                    |
-| TEST, LAB, BEHAV | Variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment) and BEHAV related to accomplishment school rules behavior LAB work and Behavior, normally if they follow the rules established by the school; GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p (Technical) and 11p (Technical) |
-|      M4CID       | Categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID                                                                                                                                                                                                                                                                                          |
-|      CLASS       | Continuous variable, 0 to 100, height average [^readme-7]                                                                                                                                                                                                                                                                                                        |
-|       RANK       | Categorical variable, 1,2,3, that measures the adaptability of students to school: 1 less adapted, 3, more adapted.                                                                                                                                                                                                                                              |
-
-[^readme-7]: $` CLASS = 0.5 \times TEST + 0.3 \times LAB + 0.2 \times BEHAV `$
+  2.  the sample has students with the same age;
+  3.  it doesn't have the problem of using the less numbered entrances of the junior high students sample.
 
 ![Figure 2: Resume results for the 4C/ID treatment effect](Figures/Figure2_resumeResults.png)
 
@@ -104,7 +110,7 @@ The values showed in the table represent changes in the variables median.
 The next table resumes the former graph in another order: it shows the percentage of "positive", "negative" and "no effects", detected for each sample.
 
 | Variable                 |  \+  | \~  | \-  |                SAMPLE +                 |       no effect sample        |                SAMPLE -                 | Notes |
-|--------------------------|:----:|:---:|:---:|:---------------------------------------:|:-----------------------------:|:---------------------------------------:|-------|
+|---------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|---------|
 | TEST (Learning Transfer) | 33%  | 56% | 11% | All Junior sample, 8th grade and FEMALE |          GRADE 7, 9;          |                  RANK1                  |       |
 | LAB (Lab practice)       | 100% | 0%  | 0%  |               all samples               |                               |                                         |       |
 | BEHAV (behavior)         | 11%  | 11% | 78% |                 GRADE 9                 |            FEMALE             | Junior; GRADE 7 and 8; all RANK's; MALE |       |
