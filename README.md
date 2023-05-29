@@ -1,14 +1,16 @@
 # WELCOME
 
-This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with two major goals: show the conclusions and share the work done worldwide. This **knowledge base source** share results, conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
+This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with one major goal, to share the work done, worldwide. This **knowledge base source** contains the results, conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
 
 [^readme-1]: This work, as well as the data, is also presented at the blog "<https://4cidchange.edublogs.org/>" and in the github repository <https://github.com/fqantonio/GoingInductive>.
 
-> Education is the most powerful weapon which you can use to change the world. Nelson Mandela
-
 # ABSTRACT
 
-Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning activities design flow, that you prepare and organize, even if you include bLearning? In overall, the **answer is yes**, but with some remarks. If you decide to do it, there will be specific impacts for the students learning that need to be **accommodated**, as well as implications for the stakeholders in the learning process: policy makers and school management. The sample covers 13 years of teacher data assessment, during the period 2003 to 2019, with conclusions about the impact in the learning transfer, Lab Practice, social skills and academic results.
+Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, were you prepare all the activities and organize them chronologically, even if the setting is a bLearning one? In overall, the **answer is yes**, but with some remarks. If you decide to do it, there will be specific impacts for the students learning that need to be **accommodated**, as well as implications for the stakeholders in the learning process: policy makers and school management. The sample covers 13 years of teacher data assessment, during the period 2003 to 2019, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
+
+> Education is the most powerful weapon which you can use to change the world. 
+>
+>                                                 Nelson Mandela
 
 **Keywords** Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flow; Statistical Non-parametric Inference; academic results; learning transfer; behavior; lab practice; Cognitive Load Theory; Multi Intelligence Theory; Brain Based Learning; bLearning.
 
@@ -94,7 +96,7 @@ Figure 2 and the next table present a resume of the **results**. The values show
 
 ![Figure 2: Resume results for the 4C/ID treatment effect](Figures/Figure2_resumeResults.png)
 
-The next table resumes the former graph in another order: it shows the percentage of "positive", "negative" and "no effects", detected for each sample.
+The next table resumes the former graph in another order: it shows the percentage of "positive", "negative" and "no effect" results, detected for each sample.
 
 | Variable                 |  \+  | \~  | \-  |                SAMPLE +                 |       no effect sample        |                SAMPLE -                 | Notes |
 |---------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|---------|
