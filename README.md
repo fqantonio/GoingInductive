@@ -85,7 +85,7 @@ The next two tables present a resume of the **results**, only for the most **rob
 The **Variables** are described in this next table.
 
 |     VARIABLE     | Description                                                                                                                                                                                                                                                                                                                                                      |
-|:----------:|------------------------------------------------------------|
+|:----------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |        ID        | Identification entry row data                                                                                                                                                                                                                                                                                                                                    |
 |       DATE       | First Year of the school year period                                                                                                                                                                                                                                                                                                                             |
 |      SCHOOL      | Categorical variable, 0 and 1, represent two schools, identified by 0 (till 2008) and 1 (after 2009, included)                                                                                                                                                                                                                                                   |
@@ -104,9 +104,9 @@ The values showed in the table represent changes in the variables median.
 The next table resumes the former graph in another order: it shows the percentage of "positive", "negative" and "no effects", detected for each sample.
 
 | Variable                 |  \+  | \~  | \-  |                SAMPLE +                 |       no effect sample        |                SAMPLE -                 | Notes |
-|---------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|---------|
+|--------------------------|:----:|:---:|:---:|:---------------------------------------:|:-----------------------------:|:---------------------------------------:|-------|
 | TEST (Learning Transfer) | 33%  | 56% | 11% | All Junior sample, 8th grade and FEMALE |          GRADE 7, 9;          |                  RANK1                  |       |
-| LAB (Lab practice)       | 100% | 0%  | 0%  |                                         |          all samples          |                                         |       |
+| LAB (Lab practice)       | 100% | 0%  | 0%  |               all samples               |                               |                                         |       |
 | BEHAV (behavior)         | 11%  | 11% | 78% |                 GRADE 9                 |            FEMALE             | Junior; GRADE 7 and 8; all RANK's; MALE |       |
 | CLASS (academic results) | 22%  | 45% | 33% |        junior; 9th grade; FEMALE        | grades 7 and 8; RANK 2 e MALE |              RANK 1 and 3               |       |
 
