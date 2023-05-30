@@ -6,7 +6,7 @@ This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with one major g
 
 # ABSTRACT
 
-Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, were you prepare all the activities and organize them chronologically, even if the setting is a bLearning one? In overall, the **answer is yes**, but with some remarks. If you decide to do it, there will be specific impacts for the students learning that need to be **accommodated**, as well as implications for the stakeholders in the learning process: policy makers and school management. The sample covers 13 years of teacher data assessment, during the period 2003 to 2019, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
+Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, were you prepare all the activities and organize them chronologically, even if the setting is a bLearning one? In overall, the **answer is yes**, that is, 4C/ID eLearning setting as some advantages from Direct Instruction but with some remarks. If you decide to do it, there will be specific impacts for the students learning that need to be **accommodated**, as well as implications for the stakeholders in the learning process: policy makers and school management. The sample covers 13 years of teacher data assessment, during the period 2003 to 2019, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
 
 > Education is the most powerful weapon which you can use to change the world. 
 >
@@ -81,7 +81,6 @@ The **Variables** are described in this next table.
 |      M4CID       | Categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID                                                                                                                  |
 |      CLASS       | Continuous variable, 0 to 100, height average [^readme-6]                                                                                                                                |
 |       RANK       | Categorical variable, 1,2,3, that measures the adaptability of students to school: 1 less adapted, 3, more adapted.                                                                      |
-
 [^readme-6]: CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV
 
 # MOTIVATION
@@ -96,6 +95,16 @@ Figure 2 and the next table present a resume of the **results**. The values show
 
 ![Figure 2: Resume results for the 4C/ID treatment effect](Figures/Figure2_resumeResults.png)
 
+Figure 2 shows in the y-axis the name of the samples and the x-axis show the median differences for each sample in four variables already described: TEST, LAB, BEHAV and CLASS. The variables change, represented by colors (see legend), between treatment group and control group are presented on the left of the graph if there is a negative impact and in the right if there is a positive 4C/ID impact. There is a vertical line with x equal to zero, meaning that there is no 4C/ID impact.
+
+Looking into the graph there are two groups of results that stands up: blue and green. The first means that there is a positive treatment effect for the Lab Practice and the latter means that there is a overall negative impact for the social skills: in this case only the GRADE 9 students seems to have a positive impact and no effect for FEMALE students. The TEST variable shows a tendency towards no impact with a few positive and negative. For the CLASS, Academic Results there a tendecy towards no effect to a slight negative one.
+
+Looking into the sample JUNIOR SCHOOL 1 (sample with grades 7, 8 and 9 for school 1) that seems to be more reliable for three reasons:most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means:
+
+  1. Not having the school effect differences;
+  2. The sample has students with the same age;
+  3. It doesn't have the problem of using the less numbered entrances of the junior high students sample.
+
 The next table resumes the former graph in another order: it shows the percentage of "positive", "negative" and "no effect" results, detected for each sample.
 
 | Variable                 |  \+  | \~  | \-  |                SAMPLE +                 |       no effect sample        |                SAMPLE -                 | Notes |
@@ -105,50 +114,50 @@ The next table resumes the former graph in another order: it shows the percentag
 | BEHAV (behavior)         | 11%  | 11% | 78% |                 GRADE 9                 |            FEMALE             | Junior; GRADE 7 and 8; all RANK's; MALE |       |
 | CLASS (academic results) | 22%  | 45% | 33% |        junior; 9th grade; FEMALE        | grades 7 and 8; RANK 2 e MALE |              RANK 1 and 3               |       |
 
+## Qualitative results 
+
+The qualitative results show students more motivated, teacher with more individual time but a crucial need for team work among teachers.
+
+## Qualitative
+
+| Qualitative Results | Description   | Notes |
+|---------------------------|---------------------------|------------------|
+| Students inquire about the teacher  | almost all positive |     |
+| teacher available to interact with the students while they are following the online lessons activities |               |       |
+| students feel happy to pass to the next level, high motivation                                         |               |       |
+| They claim that the way they like to learn                                                             |               |       |
+| massive hours of teacher work, more than 55 hours a week                                               | Health issues |       |
+| Students help on lessons faults: missing information, fault links                                      |               |       |
+
 # CONCLUSION
 
 (need more editing ;) )
 
-The conclusions presented here focus on the junior sample of school 1 (table above).
+The conclusions presented here focus more on the junior sample of school 1. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** [^readme-8].
 
-**Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **academic results** with a huge impact on **lab practice**.
+However, there are **risks and concerns** to be accommodated during the process, namely:
+1. for the student less adapted to the school system;
+2. the classroom management referring to students behavior (see discussion);
+3. in the **learning transfer** process the gains are more modest;
+4. males gain less with this change.
 
-However, there are risks and concerns to be accommodated during the process, namely:
+[^readme-8]: Is there an underlying behavioral underlying effect?
 
-1.  the less adapted to the school system;
-2.  the classroom management referring to students behavior;
-3.  in the **learning transfer** process: there must be some additional activities planned to accommodate this loss;
-4.  Grade 7 and males, in less degree of concern, seems to benefit less from this change.
-
-**Bottom line**, if you don't want to take the risks, change conditional to have a student group more adapted to school and if you want to increase the lab practices skills.
+**Bottom line**, if you don't want to take the risks, change conditional to have a student group more adapted to school or if you want to increase the lab practices skills. Futhermore, this work shows is that there is a slight advantage of using 4C/ID eLearning setting compare to Direct Instruction. In fact, there is a huge advantage of 4C/ID in Lab Practice in spite of the negative impact in Social Skills. It also shows that the students that are less adapted to school don't improve much unless for the Lab Practice. So, compare with a instructional design with 200 years (???) of reliability is something to higlight.
 
 RISKS:
 
-1.  In the **learning transfer** and **academic results** learning areas, there is the risk that the less adapted to the school environment have a decreased with this strategic change;
+A major risk is for the less adapted students to school: there is a need to accommodate this. 
 
-2.  For **behavior**, specifically in the aspect of following social and behavioral classroom rules, there is a major negative [\^6] impact in all samples: the risk of loosing control of the students group inside the classroom is real; however, but note that, although, the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment.
+For the **Social Skills**, specifically in the aspect of following social and behavioral classroom rules, there is a major negative [\^6] impact in all samples: the risk of loosing control of the students group inside the classroom is real; however, note that the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment.
 
 CONCERNS:
 
-1.  There seems to be a positive effect only in GRADE 8 and FEMALE groups for the **learning transfer**: the changes in the other groups don't have any effect.
-
-2.  On the **behavior field** only grade 9 seems to get some positive effect;
-
-3.  In general, Female gender group tend to benefit more them male;
-
-4.  In general, RANK 3 tends to benefit more then the other rank groups;
-
-5.  grade 9th benefit more then the other grades;
-
-BENEFITS:
-
-1.  In overall, the change has a positive impact on junior grade students for the **academic results**;
-
-2.  **Lab practice** has a large positive effect in all samples.
+In general, GRADE 7 and RANK 2 tends to benefit less then the other grades and rank 3;
 
 # DISCUSSION
 
-notes for discussion: - The conlsuions meet the goals and answer th research question? - Did I implemented the methods correctly? - Is there an underlying effect for the behav variable? - Conclusions for the stakeholders in the learning process: teachers, Policy implications and school management. - blearning change: team work impressible - Reiterate results - world research corroboration ; Future research Tie loose hands: Clarify, robustness; after 2015 there is a crash in the student behavior skills.: need extra data; social skills: all, ranks, grades, and gender follow the same pattern?
+notes for discussion: - The conlsuions meet the goals and answer th research question? - Did I implemented the methods correctly? - Is there an underlying effect for the behav variable? - Conclusions for the stakeholders in the learning process: teachers, Policy implications and school management. - blearning change: team work impressible - Reiterate results - world research corroboration ; Future research Tie loose hands: Clarify, robustness; after 2015 there is a crash in the student behavior skills.: need extra data; social skills: all, ranks, grades, and gender follow the same pattern? students behavior effect
 
 # KEYWORDS
 
