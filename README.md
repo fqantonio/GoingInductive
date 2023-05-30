@@ -6,7 +6,7 @@ This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with one major g
 
 # ABSTRACT
 
-Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, were you prepare all the activities and organize them chronologically, even if the setting is a bLearning one? In overall, the **answer is yes**, that is, 4C/ID eLearning setting as some advantages from Direct Instruction but with some remarks. If you decide to do it, there will be specific impacts for the students learning that need to be **accommodated**, as well as implications for the stakeholders in the learning process: policy makers and school management. The sample covers 13 years of teacher data assessment, during the period 2003 to 2019, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
+Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow with all the activities chronologically organized, even if the setting is a bLearning one? In overall, the **answer is yes**, that is, 4C/ID eLearning setting as some advantages to Direct Instruction but with some remarks. If you decide to do it, there will be specific impacts for the students learning that need to be **accommodated**, as well as implications for the stakeholders in the learning process: policy makers and school management. The sample covers 13 years of teacher data assessment, during the period 2003 to 2019, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
 
 > Education is the most powerful weapon which you can use to change the world. 
 >
@@ -18,19 +18,19 @@ Should you, as a teacher of science and tech of young students, **move to an ind
 
 The **main goal** is to understand the impact of the use of Inductive Methodology four component instructional (4C/ID) in a bLearning setting, by answering the following **research questions**:
 
-1 - changing the learning methodologies from one mainly deductive, denominated by Direct Instruction (Merrill, 2007) to another one mostly inductive, Merriënboer's 4C/ID design theory (van Merriënboer, Kirschner, 2007), means what for students learning outcomes? Who benefits? What are the pros and cons about this methodological decision?
+1 - changing the learning methodologies from one mainly deductive, denominated by Direct Instruction (Merrill, 2007) to another one mostly inductive, Merriënboer's 4C/ID design theory (van Merriënboer, Kirschner, 2007), means what for students learning outcomes? Who benefits? What are the pros and cons about this methodological decision? What are the implications for the stakeholders?
 
 2 - Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning?
 
 3 - And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results?
 
-4 - Is there a different impact between female and male?
+4 - Is there a different impact on gender?
 
 5 - And within the different grades?
 
 6 - Student more adapted to school benefit more?
 
-The **hypothesis** is that this change will have a positive impact in all learning areas because, in overall, it is based on the 4C/ID methodology: that, in itself is anchored on Brain Based Learning (BBL), Cognitive Load Theory (CLT), Multi-Intelligence Theory (MIT) and Multimedia Learning (ML).
+The **hypothesis** is that this change will have a positive impact in all learning areas because, in overall, it is based on the 4C/ID methodology that, in itself, is anchored on Brain Based Learning (BBL), Cognitive Load Theory (CLT), Multi-Intelligence Theory (MIT) and Multimedia Learning (ML).
 
 # INTRODUCTION
 
@@ -42,7 +42,7 @@ The data used in this work was gathered over 13 years, in the period 2003 to 201
 
 After starting to be interested about the different ways students learn I came across with the work of Felder´s learning styles (Felder; Silverman; 1988) and Wiley's Learning Objects (Wiley, 2002). These paper's showed me a complete list of different methodologies with different points of views: the inductive ones seems very promising and more adapted to the way brain learns. 
 
-Furthermore, the readings about alternative **educational methodologies** went on, and into the Cognitive Load Theory (Sweller, 1998), Brain Based Learning[\^2] (Jensen, 2005), Gardner Multi-Intelligence Theory (Gardner, 2011) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID methodology was applied and a bLearning environment online set with MOODLE Learning Management System (LMS) (Rice, 2006). Lessons were organized and were mostly accomplished in the classroom: fewer logs into the system were from outside.
+Furthermore, the readings about alternative **educational methodologies** went on, into the Cognitive Load Theory (Sweller, 1998), Brain Based Learning[\^2] (Jensen, 2005), Gardner Multi-Intelligence Theory (Gardner, 2011) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID methodology was applied and a bLearning environment online set with MOODLE Learning Management System (LMS) (Rice, 2006). Lessons were organized and were mostly accomplished in the classroom: fewer logs into the system were from outside.
 
 # CONTEXT
 
@@ -50,7 +50,7 @@ This work includes junior and junior high students of two different schools data
 
 Figure 1 show the variable longitudinal patterns for all sample time series, which includes junior and junior high students data for the two schools. The red vertical line shows the school change and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology for the treatment group. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression). So, something happened! 
 
-Furthermore, it seems that there no positive effect of the methodological change and its clear that there must be a school and behavior effect. Meaning that, the schools have different learning outcomes and after 2015 there is a crash in the students social skills.
+Furthermore, it seems that there no positive effect of the methodological change and its clear that there is a school effect. Meaning that, the schools have different learning outcomes.
 
 ![Figure 1: all sample variables time series](Figures/figure1_boxplot_allSample.png)
 
@@ -66,7 +66,7 @@ The principal methodology used is the non-parametric inferential treatment effec
 
 [^readme-4]: RStudio, <https://posit.co/products/open-source/rstudio/>
 
-[^readme-5]: there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence. <https://github.com/fqantonio/GoingInductive/tree/main/DATA>
+[^readme-5]: there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence under the null. <https://github.com/fqantonio/GoingInductive/tree/main/DATA>
 
 The **Variables** are described in this next table.
 
@@ -97,7 +97,7 @@ Figure 2 and the next table present a resume of the **results**. The values show
 
 Figure 2 shows in the y-axis the name of the samples and the x-axis show the median differences for each sample in four variables already described: TEST, LAB, BEHAV and CLASS. The variables change, represented by colors (see legend), between treatment group and control group are presented on the left of the graph if there is a negative impact and in the right if there is a positive 4C/ID impact. There is a vertical line with x equal to zero, meaning that there is no 4C/ID impact.
 
-Looking into the graph there are two groups of results that stands up: blue and green. The first means that there is a positive treatment effect for the Lab Practice and the latter means that there is a overall negative impact for the social skills: in this case only the GRADE 9 students seems to have a positive impact and no effect for FEMALE students. The TEST variable shows a tendency towards no impact with a few positive and negative. For the CLASS, Academic Results there a tendecy towards no effect to a slight negative one.
+Looking into the graph there are two groups of results that stands: blue and green. The first means that there is a positive treatment effect for the Lab Practice and the latter means that there is a overall negative impact for the social skills: in this case only the GRADE 9 students seems to have a positive impact and no effect for FEMALE students. The TEST variable shows a tendency towards no impact with a few positive and negative. For the CLASS, Academic Results there a tendecy towards no effect to a slight negative one.
 
 Looking into the sample JUNIOR SCHOOL 1 (sample with grades 7, 8 and 9 for school 1) that seems to be more reliable for three reasons:most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means:
 
@@ -122,7 +122,7 @@ The qualitative results show students more motivated, teacher with more individu
 
 | Qualitative Results | Description   | Notes |
 |---------------------------|---------------------------|------------------|
-| Students inquire about the teacher  | almost all positive |     |
+| Students inquire/comments about  | almost all positive |     |
 | teacher available to interact with the students while they are following the online lessons activities |               |       |
 | students feel happy to pass to the next level, high motivation                                         |               |       |
 | They claim that the way they like to learn                                                             |               |       |
