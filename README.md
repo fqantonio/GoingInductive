@@ -126,7 +126,7 @@ Figure 2 shows the variable longitudinal patterns for all sample box plots time 
 
 Furthermore, it seems that there no positive effect of the methodological change and its clear that there is a school effect, meaning that, the schools have different learning outcomes.
 
-![Figure 1: all sample variables time series](Figures/figure1_hstograms.png)
+![Figure 1: all sample histograms for each variable series](Figures/figure1_histograms.png)
 
 # METHODS
 
@@ -143,7 +143,7 @@ The principal methodology used is the non-parametric inferential treatment effec
 
 Figure 2 and the next table present a resume of the **results**. The values showed represent changes in the variables median.
 
-![Figure 2: Resume results for the 4C/ID treatment effect](Figures/Figure2_BloxplotTimeSeries.png)
+![Figure 2: Boxplot time series](Figures/Figure2_BoxplotTimeSeries.png)
 
 Figure 2 shows in the y-axis the name of the samples and the x-axis show the median differences for each sample in four variables already described: TEST, LAB, BEHAV and CLASS. The variables change, represented by colors (see legend), between treatment group and control group are presented on the left of the graph if there is a negative impact and in the right if there is a positive 4C/ID impact. There is a vertical line with x equal to zero, meaning that there is no 4C/ID impact.
 
