@@ -59,33 +59,34 @@ library(gridExtra) #arrange graphs in rows
 #Use this step before any of the analysis bellow
 #perhaps you need to set your set working directory: setwd: setwd("/Users/novo/Desktop/Doutoramento/GoingInductive")
 setwd("/Users/novo/Desktop/Doutoramento/GoingInductivePaper/GoingInductive/DATA")
-data<-read.csv("./DATA_4CID_2023.csv")
+data<-read.csv("./DATA_4CID_2023.csv") #the date 2023 on this csv file means that the data is used for 2023 paper going indcutive
 data<-data %>% mutate(CLASS=0.5*TEST+0.3*LAB+0.2*BEHAV)
 colnames(data) <- c("ID","DATE" ,"SCHOOL" ,"GENDER" ,"TEST" ,"LAB" ,"BEHAV" ,"GRADE" ,"M4CID","CLASS")
 head(data)
 summary(data)
-# ID            DATE          SCHOOL          GENDER         
-# Min.   :   1   Min.   :2003   Min.   :0.0000   Length:1625       
-# 1st Qu.: 407   1st Qu.:2006   1st Qu.:0.0000   Class :character  
-# Median : 813   Median :2011   Median :1.0000   Mode  :character  
-# Mean   : 813   Mean   :2011   Mean   :0.7071                     
-# 3rd Qu.:1219   3rd Qu.:2016   3rd Qu.:1.0000                     
-# Max.   :1625   Max.   :2019   Max.   :1.0000                     
-# TEST             LAB            BEHAV            GRADE      
-# Min.   :  0.00   Min.   :  0.0   Min.   :  0.00   Min.   :0.000  
-# 1st Qu.: 48.00   1st Qu.: 46.0   1st Qu.: 65.00   1st Qu.:0.000  
-# Median : 60.00   Median : 60.0   Median : 76.00   Median :1.000  
-# Mean   : 60.07   Mean   : 59.1   Mean   : 74.95   Mean   :2.036  
-# 3rd Qu.: 74.00   3rd Qu.: 73.0   3rd Qu.: 87.00   3rd Qu.:2.000  
-# Max.   :100.00   Max.   :100.0   Max.   :100.00   Max.   :6.000  
+ID              DATE          SCHOOL          GENDER         
+# Min.   :   1.0   Min.   :2003   Min.   :0.0000   Length:1414       
+# 1st Qu.: 354.2   1st Qu.:2006   1st Qu.:0.0000   Class :character  
+# Median : 707.5   Median :2011   Median :1.0000   Mode  :character  
+# Mean   : 707.5   Mean   :2010   Mean   :0.6634                     
+# 3rd Qu.:1060.8   3rd Qu.:2014   3rd Qu.:1.0000                     
+# Max.   :1414.0   Max.   :2017   Max.   :1.0000                     
+# TEST             LAB             BEHAV           GRADE      
+# Min.   :  0.00   Min.   :  0.00   Min.   : 27.0   Min.   :0.000  
+# 1st Qu.: 49.00   1st Qu.: 47.00   1st Qu.: 66.0   1st Qu.:1.000  
+# Median : 60.00   Median : 60.00   Median : 77.0   Median :1.000  
+# Mean   : 60.72   Mean   : 59.92   Mean   : 76.1   Mean   :1.767  
+# 3rd Qu.: 73.75   3rd Qu.: 73.00   3rd Qu.: 87.0   3rd Qu.:2.000  
+# Max.   :100.00   Max.   :100.00   Max.   :100.0   Max.   :6.000  
 # M4CID            CLASS       
-# Min.   :0.0000   Min.   :  0.00  
-# 1st Qu.:0.0000   1st Qu.: 53.00  
-# Median :0.0000   Median : 62.50  
-# Mean   :0.4271   Mean   : 62.75  
-# 3rd Qu.:1.0000   3rd Qu.: 72.90  
-# Max.   :1.0000   Max.   :100.00  
-# sample = 1625
+# Min.   :0.0000   Min.   : 14.20  
+# 1st Qu.:0.0000   1st Qu.: 53.70  
+# Median :0.0000   Median : 63.00  
+# Mean   :0.4144   Mean   : 63.55  
+# 3rd Qu.:1.0000   3rd Qu.: 73.20  
+# Max.   :1.0000   Max.   :100.00 
+# sample = 1414
+# since mean and medians are very close could be a sight that the data is normal
 # Table 1: summary data
 # sample differences between school 0 and school 1
 summary(data)
@@ -95,15 +96,125 @@ length(which(data$SCHOOL=="0"))
 length(which(data$SCHOOL=="0"))/length(data$ID)
 length(which(data$SCHOOL=="1"))
 length(which(data$SCHOOL=="1"))/length(data$ID)
-# school 0, 476, 29% and school 1, 1149, 71%
+# school 0, 476, 34% and school 1, 938, 66%
+
+sd(data$TEST)
+sd(data$LAB)
+sd(data$BEHAV)
+sd(data$CLASS)
+
+data_M4CID0<- filter(data,M4CID=="0") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
+length(data_M4CID0$ID)
+summary(data_M4CID0)
+# ID             DATE          SCHOOL          GENDER         
+# Min.   :  1.0   Min.   :2003   Min.   :0.0000   Length:828        
+# 1st Qu.:207.8   1st Qu.:2004   1st Qu.:0.0000   Class :character  
+# Median :414.5   Median :2006   Median :0.0000   Mode  :character  
+# Mean   :414.5   Mean   :2007   Mean   :0.4251                     
+# 3rd Qu.:621.2   3rd Qu.:2010   3rd Qu.:1.0000                     
+# Max.   :828.0   Max.   :2011   Max.   :1.0000                     
+# TEST             LAB             BEHAV            GRADE      
+# Min.   : 16.00   Min.   :  0.00   Min.   : 28.00   Min.   :0.000  
+# 1st Qu.: 50.00   1st Qu.: 44.00   1st Qu.: 68.00   1st Qu.:0.000  
+# Median : 62.00   Median : 60.00   Median : 79.00   Median :1.000  
+# Mean   : 62.29   Mean   : 57.06   Mean   : 77.44   Mean   :1.214  
+# 3rd Qu.: 75.00   3rd Qu.: 71.25   3rd Qu.: 88.00   3rd Qu.:2.000  
+# Max.   :100.00   Max.   :100.00   Max.   :100.00   Max.   :6.000  
+# M4CID       CLASS      
+# Min.   :0   Min.   :14.20  
+# 1st Qu.:0   1st Qu.:53.98  
+# Median :0   Median :63.70  
+# Mean   :0   Mean   :63.75  
+# 3rd Qu.:0   3rd Qu.:73.40  
+# Max.   :0   Max.   :97.10 
+
+sd(data_M4CID0$TEST)
+sd(data_M4CID0$LAB)
+sd(data_M4CID0$BEHAV)
+sd(data_M4CID0$CLASS)
+
+data_M4CID1<- filter(data,M4CID=="1") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
+length(data_M4CID1$ID)
+summary(data_M4CID1)
+# ID              DATE          SCHOOL     GENDER         
+# Min.   : 829.0   Min.   :2012   Min.   :1   Length:586        
+# 1st Qu.: 975.2   1st Qu.:2013   1st Qu.:1   Class :character  
+# Median :1121.5   Median :2016   Median :1   Mode  :character  
+# Mean   :1121.5   Mean   :2015   Mean   :1                     
+# 3rd Qu.:1267.8   3rd Qu.:2017   3rd Qu.:1                     
+# Max.   :1414.0   Max.   :2017   Max.   :1                     
+# TEST             LAB             BEHAV            GRADE      
+# Min.   :  0.00   Min.   : 15.00   Min.   : 27.00   Min.   :0.000  
+# 1st Qu.: 46.00   1st Qu.: 52.00   1st Qu.: 64.00   1st Qu.:1.000  
+# Median : 57.00   Median : 65.00   Median : 76.00   Median :2.000  
+# Mean   : 58.49   Mean   : 63.96   Mean   : 74.21   Mean   :2.549  
+# 3rd Qu.: 70.00   3rd Qu.: 76.00   3rd Qu.: 86.00   3rd Qu.:5.000  
+# Max.   :100.00   Max.   :100.00   Max.   :100.00   Max.   :6.000  
+# M4CID       CLASS       
+# Min.   :1   Min.   : 17.60  
+# 1st Qu.:1   1st Qu.: 53.62  
+# Median :1   Median : 61.90  
+# Mean   :1   Mean   : 63.28  
+# 3rd Qu.:1   3rd Qu.: 72.35  
+# Max.   :1   Max.   :100.00 
+
+sd(data_M4CID1$TEST)
+sd(data_M4CID1$LAB)
+sd(data_M4CID1$BEHAV)
+sd(data_M4CID1$CLASS)
+
+data_SCHOOL0<- filter(data,SCHOOL=="0") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
+length(data_SCHOOL0$ID)
+summary(data_SCHOOL0)
+# ID             DATE          SCHOOL     GENDER               TEST            LAB        
+# Min.   :  1.0   Min.   :2003   Min.   :0   Length:476         Min.   :28.00   Min.   : 10.00  
+# 1st Qu.:119.8   1st Qu.:2003   1st Qu.:0   Class :character   1st Qu.:56.00   1st Qu.: 52.00  
+# Median :238.5   Median :2005   Median :0   Mode  :character   Median :68.00   Median : 61.50  
+# Mean   :238.5   Mean   :2005   Mean   :0                      Mean   :67.33   Mean   : 62.36  
+# 3rd Qu.:357.2   3rd Qu.:2006   3rd Qu.:0                      3rd Qu.:78.00   3rd Qu.: 76.00  
+# Max.   :476.0   Max.   :2008   Max.   :0                      Max.   :97.00   Max.   :100.00  
+# BEHAV            GRADE           M4CID       CLASS      
+# Min.   : 37.00   Min.   :0.000   Min.   :0   Min.   :30.70  
+# 1st Qu.: 66.00   1st Qu.:0.000   1st Qu.:0   1st Qu.:58.50  
+# Median : 77.00   Median :1.000   Median :0   Median :68.50  
+# Mean   : 76.06   Mean   :1.092   Mean   :0   Mean   :67.58  
+# 3rd Qu.: 85.00   3rd Qu.:2.000   3rd Qu.:0   3rd Qu.:76.78  
+# Max.   :100.00   Max.   :2.000   Max.   :0   Max.   :96.40 
+
+sd(data_SCHOOL0$TEST)
+sd(data_SCHOOL0$LAB)
+sd(data_SCHOOL0$BEHAV)
+sd(data_SCHOOL0$CLASS)
+
+data_SCHOOL1<- filter(data,SCHOOL=="1") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
+length(data_SCHOOL1$ID)
+summary(data_SCHOOL1)
+# ID            DATE          SCHOOL     GENDER               TEST             LAB        
+# Min.   : 477   Min.   :2009   Min.   :1   Length:1149        Min.   :  0.00   Min.   :  0.00  
+# 1st Qu.: 764   1st Qu.:2011   1st Qu.:1   Class :character   1st Qu.: 45.00   1st Qu.: 45.00  
+# Median :1051   Median :2014   Median :1   Mode  :character   Median : 56.00   Median : 60.00  
+# Mean   :1051   Mean   :2014   Mean   :1                      Mean   : 57.06   Mean   : 57.75  
+# 3rd Qu.:1338   3rd Qu.:2017   3rd Qu.:1                      3rd Qu.: 70.00   3rd Qu.: 71.00  
+# Max.   :1625   Max.   :2019   Max.   :1                      Max.   :100.00   Max.   :100.00  
+# BEHAV            GRADE           M4CID            CLASS       
+# Min.   :  0.00   Min.   :0.000   Min.   :0.0000   Min.   :  0.00  
+# 1st Qu.: 65.00   1st Qu.:0.000   1st Qu.:0.0000   1st Qu.: 50.80  
+# Median : 76.00   Median :2.000   Median :1.0000   Median : 60.10  
+# Mean   : 74.49   Mean   :2.427   Mean   :0.6936   Mean   : 60.75  
+# 3rd Qu.: 87.00   3rd Qu.:5.000   3rd Qu.:1.0000   3rd Qu.: 70.70  
+# Max.   :100.00   Max.   :6.000   Max.   :1.0000   Max.   :100.00  
+
+sd(data_SCHOOL1$TEST)
+sd(data_SCHOOL1$LAB)
+sd(data_SCHOOL1$BEHAV)
+sd(data_SCHOOL1$CLASS)
 
 # Global sample Gender
 length(which(data$GENDER=="F"))
 length(which(data$GENDER=="F"))/length(data$ID)
 length(which(data$GENDER=="M"))
 length(which(data$GENDER=="M"))/length(data$ID)
-# female/male sample: 641/984, 39%/61%
-# no balanced GENDER
+# female/male sample: 602/812, 43%/57%: no balanced GENDER
 
 #with and without 4CID
 length(data$ID)
@@ -111,8 +222,9 @@ length(which(data$M4CID=="0"))
 length(which(data$M4CID=="0"))/length(data$ID)
 length(which(data$M4CID=="1"))
 length(which(data$M4CID=="1"))/length(data$ID)
-# sample without 4CID: 931, 57%; with 4CID:694, 43%
-# more data with 4CID methodology, unbalanced but not critical
+# sample without 4CID: 828, 59%; with 4CID: 586, 41%: more data with 4CID methodology, not balanced
+
+# grade distribution
 length(which(data$GRADE==0))
 length(which(data$GRADE==0))/length(data$ID)
 length(which(data$GRADE==1))
@@ -127,7 +239,15 @@ length(which(data$GRADE==5))
 length(which(data$GRADE==5))/length(data$ID)
 length(which(data$GRADE==6))
 length(which(data$GRADE==6))/length(data$ID)
-# very low sample entries levels 10/11 grade general edu path
+# Grade 0 (7th) - 353 (25%)
+# Grade 1 (8th) - 411 (29%)
+# Grade 2 (9th) - 396 (28%)
+# Grade 3 (10th) - 27 (2%)
+# Grade 4 (11th) - 18 (1%)
+# Grade 5 (10technical) - 117 (8%)
+# Grade 6 (11technical) - 93 (7%)
+# very low sample entries levels 10/11 grade general and techinal edu path
+
 # junior school, 7 to 9th grade
 data_JUNIOR <- filter(data,GRADE <="2") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
 length(data_JUNIOR$ID)
@@ -136,62 +256,97 @@ length(which(data_JUNIOR$SCHOOL=="0"))
 length(which(data_JUNIOR$SCHOOL=="0"))/length(data_JUNIOR$ID)
 length(which(data_JUNIOR$SCHOOL=="1"))
 length(which(data_JUNIOR$SCHOOL=="1"))/length(data_JUNIOR$ID)
-# junior school, 4CID, 7 to 9 grade
 data_JUNIOR_SCHOOL1 <- filter(data_JUNIOR,SCHOOL =="1") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
-length(data_JUNIOR_SCHOOL1$ID)
 length(which(data_JUNIOR_SCHOOL1$M4CID=="1"))
 length(which(data_JUNIOR_SCHOOL1$M4CID=="1"))/length(data_JUNIOR$ID)
 length(which(data_JUNIOR_SCHOOL1$M4CID=="0"))
 length(which(data_JUNIOR_SCHOOL1$M4CID=="0"))/length(data_JUNIOR$ID)
-#Gender
+# Junior 1159; SCHOOL 0, M4CID = 1, - 476 (41%);
+# SCHOOL 1 - SCHOOL 1: 683 (59%); M4CID = 0: 318 (27%) ; M4CID = 1: 365 (31%)
+
+#Gender Junior
 length(data_JUNIOR$ID)
 length(which(data_JUNIOR$GENDER=="F"))
 length(which(data_JUNIOR$GENDER=="F"))/length(data_JUNIOR$ID)
 length(which(data_JUNIOR$GENDER=="M"))
 length(which(data_JUNIOR$GENDER=="M"))/length(data_JUNIOR$ID)
+# Gender Junior: total, 1159; female 576 (49%); male 583 (50%)
 
 #data length high junior, secondary (sec) grades ()
 lsec<-length(which(data$GRADE==3))+length(which(data$GRADE==4))+length(which(data$GRADE==5))+length(which(data$GRADE==6))
 lsec
 lsec/length(data$ID)
-# sample entries secondary 390, 24% of the global sample
-#it seems good to use secondary grade data compared with the other parts
+# sample entries secondary 255, 18% of the global sample
+#it seems good to use secondary grade data for all sample inference
 data_sec <- filter(data,GRADE >="3" & GRADE <="6") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
 summary(data_sec)
+# ID              DATE          SCHOOL     GENDER         
+# Min.   : 578.0   Min.   :2009   Min.   :1   Length:255        
+# 1st Qu.: 982.5   1st Qu.:2013   1st Qu.:1   Class :character  
+# Median :1216.0   Median :2016   Median :1   Mode  :character  
+# Mean   :1135.5   Mean   :2015   Mean   :1                     
+# 3rd Qu.:1350.5   3rd Qu.:2017   3rd Qu.:1                     
+# Max.   :1414.0   Max.   :2017   Max.   :1                     
+# TEST             LAB             BEHAV            GRADE      
+# Min.   :  0.00   Min.   :  0.00   Min.   : 27.00   Min.   :3.000  
+# 1st Qu.: 47.00   1st Qu.: 47.00   1st Qu.: 65.00   1st Qu.:5.000  
+# Median : 54.00   Median : 63.00   Median : 76.00   Median :5.000  
+# Mean   : 55.74   Mean   : 61.02   Mean   : 73.24   Mean   :5.082  
+# 3rd Qu.: 65.50   3rd Qu.: 73.00   3rd Qu.: 83.00   3rd Qu.:6.000  
+# Max.   :100.00   Max.   :100.00   Max.   :100.00   Max.   :6.000  
+# M4CID            CLASS       
+# Min.   :0.0000   Min.   : 17.60  
+# 1st Qu.:1.0000   1st Qu.: 51.65  
+# Median :1.0000   Median : 60.10  
+# Mean   :0.8667   Mean   : 60.82  
+# 3rd Qu.:1.0000   3rd Qu.: 69.30  
+# Max.   :1.0000   Max.   :100.00  
 length(data_sec$ID)
 length(which(data_sec$M4CID==0))
 length(which(data_sec$M4CID==0))/length(data_sec$ID)
 length(which(data_sec$M4CID==1))
 length(which(data_sec$M4CID==1))/length(data_sec$ID)
-# Higher Junior (secondary), no 4CID, 61, 16%;
-# Higher Junior (secondary), 4CID, 329, 84%
+# obs 255
+# Higher Junior (secondary), no 4CID, 34, 13%;
+# Higher Junior (secondary), 4CID, 221, 86%
+# poorly balanced
 
 ########## Resume
-# The student data came from two different school: until 2008 school 0, after that, school 1, until 2019;
-# School 0 has junior grades, 7 to 9th grade
+# The student data came from two different school: until 2008 school 0, after that, school 1, from 2009 until 2017;
+# School 0 has only junior grades, 7 to 9th grade
 # School 1 has junior grades and junior high with general courses and professional/technical coourses
 # Male is represented by M and female by F
-# with 4CID, varable M4CID = 1, otherwise M4CID = 0;
-# Grades 7,8,9, 10, 11, 10P (technical), 11P (Tecnical) are categorizes by 0 to 6, respectively;
-# Total sample data lenght 1625;
-# female/male sample: 641/984, 39%/61%: no balanced GENDER; JUNIOR balanced: 49% Female, 51% male;
-# Junior - 1235
-# SCHOOL 0 Junior - 476 (29% for the global sample, 39% for the junior all sample)
-# SCHOOL 0, 476, 29%
-# SCHOOL 1 - 1149, 71%
-# SCHOOL 1 Junior - 759 (61% for the junior all sample) 
-# Junior High represents 390 entries, 24% all data sample
-# Global Sample without 4CID: 931, 57%; 
-# Sample with 4CID:694, 43%: more data with 4CID methodology: unbalanced but not critical
-# SCHOOL 0 Junior , 7 to the 9th grade: - with 4CID 0 (0%); without 4CID 476 (39%) ???
-# SCHOOL 1 Junior , 7 to the 9th grade: - with 4CID 365 (30%); without 4CID 394 (32%) ???
-# SCHOOL 1 Junior High, 10 to the 11th grade: - with 4CID 329 (84%); without 4CID 61 (16%) 
-# Table 2: Resume
+# with 4CID, variable M4CID = 1, otherwise M4CID = 0;
+# Grades 7,8,9, 10, 11, 10P (technical), 11P (Technical) are categorizes by 0 to 6, respectively;
+# Total sample data length 1414;
+# school 0, 476, 34% and school 1, 938, 66%
+# female/male sample: 602/812, 43%/57%: no balanced GENDER
+# sample without 4CID: 828, 59%; with 4CID: 586, 41%: more data with 4CID methodology, not balanced
+# Grade 0 (7th) - 353 (25%)
+# Grade 1 (8th) - 411 (29%)
+# Grade 2 (9th) - 396 (28%)
+# Grade 3 (10th) - 27 (2%)
+# Grade 4 (11th) - 18 (1%)
+# Grade 5 (10technical) - 117 (8%)
+# Grade 6 (11technical) - 93 (7%)
+# very low sample entries levels 10/11 grade general and techinal edu path
+# Junior 1159; SCHOOL 0, M4CID = 0, - 476 (41%);
+# SCHOOL 1 - SCHOOL 1: 683 (59%); M4CID = 0: 318 (27%) ; M4CID = 1: 365 (31%)
+# Gender Junior: total, 1159; female 576 (49%); male 583 (50%)
+# sample entries secondary 255, 18% of the global sample
+#it seems good to use secondary grade data for all sample inference
+# obs 255
+# Higher Junior (secondary), no 4CID, 34, 13%;
+# Higher Junior (secondary), 4CID, 221, 86%
+# poorly balanced
+
+# Table 1: distribution by grade 
+# Table 2: schools descritive data sample
+# Table 3: all sample descritive data
 
 # Conclusion: From this analysis it seems to be possible comparing not only all the sample but also,
-# just the Junior or just the secondary, but in the secondary there is only 61 entrances without 4CID;
-# as well as by each grade on the junior level
-# conclusion: Junior sample entries and gender percentagem well balanced
+# just the Junior: this sample is more balanced in terms of grades and gender. The secondary is not balanced but it\
+# can be used fro global sample inference. Junior sample its a better one.
 
 #variables description
 #ID: Identification entry row data;
@@ -225,22 +380,22 @@ grid.arrange(p1, p2, p3, p4,  nrow = 2, top="Normality analysis on graphs",botto
 shapiro.test(data$TEST)
 # Shapiro-Wilk normality test
 # data:  data$TEST
-# W = 0.99013, p-value = 4.927e-09
+# W = 0.99163, p-value = 3.336e-07
 #Reject the H0, not normal
 shapiro.test(data$LAB)
 # Shapiro-Wilk normality test
 # data:  data$LAB
-# W = 0.97869, p-value = 8.224e-15
+# W = 0.97888, p-value = 1.513e-13
 #Reject the H0, not normal
 shapiro.test(data$BEHAV)
 # Shapiro-Wilk normality test
 # data:  data$BEHAV
-# W = 0.9704, p-value < 2.2e-16
+# W = 0.97422, p-value = 3.244e-15
 #Reject the H0, not normal
 shapiro.test(data$CLASS)
 # Shapiro-Wilk normality test
 # data:  data$CLASS
-# W = 0.9942, p-value = 5.631e-06
+# W = 0.99587, p-value = 0.0006986
 #Reject the H0, not normal
 
 # table 4: Shapiro test results
@@ -251,10 +406,10 @@ shapiro.test(data$CLASS)
 #global 2003 to 2019 global variable boxplots
 summary(data)
 ?color
-p5<-ggplot(data,aes(DATE,TEST)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=TEST),se=FALSE)+ geom_vline(xintercept=2008,col="red")+geom_vline(xintercept=2013,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
-p6<-ggplot(data,aes(DATE,LAB)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=LAB),se=FALSE)+ geom_vline(xintercept=2008,col="red")+geom_vline(xintercept=2013,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
-p7<-ggplot(data,aes(DATE,BEHAV)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=BEHAV),se=FALSE)+ geom_vline(xintercept=2008,col="red")+geom_vline(xintercept=2013,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
-p8<-ggplot(data,aes(DATE,CLASS)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=CLASS),se=FALSE)+geom_vline(xintercept=2008,col="red")+geom_vline(xintercept=2013,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
+p5<-ggplot(data,aes(DATE,TEST)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=TEST),se=FALSE)+ geom_vline(xintercept=2009,col="red")+geom_vline(xintercept=2012,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
+p6<-ggplot(data,aes(DATE,LAB)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=LAB),se=FALSE)+ geom_vline(xintercept=2009,col="red")+geom_vline(xintercept=2012,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
+p7<-ggplot(data,aes(DATE,BEHAV)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=BEHAV),se=FALSE)+ geom_vline(xintercept=2009,col="red")+geom_vline(xintercept=2012,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
+p8<-ggplot(data,aes(DATE,CLASS)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=CLASS),se=FALSE)+geom_vline(xintercept=2009,col="red")+geom_vline(xintercept=2012,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
 # figure 1: Boxplot time series for TEST, LAB, BEHAV and CLASS variables  
 grid.arrange(p5, p6, p7, p8,  nrow = 2, top="Boxplot time series",bottom="Figure 1: all data sample")
 

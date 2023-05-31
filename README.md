@@ -6,7 +6,7 @@ This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with one major g
 
 # ABSTRACT
 
-Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow with all the activities chronologically organized, even if the setting is a bLearning one? In overall, the **answer is yes**, that is, 4C/ID eLearning setting as some advantages to Direct Instruction but with some remarks. If you decide to do it, there will be specific impacts for the students learning that need to be **accommodated**, as well as implications for the stakeholders in the learning process: policy makers and school management. The sample covers 13 years of teacher data assessment, during the period 2003 to 2019, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
+Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow with all the activities chronologically organized, even if the setting is bLearning? In overall, the **answer is yes**, that is, 4C/ID eLearning setting as some advantages to Direct Instruction but with some remarks. If you decide to do it, there will be specific impacts for the students that need to be **accommodated**, as well as implications for the stakeholders in the learning process: policy makers and school management. The sample covers 12 years of teacher data assessment, during the period 2003 to 2018, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
 
 > Education is the most powerful weapon which you can use to change the world. 
 >
@@ -38,35 +38,29 @@ The work presented here deals with the impact of changing from a mostly deductiv
 
 Since this is a longitudinal data sample, Junior and junior high for the physics and chemistry content of the Portuguese school curriculum, the **conclusions** extrapolation should be used carefully.
 
-The data used in this work was gathered over 13 years, in the period 2003 to 2019, from actual teacher day-to-day practice assessments about students **Learning Transfer**, **Lab Practice**, **Classroom Behavior**, that include Social Skills, and **Academic Results**. 
+The data used in this work was gathered over 12 years, in the period 2003 to 2017, from actual teacher day-to-day practice assessments about students **Learning Transfer**, **Lab Practice**, **Classroom Behavior**, that include Social Skills, and **Academic Results**. 
+
+# EDUCATIONAL CONTEXT
 
 After starting to be interested about the different ways students learn I came across with the work of Felder´s learning styles (Felder; Silverman; 1988) and Wiley's Learning Objects (Wiley, 2002). These paper's showed me a complete list of different methodologies with different points of views: the inductive ones seems very promising and more adapted to the way brain learns. 
 
-Furthermore, the readings about alternative **educational methodologies** went on, into the Cognitive Load Theory (Sweller, 1998), Brain Based Learning[\^2] (Jensen, 2005), Gardner Multi-Intelligence Theory (Gardner, 2011) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID methodology was applied and a bLearning environment online set with MOODLE Learning Management System (LMS) (Rice, 2006). Lessons were organized and were mostly accomplished in the classroom: fewer logs into the system were from outside.
+Furthermore, the readings about alternative **educational methodologies** went on, into the Cognitive Load Theory (Sweller, 1998), Brain Based Learning[\^2] (Jensen, 2005), Gardner Multi-Intelligence Theory (Gardner, 2011), eLearning (Garrison, Anderson 2003) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID methodology was applied and a bLearning environment online set with MOODLE Learning Management System (LMS) (Rice, 2006). Lessons were organized and were mostly accomplished in the classroom: fewer logs into the system were from outside.
 
-# CONTEXT
+This work includes junior and junior high students of two different schools data, from different regions, for the chemistry and physics subjects of the Portuguese curriculum, in the time scale 2003 to 2017. Raw data was gathered during 12 years, from actual day-to-day assessment registering in three different areas: transfer tests, lab practice and classroom behavior.
 
-This work includes junior and junior high students of two different schools data, from different regions, for the chemistry and physics subjects of the Portuguese curriculum, in the time scale 2003 to 2019. Raw data was gathered during 13 years, from actual day-to-day assessment registering in three different areas: transfer tests, lab practice and classroom behavior.
+# MOTIVATION
 
-Figure 1 show the variable longitudinal patterns for all sample time series, which includes junior and junior high students data for the two schools. The red vertical line shows the school change and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology for the treatment group. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression). So, something happened! 
+Most of the time the professional, specific, **day-to-day teacher work** data is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are drowned and worse, it's normal not to share it.
 
-Furthermore, it seems that there no positive effect of the methodological change and its clear that there is a school effect. Meaning that, the schools have different learning outcomes.
+My **personal motivation** is to know if the strategic decisions I did in 2008 were positive for my students: did they benefit from the educational strategic change? It was a global benefit or some groups benefited more? Does anyone have the same kind of research for comparision? Can anyone corroborate this results or criticize them? Sharing is the way to go to find knowledge.
 
-![Figure 1: all sample variables time series](Figures/figure1_boxplot_allSample.png)
-
-The concept map's software cmap tools[^readme-2] was used for the design of the learning flow maps and they are presented online[^readme-3] showing the four components and the structure based in the four component instructional design (4C/ID), described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007).
+The concept map's software cmap tools[^readme-2] was used for the design of the learning flow maps and they are presented online[^readme-3] showing the four components and the structure based in the four component instructional design (4C/ID), described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007). This maps are used since 2012, included.
 
 [^readme-2]: <https://cmap.ihmc.us/>
 
 [^readme-3]: Flow charts (missing details to be updated) Data base sample (R data frame): <https://cmap.ihmc.us/> ;
 
-The **statistical analysis** uses R code software in the RStudio[^readme-4] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data and several plots showing patterns and relationships between variables. Afterwards there is a data normality and sample independence investigation. 
-
-The principal methodology used is the non-parametric inferential treatment effect, but there is a discussion towards the non-parametric regression inference, regression discontinuity design and clustering. this last ones just to try to corroborate the upper first results. For this, it was used a data base[^readme-5] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. The CLASS variable is directly related to the academic results and is a weigth average of TEST, LAB and BEHAV. TEST, LAB and BEHAV. This variables were assessed by paper and online transfer testing and in classroom observational paper registering forms (Koretz, 2008).
-
-[^readme-4]: RStudio, <https://posit.co/products/open-source/rstudio/>
-
-[^readme-5]: there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence under the null. <https://github.com/fqantonio/GoingInductive/tree/main/DATA>
+# DATA
 
 The **Variables** are described in this next table.
 
@@ -83,11 +77,67 @@ The **Variables** are described in this next table.
 |       RANK       | Categorical variable, 1,2,3, that measures the adaptability of students to school: 1 less adapted, 3, more adapted.                                                                      |
 [^readme-6]: CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV
 
-# MOTIVATION
+Table 1: variable description
 
-Most of the time the professional, specific, **day-to-day teacher work** data is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are drowned and worse, it's normal not to share it.
+Table 2 and 3 shows a short **descriptive statistics** summary of the samples for school 0 and 1, and the entire sample with the main variables (they are described below), respectivley. This is a longitudinal sample with 1414 rows (observations). It covers 12 years of data, from 2003 to 2017. In this data there are two changes. In 2009 there is a school change to a different region: the first is a junior school, identified by SCHOOL = 0, and the second has Junior and a Junior High students. In 2012 the change that is crucial here, going to an inductive strategy. So the treatment group is the sample after 2012, included. Table 1 shows a first data description for school 0 and 1: 476 observations (34%) and school 1, 938, 66%. About GENDER, the global sample is not balanced: 602/812, 43%/57%, respectively, female and male. Almost the same about the treatment and control group percentage: 828, 59%; with 4CID: 586, 41%. Conclusion: From this analysis it seems to be possible comparing not only all the sample but also, just the Junior: this sample is more balanced in terms of grades and gender. The secondary is not balanced but it can be used fro global sample inference. Junior sample its a better one.
 
-My **personal motivation** is to know if the strategic decisions I did in 2008 were positive for my students: did they benefit from the educational strategic change? It was a global benefit or some groups benefited more? Does anyone have the same kind of research for comparision? Can anyone corroborate this results or criticize them? Sharing is the way to go to find knowledge.
+| GRADE | Obs. | %  | Notes |
+|:---:|:---:|:---:|:---:|
+| 0 (7th) | 353 | 25% |
+| 1 (8th) | 411 | 29% | 
+| 2 (9th) | 396 | 28% |
+| 3 (10th) | 27 | 2% |
+| 4 (11th) | 18 | 1% |
+| 5 (10technical) | 117 | 8% |
+| 6 (11technical) | 93 | 7% |
+
+Table 2: distribution by grade 
+
+| Variable | Obs. | Mean | Median | Min.| Max. | St. Deviation | Notes |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
+| TEST | 1414 | 61 | 60 | 0 | 100 | 17 |  |
+| LAB | 1414 | 60 | 60 | 0 | 100 | 19 |  | 
+| BEHAV | 1414 | 76 | 77 | 27 | 100 | 15 | |
+| CLASS | 1414 | 64 | 63 | 14 | 100 | 14 | |
+
+Table 3: schools descriptive data sample
+
+Looking to table 2, its clear that sample variables cover a wide range of the possible values and the means and medians are very close, this can be a clue about data normality. But, further inference analysis shows that it is not the case: samples are skewed and have heavy tails: big values of the standards deviations. Figure 1 shows the non-normal samples for each variable for the global sample. Shapiro tests show low p-values << 0.05, which means that there is a 95% sure to reject the null: they are not similar to the normal distribution. 
+
+| M4CID 0 | Obs. | Mean | Median | Min.| Max. | St. Deviation | Notes |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
+| TEST | 828 | 62 | 62 | 16 | 100 | 17  |  |
+| LAB | 828 | 57 | 60 | 10 | 100 | 20  |  | 
+| BEHAV | 828 | 77 | 79 | 28 | 100 | 14 | |
+| CLASS | 828 | 64 | 64 | 14 | 97 | 14 | |
+
+| M4CID 1 | Obs. | Mean | Median | Min.| Max. | St. Deviation | Notes |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
+| TEST | 586 | 58 | 57 | 0 | 100 | 17 |  |
+| LAB | 586 | 64 | 65 | 15 | 100 | 16  |  | 
+| BEHAV | 586 | 74 | 76 | 27 | 100 | 16 | |
+| CLASS | 586 | 63 | 62 | 18 | 100 | 14 | |
+
+Table 4: data from the treatment and control group
+
+Both groups, treatment and control are well balanced: without 4C/ID 828, 51%; with 4C/ID: 797, 49%. We notice that are very low observations numbers sample entries levels for Junior High, 24%. It seems that it will be better to use the junior sample for the research: this is a more balanced sample in terms of observations and gender. The treatment and control group in the Junior High sample its poorly balanced and the observations are very low, in particular, to the 10 and 11th grades: just 8% of the data are observations of the control group, 92% for the treatment group.
+
+Figure 2 shows the variable longitudinal patterns for all sample box plots time series, which includes junior and junior high students data for both schools. The red vertical line shows the school change and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology for the treatment group. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression). So, something happened! 
+
+Furthermore, it seems that there no positive effect of the methodological change and its clear that there is a school effect, meaning that, the schools have different learning outcomes.
+
+![Figure 1: all sample variables time series](Figures/figure1_boxplot_allSample.png)
+
+# METHODS
+
+The **statistical analysis** methods uses R code software in the RStudio[^readme-4] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data and several plots showing patterns and relationships between variables. Afterwards there is a data normality and sample independence investigation. 
+
+The principal methodology used is the non-parametric inferential treatment effect, but there is a discussion towards the non-parametric regression inference, regression discontinuity design and clustering. this last ones just to try to corroborate the upper first results. For this, it was used a data base[^readme-5] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. The CLASS variable is directly related to the academic results and is a weigth average of TEST, LAB and BEHAV. TEST, LAB and BEHAV. This variables were assessed by paper and online transfer testing and in classroom observational paper registering forms (Koretz, 2008).
+
+[^readme-4]: RStudio, <https://posit.co/products/open-source/rstudio/>
+
+[^readme-5]: there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence under the null. <https://github.com/fqantonio/GoingInductive/tree/main/DATA>
+
 
 # RESULTS
 
@@ -194,6 +244,8 @@ notes for discussion: - The conlsuions meet the goals and answer th research que
 Felder, Richard M. ; Silverman, Linda K.; (1988), Engr. Education, 78(7), 674--681;
 
 Gardner, Howard (2011) Frames Of Mind: The Theory Of Multiple Intelligences, ISBN-13: 978-0465024339;
+
+Garrison, D.R.; Anderson, Terry (2003); E-Learning in the 21st Century, A framework for research and practice, RoutledgePalmer, ISBN: 978-0-415-26346-7.
 
 Jensen, Eric (2005), Teaching with the Brain in Mind, ASCD, ISBN-10: 146600302; ISBN-13:978-1416600305;
 
