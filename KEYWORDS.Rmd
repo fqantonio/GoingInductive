@@ -6,7 +6,7 @@
 
 **`Direct Instruction`** - Principles of Instruction that prescribe a cycle of instruction consisting of activation, demonstration, application, and integration (Merril, 2007);
 
-**`Learning flow`** - longitudinal (temporal) map with sequenced activities organized in time, by complexity and loical learning coherence;
+**`Learning flow`** - longitudinal (temporal) map with activities organized and sequenced in time, by complexity and logical learning coherence;
 
 **`Statistical Non-parametric Inference`** - statistical techniques that use data to test if two sample came from the same non-normality distribution;
 

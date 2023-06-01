@@ -1,0 +1,11 @@
+# List of Tables and Figures
+
+figure 1: Histograms with kernel density estimate for TEST, LAB, BEHAV and CLASS variables 
+
+figure 2: Boxplot time series for TEST, LAB, BEHAV and CLASS variables  
+
+figure 3: Boxplot time series for TEST, LAB, BEHAV and CLASS variables junior grade  
+
+figure 4: junior grade sample for school 1 
+
+figure 5: junior high grade sample for school 1  
