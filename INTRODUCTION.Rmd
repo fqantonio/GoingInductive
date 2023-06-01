@@ -1,3 +1,64 @@
+
+# ABSTRACT
+
+Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow with all the activities chronologically organized, even if the setting is bLearning? In overall, the **answer is yes**, that is, 4C/ID eLearning setting as some advantages to Direct Instruction but with some remarks. If you decide to do it, there will be specific impacts for the students that need to be **accommodated**, as well as implications for the stakeholders in the learning process: policy makers and school management. The sample covers 12 years of teacher data assessment, during the period 2003 to 2018, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
+
+> Education is the most powerful weapon which you can use to change the world. 
+>
+>                                                 Nelson Mandela
+
+**Keywords** Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flow; Statistical Non-parametric Inference; academic results; learning transfer; behavior; lab practice; Cognitive Load Theory; Multi Intelligence Theory; Brain Based Learning; bLearning.
+
+# GOALS, RESEARCH QUESTIONS and HYPHOTESIS
+
+The **main goal** is to understand the impact of the use of Inductive Methodology four component instructional (4C/ID) in a bLearning setting, by answering the following **research questions**:
+
+1 - changing the learning methodologies from one mainly deductive, denominated by Direct Instruction (Merrill, 2007) to another one mostly inductive, Merriënboer's 4C/ID design theory (van Merriënboer, Kirschner, 2007), means what for students learning outcomes? Who benefits? What are the pros and cons about this methodological decision? What are the implications for the stakeholders?
+
+2 - Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning?
+
+3 - And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results?
+
+4 - Is there a different impact on gender?
+
+5 - And within the different grades?
+
+6 - Student more adapted to school benefit more?
+
+The **hypothesis** is that this change will have a positive impact in all learning areas because, in overall, it is based on the 4C/ID methodology that, in itself, is anchored on Brain Based Learning (BBL), Cognitive Load Theory (CLT), Multi-Intelligence Theory (MIT) and Multimedia Learning (ML).
+
+# INTRODUCTION
+
+The work presented here deals with the impact of changing from a mostly deductive type of methodology to a mostly inductive one: more precisely, this means a major change from a, **direct instruction** (Merril, 2007) classroom setting to an inductive strategy, **four components instructional design** (4C/ID) (Van Merrienboer, Clark, Coock, 2002), in a bLearning environment (Mayer, 2005). This leads directly to a major and crucial teacher concern that transform into the main **research question**: what are the accommodations, risks and concerns about the impact on students learning that you have to deal, if you make this strategic change?
+
+Since this is a longitudinal data sample, Junior and junior high for the physics and chemistry content of the Portuguese school curriculum, the **conclusions** extrapolation should be used carefully.
+
+The data used in this work was gathered over 12 years, in the period 2003 to 2017, from actual teacher day-to-day practice assessments about students **Learning Transfer**, **Lab Practice**, **Classroom Behavior**, that include Social Skills, and **Academic Results**. 
+
+# EDUCATIONAL CONTEXT
+
+After starting to be interested about the different ways students learn I came across with the work of Felder´s learning styles (Felder; Silverman; 1988) and Wiley's Learning Objects (Wiley, 2002). These paper's showed me a complete list of different methodologies with different points of views: the inductive ones seems very promising and more adapted to the way brain learns. 
+
+Furthermore, the readings about alternative **educational methodologies** went on, into the Cognitive Load Theory (Sweller, 1998), Brain Based Learning[\^2] (Jensen, 2005), Gardner Multi-Intelligence Theory (Gardner, 2011), eLearning (Garrison, Anderson 2003) and four component instructional design (4C/ID) (Van Merrienboer, Clark, Croock, 2002). After four years of readings and tests, in 2013 the 4C/ID methodology was applied and a bLearning environment online set with MOODLE Learning Management System (LMS) (Rice, 2006). Lessons were organized and were mostly accomplished in the classroom: fewer logs into the system were from outside.
+
+This work includes junior and junior high students of two different schools data, from different regions, for the chemistry and physics subjects of the Portuguese curriculum, in the time scale 2003 to 2017. Raw data was gathered during 12 years, from actual day-to-day assessment registering in three different areas: transfer tests, lab practice and classroom behavior.
+
+# MOTIVATION
+
+Most of the time the professional, specific, **day-to-day teacher work** data is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are drowned and worse, it's normal not to share it.
+
+My **personal motivation** is to know if the strategic decisions I did in 2008 were positive for my students: did they benefit from the educational strategic change? It was a global benefit or some groups benefited more? Does anyone have the same kind of research for comparision? Can anyone corroborate this results or criticize them? Sharing is the way to go to find knowledge.
+
+The concept map's software cmap tools[^readme-2] was used for the design of the learning flow maps and they are presented online[^readme-3] showing the four components and the structure based in the four component instructional design (4C/ID), described in the book *Ten Steps to Complex Learning* (van Merriënboer; Kirschner, 2007). This maps are used since 2012, included.
+
+[^readme-2]: <https://cmap.ihmc.us/>
+
+[^readme-3]: Flow charts (missing details to be updated) Data base sample (R data frame): <https://cmap.ihmc.us/> ;
+
+
+
+# NOTES
+
 # Summary
 
 - [ ] why is it interesting/important
@@ -10,46 +71,6 @@
 - [ ] How will it be analysed
 
 This is the site with all the work done for the paper "Going Inductive?": the documentation generated and the code in R using RStudio, statistical analysis methods included is also available here as well as the ongoing documentation (wiki), sample data and raw data.
-
-# Abstract
-
-The question addressed here, has consequences for the two main stakeholders in the learning process, students and teachers, and probability policy implications also: should you, as a teacher of science and tech, move to an inductive strategy, for the design of the learning activities that you prepare and organize, even if you include bLearning? In overall, the answer is yes, but with some crucial remarks. If you decide to do it, there will be consequences for the students in different categories that need to be accommodated. The data was gathered along 20 years of teacher practice and reflection. The conclusions are innovative, not only because of the sample used but as well as the specific outcomes that are proposed. After a descriptive summary of the quantitative data, it is discussing the data normality and presented statistical analysis using Wilcox test. Raw data and code are available online[^1].
-
-[^1] Github???
-
-**Keywords**
-Inductive strategy; 4C/ID; Direct Instruction; regression analysis
-
-# Introduction 
-
-Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning? And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results?
-
-The conclusions descibed in this work are drawn from 14 years of data (2003-2017), both qualitative and quantitative, from actual teacher day-to-day practice learning strategies: deductive and inductive. This transition from deductive to inductive educational methods strategy,  over this period of time, is higlighted and, the learning flux elaborated for the integration of bLearning environments are also presented. 
-
-The data used in this research covers learning transfer, lab practice and classroom behavior within the specific subject of chemistry and physics for the basic and secondary classes of the portuguese curriculum. 
-
-The analysis uses the common inference statistical techniques, where the control group was not subjected to the inductive methodology, namely, the 4C/ID. The software used in this work is the opensource R in the RStudio distribution.
-
-This work flow starts, with a exploratory data analysis (EDA) and a presentation of the non-parametric inference treatment effect results. The treatment group is the one where students experienced the 4C/ID instructional design in the bLearning environment. The control group is mainly the time length between 2003 and 2012. The regression analysis done and the regression discontinuity design are presented, as well as the cluster analysis, just to confirm/corroborate the former inference results. The last part deals with the results, conclusions, some remarks about the data patterns findings and future research.
-
-
-#INTRODUCTION
-Since 2009 the search for other methodologies available brings to Cognitive Load Theories, BBL, Multiples Inteligences Gardner,  Emotional approaches (???) readings until the idea of inductive came with the specific 4C/ID instructional design of Merrionboer???. Since then, it took four years until there was same mastering of the approach and in 2013, in full speed using also a bLearning environmet wth MOODLE.
-
-and  will be used, the former will be discussed using the teacher reflections about is own day-to-day practice. Two learning strategies are used: deductive and inductive. The first focuses on the direct instruction traditional methodologies, the later on the 4C/ID instruction design proposed by Merrionboer???. This work compares learning data gathering from students at the basic level, in the discipline of Physics and Chemistry, students in the Portuguese curriculum. The assessment was made in 3 learning outcomes: transfer tests, behavior and social skills. The conclusion was based on the usual statistical analysis and qualitative analysis. This work, as well as the data, is presented at the blog “https://4cidchange.edublogs.org/”.
-
-#INTRODUCTION
-Should you, as a teacher of science and tech, **move to an inductive strategy**, for the design of the learning activities that you prepare and organize, even if you include bLearning? In my opinion, and based on the results, you should, but with some specific remarks that are explained at the conclusion, below and in the document **CONCLUSION**.
-
-The **DATA** gathered for this works integrated 16 years, time period 2003-2019 (with some gap years) and is a real day-to-day teacher struggling to motivate and engage student in knowledge. Two learning strategies are used: deductive and inductive. The first focuses on the direct instruction traditional methodologies, the later on the 4C/ID instruction design proposed by Merrionboer??? in a bLearning environment as well. This work compares learning data gathering from students at the basic level, in the discipline of Physics and Chemistry, in the Portuguese curriculum context. 
-
-The **analysis** was made based in 3 learning outcomes: transfer tests, behavior and social skills registered in specific forms. The results were based on the usual inference statistical and qualitative analysis. This work, as well as the data, is also presented at the blog “https://4cidchange.edublogs.org/”.
-
-# Goal
-
-The main goal is to understand the impact of the use of Indcutive Methodology 4C/ID answering the questions: changing the learning methodologies from one mainly deductive (Direct Instruction[^1]) to another one mostly inductive (4C/ID [^2]), means what for your students? Who benefits? What are the pros and cons about this methodological decision?
-
-# Motivation
 
 Most of the time the professional, specific, day-to-day teacher work gathered data is rarely or never investigated. At least in the portuguese educational environment. For the teachers, there is not much time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are possible. Worse, even if someone did it, it's normal to not share it. Research and discussion with peers are crucial to better adjust our decisions regarding the way students learn today. The way learning happens and motivation changes, are so fast! So, teaching, at least in Portugal, is a very solitary job with all of its directly related drawbacks.
 

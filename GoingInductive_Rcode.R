@@ -1,39 +1,32 @@
 #INDEX
-# GOALS - 36
-# Exploratory data analysis (EDA) - 47
-  # DATA summary - 58
-  # Resume - 160
-  # DATA variables description - 187
-  # DATA structure - 202
-# NORMALITY - 413
-# INFERENCE - 590
-  ## Global - 591
-  ## Differences between junior school 0 and 1, without 4CID - 691
-  ## school effect - 774
-  ## School 1, global sample (include junior high for school 1) - 773 
-  ## Computed sample junior with and without 4C/ID, between school 0 and school 1 (with 4C/ID)-865
+# GOALS - 45
+# HYPOTHESIS - 54
+# DATA - Exploratory data analysis (EDA) - 57
+  # DATA summary - 93
+  # Resume - 315
+  # DATA variables description - 352
+  # DATA structure - 367
+  # NORMALITY - 551
+# RESULTS - 729
+  ## Global Inference - 732
+  ## Differences between junior school 0 and 1, without 4CID - 838
+  ## school effect - 929
+  ## School 1, global sample (include junior high for school 1) - 1023
+  ## Computed sample junior with and without 4C/ID, between school 0 and school 1 (with 4C/ID) - 1097
   ## Inference for computed samples
-      ### junior differences with and without 4C/ID, between school 0 and school 1 (only with 4C/ID) - 953
-      ### global sample differences with and without 4CID - 1044
-  ## Inference junior and junior high, school 1 - 1137
-  ## Junior sample for school 1 only - 1262
-  ## Inference SCHOOL 1, Grade 7  - 1383
-  ## Inference SCHOOL 1, Grade 8 - 1501
-  ## Inference SCHOOL 1, Grade 9 -1618
-  ## RANK - 1753
-  ## GENDER - 2129
-# REGRESSION ANALYSIS -2317
-# Regression discontinuity design (RDD) - 2355
-# METHODOLOGY - 2451
-  ## Hypothesis test discussion
-  ## Independent samples
+      ### junior differences with and without 4C/ID, between school 0 and school 1 (only with 4C/ID) - 1177
+      ### global sample differences with and without 4CID - 1274
+  ## Inference junior and junior high, school 1 - 1367
+  ## Junior sample for school 1 only - 1492
+  ## Inference SCHOOL 1, Grade 7  - 1612
+  ## Inference SCHOOL 1, Grade 8 - 1730
+  ## Inference SCHOOL 1, Grade 9 -1847
+  ## RANK - 1982
+  ## GENDER - 2358
+# REGRESSION ANALYSIS - 2546
+# Regression discontinuity design (RDD) - 2668
 # SUMMARY results and observations/notes - 2458
-  ## NOTES and OBSERVATIONS
-  ## Policy implications
-  ## Future  arch
-  ## Tie loose hands together
-# DOUBTS AND DISCUSSIONS - 2610
-# REFERENCIES - 2616
+# REFERENCES - 2854
 
 # libraries 
 library(dplyr) #work with data frames
@@ -64,7 +57,7 @@ data<-data %>% mutate(CLASS=0.5*TEST+0.3*LAB+0.2*BEHAV)
 colnames(data) <- c("ID","DATE" ,"SCHOOL" ,"GENDER" ,"TEST" ,"LAB" ,"BEHAV" ,"GRADE" ,"M4CID","CLASS")
 head(data)
 summary(data)
-ID              DATE          SCHOOL          GENDER         
+# ID              DATE          SCHOOL          GENDER         
 # Min.   :   1.0   Min.   :2003   Min.   :0.0000   Length:1414       
 # 1st Qu.: 354.2   1st Qu.:2006   1st Qu.:0.0000   Class :character  
 # Median : 707.5   Median :2011   Median :1.0000   Mode  :character  
@@ -340,9 +333,10 @@ length(which(data_sec$M4CID==1))/length(data_sec$ID)
 # Higher Junior (secondary), 4CID, 221, 86%
 # poorly balanced
 
-# Table 1: distribution by grade 
-# Table 2: schools descritive data sample
-# Table 3: all sample descritive data
+# Table 1: variable description
+# Table 2: distribution by grade 
+# Table 3: schools descriptive data sample
+# Table 4: data from the treatment and control group
 
 # Conclusion: From this analysis it seems to be possible comparing not only all the sample but also,
 # just the Junior: this sample is more balanced in terms of grades and gender. The secondary is not balanced but it\
@@ -361,13 +355,13 @@ length(which(data_sec$M4CID==1))/length(data_sec$ID)
 # CLASS, 0 to 100, height average, CLASS=0.5*TEST+0.3*LAB+0.2*BEHAV: 
 #this will be used in a variable to be defined below, RANK: a study for student addaptation to the school system
 
-#Table 3: Variable description
+#Table 1: Variable description
 
 ##########DATA structure
 
 # graph analysis, all grades, global sample
 
-#Normality: tests, histograms and QQ plots
+# histograms and QQ plots
 p1<-ggplot(data,aes(TEST,after_stat(density))) + geom_histogram(binwidth=10,colour = 1, fill = "white") + geom_density(lwd = 1, colour = 4,fill = 2, alpha = 0.50)
 p2<-ggplot(data,aes(LAB,after_stat(density))) + geom_histogram(binwidth=10,colour = 1, fill = "white") + geom_density(lwd = 1, colour = 4,fill = 2, alpha = 0.50)
 p3<-ggplot(data,aes(BEHAV,after_stat(density))) + geom_histogram(binwidth=10,colour = 1, fill = "white") + geom_density(lwd = 1, colour = 4,fill = 2, alpha = 0.50)
@@ -375,43 +369,15 @@ p4<-ggplot(data,aes(CLASS,after_stat(density))) + geom_histogram(binwidth=10,col
 # figure 1: Histograms with kernel density estimate for TEST, LAB, BEHAV and CLASS variables 
 grid.arrange(p1, p2, p3, p4,  nrow = 2, top="Normality analysis on graphs",bottom="Figure 1: Histograms with kernel density estimate for variables TEST, LAB, BEHAV and CLASS")
 
-#Normality
-# H0 means normal distribution
-shapiro.test(data$TEST)
-# Shapiro-Wilk normality test
-# data:  data$TEST
-# W = 0.99163, p-value = 3.336e-07
-#Reject the H0, not normal
-shapiro.test(data$LAB)
-# Shapiro-Wilk normality test
-# data:  data$LAB
-# W = 0.97888, p-value = 1.513e-13
-#Reject the H0, not normal
-shapiro.test(data$BEHAV)
-# Shapiro-Wilk normality test
-# data:  data$BEHAV
-# W = 0.97422, p-value = 3.244e-15
-#Reject the H0, not normal
-shapiro.test(data$CLASS)
-# Shapiro-Wilk normality test
-# data:  data$CLASS
-# W = 0.99587, p-value = 0.0006986
-#Reject the H0, not normal
-
-# table 4: Shapiro test results
-
-#Conclusion: samples not normal
-
 # box plots
 #global 2003 to 2019 global variable boxplots
 summary(data)
-?color
 p5<-ggplot(data,aes(DATE,TEST)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=TEST),se=FALSE)+ geom_vline(xintercept=2009,col="red")+geom_vline(xintercept=2012,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
 p6<-ggplot(data,aes(DATE,LAB)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=LAB),se=FALSE)+ geom_vline(xintercept=2009,col="red")+geom_vline(xintercept=2012,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
 p7<-ggplot(data,aes(DATE,BEHAV)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=BEHAV),se=FALSE)+ geom_vline(xintercept=2009,col="red")+geom_vline(xintercept=2012,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
 p8<-ggplot(data,aes(DATE,CLASS)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=CLASS),se=FALSE)+geom_vline(xintercept=2009,col="red")+geom_vline(xintercept=2012,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
 # figure 1: Boxplot time series for TEST, LAB, BEHAV and CLASS variables  
-grid.arrange(p5, p6, p7, p8,  nrow = 2, top="Boxplot time series",bottom="Figure 1: all data sample")
+grid.arrange(p5, p6, p7, p8,  nrow = 2, top="Boxplot time series",bottom="Figure 2: all data sample")
 
 # Junior, school 0 and 1
 data_junior<-filter(data,GRADE <="2") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
@@ -575,6 +541,7 @@ grid.arrange(p44, p45, p46, p47,  nrow = 2,top="Junior high grade histograms", b
 #conclusion: data seems to be not normal, except the CLASS variable
 
 ########## normality
+
 # Global sample
 #TEST
 hist(data$TEST)
@@ -751,7 +718,8 @@ grid.arrange(p56, p57, p58, p59,  nrow = 2,top="Normal QQ plot", bottom="Figure 
 #do the same analysis for the school 0 and shcool 1. Meaning that we should use a non-parametric 
 #hyphotesis testing stats
 
-########### Inference (and independency analysis)
+# RESULTS
+#Inference (and independency analysis)
 #Inference for the global differences in M4CID, no matter which school, for each data variables: TEST, LAB and BEHAV
 head(data)
 summary(data)
@@ -844,7 +812,6 @@ wilcox.test(data_M4CID0$CLASS,data_M4CID1$CLASS,alternative = "greater")
 
 #Inference conclusion for the 4C/ID treatment effect for all sample, 
 #no matter which school, for each data variables: TEST, LAB and BEHAV
-
 # Samples are independent, Wilcoxon inference non-parametric test
 # for the global TEST, BEHAV and CLASS variables, negative 4CID effect;
 # LAB variable, positive effect
@@ -1301,7 +1268,7 @@ wilcox.test(data_computed_SCHOOL0_M4CID0$CLASS,data_computed_SCHOOL1_M4CID1$CLAS
 
 # see Table 11: Differences computed for junior school 0 and 1
 
-# sample with all sample
+# all sample
 data_computed_all<-data # all for all sample
 
 # values added to variables only of school 1
@@ -2704,13 +2671,6 @@ plot(x,y)
 rdrobust(y,x)
 rdplot(y,x)
 
-########## METHODOLOGY
-
-## Hypothesis test discussion
-
-## Normality and Independent samples
-
-
 ########## Summary results and notes
 
 # The main goal is to understand the impact of the use of Inductive Methodology 4C/ID by answering the questions: 
@@ -2889,24 +2849,6 @@ ggplot(results) +
                      values=c('TEST'='red', 'LAB'='blue', 'BEHAV'='green', 'CLASS'='yellow'))+
   
   coord_flip(ylim = c(-100,100))
-
-# Social skills effect
-
-
-
-## NOTES and OBSERVATIONS
-
-## Policy implications
-
-## Future research
-
-## Tie loose hands together
-
-########## doubts and discussions
-# 802!?!?!? - scale change
-#Kendall correlation test, sometimes because of the random sample it gives results of depency...
-#what to ? a for cycle and calcula probability of getting independency?
-#rank 1, kendall ties!?
 
 ########## REFERENCES
 

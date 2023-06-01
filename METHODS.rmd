@@ -1,5 +1,14 @@
 # METHODS
 
+The **statistical analysis** methods uses R code software in the RStudio[^readme-4] IDE release and starts with a exploratory data analysis (EDA): a descriptive summary of the quantitative data and several plots showing patterns and relationships between variables. Afterwards there is a data normality and sample independence investigation. 
+
+The principal methodology used is the non-parametric inferential treatment effect, but there is a discussion towards the non-parametric regression inference, regression discontinuity design and clustering. this last ones just to try to corroborate the upper first results. For this, it was used a data base[^readme-5] and 3 learning outcomes variables: transfer learning, laboratory practice and social skills, addressed respectively by 3 variables, TEST, LAB and BEHAV. The CLASS variable is directly related to the academic results and is a weigth average of TEST, LAB and BEHAV. TEST, LAB and BEHAV. This variables were assessed by paper and online transfer testing and in classroom observational paper registering forms (Koretz, 2008).
+
+[^readme-4]: RStudio, <https://posit.co/products/open-source/rstudio/>
+
+[^readme-5]: there was a need to make some analysis of this data sample group in order to conclude if there is an underlying school effect: in fact there is a difference confirmed with 95% confidence under the null. <https://github.com/fqantonio/GoingInductive/tree/main/DATA>
+
+# NOTES
 
 
 The conclusion was based on the usual statistical analysis and qualitative assessement notes using data from the usual day-to-day teacher database, spreadsheets assessments, notes, registers, inquiries, and teacher interactions with the students. This work, as well as the raw data, is also presented on the blog “https://4cidchange.edublogs.org/” and in this GitHub account. The quantitative assessment used statistical inference made with R software tool [^4] and is based on three learning outcomes: transfer tests (TEST), behavior (BEHAV), and lab skills (LAB). Two groups are compared groups, with and without the application of 4CID methodology (M4CID), in GENDER, RANK and SCHOOL. 

@@ -2,6 +2,47 @@
 
 (`under construction`)
 
+The conclusions presented here focus more on the junior sample of school 1. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** [^readme-8].
+
+However, there are **risks and concerns** to be accommodated during the process, namely:
+1. for the student less adapted to the school system;
+2. the classroom management referring to students behavior (see discussion);
+3. in the **learning transfer** process the gains are more modest;
+4. males gain less with this change.
+
+[^readme-8]: Is there an underlying behavioral underlying effect?
+
+**Bottom line**, if you don't want to take the risks, change conditional to have a student group more adapted to school or if you want to increase the lab practices skills. Futhermore, this work shows is that there is a slight advantage of using 4C/ID eLearning setting compare to Direct Instruction. In fact, there is a huge advantage of 4C/ID in Lab Practice in spite of the negative impact in Social Skills. It also shows that the students that are less adapted to school don't improve much unless for the Lab Practice. So, compare with a instructional design with 200 years (???) of reliability is something to higlight.
+
+RISKS:
+
+A major risk is for the less adapted students to school: there is a need to accommodate this. 
+
+For the **Social Skills**, specifically in the aspect of following social and behavioral classroom rules, there is a major negative [\^6] impact in all samples: the risk of loosing control of the students group inside the classroom is real; however, note that the assessment were all positive: median change from 81 to 74%, which means that the behavior was above 50% and didn't represent a thread to the classroom learning environment.
+
+CONCERNS:
+
+In general, GRADE 7 and RANK 2 tends to benefit less then the other grades and rank 3;
+
+# DISCUSSION
+
+notes for discussion: - The conlsuions meet the goals and answer th research question? - Did I implemented the methods correctly? - Is there an underlying effect for the behav variable? - Conclusions for the stakeholders in the learning process: teachers, Policy implications and school management. - blearning change: team work impressible - Reiterate results - world research corroboration ; Future research Tie loose hands: Clarify, robustness; after 2015 there is a crash in the student behavior skills.: need extra data; social skills: all, ranks, grades, and gender follow the same pattern? students behavior effect
+
+  ## NOTES and OBSERVATIONS
+  ## Policy implications
+  ## Future  arch
+  ## Tie loose hands together
+  # DOUBTS AND DISCUSSIONS
+  ########## doubts and discussions
+# 802!?!?!? - scale change
+#Kendall correlation test, sometimes because of the random sample it gives results of depency...
+#what to ? a for cycle and calcula probability of getting independency?
+#rank 1, kendall ties!?
+
+
+
+#NOTES
+
 The inner goal of a teacher is always to have their students engaged in their subject, to have them wanted to know more, and tease their curiosity towards life and knowledge in general. The idea of changing the methodological strategy was compelling, not only because it seems a more natural way, more BBL suitable, to address the Science subject wording by adopting this 4C/ID learning flux strategy, but also to engage in its conceptual and mental model, that is, improve learning. So, when introducing concepts, there was a neuro network of lab experiences that facilitate that understanding, so important in Science subjects. What were the consequences for the student's academic results?
 
 

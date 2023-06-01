@@ -1,4 +1,48 @@
 # RESULTS
+
+Figure 2 and the next table present a resume of the **results**. The values showed represent changes in the variables median.
+
+![Figure 2: Boxplot time series](Figures/Figure2_BoxplotTimeSeries.png)
+
+Figure 2 shows in the y-axis the name of the samples and the x-axis show the median differences for each sample in four variables already described: TEST, LAB, BEHAV and CLASS. The variables change, represented by colors (see legend), between treatment group and control group are presented on the left of the graph if there is a negative impact and in the right if there is a positive 4C/ID impact. There is a vertical line with x equal to zero, meaning that there is no 4C/ID impact.
+
+Looking into the graph there are two groups of results that stands: blue and green. The first means that there is a positive treatment effect for the Lab Practice and the latter means that there is a overall negative impact for the social skills: in this case only the GRADE 9 students seems to have a positive impact and no effect for FEMALE students. The TEST variable shows a tendency towards no impact with a few positive and negative. For the CLASS, Academic Results there a tendecy towards no effect to a slight negative one.
+
+Looking into the sample JUNIOR SCHOOL 1 (sample with grades 7, 8 and 9 for school 1) that seems to be more reliable for three reasons:most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means:
+
+  1. Not having the school effect differences;
+  2. The sample has students with the same age;
+  3. It doesn't have the problem of using the less numbered entrances of the junior high students sample.
+
+The next table resumes the former graph in another order: it shows the percentage of "positive", "negative" and "no effect" results, detected for each sample.
+
+| Variable                 |  \+  | \~  | \-  |                SAMPLE +                 |       no effect sample        |                SAMPLE -                 | Notes |
+|---------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|---------|
+| TEST (Learning Transfer) | 33%  | 56% | 11% | All Junior sample, 8th grade and FEMALE |          GRADE 7, 9;          |                  RANK1                  |       |
+| LAB (Lab practice)       | 100% | 0%  | 0%  |               all samples               |                               |                                         |       |
+| BEHAV (behavior)         | 11%  | 11% | 78% |                 GRADE 9                 |            FEMALE             | Junior; GRADE 7 and 8; all RANK's; MALE |       |
+| CLASS (academic results) | 22%  | 45% | 33% |        junior; 9th grade; FEMALE        | grades 7 and 8; RANK 2 e MALE |              RANK 1 and 3               |       |
+
+## Qualitative results 
+
+The qualitative results show students more motivated, teacher with more individual time but a crucial need for team work among teachers.
+
+## Qualitative
+
+| Qualitative Results | Description   | Notes |
+|---------------------------|---------------------------|------------------|
+| Students inquire/comments about  | almost all positive |     |
+| teacher available to interact with the students while they are following the online lessons activities |               |       |
+| students feel happy to pass to the next level, high motivation                                         |               |       |
+| They claim that the way they like to learn                                                             |               |       |
+| massive hours of teacher work, more than 55 hours a week                                               | Health issues |       |
+| Students help on lessons faults: missing information, fault links                                      |               |       |
+
+
+
+# NOTES
+
+# RESULTS
 This file contains the results of the inference statistical analysis methods used in this research work. The initial tables resume the work. The latest present the same results but with more details. 
 
 ## Inference Analysis Table Resume

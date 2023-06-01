@@ -1,4 +1,75 @@
-# Data
+
+# DATA
+
+The **Variables** are described in this next table.
+
+|     VARIABLE     | Description                                                                                                                                                                              |
+|:----------------:|------------------------------------------------------|
+|        ID        | Identification entry row data                                                                                                                                                            |
+|       DATE       | First Year of the school year period                                                                                                                                                     |
+|      SCHOOL      | Categorical variable, 0 and 1, represent two schools, identified by 0 (till 2008) and 1 (after 2009, included)                                                                           |
+|      GENDER      | Categorical variable, F and M                                                                                                                                                            |
+| TEST, LAB, BEHAV | Score variables in the tests and observational forms at TEST (Learning transfer), LAB (Laboratory practical skills assessment) and BEHAV (Social skills and school rules accomplishment) |
+|      GRADE       | categories 0 to 6, representing, respectively, 7,8,9,10,11, 10 p (Technical) and 11p (Technical) grades                                                                                  |
+|      M4CID       | Categorical 0 and 1 variable, respectively, without 4C/ID and with 4CID                                                                                                                  |
+|      CLASS       | Continuous variable, 0 to 100, height average [^readme-6]                                                                                                                                |
+|       RANK       | Categorical variable, 1,2,3, that measures the adaptability of students to school: 1 less adapted, 3, more adapted.                                                                      |
+[^readme-6]: CLASS = 0.5 x TEST + 0.3 x LAB + 0.2 x BEHAV
+
+Table 1: variable description
+
+Table 2 and 3 shows a short **descriptive statistics** summary of the samples for school 0 and 1, and the entire sample with the main variables (they are described below), respectivley. This is a longitudinal sample with 1414 rows (observations). It covers 12 years of data, from 2003 to 2017. In this data there are two changes. In 2009 there is a school change to a different region: the first is a junior school, identified by SCHOOL = 0, and the second has Junior and a Junior High students. In 2012 the change that is crucial here, going to an inductive strategy. So the treatment group is the sample after 2012, included. Table 1 shows a first data description for school 0 and 1: 476 observations (34%) and school 1, 938, 66%. About GENDER, the global sample is not balanced: 602/812, 43%/57%, respectively, female and male. Almost the same about the treatment and control group percentage: 828, 59%; with 4CID: 586, 41%. Conclusion: From this analysis it seems to be possible comparing not only all the sample but also, just the Junior: this sample is more balanced in terms of grades and gender. The secondary is not balanced but it can be used fro global sample inference. Junior sample its a better one.
+
+| GRADE | Obs. | %  | Notes |
+|:---:|:---:|:---:|:---:|
+| 0 (7th) | 353 | 25% |
+| 1 (8th) | 411 | 29% | 
+| 2 (9th) | 396 | 28% |
+| 3 (10th) | 27 | 2% |
+| 4 (11th) | 18 | 1% |
+| 5 (10technical) | 117 | 8% |
+| 6 (11technical) | 93 | 7% |
+
+Table 2: distribution by grade 
+
+| Variable | Obs. | Mean | Median | Min.| Max. | St. Deviation | Notes |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
+| TEST | 1414 | 61 | 60 | 0 | 100 | 17 |  |
+| LAB | 1414 | 60 | 60 | 0 | 100 | 19 |  | 
+| BEHAV | 1414 | 76 | 77 | 27 | 100 | 15 | |
+| CLASS | 1414 | 64 | 63 | 14 | 100 | 14 | |
+
+Table 3: schools descriptive data sample
+
+Looking to table 2, its clear that sample variables cover a wide range of the possible values and the means and medians are very close, this can be a clue about data normality. But, further inference analysis shows that it is not the case: samples are skewed and have heavy tails: big values of the standards deviations. Figure 1 shows the non-normal samples for each variable for the global sample. Shapiro tests show low p-values << 0.05, which means that there is a 95% sure to reject the null: they are not similar to the normal distribution. 
+
+![Figure 1: all sample histograms for each variable series](Figures/figure1_histograms.png)
+
+
+| M4CID 0 | Obs. | Mean | Median | Min.| Max. | St. Deviation | Notes |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
+| TEST | 828 | 62 | 62 | 16 | 100 | 17  |  |
+| LAB | 828 | 57 | 60 | 10 | 100 | 20  |  | 
+| BEHAV | 828 | 77 | 79 | 28 | 100 | 14 | |
+| CLASS | 828 | 64 | 64 | 14 | 97 | 14 | |
+
+| M4CID 1 | Obs. | Mean | Median | Min.| Max. | St. Deviation | Notes |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
+| TEST | 586 | 58 | 57 | 0 | 100 | 17 |  |
+| LAB | 586 | 64 | 65 | 15 | 100 | 16  |  | 
+| BEHAV | 586 | 74 | 76 | 27 | 100 | 16 | |
+| CLASS | 586 | 63 | 62 | 18 | 100 | 14 | |
+
+Table 4: data from the treatment and control group
+
+Both groups, treatment and control are well balanced: without 4C/ID 828, 51%; with 4C/ID: 797, 49%. We notice that are very low observations numbers sample entries levels for Junior High, 24%. It seems that it will be better to use the junior sample for the research: this is a more balanced sample in terms of observations and gender. The treatment and control group in the Junior High sample its poorly balanced and the observations are very low, in particular, to the 10 and 11th grades: just 8% of the data are observations of the control group, 92% for the treatment group.
+
+Figure 2 shows the variable longitudinal patterns for all sample box plots time series, which includes junior and junior high students data for both schools. The red vertical line shows the school change and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology for the treatment group. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression). So, something happened! 
+
+Furthermore, it seems that there no positive effect of the methodological change and its clear that there is a school effect, meaning that, the schools have different learning outcomes.
+
+
+# NOTES
 
 data sources
 data treatment
