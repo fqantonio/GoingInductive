@@ -420,85 +420,97 @@ p28<-ggplot(data,aes(x=DATE,y=TEST,group = M4CID)) + geom_boxplot() + aes(factor
 p29<-ggplot(data,aes(x=DATE,y=LAB,group = M4CID)) + geom_boxplot() + aes(factor(M4CID)) + stat_summary(fun = mean, geom="point",col="red")
 p30<-ggplot(data,aes(x=DATE,y=BEHAV,group = M4CID)) + geom_boxplot() + aes(factor(M4CID)) + stat_summary(fun = mean, geom="point",col="red")
 p31<-ggplot(data,aes(x=DATE,y=CLASS,group = M4CID)) + geom_boxplot() + aes(factor(M4CID)) + stat_summary(fun = mean, geom="point",col="red")
-# figure 7: boxplots grouped by 4C/ID methodology 
-grid.arrange(p28, p29, p30, p31, nrow = 2, top="All sample boxplots" , bottom = "Figure 7: boxplots grouped by 4C/ID methodology showing the mean by the red dot")
+# figure 7: boxplots grouped by 4C/ID methodology showing the mean
+grid.arrange(p28, p29, p30, p31, nrow = 2, top="All sample boxplots" , bottom = "Figure 7: boxplots grouped by 4C/ID methodology showing the mean")
 
 # conclusion: 
-# It seems that the 4CID effect is not positive for all the variables neither for the overall perspective 
+# It seems that the 4CID effect is not positive when considering all sample, except for the variable LAB.
 # it seems that school 0 as better TEST grades them school 2, while there a jump when the 4CID is implemented;
-# That is not so obvious for the LAB variable. Clearly that the BEHAV variable suuffers a loss with the implementation of 4CID. 
+# That is not so obvious for the LAB variable. Clearly that the BEHAV variable suffers a loss with the implementation of 4CID. 
 # for the CLASS variable, after a positive effect it goes down, perhaps following the BEHAV variable
 # Only the LAB variable show an increase. The red dot and the skewness showed in figure 7, 
+# heavy tails showed by the sd table nubers; mean and median are differnt, sligtly.
 # show that could be no positive overall 4C/ID effect and the sample are not normal, which corroborate 
 # upper analysis
 
 # Scatterplots and Correlations
 # time series regression and Local Polynomial Regression Fitting
-p32<-ggplot(data,aes(DATE, TEST)) + geom_point() + geom_smooth(se=FALSE,color="blue") + geom_smooth(method=lm,se=FALSE,color="red",linetype=2)+geom_vline(xintercept=2013,col="green",linetype=2)+ geom_vline(xintercept=2008,col="green",linetype=2)+geom_text(x=2004,y=10,label="SCHOOL 0")+geom_text(x=2009+1,y=10,label="SCHOOL 1",col="red")+geom_text(x=2013+2,y=10,label="4C/ID",col="red")
+p32<-ggplot(data,aes(DATE, TEST)) + geom_point() + geom_smooth(se=FALSE,color="blue") + geom_smooth(method=lm,se=FALSE,color="red",linetype=2)+geom_vline(xintercept=2012,col="green",linetype=2)+ geom_vline(xintercept=2009,col="green",linetype=2)+geom_text(x=2005,y=10,label="SCHOOL 0")+geom_text(x=2009+2,y=10,label="SCHOOL 1",col="red")+geom_text(x=2013+2,y=10,label="4C/ID",col="red")
 summary(lm(DATE~TEST,data))$adj.r.squared
 summary(lm(DATE~TEST,data))
 # R^2=0.05
-?geom_smooth
-p33<-ggplot(data,aes(DATE,LAB)) + geom_point() + geom_smooth(se=FALSE,color="blue") + geom_smooth(method=lm,se=FALSE,color="red",linetype=2)+geom_vline(xintercept=2013,col="green",linetype=2)+ geom_vline(xintercept=2008,col="green",linetype=2)+geom_text(x=2004,y=10,label="SCHOOL 0")+geom_text(x=2009+1,y=10,label="SCHOOL 1",col="red")+geom_text(x=2013+2,y=10,label="4C/ID",col="red")
+plot(lm(DATE~TEST,data))
+# residuals: not normal
+p33<-ggplot(data,aes(DATE,LAB)) + geom_point() + geom_smooth(se=FALSE,color="blue") + geom_smooth(method=lm,se=FALSE,color="red",linetype=2)+geom_vline(xintercept=2012,col="green",linetype=2)+ geom_vline(xintercept=2009,col="green",linetype=2)+geom_text(x=2005,y=10,label="SCHOOL 0")+geom_text(x=2009+2,y=10,label="SCHOOL 1",col="red")+geom_text(x=2013+2,y=10,label="4C/ID",col="red")
 summary(lm(DATE~LAB,data))$adj.r.squared
-# R^2= 0.0005
-p34<-ggplot(data,aes(DATE, BEHAV)) + geom_point() + geom_smooth(se=FALSE,color="blue") + geom_smooth(method=lm,se=FALSE,color="red",linetype=2)+geom_vline(xintercept=2013,col="green",linetype=2)+ geom_vline(xintercept=2008,col="green",linetype=2)+geom_text(x=2004,y=10,label="SCHOOL 0")+geom_text(x=2009+1,y=10,label="SCHOOL 1",col="red")+geom_text(x=2013+2,y=10,label="4C/ID",col="red")
+summary(lm(DATE~LAB,data))
+# R^2= 0.002
+plot(lm(DATE~LAB,data))
+# residuals: not normal
+p34<-ggplot(data,aes(DATE, BEHAV)) + geom_point() + geom_smooth(se=FALSE,color="blue") + geom_smooth(method=lm,se=FALSE,color="red",linetype=2)+geom_vline(xintercept=2012,col="green",linetype=2)+ geom_vline(xintercept=2009,col="green",linetype=2)+geom_text(x=2005,y=30,label="SCHOOL 0")+geom_text(x=2009+2,y=30,label="SCHOOL 1",col="red")+geom_text(x=2013+2,y=30,label="4C/ID",col="red")
 summary(lm(DATE~BEHAV,data))$adj.r.squared
-# R^2= 0.05
-p35<-ggplot(data,aes(DATE, CLASS)) + geom_point() + geom_smooth(se=FALSE,color="blue") + geom_smooth(method=lm,se=FALSE,color="red",linetype=2)+geom_vline(xintercept=2013,col="green",linetype=2)+ geom_vline(xintercept=2008,col="green",linetype=2)+geom_text(x=2004,y=10,label="SCHOOL 0")+geom_text(x=2009+1,y=10,label="SCHOOL 1",col="red")+geom_text(x=2013+2,y=10,label="4C/ID",col="red")
+summary(lm(DATE~BEHAV,data))
+# R^2= 0.02
+plot(lm(DATE~BEHAV,data))
+# residuals: not normal
+p35<-ggplot(data,aes(DATE, CLASS)) + geom_point() + geom_smooth(se=FALSE,color="blue") + geom_smooth(method=lm,se=FALSE,color="red",linetype=2)+geom_vline(xintercept=2012,col="green",linetype=2)+ geom_vline(xintercept=2009,col="green",linetype=2)+geom_text(x=2005,y=20,label="SCHOOL 0")+geom_text(x=2009+2,y=20,label="SCHOOL 1",col="red")+geom_text(x=2013+2,y=20,label="4C/ID",col="red")
 summary(lm(DATE~CLASS,data))$adj.r.squared
-# R^2 = 0.04
-#Figure 8: time series regression scatterplots
-grid.arrange(p32, p33, p34, p35,  nrow = 2, top="Time series regression scatterplots", bottom="Figure 8: Local Polynomial Regression Fitting in red")
+summary(lm(DATE~CLASS,data))
+# R^2 = 0.02
+plot(lm(DATE~CLASS,data))
+# residuals: not normal
+# Figure 8: Local Polynomial Regression Fitting in blue
+grid.arrange(p32, p33, p34, p35,  nrow = 2, top="Time series regression scatterplots", bottom="Figure 8: Local Polynomial Regression Fitting in blue")
 
-#Conclusion: overall, over time, it seems that there is a negative 4C/ID effect. 
-#However, R^2 values are very weak. It can be seen that a school effect could be undeway
+#Conclusion: overall, over time, it seems that there is a negative 4C/ID effect.  
+#However, R^2 values are very weak. It can be seen that a school effect could be 
+#underway
 
 #global data sample variable correlations
 # first attempt to make the indeoendency analysis to the variables: just to check if there is a 
 # the levell of dependency of the variables, or to see if the assessement was equal tecnhique
-p36<-ggplot(data,aes(TEST, LAB)) + geom_point() + geom_smooth(method=lm,se=FALSE)+geom_text(x=10,y=90,label="R^2 = 0.25; tau = 36%")
+# If there is a correlation then variables are dependent, the inverse is not correct 
+p36<-ggplot(data,aes(TEST, LAB)) + geom_point() + geom_smooth(method=lm,se=FALSE)+geom_text(x=30,y=0,label="R^2 = 0.24; tau = 35%",color = "blue")
 summary(lm(TEST~LAB,data))$adj.r.squared
-#R2=0.25
+#R2=0.24
+plot(lm(DATE~LAB,data))
 #Not normal so use Kendall correlation test
 cor.test(data$TEST, data$LAB,  method="kendall")
 # Kendall's rank correlation tau
 # data:  data$TEST and data$LAB
-# z = 21.626, p-value < 2.2e-16
+# z = 19.616, p-value < 2.2e-16
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau, 0.3648018
-p37<-ggplot(data,aes(TEST, BEHAV)) + geom_point() + geom_smooth(method=lm)+geom_text(x=10,y=90,label="R^2 = 0.15; tau=28%")
+# sample estimates: tau 0.354927 
+p37<-ggplot(data,aes(TEST, BEHAV)) + geom_point() + geom_smooth(method=lm)+geom_text(x=30,y=20,label="R^2 = 0.14; tau=26%",color = "blue")
 summary(lm(TEST~BEHAV,data))$adj.r.squared
-# R2=0.15
+# R2=0.14
 cor.test(data$TEST, data$BEHAV,  method="kendall")
 # Kendall's rank correlation tau
 # data:  data$TEST and data$BEHAV
-# z = 16.882, p-value < 2.2e-16
+# z = 14.324, p-value < 2.2e-16
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.2844868 
-p38<-ggplot(data,aes(LAB, BEHAV)) + geom_point() + geom_smooth(method=lm)+geom_text(x=10,y=90,label="R^2 = 0.19; tau = 30%")
+# sample estimates: tau 0.2589172 
+p38<-ggplot(data,aes(LAB, BEHAV)) + geom_point() + geom_smooth(method=lm)+geom_text(x=30,y=20,label="R^2 = 0.15; tau = 27%",color = "blue")
 summary(lm(LAB~BEHAV,data))$adj.r.squared
-#R2=0.19
+#R2=0.15
 cor.test(data$LAB, data$BEHAV,  method="kendall")
 # Kendall's rank correlation tau
 # data:  data$LAB and data$BEHAV
-# z = 17.757, p-value < 2.2e-16
+# z = 14.835, p-value < 2.2e-16
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.3001458 
-p39<-ggplot(data,aes(TEST, CLASS)) + geom_point() + geom_smooth(method=lm)+geom_text(x=10,y=90,label="R^2 = 0.80; tau=72%")
+# sample estimates: tau 0.2689518 
+p39<-ggplot(data,aes(TEST, CLASS)) + geom_point() + geom_smooth(method=lm)+geom_text(x=20,y=100,label="R^2 = 0.80; tau=72%",color = "blue")
 summary(lm(TEST~CLASS,data))$adj.r.squared
 #R2 0.80
 cor.test(data$TEST, data$CLASS,  method="kendall")
 # Kendall's rank correlation tau
 # data:  data$TEST and data$CLASS
-# z = 43.577, p-value < 2.2e-16
+# z = 40.179, p-value < 2.2e-16
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.7277266 
-#Figure 9: variable dependency analysis
-grid.arrange(p36, p37, p38,p39,  nrow = 2,bottom="Figure 9: Variable dependency analyss", top="All sample variable correlations analysis")
+# sample estimates: tau 0.7195958 
 
-ggplot(data,aes(LAB, CLASS)) + geom_point() + geom_smooth(method=lm)
-ggplot(data,aes(BEHAV, CLASS)) + geom_point() + geom_smooth(method=lm)
+#Figure 9: variable dependency analysis
+grid.arrange(p36, p37, p38,p39,  nrow = 2,bottom="Figure 9: Variable dependency analysis", top="All sample variable correlations analysis")
 
 # conclusion: these R2 low doesn't mean that the variables are dependent nor the 
 # There is some degree of correlation that doesn't permit to conclude of the variable dependency
@@ -507,9 +519,11 @@ ggplot(data,aes(BEHAV, CLASS)) + geom_point() + geom_smooth(method=lm)
 #arround 20 to 40%: not high; meaning that the way the variables are assessed are different. They correlate,
 # but at a low levell, showing a bad levell, which means that they were assessed with different techniques.
 # the class test correlation is just a refence that we know, in advance, that there is a math relationship
+
 # Table 5: kendall's correlation
+
 # 7,8,9
-# limit the grade 0,1,2, meaning 7,8 and 9 grade 
+# limit the analysis to Junior grade: GRADE 0,1,2, meaning 7,8 and 9 grade both schools
 data_junior<-filter(data,GRADE <="2") %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
 data_junior_M4CID0<-filter(data_junior,M4CID =="0") 
 data_junior_M4CID1<-filter(data_junior,M4CID =="1") 
@@ -554,11 +568,11 @@ ks.test(data$TEST,dnorm(mean(data$TEST),sd(data$TEST)))
 shapiro.test(data$TEST)
 # Exact two-sample Kolmogorov-Smirnov test
 # data:  data$TEST and dnorm(mean(data$TEST), sd(data$TEST))
-# D = 0.99385, p-value = 0.0123
+# D = 0.99385,  p-value = 0.003534
 # alternative hypothesis: two-sided
 # Shapiro-Wilk normality test
 # data:  data$TEST
-# W = 0.99013, p-value = 4.927e-09
+# W = 0.99013, p-value = 3.336e-07
 
 hist(data$LAB)
 p49<-ggplot(data, aes(sample = LAB)) + stat_qq() + stat_qq_line()+labs(y="LAB",x="Theoretical quantiles")
@@ -567,11 +581,11 @@ ks.test(data$LAB,dnorm(mean(data$LAB),sd(data$LAB)))
 shapiro.test(data$LAB)
 # Exact two-sample Kolmogorov-Smirnov test
 # data:  data$LAB and dnorm(mean(data$LAB), sd(data$LAB))
-# D = 0.98769, p-value = 0.02583
+# D = 0.9901, p-value = 0.01908
 # alternative hypothesis: two-sided
 # # Shapiro-Wilk normality test
 # data:  data$LAB
-# W = 0.97869, p-value = 8.224e-15
+# W = 0.97869, p-value = 1.513e-13
 
 hist(data$BEHAV)
 p50<-ggplot(data, aes(sample = BEHAV)) + stat_qq() + stat_qq_line()+labs(y="BEHAV",x="Theoretical quantiles")
@@ -580,11 +594,11 @@ ks.test(data$BEHAV,dnorm(mean(data$BEHAV),sd(data$BEHAV)))
 shapiro.test(data$BEHAV)
 # Exact two-sample Kolmogorov-Smirnov test
 # data:  data$BEHAV and dnorm(mean(data$BEHAV), sd(data$BEHAV))
-# D = 0.99938, p-value = 0.00123
+# D = 1, p-value = 0.0007067
 # alternative hypothesis: two-sided
 # Shapiro-Wilk normality test
 # data:  data$BEHAV
-# W = 0.96819, p-value < 2.2e-16
+# W = 0.97422, p-value = 3.244e-15
 
 hist(data$CLASS)
 p51<-ggplot(data, aes(sample = CLASS)) + stat_qq() + stat_qq_line()+labs(y="CLASS",x="Theoretical quantiles")
@@ -593,11 +607,11 @@ ks.test(data$CLASS,dnorm(mean(data$CLASS),sd(data$CLASS)))
 shapiro.test(data$CLASS)
 # Exact two-sample Kolmogorov-Smirnov test
 # data:  data$CLASS and dnorm(mean(data$CLASS), sd(data$CLASS))
-# D = 0.99938, p-value = 0.00246
+# D = 1, p-value = 0.001413
 # alternative hypothesis: two-sided
 # Shapiro-Wilk normality test
 # data:  data$CLASS
-# W = 0.9942, p-value = 5.631e-06
+# W = 0.99587, p-value = 0.0006986
 
 #School 0
 data_JUNIOR_SCHOOL0<-filter(data,GRADE <="2" & SCHOOL=="0") %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
@@ -660,11 +674,11 @@ ks.test(data_JUNIOR_SCHOOL1$TEST,dnorm(mean(data_JUNIOR_SCHOOL1$TEST),sd(data_JU
 shapiro.test(data_JUNIOR_SCHOOL1$TEST)
 # Exact two-sample Kolmogorov-Smirnov test
 # data:  data_JUNIOR_SCHOOL1$TEST and dnorm(mean(data_JUNIOR_SCHOOL1$TEST), sd(data_JUNIOR_SCHOOL1$TEST))
-# D = 0.99605, p-value = 0.01053
+# D = 1, p-value = 0.002924
 # alternative hypothesis: two-sided
 # Shapiro-Wilk normality test
 # data:  data_JUNIOR_SCHOOL1$TEST
-# W = 0.98944, p-value = 2.827e-05
+# W = 0.98652, p-value = 6.164e-06
 hist(data_JUNIOR_SCHOOL1$LAB)
 p57<-ggplot(data_JUNIOR_SCHOOL1, aes(sample = LAB)) + stat_qq() + stat_qq_line()+labs(y="LAB",x="Theoretical quantiles")
 #qqnorm(data_JUNIOR_SCHOOL1$LAB);qqline(data_JUNIOR_SCHOOL1$LAB)
@@ -672,11 +686,11 @@ ks.test(data_JUNIOR_SCHOOL1$LAB,dnorm(mean(data_JUNIOR_SCHOOL1$LAB),sd(data_JUNI
 shapiro.test(data_JUNIOR_SCHOOL1$LAB)
 # Exact two-sample Kolmogorov-Smirnov test
 # data:  data_JUNIOR_SCHOOL1$LAB and dnorm(mean(data_JUNIOR_SCHOOL1$LAB), sd(data_JUNIOR_SCHOOL1$LAB))
-# D = 0.98287, p-value = 0.03684
+# D = 0.98097, p-value = 0.03947
 # alternative hypothesis: two-sided
 # Shapiro-Wilk normality test
 # data:  data_JUNIOR_SCHOOL1$LAB
-# W = 0.97816, p-value = 3.19e-09
+# W = 0.97414, p-value = 1.264e-09
 hist(data_JUNIOR_SCHOOL1$BEHAV)
 p58<-ggplot(data_JUNIOR_SCHOOL1, aes(sample = BEHAV)) + stat_qq() + stat_qq_line()+labs(y="BEHAV",x="Theoretical quantiles")
 #qqnorm(data_JUNIOR_SCHOOL1$BEHAV);qqline(data_JUNIOR_SCHOOL1$BEHAV)
@@ -684,11 +698,11 @@ ks.test(data_JUNIOR_SCHOOL1$BEHAV,dnorm(mean(data_JUNIOR_SCHOOL1$BEHAV),sd(data_
 shapiro.test(data_JUNIOR_SCHOOL1$BEHAV)
 # Exact two-sample Kolmogorov-Smirnov test
 # data:  data_JUNIOR_SCHOOL1$BEHAV and dnorm(mean(data_JUNIOR_SCHOOL1$BEHAV), sd(data_JUNIOR_SCHOOL0$BEHAV))
-# D = 1, p-value = 0.001316
+# D = 1, p-value = 0.001462
 # alternative hypothesis: two-sided
 # Shapiro-Wilk normality test
 # data:  data_JUNIOR_SCHOOL1$BEHAV
-# W = 0.96139, p-value = 2.975e-13
+#W = 0.9632, p-value = 4.577e-12
 hist(data_JUNIOR_SCHOOL1$CLASS)
 p59<-ggplot(data_JUNIOR_SCHOOL1, aes(sample = CLASS)) + stat_qq() + stat_qq_line()+labs(y="CLASS",x="Theoretical quantiles")
 #qqnorm(data_JUNIOR_SCHOOL1$CLASS);qqline(data_JUNIOR_SCHOOL1$CLASS)
@@ -696,11 +710,11 @@ ks.test(data_JUNIOR_SCHOOL1$CLASS,dnorm(mean(data_JUNIOR_SCHOOL1$CLASS),sd(data_
 shapiro.test(data_JUNIOR_SCHOOL1$CLASS)
 # Exact two-sample Kolmogorov-Smirnov test
 # data:  data_JUNIOR_SCHOOL1$CLASS and dnorm(mean(data_JUNIOR_SCHOOL1$CLASS), sd(data_JUNIOR_SCHOOL1$CLASS))
-# D = 1, p-value = 0.002632
+# D = 1, p-value = 0.002924
 # alternative hypothesis: two-sided
 # Shapiro-Wilk normality test
 # data:  data_JUNIOR_SCHOOL1$CLASS
-# W = 0.99364, p-value = 0.002669
+# W = 0.99145, p-value = 0.0005524
 
 #Figure 12: Normality QQ-plots for all sample
 grid.arrange(p48,p49,p50,p51, nrow = 2,top="Normal QQ plot", bottom="Figure 12: normality testing for all sample")

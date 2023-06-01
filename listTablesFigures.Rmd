@@ -8,4 +8,23 @@ figure 3: Boxplot time series for TEST, LAB, BEHAV and CLASS variables junior gr
 
 figure 4: junior grade sample for school 1 
 
-figure 5: junior high grade sample for school 1  
+figure 5: junior high grade sample for school 1
+
+figure 6: box plot grouped by school and 4C/ID methodology
+
+figure 7: boxplots grouped by 4C/ID methodology showing the mean
+
+figure 8: Local Polynomial Regression Fitting in blue
+
+Figure 9: variable dependency analysis
+
+Figure 10: normality testing for the junior grade sample
+
+Figure 11: normality testing for the junior high grade sample
+
+Figure 12: Normality QQ-plots for all sample
+
+Figure 13: Normality QQ-plots school 0
+
+Figure 14: Normality QQ-plots school 1
+

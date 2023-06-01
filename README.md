@@ -38,7 +38,7 @@ Figure 2 shows the variable longitudinal patterns for all sample using box plots
 
 # METHODS
 
-The **statistical analysis** uses R code software in the RStudio[^readme-4] IDE release and the principal method is the non-parametric inferential treatment group effect. There is also a discussion towards the non-parametric regression inference, regression discontinuity design and clustering, just to have same feedback from other types of analysis that could show incoherence.
+The **statistical analysis** uses R code software in the RStudio[^readme-4] IDE release and the principal method is the non-parametric inferential treatment group effect. There is also a discussion towards the non-parametric regression inference, regression discontinuity design and clustering, just to have same feedback from other types of analysis that could show incoherence. The methods used take in account the idependency samples and the non-normality sample distribution, in general.
 
 [^readme-4]: RStudio, <https://posit.co/products/open-source/rstudio/>
 
