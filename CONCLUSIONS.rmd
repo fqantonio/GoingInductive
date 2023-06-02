@@ -1,3 +1,12 @@
+# The main goal is to understand the impact of the use of Inductive Methodology 4C/ID by answering the questions: 
+#   1 - changing the learning methodologies from one mainly deductive (Direct Instruction[^1]) to another one mostly inductive (4C/ID [^2]), means what for your students? Who benefits? What are the pros and cons about this methodological decision?
+#   2 - Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning? 
+#   3 - And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results? 
+#   4 - Is there a different impact between female and male? 
+#   5 - And within the different grades?
+#   6 - Student more adapted to school have benefit more with the use of 4CID methodology?
+
+
 # CONCLUSIONS and REMARKS
 
 (`under construction`)

@@ -1,5 +1,215 @@
 # RESULTS
 
+Sample are independent, and generaly not normal
+
+#variables description
+#ID: Identification entry row data;
+#DATE: year of the sample: it belongs, actually to 2003/2004, lective year;
+#SCHOOL: there are two schools, identified by 0 (till 2008) and 1 (after 2009);
+# GENDER: F and M
+#TEST, LAB, BEHAV: variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment)
+# and BEHAV related to accomplishement school rules behavior
+# LAB work and Behavior, normally if they follow the rules stablished at school
+# GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p(techical) and 11p (Technical) 
+# M4CID, category 0 and 1, respectively, without 4C/ID and with 4CID;
+# CLASS, 0 to 100, height average, CLASS=0.5*TEST+0.3*LAB+0.2*BEHAV: 
+#this will be used in a variable to be defined below, RANK: a study for student addaptation to the school system
+
+#Table 1: Variable description
+
+#Inference (and independency analysis)
+#Inference for the global differences in M4CID, no matter which school, for each data variables: TEST, LAB and BEHAV
+
+# Along the way, sample independency will be tested and non normality will be considered
+
+#Inference conclusion for the 4C/ID treatment effect for all sample, 
+# no matter which school, for each data variables: TEST, LAB, BEHAV and CLASS
+# Samples are independent, Wilcoxon inference non-parametric test
+# for the global TEST and BEHAV, negative 4CID effect
+# no effect for CLASS variable;
+# LAB variable, positive effect
+
+#Table 9: independency and Wilcoxon rank sum test with continuity correction
+
+#Hypothesis: does the patterns showned in the last graphs where there was a negative bump during the transition to the second 
+#between the schools showed earlier in the graphs should be considered?
+#Is there a school effect on the results?
+#should the data between schools in the same 4CID conditions 0 be assessed? yes,
+#but only the junior school should be compared
+#we should use the CLASS to study the differences between schools and not the other
+#variables; if we use the variable because it is a math relation qith the others
+# just with class variable
+
+#Inference for the differences in schools, without 4CID, for each variable: TEST, LAB, BEHAV and CLASS
+
+#Conclusion
+#Variable TEST, LAB, CLASS greater in school 0 then in school 1
+#Variable BEHAV is less for the School 0 then in the school 1
+# So, this pivotal moment, take this research to consider that 
+#there is a school effect, that biased all variables, in the negative way except
+#for the BEHAV variable, in the positive way for school 1. So this is going to be restricted to school 1:
+# it is considered an analysis for the school 1 as a global data sample,
+# and an analysis only at the junior level in school 1. Secondary school wil 
+#not be analized because there is no scondary sample with no 4CID.  
+
+## school effect
+
+# calculus
+
+# table 11 : computed school differences for the junior sample school 0 and 1 without 4C/ID methodology
+
+# prepararing the sample to take into account the differences; in the case of TEST, LAB and CLASS, it will
+#be added to the sample of school 1 the differences computed in this variables. In the case of the variable BEHAV, 
+# it will be added to school 0, in order to not create negative numbers, consequently, to keep the variables between 0 and 100;
+
+# sample with only junior grade for both schools
+# NOTE: the values of TEST, LAB and CLASS are over 100%: I think its not a problem because tehre is a need to compare
+# the change: there is no limitation to 100% for the inference analysis: DOUBT/DISCUSSION!?!?!?!
+
+#compare data_junior_computed
+#compare samples after the computation explained just now:
+#data_JUNIOR_SCHOOL0 and data_junior_computed_SCHOOL1_M4CID0: are they from the same distribution?
+
+#Conclusion: yes, they are from the same sample distribution
+
+# Inference for computed junior differences with and without 4C/ID, between school 0 and school 1
+
+# Inference conclusion for computed junior differences with and without 4C/ID, 
+# between school 0 and school 1 (this school with only 4C/ID)
+# negative on BEHAV
+# Positive effect for LAB, TEST and CLASS
+
+# Inference for computed junior differences between school 0 and global school 1 junior and junior high with 4CID
+# Excluding School 1 with no 4C/ID
+# use the calculus about the computed differences already made 
+
+# see Table 11: Differences computed for junior school 0 and 1
+
+# sample with only school 0 and school 1 junior and junior high with 4C/ID (exclude school 1 without 4C/ID)
+
+# Conclusion computed diferences for junior and junior high school 0 and 1 
+#(exclude school 1 without 4C/ID)
+# negative BEHAV 
+# TEST, LAB, CLASS positive
+
+# Table 12: Inference for computed diferences for junior and junior high school 0 and 1 
+# (excluding school 1 without 4C/ID)
+
+# Inference for computed global sample differences with and without 4CID
+# use the calculus about the computed differences already made 
+
+# see Table 11: Differences computed for junior school 0 and 1
+
+# all sample
+
+# Conclusions 4C/ID treatment effect with computed samples for the entire sample
+# BEHAV negative
+# TEST, LAB, CLASS positive
+
+# Table 13: Inference for computed differences for the entire sample
+
+# Inference only for School 1, global sample (include junior high for school 1): sample not computed
+
+# Table 14: Inference only for junior and junior high school 1
+
+#Conclusions for sample junior and junior high school 1
+# not normal, sample independent, no rejection of h0
+# 4CID as positive impact on TEST, LAB and CLASS Variables;
+# 4CID as a negative impact in BEHAV variable
+
+# inference junior, school 1
+
+# Conclusions for sample junior School 1
+# not normal sample, No rejection under H0, sample independent
+# 4CID as a positive impact on TEST, LAB and CLASS Variable;
+# 4CID as a negative impact in BEHAV variable
+
+# Table 15: Inference for junior school 1
+
+# GRADE
+
+# Table 16: Inference for junior school 1, GRADES 7, 8 AND 9TH
+
+#Conclusion
+#samples not normal but independent
+# GRADE 7
+# 4CID has positive impact on TEST, LAB and CLASS Variables;
+# 4CID has a negative impact in BEHAV variable
+
+#GRADE 8
+# Note: M4CID=="1",less then 100 entrances
+# 4CID has a positive impact on TEST, LAB and CLASS
+# 4CID negative on BEHAV Variable;
+
+#Grade 9
+# 4CID has no impact on TEST Variable;
+# 4CID has positive impact in LAB, BEHAV and CLASS Variable;
+
+########## RANK
+
+#This analysis uses school 1 junior and junior high grade
+
+#RANK 1, 93,9%
+#RANK 2, 600, 64%
+#RANK 3, 245, 26% 
+
+#This RANK analysis uses school 1 and junior grade sample only
+#RANK 1, 77, 11%
+#RANK 2, 421, 62%
+#RANK 3, 185, 27% 
+
+# Table 17: Inference for junior school 1, RANK 1, 2, 3
+
+#Conclusion
+# RANK 1, 2 and 3, same results: no effect for TEST and CLASS, negative for BEHAV, and positive on LAB
+
+########## GENDER
+#This analysis uses school 1 and junior grade sample
+
+#sample entries: 783; Female = 326 (48%); Male=357 52%();
+# female: M4CID0 = 160; M4CID1=166
+# male: M4CID0 = 158; M4CID1=199
+#data sample not normal but independent
+# Table 18: Inference sample junior school 1 for GENDER
+
+# Results
+# Test no impact for male; female positive impact
+# Both benefit in LAB variable
+# In the BEHAV variable negative impact for MALE and no impact for FEMALE
+# positive impact on female Class variable but no impact for the male
+# Female, averall, benefit more: positive in TEST, LAB and CLASS, no effect on BEHAV
+# MALE: positive impact on LAB and CLASS, negative on BEHAV and no impact on TEST
+
+########## Summary results and notes UPDATE THIS
+
+########## REGRESSION ANALYSIS
+
+# Regression discontinuity design (RDD)
+#"The regression discontinuity model was created to deal with one very specific type 
+#of selection - cases where people have to qualify for the program, and the criteria 
+#for qualification is a measure that is highly correlated with performance. 
+#Some threshold is created and all people that score above the threshold are accepted 
+#into the program, and all people below are not allowed to participate, or vice-versa."
+# Regression discontinuity is used to solve this problem and assess whether or not we 
+# observe a treatment effect. It does so by accounting for the relationship between 
+#the outcome and the rating variable and then calculating the difference between the 
+#ntwo groups.
+#SOURCE: https://ds4ps.org/pe4ps-textbook/docs/p-060-reg-discontinuity.html
+
+#Figure 16: Regression analysis by 4C/ID treatment effect 
+# looking to the plots (see bellow) its clear that there is no linear model that explinais the data
+# RDD s just to verify discontinuities in 2013. At least for the BEAHV and CLASS variable there a discontinuity
+# looking at all plots it seems thta there is a change around 2013
+
+# scatterplots with regressions over time
+
+########## Non-parametric Regression discontinuity design inference
+
+
+
+
+
+# NOTES
 Figure 2 and the next table present a resume of the **results**. The values showed represent changes in the variables median.
 
 ![Figure 2: Boxplot time series](Figures/Figure2_BoxplotTimeSeries.png)

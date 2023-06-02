@@ -728,6 +728,8 @@ grid.arrange(p52, p53, p54, p55,  nrow = 2,top="Normal QQ plot", bottom="Figure 
 grid.arrange(p56, p57, p58, p59,  nrow = 2,top="Normal QQ plot", bottom="Figure 14: normality testing for SCHOOL 1")
 #table 8: ks and shapiro p-values school 1
 
+
+
 #conclusion: sample data don't behav as a normal distribution under both tests, nor if we
 #do the same analysis for the school 0 and shcool 1. Meaning that we should use a non-parametric 
 #hyphotesis testing stats
@@ -739,21 +741,21 @@ head(data)
 summary(data)
 data_M4CID0<-filter(data,M4CID =="0") %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
 data_M4CID1<-filter(data,M4CID =="1") %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
-length(data_M4CID0$ID)#931
-length(data_M4CID1$ID)#694
+length(data_M4CID0$ID)#828
+length(data_M4CID1$ID)#586
 # Along the way, sample independency will be tested and non normality will be considered
 
 #TEST
 ## Independency
-sample1<-data.frame(sample(data_M4CID0$TEST,600))
-sample2<-data.frame(sample(data_M4CID1$TEST,600))
+sample1<-data.frame(sample(data_M4CID0$TEST,500))
+sample2<-data.frame(sample(data_M4CID1$TEST,500))
 #Kendall correlation test needs same sample length
-cor.test(sample1$sample.data_M4CID0.TEST..600.,sample2$sample.data_M4CID1.TEST..600.,method = "kendall")
+cor.test(sample1$sample.data_M4CID0.TEST..500.,sample2$sample.data_M4CID1.TEST..500.,method = "kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_M4CID0.TEST..600. and sample2$sample.data_M4CID1.TEST..600.
-# z = -0.1701, p-value = 0.8649
+# data:  sample1$sample.data_M4CID0.TEST..500. and sample2$sample.data_M4CID1.TEST..500.
+# z = -0.69155, p-value = 0.4892
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.004717915 
+# sample estimates: tau -0.02102116  
 # samples are independent, so its possible to use Wilcoxon inference test
 ggplot(data) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
 median(data_M4CID0$TEST)#62
@@ -761,73 +763,74 @@ median(data_M4CID1$TEST)#57
 wilcox.test(data_M4CID0$TEST,data_M4CID1$TEST,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0$TEST and data_M4CID1$TEST
-# W = 367208, p-value = 1.183e-06
+# W = 276677, p-value = 3.314e-06
 # alternative hypothesis: true location shift is greater than 0
 
 #LAB
-sample1<-data.frame(sample(data_M4CID0$LAB,600))
-sample2<-data.frame(sample(data_M4CID1$LAB,600))
+sample1<-data.frame(sample(data_M4CID0$LAB,500))
+sample2<-data.frame(sample(data_M4CID1$LAB,500))
 #Kendall correlation test
-cor.test(sample1$sample.data_M4CID0.LAB..600.,sample2$sample.data_M4CID1.LAB..600.,method = "kendall")
+cor.test(sample1$sample.data_M4CID0.LAB..500.,sample2$sample.data_M4CID1.LAB..500.,method = "kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_M4CID0.LAB..600. and sample2$sample.data_M4CID1.LAB..600.
-# z = -0.67817, p-value = 0.4977
+# data:  sample1$sample.data_M4CID0.LAB..500. and sample2$sample.data_M4CID1.LAB..500.
+# z = 0.78833, p-value = 0.4305
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.01897084
+# sample estimates: tau  0.02418545
 # samples are independent, so its possible to use Wilcoxon inference test
 ggplot(data) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
 median(data_M4CID0$LAB)#60
-median(data_M4CID1$LAB)#63
+median(data_M4CID1$LAB)#65
 wilcox.test(data_M4CID0$LAB,data_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0$LAB and data_M4CID1$LAB
-# W = 281090, p-value = 3.606e-06
+# W = 195470, p-value = 2.265e-10
 # alternative hypothesis: true location shift is less than 0
 
 #BEHAV
-sample1<-data.frame(sample(data_M4CID0$BEHAV,600))
-sample2<-data.frame(sample(data_M4CID1$BEHAV,600))
+sample1<-data.frame(sample(data_M4CID0$BEHAV,500))
+sample2<-data.frame(sample(data_M4CID1$BEHAV,500))
 #Kendall's rank correlation tau
-cor.test(sample1$sample.data_M4CID0.BEHAV..600.,sample2$sample.data_M4CID1.BEHAV..600.,method="kendall")
+cor.test(sample1$sample.data_M4CID0.BEHAV..500.,sample2$sample.data_M4CID1.BEHAV..500.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_M4CID0.BEHAV..600. and sample2$sample.data_M4CID1.BEHAV..600.
-# z = 1.1873, p-value = 0.2351
+# data:  sample1$sample.data_M4CID0.BEHAV..500. and sample2$sample.data_M4CID1.BEHAV..500.
+# z = -0.71102, p-value = 0.4771
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.0330701
+# sample estimates: tau -0.02170898
 # samples are independent, so its possible to use Wilcoxon inference test
 ggplot(data) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
 median(data_M4CID0$BEHAV)#79
-median(data_M4CID1$BEHAV)#73
+median(data_M4CID1$BEHAV)#76
 wilcox.test(data_M4CID0$BEHAV,data_M4CID1$BEHAV,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0$BEHAV and data_M4CID1$BEHAV
-# W = 393301, p-value = 2.976e-14
+# W = 268902, p-value = 0.000253
 # alternative hypothesis: true location shift is greater than 0
 
 #CLASS
-sample1<-data.frame(sample(data_M4CID0$CLASS,600))
-sample2<-data.frame(sample(data_M4CID1$CLASS,600))
+sample1<-data.frame(sample(data_M4CID0$CLASS,500))
+sample2<-data.frame(sample(data_M4CID1$CLASS,500))
 #Kendall correlation test
-cor.test(sample1$sample.data_M4CID0.CLASS..600.,sample2$sample.data_M4CID1.CLASS..600., method="kendall")
-# Kendall's rank correlation ta
-# data:  sample1$sample.data_M4CID0.CLASS..600. and sample2$sample.data_M4CID1.CLASS..600.
-# z = 0.10071, p-value = 0.9198
+cor.test(sample1$sample.data_M4CID0.CLASS..500.,sample2$sample.data_M4CID1.CLASS..500., method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_M4CID0.CLASS..500. and sample2$sample.data_M4CID1.CLASS..500.
+# z = 0.8145, p-value = 0.4154
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.002753148 
+# sample estimates:tau 0.02440767  
 # samples are independent, so its possible to use Wilcoxon inference test
 ggplot(data) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_M4CID0$CLASS)#64
-median(data_M4CID1$CLASS)#61
+median(data_M4CID1$CLASS)#62
 wilcox.test(data_M4CID0$CLASS,data_M4CID1$CLASS,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0$CLASS and data_M4CID1$CLASS
-# W = 349682, p-value = 0.002217
+# W = 252126, p-value = 0.104
 # alternative hypothesis: true location shift is greater than 0
 
 #Inference conclusion for the 4C/ID treatment effect for all sample, 
-#no matter which school, for each data variables: TEST, LAB and BEHAV
+# no matter which school, for each data variables: TEST, LAB, BEHAV and CLASS
 # Samples are independent, Wilcoxon inference non-parametric test
-# for the global TEST, BEHAV and CLASS variables, negative 4CID effect;
+# for the global TEST and BEHAV, negative 4CID effect
+# no effect for CLASS variable;
 # LAB variable, positive effect
 
 #Table 9: independency and Wilcoxon rank sum test with continuity correction
@@ -847,7 +850,7 @@ summary(data)
 data_M4CID0<-filter(data,data$M4CID=="0")  %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
 summary(data_M4CID0)
 length(which(data_M4CID0$SCHOOL=="0"))#476 entrances
-length(which(data_M4CID0$SCHOOL=="1"))#455 entrances
+length(which(data_M4CID0$SCHOOL=="1"))#352 entrances
 
 data_M4CID0_SCHOOL0 <- filter(data,SCHOOL == "0") %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
 data_M4CID0_SCHOOL1 <- filter(data,M4CID=="0" & SCHOOL == "1") %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
@@ -860,16 +863,23 @@ hist(data_M4CID0$TEST)
 qqnorm(data_M4CID0$TEST)
 qqline(data_M4CID0$TEST)
 ks.test(data_M4CID0$TEST,dnorm(mean(data_M4CID0$TEST),sd(data_M4CID0$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_M4CID0$TEST and dnorm(mean(data_M4CID0$TEST), sd(data_M4CID0$TEST))
+# D = 1, p-value = 0.002413
+# alternative hypothesis: two-sided
 shapiro.test(data_M4CID0$TEST)
+# Shapiro-Wilk normality test
+# data:  data_M4CID0$TEST
+# W = 0.98967, p-value = 1.442e-05
 # p-value << 0,05 so, conclusion: not normal
-# The indeoendency is not measured because we are talking about two different schools in diffrent towns
+# The independency is not measured because we are talking about two different schools in different towns
 ggplot(data_M4CID0) + geom_boxplot(aes(y=TEST, x=factor(SCHOOL)))
 median(data_M4CID0_SCHOOL0$TEST)#68
 median(data_M4CID0_SCHOOL1$TEST)#54
 wilcox.test(data_M4CID0_SCHOOL0$TEST,data_M4CID0_SCHOOL1$TEST,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0_SCHOOL0$TEST and data_M4CID0_SCHOOL1$TEST
-# W = 128852, p-value < 2.2e-16
+# W = 117771, p-value < 2.2e-16
 # alternative hypothesis: true location shift is greater than 0
 
 # LAB
@@ -877,15 +887,22 @@ hist(data_M4CID0$LAB)
 qqnorm(data_M4CID0$LAB)
 qqline(data_M4CID0$LAB)
 ks.test(data_M4CID0$LAB,dnorm(mean(data_M4CID0$LAB),sd(data_M4CID0$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_M4CID0$LAB and dnorm(mean(data_M4CID0$LAB), sd(data_M4CID0$LAB))
+# D = 0.98309, p-value = 0.03619
+# alternative hypothesis: two-sided
 shapiro.test(data_M4CID0$LAB)
+# Shapiro-Wilk normality test
+# data:  data_M4CID0$LAB
+# W = 0.97381, p-value = 4.944e-11
 #p-value << 0,05 so, conclusion: not normal
 ggplot(data_M4CID0) + geom_boxplot(aes(y=LAB, x=factor(SCHOOL)))
 median(data_M4CID0_SCHOOL0$LAB)#62
-median(data_M4CID0_SCHOOL1$LAB)#53
+median(data_M4CID0_SCHOOL1$LAB)#51
 wilcox.test(data_M4CID0_SCHOOL0$LAB,data_M4CID0_SCHOOL1$LAB,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0_SCHOOL0$LAB and data_M4CID0_SCHOOL1$LAB
-# W = 140672, p-value = 1.345e-15
+# W = 112552, p-value < 2.2e-16
 # alternative hypothesis: true location shift is greater than 0
 
 # BEHAV
@@ -893,15 +910,22 @@ hist(data_M4CID0$BEHAV)
 qqnorm(data_M4CID0$BEHAV)
 qqline(data_M4CID0$BEHAV)
 ks.test(data_M4CID0$BEHAV,dnorm(mean(data_M4CID0$BEHAV),sd(data_M4CID0$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_M4CID0$BEHAV and dnorm(mean(data_M4CID0$BEHAV), sd(data_M4CID0$BEHAV))
+# D = 1, p-value = 0.001206
+# alternative hypothesis: two-sided
 shapiro.test(data_M4CID0$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_M4CID0$BEHAV
+# W = 0.97675, p-value = 3.278e-10
 # p-vaue << 0,05, so conclusion: not normal
 ggplot(data_M4CID0) + geom_boxplot(aes(y=BEHAV, x=factor(SCHOOL)))
 median(data_M4CID0_SCHOOL0$BEHAV)#77
-median(data_M4CID0_SCHOOL1$BEHAV)#81
+median(data_M4CID0_SCHOOL1$BEHAV)#80
 wilcox.test(data_M4CID0_SCHOOL0$BEHAV,data_M4CID0_SCHOOL1$BEHAV,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0_SCHOOL0$BEHAV and data_M4CID0_SCHOOL1$BEHAV
-# W = 90906, p-value = 1.119e-05
+# W = 70972, p-value = 8.34e-05
 # alternative hypothesis: true location shift is less than 0
 
 # CLASS
@@ -909,15 +933,23 @@ hist(data_M4CID0$CLASS)
 qqnorm(data_M4CID0$CLASS)
 qqline(data_M4CID0$CLASS)
 ks.test(data_M4CID0$CLASS,dnorm(mean(data_M4CID0$CLASS),sd(data_M4CID0$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_M4CID0$CLASS and dnorm(mean(data_M4CID0$CLASS), sd(data_M4CID0$CLASS))
+# D = 1, p-value = 0.002413
+# alternative hypothesis: two-sided
+
 shapiro.test(data_M4CID0$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_M4CID0$CLASS
+# W = 0.99571, p-value = 0.02136
 #p-value < 0,05, so conclusion: not normal
 ggplot(data_M4CID0) + geom_boxplot(aes(y=CLASS, x=factor(SCHOOL)))
 median(data_M4CID0_SCHOOL0$CLASS)#69
-median(data_M4CID0_SCHOOL1$CLASS)#59
+median(data_M4CID0_SCHOOL1$CLASS)#58
 wilcox.test(data_M4CID0_SCHOOL0$CLASS,data_M4CID0_SCHOOL1$CLASS,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0_SCHOOL0$CLASS and data_M4CID0_SCHOOL1$CLASS
-# W = 126821, p-value < 2.2e-16
+# W = 115938, p-value < 2.2e-16
 # alternative hypothesis: true location shift is greater than 0
 
 # table 10 : Inference for the differences in school
@@ -978,7 +1010,6 @@ summary(data_junior_computed)
 #compare data_junior_computed
 #compare samples after the computation explained just now:
 #data_JUNIOR_SCHOOL0 and data_junior_computed_SCHOOL1_M4CID0: are they from the same distribution?
-
 data_SCHOOL0<-filter(data,SCHOOL=="0") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
 data_junior_computed_SCHOOL1_M4CID0<-filter(data_junior_computed,GRADE <= "2" & M4CID =="0" & SCHOOL=="1") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
 summary(data_SCHOOL0)
@@ -986,13 +1017,13 @@ summary(data_junior_computed_SCHOOL1_M4CID0)
 
 #TEST
 length(data_SCHOOL0$ID)#476
-length(data_junior_computed_SCHOOL1_M4CID0$ID)#394
+length(data_junior_computed_SCHOOL1_M4CID0$ID)#318
 median(data_SCHOOL0$TEST)#68
-median(data_junior_computed_SCHOOL1_M4CID0$TEST)#65
+median(data_junior_computed_SCHOOL1_M4CID0$TEST)#66
 wilcox.test(data_SCHOOL0$TEST,data_junior_computed_SCHOOL1_M4CID0$TEST,alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL0$TEST and data_junior_computed_SCHOOL1_M4CID0$TEST
-# W = 97434, p-value = 0.321
+# W = 78009, p-value = 0.4629
 # alternative hypothesis: true location shift is not equal to 0
 
 #LAB
@@ -1001,7 +1032,7 @@ median(data_junior_computed_SCHOOL1_M4CID0$LAB)#64
 wilcox.test(data_SCHOOL0$LAB,data_junior_computed_SCHOOL1_M4CID0$LAB,alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL0$LAB and data_junior_computed_SCHOOL1_M4CID0$LAB
-# W = 92456, p-value = 0.7213
+# W = 75615, p-value = 0.9827
 # alternative hypothesis: true location shift is not equal to 0
 
 #BEHAV
@@ -1012,7 +1043,7 @@ hist(data_junior_computed_SCHOOL1_M4CID0$BEHAV)
 wilcox.test(data_SCHOOL0$BEHAV,data_junior_computed_SCHOOL1_M4CID0$BEHAV,alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL0$BEHAV and data_junior_computed_SCHOOL1_M4CID0$BEHAV
-# W = 92320, p-value = 0.694
+# W = 74502, p-value = 0.709
 # alternative hypothesis: true location shift is not equal to 0
 
 #CLASS
@@ -1021,7 +1052,7 @@ median(data_junior_computed_SCHOOL1_M4CID0$CLASS)#67
 wilcox.test(data_SCHOOL0$CLASS,data_junior_computed_SCHOOL1_M4CID0$CLASS,alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL0$CLASS and data_junior_computed_SCHOOL1_M4CID0$CLASS
-# W = 95629, p-value = 0.6148
+# W = 77022, p-value = 0.6728
 # alternative hypothesis: true location shift is not equal to 0
 
 #Conclusion: yes, they are from the same sample distribution
@@ -1029,7 +1060,7 @@ wilcox.test(data_SCHOOL0$CLASS,data_junior_computed_SCHOOL1_M4CID0$CLASS,alterna
 # Inference for computed junior differences with and without 4C/ID, between school 0 and school 1
 data_junior_computed_M4CID0<-filter(data_junior_computed,GRADE <= "2" & M4CID =="0") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
 data_junior_computed_M4CID1<-filter(data_junior_computed,GRADE <= "2" & M4CID =="1") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
-length(data_junior_computed_M4CID0$ID)#870
+length(data_junior_computed_M4CID0$ID)#794
 length(data_junior_computed_M4CID1$ID)#365
 
 #TEST
@@ -1038,16 +1069,23 @@ hist(data_junior_computed$TEST)
 qqnorm(data_junior_computed$TEST)
 qqline(data_junior_computed$TEST)
 ks.test(data_junior_computed$TEST,dnorm(mean(data_junior_computed$TEST),sd(data_junior_computed$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_junior_computed$TEST and dnorm(mean(data_junior_computed$TEST), sd(data_junior_computed$TEST))
+# D = 1, p-value = 0.001724
+# alternative hypothesis: two-sided
 shapiro.test(data_junior_computed$TEST)
+# Shapiro-Wilk normality test
+# data:  data_junior_computed$TEST
+# W = 0.99472, p-value = 0.0004287
 #conclusion: not normal and the samples are indedependent considering that they are from differents schools
 ggplot(data_junior_computed) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
-median(data_junior_computed_M4CID0$TEST)#68
-median(data_junior_computed_M4CID1$TEST)#69
-wilcox.test(data_junior_computed_M4CID0$TEST,data_junior_computed_M4CID1$TEST,alternative = "greater")
+median(data_junior_computed_M4CID0$TEST)#67
+median(data_junior_computed_M4CID1$TEST)#70
+wilcox.test(data_junior_computed_M4CID0$TEST,data_junior_computed_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_computed_M4CID0$TEST and data_junior_computed_M4CID1$TEST
-# W = 146616, p-value = 0.9833
-# alternative hypothesis: true location shift is greater than 0
+# W = 127454, p-value = 0.0004884
+# alternative hypothesis: true location shift is less than 0
 
 #LAB
 summary(data_junior_computed)
@@ -1055,15 +1093,23 @@ hist(data_junior_computed$LAB)
 qqnorm(data_junior_computed$LAB)
 qqline(data_junior_computed$LAB)
 ks.test(data_junior_computed$LAB,dnorm(mean(data_junior_computed$LAB),sd(data_junior_computed$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_junior_computed$LAB and dnorm(mean(data_junior_computed$LAB), sd(data_junior_computed$LAB))
+# D = 1, p-value = 0.001724
+# alternative hypothesis: two-sided
 shapiro.test(data_junior_computed$LAB)
+# Shapiro-Wilk normality test
+# data:  data_junior_computed$LAB
+# W = 0.98666, p-value = 8.433e-09
+
 #conclusion: not normal and the samples are indedependent considering that they are from differents schools
 ggplot(data_junior_computed) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
 median(data_junior_computed_M4CID0$LAB)#63
-median(data_junior_computed_M4CID1$LAB)#77
+median(data_junior_computed_M4CID1$LAB)#79
 wilcox.test(data_junior_computed_M4CID0$LAB,data_junior_computed_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_computed_M4CID0$LAB and data_junior_computed_M4CID1$LAB
-# W = 95486, p-value < 2.2e-16
+# W = 77643, p-value < 2.2e-16
 # alternative hypothesis: true location shift is less than 0
 
 #BEHAV
@@ -1072,15 +1118,22 @@ hist(data_junior_computed$BEHAV)
 qqnorm(data_junior_computed$BEHAV)
 qqline(data_junior_computed$BEHAV)
 ks.test(data_junior_computed$BEHAV,dnorm(mean(data_junior_computed$BEHAV),sd(data_junior_computed$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_junior_computed$BEHAV and dnorm(mean(data_junior_computed$BEHAV), sd(data_junior_computed$BEHAV))
+# D = 1, p-value = 0.0008621
+# alternative hypothesis: two-sided
 shapiro.test(data_junior_computed$LAB)
+# Shapiro-Wilk normality test
+# data:  data_junior_computed$LAB
+# W = 0.98666, p-value = 8.433e-09
 #conclusion: not normal and the samples are indedependent considering that they are from differents schools
 ggplot(data_junior_computed) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
-median(data_junior_computed_M4CID0$BEHAV)#78
-median(data_junior_computed_M4CID1$BEHAV)#71
+median(data_junior_computed_M4CID0$BEHAV)#77
+median(data_junior_computed_M4CID1$BEHAV)#73
 wilcox.test(data_junior_computed_M4CID0$BEHAV,data_junior_computed_M4CID1$BEHAV,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_computed_M4CID0$BEHAV and data_junior_computed_M4CID1$BEHAV
-# W = 195777, p-value = 4.886e-11
+# W = 165710, p-value = 4.228e-05
 # alternative hypothesis: true location shift is greater than 0
 
 #CLASS
@@ -1089,18 +1142,27 @@ hist(data_junior_computed$CLASS)
 qqnorm(data_junior_computed$CLASS)
 qqline(data_junior_computed$CLASS)
 ks.test(data_junior_computed$CLASS,dnorm(mean(data_junior_computed$CLASS),sd(data_junior_computed$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_junior_computed$CLASS and dnorm(mean(data_junior_computed$CLASS), sd(data_junior_computed$CLASS))
+# D = 1, p-value = 0.001724
+# alternative hypothesis: two-sided
 shapiro.test(data_junior_computed$LAB)
+# Shapiro-Wilk normality test
+# data:  data_junior_computed$LAB
+# W = 0.98666, p-value = 8.433e-09
 #conclusion: not normal and the samples are indedependent considering that they are from differents schools
 ggplot(data_junior_computed) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
 median(data_junior_computed_M4CID0$CLASS)#68
-median(data_junior_computed_M4CID1$CLASS)#70
-wilcox.test(data_junior_computed_M4CID0$CLASS,data_junior_computed_M4CID1$CLASS,alternative = "greater")
+median(data_junior_computed_M4CID1$CLASS)#72
+wilcox.test(data_junior_computed_M4CID0$CLASS,data_junior_computed_M4CID1$CLASS,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_computed_M4CID0$CLASS and data_junior_computed_M4CID1$CLASS
-# W = 134652, p-value = 1
-# alternative hypothesis: true location shift is greater than 0
+# W = 112527, p-value = 4.763e-10
+# alternative hypothesis: true location shift is less than 0
 
-# Inference for computed junior differences with and without 4C/ID, between school 0 and school 1 (with 4C/ID)
+
+
+# Inference for computed junior differences with and without 4C/ID, between school 0 and school 1 (this school only with 4C/ID)
 data_junior_computed_SCHOOL0_M4CID0<-filter(data_junior_computed,GRADE <= "2" & M4CID =="0",SCHOOL=="0") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
 data_junior_computed_SCHOOL1_M4CID1<-filter(data_junior_computed,GRADE <= "2" & M4CID =="1",SCHOOL=="1") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
 length(data_junior_computed_SCHOOL0_M4CID0$ID)#476
@@ -1112,15 +1174,22 @@ hist(data_junior_computed$TEST)
 qqnorm(data_junior_computed$TEST)
 qqline(data_junior_computed$TEST)
 ks.test(data_junior_computed$TEST,dnorm(mean(data_junior_computed$TEST),sd(data_junior_computed$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_junior_computed$TEST and dnorm(mean(data_junior_computed$TEST), sd(data_junior_computed$TEST))
+# D = 1, p-value = 0.001724
+# alternative hypothesis: two-sided
 shapiro.test(data_junior_computed$TEST)
-#conclusion: not normal and the samples are indedependent considering that they are from differents schools
+# Shapiro-Wilk normality test
+# data:  data_junior_computed$TEST
+# W = 0.99472, p-value = 0.0004287
+#conclusion: not normal and the samples are independent considering that they are from differents schools
 ggplot(data_junior_computed) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
 median(data_junior_computed_SCHOOL0_M4CID0$TEST)#68
 median(data_junior_computed_SCHOOL1_M4CID1$TEST)#70
 wilcox.test(data_junior_computed_SCHOOL0_M4CID0$TEST,data_junior_computed_SCHOOL1_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_computed_SCHOOL0_M4CID0$TEST and data_junior_computed_SCHOOL1_M4CID1$TEST
-# W = 81215, p-value = 0.05266
+# W = 77129, p-value = 0.002636
 # alternative hypothesis: true location shift is less than 0
 
 #LAB
@@ -1129,15 +1198,22 @@ hist(data_junior_computed$LAB)
 qqnorm(data_junior_computed$LAB)
 qqline(data_junior_computed$LAB)
 ks.test(data_junior_computed$LAB,dnorm(mean(data_junior_computed$LAB),sd(data_junior_computed$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_junior_computed$LAB and dnorm(mean(data_junior_computed$LAB), sd(data_junior_computed$LAB))
+# D = 1, p-value = 0.001724
+# alternative hypothesis: two-sided
 shapiro.test(data_junior_computed$LAB)
-#conclusion: not normal
+# Shapiro-Wilk normality test
+# data:  data_junior_computed$LAB
+# W = 0.98666, p-value = 8.433e-09
+#conclusion: not normal and independent because different schools
 ggplot(data_junior_computed) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
 median(data_junior_computed_SCHOOL0_M4CID0$LAB)#62
-median(data_junior_computed_SCHOOL1_M4CID1$LAB)#77
+median(data_junior_computed_SCHOOL1_M4CID1$LAB)#79
 wilcox.test(data_junior_computed_SCHOOL0_M4CID0$LAB,data_junior_computed_SCHOOL1_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_M4CID0_SCHOOL0$LAB and data_junior_computed_M4CID1_SCHOOL1$LAB
-# W = 50056, p-value < 2.2e-16
+# W = 44432, p-value < 2.2e-16
 # alternative hypothesis: true location shift is less than 0
 
 # BEHAV
@@ -1146,15 +1222,22 @@ hist(data_junior_computed$BEHAV)
 qqnorm(data_junior_computed$BEHAV)
 qqline(data_junior_computed$BEHAV)
 ks.test(data_junior_computed$BEHAV,dnorm(mean(data_junior_computed$BEHAV),sd(data_junior_computed$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_junior_computed$BEHAV and dnorm(mean(data_junior_computed$BEHAV), sd(data_junior_computed$BEHAV))
+# D = 1, p-value = 0.0008621
+# alternative hypothesis: two-sided
 shapiro.test(data_junior_computed$BEHAV)
-#conclusion: not normal
+# Shapiro-Wilk normality test
+# data:  data_junior_computed$BEHAV
+# W = 0.97605, p-value = 6.305e-13
+#conclusion: not normal and the samples are indedependent considering that they are from differents schools
 ggplot(data_junior_computed) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
 median(data_junior_computed_SCHOOL0_M4CID0$BEHAV)#77
-median(data_junior_computed_SCHOOL1_M4CID1$BEHAV)#71
+median(data_junior_computed_SCHOOL1_M4CID1$BEHAV)#73
 wilcox.test(data_junior_computed_SCHOOL0_M4CID0$BEHAV,data_junior_computed_SCHOOL1_M4CID1$BEHAV,alternative = "greater")
-# Wilcoxon rank sum test with continuity correction
+# # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_computed_SCHOOL0_M4CID0$BEHAV and data_junior_computed_SCHOOL1_M4CID1$BEHAV
-# W = 106915, p-value = 4.693e-09
+# W = 98978, p-value = 0.0002622
 # alternative hypothesis: true location shift is greater than 0
 
 # CLASS
@@ -1163,22 +1246,27 @@ hist(data_junior_computed$CLASS)
 qqnorm(data_junior_computed$CLASS)
 qqline(data_junior_computed$CLASS)
 ks.test(data_junior_computed$CLASS,dnorm(mean(data_junior_computed$CLASS),sd(data_junior_computed$CLASS)))
+# data:  data_junior_computed$CLASS and dnorm(mean(data_junior_computed$CLASS), sd(data_junior_computed$CLASS))
+# D = 1, p-value = 0.001724
+# alternative hypothesis: two-sided
 shapiro.test(data_junior_computed$CLASS)
-#conclusion: normal
+# Shapiro-Wilk normality test
+# data:  data_junior_computed$CLASS
+# W = 0.9966, p-value = 0.01261
+#conclusion: not normal
 ggplot(data_junior_computed) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))#NOTE: this is exactly the same sample infered next because it contains data from SCHOOL1 and M4CID0
 median(data_junior_computed_SCHOOL0_M4CID0$CLASS)#69
-median(data_junior_computed_SCHOOL1_M4CID1$CLASS)#70
-wilcox.test(data_junior_computed_SCHOOL0_M4CID0$CLASS,data_junior_computed_SCHOOL1_M4CID1$CLASS,alternative = "greater")
+median(data_junior_computed_SCHOOL1_M4CID1$CLASS)#72
+wilcox.test(data_junior_computed_SCHOOL0_M4CID0$CLASS,data_junior_computed_SCHOOL1_M4CID1$CLASS,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_computed_SCHOOL0_M4CID0$CLASS and data_junior_computed_SCHOOL1_M4CID1$CLASS
-# W = 74037, p-value = 0.9999
-# alternative hypothesis: true location shift is greater than 0
+# W = 67685, p-value = 1.958e-08
+# alternative hypothesis: true location shift is less than 0
 
 # Inference conclusion for computed junior differences with and without 4C/ID, 
-# between school 0 and school 1 with only 4C/ID
-# TEST and CLASS no effect
+# between school 0 and school 1 (this school with only 4C/ID)
 # negative on BEHAV
-# Positive effect for LAB
+# Positive effect for LAB, TEST and CLASS
 
 # Inference for computed junior differences between school 0 and global school 1 junior and junior high with 4CID
 # Excluding School 1 with no 4C/ID
@@ -1186,20 +1274,20 @@ wilcox.test(data_junior_computed_SCHOOL0_M4CID0$CLASS,data_junior_computed_SCHOO
 
 # see Table 11: Differences computed for junior school 0 and 1
 
-# sample with only school 0 and school 1 junior and junior high with 4C/ID: exclude school 1 without 4C/ID
-data_computed<-filter(data,!(SCHOOL == "1" & M4CID == "0")) %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+# sample with only school 0 and school 1 junior and junior high with 4C/ID (exclude school 1 without 4C/ID)
+data_computed<-filter(data,SCHOOL == "0" | (SCHOOL == "1" & M4CID == "1")) %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 
 # add to school 1
 data_computed$TEST<-ifelse(data_computed$M4CID==1,data_computed$TEST+dif_mean_TEST,data_computed$TEST)
 data_computed$LAB<-ifelse(data_computed$M4CID==1,data_computed$LAB+dif_mean_LAB,data_computed$LAB)
 data_computed$CLASS<-ifelse(data_computed$M4CID==1,data_computed$CLASS+dif_mean_CLASS,data_computed$CLASS)
-data_computed$BEHAV<-ifelse(data_computed$SCHOOL==1,data_computed$BEHAV+dif_mean_BEHAV,data_computed$BEHAV)
+data_computed$BEHAV<-ifelse(data_computed$M4CID==1,data_computed$BEHAV+dif_mean_BEHAV,data_computed$BEHAV)
 
-data_computed_SCHOOL0_M4CID0<-filter(data,SCHOOL == "0" & M4CID == "0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
-data_computed_SCHOOL1_M4CID1<-filter(data,SCHOOL == "1" & !M4CID == "0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_computed_SCHOOL0_M4CID0<-filter(data_computed,SCHOOL == "0" & M4CID == "0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_computed_SCHOOL1_M4CID1<-filter(data_computed,SCHOOL == "1" & M4CID == "1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 
 length(data_computed_SCHOOL0_M4CID0$ID)#476
-length(data_computed_SCHOOL1_M4CID1$ID)#694
+length(data_computed_SCHOOL1_M4CID1$ID)#586
 
 #TEST
 summary(data_computed)
@@ -1207,16 +1295,23 @@ hist(data_computed$TEST)
 qqnorm(data_computed$TEST)
 qqline(data_computed$TEST)
 ks.test(data_computed$TEST,dnorm(mean(data_computed$TEST),sd(data_computed$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed$TEST and dnorm(mean(data_computed$TEST), sd(data_computed$TEST))
+# D = 1, p-value = 0.001881
+# alternative hypothesis: two-sided
 shapiro.test(data_computed$TEST)
+# Shapiro-Wilk normality test
+# data:  data_computed$TEST
+# W = 0.99582, p-value = 0.005493
 #conclusion: not normal
-ggplot(data_computed) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))#not accurate, it includes school 1 and M4CID0
+ggplot(data_computed) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
 median(data_computed_SCHOOL0_M4CID0$TEST)#68
-median(data_computed_SCHOOL1_M4CID1$TEST)#57
-wilcox.test(data_computed_SCHOOL0_M4CID0$TEST,data_computed_SCHOOL1_M4CID1$TEST,alternative = "greater")
+median(data_computed_SCHOOL1_M4CID1$TEST)#69
+wilcox.test(data_computed_SCHOOL0_M4CID0$TEST,data_computed_SCHOOL1_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_SCHOOL0_M4CID0$TEST and data_computed_SCHOOL1_M4CID1$TEST
-# W = 216666, p-value < 2.2e-16
-# alternative hypothesis: true location shift is greater than 0
+# W = 130091, p-value = 0.02962
+# alternative hypothesis: true location shift is less than 0
 
 #LAB
 summary(data_computed)
@@ -1224,15 +1319,22 @@ hist(data_computed$LAB)
 qqnorm(data_computed$LAB)
 qqline(data_computed$LAB)
 ks.test(data_computed$LAB,dnorm(mean(data_computed$LAB),sd(data_computed$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed$LAB and dnorm(mean(data_computed$LAB), sd(data_computed$LAB))
+# D = 1, p-value = 0.001881
+# alternative hypothesis: two-sided
 shapiro.test(data_computed$LAB)
-#conclusion: not normal
-ggplot(data_computed) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))#not accurate, it includes school 1 and M4CID0
+# Shapiro-Wilk normality test
+# data:  data_computed$LAB
+# W = 0.9906, p-value = 2.643e-06
+# conclusion: not normal
+ggplot(data_computed) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
 median(data_computed_SCHOOL0_M4CID0$LAB)#62
-median(data_computed_SCHOOL1_M4CID1$LAB)#63
+median(data_computed_SCHOOL1_M4CID1$LAB)#78
 wilcox.test(data_computed_SCHOOL0_M4CID0$LAB,data_computed_SCHOOL1_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_SCHOOL0_M4CID0$LAB and data_computed_SCHOOL1_M4CID1$LAB
-# W = 167673, p-value = 0.6703
+# W = 77111, p-value < 2.2e-16
 # alternative hypothesis: true location shift is less than 0
 
 # BEHAV
@@ -1241,15 +1343,22 @@ hist(data_computed$BEHAV)
 qqnorm(data_computed$BEHAV)
 qqline(data_computed$BEHAV)
 ks.test(data_computed$BEHAV,dnorm(mean(data_computed$BEHAV),sd(data_computed$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed$BEHAV and dnorm(mean(data_computed$BEHAV), sd(data_computed$BEHAV))
+# D = 1, p-value = 0.0009407
+# alternative hypothesis: two-sided
 shapiro.test(data_computed$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_computed$BEHAV
+# W = 0.9795, p-value = 4.29e-11
 #conclusion: not normal
-ggplot(data_computed) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))#not accurate, it includes school 1 and M4CID0
-median(data_computed_SCHOOL0_M4CID0$TEST)#68
-median(data_computed_SCHOOL1_M4CID1$TEST)#57
+ggplot(data_computed) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
+median(data_computed_SCHOOL0_M4CID0$BEHAV)#77
+median(data_computed_SCHOOL1_M4CID1$BEHAV)#73
 wilcox.test(data_computed_SCHOOL0_M4CID0$BEHAV,data_computed_SCHOOL1_M4CID1$BEHAV,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_SCHOOL0_M4CID0$BEHAV and data_computed_SCHOOL1_M4CID1$BEHAV
-# W = 190144, p-value = 5.429e-06
+# W = 164808, p-value = 1.716e-07
 # alternative hypothesis: true location shift is greater than 0
 
 # CLASS
@@ -1258,21 +1367,28 @@ hist(data_computed$CLASS)
 qqnorm(data_computed$CLASS)
 qqline(data_computed$CLASS)
 ks.test(data_computed$CLASS,dnorm(mean(data_computed$CLASS),sd(data_computed$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed$CLASS and dnorm(mean(data_computed$CLASS), sd(data_computed$CLASS))
+# D = 1, p-value = 0.001881
+# alternative hypothesis: two-sided
 shapiro.test(data_computed$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_computed$CLASS
+# W = 0.99616, p-value = 0.00977
 #conclusion: not normal
 ggplot(data_computed) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))#not accurate, it includes school 1 and M4CID0
 median(data_computed_SCHOOL0_M4CID0$CLASS)#69
-median(data_computed_SCHOOL1_M4CID1$CLASS)#61
-wilcox.test(data_computed_SCHOOL0_M4CID0$CLASS,data_computed_SCHOOL1_M4CID1$CLASS,alternative = "greater")
+median(data_computed_SCHOOL1_M4CID1$CLASS)#71
+wilcox.test(data_computed_SCHOOL0_M4CID0$CLASS,data_computed_SCHOOL1_M4CID1$CLASS,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_SCHOOL0_M4CID0$CLASS and data_computed_SCHOOL1_M4CID1$CLASS
-# W = 205124, p-value = 9.848e-13
-# alternative hypothesis: true location shift is greater than 0
+# W = 115251, p-value = 5.531e-07
+# alternative hypothesis: true location shift is less than 0
 
 # Conclusion computed diferences for junior and junior high school 0 and 1 
 #(exclude school 1 without 4C/ID)
-# TEST, BEHAV and CLASS negative
-# No effect for LAB 
+# negative BEHAV 
+# TEST, LAB, CLASS positive
 
 # Table 12: Inference for computed diferences for junior and junior high school 0 and 1 
 # (excluding school 1 without 4C/ID)
@@ -1291,28 +1407,35 @@ data_computed_all$LAB<-ifelse(data_computed_all$SCHOOL==1,data_computed_all$LAB+
 data_computed_all$CLASS<-ifelse(data_computed_all$SCHOOL==1,data_computed_all$CLASS+dif_mean_CLASS,data_computed_all$CLASS)
 data_computed_all$BEHAV<-ifelse(data_computed_all$SCHOOL==1,data_computed_all$BEHAV+dif_mean_BEHAV,data_computed_all$BEHAV)
 
-#sample with and without 4C/ID, no matter which school
+#all sample with and without 4C/ID, no matter which school
 data_computed_all_M4CID0<-filter(data_computed_all,M4CID == "0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 data_computed_all_M4CID1<-filter(data_computed_all,M4CID == "1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 summary(data_computed_all)
 
-length(data_computed_all_M4CID0$ID)#931
-length(data_computed_all_M4CID1$ID)#694
+length(data_computed_all_M4CID0$ID)#828
+length(data_computed_all_M4CID1$ID)#586
 
 #TEST
 hist(data_computed_all$TEST)
 qqnorm(data_computed_all$TEST)
 qqline(data_computed_all$TEST)
 ks.test(data_computed_all$TEST,dnorm(mean(data_computed_all$TEST),sd(data_computed_all$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed_all$TEST and dnorm(mean(data_computed_all$TEST), sd(data_computed_all$TEST))
+# D = 1, p-value = 0.0007067
+# alternative hypothesis: two-sided
 shapiro.test(data_computed_all$TEST)
+# Shapiro-Wilk normality test
+# data:  data_computed_all$TEST
+# W = 0.99565, p-value = 0.0004377
 #conclusion: not normal
 ggplot(data_computed_all) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
 median(data_computed_all_M4CID0$TEST)#67
-median(data_computed_all_M4CID1$TEST)#68
+median(data_computed_all_M4CID1$TEST)#69
 wilcox.test(data_computed_all_M4CID0$TEST,data_computed_all_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_all_M4CID0$TEST and data_computed_all_M4CID1$TEST
-# W = 312418, p-value = 0.1278
+# W = 223254, p-value = 0.005261
 # alternative hypothesis: true location shift is less than 0
 
 #LAB
@@ -1320,31 +1443,45 @@ hist(data_computed_all$LAB)
 qqnorm(data_computed_all$LAB)
 qqline(data_computed_all$LAB)
 ks.test(data_computed_all$LAB,dnorm(mean(data_computed_all$LAB),sd(data_computed_all$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed_all$LAB and dnorm(mean(data_computed_all$LAB), sd(data_computed_all$LAB))
+# D = 1, p-value = 0.0007067
+# alternative hypothesis: two-sided
 shapiro.test(data_computed_all$LAB)
+# Shapiro-Wilk normality test
+# data:  data_computed_all$LAB
+# W = 0.98723, p-value = 8.131e-10
 #conclusion: not normal
 ggplot(data_computed_all) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
 median(data_computed_all_M4CID0$LAB)#63
-median(data_computed_all_M4CID1$LAB)#74
+median(data_computed_all_M4CID1$LAB)#78
 wilcox.test(data_computed_all_M4CID0$LAB,data_computed_all_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_all_M4CID0$LAB and data_computed_all_M4CID1$LAB
-# W = 220724, p-value < 2.2e-16
+# W = 140102, p-value < 2.2e-16
 # alternative hypothesis: true location shift is less than 0
 
 # BEHAV
-hist(data_computed_all$BEAHV)
+hist(data_computed_all$BEHAV)
 qqnorm(data_computed_all$BEHAV)
 qqline(data_computed_all$BEHAV)
 ks.test(data_computed_all$BEHAV,dnorm(mean(data_computed_all$BEHAV),sd(data_computed_all$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed_all$BEHAV and dnorm(mean(data_computed_all$BEHAV), sd(data_computed_all$BEHAV))
+# D = 1, p-value = 0.0007067
+# alternative hypothesis: two-sided
 shapiro.test(data_computed_all$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_computed_all$BEHAV
+# W = 0.97601, p-value = 1.333e-14
 #conclusion: not normal
 ggplot(data_computed_all) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
-median(data_computed_all_M4CID0$BEHAV)#78
-median(data_computed_all_M4CID1$BEHAV)#70
+median(data_computed_all_M4CID0$BEHAV)#77
+median(data_computed_all_M4CID1$BEHAV)#73
 wilcox.test(data_computed_all_M4CID0$BEHAV,data_computed_all_M4CID1$BEHAV,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_all_M4CID0$BEHAV and data_computed_all_M4CID1$BEHAV
-# W = 413964, p-value < 2.2e-16
+# W = 287377, p-value = 1.613e-09
 # alternative hypothesis: true location shift is greater than 0
 
 # CLASS
@@ -1352,29 +1489,35 @@ hist(data_computed_all$CLASS)
 qqnorm(data_computed_all$CLASS)
 qqline(data_computed_all$CLASS)
 ks.test(data_computed_all$CLASS,dnorm(mean(data_computed_all$CLASS),sd(data_computed_all$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed_all$CLASS and dnorm(mean(data_computed_all$CLASS), sd(data_computed_all$CLASS))
+# D = 1, p-value = 0.001413
+# alternative hypothesis: two-sided
 shapiro.test(data_computed_all$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_computed_all$CLASS
+# W = 0.99646, p-value = 0.002478
 #conclusion: normal
 ggplot(data_computed_all) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_computed_all_M4CID0$CLASS)#68
-median(data_computed_all_M4CID1$CLASS)#69
-wilcox.test(data_computed_all_M4CID0$CLASS,data_computed_all_M4CID1$CLASS,alternative = "greater")
+median(data_computed_all_M4CID1$CLASS)#71
+wilcox.test(data_computed_all_M4CID0$CLASS,data_computed_all_M4CID1$CLASS,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_computed_all_M4CID0$CLASS and data_computed_all_M4CID1$CLASS
-# W = 295902, p-value = 0.9981
-# alternative hypothesis: true location shift is greater than 0
+# W = 199597, p-value = 6.514e-09
+# alternative hypothesis: true location shift is less than 0
 
 # Conclusions 4C/ID treatment effect with computed samples for the entire sample
-# TEST and CLASS no effect
 # BEHAV negative
-# LAB positive
+# TEST, LAB, CLASS positive
 
 # Table 13: Inference for computed differences for the entire sample
 
 # Inference only for School 1, global sample (include junior high for school 1): sample not computed
 summary(data)
 data_SCHOOL1<-filter(data,data$SCHOOL=="1")  %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
-length(which(data_SCHOOL1$M4CID=="0"))#455 entrances
-length(which(data_SCHOOL1$M4CID=="1"))#694 entrances
+length(which(data_SCHOOL1$M4CID=="0"))#352 observations
+length(which(data_SCHOOL1$M4CID=="1"))#586 observations
 data_SCHOOL1_M4CID0 <- filter(data_SCHOOL1,M4CID=="0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 data_SCHOOL1_M4CID1 <- filter(data_SCHOOL1,M4CID=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 summary(data_SCHOOL1)
@@ -1384,24 +1527,24 @@ qqline(data_SCHOOL1$TEST)
 ks.test(data_SCHOOL1$TEST,dnorm(mean(data_SCHOOL1$TEST),sd(data_SCHOOL1$TEST)))
 # Exact two-sample Kolmogorov-Smirnov test
 # data:  data_SCHOOL1$TEST and dnorm(mean(data_SCHOOL1$TEST), sd(data_SCHOOL1$TEST))
-# D = 0.9913, p-value = 0.01652
+# D = 0.99787, p-value = 0.005325
 # alternative hypothesis: two-sided
 shapiro.test(data_SCHOOL1$TEST)
 # Shapiro-Wilk normality test
 # data:  data_SCHOOL1$TEST
-# W = 0.99139, p-value = 2.963e-06
+# W = 0.98943, p-value = 2.8e-06
 #conclusion: Samples not normal, so use Kendall non-parametric correlation test
 
 # TEST
-sample1<-data.frame(sample(data_SCHOOL1_M4CID0$TEST,400))
-sample2<-data.frame(sample(data_SCHOOL1_M4CID1$TEST,400))
+sample1<-data.frame(sample(data_SCHOOL1_M4CID0$TEST,300))
+sample2<-data.frame(sample(data_SCHOOL1_M4CID1$TEST,300))
 #For Kendall, samples need to have the same length
-cor.test(sample1$sample.data_SCHOOL1_M4CID0.TEST..400.,sample2$sample.data_SCHOOL1_M4CID1.TEST..400.,method="kendall")
+cor.test(sample1$sample.data_SCHOOL1_M4CID0.TEST..300.,sample2$sample.data_SCHOOL1_M4CID1.TEST..300.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_SCHOOL1_M4CID0.TEST..400. and sample2$sample.data_SCHOOL1_M4CID1.TEST..400.
-# z = 0.42391, p-value = 0.6716
+# data:  sample1$sample.data_SCHOOL1_M4CID0.TEST..300. and sample2$sample.data_SCHOOL1_M4CID1.TEST..300.
+# z = 0.21033, p-value = 0.8334
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.01441653 
+# sample estimates: tau 0.008279556 
 # sample independency, so it is possible to use Wilcoxon non-parametric inference test
 ggplot(data_SCHOOL1) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
 median(data_SCHOOL1_M4CID0$TEST)#54
@@ -1409,98 +1552,118 @@ median(data_SCHOOL1_M4CID1$TEST)#57
 wilcox.test(data_SCHOOL1_M4CID0$TEST,data_SCHOOL1_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL1_M4CID0$TEST and data_SCHOOL1_M4CID1$TEST
-# W = 150543, p-value = 0.09097
+# W = 93164, p-value = 0.006522
 # alternative hypothesis: true location shift is less than 0
 
 # LAB
-sample1<-data.frame(sample(data_SCHOOL1_M4CID0$LAB,400))
-sample2<-data.frame(sample(data_SCHOOL1_M4CID1$LAB,400))
+sample1<-data.frame(sample(data_SCHOOL1_M4CID0$LAB,300))
+sample2<-data.frame(sample(data_SCHOOL1_M4CID1$LAB,300))
 #Not normal, Kendall non-parametric correlation test
-cor.test(sample1$sample.data_SCHOOL1_M4CID0.LAB..400.,sample2$sample.data_SCHOOL1_M4CID1.LAB..400.,method="kendall")
+cor.test(sample1$sample.data_SCHOOL1_M4CID0.LAB..300.,sample2$sample.data_SCHOOL1_M4CID1.LAB..300.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_SCHOOL1_M4CID0.LAB..400. and sample2$sample.data_SCHOOL1_M4CID1.LAB..400.
-# z = -0.36747, p-value = 0.7133
+# data:  sample1$sample.data_SCHOOL1_M4CID0.LAB..300. and sample2$sample.data_SCHOOL1_M4CID1.LAB..300.
+# z = -1.4187, p-value = 0.156
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.01253338 
+# sample estimates: tau -0.05601023 
 hist(data_SCHOOL1$LAB)
 qqnorm(data_SCHOOL1$LAB)
 qqline(data_SCHOOL1$LAB)
 ks.test(data_SCHOOL1$LAB,dnorm(mean(data_SCHOOL1$LAB),sd(data_SCHOOL1$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1$LAB and dnorm(mean(data_SCHOOL1$LAB), sd(data_SCHOOL1$LAB))
+# D = 0.98507, p-value = 0.02875
+# alternative hypothesis: two-sided
 shapiro.test(data_SCHOOL1$LAB)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1$LAB
+# W = 0.97789, p-value = 9.766e-11
 #conclusion: not normal
 ggplot(data_SCHOOL1) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
-median(data_SCHOOL1_M4CID0$LAB)#53
-median(data_SCHOOL1_M4CID1$LAB)#63
+median(data_SCHOOL1_M4CID0$LAB)#51
+median(data_SCHOOL1_M4CID1$LAB)#65
 wilcox.test(data_SCHOOL1_M4CID0$LAB,data_SCHOOL1_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL1_M4CID0$LAB and data_SCHOOL1_M4CID1$LAB
-# W = 113418, p-value = 3.1e-16
+# W = 62990, p-value < 2.2e-16
 # alternative hypothesis: true location shift is less than 0
 
 # BEHAV
-sample1<-data.frame(sample(data_SCHOOL1_M4CID0$BEHAV,400))
-sample2<-data.frame(sample(data_SCHOOL1_M4CID1$BEHAV,400))
+sample1<-data.frame(sample(data_SCHOOL1_M4CID0$BEHAV,300))
+sample2<-data.frame(sample(data_SCHOOL1_M4CID1$BEHAV,300))
 #Kendall correlation test
-cor.test(sample1$sample.data_SCHOOL1_M4CID0.BEHAV..400.,sample2$sample.data_SCHOOL1_M4CID1.BEHAV..400.,method="kendall")
+cor.test(sample1$sample.data_SCHOOL1_M4CID0.BEHAV..300.,sample2$sample.data_SCHOOL1_M4CID1.BEHAV..300.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_SCHOOL1_M4CID0.BEHAV..400. and sample2$sample.data_SCHOOL1_M4CID1.BEHAV..400.
-# z = -0.31395, p-value = 0.7536
+# data:  sample1$sample.data_SCHOOL1_M4CID0.BEHAV..300. and sample2$sample.data_SCHOOL1_M4CID1.BEHAV..300.
+# z = 0.26, p-value = 0.7949
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.01074669 
+# sample estimates: tau 0.01029303 
 hist(data_SCHOOL1$BEHAV)
 qqnorm(data_SCHOOL1$BEHAV)
 qqline(data_SCHOOL1$BEHAV)
 ks.test(data_SCHOOL1$BEHAV,dnorm(mean(data_SCHOOL1$BEHAV),sd(data_SCHOOL1$BEHAV)))
-shapiro.test(data_SCHOOL1$BEHAV)
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1$BEHAV and dnorm(mean(data_SCHOOL1$BEHAV), sd(data_SCHOOL1$BEHAV))
+# D = 1, p-value = 0.001065
+# alternative hypothesis: two-sided
+# shapiro.test(data_SCHOOL1$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1$BEHAV
+# W = 0.96689, p-value = 9.072e-14
 #conclusion: not normal and independent
 ggplot(data_SCHOOL1) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
-median(data_SCHOOL1_M4CID0$BEHAV)#81
-median(data_SCHOOL1_M4CID1$BEHAV)#73
+median(data_SCHOOL1_M4CID0$BEHAV)#80
+median(data_SCHOOL1_M4CID1$BEHAV)#76
 wilcox.test(data_SCHOOL1_M4CID0$BEHAV,data_SCHOOL1_M4CID1$BEHAV,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL1_M4CID0$BEHAV and data_SCHOOL1_M4CID1$BEHAV
-# W = 206272, p-value < 2.2e-16
+# W = 122569, p-value = 6.553e-07
 # alternative hypothesis: true location shift is greater than 0
 
 # CLASS
-sample1<-data.frame(sample(data_SCHOOL1_M4CID0$CLASS,400))
-sample2<-data.frame(sample(data_SCHOOL1_M4CID1$CLASS,400))
+sample1<-data.frame(sample(data_SCHOOL1_M4CID0$CLASS,300))
+sample2<-data.frame(sample(data_SCHOOL1_M4CID1$CLASS,300))
 #Kendall correlation test
-cor.test(sample1$sample.data_SCHOOL1_M4CID0.CLASS..400.,sample2$sample.data_SCHOOL1_M4CID1.CLASS..400.,method="kendall")
+cor.test(sample1$sample.data_SCHOOL1_M4CID0.CLASS..300.,sample2$sample.data_SCHOOL1_M4CID1.CLASS..300.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_SCHOOL1_M4CID0.CLASS..400. and sample2$sample.data_SCHOOL1_M4CID1.CLASS..400.
-# z = -0.50868, p-value = 0.611
+# data:  sample1$sample.data_SCHOOL1_M4CID0.CLASS..300. and sample2$sample.data_SCHOOL1_M4CID1.CLASS..300.
+# z = 1.0436, p-value = 0.2967
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.01705669 
+# sample estimates: tau  0.04046901 
 hist(data_SCHOOL1$CLASS)
 qqnorm(data_SCHOOL1$CLASS)
 qqline(data_SCHOOL1$CLASS)
 ks.test(data_SCHOOL1$CLASS,dnorm(mean(data_SCHOOL1$CLASS),sd(data_SCHOOL1$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1$CLASS and dnorm(mean(data_SCHOOL1$CLASS), sd(data_SCHOOL1$CLASS))
+# D = 1, p-value = 0.00213
+# alternative hypothesis: two-sided
 shapiro.test(data_SCHOOL1$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1$CLASS
+# W = 0.992, p-value = 5.797e-05
 #conclusion: not normal and independent samples
 ggplot(data_SCHOOL1) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
-median(data_SCHOOL1_M4CID0$CLASS)#59
-median(data_SCHOOL1_M4CID1$CLASS)#61
+median(data_SCHOOL1_M4CID0$CLASS)#58
+median(data_SCHOOL1_M4CID1$CLASS)#62
 wilcox.test(data_SCHOOL1_M4CID0$CLASS,data_SCHOOL1_M4CID1$CLASS,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL1_M4CID0$CLASS and data_SCHOOL1_M4CID1$CLASS
-# W = 144558, p-value = 0.007708
+# W = 84348, p-value = 1.459e-06
 # alternative hypothesis: true location shift is less than 0
 
 # Table 14: Inference only for junior and junior high school 1
 
 #Conclusions for sample junior and junior high school 1
-# sample independent, no rejection of h0
-# 4CID as no impact on TEST Variable;
-# 4CID as positive impact in LAB and CLASS Variables;
+# not normal, sample independent, no rejection of h0
+# 4CID as positive impact on TEST, LAB and CLASS Variables;
 # 4CID as a negative impact in BEHAV variable
 
 # inference junior, school 1
-data_JUNIOR_SCHOOL1<-filter(data,GRADE >="0" & GRADE <="2" & SCHOOL == "1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_JUNIOR_SCHOOL1<-filter(data,GRADE <="2" & SCHOOL == "1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 head(data_JUNIOR_SCHOOL1)
 summary(data_JUNIOR_SCHOOL1)
 
-length(which(data_JUNIOR_SCHOOL1$M4CID=="0"))#394 entrances
+length(which(data_JUNIOR_SCHOOL1$M4CID=="0"))#318 entrances
 length(which(data_JUNIOR_SCHOOL1$M4CID=="1"))#365 entrances
 
 data_JUNIOR_SCHOOL1_M4CID0 <- filter(data_JUNIOR_SCHOOL1,M4CID=="0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
@@ -1515,14 +1678,21 @@ sample2<-data.frame(sample(data_SCHOOL1_M4CID1$TEST,300))
 cor.test(sample1$sample.data_SCHOOL1_M4CID0.TEST..300.,sample2$sample.data_SCHOOL1_M4CID1.TEST..300.,method="kendall")
 # Kendall's rank correlation tau
 # data:  sample1$sample.data_SCHOOL1_M4CID0.TEST..300. and sample2$sample.data_SCHOOL1_M4CID1.TEST..300.
-# z = 0.023051, p-value = 0.9816
+# z = 1.545, p-value = 0.1223
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.000907225 
+# sample estimates: tau 0.06083573
 hist(data_JUNIOR_SCHOOL1$TEST)
 qqnorm(data_JUNIOR_SCHOOL1$TEST)
 qqline(data_JUNIOR_SCHOOL1$TEST)
 ks.test(data_JUNIOR_SCHOOL1$TEST,dnorm(mean(data_JUNIOR_SCHOOL1$TEST),sd(data_JUNIOR_SCHOOL1$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1$TEST and dnorm(mean(data_JUNIOR_SCHOOL1$TEST), sd(data_JUNIOR_SCHOOL1$TEST))
+# D = 1, p-value = 0.002924
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1$TEST)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1$TEST
+# W = 0.98652, p-value = 6.164e-06
 #conclusion: not normal but independent sample
 ggplot(data_JUNIOR_SCHOOL1) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_M4CID0$TEST)#54
@@ -1530,7 +1700,7 @@ median(data_JUNIOR_SCHOOL1_M4CID1$TEST)#58
 wilcox.test(data_JUNIOR_SCHOOL1_M4CID0$TEST,data_JUNIOR_SCHOOL1_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_M4CID0$TEST and data_JUNIOR_SCHOOL1_M4CID1$TEST
-# W = 65400, p-value = 0.01556
+# W = 50325, p-value = 0.00136
 # alternative hypothesis: true location shift is less than 0
 
 # LAB
@@ -1540,22 +1710,29 @@ sample2<-data.frame(sample(data_SCHOOL1_M4CID1$LAB,300))
 cor.test(sample1$sample.data_SCHOOL1_M4CID0.LAB..300.,sample2$sample.data_SCHOOL1_M4CID1.LAB..300.,method="kendall")
 # Kendall's rank correlation tau
 # data:  sample1$sample.data_SCHOOL1_M4CID0.LAB..300. and sample2$sample.data_SCHOOL1_M4CID1.LAB..300.
-# z = -1.0773, p-value = 0.2813
+# z = -0.8257, p-value = 0.409
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.04251206 
+# sample estimates: tau -0.03263017 
 hist(data_JUNIOR_SCHOOL1$LAB)
 qqnorm(data_JUNIOR_SCHOOL1$LAB)
 qqline(data_JUNIOR_SCHOOL1$LAB)
 ks.test(data_JUNIOR_SCHOOL1$LAB,dnorm(mean(data_JUNIOR_SCHOOL1$LAB),sd(data_JUNIOR_SCHOOL1$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1$LAB and dnorm(mean(data_JUNIOR_SCHOOL1$LAB), sd(data_JUNIOR_SCHOOL1$LAB))
+# D = 0.98097, p-value = 0.03947
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1$LAB)
-#conclusion: not normal
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1$LAB
+# W = 0.97414, p-value = 1.264e-09
+#conclusion: not normal and independent
 ggplot(data_JUNIOR_SCHOOL1) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
-median(data_JUNIOR_SCHOOL1_M4CID0$LAB)#53
+median(data_JUNIOR_SCHOOL1_M4CID0$LAB)#51
 median(data_JUNIOR_SCHOOL1_M4CID1$LAB)#66
 wilcox.test(data_JUNIOR_SCHOOL1_M4CID0$LAB,data_JUNIOR_SCHOOL1_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_M4CID0$LAB and data_JUNIOR_SCHOOL1_M4CID1$LAB
-# W = 47353, p-value < 2.2e-16
+# W = 33211, p-value < 2.2e-16
 # alternative hypothesis: true location shift is less than 0
 
 # BEHAV
@@ -1565,22 +1742,29 @@ sample2<-data.frame(sample(data_SCHOOL1_M4CID1$BEHAV,300))
 cor.test(sample1$sample.data_SCHOOL1_M4CID0.BEHAV..300.,sample2$sample.data_SCHOOL1_M4CID1.BEHAV..300.,method="kendall")
 # Kendall's rank correlation tau
 # data:  sample1$sample.data_SCHOOL1_M4CID0.BEHAV..300. and sample2$sample.data_SCHOOL1_M4CID1.BEHAV..300.
-# z = -0.10606, p-value = 0.9155
+# z = -0.34014, p-value = 0.7338
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates:tau -0.004193422 
+# sample estimates: tau -0.01346713 
 hist(data_JUNIOR_SCHOOL1$BEHAV)
 qqnorm(data_JUNIOR_SCHOOL1$BEHAV)
 qqline(data_JUNIOR_SCHOOL1$BEHAV)
 ks.test(data_JUNIOR_SCHOOL1$BEHAV,dnorm(mean(data_JUNIOR_SCHOOL1$BEHAV),sd(data_JUNIOR_SCHOOL1$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1$BEHAV and dnorm(mean(data_JUNIOR_SCHOOL1$BEHAV), sd(data_JUNIOR_SCHOOL1$BEHAV))
+# D = 1, p-value = 0.001462
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1$BEHAV
+# W = 0.9632, p-value = 4.577e-12
 #conclusion: not normal but independent
 ggplot(data_JUNIOR_SCHOOL1) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_M4CID0$BEHAV)#81
-median(data_JUNIOR_SCHOOL1_M4CID1$BEHAV)#74
+median(data_JUNIOR_SCHOOL1_M4CID1$BEHAV)#76
 wilcox.test(data_JUNIOR_SCHOOL1_M4CID0$BEHAV,data_JUNIOR_SCHOOL1_M4CID1$BEHAV,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_M4CID0$BEHAV and data_JUNIOR_SCHOOL1_M4CID1$BEHAV
-# W = 88862, p-value = 9.536e-09
+# W = 66732, p-value = 0.0003594
 # alternative hypothesis: true location shift is greater than 0
 
 # CLASS
@@ -1590,14 +1774,21 @@ sample2<-data.frame(sample(data_SCHOOL1_M4CID1$CLASS,300))
 cor.test(sample1$sample.data_SCHOOL1_M4CID0.CLASS..300.,sample2$sample.data_SCHOOL1_M4CID1.CLASS..300.,method="kendall")
 # Kendall's rank correlation tau
 # data:  sample1$sample.data_SCHOOL1_M4CID0.CLASS..300. and sample2$sample.data_SCHOOL1_M4CID1.CLASS..300.
-# z = -0.12555, p-value = 0.9001
+# z = 0.21828, p-value = 0.8272
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.004868571
+# sample estimates: tau 0.008464829
 hist(data_JUNIOR_SCHOOL1$CLASS)
 qqnorm(data_JUNIOR_SCHOOL1$CLASS)
 qqline(data_JUNIOR_SCHOOL1$CLASS)
 ks.test(data_JUNIOR_SCHOOL1$CLASS,dnorm(mean(data_JUNIOR_SCHOOL1$CLASS),sd(data_JUNIOR_SCHOOL1$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1$CLASS and dnorm(mean(data_JUNIOR_SCHOOL1$CLASS), sd(data_JUNIOR_SCHOOL1$CLASS))
+# D = 1, p-value = 0.002924
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1$CLASS
+# W = 0.99145, p-value = 0.0005524
 #conclusion: not normal but independent
 ggplot(data_JUNIOR_SCHOOL1) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_M4CID0$CLASS)#59
@@ -1609,20 +1800,21 @@ wilcox.test(data_JUNIOR_SCHOOL1_M4CID0$CLASS,data_JUNIOR_SCHOOL1_M4CID1$CLASS,al
 # alternative hypothesis: true location shift is less than 0
 
 # Conclusions for sample junior School 1
-# No rejection under H0, sample independent
+# not normal sample, No rejection under H0, sample independent
 # 4CID as a positive impact on TEST, LAB and CLASS Variable;
 # 4CID as a negative impact in BEHAV variable
 
 # Table 15: Inference for junior school 1
 
+# GRADE
 # Inference SCHOOL 1, Grade 7
 summary (data)
 data_7_SCHOOL1<-filter(data,GRADE =="0" & SCHOOL == "1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 head(data_7_SCHOOL1)
 summary(data_7_SCHOOL1)
 
-length(which(data_7_SCHOOL1$M4CID=="0"))#123 entrances
-length(which(data_7_SCHOOL1$M4CID=="1"))#175 entrances
+length(which(data_7_SCHOOL1$M4CID=="0"))#123 obs
+length(which(data_7_SCHOOL1$M4CID=="1"))#99 obs
 
 data_7_SCHOOL1_M4CID0 <- filter(data_7_SCHOOL1,M4CID=="0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 data_7_SCHOOL1_M4CID1 <- filter(data_7_SCHOOL1,M4CID=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
@@ -1634,51 +1826,64 @@ hist(data_7_SCHOOL1$TEST)
 qqnorm(data_7_SCHOOL1$TEST)
 qqline(data_7_SCHOOL1$TEST)
 ks.test(data_7_SCHOOL1$TEST,dnorm(mean(data_7_SCHOOL1$TEST),sd(data_7_SCHOOL1$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_7_SCHOOL1$TEST and dnorm(mean(data_7_SCHOOL1$TEST), sd(data_7_SCHOOL1$TEST))
+# D = 1, p-value = 0.008969
+# alternative hypothesis: two-sided
 shapiro.test(data_7_SCHOOL1$TEST)
-#conclusion: (almost) not normal
-sample1<-data.frame(sample(data_7_SCHOOL1_M4CID0$TEST,100))
-sample2<-data.frame(sample(data_7_SCHOOL1_M4CID1$TEST,100))
+# Shapiro-Wilk normality test
+# data:  data_7_SCHOOL1$TEST
+# W = 0.98586, p-value = 0.02637
+#conclusion: not normal
+sample1<-data.frame(sample(data_7_SCHOOL1_M4CID0$TEST,90))
+sample2<-data.frame(sample(data_7_SCHOOL1_M4CID1$TEST,90))
 #Kendall correlation test
-cor.test(sample1$sample.data_7_SCHOOL1_M4CID0.TEST..100.,sample2$sample.data_7_SCHOOL1_M4CID1.TEST..100.,method="kendall")
+cor.test(sample1$sample.data_7_SCHOOL1_M4CID0.TEST..90.,sample2$sample.data_7_SCHOOL1_M4CID1.TEST..90.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_7_SCHOOL1_M4CID0.TEST..100. and sample2$sample.data_7_SCHOOL1_M4CID1.TEST..100.
-# z = 0.96893, p-value = 0.3326
+# data:  sample1$sample.data_7_SCHOOL1_M4CID0.TEST..90. and sample2$sample.data_7_SCHOOL1_M4CID1.TEST..90.
+# z = 1.1478, p-value = 0.2511
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.06680381 
+# sample estimates: tau 0.08346056 
 # Independet sample
 ggplot(data_7_SCHOOL1) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
 median(data_7_SCHOOL1_M4CID0$TEST)#54
-median(data_7_SCHOOL1_M4CID1$TEST)#56
+median(data_7_SCHOOL1_M4CID1$TEST)#58
 wilcox.test(data_7_SCHOOL1_M4CID0$TEST,data_7_SCHOOL1_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_7_SCHOOL1_M4CID0$TEST and data_7_SCHOOL1_M4CID1$TEST
-# W = 10222, p-value = 0.2304
-# alternative hypothesis: true location shift is less than 0
+# W = 5604.5, p-value = 0.1547
 
 # LAB
 hist(data_7_SCHOOL1$LAB)
 qqnorm(data_7_SCHOOL1$LAB)
 qqline(data_7_SCHOOL1$LAB)
 ks.test(data_7_SCHOOL1$LAB,dnorm(mean(data_7_SCHOOL1$LAB),sd(data_7_SCHOOL1$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_7_SCHOOL1$LAB and dnorm(mean(data_7_SCHOOL1$LAB), sd(data_7_SCHOOL1$LAB))
+# D = 1, p-value = 0.008969
+# alternative hypothesis: two-sided
 shapiro.test(data_7_SCHOOL1$LAB)
+# Shapiro-Wilk normality test
+# data:  data_7_SCHOOL1$LAB
+# W = 0.97527, p-value = 0.0006179
 #conclusion: not normal
-sample1<-data.frame(sample(data_7_SCHOOL1_M4CID0$LAB,100))
-sample2<-data.frame(sample(data_7_SCHOOL1_M4CID1$LAB,100))
+sample1<-data.frame(sample(data_7_SCHOOL1_M4CID0$LAB,90))
+sample2<-data.frame(sample(data_7_SCHOOL1_M4CID1$LAB,90))
 #Kendall correlation test
-cor.test(sample1$sample.data_7_SCHOOL1_M4CID0.LAB..100.,sample2$sample.data_7_SCHOOL1_M4CID1.LAB..100.,method="kendall")
-# Kendall's rank correlation tau
-# data:  sample1$sample.data_7_SCHOOL1_M4CID0.LAB..100. and sample2$sample.data_7_SCHOOL1_M4CID1.LAB..100.
-# z = 0.38462, p-value = 0.7005
+cor.test(sample1$sample.data_7_SCHOOL1_M4CID0.LAB..90.,sample2$sample.data_7_SCHOOL1_M4CID1.LAB..90.,method="kendall")
+# KKendall's rank correlation tau
+# data:  sample1$sample.data_7_SCHOOL1_M4CID0.LAB..90. and sample2$sample.data_7_SCHOOL1_M4CID1.LAB..90.
+# z = 0.15359, p-value = 0.8779
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.02652684
+# sample estimates: tau 0.01121734 
 # independent samples
 ggplot(data_7_SCHOOL1) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
 median(data_7_SCHOOL1_M4CID0$LAB)#56
-median(data_7_SCHOOL1_M4CID1$LAB)#64
+median(data_7_SCHOOL1_M4CID1$LAB)#69
 wilcox.test(data_7_SCHOOL1_M4CID0$LAB,data_7_SCHOOL1_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_7_SCHOOL1_M4CID0$LAB and data_7_SCHOOL1_M4CID1$LAB
-# W = 9501.5, p-value = 0.04258
+# W = 4079, p-value = 1.198e-05
 # alternative hypothesis: true location shift is less than 0
 
 # BEHAV
@@ -1686,25 +1891,32 @@ hist(data_7_SCHOOL1$BEHAV)
 qqnorm(data_7_SCHOOL1$BEHAV)
 qqline(data_7_SCHOOL1$BEHAV)
 ks.test(data_7_SCHOOL1$BEHAV,dnorm(mean(data_7_SCHOOL1$BEHAV),sd(data_7_SCHOOL1$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_7_SCHOOL1$BEHAV and dnorm(mean(data_7_SCHOOL1$BEHAV), sd(data_7_SCHOOL1$BEHAV))
+# D = 1, p-value = 0.008969
+# alternative hypothesis: two-sided
 shapiro.test(data_7_SCHOOL1$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_7_SCHOOL1$BEHAV
+# W = 0.9766, p-value = 0.0009589
 #conclusion: not normal
-sample1<-data.frame(sample(data_7_SCHOOL1_M4CID0$BEHAV,100))
-sample2<-data.frame(sample(data_7_SCHOOL1_M4CID1$BEHAV,100))
+sample1<-data.frame(sample(data_7_SCHOOL1_M4CID0$BEHAV,90))
+sample2<-data.frame(sample(data_7_SCHOOL1_M4CID1$BEHAV,90))
 #Kendall correlation test
-cor.test(sample1$sample.data_7_SCHOOL1_M4CID0.BEHAV..100.,sample2$sample.data_7_SCHOOL1_M4CID1.BEHAV..100.,method="kendall")
+cor.test(sample1$sample.data_7_SCHOOL1_M4CID0.BEHAV..90.,sample2$sample.data_7_SCHOOL1_M4CID1.BEHAV..90.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_7_SCHOOL1_M4CID0.BEHAV..100. and sample2$sample.data_7_SCHOOL1_M4CID1.BEHAV..100.
-# z = 0.28353, p-value = 0.7768
+# data:  sample1$sample.data_7_SCHOOL1_M4CID0.BEHAV..90. and sample2$sample.data_7_SCHOOL1_M4CID1.BEHAV..90.
+# z = 0.55146, p-value = 0.5813
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.01971209 
+# sample estimates: tau 0.04028563 
 # sample independent
 ggplot(data_7_SCHOOL1) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
 median(data_7_SCHOOL1_M4CID0$BEHAV)#77
-median(data_7_SCHOOL1_M4CID1$BEHAV)#71
+median(data_7_SCHOOL1_M4CID1$BEHAV)#73
 wilcox.test(data_7_SCHOOL1_M4CID0$BEHAV,data_7_SCHOOL1_M4CID1$BEHAV,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_7_SCHOOL1_M4CID0$BEHAV and data_7_SCHOOL1_M4CID1$BEHAV
-# W = 13290, p-value = 0.0002782
+# W = 7084, p-value = 0.0182
 # alternative hypothesis: true location shift is greater than 0
 
 # CLASS
@@ -1712,25 +1924,32 @@ hist(data_7_SCHOOL1$CLASS)
 qqnorm(data_7_SCHOOL1$CLASS)
 qqline(data_7_SCHOOL1$CLASS)
 ks.test(data_7_SCHOOL1$CLASS,dnorm(mean(data_7_SCHOOL1$CLASS),sd(data_7_SCHOOL1$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_7_SCHOOL1$CLASS and dnorm(mean(data_7_SCHOOL1$CLASS), sd(data_7_SCHOOL1$CLASS))
+# D = 1, p-value = 0.008969
+# alternative hypothesis: two-sided
 shapiro.test(data_7_SCHOOL1$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_7_SCHOOL1$CLASS
+# W = 0.9928, p-value = 0.3536
 #conclusion: shapir report normal, while KS no
-sample1<-data.frame(sample(data_7_SCHOOL1_M4CID0$CLASS,100))
-sample2<-data.frame(sample(data_7_SCHOOL1_M4CID1$CLASS,100))
+sample1<-data.frame(sample(data_7_SCHOOL1_M4CID0$CLASS,90))
+sample2<-data.frame(sample(data_7_SCHOOL1_M4CID1$CLASS,90))
 #Kendall correlation test
-cor.test(sample1$sample.data_7_SCHOOL1_M4CID0.CLASS..100.,sample2$sample.data_7_SCHOOL1_M4CID1.CLASS..100.,method="kendall")
+cor.test(sample1$sample.data_7_SCHOOL1_M4CID0.CLASS..90.,sample2$sample.data_7_SCHOOL1_M4CID1.CLASS..90.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_7_SCHOOL1_M4CID0.CLASS..100. and sample2$sample.data_7_SCHOOL1_M4CID1.CLASS..100.
-# z = 0.25613, p-value = 0.7978
+# data:  sample1$sample.data_7_SCHOOL1_M4CID0.CLASS..90. and sample2$sample.data_7_SCHOOL1_M4CID1.CLASS..90.
+# z = 0.0034856, p-value = 0.9972
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.01739483 
+# sample estimates: tau 0.0002501876 
 # Independent samples
 ggplot(data_7_SCHOOL1) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_7_SCHOOL1_M4CID0$CLASS)#60
-median(data_7_SCHOOL1_M4CID1$CLASS)#62
+median(data_7_SCHOOL1_M4CID1$CLASS)#64
 wilcox.test(data_7_SCHOOL1_M4CID0$CLASS,data_7_SCHOOL1_M4CID1$CLASS,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_7_SCHOOL1_M4CID0$CLASS and data_7_SCHOOL1_M4CID1$CLASS
-# W = 10375, p-value = 0.2986
+# W = 5144.5, p-value = 0.02366
 # alternative hypothesis: true location shift is less than 0
 
 # Inference SCHOOL 1, Grade 8
@@ -1739,8 +1958,8 @@ data_8_SCHOOL1<-filter(data,GRADE =="1" & SCHOOL == "1") %>% select(ID,GENDER,M4
 head(data_8_SCHOOL1)
 summary(data_8_SCHOOL1)
 
-length(which(data_8_SCHOOL1$M4CID=="0"))#168 entrances
-length(which(data_8_SCHOOL1$M4CID=="1"))#71 entrances, note less then 100 entrances
+length(which(data_8_SCHOOL1$M4CID=="0"))#92 obs
+length(which(data_8_SCHOOL1$M4CID=="1"))#147 obs
 
 data_8_SCHOOL1_M4CID0 <- filter(data_8_SCHOOL1,M4CID=="0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 data_8_SCHOOL1_M4CID1 <- filter(data_8_SCHOOL1,M4CID=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
@@ -1752,17 +1971,24 @@ hist(data_8_SCHOOL1$TEST)
 qqnorm(data_8_SCHOOL1$TEST)
 qqline(data_8_SCHOOL1$TEST)
 ks.test(data_8_SCHOOL1$TEST,dnorm(mean(data_8_SCHOOL1$TEST),sd(data_8_SCHOOL1$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_8_SCHOOL1$TEST and dnorm(mean(data_8_SCHOOL1$TEST), sd(data_8_SCHOOL1$TEST))
+# D = 1, p-value = 0.004167
+# alternative hypothesis: two-sided
 shapiro.test(data_8_SCHOOL1$TEST)
+# Shapiro-Wilk normality test
+# data:  data_8_SCHOOL1$TEST
+# W = 0.98173, p-value = 0.003576
 #conclusion: not normal
-sample1<-data.frame(sample(data_8_SCHOOL1_M4CID0$TEST,70))
-sample2<-data.frame(sample(data_8_SCHOOL1_M4CID1$TEST,70))
+sample1<-data.frame(sample(data_8_SCHOOL1_M4CID0$TEST,90))
+sample2<-data.frame(sample(data_8_SCHOOL1_M4CID1$TEST,90))
 #Kendall correlation test
-cor.test(sample1$sample.data_8_SCHOOL1_M4CID0.TEST..70.,sample2$sample.data_8_SCHOOL1_M4CID1.TEST..70.,method="kendall")
+cor.test(sample1$sample.data_8_SCHOOL1_M4CID0.TEST..90.,sample2$sample.data_8_SCHOOL1_M4CID1.TEST..90.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_8_SCHOOL1_M4CID0.TEST..70. and sample2$sample.data_8_SCHOOL1_M4CID1.TEST..70.
-# z = 0.82758, p-value = 0.4079
+# data:  sample1$sample.data_8_SCHOOL1_M4CID0.TEST..90. and sample2$sample.data_8_SCHOOL1_M4CID1.TEST..90.
+# z = 0.67348, p-value = 0.5006
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.06873291 
+# sample estimates: tau 0.04906577 
 #samples are independent
 ggplot(data_8_SCHOOL1) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
 median(data_8_SCHOOL1_M4CID0$TEST)#54
@@ -1770,7 +1996,7 @@ median(data_8_SCHOOL1_M4CID1$TEST)#58
 wilcox.test(data_8_SCHOOL1_M4CID0$TEST,data_8_SCHOOL1_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_8_SCHOOL1_M4CID0$TEST and data_8_SCHOOL1_M4CID1$TEST
-# W = 4805.5, p-value = 0.008855
+# W = 4986.5, p-value = 0.00032
 # alternative hypothesis: true location shift is less than 0
 
 # LAB
@@ -1778,25 +2004,32 @@ hist(data_8_SCHOOL1$LAB)
 qqnorm(data_8_SCHOOL1$LAB)
 qqline(data_8_SCHOOL1$LAB)
 ks.test(data_8_SCHOOL1$LAB,dnorm(mean(data_8_SCHOOL1$LAB),sd(data_8_SCHOOL1$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_8_SCHOOL1$LAB and dnorm(mean(data_8_SCHOOL1$LAB), sd(data_8_SCHOOL1$LAB))
+# D = 0.96234, p-value = 0.07917
+# alternative hypothesis: two-sided
 shapiro.test(data_8_SCHOOL1$LAB)
+# Shapiro-Wilk normality test
+# data:  data_8_SCHOOL1$LAB
+# W = 0.96304, p-value = 7.635e-06
 #conclusion: not normal by shapiro analysis
-sample1<-data.frame(sample(data_8_SCHOOL1_M4CID0$LAB,70))
-sample2<-data.frame(sample(data_8_SCHOOL1_M4CID1$LAB,70))
+sample1<-data.frame(sample(data_8_SCHOOL1_M4CID0$LAB,90))
+sample2<-data.frame(sample(data_8_SCHOOL1_M4CID1$LAB,90))
 #Kendall correlation test
-cor.test(sample1$sample.data_8_SCHOOL1_M4CID0.LAB..70.,sample2$sample.data_8_SCHOOL1_M4CID1.LAB..70.,method="kendall")
+cor.test(sample1$sample.data_8_SCHOOL1_M4CID0.LAB..90.,sample2$sample.data_8_SCHOOL1_M4CID1.LAB..90.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_8_SCHOOL1_M4CID0.LAB..70. and sample2$sample.data_8_SCHOOL1_M4CID1.LAB..70.
-# z = -0.88109, p-value = 0.3783
+# data:  sample1$sample.data_8_SCHOOL1_M4CID0.LAB..90. and sample2$sample.data_8_SCHOOL1_M4CID1.LAB..90.
+# z = 0.28602, p-value = 0.7749
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.07393898 
+# sample estimates: tau 0.02151758 
 # sample are independent
 ggplot(data_8_SCHOOL1) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
-median(data_8_SCHOOL1_M4CID0$LAB)#55
-median(data_8_SCHOOL1_M4CID1$LAB)#68
+median(data_8_SCHOOL1_M4CID0$LAB)#51
+median(data_8_SCHOOL1_M4CID1$LAB)#62
 wilcox.test(data_8_SCHOOL1_M4CID0$LAB,data_8_SCHOOL1_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_8_SCHOOL1_M4CID0$LAB and data_8_SCHOOL1_M4CID1$LAB
-# W = 3190.5, p-value = 6.628e-09
+# W = 4156.5, p-value = 2.672e-07
 # alternative hypothesis: true location shift is less than 0
 
 # BEHAV
@@ -1804,24 +2037,31 @@ hist(data_8_SCHOOL1$BEHAV)
 qqnorm(data_8_SCHOOL1$BEHAV)
 qqline(data_8_SCHOOL1$BEHAV)
 ks.test(data_8_SCHOOL1$BEHAV,dnorm(mean(data_8_SCHOOL1$BEHAV),sd(data_8_SCHOOL1$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_8_SCHOOL1$BEHAV and dnorm(mean(data_8_SCHOOL1$BEHAV), sd(data_8_SCHOOL1$BEHAV))
+# D = 1, p-value = 0.004167
+# alternative hypothesis: two-sided
 shapiro.test(data_8_SCHOOL1$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_8_SCHOOL1$BEHAV
+# W = 0.94447, p-value = 6.821e-08
 #conclusion: not normal
-sample1<-data.frame(sample(data_8_SCHOOL1_M4CID0$BEHAV,70))
-sample2<-data.frame(sample(data_8_SCHOOL1_M4CID1$BEHAV,70))
+sample1<-data.frame(sample(data_8_SCHOOL1_M4CID0$BEHAV,90))
+sample2<-data.frame(sample(data_8_SCHOOL1_M4CID1$BEHAV,90))
 #Kendall correlation test
-cor.test(sample1$sample.data_8_SCHOOL1_M4CID0.BEHAV..70.,sample2$sample.data_8_SCHOOL1_M4CID1.BEHAV..70.,method="kendall")
+cor.test(sample1$sample.data_8_SCHOOL1_M4CID0.BEHAV..90.,sample2$sample.data_8_SCHOOL1_M4CID1.BEHAV..90.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_8_SCHOOL1_M4CID0.BEHAV..70. and sample2$sample.data_8_SCHOOL1_M4CID1.BEHAV..70.
-# z = -0.22859, p-value = 0.8192
+# data:  sample1$sample.data_8_SCHOOL1_M4CID0.BEHAV..90. and sample2$sample.data_8_SCHOOL1_M4CID1.BEHAV..90.
+# z = 1.4214, p-value = 0.1552
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.01905233 
+# sample estimates: tau 0.105448 
 ggplot(data_8_SCHOOL1) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
-median(data_8_SCHOOL1_M4CID0$BEHAV)#85
-median(data_8_SCHOOL1_M4CID1$BEHAV)#60
+median(data_8_SCHOOL1_M4CID0$BEHAV)#88
+median(data_8_SCHOOL1_M4CID1$BEHAV)#72
 wilcox.test(data_8_SCHOOL1_M4CID0$BEHAV,data_8_SCHOOL1_M4CID1$BEHAV,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_8_SCHOOL1_M4CID0$BEHAV and data_8_SCHOOL1_M4CID1$BEHAV
-# W = 9820, p-value = 1.419e-15
+# W = 9869, p-value = 1.142e-09
 # alternative hypothesis: true location shift is greater than 0
 
 # CLASS
@@ -1829,25 +2069,32 @@ hist(data_8_SCHOOL1$CLASS)
 qqnorm(data_8_SCHOOL1$CLASS)
 qqline(data_8_SCHOOL1$CLASS)
 ks.test(data_8_SCHOOL1$CLASS,dnorm(mean(data_8_SCHOOL1$CLASS),sd(data_8_SCHOOL1$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_8_SCHOOL1$CLASS and dnorm(mean(data_8_SCHOOL1$CLASS), sd(data_8_SCHOOL1$CLASS))
+# D = 1, p-value = 0.008333
+# alternative hypothesis: two-sided
 shapiro.test(data_8_SCHOOL1$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_8_SCHOOL1$CLASS
+# W = 0.98399, p-value = 0.008599
 #conclusion: not normal
-sample1<-data.frame(sample(data_8_SCHOOL1_M4CID0$CLASS,70))
-sample2<-data.frame(sample(data_8_SCHOOL1_M4CID1$CLASS,70))
+sample1<-data.frame(sample(data_8_SCHOOL1_M4CID0$CLASS,90))
+sample2<-data.frame(sample(data_8_SCHOOL1_M4CID1$CLASS,90))
 #Kendall correlation test
-cor.test(sample1$sample.data_8_SCHOOL1_M4CID0.CLASS..70.,sample2$sample.data_8_SCHOOL1_M4CID1.CLASS..70.,method="kendall")
+cor.test(sample1$sample.data_8_SCHOOL1_M4CID0.CLASS..90.,sample2$sample.data_8_SCHOOL1_M4CID1.CLASS..90.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_8_SCHOOL1_M4CID0.CLASS..70. and sample2$sample.data_8_SCHOOL1_M4CID1.CLASS..70.
-# z = -1.2016, p-value = 0.2295
+# data:  sample1$sample.data_8_SCHOOL1_M4CID0.CLASS..90. and sample2$sample.data_8_SCHOOL1_M4CID1.CLASS..90.
+# z = 0.055772, p-value = 0.9555
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.09825871 
+# sample estimates: tau 0.004006516 
 # Sample independent
 ggplot(data_8_SCHOOL1) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
-median(data_8_SCHOOL1_M4CID0$CLASS)#60
+median(data_8_SCHOOL1_M4CID0$CLASS)#58
 median(data_8_SCHOOL1_M4CID1$CLASS)#61
 wilcox.test(data_8_SCHOOL1_M4CID0$CLASS,data_8_SCHOOL1_M4CID1$CLASS,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_8_SCHOOL1_M4CID0$CLASS and data_8_SCHOOL1_M4CID1$CLASS
-# W = 5180.5, p-value = 0.05445
+# W = 5330, p-value = 0.002957
 # alternative hypothesis: true location shift is less than 0
 
 # Inference for SCHOOL 1, Grade 9
@@ -1856,8 +2103,8 @@ data_9_SCHOOL1<-filter(data,GRADE =="2" & SCHOOL == "1") %>% select(ID,GENDER,M4
 head(data_9_SCHOOL1)
 summary(data_9_SCHOOL1)
 
-length(which(data_9_SCHOOL1$M4CID=="0"))#103 entrances
-length(which(data_9_SCHOOL1$M4CID=="1"))#119 entrances, note less then 100 entrances
+length(which(data_9_SCHOOL1$M4CID=="0"))#103 obs
+length(which(data_9_SCHOOL1$M4CID=="1"))#119 obs
 
 data_9_SCHOOL1_M4CID0 <- filter(data_9_SCHOOL1,M4CID=="0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 data_9_SCHOOL1_M4CID1 <- filter(data_9_SCHOOL1,M4CID=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
@@ -1869,7 +2116,14 @@ hist(data_9_SCHOOL1$TEST)
 qqnorm(data_9_SCHOOL1$TEST)
 qqline(data_9_SCHOOL1$TEST)
 ks.test(data_9_SCHOOL1$TEST,dnorm(mean(data_9_SCHOOL1$TEST),sd(data_9_SCHOOL1$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_9_SCHOOL1$TEST and dnorm(mean(data_9_SCHOOL1$TEST), sd(data_9_SCHOOL1$TEST))
+# D = 1, p-value = 0.008969
+# alternative hypothesis: two-sided
 shapiro.test(data_9_SCHOOL1$TEST)
+# Shapiro-Wilk normality test
+# data:  data_9_SCHOOL1$TEST
+# W = 0.97502, p-value = 0.0005698
 #conclusion: not normal
 sample1<-data.frame(sample(data_9_SCHOOL1_M4CID0$TEST,100))
 sample2<-data.frame(sample(data_9_SCHOOL1_M4CID1$TEST,100))
@@ -1877,9 +2131,9 @@ sample2<-data.frame(sample(data_9_SCHOOL1_M4CID1$TEST,100))
 cor.test(sample1$sample.data_9_SCHOOL1_M4CID0.TEST..100.,sample2$sample.data_9_SCHOOL1_M4CID1.TEST..100.,method="kendall")
 # Kendall's rank correlation tau
 # data:  sample1$sample.data_9_SCHOOL1_M4CID0.TEST..100. and sample2$sample.data_9_SCHOOL1_M4CID1.TEST..100.
-# z = -0.38448, p-value = 0.7006
+# z = -0.66468, p-value = 0.5063
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.02643173 
+# sample estimates:tau -0.04571077 
 # sample independent
 ggplot(data_9_SCHOOL1) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
 median(data_9_SCHOOL1_M4CID0$TEST)#56
@@ -1895,7 +2149,14 @@ hist(data_9_SCHOOL1$LAB)
 qqnorm(data_9_SCHOOL1$LAB)
 qqline(data_9_SCHOOL1$LAB)
 ks.test(data_9_SCHOOL1$LAB,dnorm(mean(data_9_SCHOOL1$LAB),sd(data_9_SCHOOL1$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_9_SCHOOL1$LAB and dnorm(mean(data_9_SCHOOL1$LAB), sd(data_9_SCHOOL1$LAB))
+# D = 0.98198, p-value = 0.04036
+# alternative hypothesis: two-sided
 shapiro.test(data_9_SCHOOL1$LAB)
+# Shapiro-Wilk normality test
+# data:  data_9_SCHOOL1$LAB
+# W = 0.97603, p-value = 0.0007947
 #conclusion: not normal
 sample1<-data.frame(sample(data_9_SCHOOL1_M4CID0$LAB,100))
 sample2<-data.frame(sample(data_9_SCHOOL1_M4CID1$LAB,100))
@@ -1903,9 +2164,9 @@ sample2<-data.frame(sample(data_9_SCHOOL1_M4CID1$LAB,100))
 cor.test(sample1$sample.data_9_SCHOOL1_M4CID0.LAB..100.,sample2$sample.data_9_SCHOOL1_M4CID1.LAB..100.,method="kendall")
 # Kendall's rank correlation tau
 # data:  sample1$sample.data_9_SCHOOL1_M4CID0.LAB..100. and sample2$sample.data_9_SCHOOL1_M4CID1.LAB..100.
-# z = -0.5785, p-value = 0.5629
+# z = 1.5863, p-value = 0.1127
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.0400083 
+# sample estimates: tau 0.1096457 
 ggplot(data_9_SCHOOL1) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
 median(data_9_SCHOOL1_M4CID0$LAB)#44
 median(data_9_SCHOOL1_M4CID1$LAB)#66
@@ -1920,7 +2181,14 @@ hist(data_9_SCHOOL1$BEHAV)
 qqnorm(data_9_SCHOOL1$BEHAV)
 qqline(data_9_SCHOOL1$BEHAV)
 ks.test(data_9_SCHOOL1$BEHAV,dnorm(mean(data_9_SCHOOL1$BEHAV),sd(data_9_SCHOOL1$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_9_SCHOOL1$BEHAV and dnorm(mean(data_9_SCHOOL1$BEHAV), sd(data_9_SCHOOL1$BEHAV))
+# D = 1, p-value = 0.004484
+# alternative hypothesis: two-sided
 shapiro.test(data_9_SCHOOL1$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_9_SCHOOL1$BEHAV
+# W = 0.94726, p-value = 3.149e-07
 #conclusion: not normal
 sample1<-data.frame(sample(data_9_SCHOOL1_M4CID0$BEHAV,100))
 sample2<-data.frame(sample(data_9_SCHOOL1_M4CID1$BEHAV,100))
@@ -1928,9 +2196,9 @@ sample2<-data.frame(sample(data_9_SCHOOL1_M4CID1$BEHAV,100))
 cor.test(sample1$sample.data_9_SCHOOL1_M4CID0.BEHAV..100.,sample2$sample.data_9_SCHOOL1_M4CID1.BEHAV..100.,method="kendall")
 # Kendall's rank correlation tau
 # data:  sample1$sample.data_9_SCHOOL1_M4CID0.BEHAV..100. and sample2$sample.data_9_SCHOOL1_M4CID1.BEHAV..100.
-# z = -0.068661, p-value = 0.9453
+# z = -0.32248, p-value = 0.7471
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.004794302 
+# sample estimates: tau -0.02254305 
 # samples independent
 ggplot(data_9_SCHOOL1) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
 median(data_9_SCHOOL1_M4CID0$BEHAV)#80
@@ -1946,7 +2214,14 @@ hist(data_9_SCHOOL1$CLASS)
 qqnorm(data_9_SCHOOL1$CLASS)
 qqline(data_9_SCHOOL1$CLASS)
 ks.test(data_9_SCHOOL1$CLASS,dnorm(mean(data_9_SCHOOL1$CLASS),sd(data_9_SCHOOL1$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_9_SCHOOL1$CLASS and dnorm(mean(data_9_SCHOOL1$CLASS), sd(data_9_SCHOOL1$CLASS))
+# D = 1, p-value = 0.008969
+# alternative hypothesis: two-sided
 shapiro.test(data_9_SCHOOL1$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_9_SCHOOL1$CLASS
+# W = 0.98916, p-value = 0.09299
 #conclusion: normal by Shapiro
 sample1<-data.frame(sample(data_9_SCHOOL1_M4CID0$CLASS,100))
 sample2<-data.frame(sample(data_9_SCHOOL1_M4CID1$CLASS,100))
@@ -1954,9 +2229,10 @@ sample2<-data.frame(sample(data_9_SCHOOL1_M4CID1$CLASS,100))
 cor.test(sample1$sample.data_9_SCHOOL1_M4CID0.CLASS..100.,sample2$sample.data_9_SCHOOL1_M4CID1.CLASS..100.,method="kendall")
 # Kendall's rank correlation tau
 # data:  sample1$sample.data_9_SCHOOL1_M4CID0.CLASS..100. and sample2$sample.data_9_SCHOOL1_M4CID1.CLASS..100.
-# z = -0.86966, p-value = 0.3845
+# z = 0.19657, p-value = 0.8442
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.05907344 
+# sample estimates:  tau 0.01335222 
+# independent
 ggplot(data_9_SCHOOL1) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_9_SCHOOL1_M4CID0$CLASS)#55
 median(data_9_SCHOOL1_M4CID1$CLASS)#64
@@ -1971,22 +2247,476 @@ wilcox.test(data_9_SCHOOL1_M4CID0$CLASS,data_9_SCHOOL1_M4CID1$CLASS,alternative 
 #Conclusion
 #samples not normal but independent
 # GRADE 7
-# 4CID has no impact on TEST and CLASS Variables;
-# 4CID has positive impact in LAB Variable;
+# 4CID has positive impact on TEST, LAB and CLASS Variables;
 # 4CID has a negative impact in BEHAV variable
 
 #GRADE 8
-# Note: M4CID=="1",#71 entrances, less then 100 entrances
-# 4CID has a positive impact on TEST, LAB, 
+# Note: M4CID=="1",less then 100 entrances
+# 4CID has a positive impact on TEST, LAB and CLASS
 # 4CID negative on BEHAV Variable;
-# 4CID has no impact on CLASS
 
 #Grade 9
 # 4CID has no impact on TEST Variable;
 # 4CID has positive impact in LAB, BEHAV and CLASS Variable;
 
 ########## RANK
-#This analysis uses school 1 and junior grade sample only
+
+#This analysis uses school 1 junior and junior high grade
+summary(data)
+data_SCHOOL1<-filter(data,SCHOOL == "1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+head(data_SCHOOL1)
+data_SCHOOL1$RANK <-
+  ifelse(data_SCHOOL1$CLASS <=45, 1,
+         ifelse((data_SCHOOL1$CLASS >45 & data_SCHOOL1$CLASS<70), 2,
+                ifelse(data_SCHOOL1$CLASS >=70, 3,NA)))
+summary(data_SCHOOL1)
+length(data_SCHOOL1$ID)#938 entrances
+length(which(data_SCHOOL1$RANK=="1"))#93
+length(which(data_SCHOOL1$RANK=="1"))/length(data_SCHOOL1$ID)#9%
+length(which(data_SCHOOL1$RANK=="2"))#600
+length(which(data_SCHOOL1$RANK=="2"))/length(data_SCHOOL1$ID)#64%
+length(which(data_SCHOOL1$RANK=="3"))#245
+length(which(data_SCHOOL1$RANK=="3"))/length(data_SCHOOL1$ID)#26%
+
+#RANK 1, 93,9%
+#RANK 2, 600, 64%
+#RANK 3, 245, 26% 
+
+#RANK 1
+data_SCHOOL1_RANK1 <- filter(data_SCHOOL1,RANK=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
+data_SCHOOL1_RANK1_M4CID0 <- filter(data_SCHOOL1_RANK1, M4CID=="0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
+data_SCHOOL1_RANK1_M4CID1 <- filter(data_SCHOOL1_RANK1, M4CID=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
+summary(data_SCHOOL1_RANK1_M4CID0)
+length(data_SCHOOL1_RANK1_M4CID0$ID)#56
+length(data_SCHOOL1_RANK1_M4CID1$ID)#37
+#note: under 100 sample entrances
+
+# TEST
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK1_M4CID0$TEST,30))
+sample2<-data.frame(sample(data_SCHOOL1_RANK1_M4CID1$TEST,30))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK1_M4CID0.TEST..30.,sample2$sample.data_SCHOOL1_RANK1_M4CID1.TEST..30.,method="kendall",exact = FALSE)
+?cor.test
+sample1
+library("Kendall")
+Kendall(sample1$sample.data_SCHOOL1_RANK1_M4CID0.TEST..30.,sample2$sample.data_SCHOOL1_RANK1_M4CID1.TEST..30.)
+length(sample1$TEST)
+#Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK1_M4CID0.TEST..30. and sample2$sample.data_SCHOOL1_RANK1_M4CID1.TEST..30.
+# z = 0.7897, p-value = 0.4297
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.104641 
+# sample independent
+hist(data_SCHOOL1_RANK1$TEST)
+qqnorm(data_SCHOOL1_RANK1$TEST)
+qqline(data_SCHOOL1_RANK1$TEST)
+ks.test(data_SCHOOL1_RANK1$TEST,dnorm(mean(data_SCHOOL1_RANK1$TEST),sd(data_SCHOOL1_RANK1$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK1$TEST and dnorm(mean(data_SCHOOL1_RANK1$TEST), sd(data_SCHOOL1_RANK1$TEST))
+# D = 0.97849, p-value = 0.06383
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK1$TEST)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK1$TEST
+# W = 0.96926, p-value = 0.02717
+#conclusion: normal
+ggplot(data_SCHOOL1_RANK1) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
+median(data_SCHOOL1_RANK1_M4CID0$TEST)#34
+median(data_SCHOOL1_RANK1_M4CID1$TEST)#33
+wilcox.test(data_SCHOOL1_RANK1_M4CID0$TEST,data_SCHOOL1_RANK1_M4CID1$TEST,alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_RANK1_M4CID0$TEST and data_SCHOOL1_RANK1_M4CID1$TEST
+# W = 1242.5, p-value = 0.05279
+# alternative hypothesis: true location shift is greater than 0
+
+# LAB
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK1_M4CID0$LAB,30))
+sample2<-data.frame(sample(data_SCHOOL1_RANK1_M4CID1$LAB,30))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK1_M4CID0.LAB..30.,sample2$sample.data_SCHOOL1_RANK1_M4CID1.LAB..30.,method="kendall",exact = FALSE)
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK1_M4CID0.LAB..30. and sample2$sample.data_SCHOOL1_RANK1_M4CID1.LAB..30.
+# z = -0.92261, p-value = 0.3562
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.1239852 
+#sample independent
+hist(data_SCHOOL1_RANK1$LAB)
+qqnorm(data_SCHOOL1_RANK1$LAB)
+qqline(data_SCHOOL1_RANK1$LAB)
+ks.test(data_SCHOOL1_RANK1$LAB,dnorm(mean(data_SCHOOL1_RANK1$LAB),sd(data_SCHOOL1_RANK1$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK1$LAB and dnorm(mean(data_SCHOOL1_RANK1$LAB), sd(data_SCHOOL1_RANK1$LAB))
+# D = 0.87097, p-value = 0.266
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK1$LAB)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK1$LAB
+# W = 0.94629, p-value = 0.0007958
+#conclusion: not normal
+ggplot(data_SCHOOL1_RANK1) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
+median(data_SCHOOL1_RANK1_M4CID0$LAB)#26
+median(data_SCHOOL1_RANK1_M4CID1$LAB)#35
+wilcox.test(data_SCHOOL1_RANK1_M4CID0$LAB,data_SCHOOL1_RANK1_M4CID1$LAB,alternative = "less")
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK1$LAB
+# W = 0.94629, p-value = 0.0007958
+
+# BEHAV
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK1_M4CID0$BEHAV,30))
+sample2<-data.frame(sample(data_SCHOOL1_RANK1_M4CID1$BEHAV,30))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK1_M4CID0.BEHAV..30.,sample2$sample.data_SCHOOL1_RANK1_M4CID1.BEHAV..30.,method="kendall",exact = FALSE)
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK1_M4CID0.BEHAV..30. and sample2$sample.data_SCHOOL1_RANK1_M4CID1.BEHAV..30.
+# z = -1.3245, p-value = 0.1853
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.1739132 
+#sample independent
+hist(data_SCHOOL1_RANK1$BEHAV)
+qqnorm(data_SCHOOL1_RANK1$BEHAV)
+qqline(data_SCHOOL1_RANK1$BEHAV)
+ks.test(data_SCHOOL1_RANK1$BEHAV,dnorm(mean(data_SCHOOL1_RANK1$BEHAV),sd(data_SCHOOL1_RANK1$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK1$BEHAV and dnorm(mean(data_SCHOOL1_RANK1$BEHAV), sd(data_SCHOOL1_RANK1$BEHAV))
+# D = 1, p-value = 0.02128
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK1$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK1$BEHAV
+# W = 0.9841, p-value = 0.3199
+#conclusion: normal
+ggplot(data_SCHOOL1_RANK1) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
+median(data_SCHOOL1_RANK1_M4CID0$BEHAV)#65
+median(data_SCHOOL1_RANK1_M4CID1$BEHAV)#53
+wilcox.test(data_SCHOOL1_RANK1_M4CID0$BEHAV,data_SCHOOL1_RANK1_M4CID1$BEHAV,alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_RANK1_M4CID0$BEHAV and data_SCHOOL1_RANK1_M4CID1$BEHAV
+# W = 1435, p-value = 0.0008741
+# alternative hypothesis: true location shift is greater than 0
+
+# CLASS
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK1_M4CID0$CLASS,30))
+sample2<-data.frame(sample(data_SCHOOL1_RANK1_M4CID1$CLASS,30))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK1_M4CID0.CLASS..30.,sample2$sample.data_SCHOOL1_RANK1_M4CID1.CLASS..30.,method="kendall",exact = FALSE)
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK1_M4CID0.CLASS..30. and sample2$sample.data_SCHOOL1_RANK1_M4CID1.CLASS..30.
+# z = 0.62483, p-value = 0.5321
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.08083141 
+hist(data_SCHOOL1_RANK1$CLASS)
+qqnorm(data_SCHOOL1_RANK1$CLASS)
+qqline(data_SCHOOL1_RANK1$CLASS)
+ks.test(data_SCHOOL1_RANK1$CLASS,dnorm(mean(data_SCHOOL1_RANK1$CLASS),sd(data_SCHOOL1_RANK1$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK1$CLASS and dnorm(mean(data_SCHOOL1_RANK1$CLASS), sd(data_SCHOOL1_RANK1$CLASS))
+# D = 1, p-value = 0.01064
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK1$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK1$CLASS
+# W = 0.88291, p-value = 5.321e-07
+#conclusion: not normal
+ggplot(data_SCHOOL1_RANK1) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
+median(data_SCHOOL1_RANK1_M4CID0$CLASS)#39
+median(data_SCHOOL1_RANK1_M4CID1$CLASS)#38
+wilcox.test(data_SCHOOL1_RANK1_M4CID0$CLASS,data_SCHOOL1_RANK1_M4CID1$CLASS,alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_RANK1_M4CID0$CLASS and data_SCHOOL1_RANK1_M4CID1$CLASS
+# W = 1173, p-value = 0.142
+# alternative hypothesis: true location shift is greater than 0
+
+#RANK 2
+data_SCHOOL1_RANK2 <- filter(data_SCHOOL1,RANK=="2") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
+data_SCHOOL1_RANK2_M4CID0 <- filter(data_SCHOOL1_RANK2, M4CID=="0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
+data_SCHOOL1_RANK2_M4CID1 <- filter(data_SCHOOL1_RANK2, M4CID=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
+summary(data_SCHOOL1_RANK2_M4CID0)
+length(data_SCHOOL1_RANK2_M4CID0$ID)#224
+length(data_SCHOOL1_RANK2_M4CID1$ID)#376
+
+# TEST
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK2_M4CID0$TEST,200))
+sample2<-data.frame(sample(data_SCHOOL1_RANK2_M4CID1$TEST,200))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK2_M4CID0.TEST..200.,sample2$sample.data_SCHOOL1_RANK2_M4CID1.TEST..200.,method="kendall")
+#KKendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK2_M4CID0.TEST..200. and sample2$sample.data_SCHOOL1_RANK2_M4CID1.TEST..200.
+# z = -0.19579, p-value = 0.8448
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.009561547 
+# sample independent
+hist(data_SCHOOL1_RANK2$TEST)
+qqnorm(data_SCHOOL1_RANK2$TEST)
+qqline(data_SCHOOL1_RANK2$TEST)
+ks.test(data_SCHOOL1_RANK2$TEST,dnorm(mean(data_SCHOOL1_RANK2$TEST),sd(data_SCHOOL1_RANK2$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK2$TEST and dnorm(mean(data_SCHOOL1_RANK2$TEST), sd(data_SCHOOL1_RANK2$TEST))
+# D = 1, p-value = 0.003328
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK2$TEST)
+# Exact two-sample Kolmogorov-Smirnov test
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK2$TEST
+# W = 0.99632, p-value = 0.1806
+#conclusion: normal
+ggplot(data_SCHOOL1_RANK2) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
+median(data_SCHOOL1_RANK2_M4CID0$TEST)#53
+median(data_SCHOOL1_RANK2_M4CID1$TEST)#51
+wilcox.test(data_SCHOOL1_RANK2_M4CID0$TEST,data_SCHOOL1_RANK2_M4CID1$TEST,alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_RANK2_M4CID0$TEST and data_SCHOOL1_RANK2_M4CID1$TEST
+# W = 44638, p-value = 0.1093
+# alternative hypothesis: true location shift is greater than 0
+
+# LAB
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK2_M4CID0$LAB,200))
+sample2<-data.frame(sample(data_SCHOOL1_RANK2_M4CID1$LAB,200))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK2_M4CID0.LAB..200.,sample2$sample.data_SCHOOL1_RANK2_M4CID1.LAB..200.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK2_M4CID0.LAB..200. and sample2$sample.data_SCHOOL1_RANK2_M4CID1.LAB..200.
+# z = 0.96981, p-value = 0.3321
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.04735476 
+#sample independent
+hist(data_SCHOOL1_RANK2$LAB)
+qqnorm(data_SCHOOL1_RANK2$LAB)
+qqline(data_SCHOOL1_RANK2$LAB)
+ks.test(data_SCHOOL1_RANK2$LAB,dnorm(mean(data_SCHOOL1_RANK2$LAB),sd(data_SCHOOL1_RANK2$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK2$LAB and dnorm(mean(data_SCHOOL1_RANK2$LAB), sd(data_SCHOOL1_RANK2$LAB))
+# D = 0.99667, p-value = 0.006656
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK2$LAB)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK2$LAB
+# W = 0.97051, p-value = 1.262e-09
+#conclusion: not normal
+ggplot(data_SCHOOL1_RANK2) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
+median(data_SCHOOL1_RANK2_M4CID0$LAB)#51
+median(data_SCHOOL1_RANK2_M4CID1$LAB)#60
+wilcox.test(data_SCHOOL1_RANK2_M4CID0$LAB,data_SCHOOL1_RANK2_M4CID1$LAB,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_RANK2_M4CID0$LAB and data_SCHOOL1_RANK2_M4CID1$LAB
+# W = 27436, p-value = 4.39e-13
+# alternative hypothesis: true location shift is less than 0
+
+# BEHAV
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK2_M4CID0$BEHAV,200))
+sample2<-data.frame(sample(data_SCHOOL1_RANK2_M4CID1$BEHAV,200))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK2_M4CID0.BEHAV..200.,sample2$sample.data_SCHOOL1_RANK2_M4CID1.BEHAV..200.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK2_M4CID0.BEHAV..200. and sample2$sample.data_SCHOOL1_RANK2_M4CID1.BEHAV..200.
+# z = 0.075125, p-value = 0.9401
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.003660025 
+#sample independent
+hist(data_SCHOOL1_RANK2$BEHAV)
+qqnorm(data_SCHOOL1_RANK2$BEHAV)
+qqline(data_SCHOOL1_RANK2$BEHAV)
+ks.test(data_SCHOOL1_RANK2$BEHAV,dnorm(mean(data_SCHOOL1_RANK2$BEHAV),sd(data_SCHOOL1_RANK2$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK2$BEHAV and dnorm(mean(data_SCHOOL1_RANK2$BEHAV), sd(data_SCHOOL1_RANK2$BEHAV))
+# D = 1, p-value = 0.001664
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK2$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK2$BEHAV
+# W = 0.97972, p-value = 2.177e-07
+#conclusion: not normal
+ggplot(data_SCHOOL1_RANK2) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
+median(data_SCHOOL1_RANK2_M4CID0$BEHAV)#80
+median(data_SCHOOL1_RANK2_M4CID1$BEHAV)#72
+wilcox.test(data_SCHOOL1_RANK2_M4CID0$BEHAV,data_SCHOOL1_RANK2_M4CID1$BEHAV,alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_RANK2_M4CID0$BEHAV and data_SCHOOL1_RANK2_M4CID1$BEHAV
+# W = 55922, p-value = 8.72e-12
+# alternative hypothesis: true location shift is greater than 0
+
+# CLASS
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK2_M4CID0$CLASS,200))
+sample2<-data.frame(sample(data_SCHOOL1_RANK2_M4CID1$CLASS,200))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK2_M4CID0.CLASS..200.,sample2$sample.data_SCHOOL1_RANK2_M4CID1.CLASS..200.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK2_M4CID0.CLASS..200. and sample2$sample.data_SCHOOL1_RANK2_M4CID1.CLASS..200.
+# z = 0.51255, p-value = 0.6083
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.02445235 
+hist(data_SCHOOL1_RANK2$CLASS)
+qqnorm(data_SCHOOL1_RANK2$CLASS)
+qqline(data_SCHOOL1_RANK2$CLASS)
+ks.test(data_SCHOOL1_RANK2$CLASS,dnorm(mean(data_SCHOOL1_RANK2$CLASS),sd(data_SCHOOL1_RANK2$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK2$CLASS and dnorm(mean(data_SCHOOL1_RANK2$CLASS), sd(data_SCHOOL1_RANK2$CLASS))
+# D = 1, p-value = 0.003328
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK2$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK2$CLASS
+# W = 0.96624, p-value = 1.614e-10
+#conclusion: not normal
+ggplot(data_SCHOOL1_RANK2) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
+median(data_SCHOOL1_RANK2_M4CID0$CLASS)#57
+median(data_SCHOOL1_RANK2_M4CID1$CLASS)#58
+wilcox.test(data_SCHOOL1_RANK2_M4CID0$CLASS,data_SCHOOL1_RANK2_M4CID1$CLASS,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_RANK2_M4CID0$CLASS and data_SCHOOL1_RANK2_M4CID1$CLASS
+# W = 40020, p-value = 0.1543
+# alternative hypothesis: true location shift is less than 0
+
+#RANK 3
+data_SCHOOL1_RANK3 <- filter(data_SCHOOL1,RANK=="3") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
+data_SCHOOL1_RANK3_M4CID0 <- filter(data_SCHOOL1_RANK3, M4CID=="0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
+data_SCHOOL1_RANK3_M4CID1 <- filter(data_SCHOOL1_RANK3, M4CID=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
+summary(data_SCHOOL1_RANK3_M4CID0)
+length(data_SCHOOL1_RANK3_M4CID0$ID)#72
+length(data_SCHOOL1_RANK3_M4CID1$ID)#173
+
+# TEST
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK3_M4CID0$TEST,70))
+sample2<-data.frame(sample(data_SCHOOL1_RANK3_M4CID1$TEST,70))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK3_M4CID0.TEST..70.,sample2$sample.data_SCHOOL1_RANK3_M4CID1.TEST..70.,method="kendall")
+#Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK3_M4CID0.TEST..70. and sample2$sample.data_SCHOOL1_RANK3_M4CID1.TEST..70.
+# z = -0.8738, p-value = 0.3822
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.07306728  sample independent
+hist(data_SCHOOL1_RANK3$TEST)
+qqnorm(data_SCHOOL1_RANK3$TEST)
+qqline(data_SCHOOL1_RANK3$TEST)
+ks.test(data_SCHOOL1_RANK3$TEST,dnorm(mean(data_SCHOOL1_RANK3$TEST),sd(data_SCHOOL1_RANK3$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK3$TEST and dnorm(mean(data_SCHOOL1_RANK3$TEST), sd(data_SCHOOL1_RANK3$TEST))
+# D = 1, p-value = 0.004065
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK3$TEST)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK3$TEST
+# W = 0.98815, p-value = 0.04122
+#conclusion: not normal
+ggplot(data_SCHOOL1_RANK3) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
+median(data_SCHOOL1_RANK3_M4CID0$TEST)#78
+median(data_SCHOOL1_RANK3_M4CID1$TEST)#79
+wilcox.test(data_SCHOOL1_RANK3_M4CID0$TEST,data_SCHOOL1_RANK3_M4CID1$TEST,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_RANK3_M4CID0$TEST and data_SCHOOL1_RANK3_M4CID1$TEST
+# W = 6093, p-value = 0.395
+# alternative hypothesis: true location shift is less than 0
+
+# LAB
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK3_M4CID0$LAB,70))
+sample2<-data.frame(sample(data_SCHOOL1_RANK3_M4CID1$LAB,70))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK3_M4CID0.LAB..70.,sample2$sample.data_SCHOOL1_RANK3_M4CID1.LAB..70.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK3_M4CID0.LAB..70. and sample2$sample.data_SCHOOL1_RANK3_M4CID1.LAB..70.
+# z = 0.45751, p-value = 0.6473
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates:tau 0.03836334 
+#sample independent
+hist(data_SCHOOL1_RANK3$LAB)
+qqnorm(data_SCHOOL1_RANK3$LAB)
+qqline(data_SCHOOL1_RANK3$LAB)
+ks.test(data_SCHOOL1_RANK3$LAB,dnorm(mean(data_SCHOOL1_RANK3$LAB),sd(data_SCHOOL1_RANK3$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK3$LAB and dnorm(mean(data_SCHOOL1_RANK3$LAB), sd(data_SCHOOL1_RANK3$LAB))
+# D = 1, p-value = 0.004065
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK3$LAB)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK3$LAB
+# W = 0.95511, p-value = 6.733e-07
+#conclusion: not normal
+ggplot(data_SCHOOL1_RANK3) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
+median(data_SCHOOL1_RANK3_M4CID0$LAB)#74
+median(data_SCHOOL1_RANK3_M4CID1$LAB)#81
+wilcox.test(data_SCHOOL1_RANK3_M4CID0$LAB,data_SCHOOL1_RANK3_M4CID1$LAB,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_RANK3_M4CID0$LAB and data_SCHOOL1_RANK3_M4CID1$LAB
+# W = 3938, p-value = 2.886e-06
+# alternative hypothesis: true location shift is less than 0
+
+# BEHAV
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK3_M4CID0$BEHAV,70))
+sample2<-data.frame(sample(data_SCHOOL1_RANK3_M4CID1$BEHAV,70))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK3_M4CID0.BEHAV..70.,sample2$sample.data_SCHOOL1_RANK3_M4CID1.BEHAV..70.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK3_M4CID0.BEHAV..70. and sample2$sample.data_SCHOOL1_RANK3_M4CID1.BEHAV..70.
+# z = -1.7015, p-value = 0.08885
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.1456001 
+#sample independent
+hist(data_SCHOOL1_RANK3$BEHAV)
+qqnorm(data_SCHOOL1_RANK3$BEHAV)
+qqline(data_SCHOOL1_RANK3$BEHAV)
+ks.test(data_SCHOOL1_RANK3$BEHAV,dnorm(mean(data_SCHOOL1_RANK3$BEHAV),sd(data_SCHOOL1_RANK3$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK3$BEHAV and dnorm(mean(data_SCHOOL1_RANK3$BEHAV), sd(data_SCHOOL1_RANK3$BEHAV))
+# D = 1, p-value = 0.004065
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK3$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK3$BEHAV
+# W = 0.9271, p-value = 1.263e-09
+#conclusion: not normal
+ggplot(data_SCHOOL1_RANK3) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
+median(data_SCHOOL1_RANK3_M4CID0$BEHAV)#94
+median(data_SCHOOL1_RANK3_M4CID1$BEHAV)#88
+wilcox.test(data_SCHOOL1_RANK3_M4CID0$BEHAV,data_SCHOOL1_RANK3_M4CID1$BEHAV,alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_RANK3_M4CID0$BEHAV and data_SCHOOL1_RANK3_M4CID1$BEHAV
+# W = 8170.5, p-value = 5.982e-05
+# alternative hypothesis: true location shift is greater than 0
+
+# CLASS
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_RANK3_M4CID0$CLASS,70))
+sample2<-data.frame(sample(data_SCHOOL1_RANK3_M4CID1$CLASS,70))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_RANK3_M4CID0.CLASS..70.,sample2$sample.data_SCHOOL1_RANK3_M4CID1.CLASS..70.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_RANK3_M4CID0.CLASS..70. and sample2$sample.data_SCHOOL1_RANK3_M4CID1.CLASS..70.
+# z = 0.49191, p-value = 0.6228
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.04034947 
+hist(data_SCHOOL1_RANK3$CLASS)
+qqnorm(data_SCHOOL1_RANK3$CLASS)
+qqline(data_SCHOOL1_RANK3$CLASS)
+ks.test(data_SCHOOL1_RANK3$CLASS,dnorm(mean(data_SCHOOL1_RANK3$CLASS),sd(data_SCHOOL1_RANK3$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_RANK3$CLASS and dnorm(mean(data_SCHOOL1_RANK3$CLASS), sd(data_SCHOOL1_RANK3$CLASS))
+# D = 1, p-value = 0.00813
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_RANK3$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_RANK3$CLASS
+# W = 0.93556, p-value = 7.021e-09
+#conclusion: not normal
+ggplot(data_SCHOOL1_RANK3) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
+median(data_SCHOOL1_RANK3_M4CID0$CLASS)#76
+median(data_SCHOOL1_RANK3_M4CID1$CLASS)#79
+wilcox.test(data_SCHOOL1_RANK3_M4CID0$CLASS,data_SCHOOL1_RANK3_M4CID1$CLASS,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_RANK3_M4CID0$CLASS and data_SCHOOL1_RANK3_M4CID1$CLASS
+# W = 5130.5, p-value = 0.01497
+# alternative hypothesis: true location shift is less than 0
+
+#This RANK analysis uses school 1 and junior grade sample only
 summary(data)
 data_JUNIOR_SCHOOL1<-filter(data,GRADE <="2" & SCHOOL == "1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 head(data_JUNIOR_SCHOOL1)
@@ -1996,70 +2726,85 @@ data_JUNIOR_SCHOOL1$RANK <-
          ifelse((data_JUNIOR_SCHOOL1$CLASS >45 & data_JUNIOR_SCHOOL1$CLASS<70), 2,
                 ifelse(data_JUNIOR_SCHOOL1$CLASS >=70, 3,NA)))
 summary(data_JUNIOR_SCHOOL1)
-length(data_JUNIOR_SCHOOL1$ID)#759 entrances
-length(which(data_JUNIOR_SCHOOL1$RANK=="1"))#98
-length(which(data_JUNIOR_SCHOOL1$RANK=="1"))/length(data_JUNIOR_SCHOOL1$ID)#13%
-length(which(data_JUNIOR_SCHOOL1$RANK=="2"))#453
-length(which(data_JUNIOR_SCHOOL1$RANK=="2"))/length(data_JUNIOR_SCHOOL1$ID)#60%
-length(which(data_JUNIOR_SCHOOL1$RANK=="3"))#208
+length(data_JUNIOR_SCHOOL1$ID)#683 entrances
+length(which(data_JUNIOR_SCHOOL1$RANK=="1"))#77
+length(which(data_JUNIOR_SCHOOL1$RANK=="1"))/length(data_JUNIOR_SCHOOL1$ID)#11%
+length(which(data_JUNIOR_SCHOOL1$RANK=="2"))#421
+length(which(data_JUNIOR_SCHOOL1$RANK=="2"))/length(data_JUNIOR_SCHOOL1$ID)#62%
+length(which(data_JUNIOR_SCHOOL1$RANK=="3"))#185
 length(which(data_JUNIOR_SCHOOL1$RANK=="3"))/length(data_JUNIOR_SCHOOL1$ID)#27%
 
-#RANK 1, 98,13%
-#RANK 2, 453, 60%
-#RANK 3, 208, 27% 
+#RANK 1, 77, 11%
+#RANK 2, 421, 62%
+#RANK 3, 185, 27% 
 
 #RANK 1
 data_JUNIOR_SCHOOL1_RANK1 <- filter(data_JUNIOR_SCHOOL1,RANK=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
 data_JUNIOR_SCHOOL1_RANK1_M4CID0 <- filter(data_JUNIOR_SCHOOL1_RANK1, M4CID=="0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
 data_JUNIOR_SCHOOL1_RANK1_M4CID1 <- filter(data_JUNIOR_SCHOOL1_RANK1, M4CID=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
 summary(data_JUNIOR_SCHOOL1_RANK1_M4CID0)
-length(data_JUNIOR_SCHOOL1_RANK1_M4CID0$ID)#57
-length(data_JUNIOR_SCHOOL1_RANK1_M4CID1$ID)#41, note: under 100 sample entrances
+length(data_JUNIOR_SCHOOL1_RANK1_M4CID0$ID)#55
+length(data_JUNIOR_SCHOOL1_RANK1_M4CID1$ID)#22
+#note: under 100 sample entrances
 
 # TEST
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID0$TEST,40))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID1$TEST,40))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID0$TEST,20))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID1$TEST,20))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.TEST..40.,sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.TEST..40.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.TEST..20.,sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.TEST..20.,method="kendall",exact = FALSE)
 #Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.TEST..40. and sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.TEST..40.
-# z = -1.4512, p-value = 0.1467
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.TEST..20. and sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.TEST..20.
+# z = 1.0433, p-value = 0.2968
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.1642386
+# sample estimates: tau 0.1720455 
 # independent!
 
 hist(data_JUNIOR_SCHOOL1_RANK1$TEST)
 qqnorm(data_JUNIOR_SCHOOL1_RANK1$TEST)
 qqline(data_JUNIOR_SCHOOL1_RANK1$TEST)
 ks.test(data_JUNIOR_SCHOOL1_RANK1$TEST,dnorm(mean(data_JUNIOR_SCHOOL1_RANK1$TEST),sd(data_JUNIOR_SCHOOL1_RANK1$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK1$TEST and dnorm(mean(data_JUNIOR_SCHOOL1_RANK1$TEST), sd(data_JUNIOR_SCHOOL1_RANK1$TEST))
+# D = 1, p-value = 0.02564
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1_RANK1$TEST)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK1$TEST
+# W = 0.97701, p-value = 0.1764
 #conclusion: not normal
 ggplot(data_JUNIOR_SCHOOL1_RANK1) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
-median(data_JUNIOR_SCHOOL1_RANK1_M4CID0$TEST)#34
-median(data_JUNIOR_SCHOOL1_RANK1_M4CID1$TEST)#29
-wilcox.test(data_JUNIOR_SCHOOL1_RANK1_M4CID0$TEST,data_JUNIOR_SCHOOL1_RANK1_M4CID1$TEST,alternative = "greater")
+median(data_JUNIOR_SCHOOL1_RANK1_M4CID0$TEST)#33
+median(data_JUNIOR_SCHOOL1_RANK1_M4CID1$TEST)#34
+wilcox.test(data_JUNIOR_SCHOOL1_RANK1_M4CID0$TEST,data_JUNIOR_SCHOOL1_RANK1_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK1_M4CID0$TEST and data_JUNIOR_SCHOOL1_RANK1_M4CID1$TEST
-# W = 1513.5, p-value = 0.006511
-# alternative hypothesis: true location shift is greater than 0
+# W = 725, p-value = 0.9131
+# alternative hypothesis: true location shift is less than 0
 
 # LAB
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID0$LAB,40))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID1$LAB,40))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID0$LAB,20))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID1$LAB,20))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.LAB..40.,sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.LAB..40.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.LAB..20.,sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.LAB..20.,method="kendall",exact = FALSE)
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.LAB..40. and sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.LAB..40.
-# z = -0.28178, p-value = 0.7781
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.LAB..20. and sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.LAB..20.
+# z = 1.0203, p-value = 0.3076
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates:tau -0.03221523 
+# sample estimates: tau 0.1722461 
 hist(data_JUNIOR_SCHOOL1_RANK1$LAB)
 qqnorm(data_JUNIOR_SCHOOL1_RANK1$LAB)
 qqline(data_JUNIOR_SCHOOL1_RANK1$LAB)
 ks.test(data_JUNIOR_SCHOOL1_RANK1$LAB,dnorm(mean(data_JUNIOR_SCHOOL1_RANK1$LAB),sd(data_JUNIOR_SCHOOL1_RANK1$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK1$LAB and dnorm(mean(data_JUNIOR_SCHOOL1_RANK1$LAB), sd(data_JUNIOR_SCHOOL1_RANK1$LAB))
+# D = 0.85714, p-value = 0.3077
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1_RANK1$LAB)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK1$LAB
+# W = 0.93202, p-value = 0.0004847
 #conclusion: not normal
 ggplot(data_JUNIOR_SCHOOL1_RANK1) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK1_M4CID0$LAB)#26
@@ -2067,87 +2812,108 @@ median(data_JUNIOR_SCHOOL1_RANK1_M4CID1$LAB)#35
 wilcox.test(data_JUNIOR_SCHOOL1_RANK1_M4CID0$LAB,data_JUNIOR_SCHOOL1_RANK1_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK1_M4CID0$LAB and data_JUNIOR_SCHOOL1_RANK1_M4CID1$LAB
-# W = 720, p-value = 0.0006179
+# W = 346, p-value = 0.001746
 # alternative hypothesis: true location shift is less than 0
 
 # BEHAV
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID0$BEHAV,40))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID1$BEHAV,40))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID0$BEHAV,20))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID1$BEHAV,20))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.BEHAV..40.,sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.BEHAV..40.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.BEHAV..20.,sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.BEHAV..20.,method="kendall",exact = FALSE)
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.BEHAV..40. and sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.BEHAV..40.
-# z = 0.36358, p-value = 0.7162
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.BEHAV..20. and sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.BEHAV..20.
+# z = 1.2731, p-value = 0.203
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.04125851 
+# sample estimates: tau 0.2113891 
 hist(data_JUNIOR_SCHOOL1_RANK1$BEHAV)
 qqnorm(data_JUNIOR_SCHOOL1_RANK1$BEHAV)
 qqline(data_JUNIOR_SCHOOL1_RANK1$BEHAV)
 ks.test(data_JUNIOR_SCHOOL1_RANK1$BEHAV,dnorm(mean(data_JUNIOR_SCHOOL1_RANK1$BEHAV),sd(data_JUNIOR_SCHOOL1_RANK1$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK1$BEHAV and dnorm(mean(data_JUNIOR_SCHOOL1_RANK1$BEHAV), sd(data_JUNIOR_SCHOOL1_RANK1$BEHAV))
+# D = 1, p-value = 0.02564
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1_RANK1$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK1$BEHAV
+# W = 0.98835, p-value = 0.7112
 #conclusion: normal
 ggplot(data_JUNIOR_SCHOOL1_RANK1) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK1_M4CID0$BEHAV)#65
-median(data_JUNIOR_SCHOOL1_RANK1_M4CID1$BEHAV)#50
+median(data_JUNIOR_SCHOOL1_RANK1_M4CID1$BEHAV)#54
 wilcox.test(data_JUNIOR_SCHOOL1_RANK1_M4CID0$BEHAV,data_JUNIOR_SCHOOL1_RANK1_M4CID1$BEHAV,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK1_M4CID0$BEHAV and data_JUNIOR_SCHOOL1_RANK1_M4CID1$BEHAV
-# W = 1757, p-value = 1.125e-05
+# W = 866.5, p-value = 0.001615
 # alternative hypothesis: true location shift is greater than 0
 
 #CLASS
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID0$CLASS,40))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID1$CLASS,40))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID0$CLASS,20))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK1_M4CID1$CLASS,20))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.CLASS..40.,sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.CLASS..40.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.CLASS..20.,sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.CLASS..20.,method="kendall",exact = FALSE)
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.CLASS..40. and sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.CLASS..40.
-# z = -0.86253, p-value = 0.3884
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID0.CLASS..20. and sample2$sample.data_JUNIOR_SCHOOL1_RANK1_M4CID1.CLASS..20.
+# z = -0.35745, p-value = 0.7208
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates:tau -0.09523841
+# sample estimates: tau -0.05835564 
 #independent
 hist(data_JUNIOR_SCHOOL1_RANK1$CLASS)
 qqnorm(data_JUNIOR_SCHOOL1_RANK1$CLASS)
 qqline(data_JUNIOR_SCHOOL1_RANK1$CLASS)
 ks.test(data_JUNIOR_SCHOOL1_RANK1$CLASS,dnorm(mean(data_JUNIOR_SCHOOL1_RANK1$CLASS),sd(data_JUNIOR_SCHOOL1_RANK1$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK1$CLASS and dnorm(mean(data_JUNIOR_SCHOOL1_RANK1$CLASS), sd(data_JUNIOR_SCHOOL1_RANK1$CLASS))
+# D = 1, p-value = 0.01282
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1_RANK1$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK1$CLASS
+# W = 0.89273, p-value = 8.67e-06
 #conclusion: not normal
 ggplot(data_JUNIOR_SCHOOL1_RANK1) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK1_M4CID0$CLASS)#39
-median(data_JUNIOR_SCHOOL1_RANK1_M4CID1$CLASS)#37
+median(data_JUNIOR_SCHOOL1_RANK1_M4CID1$CLASS)#39
 wilcox.test(data_JUNIOR_SCHOOL1_RANK1_M4CID0$CLASS,data_JUNIOR_SCHOOL1_RANK1_M4CID1$CLASS,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK1_M4CID0$CLASS and data_JUNIOR_SCHOOL1_RANK1_M4CID1$CLASS
-# W = 1443.5, p-value = 0.02402
+# W = 720, p-value = 0.09832
 # alternative hypothesis: true location shift is greater than 0
 
 #RANK 2
 data_JUNIOR_SCHOOL1_RANK2 <- filter(data_JUNIOR_SCHOOL1,RANK=="2") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
 data_JUNIOR_SCHOOL1_RANK2_M4CID0 <- filter(data_JUNIOR_SCHOOL1,RANK=="2"& M4CID=="0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
 data_JUNIOR_SCHOOL1_RANK2_M4CID1 <- filter(data_JUNIOR_SCHOOL1,RANK=="2"& M4CID=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
-length(data_JUNIOR_SCHOOL1_RANK2_M4CID0$ID)#250
-length(data_JUNIOR_SCHOOL1_RANK2_M4CID1$ID)#203
+length(data_JUNIOR_SCHOOL1_RANK2_M4CID0$ID)#196
+length(data_JUNIOR_SCHOOL1_RANK2_M4CID1$ID)#225
 
 # TEST
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID0$TEST,200))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID1$TEST,200))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID0$TEST,190))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID1$TEST,190))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.TEST..200.,sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.TEST..200.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.TEST..190.,sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.TEST..190.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.TEST..200. and sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.TEST..200.
-# z = 0.72906, p-value = 0.466
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.TEST..190. and sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.TEST..190.
+# z = 0.73802, p-value = 0.4605
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.03554116 
-# independent
+# sample estimates: tau 0.03689016 
+# sample are independent
 
 hist(data_JUNIOR_SCHOOL1_RANK2$TEST)
 qqnorm(data_JUNIOR_SCHOOL1_RANK2$TEST)
 qqline(data_JUNIOR_SCHOOL1_RANK2$TEST)
 ks.test(data_JUNIOR_SCHOOL1_RANK2$TEST,dnorm(mean(data_JUNIOR_SCHOOL1_RANK2$TEST),sd(data_JUNIOR_SCHOOL1_RANK2$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK2$TEST and dnorm(mean(data_JUNIOR_SCHOOL1_RANK2$TEST), sd(data_JUNIOR_SCHOOL1_RANK2$TEST))
+# D = 1, p-value = 0.004739
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1_RANK2$TEST)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK2$TEST
+# W = 0.99566, p-value = 0.2961
 #conclusion: normal 
 ggplot(data_JUNIOR_SCHOOL1_RANK2) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK2_M4CID0$TEST)#53
@@ -2155,79 +2921,100 @@ median(data_JUNIOR_SCHOOL1_RANK2_M4CID1$TEST)#52
 wilcox.test(data_JUNIOR_SCHOOL1_RANK2_M4CID0$TEST,data_JUNIOR_SCHOOL1_RANK2_M4CID1$TEST,alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK2_M4CID0$TEST and data_JUNIOR_SCHOOL1_RANK2_M4CID1$TEST
-# W = 25922, p-value = 0.3467
+# W = 22974, p-value = 0.2291
 # alternative hypothesis: true location shift is greater than 0
 
 # LAB
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID0$LAB,200))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID1$LAB,200))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID0$LAB,190))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID1$LAB,190))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.LAB..200.,sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.LAB..200.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.LAB..190.,sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.LAB..190.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.LAB..200. and sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.LAB..200.
-# z = -0.74621, p-value = 0.4555
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.LAB..190. and sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.LAB..190.
+# z = 0.7787, p-value = 0.4362
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.0364125 
-#independent
+# sample estimates: tau 0.03905078 
+# sample are independent
 hist(data_JUNIOR_SCHOOL1_RANK2$LAB)
 qqnorm(data_JUNIOR_SCHOOL1_RANK2$LAB)
 qqline(data_JUNIOR_SCHOOL1_RANK2$LAB)
 ks.test(data_JUNIOR_SCHOOL1_RANK2$LAB,dnorm(mean(data_JUNIOR_SCHOOL1_RANK2$LAB),sd(data_JUNIOR_SCHOOL1_RANK2$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK2$LAB and dnorm(mean(data_JUNIOR_SCHOOL1_RANK2$LAB), sd(data_JUNIOR_SCHOOL1_RANK2$LAB))
+# D = 0.99525, p-value = 0.01422
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1_RANK2$LAB)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK2$LAB
+# W = 0.96133, p-value = 4.451e-09
 #conclusion: not normal 
 ggplot(data_JUNIOR_SCHOOL1_RANK2) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK2_M4CID0$LAB)#51
-median(data_JUNIOR_SCHOOL1_RANK2_M4CID1$LAB)#62
+median(data_JUNIOR_SCHOOL1_RANK2_M4CID1$LAB)#61
 wilcox.test(data_JUNIOR_SCHOOL1_RANK2_M4CID0$LAB,data_JUNIOR_SCHOOL1_RANK2_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK2_M4CID0$LAB and data_JUNIOR_SCHOOL1_RANK2_M4CID1$LAB
-# W = 15035, p-value = 4.166e-14
+# W = 13807, p-value = 1.774e-11
 # alternative hypothesis: true location shift is less than 0
 
 # BEHAV
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID0$BEHAV,200))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID1$BEHAV,200))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID0$BEHAV,190))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID1$BEHAV,190))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.BEHAV..200.,sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.BEHAV..200.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.BEHAV..190.,sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.BEHAV..190.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.BEHAV..200. and sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.BEHAV..200.
-# z = 0.25505, p-value = 0.7987
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.BEHAV..190. and sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.BEHAV..190.
+# z = 0.13252, p-value = 0.8946
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.01243584 
-# independent
+# sample estimates: tau 0.006618641 
+# sample are independent
 hist(data_JUNIOR_SCHOOL1_RANK2$BEHAV)
 qqnorm(data_JUNIOR_SCHOOL1_RANK2$BEHAV)
 qqline(data_JUNIOR_SCHOOL1_RANK2$BEHAV)
 ks.test(data_JUNIOR_SCHOOL1_RANK2$BEHAV,dnorm(mean(data_JUNIOR_SCHOOL1_RANK2$BEHAV),sd(data_JUNIOR_SCHOOL1_RANK2$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK2$BEHAV and dnorm(mean(data_JUNIOR_SCHOOL1_RANK2$BEHAV), sd(data_JUNIOR_SCHOOL1_RANK2$BEHAV))
+# D = 1, p-value = 0.00237
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1_RANK2$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK2$BEHAV
+# W = 0.98023, p-value = 1.663e-05
 #conclusion: not normal 
 ggplot(data_JUNIOR_SCHOOL1_RANK2) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK2_M4CID0$BEHAV)#80
-median(data_JUNIOR_SCHOOL1_RANK2_M4CID1$BEHAV)#67
+median(data_JUNIOR_SCHOOL1_RANK2_M4CID1$BEHAV)#72
 wilcox.test(data_JUNIOR_SCHOOL1_RANK2_M4CID0$BEHAV,data_JUNIOR_SCHOOL1_RANK2_M4CID1$BEHAV,alternative = "greater")
-# Wilcoxon rank sum test with continuity correction
+# # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK2_M4CID0$BEHAV and data_JUNIOR_SCHOOL1_RANK2_M4CID1$BEHAV
-# W = 35570, p-value = 9.215e-14
+# W = 29278, p-value = 3.198e-09
 # alternative hypothesis: true location shift is greater than 0
 
 #CLASS
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID0$CLASS,200))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID1$CLASS,200))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID0$CLASS,190))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK2_M4CID1$CLASS,190))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.CLASS..200.,sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.CLASS..200.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.CLASS..190.,sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.CLASS..190.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.CLASS..200. and sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.CLASS..200.
-# z = -0.75983, p-value = 0.4474
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID0.CLASS..190. and sample2$sample.data_JUNIOR_SCHOOL1_RANK2_M4CID1.CLASS..190.
+# z = 0.19511, p-value = 0.8453
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.03623354 
+# sample estimates: tau 0.00955281 
 hist(data_JUNIOR_SCHOOL1_RANK2$CLASS)
 qqnorm(data_JUNIOR_SCHOOL1_RANK2$CLASS)
 qqline(data_JUNIOR_SCHOOL1_RANK2$CLASS)
 ks.test(data_JUNIOR_SCHOOL1_RANK2$CLASS,dnorm(mean(data_JUNIOR_SCHOOL1_RANK2$CLASS),sd(data_JUNIOR_SCHOOL1_RANK2$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK2$CLASS and dnorm(mean(data_JUNIOR_SCHOOL1_RANK2$CLASS), sd(data_JUNIOR_SCHOOL1_RANK2$CLASS))
+# D = 1, p-value = 0.004739
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1_RANK2$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK2$CLASS
+# W = 0.96837, p-value = 6.776e-08
 #conclusion: not normal 
 ggplot(data_JUNIOR_SCHOOL1_RANK2) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK2_M4CID0$CLASS)#57
@@ -2235,113 +3022,141 @@ median(data_JUNIOR_SCHOOL1_RANK2_M4CID1$CLASS)#58
 wilcox.test(data_JUNIOR_SCHOOL1_RANK2_M4CID0$CLASS,data_JUNIOR_SCHOOL1_RANK2_M4CID1$CLASS,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK2_M4CID0$CLASS and data_JUNIOR_SCHOOL1_RANK2_M4CID1$CLASS
-# W = 23192, p-value = 0.05766
+# W = 20174, p-value = 0.06598
 # alternative hypothesis: true location shift is less than 0
 
 #RANK 3
 data_JUNIOR_SCHOOL1_RANK3 <- filter(data_JUNIOR_SCHOOL1,RANK=="3") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
 data_JUNIOR_SCHOOL1_RANK3_M4CID0 <- filter(data_JUNIOR_SCHOOL1,RANK=="3"& M4CID=="0") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
 data_JUNIOR_SCHOOL1_RANK3_M4CID1 <- filter(data_JUNIOR_SCHOOL1,RANK=="3"& M4CID=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
-length(data_JUNIOR_SCHOOL1_RANK3_M4CID0$ID)#87
-length(data_JUNIOR_SCHOOL1_RANK3_M4CID1$ID)#121
+length(data_JUNIOR_SCHOOL1_RANK3_M4CID0$ID)#67
+length(data_JUNIOR_SCHOOL1_RANK3_M4CID1$ID)#118
 
 # TEST
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID0$TEST,80))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID1$TEST,80))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID0$TEST,60))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID1$TEST,60))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.TEST..80.,sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.TEST..80.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.TEST..60.,sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.TEST..60.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.TEST..80. and sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.TEST..80.
-# z = -0.37059, p-value = 0.7109
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.TEST..60. and sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.TEST..60.
+# z = 1.0292, p-value = 0.3034
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.02895722 
+# sample estimates: tau 0.09327927 
 # independent
 hist(data_JUNIOR_SCHOOL1_RANK3$TEST)
 qqnorm(data_JUNIOR_SCHOOL1_RANK3$TEST)
 qqline(data_JUNIOR_SCHOOL1_RANK3$TEST)
 ks.test(data_JUNIOR_SCHOOL1_RANK3$TEST,dnorm(mean(data_JUNIOR_SCHOOL1_RANK3$TEST),sd(data_JUNIOR_SCHOOL1_RANK3$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK3$TEST and dnorm(mean(data_JUNIOR_SCHOOL1_RANK3$TEST), sd(data_JUNIOR_SCHOOL1_RANK3$TEST))
+# D = 1, p-value = 0.01075
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1_RANK3$TEST)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK3$TEST
+# W = 0.98645, p-value = 0.07242
 #conclusion: normal 
 ggplot(data_JUNIOR_SCHOOL1_RANK3) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK3_M4CID0$TEST)#79
-median(data_JUNIOR_SCHOOL1_RANK3_M4CID1$TEST)#80
+median(data_JUNIOR_SCHOOL1_RANK3_M4CID1$TEST)#81
 wilcox.test(data_JUNIOR_SCHOOL1_RANK3_M4CID0$TEST,data_JUNIOR_SCHOOL1_RANK3_M4CID1$TEST,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK3_M4CID0$TEST and data_JUNIOR_SCHOOL1_RANK3_M4CID1$TEST
-# W = 5029.5, p-value = 0.2927
+# W = 3832.5, p-value = 0.3658
 # alternative hypothesis: true location shift is less than 0
 
 # LAB
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID0$LAB,80))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID1$LAB,80))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID0$LAB,60))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID1$LAB,60))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.LAB..80.,sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.LAB..80.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.LAB..60.,sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.LAB..60.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.LAB..80. and sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.LAB..80.
-# z = -0.69158, p-value = 0.4892
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.LAB..60. and sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.LAB..60.
+# z = -0.96524, p-value = 0.3344
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau -0.05415192 
+# sample estimates: tau -0.08740956 
 hist(data_JUNIOR_SCHOOL1_RANK3$LAB)
 qqnorm(data_JUNIOR_SCHOOL1_RANK3$LAB)
 qqline(data_JUNIOR_SCHOOL1_RANK3$LAB)
 ks.test(data_JUNIOR_SCHOOL1_RANK3$LAB,dnorm(mean(data_JUNIOR_SCHOOL1_RANK3$LAB),sd(data_JUNIOR_SCHOOL1_RANK3$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK3$LAB and dnorm(mean(data_JUNIOR_SCHOOL1_RANK3$LAB), sd(data_JUNIOR_SCHOOL1_RANK3$LAB))
+# D = 1, p-value = 0.01075
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1_RANK3$LAB)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK3$LAB
+# W = 0.94974, p-value = 4.06e-06
 #conclusion: not normal 
 ggplot(data_JUNIOR_SCHOOL1_RANK3) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK3_M4CID0$LAB)#73
-median(data_JUNIOR_SCHOOL1_RANK3_M4CID1$LAB)#80
+median(data_JUNIOR_SCHOOL1_RANK3_M4CID1$LAB)#81
 wilcox.test(data_JUNIOR_SCHOOL1_RANK3_M4CID0$LAB,data_JUNIOR_SCHOOL1_RANK3_M4CID1$LAB,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK3_M4CID0$LAB and data_JUNIOR_SCHOOL1_RANK3_M4CID1$LAB
-# W = 3358, p-value = 4.243e-06
+# W = 2343.5, p-value = 2.107e-06
 # alternative hypothesis: true location shift is less than 0
 
 # BEHAV
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID0$BEHAV,80))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID1$BEHAV,80))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID0$BEHAV,60))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID1$BEHAV,60))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.BEHAV..80.,sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.BEHAV..80.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.BEHAV..60.,sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.BEHAV..60.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.BEHAV..80. and sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.BEHAV..80.
-# z = 0.86535, p-value = 0.3868
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.BEHAV..60. and sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.BEHAV..60.
+# z = 0.56529, p-value = 0.5719
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.06884236
-#Independency
+# sample estimates: tau 0.05224903 
+# sample independent
 hist(data_JUNIOR_SCHOOL1_RANK3$BEHAV)
 qqnorm(data_JUNIOR_SCHOOL1_RANK3$BEHAV)
 qqline(data_JUNIOR_SCHOOL1_RANK3$BEHAV)
-ks.test(data_JUNIOR_SCHOOL1_RANK3$BEHAV,dnorm(mean(data_SCHOOL1_RANK3$BEHAV),sd(data_SCHOOL1_RANK3$BEHAV)))
+ks.test(data_JUNIOR_SCHOOL1_RANK3$BEHAV,dnorm(mean(data_JUNIOR_SCHOOL1_RANK3$BEHAV),sd(data_JUNIOR_SCHOOL1_RANK3$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK3$BEHAV and dnorm(mean(data_JUNIOR_SCHOOL1_RANK3$BEHAV), sd(data_JUNIOR_SCHOOL1_RANK3$BEHAV))
+# D = 1, p-value = 0.005376
+# alternative hypothesis: two-sided
 shapiro.test(data_JUNIOR_SCHOOL1_RANK3$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK3$BEHAV
+# W = 0.91126, p-value = 4.092e-09
 #conclusion: not normal 
 ggplot(data_JUNIOR_SCHOOL1_RANK3) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK3_M4CID0$BEHAV)#94
-median(data_JUNIOR_SCHOOL1_RANK3_M4CID1$BEHAV)#90
+median(data_JUNIOR_SCHOOL1_RANK3_M4CID1$BEHAV)#91
 wilcox.test(data_JUNIOR_SCHOOL1_RANK3_M4CID0$BEHAV,data_JUNIOR_SCHOOL1_RANK3_M4CID1$BEHAV,alternative = "greater")
-# # Wilcoxon rank sum test with continuity correction
+# Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK3_M4CID0$BEHAV and data_JUNIOR_SCHOOL1_RANK3_M4CID1$BEHAV
-# W = 6894, p-value = 6.883e-05
+# W = 4871.5, p-value = 0.004318
 # alternative hypothesis: true location shift is greater than 0
 
 #CLASS
 # independency
-sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID0$CLASS,80))
-sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID1$CLASS,80))
+sample1<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID0$CLASS,60))
+sample2<-data.frame(sample(data_JUNIOR_SCHOOL1_RANK3_M4CID1$CLASS,60))
 #Kendall correlation test
-cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.CLASS..80.,sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.CLASS..80.,method="kendall")
+cor.test(sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.CLASS..60.,sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.CLASS..60.,method="kendall")
 # Kendall's rank correlation tau
-# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.CLASS..80. and sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.CLASS..80.
-# z = 0.41559, p-value = 0.6777
+# data:  sample1$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID0.CLASS..60. and sample2$sample.data_JUNIOR_SCHOOL1_RANK3_M4CID1.CLASS..60.
+# z = -0.43386, p-value = 0.6644
 # alternative hypothesis: true tau is not equal to 0
-# sample estimates: tau 0.0317865 
-#independent
+# sample estimates: tau -0.03859266 
+# sample independent
 hist(data_JUNIOR_SCHOOL1_RANK3$CLASS)
 qqnorm(data_JUNIOR_SCHOOL1_RANK3$CLASS)
 qqline(data_JUNIOR_SCHOOL1_RANK3$CLASS)
 ks.test(data_JUNIOR_SCHOOL1_RANK3$CLASS,dnorm(mean(data_JUNIOR_SCHOOL1_RANK3$CLASS),sd(data_JUNIOR_SCHOOL1_RANK3$CLASS)))
-shapiro.test(data_JUNIOR_SCHOOL1_RANK3$CLASS)
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_JUNIOR_SCHOOL1_RANK3$CLASS and dnorm(mean(data_JUNIOR_SCHOOL1_RANK3$CLASS), sd(data_JUNIOR_SCHOOL1_RANK3$CLASS))
+# D = 1, p-value = 0.01075
+# alternative hypothesis: two-sided
+# shapiro.test(data_JUNIOR_SCHOOL1_RANK3$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_JUNIOR_SCHOOL1_RANK3$CLASS
+# W = 0.93836, p-value = 4.123e-07
 #conclusion: not normal 
 ggplot(data_JUNIOR_SCHOOL1_RANK3) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK3_M4CID0$CLASS)#77
@@ -2349,41 +3164,39 @@ median(data_JUNIOR_SCHOOL1_RANK3_M4CID1$CLASS)#81
 wilcox.test(data_JUNIOR_SCHOOL1_RANK3_M4CID0$CLASS,data_JUNIOR_SCHOOL1_RANK3_M4CID1$CLASS,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK3_M4CID0$CLASS and data_JUNIOR_SCHOOL1_RANK3_M4CID1$CLASS
-# W = 4495, p-value = 0.03643
+# W = 3088.5, p-value = 0.006789
 # alternative hypothesis: true location shift is less than 0
 
 # Table 17: Inference for junior school 1, RANK 1, 2, 3
 
 #Conclusion
-# RANK 1: negative effect for TEST, BEHAV, CLASS and positive on LAB
-# RANK 2: no effect for TEST and CLASS, positive for LAB, negative on BEHAV
-# RANK 3: no effect for TEST, negative for BEHAV and positive for LAB and CLASS
-# Only RANK 3, the more adapted, benefit more with the 4CID methodology
-# RANK 1 and 2, the less adapted benefit only on the LAB variable;
+# RANK 1, 2 and 3, same results: no effect for TEST and CLASS, negative for BEHAV, and positive on LAB
 
 ########## GENDER
 #This analysis uses school 1 and junior grade sample
 data_junior_SCHOOL1<-filter(data,GRADE <="2" & SCHOOL=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 data_junior_SCHOOL1_FEMALE<-filter(data,GRADE<="2" & SCHOOL=="1",GENDER=="F") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 data_junior_SCHOOL1_MALE<-filter(data,GRADE<="2" & SCHOOL=="1",GENDER=="M") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
-data_junior_SCHOOL1_M4CID0_MALE<-filter(data,GRADE >="0" & GRADE <="2" & SCHOOL=="1" & M4CID =="0"  & GENDER == "M") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
-data_junior_SCHOOL1_M4CID0_FEMALE<-filter(data,GRADE >="0" & GRADE <="2" & SCHOOL=="1" & M4CID =="0" & GENDER == "F") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
-data_junior_SCHOOL1_M4CID1_MALE<-filter(data,GRADE >="0" & GRADE <="2" & SCHOOL=="1" & M4CID =="1"  & GENDER == "M") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
-data_junior_SCHOOL1_M4CID1_FEMALE<-filter(data,GRADE >="0" & GRADE <="2" & SCHOOL=="1" & M4CID =="1" & GENDER == "F") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_junior_SCHOOL1_M4CID0_MALE<-filter(data,GRADE <="2" & SCHOOL=="1" & M4CID =="0"  & GENDER == "M") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_junior_SCHOOL1_M4CID0_FEMALE<-filter(data,GRADE<="2" & SCHOOL=="1" & M4CID =="0" & GENDER == "F") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_junior_SCHOOL1_M4CID1_MALE<-filter(data, GRADE <="2" & SCHOOL=="1" & M4CID =="1"  & GENDER == "M") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_junior_SCHOOL1_M4CID1_FEMALE<-filter(data,GRADE <="2" & SCHOOL=="1" & M4CID =="1" & GENDER == "F") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 
 summary(data_junior_SCHOOL1)
-length(data_junior_SCHOOL1$ID)
-length(which(data_junior_SCHOOL1$GENDER=="F"))
-length(which(data_junior_SCHOOL1$GENDER=="M"))
-length(which(data_junior_SCHOOL1$GENDER=="F"))/length(data_junior_SCHOOL1$ID)
-length(which(data_junior_SCHOOL1$GENDER=="M"))/length(data_junior_SCHOOL1$ID)
-length(data_junior_SCHOOL1_M4CID0_FEMALE$ID)#191
-length(data_junior_SCHOOL1_M4CID1_FEMALE$ID)#169
-length(data_junior_SCHOOL1_M4CID0_MALE$ID)#203
-length(data_junior_SCHOOL1_M4CID1_MALE$ID)#196
+length(data_junior_SCHOOL1$ID)#683
+length(which(data_junior_SCHOOL1$GENDER=="F"))#326
+length(which(data_junior_SCHOOL1$GENDER=="M"))#357
+length(which(data_junior_SCHOOL1$GENDER=="F"))/length(data_junior_SCHOOL1$ID)#48%
+length(which(data_junior_SCHOOL1$GENDER=="M"))/length(data_junior_SCHOOL1$ID)#52%
+length(data_junior_SCHOOL1_M4CID0_FEMALE$ID)#160
+length(data_junior_SCHOOL1_M4CID1_FEMALE$ID)#166
+length(data_junior_SCHOOL1_M4CID0_MALE$ID)#158
+length(data_junior_SCHOOL1_M4CID1_MALE$ID)#199
 
-#sample entries: 759; Female = 360 (47%); Male=399 53%();
-#data sample not normal but independet
+#sample entries: 783; Female = 326 (48%); Male=357 52%();
+# female: M4CID0 = 160; M4CID1=166
+# male: M4CID0 = 158; M4CID1=199
+#data sample not normal but independent
 
 #TEST
 # independency
@@ -2406,21 +3219,21 @@ cor.test(sample3$sample.data_junior_SCHOOL1_M4CID0_MALE.TEST..150.,sample4$sampl
 # alternative hypothesis: true tau is not equal to 0
 # sample estimates: tau 0.03126279
 # samples are independent
-p60<-ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=TEST, linetype = factor(GENDER)))
+ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=TEST, linetype = factor(GENDER)))
 median(data_junior_SCHOOL1_M4CID0_FEMALE$TEST)#54
 median(data_junior_SCHOOL1_M4CID1_FEMALE$TEST)#61
 median(data_junior_SCHOOL1_M4CID0_MALE$TEST)#54
-median(data_junior_SCHOOL1_M4CID1_MALE$TEST)#56
+median(data_junior_SCHOOL1_M4CID1_MALE$TEST)#57
 #It seems that the female benefit, less impact on male
 wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$TEST,data_junior_SCHOOL1_M4CID1_MALE$TEST, alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_MALE$TEST and data_junior_SCHOOL1_M4CID1_MALE$TEST
-# W = 19379, p-value = 0.3275
+# W = 14188, p-value = 0.05675
 # alternative hypothesis: true location shift is less than 0
 wilcox.test(data_junior_SCHOOL1_M4CID0_FEMALE$TEST,data_junior_SCHOOL1_M4CID1_FEMALE$TEST, alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_FEMALE$TEST and data_junior_SCHOOL1_M4CID1_FEMALE$TEST
-# W = 13462, p-value = 0.003293
+# W = 10924, p-value = 0.002804
 # alternative hypothesis: true location shift is less than 0
 
 #LAB
@@ -2443,22 +3256,22 @@ cor.test(sample3$sample.data_junior_SCHOOL1_M4CID0_MALE.LAB..150.,sample4$sample
 # alternative hypothesis: true tau is not equal to 0
 # sample estimates: tau 0.07271416 
 # samples are independent
-median(data_junior_SCHOOL1_M4CID0_FEMALE$LAB)#52
+median(data_junior_SCHOOL1_M4CID0_FEMALE$LAB)#50
 median(data_junior_SCHOOL1_M4CID1_FEMALE$LAB)#70
 median(data_junior_SCHOOL1_M4CID0_MALE$LAB)#53
-median(data_junior_SCHOOL1_M4CID1_MALE$LAB)#62
+median(data_junior_SCHOOL1_M4CID1_MALE$LAB)#61
 #It seems that the female benefit, less impact on male
-p61<-ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=LAB, linetype = factor(GENDER)))
+ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=LAB, linetype = factor(GENDER)))
 #It seems that both male/female benefit
 wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$LAB,data_junior_SCHOOL1_M4CID1_MALE$LAB, alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_MALE$LAB and data_junior_SCHOOL1_M4CID1_MALE$LAB
-# W = 15124, p-value = 1.716e-05
+# W = 11162, p-value = 1.249e-06
 # alternative hypothesis: true location shift is less than 0
 wilcox.test(data_junior_SCHOOL1_M4CID0_FEMALE$LAB,data_junior_SCHOOL1_M4CID1_FEMALE$LAB, alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_FEMALE$LAB and data_junior_SCHOOL1_M4CID1_FEMALE$LAB
-# W = 7745, p-value < 2.2e-16
+# W = 5499.5, p-value < 2.2e-16
 # alternative hypothesis: true location shift is less than 0
 
 #BEHAV
@@ -2483,21 +3296,21 @@ cor.test(sample3$sample.data_junior_SCHOOL1_M4CID0_MALE.BEHAV..150.,sample4$samp
 # sample estimates: tau 0.01941931 
 # sampleas are independent
 median(data_junior_SCHOOL1_M4CID0_FEMALE$BEHAV)#82
-median(data_junior_SCHOOL1_M4CID1_FEMALE$BEHAV)#81
-median(data_junior_SCHOOL1_M4CID0_MALE$BEHAV)#81
-median(data_junior_SCHOOL1_M4CID1_MALE$BEHAV)#66
-p62<-ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=BEHAV, linetype = factor(GENDER)))
+median(data_junior_SCHOOL1_M4CID1_FEMALE$BEHAV)#82
+median(data_junior_SCHOOL1_M4CID0_MALE$BEHAV)#80
+median(data_junior_SCHOOL1_M4CID1_MALE$BEHAV)#72
+ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=BEHAV, linetype = factor(GENDER)))
 #It seems that the male/female don't benefit, male is worse
 wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$BEHAV,data_junior_SCHOOL1_M4CID1_MALE$BEHAV, alternative = "greater")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_MALE$BEHAV and data_junior_SCHOOL1_M4CID1_MALE$BEHAV
-# W = 27558, p-value = 1.402e-11
+# W = 19768, p-value = 1.463e-05
 # alternative hypothesis: true location shift is greater than 0
-wilcox.test(data_junior_SCHOOL1_M4CID0_FEMALE$BEHAV,data_junior_SCHOOL1_M4CID1_FEMALE$BEHAV, alternative = "greater")
-# #Wilcoxon rank sum test with continuity correction
+wilcox.test(data_junior_SCHOOL1_M4CID0_FEMALE$BEHAV,data_junior_SCHOOL1_M4CID1_FEMALE$BEHAV, alternative = "two.sided")
+# Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_FEMALE$BEHAV and data_junior_SCHOOL1_M4CID1_FEMALE$BEHAV
-# W = 17146, p-value = 0.1534
-# alternative hypothesis: true location shift is greater than 0
+# W = 13459, p-value = 0.8337
+# alternative hypothesis: true location shift is not equal to 0
 
 #CLASS
 #Independency
@@ -2520,34 +3333,61 @@ cor.test(sample3$sample.data_junior_SCHOOL1_M4CID0_MALE.CLASS..150.,sample4$samp
 # alternative hypothesis: true tau is not equal to 0
 # sample estimates: tau 0.02490928 
 #samples are independent
-median(data_junior_SCHOOL1_M4CID0_FEMALE$CLASS)#59
+median(data_junior_SCHOOL1_M4CID0_FEMALE$CLASS)#58
 median(data_junior_SCHOOL1_M4CID1_FEMALE$CLASS)#67
-median(data_junior_SCHOOL1_M4CID0_MALE$CLASS)#59
-median(data_junior_SCHOOL1_M4CID1_MALE$CLASS)#59
-p63<-ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=CLASS, linetype = factor(GENDER)))
+median(data_junior_SCHOOL1_M4CID0_MALE$CLASS)#58
+median(data_junior_SCHOOL1_M4CID1_MALE$CLASS)#60
+ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=CLASS, linetype = factor(GENDER)))
 #It seems that the female have more benefit then the male
 wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$CLASS,data_junior_SCHOOL1_M4CID1_MALE$CLASS, alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_MALE$CLASS and data_junior_SCHOOL1_M4CID1_MALE$CLASS
-# W = 19177, p-value = 0.5338
+# W = 13812, p-value = 0.04883
 # alternative hypothesis: true location shift is not equal to 0
 wilcox.test(data_junior_SCHOOL1_M4CID0_FEMALE$CLASS,data_junior_SCHOOL1_M4CID1_FEMALE$CLASS, alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_FEMALE$CLASS and data_junior_SCHOOL1_M4CID1_FEMALE$CLASS
-# W = 11344, p-value = 5.695e-07
+# W = 8602.5, p-value = 1.925e-08
 # alternative hypothesis: true location shift is less than 0
 
-# Figure 15: junior sample boxplots for GENDER analysis 
-grid.arrange(p60, p61, p62, p63,  nrow = 2,top="Box plot 4C/ID treatment effect", bottom="Figure 15: junior sample boxplots for GENDER analysis")
+# ???Figure 15: junior sample boxplots for GENDER analysis 
+# ???grid.arrange(p60, p61, p62, p63,  nrow = 2,top="Box plot 4C/ID treatment effect", bottom="Figure 15: junior sample boxplots for GENDER analysis")
 
 # Table 18: Inference sample junior school 1 for GENDER
 
-#Conclusion
-# Male for Test no impact; female positive impact
+# Results
+# Test no impact for male; female positive impact
 # Both benefit in LAB variable
 # In the BEHAV variable negative impact for MALE and no impact for FEMALE
 # positive impact on female Class variable but no impact for the male
-# Female, averall, benefit more
+# Female, averall, benefit more: positive in TEST, LAB and CLASS, no effect on BEHAV
+# MALE: positive impact on LAB and CLASS, negative on BEHAV and no impact on TEST
+
+########## Summary results and notes UPDATE THIS
+
+results <- data.frame(
+  samples=c("Junior/junior high (both schs. sch. 1 only with 4C/ID)","Junior (school effect) sch. 1 only with 4C/ID)","Junior (school effect)","All sample (school effect)","All sample","SCHOOL 1 junior and high junior","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
+  TEST1=c(-68,0,0,0,-62,0,54,0,54,0,-34,0,0,54,0),
+  TEST2=c(-57,0,0,0,-57,0,58,0,58,0,-29,0,0,56,0),
+  LAB1=c(0,62,63,63,60,53,53,56,55,44,26,51,73,52,53),
+  LAB2=c(0,77,77,74,63,63,66,74,68,66,35,62,80,70,72),
+  BEHAV1=c(-68,-77,-70,-78,-79,-81,-81,-77,-85,80,-65,-80,-94,0,-81),
+  BEHAV2=c(-57,-71,-71,-70,-73,-73,-74,-71,-60,85,-50,-67,-90,0,-66),
+  CLASS1=c(-69,0,0,0,-64,59,59,0,0,55,-39, 0,77,59,0),
+  CLASS2=c(-61,0,0,0,-61,61,62,0,0,64,-37, 0,81,67,0)
+)
+
+ggplot(results) +
+  geom_errorbar(aes(x=factor(samples,levels = c("Junior/junior high (both schs. sch. 1 only with 4C/ID)","Junior (school effect) sch. 1 only with 4C/ID)","Junior (school effect)","All sample (school effect)","All sample","SCHOOL 1 junior and high junior","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE")), ymin=TEST1, ymax=TEST2,color='TEST'),width=0.8,alpha=1, size=1) +
+  geom_errorbar(aes(x=samples, ymin=LAB1, ymax=LAB2,color='LAB'), width=0.4, alpha=1, size=1) +
+  geom_errorbar(aes(x=samples, ymin=BEHAV1, ymax=BEHAV2, color='BEHAV'), width=0.4, alpha=1, size=1) +
+  geom_errorbar(aes(x=samples, ymin=CLASS1, ymax=CLASS2, color='CLASS'), width=0.4, alpha=1, size=1) +
+  xlab("Samples")+labs(title="4C/ID treatment effect resume results",y="4C/ID negative effect, no effect, 4C/ID positive effect")+
+  scale_color_manual(name='Variables',
+                     breaks=c('TEST','LAB', 'BEHAV', 'CLASS'),
+                     values=c('TEST'='red', 'LAB'='blue', 'BEHAV'='green', 'CLASS'='yellow'))+
+  
+  coord_flip(ylim = c(-100,100))
 
 ########## REGRESSION ANALYSIS
 
@@ -2685,184 +3525,6 @@ plot(x,y)
 rdrobust(y,x)
 rdplot(y,x)
 
-########## Summary results and notes
-
-# The main goal is to understand the impact of the use of Inductive Methodology 4C/ID by answering the questions: 
-#   1 - changing the learning methodologies from one mainly deductive (Direct Instruction[^1]) to another one mostly inductive (4C/ID [^2]), means what for your students? Who benefits? What are the pros and cons about this methodological decision?
-#   2 - Should you, as a teacher of science and tech, move to implement the inductive strategy as your methodology for learning? 
-#   3 - And if you do, what are the outcomes? What are the risks? What were the consequences for the student's academic results? 
-#   4 - Is there a different impact between female and male? 
-#   5 - And within the different grades?
-#   6 - Student more adapted to school have benefit more with the use of 4CID methodology?
-
-# sample are independent, and genneraly not normal
-
-# conclusion: 
-# It seems that the 4CID effect is not positive for all the variables neither for the overall perspective 
-# it seems that school 0 as better TEST grades them school 2, while there a jump when the 4CID is implemented;
-# That is not so obvious for the LAB variable. Clearly that the BEHAV variable suuffers a loss with the implementation of 4CID. 
-# for the CLASS variable, after a positive effect it goes down, perhaps following the BEHAV variable
-# Only the LAB variable show an increase. The red dot and the skewness showed in figure 7, 
-# show that could be no positive overall 4C/ID effect and the sample are not normal, which corroborate 
-# upper analysis
-
-#Conclusion: overall, over time, it seems that there is a negative 4C/ID effect. 
-#However, R^2 values are very weak. It can be seen that a school effect could be undeway
-
-# conclusion: these R2 low doesn't mean that the variables are dependent nor the 
-# There is some degree of correlation that doesn't permit to conclude of the variable dependency
-# The clear correlation between TEST and CLASS variable show that they are dependent and
-# Kendal correlation test corroborates that variables are dependent but with a levell degree 
-#arround 20 to 40%: not high; meaning that the way the variables are assessed are different. They correlate,
-# but at a low levell, showing a bad levell, which means that they were assessed with different techniques.
-# the class test correlation is just a refence that we know, in advance, that there is a math relationship
-
-#conclusion: data seems to be not normal, except the CLASS variable
-
-#conclusion: sample data don't behav as a normal distribution under both tests, nor if we
-#do the same analysis for the school 0 and shcool 1. Meaning that we should use a non-parametric 
-#hyphotesis testing stats
-
-# Conclusions diferent SAMPLES for the 4C/ID treatment effect
-
-#conclusion: sample data don't behav as a normal distribution under both tests, nor if we
-#do the same analysis for the school 0 and shcool 1. Meaning that we should use a non-parametric 
-#hyphotesis testing stats
-
-#Inference conclusion for the 4C/ID treatment effect for all sample, 
-#no matter which school, for each data variables: TEST, LAB and BEHAV
-# Samples are independent, Wilcoxon inference non-parametric test
-# for the global TEST, BEHAV and CLASS variables, negative 4CID effect;
-# LAB variable, positive effect
-
-#Hypothesis: does the patterns showned in the last graphs where there was a negative bump during the transition to the second 
-#between the schools showed earlier in the graphs should be considered?
-#Is there a school effect on the results?
-#should the data between schools in the same 4CID conditions 0 be assessed? yes,
-#but only the junior school should be compared
-#we should use the CLASS to study the differences between schools and not the other
-#variables; if we use the variable because it is a math relation qith the others
-# just with class variable
-
-
-# Conclusion
-#Variable TEST, LAB, CLASS greater in school 0 then in school 1
-#Variable BEHAV is less for the School 0 then in the school 1
-# So, this pivotal moment, take this research to consider that 
-#there is a school effect, that biased all variables, in the negative way except
-#for the BEHAV variable, in the positive way for school 1. So this is going to be restricted to school 1:
-# it is considered an analysis for the school 1 as a global data sample,
-# and an analysis only at the junior level in school 1. Secondary school wil 
-#not be analized because there is no scondary sample with no 4CID.  
-
-## SCHOOL efect
-## Inference sample analysis, 4C/ID, taking in account the school effect
-# prepararing the sample to take into account the differences; in the case of TEST, LAB and CLASS, it will
-#be added to the sample of school 1 the differences computed in this variables. In the case of the variable BEHAV, 
-# it will be added to school 0, in order to not create negative numbers, consequently, to keep the variables between 0 and 100;
-#compare data_junior_computed
-#compare samples after the computation explained just now:
-#data_JUNIOR_SCHOOL0 and data_junior_computed_SCHOOL1_M4CID0: are they from the same distribution?
-#Conlusion: yes, they are from the same sample distribution
-# table 11 : computed school differences for the junior sample school 0 and 1 without 4C/ID methodology
-
-# Inference conclusion for computed (school effect) junior differences 4C/ID tretament effec, 
-# Samples: school 0 and school 1 with only 4C/ID
-# TEST and CLASS no effect
-# negative on BEHAV
-# Positive effect for LAB
-
-# Conclusion computed (school effect) differences for junior and junior high school 0 and 1 
-#(exclude school 1 without 4C/ID)
-# TEST, BEHAV and CLASS negative
-# No effect for LAB 
-
-# Conclusions 4C/ID treatment effect with computed samples for the entire sample
-# TEST and CLASS no effect
-# BEHAV negative
-# LAB positive
-
-# 4C/ID tretament effect just for SCHOOL 1 sample
-# sample junior and junior high school 1
-# sample independent, no rejection of h0
-# 4CID as no impact on TEST Variable;
-# 4CID as positive impact in LAB and CLASS Variables;
-# 4CID as a negative impact in BEHAV variable
-
-# sample junior School 1
-# No rejection under H0, sample independent
-# 4CID as a positive impact on TEST, LAB and CLASS Variable;
-# 4CID as a negative impact in BEHAV variable
-
-#Conclusions GRADE
-#samples not normal but independent
-# GRADE 7
-# 4CID has no impact on TEST and CLASS Variables;
-# 4CID has positive impact in LAB Variable;
-# 4CID has a negative impact in BEHAV variable
-
-#GRADE 8
-# Note: M4CID=="1",#71 entrances, less then 100 entrances
-# 4CID has a positive impact on TEST, LAB, 
-# 4CID negative on BEHAV Variable;
-# 4CID has no impact on CLASS
-
-#Grade 9
-# 4CID has no impact on TEST Variable;
-# 4CID has positive impact in LAB, BEHAV and CLASS Variable;
-
-# Conclusion RANK
-
-# RANK 1: negative effect for TEST, BEHAV, CLASS and positive on LAB
-# RANK 2: no effect for TEST and CLASS, positive for LAB, negative on BEHAV
-# RANK 3: no effect for TEST, negative for BEHAV and positive for LAB and CLASS
-# Only RANK 3, the more adapted, benefit more with the 4CID methodology
-# RANK 1 and 2, the less adapted benefit only on the LAB variable;
-
-# Conclusion GENDER
-# Male for Test no impact; female positive impact
-# Both benefit in LAB variable
-# In the BEHAV variable negative impact for MALE and no impact for FEMALE
-# positive impact on female Class variable but no impact for the male
-# Female, averall, benefit more
-
-# Figure 16: overview inference graph analysis results 
-
-# Resume results table to present them in a more readable table
-results <- data.frame(
-  samples=c("Junior/junior high (both schs. sch. 1 only with 4C/ID)","Junior (school effect) sch. 1 only with 4C/ID)","Junior (school effect)","All sample (school effect)","All sample","SCHOOL 1 junior and high junior","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
-  TEST1=c(-68,0,0,0,-62,0,54,0,54,0,-34,0,0,54,0),
-  TEST2=c(-57,0,0,0,-57,0,58,0,58,0,-29,0,0,56,0),
-  LAB1=c(0,62,63,63,60,53,53,56,55,44,26,51,73,52,53),
-  LAB2=c(0,77,77,74,63,63,66,74,68,66,35,62,80,70,72),
-  BEHAV1=c(-68,-77,-70,-78,-79,-81,-81,-77,-85,80,-65,-80,-94,0,-81),
-  BEHAV2=c(-57,-71,-71,-70,-73,-73,-74,-71,-60,85,-50,-67,-90,0,-66),
-  CLASS1=c(-69,0,0,0,-64,59,59,0,0,55,-39, 0,77,59,0),
-  CLASS2=c(-61,0,0,0,-61,61,62,0,0,64,-37, 0,81,67,0)
-)
-results
-?ylab
-?labs
-?ggtitle
-?theme
-?legend.box
-?geom_errorbar
-?geom_t
-?ggplot_add
-?ggplot
-?object
-?legend
-ggplot(results) +
-  geom_errorbar(aes(x=factor(samples,levels = c("Junior/junior high (both schs. sch. 1 only with 4C/ID)","Junior (school effect) sch. 1 only with 4C/ID)","Junior (school effect)","All sample (school effect)","All sample","SCHOOL 1 junior and high junior","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE")), ymin=TEST1, ymax=TEST2,color='TEST'),width=0.8,alpha=1, size=1) +
-  geom_errorbar(aes(x=samples, ymin=LAB1, ymax=LAB2,color='LAB'), width=0.4, alpha=1, size=1) +
-  geom_errorbar(aes(x=samples, ymin=BEHAV1, ymax=BEHAV2, color='BEHAV'), width=0.4, alpha=1, size=1) +
-  geom_errorbar(aes(x=samples, ymin=CLASS1, ymax=CLASS2, color='CLASS'), width=0.4, alpha=1, size=1) +
-  xlab("Samples")+labs(title="4C/ID treatment effect resume results",y="4C/ID negative effect, no effect, 4C/ID positive effect")+
-  scale_color_manual(name='Variables',
-                     breaks=c('TEST','LAB', 'BEHAV', 'CLASS'),
-                     values=c('TEST'='red', 'LAB'='blue', 'BEHAV'='green', 'CLASS'='yellow'))+
-  
-  coord_flip(ylim = c(-100,100))
 
 ########## REFERENCES
 

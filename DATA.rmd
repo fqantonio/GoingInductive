@@ -1,6 +1,114 @@
 
 # DATA
 
+# graph analysis, all grades, global sample
+
+# histograms and QQ plots
+
+
+# conclusion: 
+# It seems that the 4CID effect is not positive when considering all sample, except for the variable LAB.
+# it seems that school 0 as better TEST grades them school 2, while there a jump when the 4CID is implemented;
+# That is not so obvious for the LAB variable. Clearly that the BEHAV variable suffers a loss with the implementation of 4CID. 
+# for the CLASS variable, after a positive effect it goes down, perhaps following the BEHAV variable
+# Only the LAB variable show an increase. The red dot and the skewness showed in figure 7, 
+# heavy tails showed by the sd table nubers; mean and median are differnt, sligtly.
+# show that could be no positive overall 4C/ID effect and the sample are not normal, which corroborate 
+# upper analysis
+
+# Scatterplots and Correlations
+# time series regression and Local Polynomial Regression Fitting
+
+
+#Conclusion: overall, over time, it seems that there is a negative 4C/ID effect.  
+#However, R^2 values are very weak. It can be seen that a school effect could be 
+#underway
+
+#global data sample variable correlations
+# first attempt to make the indeoendency analysis to the variables: just to check if there is a 
+# the levell of dependency of the variables, or to see if the assessement was equal tecnhique
+# If there is a correlation then variables are dependent, the inverse is not correct 
+
+
+# conclusion: these R2 low doesn't mean that the variables are dependent nor the 
+# There is some degree of correlation that doesn't permit to conclude of the variable dependency
+# The clear correlation between TEST and CLASS variable show that they are dependent and
+# Kendal correlation test corroborates that variables are dependent but with a levell degree 
+#arround 20 to 40%: not high; meaning that the way the variables are assessed are different. They correlate,
+# but at a low levell, showing a bad levell, which means that they were assessed with different techniques.
+# the class test correlation is just a refence that we know, in advance, that there is a math relationship
+
+# Table 5: kendall's correlation
+
+# 7,8,9
+# limit the analysis to Junior grade: GRADE 0,1,2, meaning 7,8 and 9 grade both schools
+
+
+#conclusion: data seems to be not normal, except the CLASS variable
+
+########## normality
+
+#conclusion: sample data don't behav as a normal distribution under both tests, nor if we
+#do the same analysis for the school 0 and shcool 1. Meaning that we should use a non-parametric 
+#hyphotesis testing stats
+
+
+########## Resume
+# The student data came from two different school: until 2008 school 0, after that, school 1, from 2009 until 2017;
+# School 0 has only junior grades, 7 to 9th grade
+# School 1 has junior grades and junior high with general courses and professional/technical coourses
+# Male is represented by M and female by F
+# with 4CID, variable M4CID = 1, otherwise M4CID = 0;
+# Grades 7,8,9, 10, 11, 10P (technical), 11P (Technical) are categorizes by 0 to 6, respectively;
+# Total sample data length 1414;
+# school 0, 476, 34% and school 1, 938, 66%
+# female/male sample: 602/812, 43%/57%: no balanced GENDER
+# sample without 4CID: 828, 59%; with 4CID: 586, 41%: more data with 4CID methodology, not balanced
+# Grade 0 (7th) - 353 (25%)
+# Grade 1 (8th) - 411 (29%)
+# Grade 2 (9th) - 396 (28%)
+# Grade 3 (10th) - 27 (2%)
+# Grade 4 (11th) - 18 (1%)
+# Grade 5 (10technical) - 117 (8%)
+# Grade 6 (11technical) - 93 (7%)
+# very low sample entries levels 10/11 grade general and techinal edu path
+# Junior 1159; SCHOOL 0, M4CID = 0, - 476 (41%);
+# SCHOOL 1 - SCHOOL 1: 683 (59%); M4CID = 0: 318 (27%) ; M4CID = 1: 365 (31%)
+# Gender Junior: total, 1159; female 576 (49%); male 583 (50%)
+# sample entries secondary 255, 18% of the global sample
+#it seems good to use secondary grade data for all sample inference
+# obs 255
+# Higher Junior (secondary), no 4CID, 34, 13%;
+# Higher Junior (secondary), 4CID, 221, 86%
+# poorly balanced
+
+# Table 1: variable description
+# Table 2: distribution by grade 
+# Table 3: schools descriptive data sample
+# Table 4: data from the treatment and control group
+
+# Conclusion: From this analysis it seems to be possible comparing not only all the sample but also,
+# just the Junior: this sample is more balanced in terms of grades and gender. The secondary is not balanced but it\
+# can be used fro global sample inference. Junior sample its a better one.
+
+#variables description
+#ID: Identification entry row data;
+#DATE: year of the sample: it belongs, actually to 2003/2004, lective year;
+#SCHOOL: there are two schools, identified by 0 (till 2008) and 1 (after 2009);
+# GENDER: F and M
+#TEST, LAB, BEHAV: variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment)
+# and BEHAV related to accomplishement school rules behavior
+# LAB work and Behavior, normally if they follow the rules stablished at school
+# GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p(techical) and 11p (Technical) 
+# M4CID, category 0 and 1, respectively, without 4C/ID and with 4CID;
+# CLASS, 0 to 100, height average, CLASS=0.5*TEST+0.3*LAB+0.2*BEHAV: 
+#this will be used in a variable to be defined below, RANK: a study for student addaptation to the school system
+
+#Table 1: Variable description
+
+
+# NOTES
+
 The **Variables** are described in this next table.
 
 |     VARIABLE     | Description                                                                                                                                                                              |
