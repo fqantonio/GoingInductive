@@ -5,6 +5,10 @@
 
 # histograms and QQ plots
 
+# numbers
+data_M4CID0 #828
+data_M4CID1 #586
+
 
 # conclusion: 
 # It seems that the 4CID effect is not positive when considering all sample, except for the variable LAB.

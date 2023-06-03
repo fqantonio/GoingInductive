@@ -828,7 +828,7 @@ wilcox.test(data_M4CID0$CLASS,data_M4CID1$CLASS,alternative = "greater")
 
 #Inference conclusion for the 4C/ID treatment effect for all sample, 
 # no matter which school, for each data variables: TEST, LAB, BEHAV and CLASS
-# Samples are independent, Wilcoxon inference non-parametric test
+# Samples are independent and not. normal, Wilcoxon inference non-parametric test
 # for the global TEST and BEHAV, negative 4CID effect
 # no effect for CLASS variable;
 # LAB variable, positive effect
@@ -844,7 +844,7 @@ wilcox.test(data_M4CID0$CLASS,data_M4CID1$CLASS,alternative = "greater")
 #variables; if we use the variable because it is a math relation qith the others
 # just with class variable
 
-#Inference for the differences in schools, without 4CID, for each variable: TEST, LAB, BEHAV and CLASS
+#Inference for the differences in schools (control group), without 4CID, for each variable: TEST, LAB, BEHAV and CLASS
 ## DATA
 summary(data)
 data_M4CID0<-filter(data,data$M4CID=="0")  %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
@@ -954,9 +954,9 @@ wilcox.test(data_M4CID0_SCHOOL0$CLASS,data_M4CID0_SCHOOL1$CLASS,alternative = "g
 
 # table 10 : Inference for the differences in school
 
-#Conclusion
-#Variable TEST, LAB, CLASS greater in school 0 then in school 1
-#Variable BEHAV is less for the School 0 then in the school 1
+# Conclusion
+# Variable TEST, LAB, CLASS greater in school 0 then in school 1
+# Variable BEHAV is less for the School 0 then in the school 1
 # So, this pivotal moment, take this research to consider that 
 #there is a school effect, that biased all variables, in the negative way except
 #for the BEHAV variable, in the positive way for school 1. So this is going to be restricted to school 1:
@@ -994,6 +994,8 @@ dif_median_CLASS
 # it will be added to school 0, in order to not create negative numbers, consequently, to keep the variables between 0 and 100;
 
 # sample with only junior grade for both schools
+# In this sample, variables will be added with the differences computed before in order
+# to acess if the two sample are from the same distribution: confrmation after school effect: are the same?
 data_junior<-filter(data,GRADE <= "2") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 data_junior_computed<-filter(data,GRADE <= "2") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 # add to school 1
@@ -1015,9 +1017,10 @@ data_junior_computed_SCHOOL1_M4CID0<-filter(data_junior_computed,GRADE <= "2" & 
 summary(data_SCHOOL0)
 summary(data_junior_computed_SCHOOL1_M4CID0)
 
-#TEST
 length(data_SCHOOL0$ID)#476
 length(data_junior_computed_SCHOOL1_M4CID0$ID)#318
+
+#TEST
 median(data_SCHOOL0$TEST)#68
 median(data_junior_computed_SCHOOL1_M4CID0$TEST)#66
 wilcox.test(data_SCHOOL0$TEST,data_junior_computed_SCHOOL1_M4CID0$TEST,alternative = "two.sided")
@@ -1056,6 +1059,57 @@ wilcox.test(data_SCHOOL0$CLASS,data_junior_computed_SCHOOL1_M4CID0$CLASS,alterna
 # alternative hypothesis: true location shift is not equal to 0
 
 #Conclusion: yes, they are from the same sample distribution
+
+# Inference for all sample with school effect
+data_computed <- data
+data_computed$TEST<-ifelse(data_computed$SCHOOL=="1",data_computed$TEST+dif_mean_TEST,data_computed$TEST)
+data_computed$LAB<-ifelse(data_computed$SCHOOL=="1",data_computed$LAB+dif_mean_LAB,data_computed$LAB)
+data_computed$CLASS<-ifelse(data_computed$SCHOOL=="1",data_computed$CLASS+dif_mean_CLASS,data_junior_computed$CLASS)
+data_computed$BEHAV<-ifelse(data_computed$SCHOOL=="1",data_computed$BEHAV+dif_mean_BEHAV,data_junior_computed$BEHAV)
+
+data_computed_M4CID0<-filter(data_computed,M4CID =="0") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
+data_computed_M4CID1<-filter(data_computed,M4CID =="1") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
+length(data_computed_M4CID0$ID)#828
+length(data_computed_M4CID1$ID)#586
+
+#TEST
+summary(data_computed)
+hist(data_computed$TEST)
+qqnorm(data_computed$TEST)
+qqline(data_computed$TEST)
+ks.test(data_computed$TEST,dnorm(mean(data_computed$TEST),sd(data_computed$TEST)))
+#Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed$TEST and dnorm(mean(data_computed$TEST), sd(data_computed$TEST))
+# D = 1, p-value = 0.0007067
+# alternative hypothesis: two-sided
+shapiro.test(data_computed$TEST)
+# Shapiro-Wilk normality test
+# data:  data_computed$TEST
+# W = 0.99565, p-value = 0.0004377
+#conclusion: not normal
+sample1<-data.frame(sample(data_computed_M4CID0$TEST,500))
+sample2<-data.frame(sample(data_computed_M4CID1$TEST,500))
+#For Kendall, samples need to have the same length
+cor.test(sample1$sample.data_computed_M4CID0.TEST..500.,sample2$sample.data_computed_M4CID1.TEST..500.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_computed_M4CID0.TEST..500. and sample2$sample.data_computed_M4CID1.TEST..500.
+# z = -0.34307, p-value = 0.7315
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.01039902 
+# sample independent
+ggplot(data_computed) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
+median(data_computed_M4CID0$TEST)#67
+median(data_computed_M4CID1$TEST)#69
+wilcox.test(data_computed_M4CID0$TEST,data_computed_M4CID1$TEST,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_computed_M4CID0$TEST and data_computed_M4CID1$TEST
+# W = 223254, p-value = 0.005261
+# alternative hypothesis: true location shift is less than 0
+
+
+
+# continuar com as restantes varíaveis !??!?!?!?!
+
 
 # Inference for computed junior differences with and without 4C/ID, between school 0 and school 1
 data_junior_computed_M4CID0<-filter(data_junior_computed,GRADE <= "2" & M4CID =="0") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
@@ -1159,8 +1213,6 @@ wilcox.test(data_junior_computed_M4CID0$CLASS,data_junior_computed_M4CID1$CLASS,
 # data:  data_junior_computed_M4CID0$CLASS and data_junior_computed_M4CID1$CLASS
 # W = 112527, p-value = 4.763e-10
 # alternative hypothesis: true location shift is less than 0
-
-
 
 # Inference for computed junior differences with and without 4C/ID, between school 0 and school 1 (this school only with 4C/ID)
 data_junior_computed_SCHOOL0_M4CID0<-filter(data_junior_computed,GRADE <= "2" & M4CID =="0",SCHOOL=="0") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
@@ -3365,6 +3417,21 @@ wilcox.test(data_junior_SCHOOL1_M4CID0_FEMALE$CLASS,data_junior_SCHOOL1_M4CID1_F
 
 ########## Summary results and notes UPDATE THIS
 
+#2003 to 2017
+# for changes that have p-value that we can't reject the null I use the mean value
+results <- data.frame(
+  samples=c("JUNIOR school effect","all sample", "school 1","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
+  TEST1=c(67,-62, 54,54 ,56 ,54 ,57 ,33 ,53,80,54,55),
+  TEST2=c(70,-57, 57,58 ,56 ,58 ,57 ,33 ,53,80,61,55),
+  LAB1=c(63,60, 51,51 ,56 ,51 ,44 ,26 ,51,73,50,53),
+  LAB2=c(70,65, 65,66 ,69 ,62 ,66 ,35 ,61,81,70,61),
+  BEHAV1=c(-77,-79, -80,-81,-77,-85,80 ,-65 ,-80,-94,82,-80),
+  BEHAV2=c(-73,-76, -76,-76,-71,-60,85 ,-54 ,-72,-91,82,-72),
+  CLASS1=c(63, 58,59 ,60 ,50 ,55 ,39 ,57,77,58,58),
+  CLASS2=c(63, 62,62 ,64 ,61 ,64 ,39 ,57,81,67,60)
+)
+
+#2003 to 2019
 results <- data.frame(
   samples=c("Junior/junior high (both schs. sch. 1 only with 4C/ID)","Junior (school effect) sch. 1 only with 4C/ID)","Junior (school effect)","All sample (school effect)","All sample","SCHOOL 1 junior and high junior","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
   TEST1=c(-68,0,0,0,-62,0,54,0,54,0,-34,0,0,54,0),
@@ -3378,10 +3445,10 @@ results <- data.frame(
 )
 
 ggplot(results) +
-  geom_errorbar(aes(x=factor(samples,levels = c("Junior/junior high (both schs. sch. 1 only with 4C/ID)","Junior (school effect) sch. 1 only with 4C/ID)","Junior (school effect)","All sample (school effect)","All sample","SCHOOL 1 junior and high junior","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE")), ymin=TEST1, ymax=TEST2,color='TEST'),width=0.8,alpha=1, size=1) +
-  geom_errorbar(aes(x=samples, ymin=LAB1, ymax=LAB2,color='LAB'), width=0.4, alpha=1, size=1) +
-  geom_errorbar(aes(x=samples, ymin=BEHAV1, ymax=BEHAV2, color='BEHAV'), width=0.4, alpha=1, size=1) +
-  geom_errorbar(aes(x=samples, ymin=CLASS1, ymax=CLASS2, color='CLASS'), width=0.4, alpha=1, size=1) +
+  geom_errorbar(aes(x=factor(samples,levels = c("Junior/junior high (both schs. sch. 1 only with 4C/ID)","Junior (school effect) sch. 1 only with 4C/ID)","Junior (school effect)","All sample (school effect)","All sample","SCHOOL 1 junior and high junior","JUNIOR SCHOOL 1","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE")), ymin=TEST1, ymax=TEST2,color='TEST'),width=0.8,alpha=1, linewidth=1) +
+  geom_errorbar(aes(x=samples, ymin=LAB1, ymax=LAB2,color='LAB'), width=0.4, alpha=1, linewidth=1) +
+  geom_errorbar(aes(x=samples, ymin=BEHAV1, ymax=BEHAV2, color='BEHAV'), width=0.4, alpha=1, linewidth=1) +
+  geom_errorbar(aes(x=samples, ymin=CLASS1, ymax=CLASS2, color='CLASS'), width=0.4, alpha=1, linewidth=1) +
   xlab("Samples")+labs(title="4C/ID treatment effect resume results",y="4C/ID negative effect, no effect, 4C/ID positive effect")+
   scale_color_manual(name='Variables',
                      breaks=c('TEST','LAB', 'BEHAV', 'CLASS'),
