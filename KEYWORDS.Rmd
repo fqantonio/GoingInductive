@@ -16,7 +16,7 @@
 
 **`Behavior`** - Ability to follow social and behavioral classroom rules directly related to the BEHAV variable.
 
-**`Academic results`** - weight average variable directly related to the variables: TEST, LAB and BEHAV: $$ CLASS = 0.5 \times TEST + 0.3 \times LAB + 0.2 \times BEHAV $$.
+**`Academic sucess`** - weight average variable directly related to the variables: TEST, LAB and BEHAV: $$ CLASS = 0.5 \times TEST + 0.3 \times LAB + 0.2 \times BEHAV $$.
 
 **`Cognitive Load Theory`** - Cognitive load theory provides empirically-based guidelines that help instructional designers decrease extraneous cognitive load during learning and thus refocus the learner's attention toward germane materials, thereby increasing germane (schema related) cognitive load. This theory differentiates between three types of cognitive load: intrinsic cognitive load, germane cognitive load, and extraneous cognitive load;
 

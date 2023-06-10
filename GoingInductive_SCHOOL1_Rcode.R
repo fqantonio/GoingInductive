@@ -189,7 +189,7 @@ wilcox.test(data_SCHOOL1_M4CID0$CLASS,data_SCHOOL1_M4CID1$CLASS,alternative = "l
 # Table 14: Inference only for junior and junior high school 1
 
 #Conclusions for sample junior and junior high school 1
-# not normal, sample independent, no rejection of h0
+# not normal, sample independent
 # 4CID as positive impact on TEST, LAB and CLASS Variables;
 # 4CID as a negative impact in BEHAV variable
 
@@ -326,8 +326,8 @@ shapiro.test(data_JUNIOR_SCHOOL1$CLASS)
 # W = 0.99145, p-value = 0.0005524
 #conclusion: not normal but independent
 ggplot(data_JUNIOR_SCHOOL1) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
-median(data_JUNIOR_SCHOOL1_M4CID0$CLASS)#59
-median(data_JUNIOR_SCHOOL1_M4CID1$CLASS)#62
+median(data_JUNIOR_SCHOOL1_M4CID0$CLASS)#58
+median(data_JUNIOR_SCHOOL1_M4CID1$CLASS)#63
 wilcox.test(data_JUNIOR_SCHOOL1_M4CID0$CLASS,data_JUNIOR_SCHOOL1_M4CID1$CLASS,alternative = "less")
 #Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_M4CID0$CLASS and data_JUNIOR_SCHOOL1_M4CID1$CLASS
@@ -782,7 +782,7 @@ wilcox.test(data_9_SCHOOL1_M4CID0$CLASS,data_9_SCHOOL1_M4CID1$CLASS,alternative 
 #Conclusion
 #samples not normal but independent
 # GRADE 7
-# 4CID has positive impact on TEST, LAB and CLASS Variables;
+# 4CID has no impact on TEST, positive on LAB and CLASS Variables;
 # 4CID has a negative impact in BEHAV variable
 
 #GRADE 8
@@ -859,11 +859,11 @@ shapiro.test(data_SCHOOL1_RANK1$TEST)
 ggplot(data_SCHOOL1_RANK1) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
 median(data_SCHOOL1_RANK1_M4CID0$TEST)#34
 median(data_SCHOOL1_RANK1_M4CID1$TEST)#33
-wilcox.test(data_SCHOOL1_RANK1_M4CID0$TEST,data_SCHOOL1_RANK1_M4CID1$TEST,alternative = "greater")
+wilcox.test(data_SCHOOL1_RANK1_M4CID0$TEST,data_SCHOOL1_RANK1_M4CID1$TEST,alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL1_RANK1_M4CID0$TEST and data_SCHOOL1_RANK1_M4CID1$TEST
-# W = 1242.5, p-value = 0.05279
-# alternative hypothesis: true location shift is greater than 0
+# W = 1242.5, p-value = 0.1056
+# alternative hypothesis: true location shift is not equal to 0
 
 # LAB
 # independency
@@ -896,7 +896,7 @@ median(data_SCHOOL1_RANK1_M4CID1$LAB)#35
 wilcox.test(data_SCHOOL1_RANK1_M4CID0$LAB,data_SCHOOL1_RANK1_M4CID1$LAB,alternative = "less")
 # Shapiro-Wilk normality test
 # data:  data_SCHOOL1_RANK1$LAB
-# W = 0.94629, p-value = 0.0007958
+# W = 606, p-value = 0.0003672
 
 # BEHAV
 # independency
@@ -958,12 +958,12 @@ shapiro.test(data_SCHOOL1_RANK1$CLASS)
 #conclusion: not normal
 ggplot(data_SCHOOL1_RANK1) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_SCHOOL1_RANK1_M4CID0$CLASS)#39
-median(data_SCHOOL1_RANK1_M4CID1$CLASS)#38
-wilcox.test(data_SCHOOL1_RANK1_M4CID0$CLASS,data_SCHOOL1_RANK1_M4CID1$CLASS,alternative = "greater")
+median(data_SCHOOL1_RANK1_M4CID1$CLASS)#39
+wilcox.test(data_SCHOOL1_RANK1_M4CID0$CLASS,data_SCHOOL1_RANK1_M4CID1$CLASS,alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL1_RANK1_M4CID0$CLASS and data_SCHOOL1_RANK1_M4CID1$CLASS
-# W = 1173, p-value = 0.142
-# alternative hypothesis: true location shift is greater than 0
+# W = 1173, p-value = 0.2839
+# alternative hypothesis: true location shift is not equal to 0
 
 #RANK 2
 data_SCHOOL1_RANK2 <- filter(data_SCHOOL1,RANK=="2") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS,RANK)
@@ -1244,7 +1244,7 @@ shapiro.test(data_SCHOOL1_RANK3$CLASS)
 #conclusion: not normal
 ggplot(data_SCHOOL1_RANK3) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_SCHOOL1_RANK3_M4CID0$CLASS)#76
-median(data_SCHOOL1_RANK3_M4CID1$CLASS)#79
+median(data_SCHOOL1_RANK3_M4CID1$CLASS)#80
 wilcox.test(data_SCHOOL1_RANK3_M4CID0$CLASS,data_SCHOOL1_RANK3_M4CID1$CLASS,alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_SCHOOL1_RANK3_M4CID0$CLASS and data_SCHOOL1_RANK3_M4CID1$CLASS
@@ -1411,10 +1411,10 @@ shapiro.test(data_JUNIOR_SCHOOL1_RANK1$CLASS)
 ggplot(data_JUNIOR_SCHOOL1_RANK1) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_JUNIOR_SCHOOL1_RANK1_M4CID0$CLASS)#39
 median(data_JUNIOR_SCHOOL1_RANK1_M4CID1$CLASS)#39
-wilcox.test(data_JUNIOR_SCHOOL1_RANK1_M4CID0$CLASS,data_JUNIOR_SCHOOL1_RANK1_M4CID1$CLASS,alternative = "greater")
+wilcox.test(data_JUNIOR_SCHOOL1_RANK1_M4CID0$CLASS,data_JUNIOR_SCHOOL1_RANK1_M4CID1$CLASS,alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_JUNIOR_SCHOOL1_RANK1_M4CID0$CLASS and data_JUNIOR_SCHOOL1_RANK1_M4CID1$CLASS
-# W = 720, p-value = 0.09832
+# W = 720, p-value = 0.1966
 # alternative hypothesis: true location shift is greater than 0
 
 #RANK 2
@@ -1702,12 +1702,193 @@ wilcox.test(data_JUNIOR_SCHOOL1_RANK3_M4CID0$CLASS,data_JUNIOR_SCHOOL1_RANK3_M4C
 # W = 3088.5, p-value = 0.006789
 # alternative hypothesis: true location shift is less than 0
 
-# Table 17: Inference for junior school 1, RANK 1, 2, 3
-
-#Conclusion
-# RANK 1, 2 and 3, same results: no effect for TEST and CLASS, negative for BEHAV, and positive on LAB
+#Conclusion for SCHOOL 1 and SCHOOL 1 JUNIOR samples
+#RANK 1 and 2: TEST, CLASS no effect; LAB positive; negative BEHAV 
+#RANK 2: TEST no effect; positive LAB and CLASS; negative BEHAV
 
 ########## GENDER
+
+#This analysis uses school 1 GENDER sample
+data_SCHOOL1<-filter(data, SCHOOL=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_SCHOOL1_FEMALE<-filter(data,SCHOOL=="1",GENDER=="F") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_SCHOOL1_MALE<-filter(data, SCHOOL=="1",GENDER=="M") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_SCHOOL1_M4CID0_MALE<-filter(data,SCHOOL=="1" & M4CID =="0"  & GENDER == "M") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_SCHOOL1_M4CID0_FEMALE<-filter(data,SCHOOL=="1" & M4CID =="0" & GENDER == "F") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_SCHOOL1_M4CID1_MALE<-filter(data, SCHOOL=="1" & M4CID =="1"  & GENDER == "M") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_SCHOOL1_M4CID1_FEMALE<-filter(data,SCHOOL=="1" & M4CID =="1" & GENDER == "F") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+
+summary(data_SCHOOL1)
+length(data_SCHOOL1$ID)#938
+length(which(data_SCHOOL1$GENDER=="F"))#352
+length(which(data_SCHOOL1$GENDER=="M"))#586
+length(which(data_SCHOOL1$GENDER=="F"))/length(data_SCHOOL1$ID)#38%
+length(which(data_SCHOOL1$GENDER=="M"))/length(data_SCHOOL1$ID)#62%
+length(data_SCHOOL1_M4CID0_FEMALE$ID)#160
+length(data_SCHOOL1_M4CID1_FEMALE$ID)#192
+length(data_SCHOOL1_M4CID0_MALE$ID)#192
+length(data_SCHOOL1_M4CID1_MALE$ID)#394
+
+#sample entries: 938; Female = 352 (38%); Male=586 (62%);
+# female: M4CID0 = 160; M4CID1=192
+# male: M4CID0 = 192; M4CID1=394
+#data sample not normal but independent
+
+#TEST
+# independency
+sample1<-data.frame(sample(data_SCHOOL1_M4CID0_FEMALE$TEST,150))
+sample2<-data.frame(sample(data_SCHOOL1_M4CID1_FEMALE$TEST,150))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_M4CID0_FEMALE.TEST..150.,sample2$sample.data_SCHOOL1_M4CID1_FEMALE.TEST..150.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_M4CID0_FEMALE.TEST..150. and sample2$sample.data_SCHOOL1_M4CID1_FEMALE.TEST..150.
+# z = 1.405, p-value = 0.16
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.07853475 
+sample3<-data.frame(sample(data_SCHOOL1_M4CID0_MALE$TEST,150))
+sample4<-data.frame(sample(data_SCHOOL1_M4CID1_MALE$TEST,150))
+#Kendall correlation test
+cor.test(sample3$sample.data_SCHOOL1_M4CID0_MALE.TEST..150.,sample4$sample.data_SCHOOL1_M4CID1_MALE.TEST..150.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample3$sample.data_SCHOOL1_M4CID0_MALE.TEST..150. and sample4$sample.data_SCHOOL1_M4CID1_MALE.TEST..150.
+# z = 0.55939, p-value = 0.5759
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.03126279
+# samples are independent
+ggplot(data_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=TEST, linetype = factor(GENDER)))
+median(data_SCHOOL1_M4CID0_FEMALE$TEST)#54
+median(data_SCHOOL1_M4CID1_FEMALE$TEST)#60
+median(data_SCHOOL1_M4CID0_MALE$TEST)#54
+median(data_SCHOOL1_M4CID1_MALE$TEST)#55
+#It seems that the female benefit, less impact on male
+wilcox.test(data_SCHOOL1_M4CID0_FEMALE$TEST,data_SCHOOL1_M4CID1_FEMALE$TEST, alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_M4CID0_FEMALE$TEST and data_SCHOOL1_M4CID1_FEMALE$TEST
+# W = 12919, p-value = 0.005118
+# alternative hypothesis: true location shift is less than 0
+wilcox.test(data_SCHOOL1_M4CID0_MALE$TEST,data_SCHOOL1_M4CID1_MALE$TEST, alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_M4CID0_MALE$TEST and data_SCHOOL1_M4CID1_MALE$TEST
+# W = 35107, p-value = 0.0789
+# alternative hypothesis: true location shift is less than 0
+
+#LAB
+sample1<-data.frame(sample(data_SCHOOL1_M4CID0_FEMALE$LAB,150))
+sample2<-data.frame(sample(data_SCHOOL1_M4CID1_FEMALE$LAB,150))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_M4CID0_FEMALE.LAB..150.,sample2$sample.data_SCHOOL1_M4CID1_FEMALE.LAB..150.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_M4CID0_FEMALE.LAB..150. and sample2$sample.data_SCHOOL1_M4CID1_FEMALE.LAB..150.
+# z = -1.2413, p-value = 0.2145
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.06971223 
+sample3<-data.frame(sample(data_SCHOOL1_M4CID0_MALE$LAB,150))
+sample4<-data.frame(sample(data_SCHOOL1_M4CID1_MALE$LAB,150))
+#Kendall correlation test
+cor.test(sample3$sample.data_SCHOOL1_M4CID0_MALE.LAB..150.,sample4$sample.data_SCHOOL1_M4CID1_MALE.LAB..150.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample3$sample.data_SCHOOL1_M4CID0_MALE.LAB..150. and sample4$sample.data_SCHOOL1_M4CID1_MALE.LAB..150.
+# z = 1.2979, p-value = 0.1943
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.07271416 
+# samples are independent
+median(data_SCHOOL1_M4CID0_FEMALE$LAB)#50
+median(data_SCHOOL1_M4CID1_FEMALE$LAB)#70
+median(data_SCHOOL1_M4CID0_MALE$LAB)#53
+median(data_SCHOOL1_M4CID1_MALE$LAB)#63
+ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=LAB, linetype = factor(GENDER)))
+#It seems that both male/female benefit
+wilcox.test(data_SCHOOL1_M4CID0_FEMALE$LAB,data_SCHOOL1_M4CID1_FEMALE$LAB, alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_M4CID0_FEMALE$LAB and data_SCHOOL1_M4CID1_FEMALE$LAB
+# W = 6911.5, p-value < 2.2e-16
+# alternative hypothesis: true location shift is less than 0
+wilcox.test(data_SCHOOL1_M4CID0_MALE$LAB,data_SCHOOL1_M4CID1_MALE$LAB, alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_M4CID0_MALE$LAB and data_SCHOOL1_M4CID1_MALE$LAB
+# W = 26428, p-value = 1.556e-09
+# alternative hypothesis: true location shift is less than 0
+
+#BEHAV
+# Independency
+sample1<-data.frame(sample(data_SCHOOL1_M4CID0_FEMALE$BEHAV,150))
+sample2<-data.frame(sample(data_SCHOOL1_M4CID1_FEMALE$BEHAV,150))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_M4CID0_FEMALE.BEHAV..150.,sample2$sample.data_SCHOOL1_M4CID1_FEMALE.BEHAV..150.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_M4CID0_FEMALE.BEHAV..150. and sample2$sample.data_SCHOOL1_M4CID1_FEMALE.BEHAV..150.
+# z = 0.087917, p-value = 0.9299
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.004975126 
+sample3<-data.frame(sample(data_SCHOOL1_M4CID0_MALE$BEHAV,150))
+sample4<-data.frame(sample(data_SCHOOL1_M4CID1_MALE$BEHAV,150))
+#Kendall correlation test
+cor.test(sample3$sample.data_SCHOOL1_M4CID0_MALE.BEHAV..150.,sample4$sample.data_SCHOOL1_M4CID1_MALE.BEHAV..150.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample3$sample.data_SCHOOL1_M4CID0_MALE.BEHAV..150. and sample4$sample.data_SCHOOL1_M4CID1_MALE.BEHAV..150.
+# z = 0.34496, p-value = 0.7301
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.01941931 
+# sampleas are independent
+median(data_SCHOOL1_M4CID0_FEMALE$BEHAV)#82
+median(data_SCHOOL1_M4CID1_FEMALE$BEHAV)#83
+median(data_SCHOOL1_M4CID0_MALE$BEHAV)#80
+median(data_SCHOOL1_M4CID1_MALE$BEHAV)#73
+ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=BEHAV, linetype = factor(GENDER)))
+#It seems that the male/female don't benefit, male is worse
+wilcox.test(data_SCHOOL1_M4CID0_FEMALE$BEHAV,data_SCHOOL1_M4CID1_FEMALE$BEHAV, alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_M4CID0_FEMALE$BEHAV and data_SCHOOL1_M4CID1_FEMALE$BEHAV
+# W = 15102, p-value = 0.393
+# alternative hypothesis: true location shift is not equal to 0
+wilcox.test(data_SCHOOL1_M4CID0_MALE$BEHAV,data_SCHOOL1_M4CID1_MALE$BEHAV, alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_M4CID0_MALE$BEHAV and data_SCHOOL1_M4CID1_MALE$BEHAV
+# W = 48248, p-value = 2.979e-08
+# alternative hypothesis: true location shift is greater than 0
+
+#CLASS
+#Independency
+sample1<-data.frame(sample(data_SCHOOL1_M4CID0_FEMALE$CLASS,150))
+sample2<-data.frame(sample(data_SCHOOL1_M4CID1_FEMALE$CLASS,150))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_M4CID0_FEMALE.CLASS..150.,sample2$sample.data_SCHOOL1_M4CID1_FEMALE.CLASS..150.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_M4CID0_FEMALE.CLASS..150. and sample2$sample.data_SCHOOL1_M4CID1_FEMALE.CLASS..150.
+# z = 0.32176, p-value = 0.7476
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.0177475 
+sample3<-data.frame(sample(data_SCHOOL1_M4CID0_MALE$CLASS,150))
+sample4<-data.frame(sample(data_SCHOOL1_M4CID1_MALE$CLASS,150))
+#Kendall correlation test
+cor.test(sample3$sample.data_SCHOOL1_M4CID0_MALE.CLASS..150.,sample4$sample.data_SCHOOL1_M4CID1_MALE.CLASS..150.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample3$sample.data_SCHOOL1_M4CID0_MALE.CLASS..150. and sample4$sample.data_SCHOOL1_M4CID1_MALE.CLASS..150.
+# z = 0.45176, p-value = 0.6514
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.02490928 
+#samples are independent
+median(data_SCHOOL1_M4CID0_FEMALE$CLASS)#58
+median(data_SCHOOL1_M4CID1_FEMALE$CLASS)#66
+median(data_SCHOOL1_M4CID0_MALE$CLASS)#58
+median(data_SCHOOL1_M4CID1_MALE$CLASS)#60
+ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=CLASS, linetype = factor(GENDER)))
+#It seems that the female have more benefit then the male
+wilcox.test(data_SCHOOL1_M4CID0_FEMALE$CLASS,data_SCHOOL1_M4CID1_FEMALE$CLASS, alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_M4CID0_FEMALE$CLASS and data_SCHOOL1_M4CID1_FEMALE$CLASS
+# W = 10268, p-value = 4.241e-08
+# alternative hypothesis: true location shift is less than 0
+wilcox.test(data_SCHOOL1_M4CID0_MALE$CLASS,data_SCHOOL1_M4CID1_MALE$CLASS, alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_M4CID0_MALE$CLASS and data_SCHOOL1_M4CID1_MALE$CLASS
+# W = 33742, p-value = 0.01693
+# alternative hypothesis: true location shift is not equal to 0
+
+# SCHOOL 1 GENDER
+# TEST, CLASS and LAB positive; BEHAV no effect 
+# TEST no effect; LAB and CLASS positive; BEHAV negative
+# Male benefit less
+
 #This analysis uses school 1 and junior grade sample
 data_junior_SCHOOL1<-filter(data,GRADE <="2" & SCHOOL=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 data_junior_SCHOOL1_FEMALE<-filter(data,GRADE<="2" & SCHOOL=="1",GENDER=="F") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
@@ -1728,7 +1909,7 @@ length(data_junior_SCHOOL1_M4CID1_FEMALE$ID)#166
 length(data_junior_SCHOOL1_M4CID0_MALE$ID)#158
 length(data_junior_SCHOOL1_M4CID1_MALE$ID)#199
 
-#sample entries: 783; Female = 326 (48%); Male=357 52%();
+#sample entries: 783; Female = 326 (48%); Male=357 (52%);
 # female: M4CID0 = 160; M4CID1=166
 # male: M4CID0 = 158; M4CID1=199
 #data sample not normal but independent
@@ -1760,15 +1941,15 @@ median(data_junior_SCHOOL1_M4CID1_FEMALE$TEST)#61
 median(data_junior_SCHOOL1_M4CID0_MALE$TEST)#54
 median(data_junior_SCHOOL1_M4CID1_MALE$TEST)#57
 #It seems that the female benefit, less impact on male
-wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$TEST,data_junior_SCHOOL1_M4CID1_MALE$TEST, alternative = "less")
-# Wilcoxon rank sum test with continuity correction
-# data:  data_junior_SCHOOL1_M4CID0_MALE$TEST and data_junior_SCHOOL1_M4CID1_MALE$TEST
-# W = 14188, p-value = 0.05675
-# alternative hypothesis: true location shift is less than 0
 wilcox.test(data_junior_SCHOOL1_M4CID0_FEMALE$TEST,data_junior_SCHOOL1_M4CID1_FEMALE$TEST, alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_FEMALE$TEST and data_junior_SCHOOL1_M4CID1_FEMALE$TEST
 # W = 10924, p-value = 0.002804
+# alternative hypothesis: true location shift is less than 0
+wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$TEST,data_junior_SCHOOL1_M4CID1_MALE$TEST, alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_junior_SCHOOL1_M4CID0_MALE$TEST and data_junior_SCHOOL1_M4CID1_MALE$TEST
+# W = 14188, p-value = 0.05675
 # alternative hypothesis: true location shift is less than 0
 
 #LAB
@@ -1798,15 +1979,15 @@ median(data_junior_SCHOOL1_M4CID1_MALE$LAB)#61
 #It seems that the female benefit, less impact on male
 ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=LAB, linetype = factor(GENDER)))
 #It seems that both male/female benefit
-wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$LAB,data_junior_SCHOOL1_M4CID1_MALE$LAB, alternative = "less")
-# Wilcoxon rank sum test with continuity correction
-# data:  data_junior_SCHOOL1_M4CID0_MALE$LAB and data_junior_SCHOOL1_M4CID1_MALE$LAB
-# W = 11162, p-value = 1.249e-06
-# alternative hypothesis: true location shift is less than 0
 wilcox.test(data_junior_SCHOOL1_M4CID0_FEMALE$LAB,data_junior_SCHOOL1_M4CID1_FEMALE$LAB, alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_FEMALE$LAB and data_junior_SCHOOL1_M4CID1_FEMALE$LAB
 # W = 5499.5, p-value < 2.2e-16
+# alternative hypothesis: true location shift is less than 0
+wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$LAB,data_junior_SCHOOL1_M4CID1_MALE$LAB, alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_junior_SCHOOL1_M4CID0_MALE$LAB and data_junior_SCHOOL1_M4CID1_MALE$LAB
+# W = 11162, p-value = 1.249e-06
 # alternative hypothesis: true location shift is less than 0
 
 #BEHAV
@@ -1836,16 +2017,16 @@ median(data_junior_SCHOOL1_M4CID0_MALE$BEHAV)#80
 median(data_junior_SCHOOL1_M4CID1_MALE$BEHAV)#72
 ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=BEHAV, linetype = factor(GENDER)))
 #It seems that the male/female don't benefit, male is worse
-wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$BEHAV,data_junior_SCHOOL1_M4CID1_MALE$BEHAV, alternative = "greater")
-# Wilcoxon rank sum test with continuity correction
-# data:  data_junior_SCHOOL1_M4CID0_MALE$BEHAV and data_junior_SCHOOL1_M4CID1_MALE$BEHAV
-# W = 19768, p-value = 1.463e-05
-# alternative hypothesis: true location shift is greater than 0
 wilcox.test(data_junior_SCHOOL1_M4CID0_FEMALE$BEHAV,data_junior_SCHOOL1_M4CID1_FEMALE$BEHAV, alternative = "two.sided")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_FEMALE$BEHAV and data_junior_SCHOOL1_M4CID1_FEMALE$BEHAV
 # W = 13459, p-value = 0.8337
 # alternative hypothesis: true location shift is not equal to 0
+wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$BEHAV,data_junior_SCHOOL1_M4CID1_MALE$BEHAV, alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_junior_SCHOOL1_M4CID0_MALE$BEHAV and data_junior_SCHOOL1_M4CID1_MALE$BEHAV
+# W = 19768, p-value = 1.463e-05
+# alternative hypothesis: true location shift is greater than 0
 
 #CLASS
 #Independency
@@ -1874,27 +2055,25 @@ median(data_junior_SCHOOL1_M4CID0_MALE$CLASS)#58
 median(data_junior_SCHOOL1_M4CID1_MALE$CLASS)#60
 ggplot(data_junior_SCHOOL1) + geom_boxplot(aes(x=factor(M4CID),y=CLASS, linetype = factor(GENDER)))
 #It seems that the female have more benefit then the male
-wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$CLASS,data_junior_SCHOOL1_M4CID1_MALE$CLASS, alternative = "two.sided")
-# Wilcoxon rank sum test with continuity correction
-# data:  data_junior_SCHOOL1_M4CID0_MALE$CLASS and data_junior_SCHOOL1_M4CID1_MALE$CLASS
-# W = 13812, p-value = 0.04883
-# alternative hypothesis: true location shift is not equal to 0
 wilcox.test(data_junior_SCHOOL1_M4CID0_FEMALE$CLASS,data_junior_SCHOOL1_M4CID1_FEMALE$CLASS, alternative = "less")
 # Wilcoxon rank sum test with continuity correction
 # data:  data_junior_SCHOOL1_M4CID0_FEMALE$CLASS and data_junior_SCHOOL1_M4CID1_FEMALE$CLASS
 # W = 8602.5, p-value = 1.925e-08
 # alternative hypothesis: true location shift is less than 0
+wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$CLASS,data_junior_SCHOOL1_M4CID1_MALE$CLASS, alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_junior_SCHOOL1_M4CID0_MALE$CLASS and data_junior_SCHOOL1_M4CID1_MALE$CLASS
+# W = 13812, p-value = 0.02442
+# alternative hypothesis: true location shift is not equal to 0
 
-# ???Figure 15: junior sample boxplots for GENDER analysis 
-# ???grid.arrange(p60, p61, p62, p63,  nrow = 2,top="Box plot 4C/ID treatment effect", bottom="Figure 15: junior sample boxplots for GENDER analysis")
+# SCHOOL 1 GENDER
+# FEMALE: TEST, CLASS and LAB positive; BEHAV no effect 
+# MALE: TEST no effect; LAB and CLASS positive; BEHAV negative
+# Male benefit less
 
-# Table 18: Inference sample junior school 1 for GENDER
-
-# Results
-# Test no impact for male; female positive impact
-# Both benefit in LAB variable
-# In the BEHAV variable negative impact for MALE and no impact for FEMALE
-# positive impact on female Class variable but no impact for the male
-# Female, averall, benefit more: positive in TEST, LAB and CLASS, no effect on BEHAV
+# Results: SCHOOL 1, JUNIOR sample
+# FEMALE: TEST, LAB, CLASS positive; no effect on BEHAV
 # MALE: positive impact on LAB and CLASS, negative on BEHAV and no impact on TEST
 
+# Female, overall, benefit more; no different between both samples: school 1 with 
+#junior and school 1 with junitor and junior high

@@ -1,26 +1,8 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # RESULTS
 
-Sample are independent, and generaly not normal
+Sample are all independent, and generaly not normal; however, same cases the sample showed a normal distribution, t-student was used. Cases where the sample was bellow 20 observations,
 
-variables description ID: Identification entry row data; #DATE: year of
-the sample: it belongs, actually to 2003/2004, lective year; #SCHOOL:
-there are two schools, identified by 0 (till 2008) and 1 (after 2009);
-\# GENDER: F and M #TEST, LAB, BEHAV: variables of the score in the
-tests and observational forms at LAB (Laboratory practical skills
-assessment) \# and BEHAV related to accomplishement school rules
-behavior \# LAB work and Behavior, normally if they follow the rules
-stablished at school \# GRADE: categories 0 to 6, representing,
-respectively, 7,8,9,10,11, 10p(techical) and 11p (Technical) \# M4CID,
-category 0 and 1, respectively, without 4C/ID and with 4CID; \# CLASS, 0
-to 100, height average, CLASS=0.5*TEST+0.3*LAB+0.2\*BEHAV: #this will be
-used in a variable to be defined below, RANK: a study for student
-addaptation to the school system
+variables description ID: Identification entry row data; #DATE: year of the sample: it belongs, actually to 2003/2004, lective year; #SCHOOL: there are two schools, identified by 0 (till 2008) and 1 (after 2009); \# GENDER: F and M #TEST, LAB, BEHAV: variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment) \# and BEHAV related to accomplishement school rules behavior \# LAB work and Behavior, normally if they follow the rules stablished at school \# GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p(techical) and 11p (Technical) \# M4CID, category 0 and 1, respectively, without 4C/ID and with 4CID; \# CLASS, 0 to 100, height average, CLASS=0.5*TEST+0.3*LAB+0.2\*BEHAV: #this will be used in a variable to be defined below, RANK: a study for student addaptation to the school system
 
 Table 1: Variable description
 
@@ -28,66 +10,52 @@ Table 1: Variable description
 
 ## Results resume
 
-(and independency analysis)
+all sample and school effect
 
-| sample                                  |                  obs.                  |                 TEST                  |                 LAB                  |                BEHAV                |                            CLASS                            |                                                                     effect [^1]                                                                     |                  Note                   |
-|---------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| all sample                              |             828 (586) [^2]             |  62 (57), W = 276677, \<\< 0.05 [^3]  |    60 (65) W = 195470, \<\< 0.05     |    79 (76) W = 268902, 0.000253     |                 64 (62), W = 252126, 0.104                  |                                                 TEST, BEHAV negative; LAB positive; CLASS no effect                                                 |             school effect?              |
-| control group                           |             476 (352) [^4]             |    68 (54), W = 117771, \<\< 0.05     |    62 (51) W = 112552, \<\< 0.05     |    77 (80), W = 70972, \<\< 0.05    |                69 (58) W = 115938, \<\< 0.05                | Schools are different: Variable TEST, LAB, CLASS greater in school 0 then in school 1; Variable BEHAV is less for the School 0 then in the school 1 | inference about the schools differences |
-| control group (school effect)        |               476 (318)                | 68 (66), W = 78009, p-value = 0.4629  | 62 (64), W = 75615, p-value = 0.9827 | 77 (78), W = 74502, p-value = 0.709 |            69 (67), W = 77022, p-value = 0.6728             |                                                  Are they differnt? Yes, they are from the same distribution                                                   |                                         | negative on BEHAV; Positive for LAB and TEST; no effect for CLASS 
-| All sample (school effect) |  828 (586) | 67 (69), W = 223254, 0.005261 | 63(78), W = 140102, << 0.05 | 77(73), W = 287377, << 0.05 | 68 (71), W = 199597, << 0.05 | | |
-| Junior grade (school effect) |               794 (365)                |    67 (70), W = 127454, 0.0004884     |    63 (79) , W = 77643, \<\< 0.05    |   77 (73), W = 165710, \<\< 0.05    |               68 (72), W = 112527, \<\< 0.05                |                                                                    both schools                                                                     |  negative on BEHAV; Positive for LAB, TEST and CLASS                                        |
-| JUNIOR (school effect)(SCHOOL1 with 4CID)                |               476 (586)                |     68 (69), W = 130091, 0.02962      |    62 (78), W = 77111, \<\< 0.05     |    77 (73), W = 164808, << 0.05    |                69 (71), W = 115251, \<\< 0.05                |                                                 negative on BEHAV; Positive for LAB, TEST and CLASS                                                 |                                         |
-| Grade 7 (school effect)                       |                253 (99)                |      66 (70), W = 11256, 0.07002      |     63 (78), W = 7002, \<\< 0.05     |      76 (70),  W = 15329, 0.0005411      |                69 (73),  W = 10010, 0.001708     |   no effect for TEST; BEHAV negative; LAB, CLASS positive                          |                                         |
-| Grade 8 (school effect)                       | 92 (147) | 54 (58), W = 4986.5, 0.00032 |    51 (62), W = 4156.5, \<\< 0.05     |     88 (72), W = 9869, \<\< 0.05     |     58 (61), W = 5330, 0.002957     | positive impact for TEST, LAB and CLASS, negative for BEHAV |                                                                                                                                                     |                                         |
-| SCHOOL 1, Grade 9                       |               103 (119)                | 56 (58), W = 5568.5, p-value = 0.1205 |    44 (66), W = 2193.5, \<\< 0.05    |    80 (85), W = 5249.5, 0.03274     |               55 (64), W = 4003.5, \<\< 0.05                |                                            no impact for TEST; positive impact for LAB, BEHAV and CLASS                                             |                                         |
-| school 1 junior and junior high, RANK 1 |                56 (37)                 |     34 (33), W = 1242.5, 0.05279      |   26 (35), W = 0.94629, 0.0007958    |    65 (53), W = 1435, 0.0008741     |                  39 (38), W = 1173, 0.142                   |                                                                                                                                                     |                                         |
-| RANK 2                                  |               224 (376)                |      53 (51), W = 44638, 0.1093       |    51 (60), W = 27436, \<\< 0.05     |    80 (72), W = 55922, \<\< 0.05    |                 57 (58), W = 40020, 0.1543                  |                                                                                                                                                     |                                         |
-| RANK 3                                  |                72 (173)                |       78 (79), W = 6093, 0.395        |     74 (81), W = 3938, \<\< 0.05     |   94 (88), W = 8170.5, \<\< 0.05    |                76 (79), W = 5130.5, 0.01497                 |                                                                                                                                                     |                                         |
-| school 1 and junior RANK 1              |                55 (22)                 |       33 (34), W = 725, 0.9131        |      26 (35), W = 346, 0.001746      |    65 (54), W = 866.5, 0.001615     |                  39 (39), W = 720, 0.09832                  |                                                                                                                                                     |                                         |
-| RANK 2                                  |               196 (225)                |      53 (52), W = 22974, 0.2291       |    51 (61), W = 13807, \<\< 0.05     |    80 (72), W = 29278, \<\< 0.05    |                 57 (58), W = 20174, 0.06598                 |                                                                                                                                                     |                                         |
-| RANK 3                                  |                67 (118)                |      79 (81), W = 3832.5, 0.3658      |    73 (81), W = 2343.5, \<\< 0.05    |    94 (91), W = 4871.5, 0.004318    |                77 (81), W = 3088.5, 0.006789                |                                        no effect for TEST and CLASS, negative for BEHAV, and positive on LAB                                        |                                         |
-| SCHOOL 1 FEMALE                         |               160 (166)                |     54 (61), W = 10924, 0.002804      |    50 (70), W = 5499.5, \<\< 0.05    |     82 (82), W = 13459, 0.8337      |               58 (67), W = 8602.5, \<\< 0.05                |                                                TEST, LAB, CLASS positive impact; no impact for BEHAV                                                |      Female, averall, benefit more      |
-| SCHOOL 1 MALE                           |               158 (199)                |      54 (57), W = 14188, 0.05675      |    53 (61), W = 11162, \<\< 0.05     |    80 (72), W = 19768, \<\< 0.05    |                 58 (60), W = 13812, 0.04883                 |                                              TEST, CLASS no impact, positive LAB ; Negative for BEHAV                                               |                                         |
+| sample                                    |      obs.       |                     TEST                     |                  LAB                   |                BEHAV                |                CLASS                 |                                                                    effect [\^1]                                                                     |                 OBSERVATIONS/NOTES                  |
+|---------|:----------:|:------------------------:|:----------------------:|:----------------------:|:--------------------:|:-------:|:-------:|
+| all sample                                | 828 (586) [\^2] |     62 (57), W = 276677, \<\< 0.05 [\^3]     |     60 (65) W = 195470, \<\< 0.05      |    79 (76) W = 268902, 0.000253     |      64 (62), W = 252126, 0.104      |                                                 TEST, BEHAV negative; LAB positive; CLASS no effect                                                 |                   school effect?                    |
+| control group                             | 476 (352) [\^4] |        68 (54), W = 117771, \<\< 0.05        |     62 (51) W = 112552, \<\< 0.05      |    77 (80), W = 70972, \<\< 0.05    |    69 (58) W = 115938, \<\< 0.05     | Schools are different: Variable TEST, LAB, CLASS greater in school 0 then in school 1; Variable BEHAV is less for the School 0 then in the school 1 |       inference about the schools differences       |
+| control group (school effect)             |    476 (318)    |     68 (66), W = 78009, p-value = 0.4629     |  62 (64), W = 75615, p-value = 0.9827  | 77 (78), W = 74502, p-value = 0.709 | 69 (67), W = 77022, p-value = 0.6728 |                                             Are they differnt? Yes, they are from the same distribution                                             |                                                     |
+| All sample (school effect)                |    828 (586)    |        67 (69), W = 223254, 0.005261         |     63(78), W = 140102, \<\< 0.05      |    77(73), W = 287377, \<\< 0.05    |    68 (71), W = 199597, \<\< 0.05    |                                                                                                                                                     |                                                     |
+| Junior grade (school effect)              |    794 (365)    |        67 (70), W = 127454, 0.0004884        |     63 (79) , W = 77643, \<\< 0.05     |   77 (73), W = 165710, \<\< 0.05    |    68 (72), W = 112527, \<\< 0.05    |                                                                    both schools                                                                     | negative on BEHAV; Positive for LAB, TEST and CLASS |
+| JUNIOR (school effect)(SCHOOL1 with 4CID) |    476 (586)    |         68 (69), W = 130091, 0.02962         |     62 (78), W = 77111, \<\< 0.05      |   77 (73), W = 164808, \<\< 0.05    |    69 (71), W = 115251, \<\< 0.05    |                                                 negative on BEHAV; Positive for LAB, TEST and CLASS                                                 |                                                     |
+| Grade 7 (school effect)                   |    253 (99)     |         66 (70), W = 11256, 0.07002          |      63 (78), W = 7002, \<\< 0.05      |    76 (70), W = 15329, 0.0005411    |     69 (73), W = 10010, 0.001708     |                                               no effect for TEST; BEHAV negative; LAB, CLASS positive                                               |                                                     |
+| Grade 8 (school effect)                   |    264 (147)    |         66 (70),W = 15210, 0.0001402         |     60 (75), W = 10940, \<\< 0.05      |    80 (69), W = 26533, \<\< 0.05    |    67 (70), W = 15496, 0.0003562     |                                             positive impact for TEST, LAB and CLASS, negative for BEHAV                                             |                                                     |
+| Grade 9 (school effect)                   |    277 (119)    |          66 (70),W = 15458, 0.8367           |     60 (75), W = 7351.5, \<\< 0.05     |    76 (82), W = 13648, 0.003335     |    68 (73), W = 11778, \<\< 0.05     |                                                no effect for TEST, LAB and CLASS, negative for BEHAV                                                |                                                     |
+| All sample RANK = 1 (School effect)       |     31 (14)     | 43 (37), mu = 0, 0.03425 (\^perm. t.student) | 30 (45) , mu = 0, 0.9986 (\^perm.test) |    56 (46), W = 315.5, 0.008112     |       42 (42), mu = 0, 0.54905       |                                             TEST, BEHAV negative effect; LAB positive; no effect CLASS                                              |         Low sample; ties; permutation stats         |
+| All sample RANK = 2 (School effect)       |    445 (266)    |         58 (58), t = 0.45525, 0.3246         |     57 (66), W = 33122, \<\< 0.05      |    72 (64), W = 77830, \<\< 0.05    |     61(63), W = 50833, 0.0008126     |                                               TEST no effect; LAB and CLASS positive; BEHAV negative;                                               |                                                     |
+| All sample RANK = 3 (School effect)       |    352 (306)    |        80 (81), t = -2.2997, 0.01091         |     77 (88), W = 27279, \<\< 0.05      |    85 (80), W = 68407, \<\< 0.05    |     78(81), W = 43756, \<\< 0.05     |                                                    TEST, LAB and CLASS positive; BEHAV negative;                                                    |                                                     |
+| FEMALE                                    |    410 (192)    |        67 (72), W = 32801, 0.0004873         |      63(83), W = 17308, \<\< 0.05      |     78 (80), W = 38246, 0.2879      |     68(75), W = 26457, \<\< 0.05     |                                                    TEST, LAB and CLASS positive; BEHAV no effect                                                    |                                                     |
+| MALE                                      |    418 (394)    |          67 (67), W = 79087, 0.3293          |      62(76), W = 52084, \<\< 0.05      |    77(70), W = 105232, \<\< 0.05    |     68(69), W = 73271, 0.003297      |                                               TEST no effect; LAB and CLASS positive; BEHAV negative;                                               |                                                     |
 
-[^1]: efect in each variable: no effect, positive or negative;
+Median values presented in %.
 
-[^2]: number of observations with 4C/ID (number of observations without
-    4C/ID);
+| sample           |   obs.    |            TEST             |               LAB               |             BEHAV             |             CLASS             |                              effect [\^1]                               | OBSERVATIONS/NOTES |
+|---------|:-------:|:----------------------:|:--------------------:|:--------------------:|:--------------------:|:-------:|:-------:|
+| School 1         | 352 (586) | 54(57), W = 93164, 0.006522 |  51(65), W = 62990, \<\< 0.05   | 80(76), W = 122569, \<\< 0.05 | 58 (62), W = 84348, \<\< 0.05 | positive TEST, LAB and CLASS effect; negative impact for BEHAV variable |                    |
+| school 1, JUNIOR | 318(365)  |  54(58),W = 50325, 0.00136  |  51(66), W = 33211, \<\< 0.05   | 81(76), W = 66732, 0.0003594  | 58(63), W = 60609, \<\< 0.05  | positive TEST, LAB and CLASS effect; negative impact for BEHAV variable |                    |
+| GRADE 7          |  123(99)  | 54(58), W = 5604.5, 0.1547  |   56(69), W = 4079, \<\< 0.05   |   77(73), W = 7084, 0.0182    |  60(64), W = 5144.5, 0.02366  |         TEST no effect, LAB and CLASS positive, BEHAV negative          |                    |
+| GRADE 8          |  92(147)  | 54(58), W = 4986.5, 0.00032 |  51(62), W = 4156.5, \<\< 0.05  |  88(72), W = 9869, \<\< 0.05  |  58(61), W = 5330, 0.002957   |              TEST, LAB and CLASS positive; BEHAV negative               |                    |
+| GRADE 9          | 103(119)  |  56(58) W = 5568.5, 0.1205  | 44(66), W = 2193.5, p \<\< 0.05 |  80(85), W = 5249.5, 0.03274  | 55(64), W = 4003.5, \<\< 0.05 |              TEST no effect, LAB, BEHAV and CLASS positive              |                    |
+| RANK 1           |  56(37)   | 34(33), W = 1242.5, 0.1056  |   26(35), W = 606, 0.0003672    |  65(53), W = 1435, 0.0008741  |    39(39), W = 1173, 0.142    |           TEST, CLASS no effect; LAB positive; negative BEHAV           |                    |
+| RANK 2           | 224(376)  |  52(52), W = 44638, 0.1093  |  51(60), W = 27436, \<\< 0.05   | 80(72), W = 55922, \<\< 0.05  |   57(57), W = 40020, 0.1543   |           TEST, CLASS no effect;positive LAB; negative BEHAV            |                    |
+| RANK 3           |  72(173)  |   78(78), W = 6093, 0.395   |   74(81), W = 3938, \<\< 0.05   | 94(88), W = 8170.5, \<\< 0.05 |  76(80), W = 5130.5, 0.01497  |         TEST no effect; positive LAB and CLASS; negative BEHAV          |                    |
+| RANK 1 - JUNIOR  |  55(22)   |   33(34), W = 725, 0.9131   |    26(35), W = 346, 0.001746    |  65(54), W = 866.5, 0.001615  |    39(39), W = 720, 0.1966    |         TEST and CLASS no effect; positive LAB; negative BEHAV          |                    |
+| RANK 2 - JUNIOR  | 196(225)  |  53(52), W = 22974, 0.2291  |  51(61), W = 13807, \<\< 0.05   | 80(72), W = 29278, \<\< 0.05  |  57(58), W = 20174, 0.06598   |         TEST and CLASS no effect; BEHAV negative; LAB positive          |                    |
+| RANK 3 - JUNIOR  |  67(118)  | 79(81), W = 3832.5, 0.3658  |  73(81), W = 2343.5, \<\< 0.05  | 94(91), W = 4871.5, 0.004318  | 77(81), W = 3088.5, 0.006789  |         TEST no effect; LAB and CLASS positive; BEHAV negative          |                    |
+| FEMALE           | 160(192)  | 54(64), W = 12919, 0.005118 |  50(70), W = 6911.5, \<\< 0.05  |   82(83), W = 15102, 0.393    | 58(66), W = 10268, \<\< 0.05  |              TEST, CLASS and LAB positive; BEHAV no effect              |                    |
+| MALE             | 102(394)  |  54(55), W = 35107, 0.0789  |  53(63), W = 26428, \<\< 0.05   | 80(73), W = 48248, \<\< 0.05  |  58(60), W = 33742, 0.01693   |         TEST no effect; LAB and CLASS positive; BEHAV negative          |                    |
+| FEMALE JUNIOR    | 160(166)  | 54(61), W = 10924, 0.002804 |  50(70), W = 5499.5, \<\< 0.05  |   82(82), W = 13459, 0.8337   | 58(67), W = 8602.5, \<\< 0.05 |              TEST, LAB, CLASS positive; no effect on BEHAV              |                    |
+| MALE JUNIOR      | 158(199)  | 54(57), W = 14188, 0.05675  |  53(61), W = 11162, \<\< 0.05   | 80(72), W = 19768, \<\< 0.05  |  58(60), W = 13812, 0.02442   |        no effect on TEST; positive LAB and CLASS; negative BEHAV        |                    |
 
-[^3]: firts two numbers the median variable change; third number
-    Wilcoxon stat value and p-value;
+# NOTES
 
-[^4]: number of observatons of school 0 and, in pharentheses, number of
-    observatons of school 1;
+#Inference conclusion for the 4C/ID treatment effect for all sample, \# no matter which school, for each data variables: TEST, LAB, BEHAV and CLASS \# Samples are independent, Wilcoxon inference non-parametric test \# for the global TEST and BEHAV, negative 4CID effect \# no effect for CLASS variable; \# LAB variable, positive effect
 
-#Inference conclusion for the 4C/ID treatment effect for all sample, \#
-no matter which school, for each data variables: TEST, LAB, BEHAV and
-CLASS \# Samples are independent, Wilcoxon inference non-parametric test
-\# for the global TEST and BEHAV, negative 4CID effect \# no effect for
-CLASS variable; \# LAB variable, positive effect
+#Hypothesis: does the patterns showned in the last graphs where there was a negative bump during the transition to the second #between the schools showed earlier in the graphs should be considered? #Is there a school effect on the results? #should the data between schools in the same 4CID conditions 0 be assessed? yes, #but only the junior school should be compared #we should use the CLASS to study the differences between schools and not the other #variables; if we use the variable because it is a math relation qith the others \# just with class variable
 
-#Hypothesis: does the patterns showned in the last graphs where there
-was a negative bump during the transition to the second #between the
-schools showed earlier in the graphs should be considered? #Is there a
-school effect on the results? #should the data between schools in the
-same 4CID conditions 0 be assessed? yes, #but only the junior school
-should be compared #we should use the CLASS to study the differences
-between schools and not the other #variables; if we use the variable
-because it is a math relation qith the others \# just with class
-variable
-
-Identifying shool diferences: Inference for the differences in schools,
-without 4CID, for each variable: TEST, LAB, BEHAV and CLASS; Variable
-TEST, LAB, CLASS greater in school 0 then in school 1 #Variable BEHAV is
-less for the School 0 then in the school 1 \# So, this pivotal moment,
-take this research to consider that #there is a school effect, that
-biased all variables, in the negative way except #for the BEHAV
-variable, in the positive way for school 1. So this is going to be
-restricted to school 1: \# it is considered an analysis for the school 1
-as a global data sample, \# and an analysis only at the junior level in
-school 1. Secondary school wil #not be analized because there is no
-scondary sample with no 4CID.
+Identifying shool diferences: Inference for the differences in schools, without 4CID, for each variable: TEST, LAB, BEHAV and CLASS; Variable TEST, LAB, CLASS greater in school 0 then in school 1 #Variable BEHAV is less for the School 0 then in the school 1 \# So, this pivotal moment, take this research to consider that #there is a school effect, that biased all variables, in the negative way except #for the BEHAV variable, in the positive way for school 1. So this is going to be restricted to school 1: \# it is considered an analysis for the school 1 as a global data sample, \# and an analysis only at the junior level in school 1. Secondary school wil #not be analized because there is no scondary sample with no 4CID.
 
 # school effect: calculus of the diferences:
 
@@ -97,32 +65,15 @@ scondary sample with no 4CID.
 | BEHAV \| -3 (-4) \|\|
 | CLASS \| 9 (11) \|\|
 
-sample with only junior grade for both schools In this sample, variables
-will be added with the differences computed before in order to acess if
-the two sample are from the same dstribution prepararing the sample to
-take into account the differences; in the case of TEST, LAB and CLASS,
-it will #be added to the sample of school 1 the differences computed in
-this variables. In the case of the variable BEHAV, \# it will be added
-to school 0, in order to not create negative numbers, consequently, to
-keep the variables between 0 and 100; \# NOTE: the values of TEST, LAB
-and CLASS are over 100%: I think its not a problem because tehre is a
-need to compare \# the change: there is no limitation to 100% for the
-inference analysis: DOUBT/DISCUSSION!?!?!?! #compare
-data_junior_computed #compare samples after the computation explained
-just now: #data_JUNIOR_SCHOOL0 and data_junior_computed_SCHOOL1_M4CID0:
-are they from the same distribution? Conclusion: yes, they are from the
-same sample distribution
+sample with only junior grade for both schools In this sample, variables will be added with the differences computed before in order to acess if the two sample are from the same dstribution prepararing the sample to take into account the differences; in the case of TEST, LAB and CLASS, it will #be added to the sample of school 1 the differences computed in this variables. In the case of the variable BEHAV, \# it will be added to school 0, in order to not create negative numbers, consequently, to keep the variables between 0 and 100; \# NOTE: the values of TEST, LAB and CLASS are over 100%: I think its not a problem because tehre is a need to compare \# the change: there is no limitation to 100% for the inference analysis: DOUBT/DISCUSSION!?!?!?! #compare data_junior_computed #compare samples after the computation explained just now: #data_JUNIOR_SCHOOL0 and data_junior_computed_SCHOOL1_M4CID0: are they from the same distribution? Conclusion: yes, they are from the same sample distribution
 
 # Inference for computed junior differences with and without 4C/ID, between school 0 and school 1
 
 # Inference conclusion for computed junior differences with and without 4C/ID,
 
-between school 0 and school 1 (this school with only 4C/ID) negative on
-BEHAV Positive effect for LAB, TEST and CLASS
+between school 0 and school 1 (this school with only 4C/ID) negative on BEHAV Positive effect for LAB, TEST and CLASS
 
-#Inference for computed junior differences between school 0 and global
-school 1 junior and junior high with 4CID, Excluding School 1 with no
-4C/ID
+#Inference for computed junior differences between school 0 and global school 1 junior and junior high with 4CID, Excluding School 1 with no 4C/ID
 
 use the calculus about the computed differences already made
 
@@ -132,48 +83,33 @@ see Table 11: Differences computed for junior school 0 and 1
 
 Conclusion computed diferences for junior and junior high school 0 and 1
 
-(exclude school 1 without 4C/ID) negative BEHAV \# TEST, LAB, CLASS
-positive
+(exclude school 1 without 4C/ID) negative BEHAV \# TEST, LAB, CLASS positive
 
-Table 12: Inference for computed diferences for junior and junior high
-school 0 and 1 (excluding school 1 without 4C/ID)
+Table 12: Inference for computed diferences for junior and junior high school 0 and 1 (excluding school 1 without 4C/ID)
 
 # Inference for computed global sample differences with and without 4CID
 
-use the calculus about the computed differences already made see Table
-11: Differences computed for junior school 0 and 1
+use the calculus about the computed differences already made see Table 11: Differences computed for junior school 0 and 1
 
 # all sample
 
-Conclusions 4C/ID treatment effect with computed samples for the entire
-sample BEHAV negative TEST, LAB, CLASS positive
+Conclusions 4C/ID treatment effect with computed samples for the entire sample BEHAV negative TEST, LAB, CLASS positive
 
 Table 13: Inference for computed differences for the entire sample
 
 # Inference only for School 1, global sample (include junior high for school 1): sample not computed
 
-Table 14: Inference only for junior and junior high school 1 Conclusions
-for sample junior and junior high school 1 \# not normal, sample
-independent, no rejection of h0 \# 4CID as positive impact on TEST, LAB
-and CLASS Variables; \# 4CID as a negative impact in BEHAV variable
+Table 14: Inference only for junior and junior high school 1 Conclusions for sample junior and junior high school 1 \# not normal, sample independent, no rejection of h0 \# 4CID as positive impact on TEST, LAB and CLASS Variables; \# 4CID as a negative impact in BEHAV variable
 
 # inference junior, school 1
 
-Conclusions for sample junior School 1 not normal sample, No rejection
-under H0, sample independent 4CID as a positive impact on TEST, LAB and
-CLASS Variable; 4CID as a negative impact in BEHAV variable
+Conclusions for sample junior School 1 not normal sample, No rejection under H0, sample independent 4CID as a positive impact on TEST, LAB and CLASS Variable; 4CID as a negative impact in BEHAV variable
 
 Table 15: Inference for junior school 1
 
 # GRADE
 
-Table 16: Inference for junior school 1, GRADES 7, 8 AND 9TH Conclusion
-#samples not normal but independent \# GRADE 7 \# 4CID has positive
-impact on TEST, LAB and CLASS Variables; \# 4CID has a negative impact
-in BEHAV variable GRADE 8 \# Note: M4CID=="1",less then 100 entrances \#
-4CID has a positive impact on TEST, LAB and CLASS \# 4CID negative on
-BEHAV Variable; Grade 9 \# 4CID has no impact on TEST Variable; \# 4CID
-has positive impact in LAB, BEHAV and CLASS Variable;
+Table 16: Inference for junior school 1, GRADES 7, 8 AND 9TH Conclusion #samples not normal but independent \# GRADE 7 \# 4CID has positive impact on TEST, LAB and CLASS Variables; \# 4CID has a negative impact in BEHAV variable GRADE 8 \# Note: M4CID=="1",less then 100 entrances \# 4CID has a positive impact on TEST, LAB and CLASS \# 4CID negative on BEHAV Variable; Grade 9 \# 4CID has no impact on TEST Variable; \# 4CID has positive impact in LAB, BEHAV and CLASS Variable;
 
 # RANK
 
@@ -187,26 +123,17 @@ This RANK analysis uses school 1 and junior grade sample only
 
 Table 17: Inference for junior school 1, RANK 1, 2, 3
 
-Conclusion RANK 1, 2 and 3, same results: no effect for TEST and CLASS,
-negative for BEHAV, and positive on LAB
+Conclusion RANK 1, 2 and 3, same results: no effect for TEST and CLASS, negative for BEHAV, and positive on LAB
 
 ########## GENDER
 
 #This analysis uses school 1 and junior grade sample
 
-sample entries: 783; Female = 326 (48%); Male=357 52%(); \# female:
-M4CID0 = 160; M4CID1=166 \# male: M4CID0 = 158; M4CID1=199 #data sample
-not normal but independent \# Table 18: Inference sample junior school 1
-for GENDER
+sample entries: 783; Female = 326 (48%); Male=357 52%(); \# female: M4CID0 = 160; M4CID1=166 \# male: M4CID0 = 158; M4CID1=199 #data sample not normal but independent \# Table 18: Inference sample junior school 1 for GENDER
 
 # Results
 
-Test no impact for male; female positive impact Both benefit in LAB
-variable In the BEHAV variable negative impact for MALE and no impact
-for FEMALE positive impact on female Class variable but no impact for
-the male Female, averall, benefit more: positive in TEST, LAB and CLASS,
-no effect on BEHAV MALE: positive impact on LAB and CLASS, negative on
-BEHAV and no impact on TEST
+Test no impact for male; female positive impact Both benefit in LAB variable In the BEHAV variable negative impact for MALE and no impact for FEMALE positive impact on female Class variable but no impact for the male Female, averall, benefit more: positive in TEST, LAB and CLASS, no effect on BEHAV MALE: positive impact on LAB and CLASS, negative on BEHAV and no impact on TEST
 
 # Summary results and notes UPDATE THIS
 
@@ -214,24 +141,9 @@ BEHAV and no impact on TEST
 
 # Regression discontinuity design (RDD)
 
-The regression discontinuity model was created to deal with one very
-specific type #of selection - cases where people have to qualify for the
-program, and the criteria #for qualification is a measure that is highly
-correlated with performance. #Some threshold is created and all people
-that score above the threshold are accepted #into the program, and all
-people below are not allowed to participate, or vice-versa." \#
-Regression discontinuity is used to solve this problem and assess
-whether or not we \# observe a treatment effect. It does so by
-accounting for the relationship between #the outcome and the rating
-variable and then calculating the difference between the #ntwo groups.
-SOURCE:
-<https://ds4ps.org/pe4ps-textbook/docs/p-060-reg-discontinuity.html>
+The regression discontinuity model was created to deal with one very specific type #of selection - cases where people have to qualify for the program, and the criteria #for qualification is a measure that is highly correlated with performance. #Some threshold is created and all people that score above the threshold are accepted #into the program, and all people below are not allowed to participate, or vice-versa." \# Regression discontinuity is used to solve this problem and assess whether or not we \# observe a treatment effect. It does so by accounting for the relationship between #the outcome and the rating variable and then calculating the difference between the #ntwo groups. SOURCE: <https://ds4ps.org/pe4ps-textbook/docs/p-060-reg-discontinuity.html>
 
-Figure 16: Regression analysis by 4C/ID treatment effect \# looking to
-the plots (see bellow) its clear that there is no linear model that
-explinais the data \# RDD s just to verify discontinuities in 2013. At
-least for the BEAHV and CLASS variable there a discontinuity \# looking
-at all plots it seems thta there is a change around 2013
+Figure 16: Regression analysis by 4C/ID treatment effect \# looking to the plots (see bellow) its clear that there is no linear model that explinais the data \# RDD s just to verify discontinuities in 2013. At least for the BEAHV and CLASS variable there a discontinuity \# looking at all plots it seems thta there is a change around 2013
 
 # scatterplots with regressions over time
 
@@ -239,42 +151,21 @@ at all plots it seems thta there is a change around 2013
 
 # NOTES
 
-Figure 2 and the next table present a resume of the **results**. The
-values showed represent changes in the variables median.
+Figure 2 and the next table present a resume of the **results**. The values showed represent changes in the variables median.
 
 ![Figure 2: Boxplot time series](Figures/Figure2_BoxplotTimeSeries.png)
 
-Figure 2 shows in the y-axis the name of the samples and the x-axis show
-the median differences for each sample in four variables already
-described: TEST, LAB, BEHAV and CLASS. The variables change, represented
-by colors (see legend), between treatment group and control group are
-presented on the left of the graph if there is a negative impact and in
-the right if there is a positive 4C/ID impact. There is a vertical line
-with x equal to zero, meaning that there is no 4C/ID impact.
+Figure 2 shows in the y-axis the name of the samples and the x-axis show the median differences for each sample in four variables already described: TEST, LAB, BEHAV and CLASS. The variables change, represented by colors (see legend), between treatment group and control group are presented on the left of the graph if there is a negative impact and in the right if there is a positive 4C/ID impact. There is a vertical line with x equal to zero, meaning that there is no 4C/ID impact.
 
-Looking into the graph there are two groups of results that stands: blue
-and green. The first means that there is a positive treatment effect for
-the Lab Practice and the latter means that there is a overall negative
-impact for the social skills: in this case only the GRADE 9 students
-seems to have a positive impact and no effect for FEMALE students. The
-TEST variable shows a tendency towards no impact with a few positive and
-negative. For the CLASS, Academic Results there a tendecy towards no
-effect to a slight negative one.
+Looking into the graph there are two groups of results that stands: blue and green. The first means that there is a positive treatment effect for the Lab Practice and the latter means that there is a overall negative impact for the social skills: in this case only the GRADE 9 students seems to have a positive impact and no effect for FEMALE students. The TEST variable shows a tendency towards no impact with a few positive and negative. For the CLASS, Academic Results there a tendecy towards no effect to a slight negative one.
 
-Looking into the sample JUNIOR SCHOOL 1 (sample with grades 7, 8 and 9
-for school 1) that seems to be more reliable for three reasons:most
-**robust and reliable sample** used in this work: in fact the sample is
-much larger. So, they show results about the JUNIOR sample for SCHOOL 1,
-which means:
+Looking into the sample JUNIOR SCHOOL 1 (sample with grades 7, 8 and 9 for school 1) that seems to be more reliable for three reasons:most **robust and reliable sample** used in this work: in fact the sample is much larger. So, they show results about the JUNIOR sample for SCHOOL 1, which means:
 
 1.  Not having the school effect differences;
 2.  The sample has students with the same age;
-3.  It doesn't have the problem of using the less numbered entrances of
-    the junior high students sample.
+3.  It doesn't have the problem of using the less numbered entrances of the junior high students sample.
 
-The next table resumes the former graph in another order: it shows the
-percentage of "positive", "negative" and "no effect" results, detected
-for each sample.
+The next table resumes the former graph in another order: it shows the percentage of "positive", "negative" and "no effect" results, detected for each sample.
 
 | Variable                 |  \+  | \~  | \-  |                SAMPLE +                 |       no effect sample        |                SAMPLE -                 | Notes |
 |---------|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|---------|
@@ -285,13 +176,12 @@ for each sample.
 
 ## Qualitative results
 
-The qualitative results show students more motivated, teacher with more
-individual time but a crucial need for team work among teachers.
+The qualitative results show students more motivated, teacher with more individual time but a crucial need for team work among teachers.
 
 ## Qualitative
 
 | Qualitative Results                                                                                    | Description         | Notes |
-|----------------------------------------|----------------|----------------|
+|-----------------------------------|-------------------|-------------------|
 | Students inquire/comments about                                                                        | almost all positive |       |
 | teacher available to interact with the students while they are following the online lessons activities |                     |       |
 | students feel happy to pass to the next level, high motivation                                         |                     |       |
@@ -303,15 +193,11 @@ individual time but a crucial need for team work among teachers.
 
 # RESULTS
 
-This file contains the results of the inference statistical analysis
-methods used in this research work. The initial tables resume the work.
-The latest present the same results but with more details.
+This file contains the results of the inference statistical analysis methods used in this research work. The initial tables resume the work. The latest present the same results but with more details.
 
 ## Inference Analysis Table Resume
 
-The symbols +, \~ and - in the table represent a positive treatment
-effect, no effect and a negative treatment effect. Median values
-presented in %.
+The symbols +, \~ and - in the table represent a positive treatment effect, no effect and a negative treatment effect. Median values presented in %. \| sample \| obs. \| TEST \| LAB \| BEHAV \| CLASS \| effect [\^1] \| Note \| \|---------\|:-------:\|:-------:\|:-------:\|:-------:\|:-------:\|:-------:\|:-------:\|
 
 | SAMPLE                                                                   |     TEST      |      LAB      |     BEHAV     |     CLASS     |                 OBSERVATIONS/NOTES                  |
 |:-----------|:----------:|:----------:|:----------:|:----------:|:----------:|
@@ -331,8 +217,7 @@ presented in %.
 | FEMALE                                                                   | \+ (54 to 56) | \+ (52 to 70) |      \~       | \+ (59 to 67) |                                                     |
 | MALE                                                                     |      \~       | \+ (53 to 62) | \- (81 to 66) |      \~       |                                                     |
 
-TABLE ???: Legend: + means positive effect, -, negative effect and \~ no
-effect; Median values presented in %;
+TABLE ???: Legend: + means positive effect, -, negative effect and \~ no effect; Median values presented in %;
 
 | Variable \| + \| \~ \| -\| SAMPLE + \| no effect sample \| sample - \| Notes \|
 | TEST (Learning Transfer) \| 21% \| 50% \| 29% \| Junior, 8th grade and FEMALE \|\|
@@ -342,13 +227,10 @@ effect; Median values presented in %;
 
 ## Sample JUNIOR for SCHOOL 1
 
-The next two tables present the results for the most reliable sample
-used in this work. This is because it only uses JUNIOR sample for SCHOOL
-1, which means not having the school effect nor the problem of using the
-less numbered entrances of the junior high sample.
+The next two tables present the results for the most reliable sample used in this work. This is because it only uses JUNIOR sample for SCHOOL 1, which means not having the school effect nor the problem of using the less numbered entrances of the junior high sample.
 
 | SAMPLE                | TEST | LAB | BEHAV | CLASS |                 OBSERVATIONS/NOTES                  |
-|:-----------|:----------:|:----------:|:----------:|:----------:|:-----------:|
+|:-----------|:----------:|:----------:|:----------:|:----------:|:----------:|
 | *Junior for school 1* |  \+  | \+  |  \-   |  \+   | AFTER this road sample is junior grade for SCHOOL 1 |
 | GRADE 7               |  \~  | \+  |  \-   |  \~   |                                                     |
 | GRADE 8               |  \+  | \+  |  \-   |  \~   |  M4CID=="1",#71 entrances, less then 100 entrances  |
@@ -363,21 +245,13 @@ less numbered entrances of the junior high sample.
 | TEST (Learning Transfer) \| 22% \| 56% \| 0% \| All Junior sample, 8th grade and FEMALE \|GRADE 7, 9; \|RANK1\|\|
 | LAB (Lab practice) \|100%\|0%\|0%\|\|all samples\|\|\|\|
 
-\|BEHAV (Following social and behavioral classroom
-rules)\|11%\|11%\|78%\|GRADE 9\|FEMALE\|Junior; GRADE 7 and 8; all
-RANKs; MALE \|\| \|CLASS \|33%\|44%\|22%\|junior; 9th grade;
-FEMALE\|grades 7 and 8; RANK 2 e MALE\|RANK 1 and 3 \|\|
+\|BEHAV (Following social and behavioral classroom rules)\|11%\|11%\|78%\|GRADE 9\|FEMALE\|Junior; GRADE 7 and 8; all RANKs; MALE \|\| \|CLASS \|33%\|44%\|22%\|junior; 9th grade; FEMALE\|grades 7 and 8; RANK 2 e MALE\|RANK 1 and 3 \|\|
 
 ## Quantitative
 
-From this session on, the tables presented, details all the specific
-results from the analysis statistical methods used. Remember that, in
-this work, the Treatment effect implies the presence of the methodology
-4C/ID, variable M4CID =1: the control sample, implies direct instruction
-methodology, signalized with M4CID = 0;
+From this session on, the tables presented, details all the specific results from the analysis statistical methods used. Remember that, in this work, the Treatment effect implies the presence of the methodology 4C/ID, variable M4CID =1: the control sample, implies direct instruction methodology, signalized with M4CID = 0;
 
-table 11 : computed school differences for the junior sample school 0
-and 1 without 4C/ID methodology
+table 11 : computed school differences for the junior sample school 0 and 1 without 4C/ID methodology
 
 ### Data
 
@@ -424,8 +298,7 @@ Discussion: perhaps the school differences as some effect here
 | Schools without 4C/ID | greater                                            | LAB      | 6.946e-16        | positive      | School 0 as a greater LAB mean   |
 | Schools without 4C/ID | less                                               | BEHAV    | 8.526e-06        | positive      | School 0 as a less BEHAV mean    |
 
-Discussion: schools are different in all of the variables, so it's
-better to use school 1 only to assess the 4C/ID effect.
+Discussion: schools are different in all of the variables, so it's better to use school 1 only to assess the 4C/ID effect.
 
 ## Inference for SCHOOL 1 with or without 4C/ID
 
@@ -496,7 +369,7 @@ better to use school 1 only to assess the 4C/ID effect.
 ### RESULTS
 
 | Sample   | Mean for grade 7 without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes |
-|------------|-------------|------------|------------|------------|------------|
+|------------|------------|------------|------------|------------|------------|
 | school 1 | less                                                                  | CLASS    | 0.02623          | positive     |       |
 | school 1 | less                                                                  | TEST     | 0.1487           | no effect    |       |
 | school 1 | less                                                                  | LAB      | 1.702e-05        | positive     |       |
@@ -514,7 +387,7 @@ IMPORTANT note: median is close to the first quarter (line on R #651)
 ```
 
 | Sample   | Mean for grade 9 without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes |
-|------------|-------------|------------|------------|------------|------------|
+|------------|------------|------------|------------|------------|------------|
 | school 1 | less                                                                  | CLASS    | 9.012e-06        | positive     |       |
 | school 1 | less                                                                  | TEST     | 0.15258          | no effect    |       |
 | school 1 | less                                                                  | LAB      | 2.2e-16          | positive     |       |
@@ -522,8 +395,7 @@ IMPORTANT note: median is close to the first quarter (line on R #651)
 
 ## Inference for SCHOOL 1, RANKS 1, 2, and 3, with or without 4C/ID
 
-There is no scientific justification to construct the categories around
-de column CLASS with these definitions:
+There is no scientific justification to construct the categories around de column CLASS with these definitions:
 
 | categories | condition (CLASS) | RANK | \% data school 1 (683 entries) | \% data school 0 (474 entries)\^\* |
 |---------------|---------------|---------------|---------------|---------------|
@@ -531,49 +403,33 @@ de column CLASS with these definitions:
 | 2          | 55-70%            | 2    | 41 % (281)                     | 39% (186)                          |
 | 3          | \>=70             | 3    | 25 % (173)                     | 45% (212)                          |
 
-Just comparing the schools to double-check for the differences in
-schools in competence/adaptation edu system
+Just comparing the schools to double-check for the differences in schools in competence/adaptation edu system
 
-Conclusion: it seems that students in school 0 are more adapted than
-those in school 1.
+Conclusion: it seems that students in school 0 are more adapted than those in school 1.
 
-summary(data_s1_RANK1) \| TEST \| LAB \| BEHAV \| \|---\|---\|---\| \|
-Min. :11.0 \| Min. : 0.00 \| Min. : 29.00 \|\
-\| 1st Qu.:34.0 \| 1st Qu.:31.00 \| 1st Qu.: 59.00 \| \| Median :42.0 \|
-Median :41.00 \| Median : 67.00 \|\
-\| Mean :41.79 \| Mean :40.45 \| Mean : 68.04 \| \| 3rd Qu.:48.00 \| 3rd
-Qu.:53.00 \| 3rd Qu.: 78.00 \| \| Max. :72.0 \| Max. :80.00 \| Max.
-:100.00 \|
+summary(data_s1_RANK1) \| TEST \| LAB \| BEHAV \| \|---\|---\|---\| \| Min. :11.0 \| Min. : 0.00 \| Min. : 29.00 \|\
+\| 1st Qu.:34.0 \| 1st Qu.:31.00 \| 1st Qu.: 59.00 \| \| Median :42.0 \| Median :41.00 \| Median : 67.00 \|\
+\| Mean :41.79 \| Mean :40.45 \| Mean : 68.04 \| \| 3rd Qu.:48.00 \| 3rd Qu.:53.00 \| 3rd Qu.: 78.00 \| \| Max. :72.0 \| Max. :80.00 \| Max. :100.00 \|
 
-summary(data_s1_RANK2) \| TEST \| LAB \| BEHAV \| \|---\|---\|---\| \|
-Min. :34.00 \| Min. : 4.00 \| Min. : 40.00 \| \| 1st Qu.:51.00 \| 1st
-Qu.:53.00 \| 1st Qu.: 67.00 \| \| Median :57.00 \| Median :60.00 \|
-Median : 77.00 \| \| Mean :58.21 \| Mean :59.74 \| Mean : 74.98 \|\
-\| 3rd Qu.:67.00 \| 3rd Qu.:67.00 \| 3rd Qu.: 87.00 \| \| Max. :87.00 \|
-Max. :87.00 \| Max. :100.00 \|
+summary(data_s1_RANK2) \| TEST \| LAB \| BEHAV \| \|---\|---\|---\| \| Min. :34.00 \| Min. : 4.00 \| Min. : 40.00 \| \| 1st Qu.:51.00 \| 1st Qu.:53.00 \| 1st Qu.: 67.00 \| \| Median :57.00 \| Median :60.00 \| Median : 77.00 \| \| Mean :58.21 \| Mean :59.74 \| Mean : 74.98 \|\
+\| 3rd Qu.:67.00 \| 3rd Qu.:67.00 \| 3rd Qu.: 87.00 \| \| Max. :87.00 \| Max. :87.00 \| Max. :100.00 \|
 
-summary(data_s1_RANK3) \| TEST \| LAB \| BEHAV \| \|---\|---\|---\|---\|
-\| Min. : 53.00 \| Min. : 34.00 \| Min. : 64.00 \| \| 1st Qu.: 71.00 \|
-1st Qu.: 70.00 \| 1st Qu.: 84.00 \| \| Median : 79.00 \| Median : 80.00
-\| Median : 92.00 \| \| Mean : 79.27 \| Mean : 76.52 \| Mean : 89.49 \|
-\| 3rd Qu.: 86.00 \| 3rd Qu.: 85.00 \| 3rd Qu.: 96.00 \| \| Max. :100 \|
-Max. :100.00 \| Max. :100.00 \|
+summary(data_s1_RANK3) \| TEST \| LAB \| BEHAV \| \|---\|---\|---\|---\| \| Min. : 53.00 \| Min. : 34.00 \| Min. : 64.00 \| \| 1st Qu.: 71.00 \| 1st Qu.: 70.00 \| 1st Qu.: 84.00 \| \| Median : 79.00 \| Median : 80.00 \| Median : 92.00 \| \| Mean : 79.27 \| Mean : 76.52 \| Mean : 89.49 \| \| 3rd Qu.: 86.00 \| 3rd Qu.: 85.00 \| 3rd Qu.: 96.00 \| \| Max. :100 \| Max. :100.00 \| Max. :100.00 \|
 
 ## Results
 
 | Sample   | Mean for RANK 1 without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes |
-|------------|-------------|------------|------------|------------|------------|
+|------------|------------|------------|------------|------------|------------|
 | school 1 | greater                                                              | TEST     | 0.05162          | no effect    |       |
 | school 1 | less                                                                 | LAB      | 8.549e-10        | positive     |       |
 | school 1 | greater                                                              | BEHAV    | 1.345e-07        | negative     |       |
 
 ## Using a sampling of 68 entries
 
-There are several different results: should I use a for statement, for
-the no effect result????
+There are several different results: should I use a for statement, for the no effect result????
 
 | Sample   | Mean for RANK 2 without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes |
-|------------|-------------|------------|------------|------------|------------|
+|------------|------------|------------|------------|------------|------------|
 | school 1 | less                                                                 | TEST     | 0.3329           | no effect    |       |
 | school 1 | less                                                                 | LAB      | 2.991e-07        | positive     |       |
 | school 1 | greater                                                              | BEHAV    | 4.755e-14        | negative     |       |
@@ -583,18 +439,17 @@ IMPORTANT NOTE: using sampling with 100 random entries confirms the effect
 ```
 
 | Sample   | Mean for RANK 3 without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes |
-|------------|-------------|------------|------------|------------|------------|
+|------------|------------|------------|------------|------------|------------|
 | school 1 | less                                                                 | TEST     | 0.5236           | no effect    |       |
 | school 1 | less                                                                 | LAB      | 4.814e-07        | positive     |       |
 | school 1 | greater                                                              | BEHAV    | 0.003234         | negative     |       |
 
-\`\`\` IMPORTANT NOTE: using sampling with 86 entries confirms the
-effect ´´´
+\`\`\` IMPORTANT NOTE: using sampling with 86 entries confirms the effect ´´´
 
 ## Qualitative
 
 | Qualitative Results                                                                                    | Description   | Notes |
-|----------------------------------------|----------------|----------------|
+|-----------------------------------|-------------------|-------------------|
 | Students inquire about the teacher                                                                     |               |       |
 | teacher available to interact with the students while they are following the online lessons activities |               |       |
 | students feel happy to pass to the next level, high motivation                                         |               |       |
@@ -602,11 +457,6 @@ effect ´´´
 | massive hours of teacher work, more than 55 hours a week                                               | Health issues |       |
 | Students help on lessons faults: missing information, fault links                                      |               |       |
 
-This qualitative and quantitative data will be analyzed recurring to
-usual statistical analysis and gather qualitative data to reinforce the
-main goals of the work.
+This qualitative and quantitative data will be analyzed recurring to usual statistical analysis and gather qualitative data to reinforce the main goals of the work.
 
-What others have done and how what you doing fits that The work done so
-far shows that the results are not clear. Well normally, the results on
-the social side are never a clear 80%. In this case, we are happy if
-things are 60% positive.
+What others have done and how what you doing fits that The work done so far shows that the results are not clear. Well normally, the results on the social side are never a clear 80%. In this case, we are happy if things are 60% positive.

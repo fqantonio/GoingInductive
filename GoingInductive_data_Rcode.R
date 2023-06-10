@@ -1,13 +1,13 @@
 #INDEX
-# GOALS - 45
-# HYPOTHESIS - 54
-# DATA - Exploratory data analysis (EDA) - 57
-  # DATA summary - 93
-  # Resume - 315
-  # DATA variables description - 352
-  # DATA structure - 367
-  # NORMALITY - 551
-# REFERENCES - 2854
+# GOALS - 18
+# HYPOTHESIS - 27
+# DATA - Exploratory data analysis (EDA) - 30
+  # DATA summary - 40
+  # Resume - 288
+  # DATA variables description - 326
+  # DATA structure - 341
+  # NORMALITY - 538
+# REFERENCES - 717
 
 # libraries 
 library(dplyr) #work with data frames
@@ -76,9 +76,19 @@ sd(data$TEST)
 sd(data$LAB)
 sd(data$BEHAV)
 sd(data$CLASS)
+# SD TEST, 17; LAB: 19; BEHAH: 15; CLASS: 14: data with heavy tails
+
+# Junior and Junior high 
+summary(data)
+length(data$ID)
+length(which(data$GRADE<="2"))
+length(which(data$GRADE<="2"))/length(data$ID)
+length(which(data$GRADE>"2"))
+length(which(data$GRADE>"2"))/length(data$ID)
 
 data_M4CID0<- filter(data,M4CID=="0") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
-length(data_M4CID0$ID)
+length(data_M4CID0$ID)#M4CID 0: 828
+
 summary(data_M4CID0)
 # ID             DATE          SCHOOL          GENDER         
 # Min.   :  1.0   Min.   :2003   Min.   :0.0000   Length:828        
@@ -106,9 +116,13 @@ sd(data_M4CID0$TEST)
 sd(data_M4CID0$LAB)
 sd(data_M4CID0$BEHAV)
 sd(data_M4CID0$CLASS)
+#M4CID 0: 828
+# SD TEST: 17; LAB 20; BEHAV: 14; CLASS: 14;
 
 data_M4CID1<- filter(data,M4CID=="1") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
 length(data_M4CID1$ID)
+#M4CID 0: 586
+
 summary(data_M4CID1)
 # ID              DATE          SCHOOL     GENDER         
 # Min.   : 829.0   Min.   :2012   Min.   :1   Length:586        
@@ -136,32 +150,47 @@ sd(data_M4CID1$TEST)
 sd(data_M4CID1$LAB)
 sd(data_M4CID1$BEHAV)
 sd(data_M4CID1$CLASS)
+#M4CID 1: 586
+# SD TEST: 17; LAB: 16; BEHAV: 16; CLASS: 14; 
 
 data_SCHOOL0<- filter(data,SCHOOL=="0") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
 length(data_SCHOOL0$ID)
+# SCHOOL 0: 476
+
 summary(data_SCHOOL0)
-# ID             DATE          SCHOOL     GENDER               TEST            LAB        
-# Min.   :  1.0   Min.   :2003   Min.   :0   Length:476         Min.   :28.00   Min.   : 10.00  
-# 1st Qu.:119.8   1st Qu.:2003   1st Qu.:0   Class :character   1st Qu.:56.00   1st Qu.: 52.00  
-# Median :238.5   Median :2005   Median :0   Mode  :character   Median :68.00   Median : 61.50  
-# Mean   :238.5   Mean   :2005   Mean   :0                      Mean   :67.33   Mean   : 62.36  
-# 3rd Qu.:357.2   3rd Qu.:2006   3rd Qu.:0                      3rd Qu.:78.00   3rd Qu.: 76.00  
-# Max.   :476.0   Max.   :2008   Max.   :0                      Max.   :97.00   Max.   :100.00  
-# BEHAV            GRADE           M4CID       CLASS      
-# Min.   : 37.00   Min.   :0.000   Min.   :0   Min.   :30.70  
-# 1st Qu.: 66.00   1st Qu.:0.000   1st Qu.:0   1st Qu.:58.50  
-# Median : 77.00   Median :1.000   Median :0   Median :68.50  
-# Mean   : 76.06   Mean   :1.092   Mean   :0   Mean   :67.58  
-# 3rd Qu.: 85.00   3rd Qu.:2.000   3rd Qu.:0   3rd Qu.:76.78  
-# Max.   :100.00   Max.   :2.000   Max.   :0   Max.   :96.40 
+# ID              DATE          SCHOOL     GENDER         
+# Min.   : 477.0   Min.   :2009   Min.   :1   Length:938        
+# 1st Qu.: 711.2   1st Qu.:2011   1st Qu.:1   Class :character  
+# Median : 945.5   Median :2013   Median :1   Mode  :character  
+# Mean   : 945.5   Mean   :2013   Mean   :1                     
+# 3rd Qu.:1179.8   3rd Qu.:2016   3rd Qu.:1                     
+# Max.   :1414.0   Max.   :2017   Max.   :1                     
+# TEST             LAB             BEHAV            GRADE     
+# Min.   :  0.00   Min.   :  0.00   Min.   : 27.00   Min.   :0.00  
+# 1st Qu.: 46.00   1st Qu.: 46.00   1st Qu.: 66.00   1st Qu.:1.00  
+# Median : 55.00   Median : 60.00   Median : 77.50   Median :2.00  
+# Mean   : 57.36   Mean   : 58.68   Mean   : 76.12   Mean   :2.11  
+# 3rd Qu.: 69.00   3rd Qu.: 73.00   3rd Qu.: 88.00   3rd Qu.:3.00  
+# Max.   :100.00   Max.   :100.00   Max.   :100.00   Max.   :6.00  
+# M4CID            CLASS       
+# Min.   :0.0000   Min.   : 14.20  
+# 1st Qu.:0.0000   1st Qu.: 52.00  
+# Median :1.0000   Median : 60.20  
+# Mean   :0.6247   Mean   : 61.51  
+# 3rd Qu.:1.0000   3rd Qu.: 70.60  
+# Max.   :1.0000   Max.   :100.00  
 
 sd(data_SCHOOL0$TEST)
 sd(data_SCHOOL0$LAB)
 sd(data_SCHOOL0$BEHAV)
 sd(data_SCHOOL0$CLASS)
+# SCHOOL 0: 476
+#SD TEST 15; LAB: 17; BEHAV 13; CLASS: 12
 
 data_SCHOOL1<- filter(data,SCHOOL=="1") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
 length(data_SCHOOL1$ID)
+# SCHOOL 1: 938
+
 summary(data_SCHOOL1)
 # ID            DATE          SCHOOL     GENDER               TEST             LAB        
 # Min.   : 477   Min.   :2009   Min.   :1   Length:1149        Min.   :  0.00   Min.   :  0.00  
@@ -182,6 +211,8 @@ sd(data_SCHOOL1$TEST)
 sd(data_SCHOOL1$LAB)
 sd(data_SCHOOL1$BEHAV)
 sd(data_SCHOOL1$CLASS)
+# SCHOOL 1: 938
+# SD TEST: 17; LAB 20; BEHAV: 15; CLASS: 14
 
 # Global sample Gender
 length(which(data$GENDER=="F"))
@@ -221,6 +252,7 @@ length(which(data$GRADE==6))/length(data$ID)
 # Grade 5 (10technical) - 117 (8%)
 # Grade 6 (11technical) - 93 (7%)
 # very low sample entries levels 10/11 grade general and techinal edu path
+# female/male sample: 602/812, 43%/57%: no balanced GENDER
 
 # junior school, 7 to 9th grade
 data_JUNIOR <- filter(data,GRADE <="2") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
@@ -230,13 +262,14 @@ length(which(data_JUNIOR$SCHOOL=="0"))
 length(which(data_JUNIOR$SCHOOL=="0"))/length(data_JUNIOR$ID)
 length(which(data_JUNIOR$SCHOOL=="1"))
 length(which(data_JUNIOR$SCHOOL=="1"))/length(data_JUNIOR$ID)
+
 data_JUNIOR_SCHOOL1 <- filter(data_JUNIOR,SCHOOL =="1") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
 length(which(data_JUNIOR_SCHOOL1$M4CID=="1"))
 length(which(data_JUNIOR_SCHOOL1$M4CID=="1"))/length(data_JUNIOR$ID)
 length(which(data_JUNIOR_SCHOOL1$M4CID=="0"))
 length(which(data_JUNIOR_SCHOOL1$M4CID=="0"))/length(data_JUNIOR$ID)
-# Junior 1159; SCHOOL 0, M4CID = 1, - 476 (41%);
-# SCHOOL 1 - SCHOOL 1: 683 (59%); M4CID = 0: 318 (27%) ; M4CID = 1: 365 (31%)
+# Junior 1159; SCHOOL 0, M4CID = 1: 476 (41%);
+# SCHOOL 1 - JUNIOR: 683 (59%); M4CID = 0: 318 (27%) ; M4CID = 1: 365 (31%)
 
 #Gender Junior
 length(data_JUNIOR$ID)
@@ -252,6 +285,7 @@ lsec
 lsec/length(data$ID)
 # sample entries secondary 255, 18% of the global sample
 #it seems good to use secondary grade data for all sample inference
+
 data_sec <- filter(data,GRADE >="3" & GRADE <="6") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
 summary(data_sec)
 # ID              DATE          SCHOOL     GENDER         
@@ -292,10 +326,18 @@ length(which(data_sec$M4CID==1))/length(data_sec$ID)
 # Male is represented by M and female by F
 # with 4CID, variable M4CID = 1, otherwise M4CID = 0;
 # Grades 7,8,9, 10, 11, 10P (technical), 11P (Technical) are categorizes by 0 to 6, respectively;
-# Total sample data length 1414;
+# Total sample data length 1414, 1159 Junior, 82%, Junior high 255, 18%
+# all sample with 4C/ID without 4C/ID
+# sample without 4CID: 828, 59%; with 4CID: 586, 41%: more data with 4CID methodology, not balanced
 # school 0, 476, 34% and school 1, 938, 66%
 # female/male sample: 602/812, 43%/57%: no balanced GENDER
-# sample without 4CID: 828, 59%; with 4CID: 586, 41%: more data with 4CID methodology, not balanced
+# High Junior (secondary), no 4CID, 34, 13%; with 4CID, 221, 86% poorly balanced
+# SD TEST, 17; LAB: 19; BEHAH: 15; CLASS: 14: data with heavy tails
+# sample entries secondary 255, 18% of the global sample
+#it seems good to use secondary grade data for all sample inference
+# Gender Junior: total, 1159; female 576 (49%); male 583 (50%)
+# Junior 1159; SCHOOL 0, M4CID = 1, - 476 (41%);
+# SCHOOL 1 - JUNIOR: 683 (59%); M4CID = 0: 318 (27%) ; M4CID = 1: 365 (31%)
 # Grade 0 (7th) - 353 (25%)
 # Grade 1 (8th) - 411 (29%)
 # Grade 2 (9th) - 396 (28%)
@@ -304,20 +346,15 @@ length(which(data_sec$M4CID==1))/length(data_sec$ID)
 # Grade 5 (10technical) - 117 (8%)
 # Grade 6 (11technical) - 93 (7%)
 # very low sample entries levels 10/11 grade general and techinal edu path
-# Junior 1159; SCHOOL 0, M4CID = 0, - 476 (41%);
-# SCHOOL 1 - SCHOOL 1: 683 (59%); M4CID = 0: 318 (27%) ; M4CID = 1: 365 (31%)
-# Gender Junior: total, 1159; female 576 (49%); male 583 (50%)
-# sample entries secondary 255, 18% of the global sample
-#it seems good to use secondary grade data for all sample inference
-# obs 255
-# Higher Junior (secondary), no 4CID, 34, 13%;
-# Higher Junior (secondary), 4CID, 221, 86%
-# poorly balanced
-
-# Table 1: variable description
-# Table 2: distribution by grade 
-# Table 3: schools descriptive data sample
-# Table 4: data from the treatment and control group
+# female/male sample: 602/812, 43%/57%: no balanced GENDER
+# SCHOOL 1: 938
+# SD TEST: 17; LAB 20; BEHAV: 15; CLASS: 14
+# SCHOOL 0: 476
+#SD TEST 15; LAB: 17; BEHAV 13; CLASS: 12
+#M4CID 0: 828
+# SD TEST: 17; LAB 20; BEHAV: 14; CLASS: 14;
+#M4CID 1: 586
+# SD TEST: 17; LAB: 16; BEHAV: 16; CLASS: 14; 
 
 # Conclusion: From this analysis it seems to be possible comparing not only all the sample but also,
 # just the Junior: this sample is more balanced in terms of grades and gender. The secondary is not balanced but it\
@@ -328,7 +365,7 @@ length(which(data_sec$M4CID==1))/length(data_sec$ID)
 #DATE: year of the sample: it belongs, actually to 2003/2004, lective year;
 #SCHOOL: there are two schools, identified by 0 (till 2008) and 1 (after 2009);
 # GENDER: F and M
-#TEST, LAB, BEHAV: variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment)
+# TEST, LAB, BEHAV: variables of the score in the tests and observational forms at LAB (Laboratory practical skills assessment)
 # and BEHAV related to accomplishement school rules behavior
 # LAB work and Behavior, normally if they follow the rules stablished at school
 # GRADE: categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p(techical) and 11p (Technical) 
@@ -336,9 +373,7 @@ length(which(data_sec$M4CID==1))/length(data_sec$ID)
 # CLASS, 0 to 100, height average, CLASS=0.5*TEST+0.3*LAB+0.2*BEHAV: 
 #this will be used in a variable to be defined below, RANK: a study for student addaptation to the school system
 
-#Table 1: Variable description
-
-##########DATA structure
+#DATA structure
 
 # graph analysis, all grades, global sample
 
@@ -745,6 +780,13 @@ grid.arrange(p56, p57, p58, p59,  nrow = 2,top="Normal QQ plot", bottom="Figure 
 # RDD: https://rpubs.com/phle/r_tutorial_regression_discontinuity_design
 # RDD: https://bookdown.org/carillitony/bailey/chp11.html
 # RDD: https://ds4ps.org/pe4ps-textbook/docs/p-060-reg-discontinuity.html
+# POWER: https://www.programmingr.com/examples/neat-tricks/sample-r-function/how-to-seize-pwr-statistical-power-analysis-in-r/
+
+# About R
+# https://tidyverse.github.io/ggplot2-docs/index.html
+# https://r-graph-gallery.com/index.html
+# https://ggplot2.tidyverse.org/index.html
+# https://r-charts.com/ggplot2/axis/
 
 # ARTICLES 
 
