@@ -36,6 +36,8 @@ Most of the time the professional, specific, **day-to-day teacher work** data (s
 
 [^readme-2]: <https://cmap.ihmc.us/>
 
+Samples are independent and, in general, non-normal: some few sample for the CLASS and TEST variables where normal distributed.
+
 Figure 1 shows the variable longitudinal patterns for all sample using box plots time series, which includes junior and junior high students data for both schools. The red vertical line shows the school change and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology for the treatment group. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression). So, something happened! 
 
 ![Figure 1: Boxplot time series](Images/BoxplotTimeSeries.png)
