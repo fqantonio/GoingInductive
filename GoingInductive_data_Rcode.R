@@ -382,8 +382,8 @@ p1<-ggplot(data,aes(TEST,after_stat(density))) + geom_histogram(binwidth=10,colo
 p2<-ggplot(data,aes(LAB,after_stat(density))) + geom_histogram(binwidth=10,colour = 1, fill = "white") + geom_density(lwd = 1, colour = 4,fill = 2, alpha = 0.50)
 p3<-ggplot(data,aes(BEHAV,after_stat(density))) + geom_histogram(binwidth=10,colour = 1, fill = "white") + geom_density(lwd = 1, colour = 4,fill = 2, alpha = 0.50)
 p4<-ggplot(data,aes(CLASS,after_stat(density))) + geom_histogram(binwidth=10,colour = 1, fill = "white") + geom_density(lwd = 1, colour = 4,fill = 2, alpha = 0.50)
-# figure 1: Histograms with kernel density estimate for TEST, LAB, BEHAV and CLASS variables 
-grid.arrange(p1, p2, p3, p4,  nrow = 2, top="Normality analysis on graphs",bottom="Figure 1: Histograms with kernel density estimate for variables TEST, LAB, BEHAV and CLASS")
+# Histograms with kernel density estimate for TEST, LAB, BEHAV and CLASS variables 
+grid.arrange(p1, p2, p3, p4,  nrow = 2, top="Normality analysis on graphs",bottom="Histograms with kernel density estimate for variables TEST, LAB, BEHAV and CLASS")
 
 # box plots
 #global 2003 to 2017 global variable boxplots
@@ -392,8 +392,8 @@ p5<-ggplot(data,aes(DATE,TEST)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(
 p6<-ggplot(data,aes(DATE,LAB)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=LAB),se=FALSE)+ geom_vline(xintercept=2009,col="red")+geom_vline(xintercept=2012,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
 p7<-ggplot(data,aes(DATE,BEHAV)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=BEHAV),se=FALSE)+ geom_vline(xintercept=2009,col="red")+geom_vline(xintercept=2012,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
 p8<-ggplot(data,aes(DATE,CLASS)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=CLASS),se=FALSE)+geom_vline(xintercept=2009,col="red")+geom_vline(xintercept=2012,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
-# figure 2: Boxplot time series for TEST, LAB, BEHAV and CLASS variables  
-grid.arrange(p5, p6, p7, p8,  nrow = 2, top="Boxplot time series",bottom="Figure 2: all data sample")
+# Boxplot time series for TEST, LAB, BEHAV and CLASS variables  
+grid.arrange(p5, p6, p7, p8,  nrow = 2, top="Boxplot time series",bottom="All data sample")
 
 # Junior, school 0 and 1
 data_junior<-filter(data,GRADE <="2") %>% select(ID,DATE,SCHOOL,GENDER,TEST,LAB,BEHAV,GRADE,M4CID,CLASS)
@@ -401,8 +401,8 @@ p9<-ggplot(data_junior,aes(DATE,TEST)) + geom_boxplot(aes(group=DATE))+geom_smoo
 p10<-ggplot(data_junior,aes(DATE,LAB)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=LAB),se=FALSE)+ geom_vline(xintercept=2008,col="red")+geom_vline(xintercept=2013,col="blue")+geom_text(x=2003+1,y=5,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
 p11<-ggplot(data_junior,aes(DATE,BEHAV)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=BEHAV),se=FALSE)+ geom_vline(xintercept=2008,col="red")+geom_vline(xintercept=2013,col="blue")+geom_text(x=2003+1,y=25,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
 p12<-ggplot(data_junior,aes(DATE,CLASS)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=CLASS),se=FALSE)+geom_vline(xintercept=2008,col="red")+geom_vline(xintercept=2013,col="blue")+geom_text(x=2003+1,y=25,label="School 0",col="black")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
-# figure 3: Boxplot time series for TEST, LAB, BEHAV and CLASS variables junior grade  
-grid.arrange(p9, p10, p11, p12,  nrow = 2, top="Boxplot time series",bottom="Figure 3: data sample junior grade")
+# Boxplot time series for TEST, LAB, BEHAV and CLASS variables junior grade  
+grid.arrange(p9, p10, p11, p12,  nrow = 2, top="Boxplot time series",bottom="Junior grade data sample")
 
 # Junior, School 1
 data_junior_SCHOOL1<-filter(data,GRADE <="2" & SCHOOL =="1") %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
@@ -410,17 +410,17 @@ p13<-ggplot(data_junior_SCHOOL1,aes(DATE,TEST)) + geom_boxplot(aes(group=DATE))+
 p14<-ggplot(data_junior_SCHOOL1,aes(DATE,LAB)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=LAB),se=FALSE)+geom_vline(xintercept=2013,col="blue")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015+2,y=5,label="4C/ID Methodology",col="blue")
 p15<-ggplot(data_junior_SCHOOL1,aes(DATE,BEHAV)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=BEHAV),se=FALSE)+geom_vline(xintercept=2013,col="blue")+geom_text(x=2009+1,y=25,label="School 1",col="red")+geom_text(x=2015+2,y=25,label="4C/ID Methodology",col="blue")
 p16<-ggplot(data_junior_SCHOOL1,aes(DATE,CLASS)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=CLASS),se=FALSE)+geom_vline(xintercept=2013,col="blue")+geom_text(x=2009+1,y=20,label="School 1",col="red")+geom_text(x=2015+2,y=20,label="4C/ID Methodology",col="blue")
-# figure 4: junior grade sample for school 1  
-grid.arrange(p13, p14, p15, p16,  nrow = 2, top="Boxplot time series",bottom="figure 4: junior grade sample for school 1")
+# junior grade sample for school 1  
+grid.arrange(p13, p14, p15, p16,  nrow = 2, top="Boxplot time series",bottom="Junior grade data sample for school 1")
 
 # junior high, school 1
 data_juniorHigh_SCHOOL1<-filter(data,GRADE >"2" & SCHOOL =="1") %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
-p17<-ggplot(data_junior_SCHOOL1,aes(DATE,TEST)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=TEST),se=FALSE)+geom_vline(xintercept=2013,col="blue")+geom_text(x=2009+1,y=15,label="School 1",col="red")+geom_text(x=2015,y=15,label="4C/ID Methodology",col="blue")
-p18<-ggplot(data_junior_SCHOOL1,aes(DATE,LAB)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=LAB),se=FALSE)+ geom_vline(xintercept=2013,col="blue")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015,y=5,label="4C/ID Methodology",col="blue")
-p19<-ggplot(data_junior_SCHOOL1,aes(DATE,BEHAV)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=BEHAV),se=FALSE)+geom_vline(xintercept=2013,col="blue")+geom_text(x=2009+1,y=30,label="School 1",col="red")+geom_text(x=2015,y=30,label="4C/ID Methodology",col="blue")
-p20<-ggplot(data_junior_SCHOOL1,aes(DATE,CLASS)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=CLASS),se=FALSE)+geom_vline(xintercept=2013,col="blue")+geom_text(x=2009+1,y=20,label="School 1",col="red")+geom_text(x=2015,y=20,label="4C/ID Methodology",col="blue")
-# figure 5: junior high grade sample for school 1  
-grid.arrange(p17, p18, p19, p20,  nrow = 2, top="Boxplot time series",bottom="Figure 5: junior high grade sample for school 1 ")
+p17<-ggplot(data_juniorHigh_SCHOOL1,aes(DATE,TEST)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=TEST),se=FALSE)+geom_vline(xintercept=2013,col="blue")+geom_text(x=2009+1,y=15,label="School 1",col="red")+geom_text(x=2015,y=15,label="4C/ID Methodology",col="blue")
+p18<-ggplot(data_juniorHigh_SCHOOL1,aes(DATE,LAB)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=LAB),se=FALSE)+ geom_vline(xintercept=2013,col="blue")+geom_text(x=2009+1,y=5,label="School 1",col="red")+geom_text(x=2015,y=5,label="4C/ID Methodology",col="blue")
+p19<-ggplot(data_juniorHigh_SCHOOL1,aes(DATE,BEHAV)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=BEHAV),se=FALSE)+geom_vline(xintercept=2013,col="blue")+geom_text(x=2009+1,y=30,label="School 1",col="red")+geom_text(x=2015,y=30,label="4C/ID Methodology",col="blue")
+p20<-ggplot(data_juniorHigh_SCHOOL1,aes(DATE,CLASS)) + geom_boxplot(aes(group=DATE))+geom_smooth(aes(x=DATE,y=CLASS),se=FALSE)+geom_vline(xintercept=2013,col="blue")+geom_text(x=2009+1,y=20,label="School 1",col="red")+geom_text(x=2015,y=20,label="4C/ID Methodology",col="blue")
+# junior high grade sample for school 1  
+grid.arrange(p17, p18, p19, p20,  nrow = 2, top="Boxplot time series",bottom="Junior high grade data sample for school 1")
 
 #p21<-ggplot(data) + geom_boxplot(aes(x=DATE,y=TEST, linetype = factor(SCHOOL))) + geom_smooth(aes(x=DATE,y=TEST, color = factor(M4CID)),se=FALSE)
 p22<-ggplot(data) + geom_boxplot(aes(x=DATE,y=TEST, color = factor(SCHOOL), linetype = factor(M4CID))) #geom_smooth(aes(x=DATE,y=TEST, color = factor(M4CID)),se=FALSE)
@@ -429,15 +429,15 @@ p24<-ggplot(data) + geom_boxplot(aes(x=DATE,y=LAB, color = factor(SCHOOL), linet
 #p25<-ggplot(data) + geom_boxplot(aes(x=DATE,y=BEHAV, linetype = factor(SCHOOL))) + geom_smooth(aes(x=DATE,y=BEHAV, color = factor(M4CID)),se=FALSE)
 p26<-ggplot(data) + geom_boxplot(aes(x=DATE,y=BEHAV, color = factor(SCHOOL), linetype = factor(M4CID))) # geom_smooth(aes(x=DATE,y=BEHAV, color = factor(M4CID)),se=FALSE)
 p27<-ggplot(data) + geom_boxplot(aes(x=DATE,y=CLASS, color = factor(SCHOOL), linetype = factor(M4CID))) # geom_smooth(aes(x=DATE,y=BEHAV, color = factor(M4CID)),se=FALSE)
-# figure 6: box plot grouped by school and 4C/ID methodology 
-grid.arrange( p22,p24,p26,p27,nrow = 2, top="boxplots",bottom="Figure 6: boxplot grouped by school and 4C/ID methodology")
+# box plot grouped by school and 4C/ID methodology 
+grid.arrange(p22,p24,p26,p27,nrow = 2, top="boxplots",bottom="Boxplot grouped by school and 4C/ID methodology")
 
 p28<-ggplot(data,aes(x=DATE,y=TEST,group = M4CID)) + geom_boxplot() + aes(factor(M4CID)) + stat_summary(fun = mean, geom="point",col="red")
 p29<-ggplot(data,aes(x=DATE,y=LAB,group = M4CID)) + geom_boxplot() + aes(factor(M4CID)) + stat_summary(fun = mean, geom="point",col="red")
 p30<-ggplot(data,aes(x=DATE,y=BEHAV,group = M4CID)) + geom_boxplot() + aes(factor(M4CID)) + stat_summary(fun = mean, geom="point",col="red")
 p31<-ggplot(data,aes(x=DATE,y=CLASS,group = M4CID)) + geom_boxplot() + aes(factor(M4CID)) + stat_summary(fun = mean, geom="point",col="red")
-# figure 7: boxplots grouped by 4C/ID methodology showing the mean
-grid.arrange(p28, p29, p30, p31, nrow = 2, top="All sample boxplots" , bottom = "Figure 7: boxplots grouped by 4C/ID methodology showing the mean")
+# boxplots grouped by 4C/ID methodology showing the mean
+grid.arrange(p28, p29, p30, p31, nrow = 2, top="Boxplots for all sample" , bottom = "Boxplots grouped by 4C/ID methodology showing the mean")
 
 # conclusion: 
 # It seems that the 4CID effect is not positive when considering all sample, except for the variable LAB.
@@ -476,7 +476,7 @@ summary(lm(DATE~CLASS,data))
 plot(lm(DATE~CLASS,data))
 # residuals: not normal
 # Figure 8: Local Polynomial Regression Fitting in blue
-grid.arrange(p32, p33, p34, p35,  nrow = 2, top="Time series regression scatterplots", bottom="Figure 8: Local Polynomial Regression Fitting in blue")
+grid.arrange(p32, p33, p34, p35,  nrow = 2, top="Time series regression scatterplots", bottom="Local Polynomial Regression Fitting in blue")
 
 #Conclusion: overall, over time, it seems that there is a negative 4C/ID effect.  
 #However, R^2 values are very weak. It can be seen that a school effect could be 
