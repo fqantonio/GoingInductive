@@ -1,25 +1,16 @@
 #INDEX
 # Libraries and data upload
 # RESULTS - 41
-  ## all sample Inference - 732
-  ## Differences between junior school 0 and 1, without 4CID - 838
-  ## school effect - 929
-  ## School 1, global sample (include junior high for school 1) - 1023
-  ## Computed sample junior with and without 4C/ID, between school 0 and school 1 (with 4C/ID) - 1097
-  ## Inference for computed samples
-      ### junior differences with and without 4C/ID, between school 0 and school 1 (only with 4C/ID) - 1177
-      ### global sample differences with and without 4CID - 1274
-  ## Inference junior and junior high, school 1 - 1367
-  ## Junior sample for school 1 only - 1492
-  ## Inference SCHOOL 1, Grade 7  - 1612
-  ## Inference SCHOOL 1, Grade 8 - 1730
-  ## Inference SCHOOL 1, Grade 9 -1847
-  ## RANK - 1982
-  ## GENDER - 2358
-# REGRESSION ANALYSIS - 2546
-# Regression discontinuity design (RDD) - 2668
-# SUMMARY results and observations/notes - 2458
-# REFERENCES - 2854
+  ## all sample Inference - 41
+  ## School effect - 212
+  ## Inference junior sample with school effect - 532
+  ## Inference for treatment effect all sample, including School 1 just with 4C/ID - 649
+  ## GRADE 7 (School effect) - 767
+  ## GRADE 8 (School effect) - 880
+  ## GRADE 9 (School effect) - 992
+  ## RANK - 1104
+  ## GENDER - 1714
+  # REGRESSION ANALYSIS - 2546
 
 # libraries 
 library(dplyr) #work with data frames
@@ -209,6 +200,8 @@ wilcox.test(data_M4CID0$CLASS,data_M4CID1$CLASS,alternative = "greater",conf.int
 #we should use the CLASS to study the differences between schools and not the other
 #variables; if we use the variable because it is a math relation qith the others
 # just with class variable
+
+# SCHOOL EFFECT
 
 #Inference for the differences in schools (control group), without 4CID, for each variable: TEST, LAB, BEHAV and CLASS
 ## DATA
@@ -527,7 +520,7 @@ wilcox.test(data_computed_M4CID0$CLASS,data_computed_M4CID1$CLASS,alternative = 
 # TEST, LAB, CLASS positive effect;´
 # BEHAV negative;
 
-# Inference for computed junior treatment effect with school effect
+# Inference junior sample with school effect
 data_junior_computed<-filter(data,GRADE <= "2") %>% select(ID,GENDER,BEHAV,M4CID,SCHOOL,GRADE,TEST,LAB, CLASS)
 
 data_junior_computed$TEST<-ifelse(data_junior_computed$SCHOOL=="1",data_junior_computed$TEST+dif_mean_TEST,data_junior_computed$TEST)
@@ -642,7 +635,7 @@ wilcox.test(data_junior_computed_M4CID0$CLASS,data_junior_computed_M4CID1$CLASS,
 # negative on BEHAV
 # Positive effect for LAB, TEST and CLASS
 
-# Inference for treatment effect all sample, excluding School 1 with no 4C/ID
+# Inference for treatment effect all sample, including School 1 just with 4C/ID
 # use the calculus about the computed differences already made 
 data_computed<-filter(data,SCHOOL == "0" | (SCHOOL == "1" & M4CID == "1")) %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 
@@ -871,7 +864,6 @@ wilcox.test(data_computed_7_M4CID0$CLASS,data_computed_7_M4CID1$CLASS,alternativ
 # no effect for TEST
 # BEHAV negative
 # LAB, CLASS positive
-
 
 # GRADE 8 (School effect)
 data_computed_8<-filter(data,GRADE=="1") %>% select(ID,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
