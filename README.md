@@ -52,6 +52,8 @@ Figure 2 is a resume of the **results** for all sample including the school effe
 
 ![Figure 2: Resume results](Images/ResumeResults_allSample.png)
 
+There are same patterns on figure 2 that show that sommething happen around 2012, the first year of 4C/ID implementation.
+
 # CONCLUSION
 
 The conclusions presented here focus more on the less reliable and stable sample: all sample from both schools with school effect included. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** [^readme-4] and RANK 1 students.
@@ -64,9 +66,9 @@ However, there are **risks and concerns** to be accommodated during the process,
 
 [^readme-4]: Is there an underlying behavioral underlying effect?
 
-**Bottom line**, if you don't want to take the risks, change conditional to have a student group more adapted to school or if you want to increase the lab practices skills in some subject or school context. 
+**Bottom line**, if you don't want to take the risks, change conditionaly to have a student group more adapted to school or if you want to increase the lab practices skills in some subject or school context. 
 
-Futhermore, we've to considerer that the comparison is to an well developed and researched  instructional design over more then 200 years. Any sligth improve is strong. Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for a teacher alone: there is a crucial need to a commited team work. Also, one methodology is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy.
+Furthermore, we've to considered that the comparison is to an well developed and researched  instructional design over more then 200 years. Any slight improve is strong. Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for a teacher alone: there is a crucial need to a commited team work. Also, one methodology is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy. In this work only two were considered.
 
 Further research should include the why of the behavior declining over 2016 and develop the same research in other educational context national and international in order to confirm this findings. 
 
