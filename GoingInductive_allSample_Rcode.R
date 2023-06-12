@@ -122,7 +122,7 @@ cor.test(sample1$sample.data_M4CID0.CLASS..500.,sample2$sample.data_M4CID1.CLASS
 ggplot(data) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
 median(data_M4CID0$CLASS)#64
 median(data_M4CID1$CLASS)#62
-wilcox.test(data_M4CID0$CLASS,data_M4CID1$CLASS,alternative = "greater")
+wilcox.test(data_M4CID0$CLASS,data_M4CID1$CLASS,alternative = "greater",conf.int = TRUE)
 # Wilcoxon rank sum test with continuity correction
 # data:  data_M4CID0$CLASS and data_M4CID1$CLASS
 # W = 252126, p-value = 0.104
