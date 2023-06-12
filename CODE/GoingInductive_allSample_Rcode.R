@@ -1,6 +1,7 @@
 #INDEX
-# RESULTS - 729
-  ## Global Inference - 732
+# Libraries and data upload
+# RESULTS - 41
+  ## all sample Inference - 732
   ## Differences between junior school 0 and 1, without 4CID - 838
   ## school effect - 929
   ## School 1, global sample (include junior high for school 1) - 1023
@@ -48,6 +49,21 @@ length(data_M4CID1$ID)#586
 # Along the way, sample independency will be tested and non normality will be considered
 
 #TEST
+# Normality
+hist(data_M4CID0$TEST)
+qqnorm(data_M4CID0$TEST)
+qqline(data_M4CID0$TEST)
+ks.test(data_M4CID0$TEST,dnorm(mean(data_M4CID0$TEST),sd(data_M4CID0$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_M4CID0$TEST and dnorm(mean(data_M4CID0$TEST), sd(data_M4CID0$TEST))
+# D = 1, p-value = 0.002413
+# alternative hypothesis: two-sided
+shapiro.test(data_M4CID0$TEST)
+# Shapiro-Wilk normality test
+# data:  data_M4CID0$TEST
+# W = 0.98967, p-value = 1.442e-05
+# p-value << 0,05 so, conclusion: not normal
+
 ## Independency
 sample1<-data.frame(sample(data_M4CID0$TEST,500))
 sample2<-data.frame(sample(data_M4CID1$TEST,500))
@@ -69,6 +85,22 @@ wilcox.test(data_M4CID0$TEST,data_M4CID1$TEST,alternative = "greater")
 # alternative hypothesis: true location shift is greater than 0
 
 #LAB
+# normality
+hist(data_M4CID0$LAB)
+qqnorm(data_M4CID0$LAB)
+qqline(data_M4CID0$LAB)
+ks.test(data_M4CID0$LAB,dnorm(mean(data_M4CID0$LAB),sd(data_M4CID0$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_M4CID0$LAB and dnorm(mean(data_M4CID0$LAB), sd(data_M4CID0$LAB))
+# D = 0.98309, p-value = 0.03619
+# alternative hypothesis: two-sided
+shapiro.test(data_M4CID0$LAB)
+# Shapiro-Wilk normality test
+# data:  data_M4CID0$LAB
+# W = 0.97381, p-value = 4.944e-11
+#p-value << 0,05 so, conclusion: not normal
+
+# independency
 sample1<-data.frame(sample(data_M4CID0$LAB,500))
 sample2<-data.frame(sample(data_M4CID1$LAB,500))
 #Kendall correlation test
@@ -89,6 +121,22 @@ wilcox.test(data_M4CID0$LAB,data_M4CID1$LAB,alternative = "less")
 # alternative hypothesis: true location shift is less than 0
 
 #BEHAV
+# normality
+hist(data_M4CID0$BEHAV)
+qqnorm(data_M4CID0$BEHAV)
+qqline(data_M4CID0$BEHAV)
+ks.test(data_M4CID0$BEHAV,dnorm(mean(data_M4CID0$BEHAV),sd(data_M4CID0$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_M4CID0$BEHAV and dnorm(mean(data_M4CID0$BEHAV), sd(data_M4CID0$BEHAV))
+# D = 1, p-value = 0.001206
+# alternative hypothesis: two-sided
+shapiro.test(data_M4CID0$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_M4CID0$BEHAV
+# W = 0.97675, p-value = 3.278e-10
+# p-vaue << 0,05, so conclusion: not normal
+
+# independency
 sample1<-data.frame(sample(data_M4CID0$BEHAV,500))
 sample2<-data.frame(sample(data_M4CID1$BEHAV,500))
 #Kendall's rank correlation tau
@@ -109,6 +157,23 @@ wilcox.test(data_M4CID0$BEHAV,data_M4CID1$BEHAV,alternative = "greater")
 # alternative hypothesis: true location shift is greater than 0
 
 #CLASS
+# Normality
+hist(data_M4CID0$CLASS)
+qqnorm(data_M4CID0$CLASS)
+qqline(data_M4CID0$CLASS)
+ks.test(data_M4CID0$CLASS,dnorm(mean(data_M4CID0$CLASS),sd(data_M4CID0$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_M4CID0$CLASS and dnorm(mean(data_M4CID0$CLASS), sd(data_M4CID0$CLASS))
+# D = 1, p-value = 0.002413
+# alternative hypothesis: two-sided
+
+shapiro.test(data_M4CID0$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_M4CID0$CLASS
+# W = 0.99571, p-value = 0.02136
+#p-value < 0,05, so conclusion: not normal
+
+#independency
 sample1<-data.frame(sample(data_M4CID0$CLASS,500))
 sample2<-data.frame(sample(data_M4CID1$CLASS,500))
 #Kendall correlation test
@@ -159,21 +224,7 @@ summary(data_M4CID0_SCHOOL0)
 summary(data_M4CID0_SCHOOL1)
 
 # TEST
-# Normality
-hist(data_M4CID0$TEST)
-qqnorm(data_M4CID0$TEST)
-qqline(data_M4CID0$TEST)
-ks.test(data_M4CID0$TEST,dnorm(mean(data_M4CID0$TEST),sd(data_M4CID0$TEST)))
-# Exact two-sample Kolmogorov-Smirnov test
-# data:  data_M4CID0$TEST and dnorm(mean(data_M4CID0$TEST), sd(data_M4CID0$TEST))
-# D = 1, p-value = 0.002413
-# alternative hypothesis: two-sided
-shapiro.test(data_M4CID0$TEST)
-# Shapiro-Wilk normality test
-# data:  data_M4CID0$TEST
-# W = 0.98967, p-value = 1.442e-05
-# p-value << 0,05 so, conclusion: not normal
-# The independency is not measured because we are talking about two different schools in different towns
+# not normal and independent (see tests above)
 ggplot(data_M4CID0) + geom_boxplot(aes(y=TEST, x=factor(SCHOOL)))
 median(data_M4CID0_SCHOOL0$TEST)#68
 median(data_M4CID0_SCHOOL1$TEST)#54
@@ -184,19 +235,7 @@ wilcox.test(data_M4CID0_SCHOOL0$TEST,data_M4CID0_SCHOOL1$TEST,alternative = "gre
 # alternative hypothesis: true location shift is greater than 0
 
 # LAB
-hist(data_M4CID0$LAB)
-qqnorm(data_M4CID0$LAB)
-qqline(data_M4CID0$LAB)
-ks.test(data_M4CID0$LAB,dnorm(mean(data_M4CID0$LAB),sd(data_M4CID0$LAB)))
-# Exact two-sample Kolmogorov-Smirnov test
-# data:  data_M4CID0$LAB and dnorm(mean(data_M4CID0$LAB), sd(data_M4CID0$LAB))
-# D = 0.98309, p-value = 0.03619
-# alternative hypothesis: two-sided
-shapiro.test(data_M4CID0$LAB)
-# Shapiro-Wilk normality test
-# data:  data_M4CID0$LAB
-# W = 0.97381, p-value = 4.944e-11
-#p-value << 0,05 so, conclusion: not normal
+# not normal and independent (see tests above)
 ggplot(data_M4CID0) + geom_boxplot(aes(y=LAB, x=factor(SCHOOL)))
 median(data_M4CID0_SCHOOL0$LAB)#62
 median(data_M4CID0_SCHOOL1$LAB)#51
@@ -207,19 +246,7 @@ wilcox.test(data_M4CID0_SCHOOL0$LAB,data_M4CID0_SCHOOL1$LAB,alternative = "great
 # alternative hypothesis: true location shift is greater than 0
 
 # BEHAV
-hist(data_M4CID0$BEHAV)
-qqnorm(data_M4CID0$BEHAV)
-qqline(data_M4CID0$BEHAV)
-ks.test(data_M4CID0$BEHAV,dnorm(mean(data_M4CID0$BEHAV),sd(data_M4CID0$BEHAV)))
-# Exact two-sample Kolmogorov-Smirnov test
-# data:  data_M4CID0$BEHAV and dnorm(mean(data_M4CID0$BEHAV), sd(data_M4CID0$BEHAV))
-# D = 1, p-value = 0.001206
-# alternative hypothesis: two-sided
-shapiro.test(data_M4CID0$BEHAV)
-# Shapiro-Wilk normality test
-# data:  data_M4CID0$BEHAV
-# W = 0.97675, p-value = 3.278e-10
-# p-vaue << 0,05, so conclusion: not normal
+# not normal and independent (see tests above)
 ggplot(data_M4CID0) + geom_boxplot(aes(y=BEHAV, x=factor(SCHOOL)))
 median(data_M4CID0_SCHOOL0$BEHAV)#77
 median(data_M4CID0_SCHOOL1$BEHAV)#80
@@ -230,20 +257,7 @@ wilcox.test(data_M4CID0_SCHOOL0$BEHAV,data_M4CID0_SCHOOL1$BEHAV,alternative = "l
 # alternative hypothesis: true location shift is less than 0
 
 # CLASS
-hist(data_M4CID0$CLASS)
-qqnorm(data_M4CID0$CLASS)
-qqline(data_M4CID0$CLASS)
-ks.test(data_M4CID0$CLASS,dnorm(mean(data_M4CID0$CLASS),sd(data_M4CID0$CLASS)))
-# Exact two-sample Kolmogorov-Smirnov test
-# data:  data_M4CID0$CLASS and dnorm(mean(data_M4CID0$CLASS), sd(data_M4CID0$CLASS))
-# D = 1, p-value = 0.002413
-# alternative hypothesis: two-sided
-
-shapiro.test(data_M4CID0$CLASS)
-# Shapiro-Wilk normality test
-# data:  data_M4CID0$CLASS
-# W = 0.99571, p-value = 0.02136
-#p-value < 0,05, so conclusion: not normal
+# not normal and independent (see tests above)
 ggplot(data_M4CID0) + geom_boxplot(aes(y=CLASS, x=factor(SCHOOL)))
 median(data_M4CID0_SCHOOL0$CLASS)#69
 median(data_M4CID0_SCHOOL1$CLASS)#58
