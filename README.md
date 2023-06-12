@@ -42,7 +42,7 @@ Figure 1 shows the variable longitudinal patterns for all sample using box plots
 
 # METHODS
 
-The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE release and the principal method is the non-parametric inferential treatment group effect with sign-rank Wilcoxon procedure. There is also a discussion towards the non-parametric regression inference, regression discontinuity design and clustering, just to have same feedback from other types of analysis that could show incoherence. The methods used take in account the independency samples and the non-normality sample distribution, in general.
+The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE release and the principal method is the non-parametric inferential treatment group effect with sign-rank Wilcoxon procedure. There is also a discussion towards the non-parametric regression inference, regression discontinuity design and clustering, just to have same feedback from other types of analysis that could show some incoherence on the inference analysis. The methods used take in account the samples independency and non-normality distribution.
 
 [^readme-3]: RStudio, <https://posit.co/products/open-source/rstudio/>
 
@@ -54,33 +54,24 @@ Figure 2 is a resume of the **results** for all sample including the school effe
 
 # CONCLUSION
 
-The conclusions presented here focus more on the more reliable and stable sample: junior sample of school 1. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** [^readme-4].
+The conclusions presented here focus more on the less reliable and stable sample: all sample from both schools with school effect included. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** [^readme-4] and RANK 1 students.
 
 However, there are **risks and concerns** to be accommodated during the process, namely:
-1. for the student less adapted to the school system;
+1. for the student less adapted (RANK 1) to the school system;
 2. the classroom management referring to students behavior (see discussion);
 3. in the **learning transfer** process the gains are more modest;
 4. males gain less with this change.
 
 [^readme-4]: Is there an underlying behavioral underlying effect?
 
-**Bottom line**, if you don't want to take the risks, change conditional to have a student group more adapted to school or if you want to increase the lab practices skills. 
+**Bottom line**, if you don't want to take the risks, change conditional to have a student group more adapted to school or if you want to increase the lab practices skills in some subject or school context. 
 
-Futhermore, this work shows is that there is a slight advantage of using 4C/ID eLearning setting compare to Direct Instruction. In fact, there is a huge advantage of 4C/ID in Lab Practice in spite of the negative impact in Social Skills. It also shows that the students that are less adapted to school don't improve much unless for the Lab Practice. So, compare with a instructional design with 200 years of reliability is something to higlight.
+Futhermore, we've to considerer that the comparison is to an well developed and researched  instructional design over more then 200 years. Any sligth improve is strong. Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for a teacher alone: there is a crucial need to a commited team work. Also, one methodology is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy.
+
+Further research should include the why of the behavior declining over 2016 and develop the same research in other educational context national and international in order to confirm this findings. 
 
 # DISCUSSION
 
-notes for discussion: - The conclusions meet the goals and answer th research question? - Did I implemented the methods correctly? - Is there an underlying effect for the behav variable? - Conclusions for the stakeholders in the learning process: teachers, Policy implications and school management. - blearning change: team work impressible - Reiterate results - world research corroboration ; Future research Tie loose hands: Clarify, robustness; after 2015 there is a crash in the student behavior skills.: need extra data; social skills: all, ranks, grades, and gender follow the same pattern? students behavior effect
-
-  ## NOTES and OBSERVATIONS
-  ## Policy implications
-  ## Future  arch
-  ## Tie loose hands together
-  # DOUBTS AND DISCUSSIONS
-  ########## doubts and discussions
-# 802!?!?!? - scale change
-#Kendall correlation test, sometimes because of the random sample it gives results of depency...
-#what to ? a for cycle and calcula probability of getting independency?
-#rank 1, kendall ties!?
+What strikes in a teacher practice are the doubts: did I implement the strategies correctly? Are this conclusions valuable? Are this statistical results robust, reliable and powerfull?
 
 # NOTES
