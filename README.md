@@ -1,6 +1,8 @@
 # WELCOME
 
-This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with one major goal, to share, worldwide, the work done. This **knowledge base source** contains the results, conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
+This is a **`Going Inductive`** learning strategy changing paper DRAFT roadmap[^readme-1], with one major goal: to share, worldwide, the work done. 
+
+This **knowledge base source** contains the results, conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
 
 [^readme-1]: This work, as well as the data, is also presented at the blog "<https://4cidchange.edublogs.org/>" and in the github repository <https://github.com/fqantonio/GoingInductive>.
 
@@ -12,9 +14,9 @@ This is a **`Going Inductive`** paper DRAFT roadmap[^readme-1], with one major g
 
 # ABSTRACT
 
-Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow with all the activities chronologically organized, even if the setting is bLearning? In overall, the **answer is yes**, that is, 4C/ID eLearning setting has some advantages over Direct Instruction but with some remarks. 
+Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow with all the activities chronologically organized, even in a bLearning setting? In overall, the **answer is yes**, that is, 4C/ID eLearning setting has some advantages over Direct Instruction but with some remarks. 
 
-If you decide to do it, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process: policy makers and school management. 
+If you decide to do it, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management, that will be adressed in this roadmap. 
 
 The sample covers 12 years of teacher data assessment, during the period 2003 to 2017, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results. 
 
@@ -58,7 +60,7 @@ There are same patterns on figure 2 that show that sommething happen around 2012
 
 # CONCLUSION
 
-The conclusions presented here focus more on the less reliable and stable sample: all sample from both schools with school effect included. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** [^readme-4] and RANK 1 students.
+The conclusions presented here focus more on the less reliable sample because it as different schools from diferent regions and different students grades: all sample from both schools with school effect included. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** [^readme-4] and RANK 1 students.
 
 However, there are **risks and concerns** to be accommodated during the process, namely:
 1. for the student less adapted (RANK 1) to the school system;

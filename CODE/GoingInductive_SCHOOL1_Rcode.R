@@ -1,12 +1,16 @@
 #INDEX
 # RESULTS - SCHOOL 1 - 729
-  ## Inference junior and junior high, school 1 - 1367
-  ## Junior sample for school 1 only - 1492
-  ## Inference SCHOOL 1, Grade 7  - 1612
-  ## Inference SCHOOL 1, Grade 8 - 1730
-  ## Inference SCHOOL 1, Grade 9 -1847
-  ## RANK - 1982
-  ## GENDER - 2358
+  ## Inference junior and junior high, school 1 - 50
+  ## Junior sample for school 1 only - 196
+  ## Inference SCHOOL 1, GRADE - 344
+  ## RANK - 795
+  ## GENDER - 1707
+# RESULTS 2003:2014 -
+## Inference junior and junior high, school 1 - 
+## Junior sample for school 1 only - 
+## Inference SCHOOL 1, GRADE - 
+## RANK - 
+## GENDER - 
 
 # libraries 
 library(dplyr) #work with data frames
@@ -2077,3 +2081,4 @@ wilcox.test(data_junior_SCHOOL1_M4CID0_MALE$CLASS,data_junior_SCHOOL1_M4CID1_MAL
 
 # Female, overall, benefit more; no different between both samples: school 1 with 
 #junior and school 1 with junitor and junior high
+

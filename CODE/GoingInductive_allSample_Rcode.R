@@ -1,8 +1,10 @@
 #INDEX
 # Libraries and data upload
-# RESULTS - 41
+# RESULTS 2003:2017 - 41
   ## all sample Inference - 41
-  ## School effect - 212
+  ## school effect testing - 206
+  ## !!! computing for school effect - 290
+  ## all sample with school effect: 2003-2017 - 373
   ## Inference junior sample with school effect - 532
   ## Inference for treatment effect all sample, including School 1 just with 4C/ID - 649
   ## GRADE 7 (School effect) - 767
@@ -10,7 +12,16 @@
   ## GRADE 9 (School effect) - 992
   ## RANK - 1104
   ## GENDER - 1714
-  # REGRESSION ANALYSIS - 2546
+# RESULTS 2003:2014 - 2017
+## all sample Inference - 2017
+## all sample with school effect: 2003-2017 - 2175
+## Inference junior sample with school effect - 2327
+## Inference for treatment effect all sample, including School 1 just with 4C/ID - 
+## GRADE 7 (School effect) - 
+## GRADE 8 (School effect) - 
+## GRADE 9 (School effect) - 
+## RANK - 
+## GENDER - 
 
 # libraries 
 library(dplyr) #work with data frames
@@ -20,6 +31,7 @@ library(gridExtra) #arrange graphs in rows
 
 # data upload
 #Use this step before any of the analysis bellow
+# 2003 to 2017
 #perhaps you need to set your set working directory: setwd: setwd("/Users/novo/Desktop/Doutoramento/GoingInductive")
 setwd("/Users/novo/Desktop/Doutoramento/GoingInductivePaper/GoingInductive/DATA")
 data<-read.csv("./DATA_4CID_2023.csv") #the date 2023 on this csv file means that the data is used for 2023 paper going indcutive
@@ -29,11 +41,11 @@ head(data)
 # sample differences between school 0 and school 1
 summary(data)
 
-# RESULTS
+# RESULTS: 2003 - 2017
 #Inference (and independency analysis)
 #Inference treatment and control group for all sample, no matter which school, 
 #for each data variables: TEST, LAB and BEHAV
-data_M4CID0<-filter(data,M4CID =="0") %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
+data_M4CID0<- filter(data,M4CID =="0") %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
 data_M4CID1<-filter(data,M4CID =="1") %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
 length(data_M4CID0$ID)#828
 length(data_M4CID1$ID)#586
@@ -201,12 +213,12 @@ wilcox.test(data_M4CID0$CLASS,data_M4CID1$CLASS,alternative = "greater",conf.int
 #variables; if we use the variable because it is a math relation qith the others
 # just with class variable
 
-# SCHOOL EFFECT
-
-#Inference for the differences in schools (control group), without 4CID, for each variable: TEST, LAB, BEHAV and CLASS
+# all sample
+# Testing the school effect: is there one?
+# Inference for the differences in schools (control group), without 4CID, for each variable: TEST, LAB, BEHAV and CLASS
 ## DATA
 summary(data)
-data_M4CID0<-filter(data,data$M4CID=="0")  %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
+data_M4CID0<- r(data,data$M4CID=="0")  %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
 summary(data_M4CID0)
 length(which(data_M4CID0$SCHOOL=="0"))#476 entrances
 length(which(data_M4CID0$SCHOOL=="1"))#352 entrances
@@ -272,8 +284,8 @@ wilcox.test(data_M4CID0_SCHOOL0$CLASS,data_M4CID0_SCHOOL1$CLASS,alternative = "g
 # and an analysis only at the junior level in school 1. Secondary school wil 
 #not be analized because there is no scondary sample with no 4CID.  
 
-## school effect
-
+## all sample with school effect: 2003-2017
+# after the computadtion , are they from the same distrbution?
 # calculus
 summary(data)
 data_SCHOOL0<-filter(data,SCHOOL=="0")  %>% select(ID, DATE, SCHOOL, GENDER, TEST,LAB, BEHAV, GRADE, CLASS, M4CID)
@@ -2002,11 +2014,314 @@ grid.arrange(p60, p61, p62, p63,  nrow = 2,top="Box plot 4C/ID treatment effect"
 # positive impact on female Class variable but no impact for the male
 # Female, averall, benefit more
 
+# Inference for all sample: 2003 - 2014
+summary(data)
+data_2014<-filter(data,DATE <= 2014) %>% select(ID,DATE,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_2014_M4CID0<-filter(data,DATE <= 2014,M4CID==0) %>% select(ID,DATE,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_2014_M4CID1<-filter(data,DATE <= 2014,M4CID==1) %>% select(ID,DATE,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
 
+length(data_2014_M4CID0$ID)#828
+length(data_2014_M4CID1$ID)#277
 
+#TEST
+summary(data_2014)
+hist(data_2014$TEST)
+qqnorm(data_2014$TEST)
+qqline(data_2014$TEST)
+ks.test(data_2014$TEST,dnorm(mean(data_2014$TEST),sd(data_2014$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_2014$TEST and dnorm(mean(data_2014$TEST), sd(data_2014$TEST))
+# D = 1, p-value = 0.001808
+# alternative hypothesis: two-sided
+shapiro.test(data_2014$TEST)
+# Shapiro-Wilk normality test
+# data:  data_2014$TEST
+# W = 0.99021, p-value = 1.003e-06
+#conclusion: not normal
+sample1<-data.frame(sample(data_2014_M4CID0$TEST,250))
+sample2<-data.frame(sample(data_2014_M4CID1$TEST,250))
+#For Kendall, samples need to have the same length
+cor.test(sample1$sample.data_2014_M4CID0.TEST..250.,sample2$sample.data_2014_M4CID1.TEST..250.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_2014_M4CID0.TEST..250. and sample2$sample.data_2014_M4CID1.TEST..250.
+# z = -0.41874, p-value = 0.6754
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.01808312 
+# sample independent
+ggplot(data_2014) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
+median(data_2014_M4CID0$TEST)#62
+median(data_2014_M4CID1$TEST)#56
+wilcox.test(data_2014_M4CID0$TEST,data_2014_M4CID1$TEST,alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_2014_M4CID0$TEST and data_2014_M4CID1$TEST
+# W = 127568, p-value = 0.002525
+# alternative hypothesis: true location shift is greater than 0
 
+#LAB
+summary(data_2014)
+hist(data_2014$LAB)
+qqnorm(data_2014$LAB)
+qqline(data_2014$LAB)
+ks.test(data_2014$LAB,dnorm(mean(data_2014$LAB),sd(data_2014$LAB)))
+#Exact two-sample Kolmogorov-Smirnov test
+# data:  data_2014$LAB and dnorm(mean(data_2014$LAB), sd(data_2014$LAB))
+# D = 0.98733, p-value = 0.02532
+# alternative hypothesis: two-sided
+shapiro.test(data_2014$LAB)
+# Shapiro-Wilk normality test
+# data:  data_2014$LAB
+# W = 0.97928, p-value = 1.84e-11
+#conclusion: not normal
+sample1<-data.frame(sample(data_2014_M4CID0$LAB,250))
+sample2<-data.frame(sample(data_2014_M4CID1$LAB,250))
+#For Kendall, samples need to have the same length
+cor.test(sample1$sample.data_2014_M4CID0.LAB..250.,sample2$sample.data_2014_M4CID1.LAB..250.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_2014_M4CID0.LAB..250. and sample2$sample.data_2014_M4CID1.LAB..250.
+# z = -0.99282, p-value = 0.3208
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.04330126 
+# sample independent
+ggplot(data_2014) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
+median(data_2014_M4CID0$LAB)#60
+median(data_2014_M4CID1$LAB)#63
+wilcox.test(data_2014_M4CID0$LAB,data_2014_M4CID1$LAB,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_2014_M4CID0$LAB and data_2014_M4CID1$LAB
+# W = 97254, p-value = 7.459e-05
+# alternative hypothesis: true location shift is less than 0
 
+#BEHAV
+summary(data_2014)
+hist(data_2014$BEHAV)
+qqnorm(data_2014$BEHAV)
+qqline(data_2014$BEHAV)
+ks.test(data_2014$BEHAV,dnorm(mean(data_2014$BEHAV),sd(data_2014$BEHAV)))
+#Exact two-sample Kolmogorov-Smirnov test
+# data:  data_2014$BEHAV and dnorm(mean(data_2014$BEHAV), sd(data_2014$BEHAV))
+# D = 1, p-value = 0.0009042
+# alternative hypothesis: two-sided
+shapiro.test(data_2014$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_2014$BEHAV
+# W = 0.97215, p-value = 9.725e-14
+#conclusion: not normal
+sample1<-data.frame(sample(data_2014_M4CID0$BEHAV,250))
+sample2<-data.frame(sample(data_2014_M4CID1$BEHAV,250))
+#For Kendall, samples need to have the same length
+cor.test(sample1$sample.data_2014_M4CID0.BEHAV..250.,sample2$sample.data_2014_M4CID1.BEHAV..250.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_2014_M4CID0.BEHAV..250. and sample2$sample.data_2014_M4CID1.BEHAV..250.
+# z = -0.3121, p-value = 0.755
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.01356111 
+# sample independent
+ggplot(data_2014) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
+median(data_2014_M4CID0$BEHAV)#79
+median(data_2014_M4CID1$BEHAV)#83
+wilcox.test(data_2014_M4CID0$BEHAV,data_2014_M4CID1$BEHAV,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_2014_M4CID0$BEHAV and data_2014_M4CID1$BEHAV
+# W = 94666, p-value = 6.69e-06
+# alternative hypothesis: true location shift is less than 0
 
+#CLASS
+summary(data_2014)
+hist(data_2014$CLASS)
+qqnorm(data_2014$CLASS)
+qqline(data_2014$CLASS)
+ks.test(data_2014$CLASS,dnorm(mean(data_2014$CLASS),sd(data_2014$CLASS)))
+#Exact two-sample Kolmogorov-Smirnov test
+# data:  data_2014$CLASS and dnorm(mean(data_2014$CLASS), sd(data_2014$CLASS))
+# D = 1, p-value = 0.001808
+# alternative hypothesis: two-sided
+shapiro.test(data_2014$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_2014$CLASS
+# W = 0.99621, p-value = 0.008341
+#conclusion: normal
+sample1<-data.frame(sample(data_2014_M4CID0$CLASS,250))
+sample2<-data.frame(sample(data_2014_M4CID1$CLASS,250))
+#For Kendall, samples need to have the same length
+cor.test(sample1$sample.data_2014_M4CID0.CLASS..250.,sample2$sample.data_2014_M4CID1.CLASS..250.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_2014_M4CID0.CLASS..250. and sample2$sample.data_2014_M4CID1.CLASS..250.
+# z = 1.0791, p-value = 0.2806
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.04589267 
+# sample independent
+ggplot(data_2014) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
+median(data_2014_M4CID0$CLASS)#64
+median(data_2014_M4CID1$CLASS)#63
+wilcox.test(data_2014_M4CID0$CLASS,data_2014_M4CID1$CLASS,alternative = "greater")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_2014_M4CID0$CLASS and data_2014_M4CID1$CLASS
+# W = 111986, p-value = 0.7209
+# alternative hypothesis: true location shift is less than 0
 
+# conclusion all sample with school effect 2003-2014
+# TEST negative
+# LAB, BEHAV positive 
+# CLASS no effect;
+# comparing to the sample from 2003 to 2017, it is clear that the last two years of the sample 
+# make the difference
+
+# Inference for all sample with school effect: 2003 - 2015
+summary(data)
+data_computed<-filter(data,DATE <= 2015) %>% select(ID,DATE,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+
+# add to school 1
+data_computed$TEST<-ifelse(data_computed$M4CID==1,data_computed$TEST+dif_mean_TEST,data_computed$TEST)
+data_computed$LAB<-ifelse(data_computed$M4CID==1,data_computed$LAB+dif_mean_LAB,data_computed$LAB)
+data_computed$CLASS<-ifelse(data_computed$M4CID==1,data_computed$CLASS+dif_mean_CLASS,data_computed$CLASS)
+data_computed$BEHAV<-ifelse(data_computed$M4CID==1,data_computed$BEHAV+dif_mean_BEHAV,data_computed$BEHAV)
+
+data_computed_M4CID0<-filter(data_computed,M4CID == "0") %>% select(ID,DATE,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_computed_M4CID1<-filter(data_computed,M4CID == "1") %>% select(ID,DATE,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+
+length(data_computed_M4CID0$ID)#828
+length(data_computed_M4CID1$ID)#277
+
+#TEST
+summary(data_computed)
+hist(data_computed$TEST)
+qqnorm(data_computed$TEST)
+qqline(data_computed$TEST)
+ks.test(data_computed$TEST,dnorm(mean(data_computed$TEST),sd(data_computed$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed$TEST and dnorm(mean(data_computed$TEST), sd(data_computed$TEST))
+# D = 1, p-value = 0.0009042
+# alternative hypothesis: two-sided
+shapiro.test(data_computed$TEST)
+# Shapiro-Wilk normality test
+# data:  data_computed$TEST
+# W = 0.99651, p-value = 0.01438
+#conclusion: not normal
+sample1<-data.frame(sample(data_computed_M4CID0$TEST,250))
+sample2<-data.frame(sample(data_computed_M4CID1$TEST,250))
+#For Kendall, samples need to have the same length
+cor.test(sample1$sample.data_computed_M4CID0.TEST..250.,sample2$sample.data_computed_M4CID1.TEST..250.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_computed_M4CID0.TEST..250. and sample2$sample.data_computed_M4CID1.TEST..250.
+# z = -0.41874, p-value = 0.6754
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.01808312 
+# sample independent
+ggplot(data_computed) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
+median(data_computed_M4CID0$TEST)#62
+median(data_computed_M4CID1$TEST)#68
+wilcox.test(data_computed_M4CID0$TEST,data_computed_M4CID1$TEST,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_computed_M4CID0$TEST and data_computed_M4CID1$TEST
+# W = 85538, p-value = 1.161e-10
+# alternative hypothesis: true location shift is less than 0
+
+#LAB
+summary(data_computed)
+hist(data_computed$LAB)
+qqnorm(data_computed$LAB)
+qqline(data_computed$LAB)
+ks.test(data_computed$LAB,dnorm(mean(data_computed$LAB),sd(data_computed$LAB)))
+#Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed$LAB and dnorm(mean(data_computed$LAB), sd(data_computed$LAB))
+# D = 0.98733, p-value = 0.02712
+# alternative hypothesis: two-sided
+shapiro.test(data_computed$LAB)
+# Shapiro-Wilk normality test
+# data:  data_computed$LAB
+# W = 0.98329, p-value = 5.933e-10
+#conclusion: not normal
+sample1<-data.frame(sample(data_computed_M4CID0$LAB,250))
+sample2<-data.frame(sample(data_computed_M4CID1$LAB,250))
+#For Kendall, samples need to have the same length
+cor.test(sample1$sample.data_computed_M4CID0.LAB..250.,sample2$sample.data_computed_M4CID1.LAB..250.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_computed_M4CID0.LAB..250. and sample2$sample.data_computed_M4CID1.LAB..250.
+# z = -0.99282, p-value = 0.3208
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.04330126 
+# sample independent
+ggplot(data_computed) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
+median(data_computed_M4CID0$LAB)#60
+median(data_computed_M4CID1$LAB)#76
+wilcox.test(data_computed_M4CID0$LAB,data_computed_M4CID1$LAB,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_computed_M4CID0$LAB and data_computed_M4CID1$LAB
+# W = 56037, p-value < 2.2e-16
+# alternative hypothesis: true location shift is less than 0
+
+#BEHAV
+summary(data_computed)
+hist(data_computed$BEHAV)
+qqnorm(data_computed$BEHAV)
+qqline(data_computed$BEHAV)
+ks.test(data_computed$BEHAV,dnorm(mean(data_computed$BEHAV),sd(data_computed$BEHAV)))
+#Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed$BEHAV and dnorm(mean(data_computed$BEHAV), sd(data_computed$BEHAV))
+# D = 1, p-value = 0.0009042
+# alternative hypothesis: two-sided
+shapiro.test(data_computed$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_computed$BEHAV
+# W = 0.97614, p-value = 1.614e-12
+#conclusion: not normal
+sample1<-data.frame(sample(data_computed_M4CID0$BEHAV,250))
+sample2<-data.frame(sample(data_computed_M4CID1$BEHAV,250))
+#For Kendall, samples need to have the same length
+cor.test(sample1$sample.data_computed_M4CID0.BEHAV..250.,sample2$sample.data_computed_M4CID1.BEHAV..250.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_computed_M4CID0.BEHAV..250. and sample2$sample.data_computed_M4CID1.BEHAV..250.
+# z = -0.3121, p-value = 0.755
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.01356111 
+# sample independent
+ggplot(data_computed) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
+median(data_computed_M4CID0$BEHAV)#79
+median(data_computed_M4CID1$BEHAV)#80
+wilcox.test(data_computed_M4CID0$BEHAV,data_computed_M4CID1$BEHAV,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_computed_M4CID0$BEHAV and data_computed_M4CID1$BEHAV
+# W = 111868, p-value = 0.2705
+# alternative hypothesis: true location shift is less than 0
+
+#CLASS
+summary(data_computed)
+hist(data_computed$CLASS)
+qqnorm(data_computed$CLASS)
+qqline(data_computed$CLASS)
+ks.test(data_computed$CLASS,dnorm(mean(data_computed$CLASS),sd(data_computed$CLASS)))
+#Exact two-sample Kolmogorov-Smirnov test
+# data:  data_computed$CLASS and dnorm(mean(data_computed$CLASS), sd(data_computed$CLASS))
+# D = 1, p-value = 0.001808
+# alternative hypothesis: two-sided
+shapiro.test(data_computed$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_computed$CLASS
+# W = 0.99857, p-value = 0.513
+#conclusion: normal
+sample1<-data.frame(sample(data_computed_M4CID0$CLASS,250))
+sample2<-data.frame(sample(data_computed_M4CID1$CLASS,250))
+#For Kendall, samples need to have the same length
+cor.test(sample1$sample.data_computed_M4CID0.CLASS..250.,sample2$sample.data_computed_M4CID1.CLASS..250.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_computed_M4CID0.CLASS..250. and sample2$sample.data_computed_M4CID1.CLASS..250.
+# z = 1.0791, p-value = 0.2806
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.04589267 
+# sample independent
+ggplot(data_computed) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
+median(data_computed_M4CID0$CLASS)#64
+median(data_computed_M4CID1$CLASS)#72
+wilcox.test(data_computed_M4CID0$CLASS,data_computed_M4CID1$CLASS,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_computed_M4CID0$CLASS and data_computed_M4CID1$CLASS
+# W = 71619, p-value < 2.2e-16
+# alternative hypothesis: true location shift is less than 0
+
+# conclusion all sample with school effect 2003-2014
+# TEST, LAB, CLASS positive effect;´
+# BEHAV no effect;
+# comparing to the sample from 2003 to 2017, it is clear that the last two years of the sample 
+# make the difference
 
 
