@@ -42,7 +42,7 @@ Most of the time the professional, specific, **day-to-day teacher work** data (s
 
 Samples are independent and, in general, non-normal: some few sample for the CLASS and TEST variables where normal distributed.
 
-Figure 1 shows the variable longitudinal patterns for all sample using box plots time series, which includes junior and junior high grade students data for both schools. The red vertical line shows the school change year and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology, the treatment group. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression). So, something happened! 
+Figure 1 shows the variable longitudinal patterns for all sample using box plots time series, which includes junior and junior high grade students data for both schools. The red vertical line shows the school change year and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology, the treatment group. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression). The patterns on figure 2 show that something change around 2012, the first year of 4C/ID implementation. So, something happened! 
 
 ![Figure 1: Boxplot time series](Images/BoxplotTimeSeries.png)
 
@@ -54,14 +54,11 @@ The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE 
 
 # RESULTS
 
-Figure 2 and 3 shows a resume of the **results**, for all sample. Figure 3 shows the same analysis but with the JUNIOR grade sample of school 1 [^4]. In the y-axis it shows the name of the samples and the x-axis the median differences for each sample in four variables: TEST, LAB, BEHAV and CLASS. The variables change, represented by colors (see legend), between treatment group and control group are presented on the left of the graph if there is a negative impact and in the right if there is a positive 4C/ID impact. Color vertical lines of each variable means that there is no change, that is, no 4C/ID impact.
+Figure 2 and 3 shows a resume of the **results**, for all sample. Figure 3 shows the same analysis but with the JUNIOR grade sample of school 1 [^4] only. The y-axis it shows the name of the samples and the x-axis the median differences for each sample in four variables: TEST, LAB, BEHAV and CLASS. The variables change, represented by colors (see legend), between treatment group and control group are presented, on the left of the graph, if there is a negative impact and in the right, if there is a positive 4C/ID impact. Color vertical lines of each variable means that there is no change, that is, no 4C/ID impact.
 
 ![Figure 2: Resume results](Images/ResumeResults_allSample.png)
 
 [^readme-4]: this the best sample because it compares students from the same school and grade. So, it doesn't have the school effect nor the grade differences.
-
-
-There are same patterns on figure 2 that show that sommething happen around 2012, the first year of 4C/ID implementation.
 
 # CONCLUSION
 

@@ -2371,6 +2371,7 @@ wilcox.test(data_FEMALE_M4CID0$CLASS,data_FEMALE_M4CID1$CLASS, alternative = "le
 # t-test http://genomicsclass.github.io/book/pages/t-tests_in_practice.html
 # graphics ggplot https://r4ds.had.co.nz/graphics-for-communication.html
 # graphics ggplot https://ggplot2.tidyverse.org/
+# graphics: http://www.cookbook-r.com/
 # non-parametric regression http://users.stat.umn.edu/~helwig/notes/smooth-notes.html#need-for-np-regression
 # Histogram with kernel density estimation https://r-charts.com/distribution/histogram-density-ggplot2/?utm_content=cmp-true
 # Exploratory Data Analysis http://genomicsclass.github.io/book/pages/exploratory_data_analysis.html 
