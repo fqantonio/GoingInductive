@@ -6,9 +6,9 @@
 # Summary results all sample (with school effect) - 2003 to 2014 - 175
   # variable change - 212
 # School 1 - 2003 to 2014 - 250
-  # variable change - ???
-# All sample - ???
-  # Variable change - ???
+  # variable change - 289
+# All sample - 327
+  # Variable change - 363
 
 # libraries 
 library(dplyr) #work with data frames
@@ -324,3 +324,76 @@ ggplot(resultsD,aes(y=samples,x=VALUE,fill=GROUP)) +
 #scale_y_discrete(limits=c("SCHOOL 1", "SCHOOL 1 - JUNIOR","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))
 #scale_x_continuous(breaks = seq(-20, 20, by = 5))
 
+########## Summary results all sample - 2003 to 2017
+# for changes that have p-value that we can't reject the null I use the mean value
+
+results <- data.frame(
+  samples=c("all sample","JUNIOR","JUNIOR HIGH","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
+  TEST1=c(-58,-58,54,60,60,-58,-34,-51,79,62,-55),
+  TEST2=c(-62,-63,54,60,60,-67,-33,-56,79,62,-61),
+  LAB1=c(60,60,55,61,60,60,28,54,76,60,60),
+  LAB2=c(65,66,65,69,62,66,35,60,81,70,63),
+  BEHAV1=c(-76,-76,-75,-73,-72,77,-54,-72,87,79,-73),
+  BEHAV2=c(-79,-79,-80,-77,-80,85,-63,-75,87,83,-78),
+  CLASS1=c(63,64,59,64,62,65,39,-58,77,64,-60),
+  CLASS2=c(63,63,59,64,62,65,39,-59,80,66,-64)
+)
+results
+
+ggplot(results,aes(group=TEST1)) +
+  geom_errorbar(aes(x=samples, ymin=TEST1, ymax=TEST2,color='TEST'), width = ifelse(results$TEST1==results$TEST2, 1, 0.3))+
+  geom_errorbar(aes(x=samples, ymin=LAB1, ymax=LAB2,color='LAB'), width = ifelse(results$LAB1==results$LAB2, 1, 0.3)) +
+  geom_errorbar(aes(x=samples, ymin=BEHAV1, ymax=BEHAV2, color='BEHAV'), width = ifelse(results$BEHAV1==results$BEHAV2, 1, 0.3)) +
+  geom_errorbar(aes(x=samples, ymin=CLASS1, ymax=CLASS2, color='CLASS'),width = ifelse(results$CLASS1==results$CLASS2, 1, 0.3)) +
+  xlab("Samples")+labs(title="4C/ID treatment effect resume results: all sample",y = "Variables changes",subtitle = "* vertical bold lines means 'no effect'")+
+  scale_color_manual(name='Variables',
+                     breaks=c('TEST','LAB', 'BEHAV', 'CLASS'),
+                     values=c('TEST'='red', 'LAB'='blue', 'BEHAV'='green', 'CLASS'='orange'))+
+  theme_bw()+
+  theme(panel.grid.major.y = element_line(color = 3,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 4, linewidth = 1),plot.background = element_rect(fill = "lightyellow"))+
+  geom_rect(aes(xmin=0,xmax=Inf,ymin = - Inf,ymax = 0),fill="red",alpha = 0.01) +
+  geom_rect(aes(xmin=0,xmax=Inf,ymin = 0,ymax = Inf),fill="green",alpha = 0.01) +
+  scale_x_discrete(limits=c("all sample","JUNIOR","JUNIOR HIGH","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))+
+  scale_y_continuous(breaks = seq(-100, 100, by = 10))+
+  geom_hline(yintercept=c(-50,50),color="red",linetype=2)+
+  annotate(geom="text", x=12, y=-10, label="Negative effect",color="red3",hjust=1)+
+  annotate(geom="text", x=12, y=10, label="Positive effect*",color="green3",hjust=0)+
+  coord_flip()
+
+# Results: variable change
+# prepare data frame for bar ploting
+# IMPORTANT NOTE: the negative values are used to plot them in a different area of the graph for 
+# negative effects. However, to use this data-frames to compute changes we need to have this values 
+# exchanged in order to compute negative change values.
+results$DTEST <- results$TEST2-results$TEST1
+results$DLAB <- results$LAB2-results$LAB1
+results$DBEHAV <- results$BEHAV2-results$BEHAV1
+results$DCLASS <- results$CLASS2-results$CLASS1
+results
+resultsDTEST <- results %>% select(samples,DTEST)
+resultsDTEST$GROUP <-"TEST"
+names(resultsDTEST)[2]<-'VALUE'
+resultsDTEST
+resultsDLAB <- results %>% select(samples,DLAB)
+resultsDLAB$GROUP <-"LAB"
+names(resultsDLAB)[2]<-'VALUE'
+resultsDLAB
+resultsDBEHAV <- results %>% select(samples,DBEHAV)
+resultsDBEHAV$GROUP <-"BEHAV"
+names(resultsDBEHAV)[2]<-'VALUE'
+resultsDBEHAV
+resultsDCLASS <- results %>% select(samples,DCLASS)
+resultsDCLASS$GROUP <-"CLASS"
+names(resultsDCLASS)[2]<-'VALUE'
+resultsDCLASS
+resultsD<-bind_rows(resultsDTEST,resultsDLAB,resultsDBEHAV,resultsDCLASS)
+resultsD
+
+ggplot(resultsD,aes(y=samples,x=VALUE,fill=GROUP)) +
+  geom_bar(stat = "identity",show.legend = TRUE,position = position_dodge(width = 1))+
+  ylab("Samples")+labs(title="4C/ID treatment effect: all sample with school effect",x = "Variables changes")+
+  theme(panel.grid.major.y = element_line(color = 3,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 4, linewidth = 1),plot.background = element_rect(fill = "lightyellow"))+
+  annotate(geom="text", x=-6, y=11.5, label="Negative effect",color="red3",hjust=1)+
+  annotate(geom="text", x=15, y=11.5, label="Positive effect",color="green3",hjust=0)
+#scale_y_discrete(limits=c("all sample","JUNIOR","JUNIOR HIGH","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))
+#scale_x_continuous(breaks = seq(-20, 20, by = 5))
