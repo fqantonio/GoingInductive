@@ -62,7 +62,7 @@ Figure 2 and 3 shows a resume of the **results**, for all sample and just for sc
 
 ![Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1: positive and negative effect.](Images/RResults_school1.png)
 
-![Figure 5: 4C/ID group treatment effect for JUNIOR sample grade of school 1: 2003 to 2017 time scale.](Images/RResults_school1_VC.png) 
+![Figure 5: 4C/ID group treatment effect for JUNIOR sample grade of school 1: 2003 to 2017 time scale.](Images/RResults_school1_VC.png)
 
 # CONCLUSION
 

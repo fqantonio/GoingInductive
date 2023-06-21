@@ -330,7 +330,7 @@ ggplot(results,aes(group=TEST1)) +
   geom_errorbar(aes(x=samples, ymin=BEHAV1, ymax=BEHAV2, color='BEHAV'), width = ifelse(results$BEHAV1==results$BEHAV2, 1, 0.3)) +
   geom_errorbar(aes(x=samples, ymin=CLASS1, ymax=CLASS2, color='CLASS'),width = ifelse(results$CLASS1==results$CLASS2, 1, 0.3)) +
   xlab("Sample names")+
-  labs(title="Results resume graph, 4C/ID treatment effect",y = "Variables changes: *vertical lines means 'no effect'",subtitle = "2003 to 2017 time scale")+
+  labs(title="Results resume graph, 4C/ID treatment effect",y = "Variables changes: *vertical lines means 'no effect'",subtitle = "All sample 2003 to 2017 time scale")+
   scale_color_manual(name='Variables',
                      breaks=c('TEST','LAB', 'BEHAV', 'CLASS'),
                      values=c('TEST'='red', 'LAB'='blue', 'BEHAV'='green', 'CLASS'='orange'))+
