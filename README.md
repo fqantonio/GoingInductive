@@ -54,9 +54,22 @@ The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE 
 
 # RESULTS
 
-Figure 2 and 3 shows a resume of the **results**, for all sample. Figure 3 shows the same analysis but with the JUNIOR grade sample of school 1 [^4] only. The y-axis it shows the name of the samples and the x-axis the median differences for each sample in four variables: TEST, LAB, BEHAV and CLASS. The variables change, represented by colors (see legend), between treatment group and control group are presented, on the left of the graph, if there is a negative impact and in the right, if there is a positive 4C/ID impact. Color vertical lines of each variable means that there is no change, that is, no 4C/ID impact.
+Figure 2 and 3 shows a resume of the **results**, for all sample and just for  school 1 JUNIOR grade sample [^4]. The y-axis shows the name of the samples and the x-axis the median differences for each sample, for variables: TEST, LAB, BEHAV and CLASS. The horizontal lines represent the variables change, between treatment group and control group, represented by colors (see legend). On the left of the graph, there are the negative impact of the treatment and in the right, the positive 4C/ID impact. Color vertical lines for each sample and variables means that there is no change, that is, no 4C/ID impact. Figure 3 is basically the sames but focuses on the variable change.
 
-![Figure 2: Resume results](Images/ResumeResults_allSample.png)
+![Figure 2: Resume results](Images/ResultsResume_allSample.png)
+
+Figure 2: Results resume graph, 4C/ID treatment effect: positive and negative effect.
+
+![Figure 3: Resume results](Images/ResultsResumeChange_allSample.png)
+
+Figure 3: 4C/ID group treatment effect: variables change. From 2003 to 2017 time scale.
+
+![Figure 4: Resume results](Images/ResultsResume_school1.png)
+
+Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1: positive and negative effect.
+
+![Figure 5: Resume results](Images/ResultsResumeChange_school1.png)
+Figure 5: 4C/ID group treatment effect for JUNIOR sample grade of school 1: 2003 to 2017 time scale
 
 [^readme-4]: this the best sample because it compares students from the same school and grade. So, it doesn't have the school effect nor the grade differences.
 
