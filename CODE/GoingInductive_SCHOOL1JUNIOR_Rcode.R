@@ -3114,7 +3114,7 @@ perm.test(data_SCHOOL1_JUNIOR_2014_RANK3_M4CID0$CLASS,data_SCHOOL1_JUNIOR_2014_R
 # [1] "p-value was estimated based on 20000 simulations."
 # $alternative [1] "two.sided" $mu [1] 0 $p.value = 0.00895
 
-
+#??? confirmed???
 # RANK 1, school all sample: 2009:2014
 # Negative effect for BEHAV;
 # no effect for TEST, LAB and CLASS

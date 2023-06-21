@@ -7,12 +7,12 @@
   # variable change - 212
 # School 1 - 2003 to 2014 - 250
   # variable change - 289
-# All sample - 327
-  # Variable change - 363
-# School 1 JUNIOR grade - 2003 to 2017 - 
-# variable change - 
-# School 1 JUNIOR grade - 2003 to 2014 - 
-# variable change - 
+# All sample - 312
+  # Variable change - 349
+# School 1 JUNIOR grade - 2003 to 2017 - 383
+# variable change - 420
+# School 1 JUNIOR grade - 2003 to 2014 - 454
+# variable change - 492
 
 # libraries 
 library(dplyr) #work with data frames
@@ -47,7 +47,7 @@ ggplot(results,aes(group=TEST1)) +
   geom_errorbar(aes(x=samples, ymin=BEHAV1, ymax=BEHAV2, color='BEHAV'), width = ifelse(results$BEHAV1==results$BEHAV2, 1, 0.3)) +
   geom_errorbar(aes(x=samples, ymin=CLASS1, ymax=CLASS2, color='CLASS'),width = ifelse(results$CLASS1==results$CLASS2, 1, 0.3)) +
   xlab("Sample names")+
-  labs(title="Results resume graph, 4C/ID treatment effect",y = "Variables changes: *vertical lines means 'no effect'",subtitle = "All sample with school effect, 2003 to 2017 time scale")+
+  labs(title="Results resume graph, 4C/ID treatment effect",y = "Variables changes: *vertical lines means 'no change'",subtitle = "All sample with school effect, 2003 to 2017 time scale")+
   scale_color_manual(name='Variables',
                      breaks=c('TEST','LAB', 'BEHAV', 'CLASS'),
                      values=c('TEST'='red', 'LAB'='blue', 'BEHAV'='green', 'CLASS'='orange'))+
@@ -86,14 +86,14 @@ names(resultsDCLASS)[2]<-'VALUE'
 resultsD<-bind_rows(resultsDTEST,resultsDLAB,resultsDBEHAV,resultsDCLASS)
 resultsD
 
-ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
+ggplot(resultsD,aes(x=samples,xmin=samples, ymin=0, ymax=VALUE,color=GROUP)) +
   geom_linerange(position = position_dodge(width = 0.5))+
-  ylab("Variables changes")+labs(title="4C/ID group treatment effect",subtitle = "All sample with school effect, from 2003 to 2017 time scale",x = "Sample Names")+
-  theme(panel.grid.major.y = element_line(color = 3,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
+  ylab("Variables changes: missing color means 'no change'")+labs(title="4C/ID group treatment effect",subtitle = "All sample with school effect, from 2003 to 2017 time scale",x = "Sample Names")+
+  theme(panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(fill="lightgray",color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
   annotate(geom="text", y=-0.5, x=1.5, label="Negative effect",color="red3",hjust=1)+
   annotate(geom="text", y=0.5, x=1.5, label="Positive effect",color="green3",hjust=0)+
   scale_x_discrete(limits=c("all sample", "all sample (school effect)" , "JUNIOR (school effect)", "JUNIOR (school effect)(S1 with 4CID)", "GRADE 7 (school effect)","GRADE 8 (school effect)", "GRADE 9 (school effect)", "RANK 1 (school effect)", "RANK 2 (school effect)","RANK 3 (school effect)","FEMALE (school effect)","MALE (school effect)"))+
-  scale_y_continuous(limits=c(-10,10,5))+  
+  scale_y_continuous(limits=c(-20,20,5))+  
   coord_flip()
 
 ########## Summary results for SCHOOL 1 sample only - 2003 to 2017
@@ -118,7 +118,7 @@ ggplot(results,aes(group=TEST1)) +
   geom_errorbar(aes(x=samples, ymin=LAB1, ymax=LAB2,color='LAB'), width = ifelse(results$LAB1==results$LAB2, 1, 0.3)) +
   geom_errorbar(aes(x=samples, ymin=BEHAV1, ymax=BEHAV2, color='BEHAV'), width = ifelse(results$BEHAV1==results$BEHAV2, 1, 0.3)) +
   geom_errorbar(aes(x=samples, ymin=CLASS1, ymax=CLASS2, color='CLASS'),width = ifelse(results$CLASS1==results$CLASS2, 1, 0.3)) +
-  xlab("Sample names")+labs(title="Results resume graph, 4C/ID treatment effect",y = "Variables changes: *vertical lines means 'no effect'",subtitle = "School 1 sample: 2003 to 2017 time scale")+
+  xlab("Sample names")+labs(title="Results resume graph, 4C/ID treatment effect",y = "Variables changes: *vertical lines means 'no change'",subtitle = "School 1 sample: 2003 to 2017 time scale")+
   scale_color_manual(name='Variables',
                      breaks=c('TEST','LAB', 'BEHAV', 'CLASS'),
                      values=c('TEST'='red', 'LAB'='blue', 'BEHAV'='green', 'CLASS'='orange'))+
@@ -126,11 +126,11 @@ ggplot(results,aes(group=TEST1)) +
   theme(panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
   geom_rect(aes(xmin=0,xmax=Inf,ymin = - Inf,ymax = 0),fill="white",alpha = 0.01) +
   geom_rect(aes(xmin=0,xmax=Inf,ymin = 0,ymax = Inf),fill="green",alpha = 0.01) +
-  scale_x_discrete(limits=c("all sample","JUNIOR","JUNIOR HIGH","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))+
+  scale_x_discrete(limits=c("SCHOOL 1", "SCHOOL 1 - JUNIOR","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))+
   scale_y_continuous(breaks = seq(-100, 100, by = 10))+
   geom_hline(yintercept=c(-50,50),color="black",linetype=2)+
-  annotate(geom="text", x=10.5, y=-10, label="Negative effect*",color="red3",hjust=1)+
-  annotate(geom="text", x=10.5, y=10, label="Positive effect*",color="green3",hjust=0)+
+  annotate(geom="text", x=9.5, y=-10, label="Negative effect*",color="red3",hjust=1)+
+  annotate(geom="text", x=9.5, y=10, label="Positive effect*",color="green3",hjust=0)+
   coord_flip()
 
 # Results: variable change
@@ -159,12 +159,12 @@ resultsD
 
 ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
   geom_linerange(position = position_dodge(width = 0.5))+
-  ylab("Variables changes")+labs(title="4C/ID group treatment effect",subtitle = "School 1 sample, from 2003 to 2017 time scale",x = "Sample Names")+
-  theme(panel.grid.major.y = element_line(color = 3,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
+  ylab("Variables changes: missing colors means 'no change'")+labs(title="4C/ID group treatment effect",subtitle = "School 1 sample, from 2003 to 2017 time scale",x = "Sample Names")+
+  theme(panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(fill="lightgray",color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
   annotate(geom="text", y=-0.5, x=1.5, label="Negative effect",color="red3",hjust=1)+
   annotate(geom="text", y=0.5, x=1.5, label="Positive effect",color="green3",hjust=0)+
-  scale_x_discrete(limits=c("all sample","JUNIOR","JUNIOR HIGH","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))+
-  scale_y_continuous(limits=c(-10,10,5))+  
+  scale_x_discrete(limits=c("SCHOOL 1", "SCHOOL 1 - JUNIOR","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))+
+  scale_y_continuous(limits=c(-25,25,5))+  
   coord_flip()
 
 ########## Summary results all sample (with school effect) - 2003 to 2014
@@ -231,11 +231,10 @@ resultsD
 ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
   geom_linerange(position = position_dodge(width = 0.5))+
   ylab("Variables changes")+labs(title="4C/ID group treatment effect",subtitle = "All sample, from 2003 to 2014 time scale",x = "Sample Names")+
-  theme(panel.grid.major.y = element_line(color = 3,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
-  annotate(geom="text", y=-0.5, x=1.5, label="Negative effect",color="red3",hjust=1)+
+  theme(panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(fill="lightgray",color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+  annotate(geom="text", y=-0.5, x=1.5, label="Negative effect",color="red3",hjust=1)+
   annotate(geom="text", y=0.5, x=1.5, label="Positive effect",color="green3",hjust=0)+
   scale_x_discrete(limits=c("all sample", "all sample (school effect)" , "JUNIOR (school effect)", "JUNIOR (school effect)(S1 with 4CID)", "GRADE 7 (school effect)","GRADE 8 (school effect)", "GRADE 9 (school effect)", "RANK 1 (school effect)", "RANK 2 (school effect)","RANK 3 (school effect)","FEMALE (school effect)","MALE (school effect)"))+
-  scale_y_continuous(limits=c(-10,10,5))+  
+  scale_y_continuous(limits=c(-20,20,5))+  
   coord_flip()
 
 ########## Summary results for SCHOOL 1 sample only - 2003 to 2014
@@ -268,7 +267,7 @@ ggplot(results,aes(group=TEST1)) +
   theme(panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
   geom_rect(aes(xmin=0,xmax=Inf,ymin = - Inf,ymax = 0),fill="white",alpha = 0.01) +
   geom_rect(aes(xmin=0,xmax=Inf,ymin = 0,ymax = Inf),fill="green",alpha = 0.01) +
-  scale_x_discrete(limits=c("SCHOOL 1", "SCHOOL 1 - JUNIOR","GRADE 7*","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))+
+  scale_x_discrete(limits=c("SCHOOL 1", "SCHOOL 1 - JUNIOR","GRADE 7**","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))+
   scale_y_continuous(breaks = seq(-100, 100, by = 10))+
   geom_hline(yintercept=c(-50,50),color="black",linetype=2)+
   annotate(geom="text", x=9.5, y=-10, label="Negative effect*",color="red3",hjust=1)+
@@ -301,12 +300,12 @@ resultsD
 
 ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
   geom_linerange(position = position_dodge(width = 0.5))+
-  ylab("Variables changes")+labs(title="4C/ID group treatment effect",subtitle = "School 1 sample, from 2003 to 2014 time scale",x = "Sample Names")+
-  theme(panel.grid.major.y = element_line(color = 3,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
+  ylab("Variables changes: missing colors means 'no change'; **low number of obs.")+labs(title="4C/ID group treatment effect",subtitle = "School 1 sample, from 2003 to 2014 time scale",x = "Sample Names")+
+  theme(panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(fill="lightgray",color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
   annotate(geom="text", y=-0.5, x=1.5, label="Negative effect",color="red3",hjust=1)+
   annotate(geom="text", y=0.5, x=1.5, label="Positive effect",color="green3",hjust=0)+
   scale_x_discrete(limits=c("SCHOOL 1", "SCHOOL 1 - JUNIOR","GRADE 7**","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))+
-  scale_y_continuous(limits=c(-10,10,5))+  
+  scale_y_continuous(limits=c(-25,25,5))+  
   coord_flip()
 
 ########## Summary results all sample - 2003 to 2017
@@ -372,8 +371,8 @@ resultsD
 
 ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
   geom_linerange(position = position_dodge(width = 0.5))+
-  ylab("Variables changes")+labs(title="4C/ID group treatment effect",subtitle = "All sample, from 2003 to 2017 time scale",x = "Sample Names")+
-  theme(panel.grid.major.y = element_line(color = 3,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
+  ylab("Variables changes: missing colors means'no change'")+labs(title="4C/ID group treatment effect",subtitle = "All sample, from 2003 to 2017 time scale",x = "Sample Names")+
+  theme(panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(fill="lightgray",color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+  
   annotate(geom="text", y=-0.5, x=1.5, label="Negative effect",color="red3",hjust=1)+
   annotate(geom="text", y=0.5, x=1.5, label="Positive effect",color="green3",hjust=0)+
   scale_x_discrete(limits=c("all sample","JUNIOR","JUNIOR HIGH","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))+
@@ -413,8 +412,8 @@ ggplot(results,aes(group=TEST1)) +
   scale_x_discrete(limits=c("SCHOOL 1","JUNIOR","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))+
   scale_y_continuous(breaks = seq(-100, 100, by = 10))+
   geom_hline(yintercept=c(-50,50),color="black",linetype=2)+
-  annotate(geom="text", x=10.5, y=-10, label="Negative effect*",color="red3",hjust=1)+
-  annotate(geom="text", x=10.5, y=10, label="Positive effect*",color="green3",hjust=0)+
+  annotate(geom="text", x=9.5, y=-10, label="Negative effect*",color="red3",hjust=1)+
+  annotate(geom="text", x=9.5, y=10, label="Positive effect*",color="green3",hjust=0)+
   coord_flip()
 
 # Results: variable change
@@ -443,12 +442,12 @@ resultsD
 
 ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
   geom_linerange(position = position_dodge(width = 0.5))+
-  ylab("Variables changes")+labs(title="4C/ID group treatment effect",subtitle = "All sample, from 2003 to 2017 time scale",x = "Sample Names")+
-  theme(panel.grid.major.y = element_line(color = 3,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
+  ylab("Variables changes: missing values means 'no change'")+labs(title="4C/ID group treatment effect",subtitle = "School 1 Junior sample for 2003 to 2017 time scale",x = "Sample Names")+
+  theme(panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(fill="lightgray",color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
   annotate(geom="text", y=-0.5, x=1.5, label="Negative effect",color="red3",hjust=1)+
   annotate(geom="text", y=0.5, x=1.5, label="Positive effect",color="green3",hjust=0)+
   scale_x_discrete(limits=c("SCHOOL 1","JUNIOR","GRADE 7","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"))+
-  scale_y_continuous(limits=c(-10,10,5))+  
+  scale_y_continuous(limits=c(-25,25,5))+  
   coord_flip()
 
 ########## Summary results school 1 JUNIOR sample - 2003 to 2014
@@ -462,10 +461,10 @@ results <- data.frame(
   LAB2=c(63,64,71,56,66,30,58,80, 70,61),
   BEHAV1=c(80,82,79,-83,80,-60,80,93, 82,-72),
   BEHAV2=c(83,82,79,-88,85,-65,80,93, 82,-80),
-  CLASS1=c(58,58,60,58,55,39,58,58,77, 58,39),
-  CLASS2=c(63,64,67,60,64,39,58,81, 67,60)
+  CLASS1=c(58,58,60,58,55,39, 58, 77, 58,58),
+  CLASS2=c(63,64,67,60,64,39, 58, 81, 67,60)
 )
-# *low number of observations
+# **low number of observations
 results
 
 ggplot(results,aes(group=TEST1)) +
@@ -485,8 +484,8 @@ ggplot(results,aes(group=TEST1)) +
   scale_x_discrete(limits=c("SCHOOL 1","JUNIOR","GRADE 7","GRADE 8", "GRADE 9", "RANK 1**", "RANK 2","RANK 3","FEMALE","MALE"))+
   scale_y_continuous(breaks = seq(-100, 100, by = 10))+
   geom_hline(yintercept=c(-50,50),color="black",linetype=2)+
-  annotate(geom="text", x=10.5, y=-10, label="Negative effect*",color="red3",hjust=1)+
-  annotate(geom="text", x=10.5, y=10, label="Positive effect*",color="green3",hjust=0)+
+  annotate(geom="text", x=9.5, y=-9.5, label="Negative effect*",color="red3",hjust=1)+
+  annotate(geom="text", x=9.5, y=9.5, label="Positive effect*",color="green3",hjust=0)+
   coord_flip()
 
 # Results: variable change
@@ -515,11 +514,11 @@ resultsD
 
 ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
   geom_linerange(position = position_dodge(width = 0.5))+
-  ylab("Variables changes")+labs(title="4C/ID group treatment effect",subtitle = "School JUNIOR grade sample, from 2003 to 2014 time scale",x = "Sample Names")+
-  theme(panel.grid.major.y = element_line(color = 3,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
+  ylab("Variables changes: missing colors means 'no change'; **low obs.")+labs(title="4C/ID group treatment effect",subtitle = "School 1 JUNIOR grade sample, from 2003 to 2014 time scale",x = "Sample Names")+
+  theme(panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(fill="lightgray",color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
   annotate(geom="text", y=-0.5, x=1.5, label="Negative effect",color="red3",hjust=1)+
   annotate(geom="text", y=0.5, x=1.5, label="Positive effect",color="green3",hjust=0)+
   scale_x_discrete(limits=c("SCHOOL 1","JUNIOR","GRADE 7","GRADE 8", "GRADE 9", "RANK 1**", "RANK 2","RANK 3","FEMALE","MALE"))+
-  scale_y_continuous(limits=c(-10,10,5))+  
+  scale_y_continuous(limits=c(-25,25,5))+  
   coord_flip()
 
