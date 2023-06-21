@@ -46,6 +46,8 @@ Figure 1 shows the variable longitudinal patterns for all sample using box plots
 
 ![Figure 1: Boxplot time series](Images/BoxplotTimeSeries.png)
 
+Figure 1: Boxplot time series
+
 # METHODS
 
 The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE release and the principal method is the non-parametric inferential treatment group effect with sign-rank Wilcoxon procedure with the respective assumptions analisys: samples independence, non-normality distribution, symmetry, shape and variances. Since the majority of the samples don't have the same variances nor the same shape and symmetry is broken, Fligner-Policello test was used, but is accounts for the diferences in variance. For the case of low observations, \< 50, sample permutation test was used. Effect size and power analysis is also included.
@@ -54,15 +56,29 @@ The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE 
 
 # RESULTS
 
-Figure 2 and 3 shows a resume of the **results**, for all sample and just for school 1 JUNIOR grade sample [\^4]. The y-axis shows the name of the samples and the x-axis the median differences for each sample, for variables: TEST, LAB, BEHAV and CLASS. The horizontal lines represent the variables change, between treatment group and control group, represented by colors (see legend). On the left of the graph, there are the negative impact of the treatment and in the right, the positive 4C/ID impact. Color vertical lines for each sample and variables means that there is no change, that is, no 4C/ID impact. Figure 3 is basically the sames but focuses on the variable change.
+Figure 2 and 3 shows a resume of the **results**, for all sample in the time period 2003 to 2017. Figures 4 and 5 show the same results but for a more reliable sample: school 1 JUNIOR grade sample [\^4] in the same period of time.
+
+The y-axis of the graph in figure 2 shows the name of the samples and the x-axis the median differences, for variables, TEST, LAB, BEHAV and CLASS, in each specific samples. The left of the graph shows the negative changes, on the right the positive changes and the horizontal lines means that there are no changes detected. The difference presented is for the median of the variables change, represented by colors (see legend), between treatment group and control group. Figure 3 is basically the same but focuses on the variable change.
 
 ![Figure 2: Results resume graph, 4C/ID treatment effect: positive and negative effect.](Images/RResults_allSample.png)
 
+Figure 2: Results resume graph, 4C/ID treatment effect: positive and negative effect.
+
+Clearly, the results in figure 2 shows that there is a overall **negative change** for variable BEHAV, except for RANK 3 and GRADE 9 samples. Similarly for the variable TEST for all samples, except for RANK 3, FEMALE, grades 7 and 8, and Junior high. There is also a negative change for variable CLASS for the male and RANK 2 samples. On the other end the LAB variable has a overall **positive change**. The are several variables that doesn't show changes (vertical lines).
+
 ![Figure 3: 4C/ID group treatment effect: variables change. From 2003 to 2017 time scale.](Images/RResults_allSample_VC.png)
+
+Figure 3: 4C/ID group treatment effect: variables change. From 2003 to 2017 time scale.
+
+
 
 ![Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1: positive and negative effect.](Images/RResults_school1.png)
 
+Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1: positive and negative effect.
+
 ![Figure 5: 4C/ID group treatment effect for JUNIOR sample grade of school 1: 2003 to 2017 time scale.](Images/RResults_school1_VC.png)
+
+Figure 5: 4C/ID group treatment effect for JUNIOR sample grade of school 1: 2003 to 2017 time scale.
 
 # CONCLUSION
 
