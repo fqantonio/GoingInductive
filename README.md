@@ -37,7 +37,7 @@ The data was gathered over 12 years, in the period 2003 to 2017, and includes st
 
 The motivation lies on the need to understand the impact of the professional strategic decision within the educational work developed (flow charts, [^readme-2]): 
 
-> was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
+> Was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
 
 [^readme-2]: <https://cmap.ihmc.us/>
 
@@ -133,7 +133,7 @@ From the point of view of qualitative results, whats more important can be resum
 
 > NOTE 3: the Direct Instruction (Merrill, 2007) instructionla design is a well established learning strategy with a overwhelming research background, with 200 years of history, some authors claim. 
 
-So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** and RANK 1 students.
+So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** and RANK 1 students. 
 
 However, there are **risks and concerns** to be accommodated during the process, namely: 
   1. for the student less adapted (RANK 1) to the school system; 
