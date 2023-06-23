@@ -95,6 +95,13 @@ Figure 5 reinforce the results presented above, less favorable to sample groups 
 
 Figure 5: Results resume variables change graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.
 
+From the point of view of qualitative results, whats more important can be resumed on three points:
+
+  1. Students show a lot of motivation for working online with a LMS MOODLE organized like a game with levels;
+  2. The MOODLE environment provide moments of procedural automation;
+  2. During the online period of work the teacher as more time to support students specific doubts;
+  3. The amount of work of planning, constructing and improving the online lessons is overwhelming for a teacher alone.
+
 > One last comment. Intermediate results were found using other samples like school 1 and junior grade or by including school effect on the samples of school 1 and coparing with school 0. This last two images don't include a negative pattern of the BEHAV variable on the years of 2016 and 2017 (see figure 2), compare the same levell of students learning and don't have the issue of the school effect.
 
 # CONCLUSION (under construction)
