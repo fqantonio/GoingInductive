@@ -87,6 +87,7 @@ Figure 5: 4C/ID group treatment effect for JUNIOR sample grade of school 1: 2003
 
 # CONCLUSION
 
+> Guidelines
 >What impact for the students learning outcomes (four)? Who benefits more? What are the pros and cons about this >methodological decision? What are the implications for the stakeholders? Was it worth it? Did students benefit? >What can be done better? What conclusions can be drawned?
 
 The conclusions presented here focus more on the less reliable sample because it as different schools from diferent regions and different students grades: all sample from both schools with school effect included. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** [^readme-4] and RANK 1 students.
