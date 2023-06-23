@@ -128,6 +128,8 @@ Another thing that has to be acknowledge by the **stakeholders** is the fact tha
 
 Also, one methodology is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy. In this work only two were considered.
 
-Further research should include the why of the behavior declining over 2016 and develop the same research in other educational contexts, national and internationaly, in order to confirm these findings. 
+# Discussion
+
+Further research should include the develop of the same research in other educational contexts, national and internationaly, in order to confirm these findings and an analysis of the reason for the behavior declining over 2016. These work should be improved including inference analysis that include samples with no symmetry, difference variances and different distribution shapes. Also, there should be done a regression and cluster analysis as a way to confirm the results and conclusions presented here.
 
 # NOTES
