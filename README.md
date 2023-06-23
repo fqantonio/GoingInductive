@@ -35,7 +35,9 @@ This work is based on real day-to-day teacher assessment data, for junior and ju
 
 The data was gathered over 12 years, in the period 2003 to 2017, and includes students **Learning Transfer**, **Lab Practice**, **Classroom Behavior** (including Social Skills), and **Academic Results** in four different random variables: TEST, LAB, BEHAV and CLASS.
 
-The motivation lies on the need to understand the impact of the a professional strategic decision within the educational work developed (flow charts, [^readme-2]): was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
+The motivation lies on the need to understand the impact of the a professional strategic decision within the educational work developed (flow charts, [^readme-2]): 
+
+> was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
 
 [^readme-2]: <https://cmap.ihmc.us/>
 
