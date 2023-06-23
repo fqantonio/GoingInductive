@@ -25,7 +25,7 @@ The sample covers 12 years of teacher data assessment, in the period 2003 to 201
 
 # GOALS, RESEARCH QUESTIONS and HYPOTHESIS
 
-The **main goal** is to understand the impact of the change: from Merriënboer's Inductive Methodology Four Component Instructional (4C/ID)y (van Merriënboer, Kirschner, 2007) in a bLearning setting to Direct Instruction (Merrill, 2007). The **research questions** that guide this data analysis in four learning outcomes areas, Learning Transfer, Lab Practice, Social Skills and Academic Results, could be: what impact for this students learning outcomes? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders?
+The **main goal** is to understand the impact of the change: from Merriënboer's Inductive Methodology Four Component Instructional (4C/ID) (van Merriënboer, Kirschner, 2007) in a bLearning setting to Direct Instruction (Merrill, 2007). The **research questions** that guide this data analysis in four learning outcomes areas, Learning Transfer, Lab Practice, Social Skills and Academic Results, could be: what impact for this students learning outcomes? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders?
 
 The **hypothesis** is that this change will have a positive impact in all of the the learning outcomes mentioned, because, it is based on the 4C/ID methodology **'brain friendly'**, that is, they are anchored on Brain Based Learning (BBL), Cognitive Load Theory (CLT), Multi-Intelligence Theory (MIT) and Multimedia Learning (ML), learning theories well established. For the stakeholders it will give some guidelines for better support the teaching work, not only in efficiency but also to improve the learning strategies and team work.
 
@@ -42,8 +42,6 @@ The motivation lies on the need to understand the impact of the professional str
 [^readme-2]: <https://cmap.ihmc.us/>
 
 Most of the time the professional, specific, **day-to-day teacher work** data (see figure 2) is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is little or no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are devised and worse, it's normal not to share it.
-
-Samples are independent and, in general, non-normal: some few sample for the CLASS and TEST variables where normal distributed.
 
 ## variables description
 
@@ -65,12 +63,11 @@ The **Variables** are described in this next table.
 
 Table 4: variable description
 
-
 Figure 1 shows the variable longitudinal patterns, for the four variables, TEST, LAB, BEHAV and CLASS using box plots time series: it includes junior and junior high grade students data for both schools. 
 
 The red vertical line shows the school change year and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology, the **treatment group**. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression); around 2012, the first year of 4C/ID implementation, something happened!
 
-The box plots shows not only that the samples are not normal distributed, but also they are skewed, have same outliers and are not symmetric. 
+The box plots in figure 1 shows not only that the samples are not normal distributed, but also they are skewed, have same outliers and are not symmetric. In general, samples are independent and, in general, non-normal: some few sample for the CLASS and TEST variables where normal distributed.
 
 ![Figure 1: Boxplot time series](Images/BoxplotTimeSeries.png)
 
