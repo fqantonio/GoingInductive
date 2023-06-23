@@ -77,21 +77,25 @@ Clearly, figure 2 shows that there is a overall **positive change** for the LAB 
 
 Figure 3 presents the score change between the two groups, treatment and control. The LAB variables shows the biggest positive change while BEHAV and TEST shows the worst negative change. CLASS as a mixture behavior.
 
-Groups that present more concern are MALE and RANK 2.
+Samples groups that present more negative changes are MALE and RANK 2. On the other, FEMALE and RANK 3 show positive change.
 
 ![Figure 3: 4C/ID group treatment effect variables change for all period of time: 2003 to 2017.](Images/RResults_allSample_VC.png)
 
 Figure 3: 4C/ID group treatment effect variables change for all period of time: 2003 to 2017.
 
+Figures 4 and 5 show a more favorable positive change from treatment to control group with the RANK 1 sample showing less positive change. BEHAV continues to show negative change for GRADE 8, RANK 1 and MALE.
+
 ![Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.](Images/RResults_schoolJunior_2014.png)
 
 Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.
+
+Figure 5 reinforce the above results, less favorable to sample groups GRADE 8, RANK 1 and MALE. LAB variable its what have more favorable change followed by CLASS and TEST. 
 
 ![Figure 5: Results resume variables change graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.](Images/RResults_schoolJunior_2014_VC.png)
 
 Figure 5: Results resume variables change graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.
 
-> One last comment. Better results were found using the time period sample from 2009 to 2014 for just the junior grade, because it doesn't include a negative pattern of the BEHAV variable on the years of 2016 and 2017 (figure 2).
+> One last comment. Intermediate results were found using other samples like school 1 and junior grade or by including school effect on the samples of school 1 and coparing with school 0. This last two images don't include a negative pattern of the BEHAV variable on the years of 2016 and 2017 (see figure 2), compare the same levell of students learning and don't have the issue of the school effect.
 
 # CONCLUSION
 
