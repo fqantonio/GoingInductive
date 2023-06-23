@@ -63,7 +63,7 @@ The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE 
 
 # RESULTS
 
-Figure 2 and 3 shows a resume of the **results**, for all sample, in the time period 2003 to 2017. Figures 4 and 5 show the same results but for a more reliable sample: school one for the junior grade sample (school 1 JUNIOR) in the same period of time. More reliable, because it doesn't include the school effect identified in this work and focus just on the analysis of the junior grade students.
+Figure 2 and 3 shows a resume of the **results**, for all sample, in the time period 2003 to 2017. Figures 4 and 5 show the same results but for a more reliable sample: school one for the junior grade sample (school 1 JUNIOR) in the until 2014. More reliable, because it doesn't include the school effect identified in this work, it focus just on the analysis of the junior grade students only and doesn't include a negative pattern after 2016, that seems to be an independent pattern.
 
 The y-axis, of the graph in figure 2, shows the sample names and the x-axis presents the median differences, for variables, TEST, LAB, BEHAV and CLASS. The left of the graph present the negative changes and on the right the positive ones: the horizontal lines means that there are no changes between the treatment and the control group. The differences presented are for the median of the variables change, distinguished by colors (see legend). Figure 3 is basically the same but focuses on the variable score change to see were was the bigger change.
 
@@ -71,15 +71,15 @@ The y-axis, of the graph in figure 2, shows the sample names and the x-axis pres
 
 Figure 2: Results resume graph, 4C/ID treatment effect: positive and negative effect.
 
-It's not clear an overall positive change for all of the sample with all of the time period. However, considering just the school 1 and junior sample students until 2014, the positive change is clear. The correct answer should somewhere in between.
+It's not clear an overall positive if considered all sample over all time period. However, considering just the school 1 and junior sample students until 2014, the positive change is clear. The correct answer should somewhere in between.
 
 Clearly, figure 2 shows that there is a overall **positive change** for the LAB variable while a **negative change** for BEHAV (except for GRADE 9, RANK 3 and FEMALE samples). Similarly for the variable TEST, except for JUNIOR HIGH,GRADE 7 and 8, RANK 1 and 3, and FEMALE, where no changes were detected. Variable CLASS shows a mixture: in the samples JUNIOR (HERE?????)
 
-![Figure 3: 4C/ID group treatment effect: variables change. From 2003 to 2017 time scale.](Images/RResults_allSample_VC.png)
+![Figure 3: 4C/ID group treatment effect: variables change. From 2003 to 2017 time scale.](Images/RResults_schoolJunior_2014.png)
 
 Figure 3: 4C/ID group treatment effect: variables change. From 2003 to 2017 time scale.
 
-![Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1: positive and negative effect.](Images/RResults_school1.png)
+![Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1: positive and negative effect.](Images/RResults_schoolJunior_2014_VC.png)
 
 Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1: positive and negative effect.
 
