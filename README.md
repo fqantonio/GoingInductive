@@ -95,7 +95,7 @@ Figure 5 reinforce the results presented above, less favorable to sample groups 
 
 Figure 5: Results resume variables change graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.
 
-From the point of view of qualitative results, whats more important can be resumed on three points:
+From the point of view of qualitative results, whats more important can be resumed on four points:
 
   1. Students show a lot of motivation for working online with a LMS MOODLE organized like a game with levels;
   2. The MOODLE environment provide moments of procedural automation;
@@ -106,22 +106,28 @@ From the point of view of qualitative results, whats more important can be resum
 
 # CONCLUSION (under construction)
 
-> Guidelines: what impact for the students learning outcomes (four)? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders? Was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
+> NOTE 1: **guidelines**: what impact for the students learning outcomes (four)? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders? Was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
 
-The conclusions presented here focus more on the less reliable sample because it as different schools from diferent regions and different students grades: all sample from both schools with school effect included. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** [^readme-4] and RANK 1 students.
+>NOTE 2: the conclusions presented here focus on the "mean" results between the less favorable results of figures 2 and 3 and the more favorable of figures 4 and 5.
 
-[^readme-4]: Is there an underlying behavioral underlying effect?
+> NOTE 3: the Direct Instruction (Merrill, 2007) instructionla design is a well established learning strategy with a overwhelming research background, with 200 years of history, some authors claim. 
 
-However, there are **risks and concerns** to be accommodated during the process, namely: 1. for the student less adapted (RANK 1) to the school system; 2. the classroom management referring to students behavior (see discussion); 3. in the **learning transfer** process the gains are more modest; 4. males gain less with this change.
+So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** and RANK 1 students.
+
+However, there are **risks and concerns** to be accommodated during the process, namely: 
+  1. for the student less adapted (RANK 1) to the school system; 
+  2. the classroom management referring to students social skills; 
+  3. in the **learning transfer** process the gains are more modest; 
+  4. Male students gain less with this change.
 
 **Bottom line**, if you don't want to take the risks, change conditionaly to have a student group more adapted to school or if you want to increase the lab practices skills in some subject or school context.
 
-Furthermore, we've to considered that the comparison is to an well developed and researched instructional design over more then 200 years. Any slight improve is strong. Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for a teacher alone: there is a crucial need to a commited team work. Also, one methodology is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy. In this work only two were considered.
+Furthermore, we've to considered that the comparison is to a well developed and researched instructional design over more then 200 years, **Direct Instruction**. Any slight improve is strong. 
 
-Further research should include the why of the behavior declining over 2016 and develop the same research in other educational context national and international in order to confirm this findings.
+Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for a teacher alone: there is a crucial need to a commited, motivated and goal-oriented team work. However, the motivation cannot came from a external decision but must be driven by teacher's team. 
 
-# DISCUSSION
+Also, one methodology is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy. In this work only two were considered.
 
-What strikes in a teacher practice are the doubts: did I implement the strategies correctly? Are this conclusions valuable? Are this statistical results robust, reliable and powerfull?
+Further research should include the why of the behavior declining over 2016 and develop the same research in other educational contexts, national and internationaly, in order to confirm these findings. 
 
 # NOTES
