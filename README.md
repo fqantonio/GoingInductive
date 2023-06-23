@@ -67,25 +67,25 @@ Figure 2 and 3 shows a resume of the **results**, for all sample, in the time pe
 
 The y-axis, of the graph in figure 2, shows the sample names and the x-axis presents the median differences, for variables, TEST, LAB, BEHAV and CLASS. The left of the graph present the negative changes and on the right the positive ones: the horizontal lines means that there are no changes between the treatment and the control group. The differences presented are for the median of the variables change, distinguished by colors (see legend). Figure 3 is basically the same but focuses on the variable score change to see were was the bigger change.
 
-![Figure 2: Results resume graph, 4C/ID treatment effect: positive and negative effect.](Images/RResults_allSample.png)
+![Figure 2: 4C/ID group treatment effect for 2003 to 2017.](Images/RResults_allSample.png)
 
-Figure 2: Results resume graph, 4C/ID treatment effect: positive and negative effect.
+Figure 2: 4C/ID group treatment effect for 2003 to 2017.
 
-It's not clear an overall positive if considered all sample over all time period. However, considering just the school 1 and junior sample students until 2014, the positive change is clear. The correct answer should somewhere in between.
+It's not clear an overall positive if considered all sample over all time period. However, considering just the school 1 and junior sample students until 2014, the positive change is clear. The correct answer should be somewhere in between.
 
-Clearly, figure 2 shows that there is a overall **positive change** for the LAB variable while a **negative change** for BEHAV (except for GRADE 9, RANK 3 and FEMALE samples). Similarly for the variable TEST, except for JUNIOR HIGH,GRADE 7 and 8, RANK 1 and 3, and FEMALE, where no changes were detected. Variable CLASS shows a mixture: in the samples JUNIOR (HERE?????)
+Clearly, figure 2 shows that there is a overall **positive change** for the LAB variable while a **negative change** for BEHAV (except for GRADE 9, RANK 3 and FEMALE samples). Similarly for the variable TEST, except for JUNIOR HIGH,GRADE 7 and 8, RANK 1 and 3, and FEMALE, where no changes were detected. Variable CLASS shows a mixture: in the samples JUNIOR and FEMALE there is a positive change, while negative for RANK 2 and MALE and no change for the other samples.
 
-![Figure 3: 4C/ID group treatment effect: variables change. From 2003 to 2017 time scale.](Images/RResults_schoolJunior_2014.png)
+![Figure 3: 4C/ID group treatment effect variables change for all period of time: 2003 to 2017.](Images/RResults_schoolJunior_2014.png)
 
-Figure 3: 4C/ID group treatment effect: variables change. From 2003 to 2017 time scale.
+Figure 3: 4C/ID group treatment effect variables change for all period of time: 2003 to 2017.
 
-![Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1: positive and negative effect.](Images/RResults_schoolJunior_2014_VC.png)
+![Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.](Images/RResults_schoolJunior_2014_VC.png)
 
-Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1: positive and negative effect.
+Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.
 
-![Figure 5: 4C/ID group treatment effect for JUNIOR sample grade of school 1: 2003 to 2017 time scale.](Images/RResults_school1_VC.png)
+![Figure 5: Results resume variables change graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.](Images/RResults_schoolJunior_2014_VC.png)
 
-Figure 5: 4C/ID group treatment effect for JUNIOR sample grade of school 1: 2003 to 2017 time scale.
+Figure 5: Results resume variables change graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.
 
 > One last comment. Better results were found using the time period sample from 2009 to 2014 for just the junior grade, because it doesn't include a negative pattern of the BEHAV variable on the years of 2016 and 2017 (figure 2).
 
