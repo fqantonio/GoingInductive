@@ -49,7 +49,7 @@ Figure 1 shows the variable longitudinal patterns, for the four variables, TEST,
 
 The red vertical line shows the school change year and the blue one is the starting point for the implementation of 4C/ID strategic inductive methodology, the **treatment group**. Its clear that near each vertical line there is a change showed by the blue smooth line (polynomial local regression); around 2012, the first year of 4C/ID implementation, something happened!
 
-The box plots shows not only that the samples are not normaly distributed, but also they are skewed, have same outliers and are not simmetric.
+The box plots shows not only that the samples are not normal distributed, but also they are skewed, have same outliers and are not symmetric. 
 
 ![Figure 1: Boxplot time series](Images/BoxplotTimeSeries.png)
 
@@ -57,7 +57,7 @@ Figure 1: Boxplot time series
 
 # METHODS
 
-The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE release and the principal method is the non-parametric inferential treatment group effect with sign-rank Wilcoxon procedure with the respective assumptions analisys: samples independence, non-normality distribution, symmetry, shape and variances. Since the majority of the samples don't have the same variances nor the same shape and symmetry is broken. For the case of low observations, \< 50, sample permutation test was used.
+The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE release and the principal method is the non-parametric inferential treatment group effect with sign-rank Wilcoxon procedure with the respective assumptions analysis: samples independence, non-normality distribution, symmetry, shape and variances. Since the majority of the samples don't have the same variances, nor the same shape and symmetry is broken, and, in some cases, there are low observations, \< 50, sample permutation test was also used.
 
 [^readme-3]: RStudio, <https://posit.co/products/open-source/rstudio/>
 
