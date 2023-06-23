@@ -9,7 +9,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 > Education is the most powerful weapon which you can use to change the world.
 >
 >         
->                                            *Nelson Mandela*
+>                                            Nelson Mandela
 > 
 
 # ABSTRACT
