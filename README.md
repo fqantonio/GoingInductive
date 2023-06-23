@@ -75,6 +75,10 @@ Figure 2: 4C/ID group treatment effect for 2003 to 2017.
 
 Clearly, figure 2 shows that there is a overall **positive change** for the LAB variable while a **negative change** for BEHAV (except for GRADE 9, RANK 3 and FEMALE samples). Similarly for the variable TEST, except for JUNIOR HIGH,GRADE 7 and 8, RANK 1 and 3, and FEMALE, where no changes were detected. Variable CLASS shows a mixture: in the samples JUNIOR and FEMALE there is a positive change, while negative for RANK 2 and MALE and no change for the other samples.
 
+Figure 3 presents the score change between the two groups, treatment and control. The LAB variables shows the biggest positive change while BEHAV and TEST shows the worst negative change. CLASS as a mixture behavior.
+
+Groups that present more concern are MALE and RANK 2.
+
 ![Figure 3: 4C/ID group treatment effect variables change for all period of time: 2003 to 2017.](Images/RResults_allSample_VC.png)
 
 Figure 3: 4C/ID group treatment effect variables change for all period of time: 2003 to 2017.
