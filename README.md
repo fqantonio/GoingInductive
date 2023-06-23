@@ -6,6 +6,7 @@ This is a **`Going Inductive`** learning educational strategy changing paper DRA
 
 This **knowledge base source** contains the results, conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
 
+> 
 > Education is the most powerful weapon which you can use to change the world.
 >
 >         
