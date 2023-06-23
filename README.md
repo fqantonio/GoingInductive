@@ -15,7 +15,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # ABSTRACT
 
-Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow with all the activities chronologically organized, even in a bLearning setting? In overall, the **answer is yes**, that is, 4C/ID eLearning setting has some advantages over Direct Instruction but with some remarks.
+Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, even in a bLearning setting? In overall, the **answer is yes**, that is, 4C/ID eLearning setting has some advantages over Direct Instruction but with some remarks.
 
 If you decide to do it, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management, that will be adressed in this roadmap.
 
