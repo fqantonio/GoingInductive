@@ -35,7 +35,7 @@ This work is based on real day-to-day teacher assessment data, for junior and ju
 
 The data was gathered over 12 years, in the period 2003 to 2017, and includes students **Learning Transfer**, **Lab Practice**, **Classroom Behavior** (including Social Skills), and **Academic Results** in four different random variables: TEST, LAB, BEHAV and CLASS.
 
-The motivation lies on the need to understand the impact of the a professional strategic decision within the educational work developed (flow charts, [^readme-2]): 
+The motivation lies on the need to understand the impact of the professional strategic decision within the educational work developed (flow charts, [^readme-2]): 
 
 > was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
 
@@ -53,7 +53,7 @@ Figure 1: Boxplot time series
 
 # METHODS
 
-The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE release and the principal method is the non-parametric inferential treatment group effect with sign-rank Wilcoxon procedure with the respective assumptions analisys: samples independence, non-normality distribution, symmetry, shape and variances. Since the majority of the samples don't have the same variances nor the same shape and symmetry is broken, Fligner-Policello test was used, but is accounts for the diferences in variance. For the case of low observations, \< 50, sample permutation test was used. Effect size and power analysis is also included.
+The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE release and the principal method is the non-parametric inferential treatment group effect with sign-rank Wilcoxon procedure with the respective assumptions analisys: samples independence, non-normality distribution, symmetry, shape and variances. Since the majority of the samples don't have the same variances nor the same shape and symmetry is broken. For the case of low observations, \< 50, sample permutation test was used.
 
 [^readme-3]: RStudio, <https://posit.co/products/open-source/rstudio/>
 
