@@ -63,9 +63,9 @@ The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE 
 
 # RESULTS
 
-Figure 2 and 3 shows a resume of the **results**, for all sample in the time period 2003 to 2017. Figures 4 and 5 show the same results but for a more reliable sample: school 1 JUNIOR grade sample [\^4] in the same period of time.
+Figure 2 and 3 shows a resume of the **results**, for all sample, in the time period 2003 to 2017. Figures 4 and 5 show the same results but for a more reliable sample, school one for the junior grade sample (school 1 JUNIOR) in the same period of time, because it doesn't include the school effect identified in this work and focus just on the analysis of the junior grade students.
 
-The y-axis of the graph in figure 2 shows the name of the samples and the x-axis the median differences, for variables, TEST, LAB, BEHAV and CLASS, in each specific samples. The left of the graph shows the negative changes, on the right the positive changes and the horizontal lines means that there are no changes detected. The difference presented is for the median of the variables change, represented by colors (see legend), between treatment group and control group. Figure 3 is basically the same but focuses on the variable change.
+The y-axis, of the graph in figure 2, shows the sample names and the x-axis presents the median differences, for variables, TEST, LAB, BEHAV and CLASS. The left of the graph shows the negative changes and on the right the positive changes: the horizontal lines means that there are no changes between the treatment and the control group. The difference presented is for the median of the variables change, represented by colors (see legend), between treatment group and control group. Figure 3 is basically the same but focuses on the variable change.
 
 ![Figure 2: Results resume graph, 4C/ID treatment effect: positive and negative effect.](Images/RResults_allSample.png)
 
@@ -84,6 +84,8 @@ Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample o
 ![Figure 5: 4C/ID group treatment effect for JUNIOR sample grade of school 1: 2003 to 2017 time scale.](Images/RResults_school1_VC.png)
 
 Figure 5: 4C/ID group treatment effect for JUNIOR sample grade of school 1: 2003 to 2017 time scale.
+
+> One last comment. Better results were found using the time period sample from 2009 to 2014 for just the junior grade, because it doesn't include a negative pattern of the BEHAV variable on the years of 2016 and 2017 (figure 2).
 
 # CONCLUSION
 
