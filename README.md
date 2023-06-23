@@ -89,7 +89,7 @@ Figures 4 and 5 show a more favorable positive change from treatment to control 
 
 Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.
 
-Figure 5 reinforce the above results, less favorable to sample groups GRADE 8, RANK 1 and MALE. LAB variable its what have more favorable change followed by CLASS and TEST. 
+Figure 5 reinforce the results presented above, less favorable to sample groups GRADE 8, RANK 1 and MALE, but still, only positive changes for the entire school 1 sample and grade 9. LAB variable its what have more positive change followed by CLASS and TEST. 
 
 ![Figure 5: Results resume variables change graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.](Images/RResults_schoolJunior_2014_VC.png)
 
