@@ -21,8 +21,7 @@ If you decide to do it, there will be specific impacts that need to be **accommo
 
 The sample covers 12 years of teacher data assessment, in the period 2003 to 2017, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
 
-> **Keywords** Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flow; Statistical Non-parametric > Inference; academic results; learning transfer; behavior; lab practice; Cognitive Load Theory; 
-> MultiIntelligence Theory; Brain Based Learning; bLearning.
+> **Keywords** Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flow; Statistical Non-parametric Inference; Learning Transfer, Lab Practice, Social Skills and Academic Results; Cognitive Load Theory; MultiIntelligence Theory; Brain Based Learning; bLearning.
 
 # GOALS, RESEARCH QUESTIONS and HYPOTHESIS
 
