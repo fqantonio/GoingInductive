@@ -53,15 +53,12 @@ The **Variables** are described in this next table.
 | DATE | first year of the raw sample: example: 2003/2004, lective year, is recorder with 2003 |
 | SCHOOL | there are two schools, in different regions, identified by 0 (till 2008) and 1 (after 2009) |
 | GENDER | Female and Male, respectively, F and M |
-| TEST, LAB, BEHAV | scale: 0-100: tests scores that represent Learning Transfer |
 | LAB | scale: 0-100: laboratory practical skills assessed by observational in classroom teacher recording forms |
 | BEHAV | scale: 0-100: assessed by observational in classroom teacher recording forms related to accomplishment school classroom rules and social skills |
 | CLASS | 0 to 100, height average formula [^average], representing Learning Success |
 |RANK | a study for student addaptation to the school system |
-| GRADE | categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p(techical) and 11p (Technical) school grades |
+| GRADE | categories 0 to 6, representing, respectively, 7,8,9,10,11, 10p(technical) and 11p (Technical) school grades |
 | M4CID | category 0 and 1, respectively, without 4C/ID and with 4CID;
-
-Table 4: variable description
 
 Figure 1 shows the variable longitudinal patterns, for the four variables, TEST, LAB, BEHAV and CLASS using box plots time series: it includes junior and junior high grade students data for both schools. 
 
