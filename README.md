@@ -121,15 +121,19 @@ From the point of view of qualitative results, whats more important can be resum
 
 # CONCLUSION (under construction)
 
+what impact for this students learning outcomes? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders?
+
 > NOTE 1: **guidelines**: what impact for the students learning outcomes (four)? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders? Was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
 
 >NOTE 2: the conclusions presented here focus on the "mean" results between the less favorable results of figures 2 and 3 and the more favorable of figures 4 and 5.
 
 > NOTE 3: the Direct Instruction (Merrill, 2007) instructionla design is a well established learning strategy with a overwhelming research background, with 200 years of history, some authors claim. 
 
-So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because it improves the **Learning Transfer**, **academic results** with a huge impact on **lab practice**, except for the **Social Skills** and RANK 1 students. 
+So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because, in overall, it as a positive impact on the learning outcomes, namely, **Learning Transfer**, **academic results**, **Social Skills** with a huge impact on **lab practice**.
 
-However, there are **risks and concerns** to be accommodated during the process, namely: 
+Students that benefit more are females, grade 9 and rank 3 (more adapted to school) while the one's that doesn't benefit so much are rank 1.
+
+So, there are **risks and concerns** to be accommodated during the process, namely: 
   1. for the student less adapted (RANK 1) to the school system; 
   2. the classroom management referring to students social skills; 
   3. in the **learning transfer** process the gains are more modest; 
@@ -137,14 +141,14 @@ However, there are **risks and concerns** to be accommodated during the process,
 
 **Bottom line**, if you don't want to take the risks, change conditionaly to have a student group more adapted to school or if you want to increase the lab practices skills in some subject or school context.
 
-Furthermore, we've to considered that the comparison is to a well developed and researched instructional design over more then 200 years, **Direct Instruction**. Any slight improve is strong. 
+Furthermore, we've to considered that the comparison is to a well developed and researched instructional design over more then 200 years, **Direct Instruction**. Any slight improve is considered very strong. 
 
-Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for a teacher alone: there is a crucial need to a commited, motivated and goal-oriented team work. However, the motivation cannot came from a external decision but must be driven by teacher's team. 
+Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for a teacher alone: there is a crucial need to a commited, motivated and goal-oriented team work. However, the motivation cannot came from a external decision but must be driven by a inner necessity. 
 
-Also, one methodology is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy. In this work only two were considered.
+Furthermore, one methodology is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy. In this work only two were considered.
 
 # Discussion
 
-Further research should include the develop of the same research in other educational contexts, national and internationaly, in order to confirm these findings and an analysis of the reason for the behavior declining over 2016. These work should be improved including inference analysis that include samples with no symmetry, difference variances and different distribution shapes. Also, there should be done a regression and cluster analysis as a way to confirm the results and conclusions presented here.
+**Further research** should include the develop of the same setting in other educational contexts, national and international, in order to confirm these findings and an analysis of the reason for the behavior declining over 2016. These work should be improved by including inference analysis that take in account samples with no symmetry, difference variances and different distribution shapes. Also, there should be done a regression and cluster analysis as a way to confirm the results and conclusions presented here, like a feedback strategy.
 
 # NOTES
