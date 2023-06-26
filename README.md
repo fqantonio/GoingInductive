@@ -15,7 +15,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # ABSTRACT
 
-These paper argues that you should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, even in a bLearning setting or circumscribedly, for a specific class or a more practical subject. 4C/ID eLearning methodology setting has some advantages over Direct Instruction with some remarks that will be highlighted.
+These paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, even in a bLearning setting or circumscribedly, for a specific class or a more practical subject. In fact, 4C/ID eLearning methodology setting has some advantages over Direct Instruction with some remarks that will be highlighted.
 
 If you decide to do it, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management, that will be adressed in this roadmap.
 
@@ -102,7 +102,7 @@ Samples groups that present more negative changes are MALE and RANK 2. On the ot
 
 Figure 3: 4C/ID group treatment effect variables change for all period of time: 2003 to 2017.
 
-Figures 4 and 5 show a more favorable positive change from treatment to control group with the RANK 1 sample showing less positive change. BEHAV continues to show negative change for GRADE 8, RANK 1 and MALE.
+Figures 4 and 5 show a more favorable positive change from treatment to control group with the RANK 1 sample with less positive change. BEHAV continues to show negative change for GRADE 8, RANK 1 and MALE.
 
 ![Figure 4: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.](Images/RResults_schoolJunior_2014.png)
 
@@ -131,7 +131,7 @@ From the point of view of qualitative results, whats more important can be resum
 
 > NOTE 3: the Direct Instruction (Merrill, 2007) instructionla design is a well established learning strategy with a overwhelming research background, with 200 years of history, some authors claim. 
 
-Before hand, we've to considered that the comparison is to a well developed and researched instructional design over more then 200 years, **Direct Instruction**. Any slight improve is considered very strong. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because, in overall, it as a positive impact on the learning outcomes, namely, **Learning Transfer**, **academic results**, **Social Skills** with a huge impact on **lab practice**.
+Before hand, we've to considered that the comparison is made to a well developed and researched instructional design over more then 200 years, **Direct Instruction**. Any slight improve is considered very strong. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because, in overall, it as a positive impact on the learning outcomes, namely, **Learning Transfer**, **academic results**, **Social Skills** with a huge impact on **lab practice**.
 
 Students that benefit more are females, grade 9 and rank 3 (more adapted to school) while the one's that don't benefit are rank 1 (less adapted).
 
@@ -150,7 +150,7 @@ Another thing that has to be acknowledge by the **stakeholders** is the fact tha
 
 Furthermore, **one methodology** is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy. In this work only two were considered.
 
-# Discussion
+# DISCUSSION
 
 **Further research** should include the develop of the same setting in other educational contexts, national and international, in order to confirm these findings and an analysis of the reason for the behavior declining over 2016. These work should be improved by including inference analysis that take in account samples with no symmetry, difference variances and different distribution shapes. Also, there should be done a regression and cluster analysis as a way to confirm the results and conclusions presented here, like a feedback strategy.
 
