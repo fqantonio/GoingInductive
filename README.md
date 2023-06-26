@@ -15,7 +15,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # ABSTRACT
 
-Should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, even in a bLearning setting? In overall, the **answer is yes**, that is, 4C/ID eLearning setting has some advantages over Direct Instruction but with some remarks.
+These paper argues that you should you, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, even in a bLearning setting or circumscribedly, for a specific class or a more practical subject. 4C/ID eLearning methodology setting has some advantages over Direct Instruction with some remarks that will be highlighted.
 
 If you decide to do it, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management, that will be adressed in this roadmap.
 
@@ -80,7 +80,7 @@ The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE 
 
 # RESULTS
 
-It's not clear an overall positive if considered all sample over all time period (figure 2 and 3). However, considering only the school 1 and junior sample students until 2014, the positive change is clear (figures 3 and 4). The correct results should be somewhere in between [^4results]. 
+Looking at figure 1 it's not clear an overall positive change but figure 3 shows a more favorable result because it's not biased by the schools differences and it compares the same student level. However, the correct results should be somewhere in between [^4results]. 
 
 [^4results]: complete results with sample obs., stats values and p-values are on the code files for now.
 
