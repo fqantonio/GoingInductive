@@ -116,7 +116,7 @@ From the point of view of qualitative results, whats more important can be resum
 
   1. Students show a lot of motivation for working online with a LMS MOODLE organized like a game with levels;
   2. The MOODLE environment provide moments of procedural automation;
-  2. During the online period of work the teacher as more time to support students specific doubts;
+  2. During the online period of work the teacher as more time to support students specific needs;
   3. The amount of work of planning, constructing and improving the online lessons is overwhelming for a teacher alone.
 
 > One last comment. Intermediate results were found using other samples like school 1 and junior grade or by including school effect on the samples of school 1 and coparing with school 0. This last two images don't include a negative pattern of the BEHAV variable on the years of 2016 and 2017 (see figure 2), compare the same levell of students learning and don't have the issue of the school effect.
@@ -138,13 +138,15 @@ So, there are issues to be addressed and accommodated before and during the proc
   2. Most of the students are well adapted to school? If yes, use the 4C/ID methodology with some accomodations; 
   2. All the time there is a crucial need for social skills classroom management; 
   3. Acknowledge that, for the **learning transfer** assessment the gains are more modest; 
-  4. Male students gain less with this change.
+  4. Male students gain less with this change;
+  5. Team work;
+  6. bLearning provide more individual time interaction between student and teacher which improves student engagement.
 
 **Bottom line**, if you don't want to take the risks, change conditional to have a class group more adapted to school or if you want to increase the lab practices skills in some subject or school context.
 
 Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for one teacher alone: there is a crucial need to a commited, motivated and goal-oriented team work. However, the motivation cannot came from a external decision but must be driven by a inner group necessity. 
 
-Furthermore, one methodology is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy. In this work only two were considered.
+Furthermore, **one methodology** is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy. In this work only two were considered.
 
 # Discussion
 
