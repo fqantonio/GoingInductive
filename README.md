@@ -27,7 +27,7 @@ The sample covers 12 years of teacher data assessment, in the period 2003 to 201
 
 The **main goal** is to understand the impact of the change: from Merriënboer's Inductive Methodology Four Component Instructional (4C/ID) (van Merriënboer, Kirschner, 2007) in a bLearning setting to Direct Instruction (Merrill, 2007). 
 
-The **research questions** that guide this data analysis in four learning outcomes areas, Learning Transfer, Lab Practice, Social Skills and Academic Results, could be: what impact for this students learning outcomes? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders?
+The **research questions** that guide this analysis in four learning outcomes areas, Learning Transfer, Lab Practice, Social Skills and Academic Results: what impact for this students learning outcomes? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders?
 
 The **hypothesis** is that this change will have a positive impact in all of the the learning outcomes mentioned, because, it is based on the 4C/ID methodology **'brain friendly'**, that is, they are anchored on Brain Based Learning (BBL), Cognitive Load Theory (CLT), Multi-Intelligence Theory (MIT) and Multimedia Learning (ML), learning theories well established. For the stakeholders it will give some guidelines for better support the teaching work, not only in efficiency but also to improve the learning strategies and team work.
 
@@ -35,9 +35,9 @@ The **hypothesis** is that this change will have a positive impact in all of the
 
 This work is based on real day-to-day teacher assessment data, for junior and junior high students of two different schools, from different regions and time periods, for the chemistry and physics subjects of the Portuguese curriculum.
 
-The data was gathered over 12 years, in the period 2003 to 2017, and includes students **Learning Transfer**, **Lab Practice**, **Classroom Behavior** (Social Skills), and **Academic Results** in four different random variables: TEST, LAB, BEHAV and CLASS.
+The data was gathered over 12 years, in the period 2003 to 2017, and includes students **Learning Transfer**, **Lab Practice**, **Classroom Behavior** (Social Skills), and **Academic Results** using four different random variables: TEST, LAB, BEHAV and CLASS.
 
-The motivation lies on the need to understand the impact of the professional strategic decision within the educational work developed (flow charts, [^readme-2]): 
+The **motivation** lies on the need to understand the impact of the professional strategic decision within the educational work developed (flow charts, [^readme-2]): 
 
 > Was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
 
@@ -123,29 +123,26 @@ From the point of view of qualitative results, whats more important can be resum
 
 # CONCLUSION (under construction)
 
-what impact for this students learning outcomes? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders?
-
 > NOTE 1: **guidelines**: what impact for the students learning outcomes (four)? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders? Was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
 
 >NOTE 2: the conclusions presented here focus on the "mean" results between the less favorable results of figures 2 and 3 and the more favorable of figures 4 and 5.
 
 > NOTE 3: the Direct Instruction (Merrill, 2007) instructionla design is a well established learning strategy with a overwhelming research background, with 200 years of history, some authors claim. 
 
-So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because, in overall, it as a positive impact on the learning outcomes, namely, **Learning Transfer**, **academic results**, **Social Skills** with a huge impact on **lab practice**.
+Before hand, we've to considered that the comparison is to a well developed and researched instructional design over more then 200 years, **Direct Instruction**. Any slight improve is considered very strong. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because, in overall, it as a positive impact on the learning outcomes, namely, **Learning Transfer**, **academic results**, **Social Skills** with a huge impact on **lab practice**.
 
-Students that benefit more are females, grade 9 and rank 3 (more adapted to school) while the one's that doesn't benefit so much are rank 1.
+Students that benefit more are females, grade 9 and rank 3 (more adapted to school) while the one's that don't benefit are rank 1 (less adapted).
 
-So, there are **risks and concerns** to be accommodated during the process, namely: 
-  1. for the student less adapted (RANK 1) to the school system; 
-  2. the classroom management referring to students social skills; 
-  3. in the **learning transfer** process the gains are more modest; 
+So, there are issues to be addressed and accommodated before and during the process, namely: 
+  1. The subject to be teached as same lab practice nuclear goal? If yes, use the 4C/ID; 
+  2. Most of the students are well adapted to school? If yes, use the 4C/ID methodology with some accomodations; 
+  2. All the time there is a crucial need for social skills classroom management; 
+  3. Acknowledge that, for the **learning transfer** assessment the gains are more modest; 
   4. Male students gain less with this change.
 
-**Bottom line**, if you don't want to take the risks, change conditionaly to have a student group more adapted to school or if you want to increase the lab practices skills in some subject or school context.
+**Bottom line**, if you don't want to take the risks, change conditional to have a class group more adapted to school or if you want to increase the lab practices skills in some subject or school context.
 
-Furthermore, we've to considered that the comparison is to a well developed and researched instructional design over more then 200 years, **Direct Instruction**. Any slight improve is considered very strong. 
-
-Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for a teacher alone: there is a crucial need to a commited, motivated and goal-oriented team work. However, the motivation cannot came from a external decision but must be driven by a inner necessity. 
+Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for one teacher alone: there is a crucial need to a commited, motivated and goal-oriented team work. However, the motivation cannot came from a external decision but must be driven by a inner group necessity. 
 
 Furthermore, one methodology is not a panacea for all of the learning process, there is a need of stimulating research and knowledge spread of the specific impacts of each strategy. In this work only two were considered.
 
