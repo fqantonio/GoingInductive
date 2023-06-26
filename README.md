@@ -80,7 +80,9 @@ The **statistical analysis** uses R code software in the RStudio[^readme-3] IDE 
 
 # RESULTS
 
-It's not clear an overall positive if considered all sample over all time period (figure 2 and 3). However, considering only the school 1 and junior sample students until 2014, the positive change is clear (figures 3 and 4). The correct results should be somewhere in between.
+It's not clear an overall positive if considered all sample over all time period (figure 2 and 3). However, considering only the school 1 and junior sample students until 2014, the positive change is clear (figures 3 and 4). The correct results should be somewhere in between [^4results]. 
+
+[^4results]: complete results with sample obs., stats values and p-values are on the code files for now.
 
 Figure 2 and 3 shows a resume of the **results**, for all sample, in the time period 2003 to 2017. Figures 4 and 5 show the same results but for a more reliable sample: school one for the junior grade sample (school 1 JUNIOR) in the until 2014. More reliable, because it doesn't include the school effect identified in this work, it focus just on the analysis of the junior grade students only and doesn't include a negative pattern after 2016, that seems to be an independent pattern.
 
