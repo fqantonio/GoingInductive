@@ -1,0 +1,313 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# RESULTS
+
+## Resume
+
+| SAMPLE                          | TEST | LAB | BEHAV | CLASS | OBSERVATIONS/NOTES                                                     |
+|------------|------------|------------|------------|------------|------------|
+| All sample                      | \-   | \+  | \-    | \-    | School effect identifyed                                               |
+| Junior (school effect)          | \~   | \+  | \-    | \~    | school 1 with 4C/ID variable 1                                         |
+| Junior and junior high          | \-   | \~  | \-    | \-    | junior and junior high school 0 and 1 (exclude school 1 without 4C/ID) |
+| Junior and Junior High          |      |     |       |       |                                                                        |
+| All sample (school effect)      | \-   | \+  | \-    | \-    |                                                                        |
+| SCHOOL 1 junior and high junior | \~   | \+  | \-    | \+    |                                                                        |
+| Junior for school 1             | \+   | \+  | \-    | \+    |                                                                        |
+| GRADE 7                         | \~   | \+  | \-    | \~    |                                                                        |
+| GRADE 8                         | \+   | \+  | \-    | \~    | M4CID=="1",#71 entrances, less then 100 entrances                      |
+| GRADE 9                         | \~   | \+  | \+    | \+    |                                                                        |
+| RANK 1                          | \-   | \+  | \-    | \-    |                                                                        |
+| RANK 2                          | \~   | \+  | \-    | \~    |                                                                        |
+| RANK 3                          | \~   | \+  | \-    | \-    |                                                                        |
+| FEMALE                          | \+   | \+  | \~    | \+    |                                                                        |
+| MALE                            | \~   | \+  | \-    | \~    |                                                                        |
+
+## Quantitative
+
+Treatment, implies the presence of the methodology 4C/ID, signalized
+with 1; control, implies direct instruction methodology, signalized with
+0;
+
+Alternative: true location shift is greater than 0; Using boxplot two
+compare means, knowing that what is shown is the median; Using paired
+default in Wilcox stats, means, FALSE;
+
+Effect column meaning: positive - The use of methodology 4C/ID has the
+same effect on the mean, increasing the mean Negative - The use of
+methodology 4C/ID has the same negative effect on the mean, decreasing
+the mean No effect - The use of methodology 4C/ID had no effect on the
+mean, with no increase or decrease the mean
+
+A sample analysis with 100 entries is also done and referred to whenever
+the results are contradictory.
+
+Hypothesis: does the patterns showned in the last graphs where there was
+a negative bump during the transition to the second between the schools
+showed earlier in the graphs should be considered? Is there a school
+effect on the results? should the data between schools in the same 4CID
+conditions 0 be assessed? yes, but only the junior school should be
+compared we should use the CLASS to study the differences between
+schools and not the other variables; if we use the variable because it
+is a math relation qith the others just with class variable Variable
+TEST, LAB, CLASS greater in school 0 then in school 1 Variable BEHAV is
+less for the School 0 then in the school 1 So, this pivotal moment, take
+this research to consider that there is a school effect, that biased all
+variables, in the negative way except for the BEHAV variable, in the
+positive way for school 1. So this is going to be restricted to school
+1: it is considered an analysis for the school 1 as a global data
+sample, and an analysis only at the junior level in school 1. Secondary
+school wil not be analized because there is no scondary sample with no
+4CID.\
+SCHOOL efect Inference sample analysis, 4C/ID, taking in account the
+school effect prepararing the sample to take into account the
+differences; in the case of TEST, LAB and CLASS, it will be added to the
+sample of school 1 the differences computed in this variables. In the
+case of the variable BEHAV, it will be added to school 0, in order to
+not create negative numbers, consequently, to keep the variables between
+0 and 100; compare data_junior_computed compare samples after the
+computation explained just now: data_JUNIOR_SCHOOL0 and
+data_junior_computed_SCHOOL1_M4CID0: are they from the same
+distribution? Conlusion: yes, they are from the same sample distribution
+
+Only RANK 3, the more adapted, benefit more with the 4CID methodology
+RANK 1 and 2, the less adapted benefit only on the LAB variable; Female,
+averall, benefit more
+
+table 11 : computed school differences for the junior sample school 0
+and 1 without 4C/ID methodology
+
+### Data
+
+| Parameters | TEST   | LAB   | BEHAV  | CLASS | RANK  | RANDOM |
+|------------|--------|-------|--------|-------|-------|--------|
+| Min.       | 11.00  | 0.0   | 29.00  | 14.40 | 1     | 0      |
+| 1st Qu.    | 50.00  | 48.0  | 66.00  | 54.50 | 1     | 28.00  |
+| Median     | 62.00  | 60.0  | 78.00  | 63.60 | 2     | 53.00  |
+| Mean       | 62.07  | 59.5  | 76.21  | 64.13 | 2.069 | 51.78  |
+| 3rd Qu.    | 75.00  | 73.0  | 88.00  | 73.60 | 3     | 76.00  |
+| Max.       | 100.00 | 100.0 | 100.00 | 98.70 | 3     | 100.00 |
+
+| Condition         | Observations |
+|-------------------|--------------|
+| for each variable | 1157         |
+| without M4CID     | 868          |
+| with M4CID        | 289          |
+
+| Sample     | Mean without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes                                    |
+|------------|------------|------------|------------|------------|------------|
+| All sample | greater                                                   | CLASS    | 0.4358           | no effect    | Does the variable SCHOOL as same effect? |
+| All sample | greater                                                   | TEST     | 0.01419          | negative     | Does the variable SCHOOL as same effect? |
+| All sample | less                                                      | LAB      | 1.341e-10        | positive     | Does the variable SCHOOL as same effect? |
+| All sample | greater                                                   | BEHAV    | 5.937e-06        | negative     | Does the variable SCHOOL as same effect? |
+
+Discussion: perhaps the school differences as some effect here
+
+## Compare schools without 4C/ID
+
+### DATA
+
+| Condition                | Observations |
+|--------------------------|--------------|
+| Schools without M4CID    | 868          |
+| school 0 (without M4CID) | 474          |
+| school 1 (without M4CID) | 394          |
+
+### RESULTS
+
+| Sample                | Mean school 0 is greater/less/equal than school 1? | Variable | p-value (Wilcox) | School effect | Notes                            |
+|------------|------------|------------|------------|------------|------------|
+| Schools without 4C/ID | greater                                            | CLASS    | 2.2e-16          | positive      | School 0 as a greater CLASS mean |
+| Schools without 4C/ID | greater                                            | TEST     | 2.2e-16          | positive      | School 0 as a greater TEST mean  |
+| Schools without 4C/ID | greater                                            | LAB      | 6.946e-16        | positive      | School 0 as a greater LAB mean   |
+| Schools without 4C/ID | less                                               | BEHAV    | 8.526e-06        | positive      | School 0 as a less BEHAV mean    |
+
+Discussion: schools are different in all of the variables, so it's
+better to use school 1 only to assess the 4C/ID effect.
+
+## Inference for SCHOOL 1 with or without 4C/ID
+
+### DATA
+
+| Condition                | Observations |
+|--------------------------|--------------|
+| Schools 1                | 683          |
+| school 1 (without M4CID) | 394          |
+| school 1 (with M4CID)    | 289          |
+
+### RESULTS
+
+| Sample                 | Mean without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes                                                                               |
+|------------|------------|------------|------------|------------|------------|
+| sample with SCHOOL = 1 | less                                                      | CLASS    | 6.394e-06        | positive     |                                                                                     |
+| sample with SCHOOL = 1 | less                                                      | TEST     | 6.394e-06        | positive     |                                                                                     |
+| sample with SCHOOL = 1 | less                                                      | LAB      | 2.2e-16          | positive     |                                                                                     |
+| sample with SCHOOL = 1 | less                                                      | BEHAV    | 0.5001           | no effect??? | For the 100 sample size analysis, p-value = 0.000376, so there is a positive effect |
+
+## Inference for SCHOOL 1, gender Male, with or without 4C/ID
+
+### DATA
+
+| Condition                     | Observations |
+|-------------------------------|--------------|
+| Schools 1 MALE                | 357          |
+| school 1 MALE (without M4CID) | 203          |
+| school 1 MALE (with M4CID)    | 154          |
+
+### RESULTS
+
+| Sample            | Mean without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes                                                    |
+|------------|------------|------------|------------|------------|------------|
+| Male for school 1 | less                                                      | CLASS    | 0.03987          | positive???  | Sample analysis with 100 entries, gives a p-value=0.4125 |
+| Male for school 1 | less                                                      | TEST     | 0.3295           | no effect    |                                                          |
+| Male for school 1 | less                                                      | LAB      | 5.333e-10        | positive     |                                                          |
+| Male for school 1 | greater                                                   | BEHAV    | 3.378e-07        | negative     |                                                          |
+| observations      |                                                           |          |                  |              |                                                          |
+
+## Inference for SCHOOL 1, gender Female, with or without 4C/ID
+
+### data
+
+| Condition                     | Observations |
+|-------------------------------|--------------|
+| Schools 1 MALE                | 326          |
+| school 1 MALE (without M4CID) | 191          |
+| school 1 MALE (with M4CID)    | 135          |
+
+| Sample              | Mean without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes |
+|------------|------------|------------|------------|------------|------------|
+| Female for school 1 | less                                                      | CLASS    | 1.638e-06        | positive     |       |
+| Female for school 1 | less                                                      | TEST     | 0.0002003        | positive     |       |
+| Female for school 1 | less                                                      | LAB      | 2.009e-15        | positive     |       |
+| Female for school 1 | greater                                                   | BEHAV    | 0.003575         | negative     |       |
+
+## Inference for SCHOOL 1, grades 7,8 and 9, with or without 4C/ID
+
+### DATA
+
+| Condition                | GRADE 7 |
+|--------------------------|---------|
+| School 1                 | 222     |
+| school 1 (without M4CID) | 123     |
+| school 1 (with M4CID)    | 99      |
+
+### RESULTS
+
+| Sample   | Mean for grade 7 without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes |
+|------------|------------|------------|------------|------------|------------|
+| school 1 | less                                                                  | CLASS    | 0.02623          | positive     |       |
+| school 1 | less                                                                  | TEST     | 0.1487           | no effect    |       |
+| school 1 | less                                                                  | LAB      | 1.702e-05        | positive     |       |
+| school 1 | less                                                                  | BEHAV    | 0.02623          | positive     |       |
+
+| Sample   | Mean for grade 8 without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes                                                                                         |
+|------------|------------|------------|------------|------------|------------|
+| school 1 | less                                                                  | CLASS    | 0.2201           | no effect    | a lot of outliers in the boxplot with the median close to the upper limit???                  |
+| school 1 | less                                                                  | TEST     | 0.0006568        | positive     |                                                                                               |
+| school 1 | less                                                                  | LAB      | 0.0001906        | positive     | boxplot with the median close to the lower limit???                                           |
+| school 1 | greater                                                               | BEHAV    | 2.2e-16          | negative     | a lot of outliers in the boxplot with the median close to the lower limit??? Huge dropdown!!! |
+
+```         
+IMPORTANT note: median is close to the first quarter (line on R #651)
+```
+
+| Sample   | Mean for grade 9 without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes |
+|------------|------------|------------|------------|------------|------------|
+| school 1 | less                                                                  | CLASS    | 9.012e-06        | positive     |       |
+| school 1 | less                                                                  | TEST     | 0.15258          | no effect    |       |
+| school 1 | less                                                                  | LAB      | 2.2e-16          | positive     |       |
+| school 1 | greater                                                               | BEHAV    | 0.04297          | positive     |       |
+
+## Inference for SCHOOL 1, RANKS 1, 2, and 3, with or without 4C/ID
+
+There is no scientific justification to construct the categories around
+de column CLASS with these definitions:
+
+| categories | condition (CLASS) | RANK | \% data school 1 (683 entries) | \% data school 0 (474 entries)\^\* |
+|---------------|---------------|---------------|---------------|---------------|
+| 1          | =\<55%            | 1    | 34% (229)                      | 16% (76)                           |
+| 2          | 55-70%            | 2    | 41 % (281)                     | 39% (186)                          |
+| 3          | \>=70             | 3    | 25 % (173)                     | 45% (212)                          |
+
+Just comparing the schools to double-check for the differences in
+schools in competence/adaptation edu system
+
+Conclusion: it seems that students in school 0 are more adapted than
+those in school 1.
+
+summary(data_s1_RANK1) \| TEST \| LAB \| BEHAV \| \|---\|---\|---\| \|
+Min. :11.0 \| Min. : 0.00 \| Min. : 29.00 \|\
+\| 1st Qu.:34.0 \| 1st Qu.:31.00 \| 1st Qu.: 59.00 \| \| Median :42.0 \|
+Median :41.00 \| Median : 67.00 \|\
+\| Mean :41.79 \| Mean :40.45 \| Mean : 68.04 \| \| 3rd Qu.:48.00 \| 3rd
+Qu.:53.00 \| 3rd Qu.: 78.00 \| \| Max. :72.0 \| Max. :80.00 \| Max.
+:100.00 \|
+
+summary(data_s1_RANK2) \| TEST \| LAB \| BEHAV \| \|---\|---\|---\| \|
+Min. :34.00 \| Min. : 4.00 \| Min. : 40.00 \| \| 1st Qu.:51.00 \| 1st
+Qu.:53.00 \| 1st Qu.: 67.00 \| \| Median :57.00 \| Median :60.00 \|
+Median : 77.00 \| \| Mean :58.21 \| Mean :59.74 \| Mean : 74.98 \|\
+\| 3rd Qu.:67.00 \| 3rd Qu.:67.00 \| 3rd Qu.: 87.00 \| \| Max. :87.00 \|
+Max. :87.00 \| Max. :100.00 \|
+
+summary(data_s1_RANK3) \| TEST \| LAB \| BEHAV \| \|---\|---\|---\|---\|
+\| Min. : 53.00 \| Min. : 34.00 \| Min. : 64.00 \| \| 1st Qu.: 71.00 \|
+1st Qu.: 70.00 \| 1st Qu.: 84.00 \| \| Median : 79.00 \| Median : 80.00
+\| Median : 92.00 \| \| Mean : 79.27 \| Mean : 76.52 \| Mean : 89.49 \|
+\| 3rd Qu.: 86.00 \| 3rd Qu.: 85.00 \| 3rd Qu.: 96.00 \| \| Max. :100 \|
+Max. :100.00 \| Max. :100.00 \|
+
+## Results
+
+| Sample   | Mean for RANK 1 without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes |
+|------------|------------|------------|------------|------------|------------|
+| school 1 | greater                                                              | TEST     | 0.05162          | no effect    |       |
+| school 1 | less                                                                 | LAB      | 8.549e-10        | positive     |       |
+| school 1 | greater                                                              | BEHAV    | 1.345e-07        | negative     |       |
+
+## Using a sampling of 68 entries
+
+There are several different results: should I use a for statement, for
+the no effect result????
+
+| Sample   | Mean for RANK 2 without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes |
+|------------|------------|------------|------------|------------|------------|
+| school 1 | less                                                                 | TEST     | 0.3329           | no effect    |       |
+| school 1 | less                                                                 | LAB      | 2.991e-07        | positive     |       |
+| school 1 | greater                                                              | BEHAV    | 4.755e-14        | negative     |       |
+
+```         
+IMPORTANT NOTE: using sampling with 100 random entries confirms the effect
+```
+
+| Sample   | Mean for RANK 3 without 4C/ID is greater/less/equal then with 4C/ID? | Variable | p-value (Wilcox) | 4C/ID effect | Notes |
+|------------|------------|------------|------------|------------|------------|
+| school 1 | less                                                                 | TEST     | 0.5236           | no effect    |       |
+| school 1 | less                                                                 | LAB      | 4.814e-07        | positive     |       |
+| school 1 | greater                                                              | BEHAV    | 0.003234         | negative     |       |
+
+\`\`\` IMPORTANT NOTE: using sampling with 86 entries confirms the
+effect ´´´
+
+## Qualitative
+
+| Qualitative Results                                                                                    | Description   | Notes |
+|---------------------------|---------------------------|------------------|
+| Students inquire about the teacher                                                                     |               |       |
+| teacher available to interact with the students while they are following the online lessons activities |               |       |
+| students feel happy to pass to the next level, high motivation                                         |               |       |
+| They claim that the way they like to learn                                                             |               |       |
+| massive hours of teacher work, more than 55 hours a week                                               | Health issues |       |
+| Students help on lessons faults: missing information, fault links                                      |               |       |
+
+This qualitative and quantitative data will be analyzed recurring to
+usual statistical analysis and gather qualitative data to reinforce the
+main goals of the work.
+
+What others have done and how what you doing fits that The work done so
+far shows that the results are not clear. Well normally, the results on
+the social side are never a clear 80%. In this case, we are happy if
+things are 60% positive.
