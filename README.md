@@ -83,6 +83,9 @@ The **statistical analysis**, made with R code software in the RStudio[^readme-4
 
 # RESULTS
 
+Figure 2 shows the changes on variables TEST, LAB, BEHAV and CLASS, between control and treatment group, for the global samples on the y-axis. Moving up on the graph, this demonstrates that the results are getting more favorable. The correct results  should be between the Figure 1 shows the variable longitudinal time patterns, with box plots for variables, TEST, LAB, BEHAV and CLASS: it includes junior and junior high grade students data for both schools.
+
+
 Looking at figure 1 it's not clear an overall positive change but figure 3 shows a more favorable result because it's not biased by the schools differences and it compares the same student level. However, the correct results should be somewhere in between [^5results]. 
 
 [^5results]: complete results with sample obs., stats values and p-values are on the code files for now.
