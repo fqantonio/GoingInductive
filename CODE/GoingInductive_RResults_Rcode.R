@@ -531,17 +531,16 @@ ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
 # for changes that have p-value that we can't reject the null I use the mean value
 
 results <- data.frame(
-  samples=c("All sample","all sample (school effect)","SCHOOL 1 - 2014","SCHOOL1 - JUNIOR - 2014"),
-  TEST1=c(-57,67,54,54),
-  TEST2=c(-62,69,57,58),
-  LAB1=c(60,63,51,51),
-  LAB2=c(65,78,63,64),
-  BEHAV1=c(-76,-73,80,82),
-  BEHAV2=c(-79,-77,83,82),
-  CLASS1=c(63,68,58,58),
-  CLASS2=c(63,71,63,64)
+  samples=c("All sample","all sample (school effect)","SCHOOL 1","JUNIOR","SCHOOL 1 - 2014","SCHOOL1 - JUNIOR - 2014"),
+  TEST1=c(-57,67,54,54,,54,54),
+  TEST2=c(-62,69,57,58,57,58),
+  LAB1=c(60,63,51,51,51,51),
+  LAB2=c(65,78,65,66,63,64),
+  BEHAV1=c(-76,-73,-76,-76,80,82),
+  BEHAV2=c(-79,-77,-80,-81,83,82),
+  CLASS1=c(63,68,58,58,58,58),
+  CLASS2=c(63,71,62,63,63,64)
 )
-
 results
 
 ggplot(results,aes(group=TEST1)) +
@@ -558,7 +557,7 @@ ggplot(results,aes(group=TEST1)) +
   theme(panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+
   geom_rect(aes(xmin=0,xmax=Inf,ymin = - Inf,ymax = 0),fill="white",alpha = 0.01) +
   geom_rect(aes(xmin=0,xmax=Inf,ymin = 0,ymax = Inf),fill="green",alpha = 0.01) +
-  scale_x_discrete(limits=c("All sample","all sample (school effect)","SCHOOL 1 - 2014","SCHOOL1 - JUNIOR - 2014"))+
+  scale_x_discrete(limits=c("All sample","all sample (school effect)","SCHOOL 1","JUNIOR","SCHOOL 1 - 2014","SCHOOL1 - JUNIOR - 2014"))+
   scale_y_continuous(breaks = seq(-100, 100, by = 10))+
   geom_hline(yintercept=c(-50,50),color="black",linetype=2)+
   annotate(geom="text", x=3.5, y=-10, label="Negative change*",color="black",hjust=1)+
@@ -595,7 +594,7 @@ ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
   theme(panel.grid.major.x = element_line(color = 1,linewidth = 0.25, linetype = 4),panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(fill="white",color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+  
   annotate(geom="text", y=-10, x=3.5, label="Negative effect",color="black",hjust=1)+
   annotate(geom="text", y=10, x=3.5, label="Positive effect",color="black",hjust=0)+
-  scale_x_discrete(limits=c("All sample","all sample (school effect)","SCHOOL 1 - 2014","SCHOOL1 - JUNIOR - 2014"))+
+  scale_x_discrete(limits=c("All sample","all sample (school effect)","SCHOOL 1","JUNIOR","SCHOOL 1 - 2014","SCHOOL1 - JUNIOR - 2014"))+
   scale_y_continuous(limits=c(-25,25,5))+  
   coord_flip()
 
