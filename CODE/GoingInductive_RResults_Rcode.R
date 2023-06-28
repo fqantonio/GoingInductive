@@ -532,7 +532,7 @@ ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
 
 results <- data.frame(
   samples=c("All sample","all sample (school effect)","SCHOOL 1","JUNIOR","SCHOOL 1 - 2014","SCHOOL1 - JUNIOR - 2014"),
-  TEST1=c(-57,67,54,54,,54,54),
+  TEST1=c(-57,67,54,54,54,54),
   TEST2=c(-62,69,57,58,57,58),
   LAB1=c(60,63,51,51,51,51),
   LAB2=c(65,78,65,66,63,64),
