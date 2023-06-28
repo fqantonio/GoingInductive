@@ -590,7 +590,7 @@ resultsD
 
 ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
   geom_linerange(position = position_dodge(width = 0.5),linewidth=1)+
-  ylab("Variables changes: missing colors means 'no change'; **low obs.")+labs(title="4C/ID group treatment effect",subtitle = "School 1 JUNIOR grade sample, from 2003 to 2014 time scale",x = "Sample Names")+
+  ylab("Variables changes: missing colors means 'no change'; **low obs.")+labs(title="4C/ID group treatment effect",subtitle = "Global samples",x = "Sample Names")+
   theme(panel.grid.major.x = element_line(color = 1,linewidth = 0.25, linetype = 4),panel.grid.major.y = element_line(color = 1,linewidth = 0.25, linetype = 3),panel.background = element_rect(fill="white",color = 1, linewidth = 1),plot.background = element_rect(fill = "white"))+  
   annotate(geom="text", y=-10, x=3.5, label="Negative effect",color="black",hjust=1)+
   annotate(geom="text", y=10, x=3.5, label="Positive effect",color="black",hjust=0)+
