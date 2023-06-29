@@ -1,7 +1,7 @@
 #INDEX
-# RESULTS - 729
-  # REGRESSION ANALYSIS - 2546
-# Regression discontinuity design (RDD) - 2668
+# RESULTS - 45
+  # REGRESSION ANALYSIS - 45
+# Regression discontinuity design (RDD) - 89
 
 # libraries 
 library(dplyr) #work with data frames

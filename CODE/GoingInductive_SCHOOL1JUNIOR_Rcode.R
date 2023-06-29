@@ -8,9 +8,9 @@
 # RESULTS 2003:2014 - 1625 
   ## SCHOOL 1 - 1650
   ## SCHOOL 1 JUNIOR - 1805
-  ## GRADE - 
-  ## RANK - 
-  ## GENDER - 
+  ## GRADE - 1987
+  ## RANK - 2546
+  ## GENDER - 3129
 
 # libraries 
 library(dplyr) #work with data frames
@@ -2543,8 +2543,6 @@ perm.test(data_9_SCHOOL1_2014_M4CID0$CLASS,data_9_SCHOOL1_2014_M4CID1$CLASS)
 # TEST no effect
 # LAB, BEHAV and CLASS positive
 
-######### RANK
-
 ########## RANK
 # 2009:2014
 #This analysis uses school 1 junior and junior high grade
@@ -3127,7 +3125,6 @@ perm.test(data_SCHOOL1_JUNIOR_2014_RANK3_M4CID0$CLASS,data_SCHOOL1_JUNIOR_2014_R
 # RANK 3, school all sample: 2009:2014
 # Positive effect for LAB and CLASS;
 # no effect for TEST, BEHAV 
-
 
 ########## GENDER
 # sample: school 1 JUNIOR, 2009:2014

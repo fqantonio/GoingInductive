@@ -9,8 +9,8 @@
 ## Inference junior and junior high, school 1 - 2090
 ## Junior sample for school 1 - 2252
 ## Inference SCHOOL 1, GRADE - 2417
-## SCHOOL 1 - RANK - 2858
-## SCHOOL 1 - GENDER - 3349
+## SCHOOL 1 - RANK - 2917
+## SCHOOL 1 - GENDER - 3468
 
 # libraries 
 library(dplyr) #work with data frames

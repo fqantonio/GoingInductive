@@ -206,5 +206,4 @@ Sweller, John et al. (1998) "Cognitive Architecture and Instructional Design." E
 
 Wiley, David A. (Editor) (2002) The Instructional Use of Learning Objects, Agency for Instructional Technology Association for Educational Communications & Technology; First Edition; ISBN: 0-7842-0892-1;
 
-
 # NOTES
