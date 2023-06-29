@@ -140,12 +140,12 @@ Figure 7: Results resume variables change graph, 4C/ID treatment effect for JUNI
 
 From the point of view of qualitative results, whats more important can be resumed on four points:
 
-  1. Students show a lot of motivation for working online with a LMS MOODLE organized like a game with levels;
+  1. Students show a lot of motivation while working online with a LMS MOODLE organized with game levels;
   2. The MOODLE environment provide moments of procedural automation;
   2. During the online period of work the teacher as more time to support students specific needs;
   3. The amount of work of planning, constructing and improving the online lessons is overwhelming for a teacher alone.
 
-> One last comment. Intermediate results were found using other samples like school 1 and junior grade or by including school effect on the samples of school 1 and coparing with school 0. This last two images don't include a negative pattern of the BEHAV variable on the years of 2016 and 2017 (see figure 2), compare the same levell of students learning and don't have the issue of the school effect.
+> One last comment. Intermediate results were found using other samples like school 1 and junior grade or by including school effect on the samples of school 1 and comparing with school 0. This last two images don't include a negative pattern of the BEHAV variable on the years of 2016 and 2017 (see figure 2), compare the same levell of students learning and don't have the issue of the school effect.
 
 # CONCLUSION
 
@@ -155,9 +155,11 @@ From the point of view of qualitative results, whats more important can be resum
 
 > NOTE 3: the Direct Instruction (Merrill, 2007) instructionla design is a well established learning strategy with a overwhelming research background, with 200 years of history, some authors claim. 
 
-Before hand, we've to considered that the comparison is made to a well developed and researched instructional design over more then 200 years, **Direct Instruction**. Any slight improve is considered very strong. So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because, in overall, it as a positive impact on the learning outcomes, namely, **Learning Transfer**, **academic results**, **Social Skills** with a huge impact on **lab practice**.
+Before hand, we've to considered that the comparison is made to a well developed and researched instructional design over more then 200 years, **Direct Instruction**. Any slight improve is considered very strong. 
 
-Students that benefit more are females, grade 9 and rank 3 (more adapted to school) while the one's that don't benefit are rank 1 (less adapted).
+So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because, it as a positive impact on the learning outcomes, namely, **Learning Transfer** and **academic results**, negative impact on **Social Skills** with a huge positive impact on **lab practice**.
+
+Students that benefit more are females, grade 9 and the more adapted to school while the one's that don't benefit are the less adapted to the school system.
 
 So, there are issues to be addressed and accommodated before and during the process, namely: 
   1. The subject to be teached as same lab practice nuclear goal? If yes, use the 4C/ID; 
