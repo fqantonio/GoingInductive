@@ -15,9 +15,9 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # ABSTRACT
 
-Even though the research about the impact of using specific methodologies or educational procedures is well developed, this work analyse a educational strategic change impact: from deductive to inductive methods. These paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting. In fact, overall, 4C/ID eLearning methodology doesn't provide an overwhelming advantage over Direct Instruction, mostly because of the sample underlying effects, but, it is possible to say with some robustness, under the set of several sample results, that, for Lab Practice, there is a positive impact, while a less positive in the school success and learning transfer and a widespread negative impact for social skills. Groups that benefit more are female, grade 9, junior high and the students more adapted to school while the one's that don't benefit so much are males and the less adapted to school.
+Even though the research about the impact of using specific methodologies or educational procedures is well developed, this work analyse a educational strategic change impact: from deductive to inductive methods. These paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting. In fact, overall, 4C/ID bLearning methodology doesn't provide an overwhelming advantage over Direct Instruction, mostly because of the sample underlying effects, but, it is possible to say with some robustness, under the set of several sample results, that, for Lab Practice, there is a positive impact, while a less positive in the school success and learning transfer and a widespread negative impact for social skills. Groups that benefit more are female, grade 9, junior high and the students more adapted to school while the one's that don't benefit so much are males and the less adapted to school.
 
-So, if the decision is taken, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management. All of Those will be adressed here.
+So, if the decision is taken, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management. All of those will be adressed here.
 
 The sample covers 12 years of teacher data assessment, in the period 2003 to 2017, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
 
@@ -25,7 +25,7 @@ The sample covers 12 years of teacher data assessment, in the period 2003 to 201
 
 # GOALS, RESEARCH QUESTIONS and HYPOTHESIS
 
-The **main goal** is to understand the change impact from Direct Instruction (Merrill, 2007) to Merriënboer's Inductive Methodology Four Component Instructional (4C/ID) (van Merriënboer, Kirschner, 2007) in a bLearning setting. 
+The **main goal** is to understand the impact of changing from Direct Instruction (Merrill, 2007) to Merriënboer's Inductive Methodology Four Component Instructional (4C/ID) (van Merriënboer, Kirschner, 2007) in a bLearning setting. 
 
 This analysis spread out in four learning outcomes areas, Learning Transfer, Lab Practice, Social Skills and Academic with this **research questions** guiding the process: what impact for this students learning outcomes? Who benefits more? What are the pros and cons about this methodological strategic decision? What are the implications for the stakeholders?
 
