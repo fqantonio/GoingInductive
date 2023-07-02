@@ -15,7 +15,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # ABSTRACT
 
-These paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting. In fact, 4C/ID eLearning methodology provides some advantages over Direct Instruction, clearly, in the Lab Practice learning outcome.
+Even though there exists some research about the impact of using specific methodologies or educational procedures, this work analyse a educational strategic impact change: from deductive to inductive methods. These paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting. In fact, overall, 4C/ID eLearning methodology provides advantages over Direct Instruction, more clearly, in the Lab Practice learning outcome and female group, and negative impact on social skills with mixture results in school sucess and learning transfer.
 
 However if that decision is made, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management, that will be adressed here, for instance, team work.
 
