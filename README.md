@@ -15,9 +15,9 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # ABSTRACT
 
-Even though there exists some research about the impact of using specific methodologies or educational procedures, this work analyse a educational strategic impact change: from deductive to inductive methods. These paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting. In fact, overall, 4C/ID eLearning methodology provides advantages over Direct Instruction, more clearly, in the Lab Practice learning outcome and female group, and negative impact on social skills with mixture results in school sucess and learning transfer.
+Even though the research about the impact of using specific methodologies or educational procedures, this work analyse a educational strategic change impact: from deductive to inductive methods. These paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting. In fact, overall, 4C/ID eLearning methodology doesn't provide a huge and clear advantages over Direct Instruction, but, in the Lab Practice learning outcome and female group there is a clear positive impact, while a less positive in the in school success and learning transfer and a negative for social skills.
 
-However if that decision is made, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management, that will be adressed here, for instance, team work.
+If the decision is taken, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management, that will be adressed here, for instance, the need for a well in place team work.
 
 The sample covers 12 years of teacher data assessment, in the period 2003 to 2017, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
 
@@ -25,7 +25,7 @@ The sample covers 12 years of teacher data assessment, in the period 2003 to 201
 
 # GOALS, RESEARCH QUESTIONS and HYPOTHESIS
 
-The **main goal** is to understand the change impact: from Direct Instruction (Merrill, 2007) to Merriënboer's Inductive Methodology Four Component Instructional (4C/ID) (van Merriënboer, Kirschner, 2007) in a bLearning setting. 
+The **main goal** is to understand the change impact from Direct Instruction (Merrill, 2007) to Merriënboer's Inductive Methodology Four Component Instructional (4C/ID) (van Merriënboer, Kirschner, 2007) in a bLearning setting. 
 
 This analysis spread out in four learning outcomes areas, Learning Transfer, Lab Practice, Social Skills and Academic with this **research questions** guiding the process: what impact for this students learning outcomes? Who benefits more? What are the pros and cons about this methodological strategic decision? What are the implications for the stakeholders?
 
