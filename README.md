@@ -79,7 +79,7 @@ Figure 1: Box plot time series
 
 The **statistical analysis**, made with R code software in the RStudio[^readme-4] IDE release and the principal method is the non-parametric inferential group treatment effect with non-paired sign-rank Wilcoxon procedure with the respective assumptions analysis: samples independence, non-normality distribution, symmetry, shape and variances. Since the majority of the samples don't foloow this assumptions, they have the same variances, don't have the same shapes and symmetry is broken, and, in some cases, there are low observations, \< 50, sample permutation test was also used. Sample independence was tested with Kendall procedure.
 
-The same analysis, the same sequence and tests, was done using several samples (figure 2). So, the idea is to suppose that the correct result must be **'in the middle'** of this extremes: in one end it was used **"all sample"** and in the other end, the same sample, but without **school and behavior effect** (this last one, for the years 2016 and 2017, see figure 1).
+The same analysis, the same sequence and tests, was done using several samples (figure 2). So, the idea is to suppose that the correct result must be **'in the middle'** of this extremes, or at least, to considered the all those results: in one end it was used **"all sample"** and in the other end, the same sample, but without **school and behavior effect** (this last one, for the years 2016 and 2017, see figure 1).
 
 [^readme-4]: RStudio, <https://posit.co/products/open-source/rstudio/>
 
