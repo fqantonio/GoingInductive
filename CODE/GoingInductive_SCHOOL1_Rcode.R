@@ -8,15 +8,18 @@
 # RESULTS 2003:2014 - 2086
 ## Inference junior and junior high, school 1 - 2090
 ## Junior sample for school 1 - 2252
-## Inference SCHOOL 1, GRADE - 2417
-## SCHOOL 1 - RANK - 2917
-## SCHOOL 1 - GENDER - 3468
+## SCHOOL 1, GRADE - 2417
+## JUNIOR HIGH sample for School 1: 2009-2014 - 2920
+## SCHOOL 1 - RANK - 3084
+## SCHOOL 1 - GENDER - 3636
 
 # libraries 
 library(dplyr) #work with data frames
 #library(tidyverse) #include dplyr
 library(ggplot2) # graphs
 library(gridExtra) #arrange graphs in rows
+library("Kendall")
+library("jmuOutlier")
 
 #Use this step before any of the analysis bellow
 #perhaps you need to set your set working directory: setwd: setwd("/Users/novo/Desktop/Doutoramento/GoingInductive")
@@ -2913,6 +2916,184 @@ wilcox.test(data_9_SCHOOL1_2014_M4CID0$CLASS,data_9_SCHOOL1_2014_M4CID1$CLASS,al
 #Grade 9
 # 4CID has no impact on TEST Variable;
 # 4CID has positive impact in LAB, BEHAV and CLASS Variable;
+
+# Inference only JUNIOR HIGH sample for School 1: 2009-2014
+# off course, sample not computed
+# include conditions of testing simmetry, shape similarities and variance for Wilcox assumptions verification
+summary(data)
+data_SCHOOL1_2014_JUNIORHIGH<-filter(data,data$SCHOOL=="1",DATE<=2014,GRADE>2)  %>% select(ID,DATE,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+summary(data_SCHOOL1_2014_JUNIORHIGH)
+length(which(data_SCHOOL1_2014_JUNIORHIGH$M4CID=="0"))#34 observations, low level of observations
+length(which(data_SCHOOL1_2014_JUNIORHIGH$M4CID=="1"))#60 observations
+data_SCHOOL1_2014_JUNIORHIGH_M4CID0 <- filter(data_SCHOOL1_2014_JUNIORHIGH,M4CID=="0") %>% select(ID,DATE,GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+data_SCHOOL1_2014_JUNIORHIGH_M4CID1 <- filter(data_SCHOOL1_2014_JUNIORHIGH,M4CID=="1") %>% select(ID,DATE, GENDER,M4CID,GRADE,SCHOOL,TEST,LAB, BEHAV, CLASS)
+summary(data_SCHOOL1_2014_JUNIORHIGH)
+hist(data_SCHOOL1_2014_JUNIORHIGH$TEST)
+qqnorm(data_SCHOOL1_2014_JUNIORHIGH$TEST)
+qqline(data_SCHOOL1_2014_JUNIORHIGH$TEST)
+ks.test(data_SCHOOL1_2014_JUNIORHIGH$TEST,dnorm(mean(data_SCHOOL1_2014_JUNIORHIGH$TEST),sd(data_SCHOOL1_2014_JUNIORHIGH$TEST)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_2014_JUNIORHIGH$TEST and dnorm(mean(data_SCHOOL1_2014_JUNIORHIGH$TEST), sd(data_SCHOOL1_2014_JUNIORHIGH$TEST))
+# D = 1, p-value = 0.02105
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_2014_JUNIORHIGH$TEST)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_2014_JUNIORHIGH$TEST
+# W = 0.98298, p-value = 0.2617
+#conclusion: normal
+
+# TEST
+sample1<-data.frame(sample(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$TEST,30))
+sample2<-data.frame(sample(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$TEST,30))
+#For Kendall, samples need to have the same length
+cor.test(sample1$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID0.TEST..30.,sample2$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID1.TEST..30.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID0.TEST..30. and sample2$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID1.TEST..30.
+# z = 0.84217, p-value = 0.3997
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.1105885  
+# sample independency, so it is possible to use Wilcoxon non-parametric inference test but,
+# Warning message:In cor.test.default(sample1$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID0.TEST..30.,  :
+# Cannot compute exact p-value with ties
+var(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$TEST)
+var(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$TEST)
+hist(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$TEST)
+hist(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$TEST)
+# not simetric, different shapes and variances: wilcox assumption verified
+ggplot(data_SCHOOL1_2014_JUNIORHIGH) + geom_boxplot(aes(y=TEST, x=factor(M4CID)))
+median(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$TEST)#54
+median(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$TEST)#53
+wilcox.test(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$TEST,data_SCHOOL1_2014_JUNIORHIGH_M4CID1$TEST,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_2014_JUNIORHIGH_M4CID0$TEST and data_SCHOOL1_2014_JUNIORHIGH_M4CID1$TEST
+# W = 980, p-value = 0.3779
+# alternative hypothesis: true location shift is less than 0
+perm.test(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$TEST,data_SCHOOL1_2014_JUNIORHIGH_M4CID1$TEST,alternative="two.sided")
+# "p-value was estimated based on 20000 simulations."
+# $alternative: [1] "two.sided" $mu = 0
+# $p.value[1] 0.404
+
+# LAB
+sample1<-data.frame(sample(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$LAB,30))
+sample2<-data.frame(sample(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$LAB,30))
+#Not normal, Kendall non-parametric correlation test
+cor.test(sample1$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID0.LAB..30.,sample2$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID1.LAB..30.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID0.LAB..30. and sample2$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID1.LAB..30.
+#  z = -0.87717, p-value = 0.3804
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau -0.1150285 
+# Warning message:vIn cor.test.default(sample1$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID0.LAB..30.,  :
+#                         Cannot compute exact p-value with ties
+hist(data_SCHOOL1_2014_JUNIORHIGH$LAB)
+qqnorm(data_SCHOOL1_2014_JUNIORHIGH$LAB)
+qqline(data_SCHOOL1_2014_JUNIORHIGH$LAB)
+ks.test(data_SCHOOL1_2014_JUNIORHIGH$LAB,dnorm(mean(data_SCHOOL1_2014_JUNIORHIGH$LAB),sd(data_SCHOOL1_2014_JUNIORHIGH$LAB)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_2014_JUNIORHIGH$LAB and dnorm(mean(data_SCHOOL1_2014_JUNIORHIGH$LAB), sd(data_SCHOOL1_2014_JUNIORHIGH$LAB))
+# D = 0.98936, p-value = 0.04211
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_2014_JUNIORHIGH$LAB)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_2014_JUNIORHIGH$LAB
+# W = 0.9792, p-value = 0.1398
+#conclusion: not normal
+var(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$LAB)
+var(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$LAB)
+hist(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$LAB)
+hist(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$LAB)
+# not simetric, different shapes and different variances: ilcox assumption verified
+ggplot(data_SCHOOL1_2014_JUNIORHIGH) + geom_boxplot(aes(y=LAB, x=factor(M4CID)))
+median(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$LAB)#55
+median(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$LAB)#61
+wilcox.test(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$LAB,data_SCHOOL1_2014_JUNIORHIGH_M4CID1$LAB,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_2014_JUNIORHIGH_M4CID0$LAB and data_SCHOOL1_2014_JUNIORHIGH_M4CID1$LAB
+# W = 841.5, p-value = 0.08053
+# alternative hypothesis: true location shift is less than 0
+perm.test(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$LAB,data_SCHOOL1_2014_JUNIORHIGH_M4CID1$LAB,alternative="less")
+# "p-value was estimated based on 20000 simulations."
+# $alternative: [1] "two.sided" $mu = 0
+# $p.value[1] 0.07215
+
+# BEHAV
+sample1<-data.frame(sample(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$BEHAV,30))
+sample2<-data.frame(sample(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$BEHAV,30))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID0.BEHAV..30.,sample2$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID1.BEHAV..30.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID0.BEHAV..30. and sample2$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID1.BEHAV..30.
+# z = 0.26, p-value = 0.7949
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau 0.01029303 
+hist(data_SCHOOL1_2014_JUNIORHIGH$BEHAV)
+qqnorm(data_SCHOOL1_2014_JUNIORHIGH$BEHAV)
+qqline(data_SCHOOL1_2014_JUNIORHIGH$BEHAV)
+ks.test(data_SCHOOL1_2014_JUNIORHIGH$BEHAV,dnorm(mean(data_SCHOOL1_2014_JUNIORHIGH$BEHAV),sd(data_SCHOOL1_2014_JUNIORHIGH$BEHAV)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_2014_JUNIORHIGH$BEHAV and dnorm(mean(data_SCHOOL1_2014_JUNIORHIGH$BEHAV), sd(data_SCHOOL1_2014_JUNIORHIGH$BEHAV))
+# D = 1, p-value = 0.001866
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_2014_JUNIORHIGH$BEHAV)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_2014_JUNIORHIGH$BEHAV
+# W = 0.95651, p-value = 1.84e-11
+#conclusion: not normal and independent
+var(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$BEHAV)
+var(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$BEHAV)
+hist(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$BEHAV)
+hist(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$BEHAV)
+# not simetric, different shapes and different variances: ilcox assumption verified
+ggplot(data_SCHOOL1_2014_JUNIORHIGH) + geom_boxplot(aes(y=BEHAV, x=factor(M4CID)))
+median(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$BEHAV)#81
+median(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$BEHAV)#83
+wilcox.test(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$BEHAV,data_SCHOOL1_2014_JUNIORHIGH_M4CID1$BEHAV,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_2014_JUNIORHIGH_M4CID0$BEHAV and data_SCHOOL1_2014_JUNIORHIGH_M4CID1$BEHAV
+# W = 32198, p-value = 0.0945
+# alternative hypothesis: true location shift is greater than 0
+
+# CLASS
+sample1<-data.frame(sample(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$CLASS,30))
+sample2<-data.frame(sample(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$CLASS,30))
+#Kendall correlation test
+cor.test(sample1$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID0.CLASS..30.,sample2$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID1.CLASS..30.,method="kendall")
+# Kendall's rank correlation tau
+# data:  sample1$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID0.CLASS..30. and sample2$sample.data_SCHOOL1_2014_JUNIORHIGH_M4CID1.CLASS..30.
+# z = 1.0436, p-value = 0.2967
+# alternative hypothesis: true tau is not equal to 0
+# sample estimates: tau  0.04046901 
+hist(data_SCHOOL1_2014_JUNIORHIGH$CLASS)
+qqnorm(data_SCHOOL1_2014_JUNIORHIGH$CLASS)
+qqline(data_SCHOOL1_2014_JUNIORHIGH$CLASS)
+ks.test(data_SCHOOL1_2014_JUNIORHIGH$CLASS,dnorm(mean(data_SCHOOL1_2014_JUNIORHIGH$CLASS),sd(data_SCHOOL1_2014_JUNIORHIGH$CLASS)))
+# Exact two-sample Kolmogorov-Smirnov test
+# data:  data_SCHOOL1_2014_JUNIORHIGH$CLASS and dnorm(mean(data_SCHOOL1_2014_JUNIORHIGH$CLASS), sd(data_SCHOOL1_2014_JUNIORHIGH$CLASS))
+# D = 1, p-value = 0.003731
+# alternative hypothesis: two-sided
+shapiro.test(data_SCHOOL1_2014_JUNIORHIGH$CLASS)
+# Shapiro-Wilk normality test
+# data:  data_SCHOOL1_2014_JUNIORHIGH$CLASS
+# W = 0.99082, p-value = 0.002088
+#conclusion: not normal and independent samples
+var(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$CLASS)
+var(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$CLASS)
+hist(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$CLASS)
+hist(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$CLASS)
+# not simetric, different shapes and similar variances: wilcox assumption verified
+ggplot(data_SCHOOL1_2014_JUNIORHIGH) + geom_boxplot(aes(y=CLASS, x=factor(M4CID)))
+median(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$CLASS)#58
+median(data_SCHOOL1_2014_JUNIORHIGH_M4CID1$CLASS)#64
+wilcox.test(data_SCHOOL1_2014_JUNIORHIGH_M4CID0$CLASS,data_SCHOOL1_2014_JUNIORHIGH_M4CID1$CLASS,alternative = "less")
+# Wilcoxon rank sum test with continuity correction
+# data:  data_SCHOOL1_2014_JUNIORHIGH_M4CID0$CLASS and data_SCHOOL1_2014_JUNIORHIGH_M4CID1$CLASS
+# W = 25364, p-value = 9.686e-08
+# alternative hypothesis: true location shift is less than 0
+
+# Conclusions for JUNIOR HIGH sample school 1, 2009-2014
+# not normal, sample independent!?!?!?!?
+# Wilcox conditions not verified
+# 4CID as positive impact on all variables, except no effect on BEHAV
 
 ########## RANK
 # 2009:2014

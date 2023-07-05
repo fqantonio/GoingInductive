@@ -13,7 +13,7 @@
 # variable change - 420
 # School 1 JUNIOR grade - 2003 to 2014 - 454
 # variable change - 492
-# Conpare Global samples - 530
+# Compare Global samples - 530
 # variable change - 570
 
 
@@ -265,15 +265,15 @@ ggplot(resultsD,aes(x=samples, ymin=0, ymax=VALUE,color=GROUP)) +
 ########## Summary results for SCHOOL 1 sample only - 2003 to 2014
 # for changes that have p-value that we can't reject the null I use the mean value
 results <- data.frame(
-  samples=c("SCHOOL 1", "SCHOOL 1 - JUNIOR","GRADE 7**","GRADE 8", "GRADE 9", "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
-  TEST1=c(54,54,54,54,57,34,-51,79,54,54),
-  TEST2=c(56,58,62,57,57,34,-53,79,58,54),
-  LAB1=c(51,51,56,51,44,26,51,74,50,53),
-  LAB2=c(63,64,71,56,66,35,58,80,68,59),
-  BEHAV1=c(80,82,80,-83,80,65,-72,93,82,80),
-  BEHAV2=c(83,82,80,-88,85,65,-80,93,86,80),
-  CLASS1=c(58,58,60,58,55,39,57,76,58,58),
-  CLASS2=c(63,64,67,60,64,39,57,80,66,61)
+  samples=c("SCHOOL 1", "SCHOOL 1 - JUNIOR","GRADE 7**","GRADE 8", "GRADE 9","JUNIOR HIGH" "RANK 1", "RANK 2","RANK 3","FEMALE","MALE"),
+  TEST1=c(54,54,54,54,57,53,34,-51,79,54,54),
+  TEST2=c(56,58,62,57,57,53,34,-53,79,58,54),
+  LAB1=c(51,51,56,51,44, 26,51,74,50,53),
+  LAB2=c(63,64,71,56,66, 35,58,80,68,59),
+  BEHAV1=c(80,82,80,-83,80, 65,-72,93,82,80),
+  BEHAV2=c(83,82,80,-88,85, 65,-80,93,86,80),
+  CLASS1=c(58,58,60,58,55, 39,57,76,58,58),
+  CLASS2=c(63,64,67,60,64, 39,57,80,66,61)
 )
 
 # ** sample with 20 obs.
