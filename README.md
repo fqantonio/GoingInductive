@@ -89,7 +89,7 @@ Figure 2 and 3 shows the median changes between control and treatment group, for
 
 The idea is to analyse the results considering both extremes results, all sample and school 1 - 2014 sample. The first shows a more unfavorable scenario while the former a better one. So, moving up on the y-axis of figure 2 graph, demonstrates that the results are turning to be more favorable to the educational 4C/ID methodological change. There are two clear results: BEHAV has an overall negative change and LAB and overall positive. Furthermore, CLASS and TEST, both has an overall positive change but in less degree (figure 3). 
 
-Introducing the school differences (school effect), only the negative change persist in the BEHAV variable. If the sample is reduced until 2014 only, then BEHAV starts to have a "no change"" to a "positive change", and finally, there is a positive change for all educational areas. In this sample, figure 3, the biggest positive change is for the LAB variable, CLASS and TEST are the next ones, while BEHAV has only a positive change in school 1 - 2014 sample. The correct results should be in the middle of these two descriptions [^5results], so, what is clear is a negative change in BEHAV and a positive for the LAB variable. If we include the school effect or use only the school 1 sample, there is a clear overall effect. 
+Introducing the school differences (school effect), the negative change persist in the BEHAV variable. If the sample is reduced until 2014 only, then BEHAV starts to have a "no change"" to a "positive change", and there is a positive change for all educational areas: this means get reed of school effect and behavior effect on the two last years, 2016 and 2017. In this sample, figure 3, the biggest positive change is for the LAB variable, CLASS and TEST are the next ones, while BEHAV has only a positive change in school 1 - 2014 sample. 
 
 [^5results]: complete results with sample obs., stats values and p-values are on the code files, for now.
 
@@ -97,14 +97,14 @@ Introducing the school differences (school effect), only the negative change per
 
 Figure 2: 4C/ID group treatment effect from 2003 to 2017.
 
-Figure 3 shows that that impact on the median change is clearly positive for the LAB variable followed by the CLASS and TEST variable and negative for the first four samples for BEHAV. Clearly, figure 4 shows that there is a overall **positive change** for the LAB variable while a **negative change** for BEHAV (except for GRADE 9, RANK 3 and FEMALE samples). Similarly for the variable TEST, except for JUNIOR HIGH,GRADE 7 and 8, RANK 1 and 3, and FEMALE, where no changes were detected. Variable CLASS shows a mixture: in the samples JUNIOR and FEMALE there is a positive change, while negative for RANK 2 and MALE and no change for the other samples.
-
+Figure 3 shows that that impact on the median change is clearly positive for the LAB variable followed by the CLASS and TEST variable and negative for the first four samples for BEHAV.
 
 ![Figure 3: 4C/ID group treatment effect from 2003 to 2017.](Images/RResults_globalSamples_VC.png)
 
 Figure 3: 4C/ID group treatment effect from 2003 to 2017.
 
-Figure 4 and 5 shows a resume of the **results**, with much more specific samples about GRADE, GENDER or RANK, in the time period 2003 to 2017. 
+Figure 4 and 5 shows a resume of the **results**, with much more specific samples about GRADE, GENDER or RANK, in the time period 2003 to 2017. Clearly, there is an overall **positive change** for the LAB variable while a **negative change** for BEHAV (except for GRADE 9, RANK 3 and FEMALE samples). Similarly for the variable TEST, except for JUNIOR HIGH,GRADE 7 and 8, RANK 1 and 3, and FEMALE, no changes detected. Variable CLASS shows a mixture: in the samples JUNIOR and FEMALE there is a positive change, while negative for RANK 2 and MALE and no change for the other samples.
+
 
 | didn't benefit | benefit more |
 | --- |---| 
