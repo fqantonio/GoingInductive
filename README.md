@@ -121,9 +121,7 @@ Figure 5 presents the score change between the two groups, treatment and control
 
 Figure 5: 4C/ID group treatment effect variables change for all period of time: 2003 to 2017.
 
-On Figures 6 and 7 shows the analysis with a sample that doesn't include the school and behaviro effects. So, there is a more favorable overall positive change between control and treatment group, but specifically, for RANK 1 on BEHAV continues to show negative change for GRADE 8, RANK 1 and MALE.
-
-Figure 6 reinforce the results presented above, less favorable to sample groups GRADE 8, RANK 1 and MALE, but still, positive changes for the entire school 1 sample and grade 9. LAB variable its what demonstrates a more positive change followed by CLASS and TEST. 
+On Figures 6 and 7 shows the analysis with a sample that doesn't include the school and behavior effects. So, there is a more favorable overall positive change between control and treatment group. For RANK 1, MALE there is a less benefit results, as well as for BEHAV variable that continues to show negative change. For GRADE 8 there is a positive overall, except for BEHAV variable. There is a clear positive change for FEMALE, RANK 3 and genders 7 and 9, with RANK2 sowing a positive change on teh LAB variable, and no change on the others variables. 
 
 | benefit less | benefit more |
 | --- |---| 
@@ -133,7 +131,7 @@ Figure 6 reinforce the results presented above, less favorable to sample groups 
 
 Figure 6: Results resume graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.
 
-Figure 7 presents the score median change between the two groups, treatment and control: there is an overall positive change with the LAB variables showing the biggest positive change while BEHAV shows a negative change for GRADE 8, RANK 1 and MALE samples. CLASS shows the second biggest change followed by TEST and BEHAV.
+Figure 7 presents the score median change between the groups treatment and control for school 1 junior grade sample until 2014: there is an overall positive change with the LAB variables showing the biggest while BEHAV shows a negative change for GRADE 8, RANK 1 and MALE samples. CLASS shows the second biggest change followed by TEST and BEHAV. So, the results are not drastically different.
 
 ![Figure 7: Results resume variables change graph, 4C/ID treatment effect for JUNIOR grade sample of school 1 until 2014.](Images/RResults_schoolJunior_2014_VC.png)
 
@@ -141,14 +139,12 @@ Figure 7: Results resume variables change graph, 4C/ID treatment effect for JUNI
 
 ## Qualitative Results
 
-From the point of view of qualitative results, whats more important can be resumed on four points:
+The nost importante results more important can be resumed like this:
 
-  1. Students show a lot of motivation while working online with a LMS MOODLE organized with game levels;
+  1. Students show a lot of motivation while working online with a LMS MOODLE organized with game levels, anchors points, instantaneous feedback and activities for automation procedures;
   2. The MOODLE environment provide moments of procedural automation;
   2. During the online period of work the teacher as more time to support students specific needs;
   3. The amount of work of planning, constructing and improving the online lessons is overwhelming for a teacher alone.
-
-> One last comment. Intermediate results were found using other samples like school 1 and junior grade or by including school effect on the samples of school 1 and comparing with school 0. This last two images don't include a negative pattern of the BEHAV variable on the years of 2016 and 2017 (see figure 2), compare the same levell of students learning and don't have the issue of the school effect.
 
 # CONCLUSION
 
