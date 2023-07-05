@@ -103,14 +103,13 @@ Figure 3 shows that that impact on the median change is clearly positive for the
 
 Figure 3: 4C/ID group treatment effect from 2003 to 2017.
 
-Figure 4 and 5 shows a resume of the **results**, with much more specific samples about GRADE, GENDER or RANK, in the time period 2003 to 2017. Clearly, there is an overall **positive change** for the LAB variable while a **negative change** for BEHAV (except for GRADE 9, RANK 3 and FEMALE samples). Similarly for the variable TEST, except for JUNIOR HIGH,GRADE 7 and 8, RANK 1 and 3, and FEMALE, no changes detected. Variable CLASS shows a mixture: in the samples JUNIOR and FEMALE there is a positive change, while negative for RANK 2 and MALE and no change for the other samples.
+Figure 4 and 5 shows a resume of the **results**, with much more specific samples about GRADE, GENDER or RANK, in the time period 2003 to 2017. Clearly, there is an overall **positive change** for the LAB variable while a **negative change** for BEHAV (except for GRADE 9, RANK 3 and FEMALE samples). Similarly for the variable TEST, except for JUNIOR HIGH,GRADE 7 and 8, RANK 1 and 3, and FEMALE, no changes detected. Variable CLASS shows a mixture: in the samples JUNIOR and FEMALE there is a positive change, while negative for RANK 2 and MALE and no change for the other samples. BEHAV and LAB confirm the pattern already identified above. CLASS, has a overall positive change except for RANK 2 and MALE samples while TEST just has negative changes except for MALE, RANK 1 and 2, GRADE 9, JUNIOR and all sample.
 
-
-| didn't benefit | benefit more |
-| --- |---| 
-|the RANK 1, 2 and males|Females and RANK 3|
-
-BEHAV and LAB confirm the pattern already identified above. CLASS, has a overall positive change except for RANK 2 and MALE samples while TEST just has negative changes except for MALE, RANK 1 and 2, GRADE 9, JUNIOR and all sample. 
+| didn't benefit | benefit more | Notes |
+| --- |---| ---|
+|the RANK 1 and males | Females and RANK 3 ||
+| Grade 8 | Grade 9 ||
+| Junior High | junior | lower level of obs. for junior high sample |
 
 ![Figure 4: 4C/ID group treatment effect from 2003 to 2017.](Images/RResults_allSample.png)
 
@@ -120,9 +119,9 @@ Figure 5 presents the score change between the two groups, treatment and control
 
 ![Figure 5: 4C/ID group treatment effect variables change for all period of time: 2003 to 2017.](Images/RResults_allSample_VC.png)
 
-Figure 4: 4C/ID group treatment effect variables change for all period of time: 2003 to 2017.
+Figure 5: 4C/ID group treatment effect variables change for all period of time: 2003 to 2017.
 
-Figures 6 and 7 show a more favorable positive change from treatment to control group for all school 1 sample and specifically, a negative change for RANK 1 sample. BEHAV continues to show negative change for GRADE 8, RANK 1 and MALE.
+On Figures 6 and 7 shows the analysis with a sample that doesn't include the school and behaviro effects. So, there is a more favorable overall positive change between control and treatment group, but specifically, for RANK 1 on BEHAV continues to show negative change for GRADE 8, RANK 1 and MALE.
 
 Figure 6 reinforce the results presented above, less favorable to sample groups GRADE 8, RANK 1 and MALE, but still, positive changes for the entire school 1 sample and grade 9. LAB variable its what demonstrates a more positive change followed by CLASS and TEST. 
 
