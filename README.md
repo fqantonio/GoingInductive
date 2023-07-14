@@ -156,19 +156,19 @@ The nost importante results more important can be resumed like this:
 
 Before hand, we've to outline that the comparison is made to a well developed, well established and researched instructional design theory for over more then 200 years. Any slight improve is considered very strong. 
 
-So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because, it as an overall positive impact on the learning outcomes, namely, **Learning Transfer** and **academic results**, with a huge positive impact on **lab practice**, except for thr negative impact on **Social Skills**. Clearly, the most positive impact is for **Lab Practice** while there is negative impact for **Social Skills**. For **Academic Results** and **Learning Transfer** there is a less positive impact then on lab practice. 
+So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because, it as an overall positive impact on the learning outcomes, namely, **Learning Transfer**,  **Social Skills** and **academic results**, when the sample is clear of the school and behavior effect. 
 
-Students that **benefit** more are females, grade 7 and 9, junior high and the more adapted to the school system while the one's that **don't benefit**, are the less adapted to the school system and males.
+Clearly, there is a strong positive impact for **Lab Practice** while some of the analysis show a negative impact for **Social Skills**. For **Academic Results** and **Learning Transfer** there is a less positive impact compared to **lab practice**. 
 
-bLearning as a crucial benefit, it provide more individual time interaction between student and teacher which improves student engagement, while students are working online.
+Students that **benefit** more are females, grade 7, grade 9, junior high and the more adapted to the school system while the one's that **don't benefit**, are the less adapted to the school system and males. The other groups, grade 8, overall junior grade benefit less.
 
-Implementing a bLearning system is a overwhelming task for a teacher alone because there is a huge amount of work to overcome: planning, designing, organizing and deliver the online course; afterwards there is a need to updating it, developing and correcting: team to work is crucial.
-
-4C/ID is the methodology works very well if the lab practice is a nuclear goal and/or your students are well adapted to school.
-
-However in each moment there is a crucial need for social skills classroom management. Note that for the **learning transfer** assessment the gains are more modest.
+4C/ID is the methodology that works very well if the lab practice is a nuclear goal and/or your students are well adapted to school. However, in each moment there is a crucial need for social skills classroom management. Note that for the **learning transfer** and "Academic results" the gains are more modest.
 
 **Bottom line**, if you don't want to take the risks, change conditional to have a class group more adapted to school or if you want to increase the lab practices skills in some subject or school context.
+
+On the other end, bLearning as a crucial benefit, it provide more individual time interaction between student and teacher which improves student engagement and motivation. While students are working online, during the classroom, the teacher can reply to specific student questions.
+
+Implementing a bLearning system is a overwhelming task for a teacher alone because there is a huge amount of work to overcome: planning, designing, organizing and deliver the online course; afterwards there is a need to updating it, developing and correcting: team to work is crucial.
 
 Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for one teacher alone: there is a crucial need to a commited, motivated and goal-oriented team work. However, the motivation cannot came from a external decision but must be driven by a inner group necessity. 
 
