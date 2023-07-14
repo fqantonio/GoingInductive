@@ -152,19 +152,21 @@ The nost importante results more important can be resumed like this:
 
 >NOTE 2: the conclusions presented here focus on the "mean" results between the less favorable results of figures 2 and 3 and the more favorable of figures 4 and 5.
 
-> NOTE 3: the Direct Instruction (Merrill, 2007) instructionla design is a well established learning strategy with a overwhelming research background, some authors claim, with 200 years of history. 
+> NOTE 3: the Direct Instruction (Merrill, 2007) instructional design is a well established learning strategy with a overwhelming research background, some authors claim, with 200 years of history. 
 
-Before hand, we've to outline that the comparison is made to a well developed, well established and researched instructional design theory, over more then 200 years, **Direct Instruction**. Any slight improve is considered very strong. 
+Before hand, we've to outline that the comparison is made to a well developed, well established and researched instructional design theory for over more then 200 years. Any slight improve is considered very strong. 
 
-So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because, it as a positive impact on the learning outcomes, namely, **Learning Transfer** and **academic results**, negative impact on **Social Skills** with a huge positive impact on **lab practice**. Clearly, the most positive impact is for **Lab Practice** while there is negative impact for **Social Skills**. For **Academic Results** and **Learning Transfer** there is a less positive impact. 
+So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning because, it as an overall positive impact on the learning outcomes, namely, **Learning Transfer** and **academic results**, with a huge positive impact on **lab practice**, except for thr negative impact on **Social Skills**. Clearly, the most positive impact is for **Lab Practice** while there is negative impact for **Social Skills**. For **Academic Results** and **Learning Transfer** there is a less positive impact then on lab practice. 
 
 Students that **benefit** more are females, grade 7 and 9, junior high and the more adapted to the school system while the one's that **don't benefit**, are the less adapted to the school system and males.
 
-Before hand, there is a need to acknowledge if you have a team to work with: this is crucial because there is a huge amount of work to overcome, to be delivered, about planning, organization, development and correcting. 
+bLearning as a crucial benefit, it provide more individual time interaction between student and teacher which improves student engagement, while students are working online.
 
-If the subject to be teached as same lab practice nuclear goal, 4C/ID is the methodology to organize your learning environment. If your students are well adapted to school, use the 4C/ID methodology.
+Implementing a bLearning system is a overwhelming task for a teacher alone because there is a huge amount of work to overcome: planning, designing, organizing and deliver the online course; afterwards there is a need to updating it, developing and correcting: team to work is crucial.
 
-However in each moment there is a crucial need for social skills classroom management, for the **learning transfer** assessment the gains are more modest, male students gain less with this change and bLearning provide more individual time interaction between student and teacher which improves student engagement.
+4C/ID is the methodology works very well if the lab practice is a nuclear goal and/or your students are well adapted to school.
+
+However in each moment there is a crucial need for social skills classroom management. Note that for the **learning transfer** assessment the gains are more modest.
 
 **Bottom line**, if you don't want to take the risks, change conditional to have a class group more adapted to school or if you want to increase the lab practices skills in some subject or school context.
 
