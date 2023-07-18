@@ -15,7 +15,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # ABSTRACT
 
-Even though the research about the impact of using specific methodologies or educational procedures is well developed, this work analyse a educational strategic change impact: from deductive to inductive methods. These paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting. In fact, overall, 4C/ID bLearning methodology doesn't provide an overwhelming advantage over Direct Instruction, mostly because of the sample underlying effects, but, it is possible to say with some robustness, under the set of several sample results, that, for Lab Practice, there is a positive impact, while a less positive in the school success and learning transfer and a widespread negative impact for social skills. Groups that benefit more are female, grade 9, junior high and the students more adapted to school while the one's that don't benefit so much are males and the less adapted to school.
+Even though the research about the impact of using specific methodologies or educational procedures is well developed, this work analyses an educational strategic change impact: from deductive to inductive methods. This paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting. In fact, overall, 4C/ID bLearning methodology doesn't provide an overwhelming advantage over Direct Instruction, mostly because of the sample underlying effects, however it is possible to claim with some robustness, under the set of several sample results, that for Lab Practice, there is a positive impact. For school success and learning transfer there is a less positive effect and a widespread negative impact for social skills. Groups that benefit more are female, grade 9, junior high and the students more adapted to school. Those who don't benefit so much are males and students less adapted to school.
 
 So, if the decision is taken, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management. All of those will be adressed here.
 
@@ -148,7 +148,7 @@ The nost importante results more important can be resumed like this:
 
 # CONCLUSION
 
-> NOTE 1: **guidelines**: what impact for the students learning outcomes (four)? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders? Was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
+> NOTE 1: **guidelines**: what impact for the students learning outcomes (four)? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders? Is it worth it? Do students benefit? What can be done better? What conclusions can be drawned?
 
 >NOTE 2: the conclusions presented here focus on the "mean" results between the less favorable results of figures 2 and 3 and the more favorable of figures 4 and 5.
 
@@ -156,23 +156,23 @@ The nost importante results more important can be resumed like this:
 
 Before hand, we've to outline that the comparison is made to a well developed, well established and researched instructional design theory for over more then 200 years. Any slight improve is considered very strong. 
 
-So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning, because it as an overall positive impact on the learning outcomes analysed in this work, namely, **Learning Transfer**,  **Social Skills** and **academic results**, when the sample is clear of the school and behavior effect. 
+So, **Overall**, as a teacher of science and tech, you should (or at least think about it) move to implement the inductive strategy as your methodology for learning, because it has an overall positive impact on the learning outcomes analysed in this work, namely, **Learning Transfer**,  **Social Skills** and **academic results**, when the sample is clear of the school and behavior effect. 
 
 Clearly, there is a strong positive impact for **Lab Practice** while some of the analysis show a negative impact for **Social Skills**. For **Academic Results** and **Learning Transfer** there is a less positive impact compared to **lab practice**. 
 
 Students that **benefit** more are females, grade 7, grade 9, junior high and the more adapted to the school system while, the one's that **don't benefit** are the less adapted to the school system and males. The other groups, grade 8, overall junior grade benefit less.
 
-**Bottom line**, if you don't want to take the risks, change conditional to have a class group more adapted to school or if you want to increase the lab practices skills in some subject or school context, and if you have an engaged team to work with.
+**Bottom line**, if you don't want to take the risks, change your methodology conditional to have a class group more adapted to school or if you want to increase the lab practices skills in some subject or school context, and if you have an engaged team for the bLearning implementation.
 
 4C/ID is the methodology that works very well if the lab practice is a nuclear goal and/or your students are well adapted to school. However, in each moment there is a need for social skills classroom management. Same students claim about the inductive strategy because they like to have a manual to follow learning content in order to organize their work. So, its important to deliver a resume of the classroom content of the day.
 
-On the other end, bLearning as a crucial benefit, it provide more individual time interaction between student and teacher which improves student engagement and motivation. While students are working online, during the classroom, the teacher can reply to specific student questions.
+On the other end, bLearning has a crucial benefit, it provides more individual time interaction between student and teacher which improves student engagement and motivation. While students are working online, during the classroom, the teacher can reply to specific student questions.
 
-Implementing a bLearning system is a overwhelming task for a teacher alone because there is a huge amount of work to overcome: planning, designing, organizing and delivering the online course; afterwards there is a need to updating it, admonistrating, messaging with students, developing and correcting: team work is crucial.
+Implementing a bLearning system is a overwhelming task for a teacher alone because there is a huge amount of work to overcome: planning, designing, organizing and delivering the online course; afterwards there is a need to updating it, admnistrating, messaging with students, developing and correcting: team work is crucial.
 
 Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for one teacher alone: there is a crucial need to a commited, motivated and goal-oriented team work. However, the motivation cannot came from a external decision but must be driven by a inner group necessity. 
 
-Furthermore, of course **one methodology** is not a panacea for all of the learning process, but having a educational theory is very important to develop and addapt to you educational context. There is also a need of stimulating research and knowledge spread of the specific impacts of each strategy. In this work only two were considered.
+Furthermore, of course **one methodology** is not a panacea for all of the learning process, but having an educational theory is very important to develop and adapt to your educational context. There is also a need for stimulating research and spread the knowledge about the specific impacts of each strategy.
 
 # DISCUSSION
 
