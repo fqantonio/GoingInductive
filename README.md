@@ -15,7 +15,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # ABSTRACT
 
-Even though the research about the impact of using specific methodologies or educational procedures is well developed, this work analyses an educational strategic change impact: from deductive to inductive methods. This paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting. In fact, overall, 4C/ID bLearning methodology doesn't provide an overwhelming advantage over Direct Instruction, mostly because of the sample underlying effects, however it is possible to claim with some robustness, under the set of several sample results, that for Lab Practice, there is a major positive impact. For school success and learning transfer there is a less positive effect and a widespread negative impact for social skills. Groups that benefit more are female, grade 9, junior high and the students more adapted to school. Those who don't benefit so much are males and students less adapted to school.
+Even though the research about the impact of using specific methodologies or educational procedures is well developed, this work analyses an educational strategic change impact: from deductive to inductive methods (Felder,1993). This paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting. In fact, overall, 4C/ID bLearning methodology doesn't provide an overwhelming advantage over Direct Instruction, mostly because of the sample underlying effects, however it is possible to claim with some robustness, under the set of several sample results, that for Lab Practice, there is a major positive impact. For school success and learning transfer there is a less positive effect and a widespread negative impact for social skills. Groups that benefit more are female, grade 9, junior high and the students more adapted to school. Those who don't benefit so much are males and students less adapted to school.
 
 So, if the decision is taken, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management. All of those will be adressed here.
 
@@ -25,11 +25,11 @@ The sample covers 12 years of teacher data assessment, in the period 2003 to 201
 
 # GOALS, RESEARCH QUESTIONS and HYPOTHESIS
 
-The **main goal** is to understand the impact of changing from Direct Instruction (Merrill, 2007) to Merriënboer's Inductive Methodology Four Component Instructional (4C/ID) (van Merriënboer, Kirschner, 2007) in a bLearning setting using MOODLE as a Learning Managment System (LMS)(Cole, 2005). 
+The **main goal** is to understand the impact of changing from Direct Instruction (Merrill, 2007) to Merriënboer's Inductive Methodology Four Component Instructional (4C/ID) (van Merriënboer, Kirschner, 2007) in a bLearning setting using MOODLE as a Learning Managment System (LMS)(Cole, 2005)(Rice, 2006). 
 
 This analysis spread out in four learning outcomes areas, Learning Transfer, Lab Practice, Social Skills and Academic with this **research questions** guiding the process: what is the impact for the students learning outcomes? Who benefits more? What are the pros and cons about this methodological strategic decision? What are the implications for the stakeholders?
 
-The **hypothesis** is that this change will have an overall positive impact in the learning outcomes mentioned, because it's based on the 4C/ID methodology **'brain friendly'**, anchored on Brain Based Learning (BBL), Cognitive Load Theory (CLT), Multi-Intelligence Theory (MIT) and Multimedia Learning (ML), learning theories well established. (Jensen, 2005)(Sylvester,1995)(Gardner, 2011)(Mayer, 2005)(Plass, Moreno, Brünken, 2010). For the stakeholders it will give some guidelines for better support the teaching work, not only in efficiency but also in the learning strategies implementation.
+The **hypothesis** is that this change will have an overall positive impact in the learning outcomes mentioned, because it's based on the 4C/ID methodology **'brain friendly'**, anchored on Brain Based Learning (BBL)(Jensen, 2005)(Sylvester,1995), Cognitive Load Theory (CLT)(Plass, Moreno, Brünken, 2010), Multi-Intelligence Theory (MIT)(Gardner, 2011) and Multimedia Learning Principles (MLP)(Mayer, 2005), learning theories well established. Adding to this there is a robust research and development linking the Cognitive Architecture and Instructional Design, bringing the Neuroscience research principles more near the educational settings (Sweller, 1998). Other examples of this are the MLP and CLT refered before. For the stakeholders it will give some guidelines for better support the teaching work, not only in efficiency but also in the learning design and strategies implementation (Kirschner,2002).
 
 # CONTEXT and DATA
 
@@ -150,7 +150,7 @@ The nost importante results more important can be resumed like this:
 
 > NOTE 1: **guidelines**: what impact for the students learning outcomes (four)? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders? Is it worth it? Do students benefit? What can be done better? What conclusions can be drawned?
 
->NOTE 2: the conclusions presented here focus on the "mean" results between the less favorable results of figures 2 and 3 and the more favorable of figures 4 and 5.
+> NOTE 2: the conclusions presented here focus on the "mean" results between the less favorable results of figures 2 and 3 and the more favorable of figures 4 and 5.
 
 > NOTE 3: the Direct Instruction (Merrill, 2007) instructional design is a well established learning strategy with a overwhelming research background, some authors claim, with 200 years of history. 
 
@@ -180,9 +180,9 @@ Furthermore, of course **one methodology** is not a panacea for all of the learn
 
 # REFERENCES
 
-Cole, Jason (2005), Using Moodle, O'relly Community Press, ISBN 0-596-00863-5;
+* Cole, Jason (2005), Using Moodle, O'relly Community Press, ISBN 0-596-00863-5;
 
-Felder, Richard M. ; Silverman, Linda K. (1988), Engr. Education, 78(7), 674--681;
+*Felder, Richard (1993); Reaching the Second Tier: Learning and Teaching Styles in College Science Education, Journal of College Science Teaching 23(5);
 
 *Gardner, Howard (2011) Frames Of Mind: The Theory Of Multiple Intelligences, ISBN-13: 978-0465024339;
 
@@ -190,22 +190,23 @@ Felder, Richard M. ; Silverman, Linda K. (1988), Engr. Education, 78(7), 674--68
 
 *Jensen, Eric (2005), Teaching with the Brain in Mind, ASCD, ISBN-10: 146600302; ISBN-13:978-1416600305;
 
+*Kirschner, Paul (2002) Cognitive load theory: implications of cognitive load theory on the design of learning, Learning and Instruction, Volume 12, Issue 1, February 2002, Pages 1-10 [LINK](https://doi.org/10.1016/S0959-4752(01)00014-7);
+
 *Mayer, Richard (editor)(2005); The Cambridge Handbook of Multimedia Learning, Cambridge University Press; ISBN: 0-521-83873-8;
 
 *Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
 
 *Plass, Jan; Moreno, Roxana; Brünken, Roland (editors) (2010), Cognitive Load Theory, ISBN: 978-0-521-67758-5, Cambridge university Press;
 
-Rice, William (2006); Moodle, E-Learning Course Development, Packt Publishing, ISBN: 1-904811-29-9;
+*Rice, William (2006); Moodle, E-Learning Course Development, Packt Publishing, ISBN: 1-904811-29-9;
 
-Sweller, John et al. (1998) "Cognitive Architecture and Instructional Design." Educational Psychology Review 10 (1998): 251-296;
+*Sweller, John et al. (1998) "Cognitive Architecture and Instructional Design." Educational Psychology Review 10 (1998): 251-296; [LINK](https://www.researchgate.net/publication/200772805_Cognitive_Architecture_and_Instructional_Design)
 
 *Silvester, Robert (1995) "A celebration of the neurons", ASCD, Alexandria, Virginia;
 
-van Merrienboer, Jeroen J. G. & Clark, Richard & Croock, Marcel. (2002). Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993. 
+*van Merrienboer, Jeroen J. G.; Clark, Richard; Croock, Marcel (2002) Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993.[LINK](https://www.researchgate.net/publication/225798787_Blueprints_for_complex_learning_The_4CID-model)
 
 *van Merriënboer, Jeroen J. G.; Kirschner, Paul A.; (2007) Ten Steps to Complex Learning, Routledge; 1st edition, SBN-10:0805857931; ISBN-13:978-0805857931;
 
-Wiley, David A. (Editor) (2002) The Instructional Use of Learning Objects, Agency for Instructional Technology Association for Educational Communications & Technology; First Edition; ISBN: 0-7842-0892-1;
 
 # NOTES
