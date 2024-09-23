@@ -1,3 +1,10 @@
+> 
+> Education is the most powerful weapon which you can use to change the world.
+>
+>         
+>                                            Nelson Mandela
+> 
+
 # WELCOME
 
 This is a **`Going Inductive`** learning educational strategy changing paper DRAFT roadmap[^readme-1], with one major goal: to share the work done about the impact of a educational strategic change: from Direct Instruction to Four Components Instructional Design (4C/ID).
@@ -5,13 +12,6 @@ This is a **`Going Inductive`** learning educational strategy changing paper DRA
 [^readme-1]: This work, as well as the data, is also presented at the blog "<https://4cidchange.edublogs.org/>" and in the github repository <https://github.com/fqantonio/GoingInductive>.
 
 This **knowledge base source** contains the results, conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
-
-> 
-> Education is the most powerful weapon which you can use to change the world.
->
->         
->                                            Nelson Mandela
-> 
 
 # ABSTRACT
 
