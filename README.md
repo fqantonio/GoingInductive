@@ -31,6 +31,9 @@ This analysis spread out in four learning outcomes areas, Learning Transfer, Lab
 
 The **hypothesis** is that this change will have an overall positive impact in the learning outcomes mentioned, because it's based on the 4C/ID methodology **'brain friendly'**, anchored on Brain Based Learning (BBL)(Jensen, 2005)(Sylvester,1995), Cognitive Load Theory (CLT)(Plass, Moreno, Brünken, 2010), Multi-Intelligence Theory (MIT)(Gardner, 2011) and Multimedia Learning Principles (MLP)(Mayer, 2005), learning theories well established. Adding to this there is a robust research and development linking the Cognitive Architecture and Instructional Design, bringing the Neuroscience research principles more near the educational settings (Sweller, 1998). Other examples of this are the MLP and CLT refered before. For the stakeholders it will give some guidelines for better support the teaching work, not only in efficiency but also in the learning design and strategies implementation (Kirschner,2002).
 
+# THEORY and PROCEDURE (to be updated)
+
+
 # CONTEXT and DATA
 
 This work is based on real day-to-day teacher assessment data, for junior and junior high students of two different schools, from different regions and time periods, for the chemistry and physics subjects of the Portuguese curriculum.
