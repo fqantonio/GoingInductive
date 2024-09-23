@@ -33,6 +33,7 @@ The **hypothesis** is that this change will have an overall positive impact in t
 
 # THEORY and PROCEDURE (to be updated)
 
+# STATE OF THE ART (to be updated)
 
 # CONTEXT and DATA
 
