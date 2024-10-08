@@ -48,7 +48,11 @@ Randomness as genesis principle is for comunicating information only, it does in
 Change principle - all changes in long-term memory ocurr slowly and incrementally (wroking memory liimitations): so, learners producing information is inefective;
 Organizing and linking principle - unlimited organized long-term memory can be used for teh interactions with the natural world 
 
-Sweller (Plass et al., 2010, '.35) resume this: "CLT is concerned with how information held in long-term memory of instructors can be borrowed for use by learners via schema aquisition". 
+Sweller (Plass et al., 2010, '.35) resume this: "CLT is concerned with how information held in long-term memory of instructors can be borrowed for use by learners via schema aquisition".
+
+From the point of view of the students differences, the 
+
+Multimedia principles were also taken in account, namely, guided activity, feedback, reflection princviple plass p.166, multimedia principle
 
 The **procedure** for designing all the acivities for this bLearning enviroment settings means design maps (put here the link to this materials!?!?!) that contains the strategies and guides proposed by 4C/ID of Merriënboer, already embeded in the CLT theory. The available maps show the two main lines of work: in time with the broadening of learning towards concepts, new problems and contexts, with the broadening idea of schema model content learning; and down, meaning, showing the possible paths, towards increasing complexity of the subject, providing feedback, support and guidance.
 
