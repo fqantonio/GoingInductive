@@ -50,7 +50,13 @@ A central idea, already mentioned, is the mental model aquisition that is accomp
 
 The **procedure** taken for the instructional design of this bLearning enviroment setting was done with cmap tools ([My Cmaps Cloud](https://cmapcloud.ihmc.us/cmaps/myCmaps.html)). The maps conceived contains the 4C/ID theoretical structure in the first step that was developed after a first trial for a real but small learning structure which was used to reelaborate that theoretical setting that followed several feedback loops until that 4C/ID structure was clear to be used for a first real learning course. Of course, each time the 4C/ID cmap was used in a new course or learning content some adjustments were made but just with the idea of making easire a clearer the use of those theoretical 4C/ID maps. Those maps contains all the guides proposed by 4C/ID of Merriënboer, already embeded in the CLT theory, and they show the two main lines of work while using them: in time, with the broadening of practice, concrete activities towards concepts and conceptualization, new problems and contexts, with the idea of schema learning, step by step, in small amounts with supportive information; and down, meaning, showing the possible paths, fullfilled with just in time information, fading guidance, promoting procedure automation, into the increasing complexity of the subject.
 
+TO DO LIST
+- [ ] showing the cmaps in the cloud or as images?
+
 # STATE OF THE ART (writing work about to start)
+
+TO DO LIST
+- [ ] writing the hand notes about the three last CLT research books
 
 # CONTEXT and DATA
 
