@@ -14,6 +14,7 @@ This is a **`Going Inductive`** learning educational strategy changing paper DRA
 This **knowledge base source** contains the results, conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
 
 # TO DO LIST
+
 - [ ] showing the cmaps in the cloud or as images?
 - [ ] writing the hand notes about the three last CLT research books
 
@@ -37,15 +38,17 @@ This analysis spread out in four learning outcomes areas, Learning Transfer, Lab
 The **hypothesis** is that this change will have an overall positive impact in the learning outcomes mentioned, because it's based on the 4C/ID methodology **'brain friendly'**, anchored on Brain Based Learning (BBL)(Jensen, 2005)(Sylvester,1995), Cognitive Load Theory (CLT)(Plass, Moreno, Brünken, 2010), Multi-Intelligence Theory (MIT)(Gardner, 2011) and Multimedia Learning Principles (MLP)(Mayer, 2005), learning theories well established. Adding to this there is a robust research and development linking the Cognitive Architecture and Instructional Design, bringing the Neuroscience research principles more near the educational settings (Sweller, 1998). Other examples of this are the MLP and CLT refered before. For the stakeholders it will give some guidelines for better support the teaching work, not only in efficiency but also in the learning design and strategies implementation (Kirschner,2002).
 
 # THEORY (work in progress)
+
 **Shortly and resumedly**, from CLT theoretical structures, in the design of the bLearning activities, envolved mostly Worked example, completion, split-attention, modality, guidance, fading and interactiv elements in the classroom and in the LMS MOODLE. Students differences were indirectly considerer by the fact that the teacher had more time to follow and interact with the student while he/she was completing the bLearning tasks in the LMS. Th 4C/ID was choosen because of is alignment with the basic principles of complex learning, namely the elaboration theory and the real based problem learning scenarios (Plass et all, 2010, p.123). 
 
 The **framework** of this paper consider learning as the transfer of information and schema knowledge structures into the long-term memory, folowing the work of John Sweeler (see is interview to the Knowledge Society CEO, Elena Douglas in 2023, available on Youtube): learning always involves integrating new information with existing knowledge structures, also meaning, the aquisition and automation of schematics knowledge (Paas et al., 2010, p.51). Schemas means patterns of stable relationships between stored knowledge, building new schematic knowledge using old ones in the long-term memory (Plass et al., 2010, p.38). So, effective instructional methods should always be tuned up to the students existing schematic knowledge base to minimize processing loads of working memory (Paas et al., 2010, p.51).
 
 Sweller (Plass et al., 2010, '.35) resume all of this: "CLT is concerned with how information held in long-term memory of instructors can be borrowed for use by learners via schema aquisition".
 
-continue reading...
+[continue reading...](https://github.com/fqantonio/GoingInductive/blob/main/THEORY)
 
 # PROCEDURE (work in progress)
+
 **In practice**, the prodedure underlying of the pedagogic planning, was the **4C/ID** of Merrionboer that provides a consistent means of managment of instructional sequences. This model provides the methodology for analysis of complex cognitive skills and development of appropriate sequences of whole-tasks learning situations that support gradual aqcquisition of these skills in a cognitively sustained manner. The procedure takes into account the limited processing capacity of working memory by gradually increasing the level of difficulty of whole tasks. 
 According to this methodology, learning tasks for complex environments are organized in simple to complex sequence of task classe, with gradually dimishing levels of support within each class (scafolding). Suficient supportive information is provided for general aspects of learning tasks, and just-in-time information engage students in automation for the learning goals. 
 Also part-time-task-practce is offered to train constituent skills that needed to be performed at a very high level of automaticity, Kalyuga (Pass et all, 2010). Moreover, this all methodoly also followed a concrete-to-abstract partner promoting the aquisition of higher level of conceptual schemas. During the planning the focus was on intrinsic and extraneous load rather then germane load, mostly because the goal was focus on the content rather then the student, that is, focus on making small learning steps with guidance and feedback capability in an variability problem environment. Germane load is considerered in CLT as the mental resources dedicated to processing, constructing, and automating schemas, so the dual framework of intrinsic and extraneous load is sufficient and non-redundant, making the boundaries of the theory clearer and the also the concrete field implementation (Kalyuga, 2011).
