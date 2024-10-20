@@ -53,7 +53,7 @@ Sweller (Plass et al., 2010, '.35) resume all of this: "CLT is concerned with ho
 According to this methodology, learning tasks for complex environments are organized in simple to complex sequence of task classe, with gradually dimishing levels of support within each class (scafolding). Suficient supportive information is provided for general aspects of learning tasks, and just-in-time information engage students in automation for the learning goals. 
 Also part-time-task-practce is offered to train constituent skills that needed to be performed at a very high level of automaticity, Kalyuga (Pass et all, 2010). Moreover, this all methodoly also followed a concrete-to-abstract partner promoting the aquisition of higher level of conceptual schemas. During the planning the focus was on intrinsic and extraneous load rather then germane load, mostly because the goal was focus on the content rather then the student, that is, focus on making small learning steps with guidance and feedback capability in an variability problem environment. Germane load is considerered in CLT as the mental resources dedicated to processing, constructing, and automating schemas, so the dual framework of intrinsic and extraneous load is sufficient and non-redundant, making the boundaries of the theory clearer and the also the concrete field implementation (Kalyuga, 2011).
 
-continue reading...
+[continue reading...](https://github.com/fqantonio/GoingInductive/blob/main/PROCEDURE)
 
 # STATE OF THE ART (writing work about to start)
 
