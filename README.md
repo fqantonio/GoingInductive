@@ -13,6 +13,11 @@ This is a **`Going Inductive`** learning educational strategy changing paper DRA
 
 This **knowledge base source** contains the results, conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
 
+# TO DO LIST
+- [ ] showing the cmaps in the cloud or as images?
+- [ ] writing the hand notes about the three last CLT research books
+
+
 # ABSTRACT
 
 Even though the research about the impact of using specific methodologies or educational procedures is well developed, this work analyses an educational strategic change impact: from deductive to inductive methods (Felder,1993). This paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting. In fact, overall, 4C/ID bLearning methodology doesn't provide an overwhelming advantage over Direct Instruction, mostly because of the sample underlying effects, however it is possible to claim with some robustness, under the set of several sample results, that for Lab Practice, there is a major positive impact. For school success and learning transfer there is a less positive effect and a widespread negative impact for social skills. Groups that benefit more are female, grade 9, junior high and the students more adapted to school. Those who don't benefit so much are males and students less adapted to school.
@@ -41,16 +46,13 @@ Sweller (Plass et al., 2010, '.35) resume all of this: "CLT is concerned with ho
 continue reading...
 
 # PROCEDURE (work in progress)
+**In practice**, the prodedure underlying of the pedagogic planning, was the **4C/ID** of Merrionboer that provides a consistent means of managment of instructional sequences. This model provides the methodology for analysis of complex cognitive skills and development of appropriate sequences of whole-tasks learning situations that support gradual aqcquisition of these skills in a cognitively sustained manner. The procedure takes into account the limited processing capacity of working memory by gradually increasing the level of difficulty of whole tasks. 
+According to this methodology, learning tasks for complex environments are organized in simple to complex sequence of task classe, with gradually dimishing levels of support within each class (scafolding). Suficient supportive information is provided for general aspects of learning tasks, and just-in-time information engage students in automation for the learning goals. 
+Also part-time-task-practce is offered to train constituent skills that needed to be performed at a very high level of automaticity, Kalyuga (Pass et all, 2010). Moreover, this all methodoly also followed a concrete-to-abstract partner promoting the aquisition of higher level of conceptual schemas. During the planning the focus was on intrinsic and extraneous load rather then germane load, mostly because the goal was focus on the content rather then the student, that is, focus on making small learning steps with guidance and feedback capability in an variability problem environment. Germane load is considerered in CLT as the mental resources dedicated to processing, constructing, and automating schemas, so the dual framework of intrinsic and extraneous load is sufficient and non-redundant, making the boundaries of the theory clearer and the also the concrete field implementation (Kalyuga, 2011).
 
 continue reading...
 
-TO DO LIST
-- [ ] showing the cmaps in the cloud or as images?
-
 # STATE OF THE ART (writing work about to start)
-
-TO DO LIST
-- [ ] writing the hand notes about the three last CLT research books
 
 # CONTEXT and DATA
 
