@@ -206,7 +206,7 @@ Furthermore, of course **one methodology** is not a panacea for all of the learn
 
 This bLearning systems provide the time to the teacher to interact more efectively during the process, tackling the individual problem for each student. So, one possibility for further research is to question the importance of this bLearning in the teaching-student interaction enhancement.
 
-Of course, adaptatively is the "holly Graal" of this bLearning systems. Further research on how to adjust the student prior-knowledge and is subject cognitve hability should be usefull to choose the best task class (see Plass et all, 2010, p.127).
+Of course, adaptatively is the "holly Graal" of this bLearning systems. Further research on how to adjust the student prior-knowledge and is subject cognitve hability should be usefull to choose the best task class (see Plass et all, 2010, p.127) and cope with the expertise reversal effect.
 
 # REFERENCES
 
