@@ -37,7 +37,7 @@ This analysis spread out in four learning outcomes areas, Learning Transfer, Lab
 
 The **hypothesis** is that this change will have an overall positive impact in the learning outcomes mentioned, because it's based on the 4C/ID methodology **'brain friendly'**, anchored on Brain Based Learning (BBL)(Jensen, 2005)(Sylvester,1995), Cognitive Load Theory (CLT)(Plass, Moreno, Brünken, 2010), Multi-Intelligence Theory (MIT)(Gardner, 2011) and Multimedia Learning Principles (MLP)(Mayer, 2005), learning theories well established. Adding to this there is a robust research and development linking the Cognitive Architecture and Instructional Design, bringing the Neuroscience research principles more near the educational settings (Sweller, 1998). Other examples of this are the MLP and CLT refered before. For the stakeholders it will give some guidelines for better support the teaching work, not only in efficiency but also in the learning design and strategies implementation (Kirschner,2002).
 
-# THEORY (work in progress)
+# THEORY
 
 **Shortly and resumedly**, from CLT theoretical structures, in the design of the bLearning activities, envolved mostly Worked example, completion, split-attention, modality, guidance, fading and interactiv elements in the classroom and in the LMS MOODLE. Students differences were indirectly considerer by the fact that the teacher had more time to follow and interact with the student while he/she was completing the bLearning tasks in the LMS. Th 4C/ID was choosen because of is alignment with the basic principles of complex learning, namely the elaboration theory and the real based problem learning scenarios (Plass et all, 2010, p.123). 
 
