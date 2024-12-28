@@ -204,13 +204,13 @@ Furthermore, of course **one methodology** is not a panacea for all of the learn
 
 Overall, *inductive methodology* has a positive impact on learning, as evidenced by various studies. Inductive methods, which involve learning through specific observations and problem-solving before introducing theories, have been shown to be more effective than traditional deductive methods in many educational contexts. Namely, better academic learning of classroom subject matter where observed. The review and meta-analysis summarizes the results of 74 training experiments with nearly 3,600 children. (Kauler and Phye, 2008). Furthermore, reports show that deductive methodologies contribute for students leaving the sciences and give a strong support for inductive teaching methods that encourage students to adopt a deep approach to learning and are precursors of intellectual development (Prince, Felder, 2007).
 
-This work aligns with research that shows, despite the strength of the evidence varies from one method to another, inductive methods are consistently found to be at least equal to, and in general more effective than, traditional deductive methods for achieving a broad range of learning outcomes (Prince, Felder, 2006).
+This work aligns with research that shows, despite the strength of the evidence varies from one method to another, inductive methods are consistently found to be at least equal to, and in general more effective than, traditional deductive methods for achieving a broad range of learning outcomes (Prince, Felder, 2006). Other studies shows a high impact on performance (d = 0.79 standard deviations) for 4C/ID educational programs, suggesting that is use should be prioritized in college and university learning environments (Costa, Miranda, Melo, 2021). More detailed works show better results for groups that whole-task based in 4C/ID instructional desing on a skill acquisition test and a transfer test (Lim, Reiser, Olina, 2009).
 
 There was a big difference regards to gender, female getting more benefits of 4C/ID methodologies and bLearning.
 
 **Further research** should include the develop of the same setting in other educational contexts, national and international, in order to confirm these findings and an analysis of the reason for the behavior declining over 2016. These work should be improved by including inference analysis that take in account samples with no symmetry, difference variances and different distribution shapes. Also, there should be done a regression and cluster analysis as a way to confirm the results and conclusions presented here, as a feedback strategy results confirmation.
 
-Aside from the quantitative results, it was seen that bLearning systems provide the time to the teacher to interact more efectively during the process, tackling the individual problem for each student. So, one possibility for further research is to question the importance of this bLearning in the teaching-student interaction enhancement. Of course, adaptatively is the "holly Graal" of this bLearning systems. Further research on how to adjust the student prior-knowledge and is subject cognitve hability should be usefull to choose the best task class (see Plass et all, 2010, p.127) and cope with the expertise reversal effect. Another point, crucial for 4C/ID instructional, is the procedural automation process, identifyed and implemented in the MOODLE LMS system but not quantified, but it should be a line of research also.
+**Aside from the quantitative results**, it was seen that bLearning systems provide the time to the teacher to interact more efectively during the process, tackling the individual problem for each student. So, one possibility for further research is to question the importance of this bLearning in the teaching-student interaction enhancement. Of course, adaptatively is the "holly Graal" of this bLearning systems. Further research on how to adjust the student prior-knowledge and is subject cognitve hability should be usefull to choose the best task class (see Plass et all, 2010, p.127) and cope with the expertise reversal effect. Another point, crucial for 4C/ID instructional, is the procedural automation process, identifyed and implemented in the MOODLE LMS system but not quantified, but it should be a line of research also.
 
 # Funding
 The author received no funding from private or national entities for this work
@@ -224,6 +224,8 @@ I further confirm that any aspect of the work covered in this manuscript has bee
 # REFERENCES
 
 * Cole, Jason (2005), Using Moodle, O'relly Community Press, ISBN 0-596-00863-5;
+
+* Costa, J., Miranda, G., & Melo, M. (2021). Four-component instructional design (4C/ID) model: a meta-analysis on use and effect. Learning Environments Research, 25, 445 - 463
 
 * Felder, Richard (1993); Reaching the Second Tier: Learning and Teaching Styles in College Science Education, Journal of College Science Teaching 23(5);
 
@@ -240,6 +242,8 @@ I further confirm that any aspect of the work covered in this manuscript has bee
 * Kalyuga, S. (2011). Cognitive Load Theory: How Many Types of Load Does It Really Need?. Educational Psychology Review, 23, 1-19. https://doi.org/10.1007/S10648-010-9150-7; 
 
 * Kirschner, Paul (2002) Cognitive load theory: implications of cognitive load theory on the design of learning, Learning and Instruction, Volume 12, Issue 1, February 2002, Pages 1-10, https://doi.org/10.1016/S0959-4752(01)00014-7;
+
+* Lim, J., Reiser, R.A. & Olina, Z. (2009); The effects of part-task and whole-task instructional approaches on acquisition and transfer of a complex cognitive skill. Education Tech Research Dev 57, 61–77; https://doi.org/10.1007/s11423-007-9085-y;
 
 * Mayer, Richard (editor)(2005); The Cambridge Handbook of Multimedia Learning, Cambridge University Press; ISBN: 0-521-83873-8;
 
