@@ -39,7 +39,7 @@ The **hypothesis** is that this change will have an overall positive impact in t
 
 # THEORY
 
-**Shortly and resumedly**, from CLT theoretical structures, in the design of the bLearning activities, envolved mostly Worked example, completion, split-attention, modality, guidance, fading and interactiv elements in the classroom and in the LMS MOODLE. Students differences were indirectly considerer by the fact that the teacher had more time to follow and interact with the student while he/she was completing the bLearning tasks in the LMS. Th 4C/ID was choosen because of is alignment with the basic principles of complex learning, namely the elaboration theory and the real based problem learning scenarios (Plass et all, 2010, p.123). 
+**Shortly and resumedly**, from CLT theoretical structures, in the design of the bLearning activities, envolved mostly Worked example, completion, split-attention, modality, guidance, fading and interactiv elements in the classroom and in the LMS MOODLE. Students differences were indirectly considerer by the fact that the teacher had more time to follow and interact with the student while he/she was completing the bLearning tasks in the LMS. The 4C/ID was choosen because of is alignment with the basic principles of complex learning, namely the elaboration theory and the real based problem learning scenarios (Plass et all, 2010, p.123). This instructional design was also connected to the human cognitive architecture as a need for consistent strategy (Sweller, van Merrienboer, J.J.G., Paas, 1998).
 
 The **framework** of this theory is the Evolutionary Educational Psicology that's consideres learning as the transfer of information and schema knowledge structures into the long-term memory, following the work of John Sweeler (see is interview to the Knowledge Society CEO, Elena Douglas in 2023, available on Youtube): learning always involves integrating new information with existing knowledge structures, also meaning, the aquisition and automation of schematics knowledge (Paas et al., 2010, p.51). Schemas means patterns of stable relationships between stored knowledge, building new schematic knowledge using old ones in the long-term memory (Plass et al., 2010, p.38). So, effective instructional methods should always be tuned up to the students existing schematic knowledge base to minimize processing loads of working memory (Paas et al., 2010, p.51).
 
@@ -261,7 +261,7 @@ I further confirm that any aspect of the work covered in this manuscript has bee
 
 * Sarfo, F.K., Elen, J. (2007); Developing technical expertise in secondary technical schools: The effect of 4C/ID learning environments. Learning Environ Res 10, 207–221. https://doi.org/10.1007/s10984-007-9031-2
 
-* Sweller, John et al. (1998) "Cognitive Architecture and Instructional Design." Educational Psychology Review 10 (1998): 251-296; https://www.researchgate.net/publication/200772805_Cognitive_Architecture_and_Instructional_Design;
+* Sweller, J., van Merrienboer, J.J.G. & Paas (1998); F.G.W.C. Cognitive Architecture and Instructional Design. Educational Psychology Review 10, 251–296. https://doi.org/10.1023/A:1022193728205
 
 * Sweller, J., van Merriënboer, J.J.G. & Paas (2019) F. Cognitive Architecture and Instructional Design: 20 Years Later. Educ Psychol Rev 31, 261–292. https://doi.org/10.1007/s10648-019-09465-5
 
