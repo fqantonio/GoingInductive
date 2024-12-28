@@ -210,6 +210,15 @@ This work aligns with research that shows, despite the strength of the evidence 
 
 Aside from the quantitative results, it was seen that bLearning systems provide the time to the teacher to interact more efectively during the process, tackling the individual problem for each student. So, one possibility for further research is to question the importance of this bLearning in the teaching-student interaction enhancement. Of course, adaptatively is the "holly Graal" of this bLearning systems. Further research on how to adjust the student prior-knowledge and is subject cognitve hability should be usefull to choose the best task class (see Plass et all, 2010, p.127) and cope with the expertise reversal effect. Another point, crucial for 4C/ID instructional, is the procedural automation process, identifyed and implemented in the MOODLE LMS system but not quantified, but it should be a line of research also.
 
+# Funding
+The author received no funding from private or national entities for this work
+
+# Intellectual property
+I confirm that I have given due consideration to the protection of intellectual property associated with this work and that there are no impediments to publication, including the timing of publication, with respect to intellectual property. In so doing we confirm that we have followed the regulations of our institutions concerning intellectual property.
+
+# Research ethics
+I further confirm that any aspect of the work covered in this manuscript has been conducted with the ethical principles regarding students and teacher personal data that are never shown nor data is related to names, classes or dates.
+
 # REFERENCES
 
 * Cole, Jason (2005), Using Moodle, O'relly Community Press, ISBN 0-596-00863-5;
