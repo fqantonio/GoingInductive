@@ -206,6 +206,8 @@ Overall, *inductive methodology* has a positive impact on learning, as evidenced
 
 This work aligns with research that shows, despite the strength of the evidence varies from one method to another, inductive methods are consistently found to be at least equal to, and in general more effective than, traditional deductive methods for achieving a broad range of learning outcomes (Prince, Felder, 2006).
 
+There was a big difference regards to gender, female getting more benefits of 4C/ID methodologies contrary to what is recently reported (Vo, Csapó, 2020).
+
 **Further research** should include the develop of the same setting in other educational contexts, national and international, in order to confirm these findings and an analysis of the reason for the behavior declining over 2016. These work should be improved by including inference analysis that take in account samples with no symmetry, difference variances and different distribution shapes. Also, there should be done a regression and cluster analysis as a way to confirm the results and conclusions presented here, as a feedback strategy results confirmation.
 
 Aside from the quantitative results, it was seen that bLearning systems provide the time to the teacher to interact more efectively during the process, tackling the individual problem for each student. So, one possibility for further research is to question the importance of this bLearning in the teaching-student interaction enhancement. Of course, adaptatively is the "holly Graal" of this bLearning systems. Further research on how to adjust the student prior-knowledge and is subject cognitve hability should be usefull to choose the best task class (see Plass et all, 2010, p.127) and cope with the expertise reversal effect. Another point, crucial for 4C/ID instructional, is the procedural automation process, identifyed and implemented in the MOODLE LMS system but not quantified, but it should be a line of research also.
@@ -254,6 +256,8 @@ I further confirm that any aspect of the work covered in this manuscript has bee
 * van Merrienboer, Jeroen J. G.; Clark, Richard; Croock, Marcel (2002) Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993; https://www.researchgate.net/publication/225798787_Blueprints_for_complex_learning_The_4CID-model;
 
 * van Merriënboer, Jeroen J. G.; Kirschner, Paul A.; (2007) Ten Steps to Complex Learning, Routledge; 1st edition, SBN-10:0805857931; ISBN-13:978-0805857931;
+  
+* Vo, De Van; Csapó, Benő (2020);  Development of inductive reasoning in students across school grade levels, Thinking Skills and Creativity, Volume 37, 100699, ISSN 1871-1871, https://doi.org/10.1016/j.tsc.2020.100699;
 
 * Klauer, Karl Josef; Phye, Gary; (2008) Inductive Reasoning: A Training Approach, Review of Educational Research, Volume 78, Issue 1, https://doi.org/10.3102/0034654307313402;
 
