@@ -43,7 +43,9 @@ The **hypothesis** is that this change will have an overall positive impact in t
 
 The **framework** of this theory is the Evolutionary Educational Psicology that's consideres learning as the transfer of information and schema knowledge structures into the long-term memory, folowing the work of John Sweeler (see is interview to the Knowledge Society CEO, Elena Douglas in 2023, available on Youtube): learning always involves integrating new information with existing knowledge structures, also meaning, the aquisition and automation of schematics knowledge (Paas et al., 2010, p.51). Schemas means patterns of stable relationships between stored knowledge, building new schematic knowledge using old ones in the long-term memory (Plass et al., 2010, p.38). So, effective instructional methods should always be tuned up to the students existing schematic knowledge base to minimize processing loads of working memory (Paas et al., 2010, p.51).
 
-Sweller (Plass et al., 2010, '.35) resume all of this: "CLT is concerned with how information held in long-term memory of instructors can be borrowed for use by learners via schema aquisition".
+Merril organized learning in prescriptive principles (Merrill, 2002) that where integrated in 4C/ID instructional design, namely, "(a) Learning is promoted when learners are engaged in solving real-world problems. (b) Learning is promoted when existing knowledge is activated as a foundation for new knowledge. (c) Learning is promoted when new knowledge is demonstrated to the learner. (d) Learning is promoted when new knowledge is applied by the learner. (e) Learning is promoted when new knowledge is integrated into the learner's world."
+
+Sweller (Plass et al., 2010, '.35) resume all of this: "CLT is concerned with how information held in long-term memory of instructors can be borrowed for use by learners via schema aquisition". In 2019 this authors resume the theory after 20 years of work referenciating the major effects and adding new ones (Sweller, van Merriënboer, J.J.G., Paas, 2019). In this work, the focus was on the major strategies but integrating some effects, namely, Element Interactivity, Expertise Reversal and Guidance-Fading. 
 
 [continue reading...](https://github.com/fqantonio/GoingInductive/blob/main/THEORY)
 
@@ -202,7 +204,7 @@ Furthermore, of course **one methodology** is not a panacea for all of the learn
 
 # DISCUSSION
 
-Overall, *inductive methodology* has a positive impact on learning, as evidenced by various studies. Inductive methods, which involve learning through specific observations and problem-solving before introducing theories, have been shown to be more effective than traditional deductive methods in many educational contexts. Namely, better academic learning of classroom subject matter where observed. The review and meta-analysis summarizes the results of 74 training experiments with nearly 3,600 children. (Kauler and Phye, 2008). Furthermore, reports show that deductive methodologies contribute for students leaving the sciences and give a strong support for inductive teaching methods that encourage students to adopt a deep approach to learning and are precursors of intellectual development (Prince, Felder, 2007).
+Overall, *inductive methodology* has a positive impact on learning, as evidenced by various studies. Inductive methods, which involve learning through specific observations and problem-solving before introducing theories, have been shown to be more effective than traditional deductive methods in many educational contexts. Namely, better academic learning of classroom subject matter where observed. The review and meta-analysis summarizes the results of 74 training experiments with nearly 3,600 children. (Kauler and Phye, 2008). Furthermore, reports show that deductive methodologies contribute for students leaving the sciences and give a strong support for inductive teaching methods that encourage students to adopt a deep approach to learning and are precursors of intellectual development (Prince, Felder, 2007). A 4C/ID learning environment promotes the development of technical expertise in secondary technical education better than direct instruction (Sarfo, Elen, 2007).
 
 This work aligns with research that shows, despite the strength of the evidence varies from one method to another, inductive methods are consistently found to be at least equal to, and in general more effective than, traditional deductive methods for achieving a broad range of learning outcomes (Prince, Felder, 2006). Other studies shows a high impact on performance (d = 0.79 standard deviations) for 4C/ID educational programs, suggesting that is use should be prioritized in college and university learning environments (Costa, Miranda, Melo, 2021). More detailed works show better results for groups that whole-task based in 4C/ID instructional desing on a skill acquisition test and a transfer test (Lim, Reiser, Olina, 2009).
 
@@ -247,13 +249,21 @@ I further confirm that any aspect of the work covered in this manuscript has bee
 
 * Mayer, Richard (editor)(2005); The Cambridge Handbook of Multimedia Learning, Cambridge University Press; ISBN: 0-521-83873-8;
 
+* Merrill, M.D. (2002) First principles of instruction. ETR&D 50, 43–59. https://doi.org/10.1007/BF02505024
+
 * Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
 
 * Plass, Jan; Moreno, Roxana; Brünken, Roland (editors) (2010), Cognitive Load Theory, ISBN: 978-0-521-67758-5, Cambridge university Press;
 
+* ?????? Reiser, R.A. A history of instructional design and technology: Part I: A history of instructional media. ETR&D 49, 53–64 (2001). https://doi.org/10.1007/BF02504506
+
 * Rice, William (2006); Moodle, E-Learning Course Development, Packt Publishing, ISBN: 1-904811-29-9;
 
+* Sarfo, F.K., Elen, J. (2007); Developing technical expertise in secondary technical schools: The effect of 4C/ID learning environments. Learning Environ Res 10, 207–221. https://doi.org/10.1007/s10984-007-9031-2
+
 * Sweller, John et al. (1998) "Cognitive Architecture and Instructional Design." Educational Psychology Review 10 (1998): 251-296; https://www.researchgate.net/publication/200772805_Cognitive_Architecture_and_Instructional_Design;
+
+* Sweller, J., van Merriënboer, J.J.G. & Paas (2019) F. Cognitive Architecture and Instructional Design: 20 Years Later. Educ Psychol Rev 31, 261–292. https://doi.org/10.1007/s10648-019-09465-5
 
 * Silvester, Robert (1995) "A celebration of the neurons", ASCD, Alexandria, Virginia;
 
