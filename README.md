@@ -17,7 +17,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 - [ ] showing the cmaps in the cloud or as images?
 - [ ] writing the hand notes about the three last CLT research books
-
+- [ ] discussing and conclude
 
 # ABSTRACT
 
