@@ -206,9 +206,9 @@ Furthermore, of course **one methodology** is not a panacea for all of the learn
 
 Overall, *inductive methodology* has a positive impact on learning, as evidenced by various studies. Inductive methods, which involve learning through specific observations and problem-solving before introducing theories, have been shown to be more effective than traditional deductive methods in many educational contexts. Namely, better academic learning of classroom subject matter where observed. The review and meta-analysis summarizes the results of 74 training experiments with nearly 3,600 children. (Kauler and Phye, 2008). Furthermore, reports show that deductive methodologies contribute for students leaving the sciences and give a strong support for inductive teaching methods that encourage students to adopt a deep approach to learning and are precursors of intellectual development (Prince, Felder, 2007). A 4C/ID learning environment promotes the development of technical expertise in secondary technical education better than direct instruction (Sarfo, Elen, 2007).
 
-This work aligns with research that shows, despite the strength of the evidence varies from one method to another, inductive methods are consistently found to be at least equal to, and in general more effective than, traditional deductive methods for achieving a broad range of learning outcomes (Prince, Felder, 2006). Other studies shows a high impact on performance (d = 0.79 standard deviations) for 4C/ID educational programs, suggesting that is use should be prioritized in college and university learning environments (Costa, Miranda, Melo, 2021). More detailed works show better results for groups that whole-task based in 4C/ID instructional desing on a skill acquisition test and a transfer test (Lim, Reiser, Olina, 2009).
+This work aligns with research that shows, despite the strength of the evidence varies from one method to another, inductive methods are consistently found to be at least equal to, and in general more effective than, traditional deductive methods for achieving a broad range of learning outcomes (Prince, Felder, 2006). Other studies shows a high impact on performance (d = 0.79 standard deviations) for 4C/ID educational programs, suggesting that is use should be prioritized in college and university learning environments (Costa, Miranda, Melo, 2021). More detailed works show better results for groups that whole-task based in 4C/ID instructional desing on a skill acquisition test and a transfer test (Lim, Reiser, Olina, 2009). Event in computer programming course there is a description of benefits of using inductive (Khan et al., 2020) and also in grammar (Kaur, Niwas, 2016).
 
-There was a big difference regards to gender, female getting more benefits of 4C/ID methodologies and bLearning.
+There was a big difference regards to gender, female getting more benefits of 4C/ID methodologies and bLearning then males.
 
 **Further research** should include the develop of the same setting in other educational contexts, national and international, in order to confirm these findings and an analysis of the reason for the behavior declining over 2016. These work should be improved by including inference analysis that take in account samples with no symmetry, difference variances and different distribution shapes. Also, there should be done a regression and cluster analysis as a way to confirm the results and conclusions presented here, as a feedback strategy results confirmation.
 
@@ -241,7 +241,11 @@ I further confirm that any aspect of the work covered in this manuscript has bee
 
 * Jensen, Eric (2005), Teaching with the Brain in Mind, ASCD, ISBN-10: 146600302; ISBN-13:978-1416600305;
 
-* Kalyuga, S. (2011). Cognitive Load Theory: How Many Types of Load Does It Really Need?. Educational Psychology Review, 23, 1-19. https://doi.org/10.1007/S10648-010-9150-7; 
+* Kalyuga, S. (2011). Cognitive Load Theory: How Many Types of Load Does It Really Need?. Educational Psychology Review, 23, 1-19. https://doi.org/10.1007/S10648-010-9150-7;
+
+* Kaur, S., & Niwas., D. (2016). EFFECTIVENESS OF DEDUCTIVE AND INDUCTIVE METHODS IN TEACHING ENGLISH GRAMMAR AT ELEMENTARY LEVEL.. International Journal of Approximate Reasoning, 4, 1241-1247. https://doi.org/10.21474/IJAR01/1027.
+
+* Khan, I., Iftikhar, M., Hussain, S., Rehman, A., Gul, N., Jadoon, W., & Nazir, B. (2020). Redesign and validation of a computer programming course using Inductive Teaching Method. PLoS ONE, 15. https://doi.org/10.1371/journal.pone.0233716.
 
 * Kirschner, Paul (2002) Cognitive load theory: implications of cognitive load theory on the design of learning, Learning and Instruction, Volume 12, Issue 1, February 2002, Pages 1-10, https://doi.org/10.1016/S0959-4752(01)00014-7;
 
