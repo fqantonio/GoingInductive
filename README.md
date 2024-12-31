@@ -59,7 +59,7 @@ The theoretical framework for this study is Evolutionary Educational Psychology,
 
 # PROCEDURE
 
-Implementing the 4C/ID model, as aptly described by Van Merriënboer, Clark, and Croock (2002) as akin to steering a 'huge, slow, ponderous ocean liner,' required significant effort. The process involved extensive research, testing, and iterative refinement of pedagogical planning. While the 4C/ID model presents a steep learning curve, it provides a valuable framework for consistently managing instructional sequences prior to LMS implementation.
+Implementing the 4C/ID model, as aptly described by Van Merriënboer, Clark, and Croock (2002) as akin to steering a "huge, slow, ponderous ocean liner" required significant effort. The process involved extensive research, testing, and iterative refinement of pedagogical planning. While the 4C/ID model presents a steep learning curve, it provides a valuable framework for consistently managing instructional sequences prior to LMS implementation.
 
 The model emphasizes the crucial link between its underlying theories and its concrete structure, comprising Task Classes (TC), Learning Tasks (LT), Part-Task Practice (PTP), Supportive Information (SI), Procedural Information (PI), and Just-in-Time (JIT) information. This framework prioritizes whole-task learning within real-world problem contexts, facilitating gradual skill acquisition while minimizing cognitive load on working memory.
 
