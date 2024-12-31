@@ -18,6 +18,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 # TO DO LIST
 
 - [ ] showing the cmaps in the cloud or as images?
+- [ ] State of the art
 - [ ] discussing and conclude
 
 # Going Inductive
