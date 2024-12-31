@@ -233,7 +233,7 @@ I confirm that I have given due consideration to the protection of intellectual 
 I further confirm that any aspect of the work covered in this manuscript has been conducted with the ethical principles regarding students and teacher personal data that are never shown nor data is related to names, classes or dates.
 
 # Disclamer
-The text was writen by me, revised by Gemini AI and, finnaly, revised by my self.
+The text was writen by the author with english revision by Gemini AI and, the final version, was revised by the author.
 
 # REFERENCES
 
