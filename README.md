@@ -20,6 +20,9 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 - [ ] showing the cmaps in the cloud or as images?
 - [ ] discussing and conclude
 
+# Going Inductive
+Author: António Carlos Gonçalves, Teacher at the Portuguese Education Ministery, https://www.linkedin.com/in/fqantonio/
+
 # ABSTRACT
 
 This study investigates the impact of shifting from deductive to inductive teaching methods within a bLearning environment for young science and technology students. While research on specific educational methodologies is extensive, this analysis focuses on a particular strategic change – a move towards an inductive approach, as advocated by Felder (1993).
