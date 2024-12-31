@@ -35,15 +35,18 @@ This research highlights the need for careful consideration when implementing su
 
 # GOALS, RESEARCH QUESTIONS and HYPOTHESIS
 
-The **main goal** is to understand the impact of changing from Direct Instruction (Merrill, 2007) to Van Merriënboer 's Inductive Methodology Four Component Instructional (4C/ID) (van Van Merriënboer , Kirschner, 2007) in a bLearning setting using MOODLE as a Learning Managment System (LMS)(Cole, 2005)(Rice, 2006). 
+This study aims to investigate the impact of transitioning from Direct Instruction (Merrill, 2007) to Van Merriënboer's Inductive Four Component Instructional Design (4C/ID) model (van Merriënboer & Kirschner, 2007) within a bLearning environment utilizing Moodle as a Learning Management System (LMS) (Cole, 2005; Rice, 2006).
 
-This analysis spread out in four learning outcomes areas, Learning Transfer, Lab Practice, Social Skills and Academic with this boradening **research questions** guiding the process: 
-1. What is the impact for the students learning outcomes?
-2. Who benefits more?
-3. What are the pros and cons about this methodological strategic decision?
-4. What are the implications for the stakeholders?
+The research examines the impact on four key learning outcomes: Learning Transfer, Lab Practice, Social Skills, and Academic Achievement. To guide this investigation, the following research questions were addressed:
 
-The **hypothesis** is that this change will have an overall positive impact in the learning outcomes mentioned, because it's based on the 4C/ID methodology **'brain friendly'**, anchored on Brain Based Learning (BBL)(Jensen, 2005)(Sylvester,1995), Cognitive Load Theory (CLT)(Plass, Moreno, Brünken, 2010), Multi-Intelligence Theory (MIT)(Gardner, 2011) and Multimedia Learning Principles (MLP)(Mayer, 2005), learning theories well established. Adding to this there is a robust research and development linking the Cognitive Architecture and Instructional Design, bringing the Neuroscience research principles more near the educational settings (Sweller, 1998). Other examples of this are the MLP and CLT refered before. For the stakeholders it will give some guidelines for better support the teaching work, not only in efficiency but also in the learning design and strategies implementation (Kirschner,2002).
+    What is the impact on student learning outcomes?
+    Which student groups benefit most from this transition?
+    What are the advantages and disadvantages of this methodological shift?
+    What are the implications for stakeholders involved in the educational process?
+
+The hypothesis posits that this transition will result in an overall positive impact on student learning outcomes. This assumption is grounded in the 4C/ID model's alignment with established learning theories, such as Brain-Based Learning (BBL) (Jensen, 2005; Sylvester, 1995), Cognitive Load Theory (CLT) (Plass, Moreno, & Brünken, 2010), Multiple Intelligences Theory (MIT) (Gardner, 2011), and Multimedia Learning Principles (MLP) (Mayer, 2005).
+
+Furthermore, this study draws upon a robust body of research connecting Cognitive Architecture and Instructional Design, which integrates principles from neuroscience into educational settings (Sweller, 1998). Examples of this integration include the aforementioned MLP and CLT. By adopting the 4C/ID model, stakeholders, including teachers, policymakers, and school administrators, can gain valuable insights to enhance teaching practices, improve learning design, and effectively implement instructional strategies (Kirschner, 2002).
 
 # THEORY
 
