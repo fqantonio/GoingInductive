@@ -16,4 +16,16 @@ for the instructional design. The first is the cognitively demanding of the task
 interactivity within the tasks making them more understandable and cognitively friendly in the first contact with the avoindance of extraneous load as much 
 as possible.
 
-TC - Tasks classes
+About the cognitive load, the focus, during the planning, was on intrinsic and extraneous load rather then germane load, mostly because the goal was on the content rather then the student, that is, focus on making small learning steps with guidance and feedback capability in an variability problem environment. Germane load is considerered in CLT as the mental resources dedicated to processing, constructing, and automating schemas, so it was considered that the dual framework of intrinsic and extraneous load is sufficient and non-redundant, making the boundaries of the procedure not so overwhelming and more clearer for the concrete content creation and implementation (Kalyuga, 2011).
+
+Being that said, the courses structures were organized using cmap tools (see example attached), an online tool were you can organize and develop mind maps about the learning structure to be implemented in the LMS with two major dimentions:
+1. In the planing moments the goals were identifyed and classified as recurrent and non-recurrent;
+2. For the each recurrent it was assigned a PTP and JIT in order to promote automatization;
+3. For the non-recurrent it was assigned several TC in order to promote deeper conceptual and mental model learning; each on was developed in a MOODLE Lesson activity: later on there was available H5P (H5P, https://h5p.org/), a set of interactive media activities that allows richer HTML5 content in existing publishing platforms; 
+4. In the horizontal, analog to a time-line, it follows a concrete-to-abstract task classses (TC), each one having to promote the aquisition of higher level conceptual schemas and mental models, integrating a component of a whole-task in a real-world-problem context; before hand, there is the SI that is always available. Along with the SI it was also showned the assessment criteria;
+5. In the vertical, within each LT, there are all the media activities organized by PTP, JIT and feedback; some of this has also some quiz with feedback associated;
+6. In this cmaptools mind map are identified all the media activities needed; after is completion, they were tested and included in the LMS;
+7. Later on, all of the TC and LT where identified has gaming levels and feedback was integrated for each media activity failure or sucess;
+8. For each activity, it was given a time of completion in order to measure the effort needed for each task and addapt to the classes time table;
+9. The activities were available weekly, allowing the students to view not all at the same time but in shunks of material to complete;
+10. Scafolding activities was used, allowing the students to experience fading support and increasing learning and confidence.
