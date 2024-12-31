@@ -18,17 +18,15 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 # TO DO LIST
 
 - [ ] showing the cmaps in the cloud or as images?
-- [ ] writing the hand notes about the three last CLT research books
-- [ ] state of the art
 - [ ] discussing and conclude
 
 # ABSTRACT
 
-Even though the research about the impact of using specific methodologies or educational procedures is well developed, this work analyses an specific educational strategic change impact in a bLearning environment: from deductive to inductive methods (Felder,1993). This paper argues that you should, as a teacher of science and tech of young students, **move to an inductive strategy**, for the learning design flow, in a bLearning setting but, with some remarks to be taking in account. In fact, overall, 4C/ID bLearning methodology doesn't provide an overwhelming advantage over Direct Instruction, mostly because of the sample underlying effects, however it is possible to claim with some robustness, under the set of this sample, that for Lab Practice, there is a major positive impact. For school success and learning transfer there is a less positive effect and a widespread negative impact for social skills. Groups that benefit more are female, grade 9, junior high and the students more adapted to school. Those who don't benefit so much are males and students less adapted to school.
+This study investigates the impact of shifting from deductive to inductive teaching methods within a bLearning environment for young science and technology students. While research on specific educational methodologies is extensive, this analysis focuses on a particular strategic change – a move towards an inductive approach, as advocated by Felder (1993).
 
-So, if the decision is taken, to undertake this change, there will be specific impacts that need to be **accommodated**, as well as implications for the stakeholders in the learning process, policy makers and school management. All of those will be adressed here.
+Our findings suggest that, within the constraints of our sample, a 4C/ID bLearning approach does not consistently outperform Direct Instruction across all outcomes. However, we observed significant positive impacts on Lab Practice skills. Conversely, effects on school success and learning transfer were less pronounced, and we found a negative impact on social skills. These differential effects were observed across student demographics, with female students, ninth-graders, and those better adapted to school environments demonstrating greater benefits.
 
-The sample covers 12 years of teacher data assessment, in the period 2003 to 2017, with conclusions about the impact in the Learning Transfer, Lab Practice, Social Skills and Academic Results.
+This research highlights the need for careful consideration when implementing such a pedagogical shift. We discuss the specific implications for teachers, policymakers, and school administrators, acknowledging the potential challenges and benefits associated with this transition. Our analysis is based on 12 years of teacher data (2003-2017), providing insights into the impact on Learning Transfer, Lab Practice, Social Skills, and Academic Results.
 
 > **Keywords** Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flow; Statistical Non-parametric Inference; Learning Transfer, Lab Practice, Social Skills and Academic Results; Cognitive Load Theory; MultiIntelligence Theory; Brain Based Learning; bLearning.
 
@@ -50,7 +48,7 @@ The **hypothesis** is that this change will have an overall positive impact in t
 
 The **framework** of this theory is the Evolutionary Educational Psicology that's consideres learning as the transfer of information and schema knowledge structures into the long-term memory, following the work of John Sweeler (see is interview to the Knowledge Society CEO, Elena Douglas in 2023, available on Youtube): learning always involves integrating new information with existing knowledge structures, also meaning, the aquisition and automation of schematics knowledge (Paas et al., 2010, p.51). Schemas means patterns of stable relationships between stored knowledge, building new schematic knowledge using old ones in the long-term memory (Plass et al., 2010, p.38). So, effective instructional methods should always be tuned up to the students existing schematic pre-knowledge base to minimize working memory load processing (Paas et al., 2010, p.51).
 
-Merril organized learning in **five prescriptive principles** (Merrill, 2002) that he noticed that they were common among several instructional design learning that, actually, are integrated in 4C/ID instructional design by Van Merriënboer  and colleagues, namely, "(a) Learning is promoted when learners are engaged in solving real-world problems. (b) Learning is promoted when existing knowledge is activated as a foundation for new knowledge. (c) Learning is promoted when new knowledge is demonstrated to the learner. (d) Learning is promoted when new knowledge is applied by the learner. (e) Learning is promoted when new knowledge is integrated into the learner's world." It is crucial to note, as highlighted by Van  Merriënboer, that his 4C/ID model effectively integrates both instructivist and constructivist methodologies across its various stages. Also important is the fact that this model **doesn't provide guidelines** for the transition from the design phase to the posterior phases of production and development. He suggest some raw media classification as primary and secondary to distinguish from supportive information to interactive media, respectively, to be used in the LMS embedded learning activities:
+Merril organized learning in **five prescriptive principles** (Merrill, 2002) that he noticed that they were common among several instructional design learning that, actually, are integrated in 4C/ID instructional design by Van Merriënboer  and colleagues, namely, "(a) Learning is promoted when learners are engaged in solving real-world problems. (b) Learning is promoted when existing knowledge is activated as a foundation for new knowledge. (c) Learning is promoted when new knowledge is demonstrated to the learner. (d) Learning is promoted when new knowledge is applied by the learner. (e) Learning is promoted when new knowledge is integrated into the learner's world." It is crucial to note, as highlighted by Van  Merriënboer, that his 4C/ID model effectively integrates both instructivist and constructivist methodologies across its various stages (van Merrienboer, Clark, Croock, 2002). Also important is the fact that this model **doesn't provide guidelines** for the transition from the design phase to the posterior phases of production and development. He suggest some raw media classification as primary and secondary to distinguish from supportive information to interactive media, respectively, to be used in the LMS embedded learning activities:
 
 |    Primary media     | Secondary media | JIT (just-in-time) information |Part-task practice|
 |:----------------:|-------------------------------------------|:---------------:|:---------------:|
@@ -231,10 +229,13 @@ There was a big difference regards to gender, female getting more benefits of 4C
 The author received no funding from private or national entities for this work
 
 # Intellectual property
-I confirm that I have given due consideration to the protection of intellectual property associated with this work and that there are no impediments to publication, including the timing of publication, with respect to intellectual property. In so doing we confirm that we have followed the regulations of our institutions concerning intellectual property.
+I confirm that I have given due consideration to the protection of intellectual property associated with this work and that there are no impediments to publication, including the timing of publication, with respect to intellectual property. In so doing we confirm that I have followed the regulations of my institutions concerning intellectual property.
 
 # Research ethics
 I further confirm that any aspect of the work covered in this manuscript has been conducted with the ethical principles regarding students and teacher personal data that are never shown nor data is related to names, classes or dates.
+
+# Disclamer
+The text was writen by me, revised by Gemini AI and, finnaly, revised by my self.
 
 # REFERENCES
 
@@ -284,9 +285,9 @@ I further confirm that any aspect of the work covered in this manuscript has bee
 
 * Silvester, Robert (1995) "A celebration of the neurons", ASCD, Alexandria, Virginia;
 
-* van Merrienboer, Jeroen J. G.; Clark, Richard; Croock, Marcel (2002) Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993; https://www.researchgate.net/publication/225798787_Blueprints_for_complex_learning_The_4CID-model;
+* Van Merrienboer, Jeroen J. G.; Clark, Richard; Croock, Marcel (2002) Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993; https://www.researchgate.net/publication/225798787_Blueprints_for_complex_learning_The_4CID-model;
 
-* van Van Merriënboer , Jeroen J. G.; Kirschner, Paul A.; (2007) Ten Steps to Complex Learning, Routledge; 1st edition, SBN-10:0805857931; ISBN-13:978-0805857931;
+* Van Merriënboer , Jeroen J. G.; Kirschner, Paul A. (2007) Ten Steps to Complex Learning, Routledge; 1st edition, SBN-10:0805857931; ISBN-13:978-0805857931;
 
 * Klauer, Karl Josef; Phye, Gary; (2008) Inductive Reasoning: A Training Approach, Review of Educational Research, Volume 78, Issue 1, https://doi.org/10.3102/0034654307313402;
 
