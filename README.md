@@ -26,7 +26,7 @@ Author: António Carlos Gonçalves, Teacher at the Portuguese Education Minister
 
 # ABSTRACT
 
-This study investigates the impact of shifting from deductive to inductive teaching methods within a bLearning environment for young science and technology students. While research on specific educational methodologies is extensive, this analysis focuses on a particular strategic change – a move towards an inductive approach, as advocated by Felder (1993).
+This study investigates the impact of shifting from deductive to inductive teaching methods within a bLearning environment for young science and technology students. While research on specific educational methodologies is extensive, this analysis focuses on this particular strategic change, as advocated by Felder (1993).
 
 The findings suggest that, within the constraints of our sample, a 4C/ID bLearning approach does not consistently outperform Direct Instruction across all outcomes. However, we observed significant positive impacts on Lab Practice skills. Conversely, effects on school success and learning transfer were less pronounced, and we found a negative impact on social skills. These differential effects were observed across student sample, with female students, ninth-graders, and those better adapted to school environments demonstrating greater benefits.
 
