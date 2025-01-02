@@ -51,7 +51,7 @@ The hypothesis posits that this transition will result in an overall positive im
 
 This study use **4C/ID instructional design framework** because this methodology shows a clear procedure for the plannning of a learning design with all the components cleary defined and integrated in a whole struture that helps to create a consistent plataform during all the project phases, even in the LMS implementation phase. And also because, its based on several well known educational theories that has a robust body of research, connecting Cognitive Architecture and Instructional Design, integrating principles from neuroscience to the aforementioned MLP and CLT, which is aligned with Cognitive Load Theory (CLT) principles and corresponding activities, such as worked examples, completion problems, and minimizing split-attention effect (Sweller, 1998). This assumption grounded in the 4C/ID model's research align with other established learning theories, such as Brain-Based Learning (BBL) (Jensen, 2005; Sylvester, 1995), Cognitive Load Theory (CLT) (Plass, Moreno, Brünken, 2010), Multiple Intelligences Theory (MIT) (Gardner, 2011), and Multimedia Learning Principles (MLP) (Mayer, 2005). Another CLT implicit theoretical framework for this study is the Evolutionary Educational Psychology, which emphasizes the importance of integrating new information with existing knowledge structures (schemas) in long-term memory, which aligns with CLT's focus on minimizing working memory load . 
 
-[continue reading...](https://github.com/fqantonio/GoingInductive/blob/main/THEORY)
+[continue reading...](https://github.com/fqantonio/GoingInductive/blob/main/THEORY.md)
 
 # PROCEDURE
 
