@@ -1,5 +1,3 @@
-strategy: what was used in this work then the theory desciption
-
 In this work, the focus was on the major **strategies** but integrating some effects, namely, Element Interactivity, Expertise Reversal and Guidance-Fading. All the theories underlying this work, from BBL to MI, are resumed on CLT principles and strategies that drain into 4C/ID that provide a clear and concrete procedure, used in this work, as a lighthouse, that considerer the way humans process information and how the cognitive mind works. So, learning systems includes dual channels, limited working memory capacity and learner active processing during learning, namely, selecting information, processing and integrating it in existing knowledge. Deeper in the 4C/ID follows the principles of elaboration theroy of Reigeluth and learning-by-doing paradigm of Schank (Plass et all, 2010, p.126).
 
 The very basic strategy considered in this work was the **amount of information and cognitive load** (Kalyuga in Plass el al., 2010, p.50) within each online and presential activity: the intrinsic, the extraneous and germane loads are concepts to be aware in the process of preparing and using 
