@@ -1,4 +1,4 @@
-![Figure 0: 4C/ID theoretical design structure]([Images/4CID_LO_structuresFinal.jpeg))
+![Figure 0: 4C/ID theoretical design structure]([Images/4CID_LO_structuresFinal.jpeg)
 
 Figure 0: 4C/ID theoretical design structure; this map online here: https://cmapscloud.ihmc.us/viewer/cmap/213124DWG-1ZZXL6-3JRD8M
 
