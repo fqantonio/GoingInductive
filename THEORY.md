@@ -1,4 +1,4 @@
-
+![](4CID_LO_structuresFinal.jpeg)
 You can view this chart online here: https://cmapscloud.ihmc.us/viewer/cmap/213124DWG-1ZZXL6-3JRD8M
 
 
