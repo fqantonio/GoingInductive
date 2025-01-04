@@ -67,6 +67,8 @@ The 4C/ID model advocates for a progressive approach, moving from simple to comp
 
 There are extensive research on all of the theories underlying 4C/ID which results are summarized in effects and strategies. For instance, considering students' prior knowledge and utilizing 4C/ID effective instructional strategies to deal with short term memory work load and guidance, facilitates schema development, optimize learning outcomes and, stakeholders, including teachers, policymakers, and school administrators, can gain valuable insights to enhance teaching practices, improve learning design, and effectively, implement instructional strategies (Kirschner, 2002). Sweller (Plass et al., 2010, p.35) resume: "CLT is concerned with how information held in long-term memory of instructors can be borrowed for use by learners via schema aquisition". In 2019 this authors made a revision to the theory, after 20 years of work, reinforcing the major effects and adding new ones (Sweller, van Van Merriënboer , J.J.G., Paas, 2019).
 
+The best way to get information from anybody else is a teacher, concerning secondary learning. Aquiring novel knowledge in whatever way, means that this must be processed afterwards in working memory. This is a system with extreme limitations, not only in capacity as in time scale, and that's where CLT comes into place. If this information is important its important to store in long term memory, which is enourmeos compared to short ter memory. So, whenever we are storing infromation in long term memory we are transforming ourselves, so learning is transformation, allowing people to do things that are not possible without this massive stored learning  information a wide schematic scenario. Learning, for Sweller is the transfer of information to long term memory (Sweller, 2023).
+
 (to be continued)
 
 # CONTEXT and DATA
@@ -281,6 +283,9 @@ The text was writen by the author with english revision by Gemini AI and, the fi
 * Sweller, J., van Merrienboer, J.J.G. & Paas (1998); F.G.W.C. Cognitive Architecture and Instructional Design. Educational Psychology Review 10, 251–296. https://doi.org/10.1023/A:1022193728205
 
 * Sweller, J., van Van Merriënboer , J.J.G. & Paas (2019) F. Cognitive Architecture and Instructional Design: 20 Years Later. Educ Psychol Rev 31, 261–292. https://doi.org/10.1007/s10648-019-09465-5
+
+* Sweller, J. (2023); Education needs to embrace the science of learning, Knowledge Society, https://www.youtube.com/watch?v=575i45cJLvM
+
 
 * Silvester, Robert (1995) "A celebration of the neurons", ASCD, Alexandria, Virginia;
 
