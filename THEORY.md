@@ -27,4 +27,6 @@ It is crucial to note, as highlighted by Van  Merriënboer, that his 4C/ID model
 | Primary media | Secondary media | JIT (just-in-time) information | Part-task practice |
 | -------------------- | -------------------- | -------------------- | -------------------- |
 | Problem-based; simulation-based; scenario-based; | books; hypertext; lectures; video; | help; pop-up menus;ballons; | computer practice interactive media; worked-examples; completion problems |
-that considerer the way humans process information and how the cognitive mind works.
+
+The best way to get information from anybody else is a teacher, concerning secondary learning. Aquiring novel knowledge in whatever way, means that this must be processed afterwards in working memory. This is a system with extreme limitations, not only in capacity as in time scale, and that's where CLT comes into place. If this information is important its important to store in long term memory, which is enourmeos compared to short ter memory. So, whenever we are storing infromation in long term memory we are transforming ourselves, so learning is transformation, allowing people to do things that are not possible without this massive stored learning  information a wide schematic scenario. Learning, for Sweller is the transfer of information to long term memory (Sweller, 2023).
+Knwowing the cognitive architecture that considerer the way humans process information and how the cognitive mind works its half way to engage in effective learning activities design.
