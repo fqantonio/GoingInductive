@@ -1,6 +1,7 @@
-https://cmapscloud.ihmc.us/viewer/cmap/2130Z0WR1-1VGHKSN-3JQKKX
 
-<iframe src="https://cmapscloud.ihmc.us/viewer/cmap/2130Z0WR1-1VGHKSN-3JQKKX?annotationEnabled=true&cmapBorder=true&scaleToFit=true" width="2026" height="1277" frameborder="0" ></iframe>
+You can view this chart online here: https://cmapscloud.ihmc.us/viewer/cmap/213124DWG-1ZZXL6-3JRD8M
+
+
 
 In this work, the focus was on the major **strategies** but integrating some effects, namely, Element Interactivity, Expertise Reversal and Guidance-Fading.  So, learning systems includes dual channels, limited working memory capacity and learner active processing during learning, namely, selecting information, processing and integrating it in existing knowledge. Deeper in the 4C/ID follows the principles of elaboration theroy of Reigeluth and learning-by-doing paradigm of Schank (Plass et all, 2010, p.126).
 
