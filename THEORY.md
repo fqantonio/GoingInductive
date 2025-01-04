@@ -1,4 +1,8 @@
-In this work, the focus was on the major **strategies** but integrating some effects, namely, Element Interactivity, Expertise Reversal and Guidance-Fading. All the theories underlying this work, from BBL to MI, are resumed on CLT principles and strategies that drain into 4C/ID that provide a clear and concrete procedure, used in this work, as a lighthouse, that considerer the way humans process information and how the cognitive mind works. So, learning systems includes dual channels, limited working memory capacity and learner active processing during learning, namely, selecting information, processing and integrating it in existing knowledge. Deeper in the 4C/ID follows the principles of elaboration theroy of Reigeluth and learning-by-doing paradigm of Schank (Plass et all, 2010, p.126).
+https://cmapscloud.ihmc.us/viewer/cmap/2130Z0WR1-1VGHKSN-3JQKKX
+
+<iframe src="https://cmapscloud.ihmc.us/viewer/cmap/2130Z0WR1-1VGHKSN-3JQKKX?annotationEnabled=true&cmapBorder=true&scaleToFit=true" width="2026" height="1277" frameborder="0" ></iframe>
+
+In this work, the focus was on the major **strategies** but integrating some effects, namely, Element Interactivity, Expertise Reversal and Guidance-Fading.  So, learning systems includes dual channels, limited working memory capacity and learner active processing during learning, namely, selecting information, processing and integrating it in existing knowledge. Deeper in the 4C/ID follows the principles of elaboration theroy of Reigeluth and learning-by-doing paradigm of Schank (Plass et all, 2010, p.126).
 
 The very basic strategy considered in this work was the **amount of information and cognitive load** (Kalyuga in Plass el al., 2010, p.50) within each online and presential activity: the intrinsic, the extraneous and germane loads are concepts to be aware in the process of preparing and using 
 the educational materials. 
@@ -35,6 +39,7 @@ Merril organized learning in **five prescriptive principles** (Merrill, 2002) th
 
 Considering students' prior knowledge and utilizing 4C/ID effective instructional strategies to deal with short term memory work load and guidance, facilitates schema development, optimize learning outcomes and, stakeholders, including teachers, policymakers, and school administrators, can gain valuable insights to enhance teaching practices, improve learning design, and effectively, implement instructional strategies (Kirschner, 2002). Sweller (Plass et al., 2010, p.35) resume: "CLT is concerned with how information held in long-term memory of instructors can be borrowed for use by learners via schema aquisition". In 2019 this authors made a revision to the theory, after 20 years of work, reinforcing the major effects and adding new ones (Sweller, van Van Merriënboer , J.J.G., Paas, 2019). 
 
+ARQUIVED
 In all of the activities the **fading guidance** was provided until students where able to solve the problems autonomously.
 
-
+All the theories underlying this work, from BBL to MI, are resumed on CLT principles and strategies that drain into 4C/ID that provide a clear and concrete procedure, used in this work, as a lighthouse, that considerer the way humans process information and how the cognitive mind works.
