@@ -75,7 +75,7 @@ The **motivation** lies on the need to understand the impact of the professional
 
 > Was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
 
-[^readme-2]: <https://cmap.ihmc.us/>
+[^readme-2]: cmap tools by ihmc <https://cmap.ihmc.us/>
 
 Most of the time the professional, specific, **day-to-day teacher work** data (see figure 2) is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is little or no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are devised and worse, it's normal not to share it.
 
