@@ -12,10 +12,11 @@ Non of this was addapted to students **prior knowledge** nor **germane load** wa
 
 A central idea, already mentioned, is the mental model aquisition that is accomplished by the Kalyuga (Plass et al. 2010, p.56) schema aquisition procedure which is very hard to achieve, whatever student in whatever content. So, schema aquisition was tackle through **automation**, a **variability** of problems and **cognitive feedback** to get to higher order of expertise by reducing cognitive load. So, small chunks of activities with repeting steps with high variability were put in place.
 
-Added to this prinicple was the variation of contexts of the problems proposed. Multimedia principles were not forgoten, not only in the video editing but also in the animation interactive films prodcued and simulations organized by PHET [^THEORY-1] animations and LMS Lesson MOODLE activity [^THEORY-2]. Namely, guided activity, feedback, reflection principle (plass et all, p.166) and multimedia principle, already mentioned.
+Added to this prinicple was the variation of contexts of the problems proposed. Multimedia principles were not forgoten, not only in the video editing but also in the animation interactive films produced and simulations organized by PHET [^THEORY-1] animations and LMS Lesson MOODLE activity [^THEORY-2]. In the last years there was same embeded H5P activities [^THEORY-3]. This online interactive activities promote guided activity, feedback, reflection principle (Plass et all, p.166) and multimedia principle, already mentioned.
 
 [^THEORY-1]: PHET, Interactive Simulations for Science and Math, https://phet.colorado.edu/
 [^THEORY-2]: Lesson MOODLE activity, https://docs.moodle.org/405/en/Lesson_activity
+[^THEORY-3]: H5P, Create, share and reuse interactive HTML5 content in your browser, https://h5p.org/
 
 For the material on the LMS MOODLE, used during the class and could be used online, the Mayer and Moreno (Plass et all, 2010, p.142-148) multimedia principles for extraneous cognitive load, namely coherence, redundancy, signaling, temporal and spacial contiguity. For the intrinsic load, segmenting,
 pretraining and modality were considered in the material prepared (Mayer, 2005, p.169-200).
