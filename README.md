@@ -1,4 +1,4 @@
-> 
+    > 
 >    Education is the most powerful weapon which you can use to change the world.
 >
 >         
@@ -63,7 +63,11 @@ The 4C/ID model advocates for a progressive approach, moving from simple to comp
 
 [continue reading...](https://github.com/fqantonio/GoingInductive/blob/main/PROCEDURE)
 
-# STATE OF THE ART (writing work about to start)
+# STATE OF THE ART
+
+There are extensive research on all of the theories underlying 4C/ID which results are summarized in effects and strategies. For instance, considering students' prior knowledge and utilizing 4C/ID effective instructional strategies to deal with short term memory work load and guidance, facilitates schema development, optimize learning outcomes and, stakeholders, including teachers, policymakers, and school administrators, can gain valuable insights to enhance teaching practices, improve learning design, and effectively, implement instructional strategies (Kirschner, 2002). Sweller (Plass et al., 2010, p.35) resume: "CLT is concerned with how information held in long-term memory of instructors can be borrowed for use by learners via schema aquisition". In 2019 this authors made a revision to the theory, after 20 years of work, reinforcing the major effects and adding new ones (Sweller, van Van Merriënboer , J.J.G., Paas, 2019).
+
+(to be continued)
 
 # CONTEXT and DATA
 
