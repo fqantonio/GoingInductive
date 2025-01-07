@@ -30,3 +30,5 @@ Being that said, the courses structures were organized using cmap tools (see exa
 18. For each activity, it was given a time of completion in order to measure the effort needed for each task and addapt to the classes time table;
 19. The activities were available weekly, allowing the students to view not all at the same time but in shunks of material to complete;
 20. Allow students to give feedback about their experience and identify errors, like, links that don't work or take them to activities already passed or to ahead.
+
+NOTE: include here a resume about the concept map evolution
