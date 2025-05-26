@@ -21,7 +21,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 - [ ] State of the art
 - [ ] discussing and conclude
 
-# Going Inductive
+# Going Inductive: what is the impact on students learning?
 Author: António Carlos Gonçalves, Teacher at the Portuguese Education Ministery, https://www.linkedin.com/in/fqantonio/
 
 # ABSTRACT
