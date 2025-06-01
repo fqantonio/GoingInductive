@@ -18,8 +18,10 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 # TO DO LIST
 
 - [ ] showing the cmaps in the cloud or as images?
-- [ ] State of the art
+- [ ] State of the art: complete.
 - [ ] discussing and conclude
+- [ ] data cloud
+- [ ] code used in RSTUDIO
 
 # Going Inductive: what is the impact on students learning?
 Author: António Carlos Gonçalves, Teacher at the Portuguese Education Ministery, https://www.linkedin.com/in/fqantonio/
