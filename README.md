@@ -18,7 +18,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 # TO DO LIST
 
 - [ ] State of the art: complete, reorganize and verify.
-- [ ] discussing and conclude
+- [ ] final reading: revisit goals , hyphotesis, questions, relation with the new at this work: discussing and conclude
 - [ ] showing the cmaps in the cloud or as images?
 - [ ] data cloud
 - [ ] code used in RSTUDIO
