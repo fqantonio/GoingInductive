@@ -283,9 +283,9 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Sarfo, F.K., Elen, J. (2007); Developing technical expertise in secondary technical schools: The effect of 4C/ID learning environments. Learning Environ Res 10, 207–221. https://doi.org/10.1007/s10984-007-9031-2
 
-* Sweller, J., van Merrienboer, J.J.G. & Paas (1998); F.G.W.C. Cognitive Architecture and Instructional Design. Educational Psychology Review 10, 251–296. https://doi.org/10.1023/A:1022193728205
+* Sweller, John; van Merrienboer, Jeroen; Paas, Fred (1998); F.G.W.C. Cognitive Architecture and Instructional Design. Educational Psychology Review 10, 251–296. https://doi.org/10.1023/A:1022193728205
 
-* Sweller, J., van Van Merriënboer , J.J.G. & Paas (2019) F. Cognitive Architecture and Instructional Design: 20 Years Later. Educ Psychol Rev 31, 261–292. https://doi.org/10.1007/s10648-019-09465-5
+* Sweller, J.; van Van Merriënboer; Paas, Fred (2019); Cognitive Architecture and Instructional Design: 20 Years Later. Educ Psychol Rev 31, 261–292. https://doi.org/10.1007/s10648-019-09465-5
 
 * Sweller, J. (2023); Education needs to embrace the science of learning, Knowledge Society, https://www.youtube.com/watch?v=575i45cJLvM
 
