@@ -247,10 +247,6 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Felder, Richard (1993); Reaching the Second Tier: Learning and Teaching Styles in College Science Education, Journal of College Science Teaching 23(5);
 
-* Prince, M.; Felder, R. (2006). Inductive Teaching and Learning Methods: Definitions, Comparisons, and Research Bases. Journal of Engineering Education, 95. https://doi.org/10.1002/j.2168-9830.2006.tb00884.x.
- 
-* Prince, M.; & Felder, R. (2007); The Many Faces of Inductive Teaching and Learning. The journal of college science teaching, https://www.pfw.edu/offices/celt/pdfs/Inductive(JCST).pdf;
-
 * Gardner, Howard (2011) Frames Of Mind: The Theory Of Multiple Intelligences, ISBN-13: 978-0465024339;
 
 * Garrison, D.R.; Anderson, Terry (2003); E-Learning in the 21st Century, A framework for research and practice, RoutledgePalmer, ISBN: 978-0-415-26346-7.
@@ -265,6 +261,8 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Kirschner, Paul (2002) Cognitive load theory: implications of cognitive load theory on the design of learning, Learning and Instruction, Volume 12, Issue 1, February 2002, Pages 1-10, https://doi.org/10.1016/S0959-4752(01)00014-7;
 
+* Klauer, Karl Josef; Phye, Gary; (2008) Inductive Reasoning: A Training Approach, Review of Educational Research, Volume 78, Issue 1, https://doi.org/10.3102/0034654307313402;
+
 * Lim, J., Reiser, R.A. & Olina, Z. (2009); The effects of part-task and whole-task instructional approaches on acquisition and transfer of a complex cognitive skill. Education Tech Research Dev 57, 61–77; https://doi.org/10.1007/s11423-007-9085-y;
 
 * Mayer, Richard (editor)(2005); The Cambridge Handbook of Multimedia Learning, Cambridge University Press; ISBN: 0-521-83873-8;
@@ -274,6 +272,10 @@ This text was originally written in English by the author, with revisions by Gem
 * Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
 
 * Plass, Jan; Moreno, Roxana; Brünken, Roland (editors) (2010), Cognitive Load Theory, ISBN: 978-0-521-67758-5, Cambridge university Press;
+
+* Prince, M.; Felder, R. (2006). Inductive Teaching and Learning Methods: Definitions, Comparisons, and Research Bases. Journal of Engineering Education, 95. https://doi.org/10.1002/j.2168-9830.2006.tb00884.x.
+ 
+* Prince, M.; & Felder, R. (2007); The Many Faces of Inductive Teaching and Learning. The journal of college science teaching, https://www.pfw.edu/offices/celt/pdfs/Inductive(JCST).pdf;
 
 * ?????? Reiser, R.A. A history of instructional design and technology: Part I: A history of instructional media. ETR&D 49, 53–64 (2001). https://doi.org/10.1007/BF02504506
 
@@ -293,7 +295,5 @@ This text was originally written in English by the author, with revisions by Gem
 * Van Merriënboer, Jeroen J. G.; Clark, Richard; Croock, Marcel (2002) Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993; https://www.researchgate.net/publication/225798787_Blueprints_for_complex_learning_The_4CID-model;
 
 * Van Merriënboer, Jeroen J. G.; Kirschner, Paul A. (2007) Ten Steps to Complex Learning, Routledge; 1st edition, SBN-10:0805857931; ISBN-13:978-0805857931;
-
-* Klauer, Karl Josef; Phye, Gary; (2008) Inductive Reasoning: A Training Approach, Review of Educational Research, Volume 78, Issue 1, https://doi.org/10.3102/0034654307313402;
 
 # NOTES
