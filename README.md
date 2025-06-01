@@ -17,11 +17,12 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # TO DO LIST
 
-- [ ] showing the cmaps in the cloud or as images?
-- [ ] State of the art: complete.
+- [ ] State of the art: complete, reorganize and verify.
 - [ ] discussing and conclude
+- [ ] showing the cmaps in the cloud or as images?
 - [ ] data cloud
 - [ ] code used in RSTUDIO
+- [ ] EDIT EDIT EDIT
 
 # Going Inductive: what is the impact on students learning?
 Author: António Carlos Gonçalves, Teacher at the Portuguese Education Ministery, https://www.linkedin.com/in/fqantonio/
@@ -235,8 +236,8 @@ I confirm that I have given due consideration to the protection of intellectual 
 # Research ethics
 I further confirm that any aspect of the work covered in this manuscript has been conducted with the ethical principles regarding students and teacher personal data that are never shown nor data is related to names, classes or dates.
 
-# Disclamer
-The text was writen by the author with english revision by Gemini AI and, the final version, was revised by the author.
+# Authorship
+This text was originally written in English by the author, with revisions by Gemini AI and further review by the author. The author is solely responsible for all discussions, conclusions, procedures, and results presented. 
 
 # REFERENCES
 
