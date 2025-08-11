@@ -52,7 +52,7 @@ The hypothesis posits that this transition will have an overall positive impact 
 
 # THEORY
 
-This study utilizes **Van Merriënboer's 4C/ID instructional design** as a reliable framework. It provides a clear procedure for designing and planning a blended learning (bLearning) environment, with all components explicitly defined and integrated into a cohesive structure. This framework serves as a guide throughout all project phases, even during the concrete implementation of content within the Learning Management System (LMS).
+This study utilizes **Van Merriënboer's 4C/ID instructional design** as a reliable framework that provides a clear procedure for designing and planning a blended learning (bLearning) environment, with all components explicitly defined and integrated into a cohesive structure. This framework serves as a guide throughout all project phases, even during the concrete implementation of content within the Learning Management System (LMS).
 
 The 4C/ID model is grounded in several robust educational theories, effectively bridging Cognitive Architecture and Instructional Design. It integrates principles from:
 
