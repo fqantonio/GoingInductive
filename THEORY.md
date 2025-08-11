@@ -12,7 +12,7 @@ Non of this was addapted to students **prior knowledge** nor **germane load** wa
 
 A central idea, already mentioned, is the mental model aquisition that is accomplished by the Kalyuga schema aquisition procedure (Plass et al. 2010, p.56) which is very hard to achieve, whatever student in whatever content. So, schema aquisition was tackle through **automation**, **variability** of problems and **cognitive feedback** to get to higher order of expertise by reducing cognitive load. So, small chunks of activities over time with repeting steps with high variability were put in place.
 
-Added to this prinicple was the variation of contexts of the problems proposed. Multimedia principles were not forgoten, not only in the video editing but also in the animation interactive films produced and simulations organized by PHET [^THEORY-1] animations and LMS Lesson MOODLE activity [^THEORY-2]. In the last years there was same embeded H5P activities [^THEORY-3]. This online interactive activities promote guided activity, feedback, reflection principle (Plass et all, p.166) and multimedia principle, already mentioned.
+Added to this principle was the variation of contexts of the problems proposed. Multimedia principles were not forgoten, not only in the video editing but also in the animation interactive films produced and simulations organized by PHET [^THEORY-1] animations and LMS Lesson MOODLE activity [^THEORY-2]. In the last years there was same embeded H5P activities [^THEORY-3]. This online interactive activities promote guided activity, feedback, reflection principle (Plass et all, p.166) and multimedia principle, already mentioned.
 
 [^THEORY-1]: PHET, Interactive Simulations for Science and Math, https://phet.colorado.edu/
 [^THEORY-2]: Lesson MOODLE activity, https://docs.moodle.org/405/en/Lesson_activity
@@ -20,7 +20,13 @@ Added to this prinicple was the variation of contexts of the problems proposed. 
 
 Lesson activities on the LMS MOODLE, used during the class and also online, the Mayer and Moreno  multimedia principles (Plass et all, 2010, p.142-148) for extraneous cognitive load, namely coherence, redundancy, signaling, temporal and spacial contiguity were used were significantly used. The same for intrinsic load, segmenting, pretraining and modality were used extensively (Mayer, 2005, p.169-200).
 
-What was also important to have present is the Merril learning **five prescriptive principles** (Merrill, 2002) organized in a very simple way, common among several instructional design learningn theories that, actually, are integrated in 4C/ID instructional design by Van Merriënboer and colleagues, namely, "(a) Learning is promoted when learners are engaged in solving real-world problems. (b) Learning is promoted when existing knowledge is activated as a foundation for new knowledge. (c) Learning is promoted when new knowledge is demonstrated to the learner. (d) Learning is promoted when new knowledge is applied by the learner. (e) Learning is promoted when new knowledge is integrated into the learner's world." 
+What was also important to have present is the Merril learning **five prescriptive principles** (Merrill, 2002) organized in a very simple way, common among several instructional design learningn theories that, actually, are integrated in 4C/ID instructional design by Van Merriënboer and colleagues, namely:
+
+(a) Learning is promoted when learners are engaged in solving real-world problems;
+(b) Learning is promoted when existing knowledge is activated as a foundation for new knowledge;
+(c) Learning is promoted when new knowledge is demonstrated to the learner;
+(d) Learning is promoted when new knowledge is applied by the learner;
+(e) Learning is promoted when new knowledge is integrated into the learner's world.
 
 It is crucial to note, as highlighted by Van  Merriënboer, that his 4C/ID model effectively integrates both instructivist and constructivist methodologies across its various stages combined witb other theories, such has elaboration (van Merrienboer, Clark, Croock, 2002). Also important to highlight is the fact that this model **doesn't provide guidelines** for the transition from the design phase to the posterior phases of production and development. He suggest some raw media classification as primary and secondary to distinguish from supportive information to interactive media, respectively, to be used in the LMS embedded learning activities:
 
@@ -28,5 +34,10 @@ It is crucial to note, as highlighted by Van  Merriënboer, that his 4C/ID model
 | -------------------- | -------------------- | -------------------- | -------------------- |
 | Problem-based; simulation-based; scenario-based; | books; hypertext; lectures; video; | help; pop-up menus;ballons; | computer practice interactive media; worked-examples; completion problems |
 
-The best way to get information from anybody else is a teacher, concerning secondary learning. Aquiring novel knowledge in whatever way, means that this must be processed afterwards in working memory. This is a system with extreme limitations, not only in capacity as in time scale, and that's where CLT comes into place. If this information is important its important to store in long term memory, which is enourmeos compared to short ter memory. So, whenever we are storing infromation in long term memory we are transforming ourselves, so learning is transformation, allowing people to do things that are not possible without this massive stored learning  information a wide schematic scenario. Learning, for Sweller is the transfer of information to long term memory (Sweller, 2023).
-Knwowing the cognitive architecture that considerer the way humans process information and how the cognitive mind works its half way to engage in effective learning activities design.
+In secondary learning, teachers are a primary source of information for students. The acquisition of new knowledge, regardless of its source, requires processing in working memory. This system has extreme limitations in both capacity and time scale, which is where Cognitive Load Theory (CLT) becomes crucial.
+
+For information to be valuable, it must be stored in long-term memory, which is vast compared to short-term memory. The act of storing information in long-term memory transforms us; therefore, learning is a transformative process. This transformation allows people to perform tasks that would be impossible without this stored knowledge, forming a broad schematic foundation. According to Sweller, learning is the transfer of information to long-term memory (Sweller, 2023).
+
+Understanding the cognitive architecture—how humans process information and how the mind works—is essential for designing effective learning activities.
+
+In cognitive load theory, "secondary learning" refers to the acquisition of knowledge and skills that are not naturally acquired through evolution and require explicit instruction. This contrasts with "primary learning," which involves skills like language acquisition, learned effortlessly and without formal teaching (Sweeler, 2023).
