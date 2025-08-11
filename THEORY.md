@@ -1,3 +1,5 @@
+As point out by Sweller, van Merriënboer and Paas, "Cognitive load theory emphasised that all novel information first is processed by a capacity and duration limited working memory and then stored in an unlimited long-term memory for later use. Once information is stored in long-term memory, the capacity and duration limits of working memory disappear transforming our ability to function" (???)
+
 ![Figure 0: 4C/ID theoretical design structure](Images/4CID_LO_structuresFinal.jpeg)
 
 Figure 0: 4C/ID theoretical design structure: online here: https://cmapscloud.ihmc.us/viewer/cmap/213124DWG-1ZZXL6-3JRD8M
