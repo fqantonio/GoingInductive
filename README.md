@@ -29,13 +29,13 @@ Author: António Carlos Gonçalves, Teacher at the Portuguese Education Minister
 
 # ABSTRACT
 
-This study investigates the impact of shifting from deductive to inductive teaching methods within a bLearning environment for young science and technology students. While research on specific educational methodologies is extensive, this analysis focuses on this particular strategic change, as advocated by Felder (Felder, 1993).
+This study investigates the impact of shifting from deductive to inductive teaching methods within a blended learning (bLearning) environment for young science and technology students. While research on specific educational methodologies is extensive, this analysis focuses on a strategic change.
 
-The findings suggest that, within the constraints of our research, a 4C/ID bLearning approach does not consistently outperform Direct Instruction across all outcomes. However, we observed significant positive impacts on Lab Practice skills. Conversely, effects on school success and learning transfer were less pronounced, and we found a negative impact on social skills. These differential effects were observed across student sample, with female students, ninth-graders, and those better adapted to school environments demonstrating greater benefits.
+The findings suggest that, within the constraints of our research, a 4C/ID bLearning approach doesn't consistently outperform Direct Instruction across all outcomes. While we observed a significant positive impact on Lab Practice skills, effects on school success and learning transfer were less pronounced. Interestingly, we found a negative impact on social skills. These differential effects were observed across the student sample, with female students, ninth-graders, and those better adapted to school environments demonstrating greater benefits.
 
-This research highlights the need for careful considerations when implementing such a pedagogical shift, discuss the specific implications for teachers, policymakers, and school administrators, acknowledging the potential challenges and benefits associated with it. This analysis is based on 12 years of teacher data (2003-2017), providing insights into the impact on Learning Transfer, Lab Practice, Social Skills, and Academic Results.
+This research highlights the need for careful consideration when implementing such a pedagogical shift. It discusses the specific implications for teachers, policymakers, and school administrators, acknowledging the potential challenges and benefits associated with this change. The analysis is based on 12 years of teacher data (2003-2017), providing insights into the impact on learning transfer, lab practice, social skills, and academic results.
 
-> **Keywords** Inductive learning strategy; 4C/ID; Direct Instruction; Learning Flow; Statistical Non-parametric Inference; Learning Transfer, Lab Practice, Social Skills and Academic Results; Cognitive Load Theory; MultiIntelligence Theory; Brain Based Learning; bLearning.
+> **Keywords** Inductive learning strategy; instructional Design; 4C/ID; Direct Instruction; Learning Flow; Learning Transfer, Lab Practice, Social Skills and Academic Results; Cognitive Load Theory; MultiIntelligence Theory; Brain Based Learning; bLearning, Statistical Non-parametric Inference.
 
 # GOALS, RESEARCH QUESTIONS and HYPOTHESIS
 
