@@ -82,6 +82,8 @@ The structures and functions of human cognitive architecture have been used to d
 
 By the late 1990s, sufficient data had been collected using the theory to warrant an extended analysis resulting in the publication of Sweller et al. (Educational Psychology Review, 10, 251–296, 1998)
 
+Costa, J.M., Miranda, G.L. & Melo, M. Four-component instructional design (4C/ID) model: a meta-analysis on use and effect. Learning Environ Res 25, 445–463 (2022). https://doi.org/10.1007/s10984-021-09373-y
+
 About bLearning... results
 
 =====keep in mind====
