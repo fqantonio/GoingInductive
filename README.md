@@ -18,7 +18,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 # TO DO LIST
 
 - [ ] State of the art: complete, reorganize and verify.
-- [ ] final reading: revisit goals , hyphotesis, questions, relation with the new at this work: discussing and conclude
+- [ ] final reading: revisit goals , hyphotesis, questions, relation with the new at this work: discussing and conclude it: the goals are in the conclusion?
 - [ ] showing the cmaps in the cloud or as images?
 - [ ] data cloud
 - [ ] code used in RSTUDIO
@@ -48,17 +48,33 @@ The research examines the impact on four key learning outcomes: Learning Transfe
     What are the advantages and disadvantages of this methodological shift?
     What are the implications for stakeholders involved in the educational process?
 
-The hypothesis posits that this transition will result in an overall positive impact on student learning outcomes, meaning that, there will be an improvement in Learning Transfer, Lab Practice, Social Skills, and Academic Achievement, no matter what student category, gender, grade or school adaptation degree. It is believed that, by using 4C/ID, we can set an effective learning design that facilitate schema development, optimize learning outcomes and, stakeholders, including teachers, policymakers, and school administrators, can gain valuable insights to enhance teaching practices, improve learning design, and effectively, implement instructional strategies (Kirschner, 2002). 
+The hypothesis posits that this transition will have an overall positive impact on student learning outcomes. Specifically, we expect to see improvements in learning transfer, lab practice, social skills, and academic achievement, regardless of the student's gender, grade level, or degree of school adaptation. We believe that using the 4C/ID model can create an effective learning design that facilitates schema development and optimizes learning outcomes. This approach can also provide valuable insights for stakeholders, including teachers, policymakers, and school administrators, helping them enhance teaching practices and effectively implement instructional strategies (Kirschner, 2002).
 
 # THEORY
 
-This study use Van Merriënboer **4C/ID instructional design** has a reliable framework because it shows a clear procedure for the design and planning of a bLearning environment, with all the components cleary defined and integrated in a whole struture, that helps to create a consistent plataform during all the project phases, being a lighthouse, even in the LMS concrete activities implementation. On the other hand, it is based on several well known educational theories that has a robust body of research, connecting Cognitive Architecture and Instructional Design, integrating principles from Neuroscience to Brain-Based Learning (BBL) (Jensen, 2005; Sylvester, 1995), Cognitive Load Theory (CLT) (Plass, Moreno, Brünken, 2010), Multiple Intelligences Theory (MIT) (Gardner, 2011), Multimedia Learning Principles (MLP) (Mayer, 2005) and Evolutionary Educational Psychology (Sweller, 1998). 4C/ID takes the instructional designer to the LMS and classroom concrete activities without loosing the connection to the theories, helping built and develop activities that take students to integrate new information with existing knowledge structures (schemas) in long-term memory, step-by-step, minimize working memory load with fading guidance worked examples, completion problems, and minimizing split-attention effect.
+This study utilizes **Van Merriënboer's 4C/ID instructional design** as a reliable framework. It provides a clear procedure for designing and planning a blended learning (bLearning) environment, with all components explicitly defined and integrated into a cohesive structure. This framework serves as a guide throughout all project phases, even during the concrete implementation of content within the Learning Management System (LMS).
+
+The 4C/ID model is grounded in several robust educational theories, effectively bridging Cognitive Architecture and Instructional Design. It integrates principles from:
+
+    * Neuroscience to Brain-Based Learning (BBL) (Jensen, 2005; Sylvester, 1995);
+
+    * Cognitive Load Theory (CLT) (Plass, Moreno, Brünken, 2010);
+
+    * Multiple Intelligences Theory (MIT) (Gardner, 2011);
+
+    * Multimedia Learning Principles (MLP) (Mayer, 2005);
+
+    * Evolutionary Educational Psychology (Sweller, 1998);
+
+    * Inductive Methodologies as advocated by Felder (Felder, 1993).
+
+The 4C/ID framework guides the instructional designer from theoretical principles to concrete LMS and classroom activities without losing this connection. It helps build and develop activities that incrementally lead students to integrate new information into existing knowledge structures (schemas) in long-term memory. It minimizes working memory load through techniques like fading guidance, worked examples, and completion problems, all while reducing the split-attention effect.
 
 [continue reading...](https://github.com/fqantonio/GoingInductive/blob/main/THEORY.md)
 
 # PROCEDURE
 
-Implementing the 4C/ID model, as aptly described by Van Merriënboer, Clark, and Croock (2002) as akin to steering a "huge, slow, ponderous ocean liner" required significant effort. The process involved extensive research, testing, and iterative refinement of pedagogical planning. While the 4C/ID model presents a steep learning curve, it provides a valuable framework for consistently managing instructional sequences prior to LMS implementation.
+Implementing the 4C/ID model, as described by Van Merriënboer, Clark, and Croock (2002) as akin to steering a "huge, slow, ponderous ocean liner" required significant effort. The process involved extensive research, testing, and iterative refinement of pedagogical planning. While the 4C/ID model presents a steep learning curve, it provides a valuable framework for consistently managing instructional sequences prior to LMS implementation.
 
 The model emphasizes the crucial link between its underlying theories and its concrete structure, comprising Task Classes (TC), Learning Tasks (LT), Part-Task Practice (PTP), Supportive Information (SI), Procedural Information (PI), and Just-in-Time (JIT) information. This framework prioritizes whole-task learning within real-world problem contexts, facilitating gradual skill acquisition while minimizing cognitive load on working memory.
 
@@ -215,6 +231,18 @@ Another thing that has to be acknowledge by the **stakeholders** is the fact tha
 
 Furthermore, of course **one methodology** is not a panacea for all of the learning process, but having an educational theory is very important to develop and adapt to your educational context. There is also a need for stimulating research and spread the knowledge about the specific impacts of each strategy.
 
+======= Is this here?
+
+The research examines the impact on four key learning outcomes: Learning Transfer, Lab Practice, Social Skills, and Academic Achievement. To guide this investigation, the following research questions were addressed:
+
+    What is the impact on student learning outcomes?
+    Which student groups benefit most?
+    What are the advantages and disadvantages of this methodological shift?
+    What are the implications for stakeholders involved in the educational process?
+
+=======
+
+
 # DISCUSSION
 
 Overall, *inductive methodology* has a positive impact on learning, as evidenced by various studies. Inductive methods, which involve learning through specific observations and problem-solving before introducing theories, have been shown to be more effective than traditional deductive methods in many educational contexts. Namely, better academic learning of classroom subject matter where observed. The review and meta-analysis summarizes the results of 74 training experiments with nearly 3,600 children. (Kauler and Phye, 2008). Furthermore, reports show that deductive methodologies contribute for students leaving the sciences and give a strong support for inductive teaching methods that encourage students to adopt a deep approach to learning and are precursors of intellectual development (Prince, Felder, 2007). A 4C/ID learning environment promotes the development of technical expertise in secondary technical education better than direct instruction (Sarfo, Elen, 2007).
@@ -243,56 +271,55 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Cole, Jason (2005), Using Moodle, O'relly Community Press, ISBN 0-596-00863-5;
 
-* Costa, J., Miranda, G., & Melo, M. (2021). Four-component instructional design (4C/ID) model: a meta-analysis on use and effect. Learning Environments Research, 25, 445 - 463
+** Costa, J., Miranda, G., & Melo, M. (2021). Four-component instructional design (4C/ID) model: a meta-analysis on use and effect. Learning Environments Research, 25, 445 - 463
 
 * Felder, Richard (1993); Reaching the Second Tier: Learning and Teaching Styles in College Science Education, Journal of College Science Teaching 23(5);
 
 * Gardner, Howard (2011) Frames Of Mind: The Theory Of Multiple Intelligences, ISBN-13: 978-0465024339;
 
-* Garrison, D.R.; Anderson, Terry (2003); E-Learning in the 21st Century, A framework for research and practice, RoutledgePalmer, ISBN: 978-0-415-26346-7.
+** Garrison, D.R.; Anderson, Terry (2003); E-Learning in the 21st Century, A framework for research and practice, RoutledgePalmer, ISBN: 978-0-415-26346-7.
 
 * Jensen, Eric (2005), Teaching with the Brain in Mind, ASCD, ISBN-10: 146600302; ISBN-13:978-1416600305;
 
-* Kalyuga, S. (2011). Cognitive Load Theory: How Many Types of Load Does It Really Need?. Educational Psychology Review, 23, 1-19. https://doi.org/10.1007/S10648-010-9150-7;
+** Kalyuga, S. (2011). Cognitive Load Theory: How Many Types of Load Does It Really Need?. Educational Psychology Review, 23, 1-19. https://doi.org/10.1007/S10648-010-9150-7;
 
-* Kaur, S., & Niwas., D. (2016). EFFECTIVENESS OF DEDUCTIVE AND INDUCTIVE METHODS IN TEACHING ENGLISH GRAMMAR AT ELEMENTARY LEVEL.. International Journal of Approximate Reasoning, 4, 1241-1247. https://doi.org/10.21474/IJAR01/1027.
+** Kaur, S., & Niwas., D. (2016). EFFECTIVENESS OF DEDUCTIVE AND INDUCTIVE METHODS IN TEACHING ENGLISH GRAMMAR AT ELEMENTARY LEVEL.. International Journal of Approximate Reasoning, 4, 1241-1247. https://doi.org/10.21474/IJAR01/1027.
 
-* Khan, I., Iftikhar, M., Hussain, S., Rehman, A., Gul, N., Jadoon, W., & Nazir, B. (2020). Redesign and validation of a computer programming course using Inductive Teaching Method. PLoS ONE, 15. https://doi.org/10.1371/journal.pone.0233716.
+** Khan, I., Iftikhar, M., Hussain, S., Rehman, A., Gul, N., Jadoon, W., & Nazir, B. (2020). Redesign and validation of a computer programming course using Inductive Teaching Method. PLoS ONE, 15. https://doi.org/10.1371/journal.pone.0233716.
 
 * Kirschner, Paul (2002) Cognitive load theory: implications of cognitive load theory on the design of learning, Learning and Instruction, Volume 12, Issue 1, February 2002, Pages 1-10, https://doi.org/10.1016/S0959-4752(01)00014-7;
 
-* Klauer, Karl Josef; Phye, Gary; (2008) Inductive Reasoning: A Training Approach, Review of Educational Research, Volume 78, Issue 1, https://doi.org/10.3102/0034654307313402;
+** Klauer, Karl Josef; Phye, Gary; (2008) Inductive Reasoning: A Training Approach, Review of Educational Research, Volume 78, Issue 1, https://doi.org/10.3102/0034654307313402;
 
-* Lim, J., Reiser, R.A. & Olina, Z. (2009); The effects of part-task and whole-task instructional approaches on acquisition and transfer of a complex cognitive skill. Education Tech Research Dev 57, 61–77; https://doi.org/10.1007/s11423-007-9085-y;
+** Lim, J., Reiser, R.A. & Olina, Z. (2009); The effects of part-task and whole-task instructional approaches on acquisition and transfer of a complex cognitive skill. Education Tech Research Dev 57, 61–77; https://doi.org/10.1007/s11423-007-9085-y;
 
 * Mayer, Richard (editor)(2005); The Cambridge Handbook of Multimedia Learning, Cambridge University Press; ISBN: 0-521-83873-8;
 
-* Merrill, M.D. (2002) First principles of instruction. ETR&D 50, 43–59. https://doi.org/10.1007/BF02505024
+** Merrill, M.D. (2002) First principles of instruction. ETR&D 50, 43–59. https://doi.org/10.1007/BF02505024
 
-** Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
+* Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
 
 * Plass, Jan; Moreno, Roxana; Brünken, Roland (editors) (2010), Cognitive Load Theory, ISBN: 978-0-521-67758-5, Cambridge university Press;
 
-* Prince, M.; Felder, R. (2006). Inductive Teaching and Learning Methods: Definitions, Comparisons, and Research Bases. Journal of Engineering Education, 95. https://doi.org/10.1002/j.2168-9830.2006.tb00884.x.
+** Prince, M.; Felder, R. (2006). Inductive Teaching and Learning Methods: Definitions, Comparisons, and Research Bases. Journal of Engineering Education, 95. https://doi.org/10.1002/j.2168-9830.2006.tb00884.x.
  
-* Prince, M.; & Felder, R. (2007); The Many Faces of Inductive Teaching and Learning. The journal of college science teaching, https://www.pfw.edu/offices/celt/pdfs/Inductive(JCST).pdf;
+** Prince, M.; & Felder, R. (2007); The Many Faces of Inductive Teaching and Learning. The journal of college science teaching, https://www.pfw.edu/offices/celt/pdfs/Inductive(JCST).pdf;
 
-* ?????? Reiser, R.A. A history of instructional design and technology: Part I: A history of instructional media. ETR&D 49, 53–64 (2001). https://doi.org/10.1007/BF02504506
+** ?????? Reiser, R.A. A history of instructional design and technology: Part I: A history of instructional media. ETR&D 49, 53–64 (2001). https://doi.org/10.1007/BF02504506
 
 * Rice, William (2006); Moodle, E-Learning Course Development, Packt Publishing, ISBN: 1-904811-29-9;
 
-* Sarfo, F.K., Elen, J. (2007); Developing technical expertise in secondary technical schools: The effect of 4C/ID learning environments. Learning Environ Res 10, 207–221. https://doi.org/10.1007/s10984-007-9031-2
+** Sarfo, F.K., Elen, J. (2007); Developing technical expertise in secondary technical schools: The effect of 4C/ID learning environments. Learning Environ Res 10, 207–221. https://doi.org/10.1007/s10984-007-9031-2
 
 * Sweller, John; van Merrienboer, Jeroen; Paas, Fred (1998); F.G.W.C. Cognitive Architecture and Instructional Design. Educational Psychology Review 10, 251–296. https://doi.org/10.1023/A:1022193728205
 
-* Sweller, J.; van Van Merriënboer, Jeroen; Paas, Fred (2019); Cognitive Architecture and Instructional Design: 20 Years Later. Educ Psychol Rev 31, 261–292. https://doi.org/10.1007/s10648-019-09465-5
+** Sweller, J.; van Van Merriënboer, Jeroen; Paas, Fred (2019); Cognitive Architecture and Instructional Design: 20 Years Later. Educ Psychol Rev 31, 261–292. https://doi.org/10.1007/s10648-019-09465-5
 
-* Sweller, J. (2023); Education needs to embrace the science of learning, Knowledge Society, https://www.youtube.com/watch?v=575i45cJLvM
-
+** Sweller, J. (2023); Education needs to embrace the science of learning, Knowledge Society, https://www.youtube.com/watch?v=575i45cJLvM
 
 * Silvester, Robert (1995) "A celebration of the neurons", ASCD, Alexandria, Virginia;
 
-* Van Merriënboer, Jeroen J. G.; Clark, Richard; Croock, Marcel (2002) Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993; https://www.researchgate.net/publication/225798787_Blueprints_for_complex_learning_The_4CID-model;
+** Van Merriënboer, Jeroen J. G.; Clark, Richard; Croock, Marcel (2002) Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993; https://www.researchgate.net/publication/225798787_Blueprints_for_complex_learning_The_4CID-model;
 
 * Van Merriënboer, Jeroen J. G.; Kirschner, Paul A. (2007) Ten Steps to Complex Learning, Routledge; 1st edition, SBN-10:0805857931; ISBN-13:978-0805857931;
 
