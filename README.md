@@ -52,9 +52,9 @@ The hypothesis posits that this transition will have an overall positive impact 
 
 # THEORY
 
-This study utilizes **Van Merriënboer's 4C/ID instructional design** as a reliable framework that provides a clear procedure for designing and planning a blended learning (bLearning) environment, with all components explicitly defined and integrated into a cohesive structure. This framework serves as a guide throughout all project phases, even during the concrete implementation of content within the Learning Management System (LMS).
+As point out by Sweller, van Merriënboer and Paas, "Cognitive load theory emphasised that all novel information first is processed by a capacity and duration limited working memory and then stored in an unlimited long-term memory for later use. Once information is stored in long-term memory, the capacity and duration limits of working memory disappear transforming our ability to function".
 
-The 4C/ID model is grounded in several robust educational theories, effectively bridging Cognitive Architecture and Instructional Design. It integrates principles from:
+This study utilizes **Van Merriënboer's 4C/ID instructional design** which is grounded in several robust educational theories, effectively bridging Cognitive Architecture and Instructional Design. It integrates principles from:
 
     * Neuroscience to Brain-Based Learning (BBL) (Jensen, 2005; Sylvester, 1995);
 
@@ -68,7 +68,7 @@ The 4C/ID model is grounded in several robust educational theories, effectively 
 
     * Inductive Methodologies as advocated by Felder (Felder, 1993).
 
-The 4C/ID framework guides the instructional designer from theoretical principles to concrete LMS and classroom activities without losing this connection. It helps build and develop activities that incrementally lead students to integrate new information into existing knowledge structures (schemas) in long-term memory. It minimizes working memory load through techniques like fading guidance, worked examples, and completion problems, all while reducing the split-attention effect.
+As a reliable framework, the 4C/ID model provides a clear procedure for designing and planning a blended learning (bLearning) environment. Its components are explicitly defined and integrated into a cohesive structure, offering a robust theoretical foundation for instructional designers. This guides the substantial work of developing concrete LMS and classroom activities without losing the connection to cognitive and pedagogical knowledge. Ultimately, the model helps to build and develop activities that incrementally guide students in integrating new information into existing knowledge structures (schemas) within their long-term memory. It achieves this by minimizing working memory load through techniques like fading guidance, worked examples, and completion problems, all of which reduce the split-attention effect.
 
 [continue reading...](https://github.com/fqantonio/GoingInductive/blob/main/THEORY.md)
 
