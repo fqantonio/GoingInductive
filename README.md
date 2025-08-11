@@ -281,7 +281,7 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Jensen, Eric (2005), Teaching with the Brain in Mind, ASCD, ISBN-10: 146600302; ISBN-13:978-1416600305;
 
-** Kalyuga, S. (2011). Cognitive Load Theory: How Many Types of Load Does It Really Need?. Educational Psychology Review, 23, 1-19. https://doi.org/10.1007/S10648-010-9150-7;
+* Kalyuga, S. (2011). Cognitive Load Theory: How Many Types of Load Does It Really Need?. Educational Psychology Review, 23, 1-19. https://doi.org/10.1007/S10648-010-9150-7;
 
 ** Kaur, S., & Niwas., D. (2016). EFFECTIVENESS OF DEDUCTIVE AND INDUCTIVE METHODS IN TEACHING ENGLISH GRAMMAR AT ELEMENTARY LEVEL.. International Journal of Approximate Reasoning, 4, 1241-1247. https://doi.org/10.21474/IJAR01/1027.
 
@@ -295,7 +295,7 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Mayer, Richard (editor)(2005); The Cambridge Handbook of Multimedia Learning, Cambridge University Press; ISBN: 0-521-83873-8;
 
-** Merrill, M.D. (2002) First principles of instruction. ETR&D 50, 43–59. https://doi.org/10.1007/BF02505024
+* Merrill, M.D. (2002) First principles of instruction. ETR&D 50, 43–59. https://doi.org/10.1007/BF02505024
 
 * Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
 
@@ -319,7 +319,7 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Silvester, Robert (1995) "A celebration of the neurons", ASCD, Alexandria, Virginia;
 
-** Van Merriënboer, Jeroen J. G.; Clark, Richard; Croock, Marcel (2002) Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993; https://www.researchgate.net/publication/225798787_Blueprints_for_complex_learning_The_4CID-model;
+* Van Merriënboer, Jeroen J. G.; Clark, Richard; Croock, Marcel (2002) Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993; https://www.researchgate.net/publication/225798787_Blueprints_for_complex_learning_The_4CID-model;
 
 * Van Merriënboer, Jeroen J. G.; Kirschner, Paul A. (2007) Ten Steps to Complex Learning, Routledge; 1st edition, SBN-10:0805857931; ISBN-13:978-0805857931;
 
