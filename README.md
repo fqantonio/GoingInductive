@@ -315,7 +315,7 @@ This text was originally written in English by the author, with revisions by Gem
 
 ** Sweller, J.; van Van Merriënboer, Jeroen; Paas, Fred (2019); Cognitive Architecture and Instructional Design: 20 Years Later. Educ Psychol Rev 31, 261–292. https://doi.org/10.1007/s10648-019-09465-5
 
-** Sweller, J. (2023); Education needs to embrace the science of learning, Knowledge Society, https://www.youtube.com/watch?v=575i45cJLvM
+* Sweller, J. (2023); Education needs to embrace the science of learning, Knowledge Society, https://www.youtube.com/watch?v=575i45cJLvM
 
 * Silvester, Robert (1995) "A celebration of the neurons", ASCD, Alexandria, Virginia;
 
