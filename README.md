@@ -269,7 +269,7 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Merrill, M.D. (2002) First principles of instruction. ETR&D 50, 43–59. https://doi.org/10.1007/BF02505024
 
-* Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
+** Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
 
 * Plass, Jan; Moreno, Roxana; Brünken, Roland (editors) (2010), Cognitive Load Theory, ISBN: 978-0-521-67758-5, Cambridge university Press;
 
