@@ -40,4 +40,4 @@ For information to be valuable, it must be stored in long-term memory, which is 
 
 Understanding the cognitive architecture—how humans process information and how the mind works—is essential for designing effective learning activities.
 
-[^THEORY-4] In cognitive load theory, "secondary learning" refers to the acquisition of knowledge and skills that are not naturally acquired through evolution and require explicit instruction. This contrasts with "primary learning," which involves skills like language acquisition, learned effortlessly and without formal teaching (Sweeler, 2023).
+[^THEORY-4]: In cognitive load theory, "secondary learning" refers to the acquisition of knowledge and skills that are not naturally acquired through evolution and require explicit instruction. This contrasts with "primary learning," which involves skills like language acquisition, learned effortlessly and without formal teaching (Sweeler, 2023).
