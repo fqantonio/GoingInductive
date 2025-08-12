@@ -51,7 +51,7 @@ The hypothesis posits that this transition will have an overall positive impact 
 
 # THEORY
 
-As point out by Sweller, van Merriënboer and Paas, "Cognitive load theory emphasised that all novel information first is processed by a capacity and duration limited working memory and then stored in an unlimited long-term memory for later use. Once information is stored in long-term memory, the capacity and duration limits of working memory disappear transforming our ability to function".
+As point out by Sweller, van Merriënboer and Paas, "Cognitive load theory emphasised that all novel information first is processed by a capacity and duration limited working memory and then stored in an unlimited long-term memory for later use. Once information is stored in long-term memory, the capacity and duration limits of working memory disappear transforming our ability to function". The same for the CLT and DI...
 
 This study utilizes **Van Merriënboer's 4C/ID instructional design** which is grounded in an inductive strategy and in several robust educational theories, effectively bridging Cognitive Architecture and Instructional Design. It integrates principles from:
 
