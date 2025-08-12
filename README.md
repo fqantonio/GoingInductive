@@ -73,7 +73,9 @@ As a reliable framework, the 4C/ID model provides a clear procedure for designin
 
 # STATE OF THE ART
 
-Kowledge
+Kowledge inductive
+
+https://engr.ncsu.edu/wp-content/uploads/drive/1-MORshfST1zjmfEqk33HF1PCYP-HbW3L/2006-Inductive%20learning%20paper%20(JEE).pdf
 
 gaps in the knowledge are, no research on strategy changing!? filling  a gap
 
@@ -82,11 +84,33 @@ The structures and functions of human cognitive architecture have been used to d
 
 In summary, the 4C/ID model itself is being scrutinized in the last 20 or more years. Not only does the theory's consistency with evidence, strategic application, falsifiability, and ability to generate new research need to be examined, but the model must also be made more efficient and user-friendly for real-world application in education.
 
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11908033/
+
+https://bcltraining.com/learning-library/four-component-instructional-design-model-4c-id/
+
+https://files.eric.ed.gov/fulltext/EJ1165223.pdf
+
 about direct instruction!?!?
 
-developments
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8476697/
+
+https://www.nifdi.org/research/recent-research/technical-reports/1278-2011-1-research-syntheses-of-direct-instruction-outcomes-a-tertiary-review/file.html
+
+https://www.jstor.org/stable/45277261
+
+https://www.nifdi.org/research/reviews-of-di/literature-reviews.html
+
+https://journals.sagepub.com/doi/10.1177/001440298605300102
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8476697/
+
+https://www.researchgate.net/publication/340755616_Teacher-Directed_Versus_Inquiry-Based_Science_Instruction_Investigating_Links_to_Adolescent_Students%27_Science_Dispositions_Across_66_Countries
+
+file:///Users/antonio/Downloads/pkpadmin,+37-1.pdf
 
 Costa, J.M., Miranda, G.L. & Melo, M. Four-component instructional design (4C/ID) model: a meta-analysis on use and effect. Learning Environ Res 25, 445–463 (2022). https://doi.org/10.1007/s10984-021-09373-y
+
+developments
 
 https://link.springer.com/article/10.1007/s10984-021-09373-y#citeas
 
