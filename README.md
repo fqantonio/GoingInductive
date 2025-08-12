@@ -18,11 +18,10 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 # TO DO LIST
 
 - [ ] State of the art: complete, reorganize and verify.
-- [ ] final reading: revisit goals , hyphotesis, questions, relation with the new at this work: discussing and conclude it: the goals are in the conclusion?
 - [ ] showing the cmaps in the cloud or as images?
-- [ ] data cloud
+- [ ] data cloud acess
 - [ ] code used in RSTUDIO
-- [ ] EDIT EDIT EDIT
+- [ ] EDIT EDIT EDIT: final reading: revisit goals , hyphotesis, questions, relation with the new at this work: discussing and conclude it: the goals are in the conclusion?
 
 # Going Inductive: what is the impact on students learning?
 Author: António Carlos Gonçalves, Teacher at the Portuguese Education Ministery, https://www.linkedin.com/in/fqantonio/
