@@ -6,7 +6,11 @@ Figure 0: 4C/ID theoretical design structure: online here: https://cmapscloud.ih
 
 Figure 0 illustrates the general 4C/ID structure that was replicated for each new task class (TC), alongside the educational content production and development. During this process, similar design maps were created with the critical 4C/ID concepts in mind in order to strengthen the corresponding educational mental model to be developed by the student. The structure in figure 0 is the result of the iteraction with the practice feedback (see examples of concrete learning designs in the Procedure section).
 
-Each TC embodies the same learning content and level of dificulty within the whole learning goals that integrates real world problems. This TC run horizontally from easy to dificult and from concrete to abstract. Each TC is motivated by a educational goal or a skill to be mastered. Since it was also used a gaming strategy, same reward assessment level should be assigned to each TC. Connected to this is the necessity to describe performance goals as concrete as possible. Optional is the use of a portfolio to promote a reflective moment about what was learned and a short presentation to the peer group. 
+The design was divided into individual TC, each designed to help learners master a specific skill or educational goal. These TCs integrate real-world problems and are organized to progress from easy to difficult and from concrete to abstract. 
+
+Because a gaming strategy was integrated into the design as a minor component, a consistent reward level should be assigned to each TC. This requires that performance goals be defined as concretely as possible.
+
+Additionally, learners have the optional opportunity to create a portfolio and give a short presentation to their peers, to encourage reflection and social interaction on what they have learned.
 
 Within each Task Class (TC), the Learning Tasks (LTs) should progress with increasing complexity and high variability. For each TC, Supportive Information (SI) should always be available to the student, based on Reigeluth's elaboration theory (the "zoom lens metaphor") and Schank's learning-by-doing paradigm (Plass et al., 2010, p. 126).
 
