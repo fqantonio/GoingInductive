@@ -259,14 +259,23 @@ There was a big difference regards to gender, female getting more benefits of 4C
 # Acronyms
 
 DI - Direct Instruction
+
 4C/ID - Four Components Instructional Design
+
 LT - Learning Tasks
+
 PTP - Part-task-Practice
+
 JIT - Just in Time
+
 SI - Suppotive Information
+
 TC - Task Class
+
 bLearning - blended learning
+
 EDA - exploratory data analysis
+
 LMS - Learning Management System
 
 # Funding
