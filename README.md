@@ -286,7 +286,7 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Cole, Jason (2005), Using Moodle, O'relly Community Press, ISBN 0-596-00863-5;
 
-* Costa, J., Miranda, G., & Melo, M. (2021). Four-component instructional design (4C/ID) model: a meta-analysis on use and effect. Learning Environments Research, 25, 445 - 463
+* Costa, J., Miranda, G., & Melo, M. (2021). Four-component instructional design (4C/ID) model: a meta-analysis on use and effect. Learning Environments Research, 25, 445 - 463, https://link.springer.com/article/10.1007/s10984-021-09373-y#citeas.
 
 * Coughlin, Cristy (2011); Research Syntheses of Direct Instruction Outcomes, published in Lloyd, J., Carnine D., Slocum, T., Watkins, C. (Eds.) Does Direct Instruction Deserve Status as an Evidence-Based Practice? ADI Press.
 
