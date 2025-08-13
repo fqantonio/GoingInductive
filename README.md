@@ -18,8 +18,6 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 # TO DO LIST
 
 - [ ] showing the cmaps in the cloud or as images?
-- [ ] data cloud acess
-- [ ] code used in RSTUDIO
 - [ ] EDIT EDIT EDIT: final reading: revisit goals , hyphotesis, questions, relation with the new at this work: discussion and conclude it: the goals are in the conclusion?
 
 # Going Inductive: what is the impact on students learning?
