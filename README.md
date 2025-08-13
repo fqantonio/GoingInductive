@@ -346,4 +346,6 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Van Merriënboer, Jeroen J. G.; Kirschner, Paul A. (2007) Ten Steps to Complex Learning, Routledge; 1st edition, SBN-10:0805857931; ISBN-13:978-0805857931;
 
+*  van Merriënboer, J.J.G., Kirschner, P.A., & Frèrejean, J. (2024). Ten Steps to Complex Learning: A Systematic Approach to Four-Component Instructional Design (4th ed.). Routledge. https://doi.org/10.4324/9781003322481
+
 # NOTES
