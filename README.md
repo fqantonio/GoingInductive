@@ -17,6 +17,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # TO DO LIST
 
+- [ ] revisit references
 - [ ] EDIT EDIT EDIT: final reading: revisit goals , hyphotesis, questions, relation with the new at this work: discussion and conclude it: the goals are in the conclusion?
 
 # Going Inductive: what is the impact on students learning?
@@ -204,6 +205,17 @@ The nost importante results more important can be resumed like this:
 
 # CONCLUSION
 
+======= Is this in the conclusion?
+
+The research examines the impact on four key learning outcomes: Learning Transfer, Lab Practice, Social Skills, and Academic Achievement. To guide this investigation, the following research questions were addressed:
+
+    What is the impact on student learning outcomes?
+    Which student groups benefit most?
+    What are the advantages and disadvantages of this methodological shift?
+    What are the implications for stakeholders involved in the educational process?
+
+=======
+
 > NOTE 1: **guidelines**: what impact for the students learning outcomes (four)? Who benefits more? What are the pros and cons about this methodological decision? What are the implications for the stakeholders? Is it worth it? Do students benefit? What can be done better? What conclusions can be drawned?
 
 > NOTE 2: the conclusions presented here focus on the "mean" results between the less favorable results of figures 2 and 3 and the more favorable of figures 4 and 5.
@@ -229,17 +241,6 @@ Implementing a bLearning system is a overwhelming task for a teacher alone becau
 Another thing that has to be acknowledge by the **stakeholders** is the fact that this change is overwhelming for one teacher alone: there is a crucial need to a commited, motivated and goal-oriented team work. However, the motivation cannot came from a external decision but must be driven by a inner group necessity. 
 
 Furthermore, of course **one methodology** is not a panacea for all of the learning process, but having an educational theory is very important to develop and adapt to your educational context. There is also a need for stimulating research and spread the knowledge about the specific impacts of each strategy.
-
-======= Is this in the conclusion?
-
-The research examines the impact on four key learning outcomes: Learning Transfer, Lab Practice, Social Skills, and Academic Achievement. To guide this investigation, the following research questions were addressed:
-
-    What is the impact on student learning outcomes?
-    Which student groups benefit most?
-    What are the advantages and disadvantages of this methodological shift?
-    What are the implications for stakeholders involved in the educational process?
-
-=======
 
 
 # DISCUSSION
