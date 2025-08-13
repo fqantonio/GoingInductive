@@ -17,7 +17,6 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # TO DO LIST
 
-- [ ] State of the art: complete, reorganize and verify.
 - [ ] showing the cmaps in the cloud or as images?
 - [ ] data cloud acess
 - [ ] code used in RSTUDIO
