@@ -13,13 +13,10 @@ This is a **`Going Inductive`** learning educational strategy changing paper DRA
 
 [^readme-1]: This work, as well as the data, is also presented at the blog "<https://4cidchange.edublogs.org/>" and in the github repository <https://github.com/fqantonio/GoingInductive>.
 
-This **knowledge base source** contains the results, conclusions, procedures, exploratory data analysis (EDA), data (and raw data), statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
+This **knowledge base source** contains the results, conclusions, procedures, exploratory data analysis (EDA), data, statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
 
 # TO DO LIST
 
-- [ ] showing the cmaps in the cloud or as images?
-- [ ] Acronims???
-- [ ] Glossary???
 - [ ] EDIT EDIT EDIT: final reading: revisit goals , hyphotesis, questions, relation with the new at this work: discussion and conclude it: the goals are in the conclusion?
 
 # Going Inductive: what is the impact on students learning?
@@ -29,15 +26,15 @@ Author: António Carlos Gonçalves, Teacher at the Portuguese Education Minister
 
 This study investigates the impact of shifting from deductive to inductive teaching methods within a blended learning (bLearning) environment for young science and technology students. While research on specific educational methodologies is extensive, this analysis focuses on a strategic change.
 
-The findings suggest that, within the constraints of our research, a 4C/ID bLearning approach doesn't consistently outperform Direct Instruction across all outcomes. While we observed a significant positive impact on Lab Practice skills, effects on school success and learning transfer were less pronounced. Interestingly, we found a negative impact on social skills. These differential effects were observed across the student sample, with female students, ninth-graders, and those better adapted to school environments demonstrating greater benefits.
+The findings suggest that, within the constraints of our research, a 4C/ID bLearning approach doesn't consistently outperform Direct Instruction (DI) across all outcomes. While we observed a significant positive impact on Lab Practice skills, effects on school success and learning transfer were less pronounced. Interestingly, we found a negative impact on social skills. These differential effects were observed across the student sample, with female students, ninth-graders, and those better adapted to school environments demonstrating greater benefits.
 
 This research highlights the need for careful consideration when implementing such a pedagogical shift. It discusses the specific implications for teachers, policymakers, and school administrators, acknowledging the potential challenges and benefits associated with this change. The analysis is based on 12 years of teacher data (2003-2017), providing insights into the impact on learning transfer, lab practice, social skills, and academic results.
 
-> **Keywords** Inductive learning strategy; instructional Design; 4C/ID; Direct Instruction; Learning Flow; Learning Transfer, Lab Practice, Social Skills and Academic Results; Cognitive Load Theory; MultiIntelligence Theory; Brain Based Learning; bLearning, Statistical Non-parametric Inference.
+> **Keywords** Inductive learning strategy; instructional Design; 4C/ID; Direct Instruction; Learning Flow; Learning Transfer, Lab Practice, Social Skills, Academic Results; Cognitive Load Theory; MultiIntelligence Theory; Brain Based Learning; bLearning, Statistical Non-parametric Inference.
 
 # GOALS, RESEARCH QUESTIONS and HYPOTHESIS
 
-The main goal of this study aims, specifically, to investigate the impact of transitioning from Direct Instruction (Merrill, 2007) to Van Merriënboer's Inductive Four Component Instructional Design (4C/ID) model (Van Merriënboer, Kirschner, 2007) within a bLearning environment using Moodle as a Learning Management System (LMS) (Cole, 2005; Rice, 2006).
+The main goal of this study aims, specifically, to investigate the impact of transitioning from Direct Instruction (DI) (Merrill, 2007) to Van Merriënboer's Inductive Four Component Instructional Design (4C/ID) model (Van Merriënboer, Kirschner, 2007) within a bLearning environment using Moodle as a Learning Management System (LMS) (Cole, 2005; Rice, 2006).
 
 The research examines the impact on four key learning outcomes: Learning Transfer, Lab Practice, Social Skills, and Academic Achievement. To guide this investigation, the following research questions were addressed:
 
@@ -50,29 +47,36 @@ The hypothesis posits that this transition will have an overall positive impact 
 
 # THEORY
 
-As point out by Sweller, van Merriënboer and Paas, "Cognitive load theory emphasised that all novel information first is processed by a capacity and duration limited working memory and then stored in an unlimited long-term memory for later use. Once information is stored in long-term memory, the capacity and duration limits of working memory disappear transforming our ability to function". The same for the CLT and DI...
+As point out by Sweller, van Merriënboer and Paas, "Cognitive load theory emphasised that all novel information first is processed by a capacity and duration limited working memory and then stored in an unlimited long-term memory for later use. Once information is stored in long-term memory, the capacity and duration limits of working memory disappear transforming our ability to function".
 
-This study utilizes **Van Merriënboer's 4C/ID instructional design** which is grounded in an inductive strategy and in several robust educational theories, effectively bridging Cognitive Architecture and Instructional Design. It integrates principles from:
+This study utilizes **Van Merriënboer's 4C/ID instructional design** which is grounded in an inductive strategy, CLT and in several robust educational theories, effectively bridging together Cognitive Architecture and Instructional Design. It integrates principles from:
 
-    * Neuroscience to Brain-Based Learning (BBL) (Jensen, 2005; Sylvester, 1995);
+    * Neuroscience to Brain-Based Learning (Jensen, 2005; Sylvester, 1995);
 
     * Cognitive Load Theory (CLT) (Plass, Moreno, Brünken, 2010);
 
-    * Multiple Intelligences Theory (MIT) (Gardner, 2011);
+    * Multiple Intelligences Theory (Gardner, 2011);
 
-    * Multimedia Learning Principles (MLP) (Mayer, 2005);
+    * Multimedia Learning Principles (Mayer, 2005);
 
     * Evolutionary Educational Psychology (Sweller, 1998);
 
     * Inductive Methodologies as advocated by Felder (Felder, 1993).
 
-As a reliable framework, the 4C/ID model provides a clear procedure for designing and planning a blended learning (bLearning) environment. Its components are explicitly defined and integrated into a cohesive structure, offering a robust theoretical foundation for instructional designers. This guides the substantial work of developing concrete LMS and classroom activities without losing the connection to cognitive and pedagogical knowledge. Ultimately, the model helps to build and develop activities that incrementally guide students in integrating new information into existing knowledge structures (schemas) within their long-term memory. It achieves this by minimizing working memory load through techniques like fading guidance, worked examples, and completion problems, all of which reduce the split-attention effect.
+As a reliable framework, the 4C/ID model provides a clear procedure for designing and planning a blended learning (bLearning) environment. Its components are explicitly defined and integrated into a cohesive structure, offering a robust theoretical foundation for instructional designers. This guides the substantial work of developing concrete Learning Management System (LMS) and classroom activities without losing the connection to cognitive and pedagogical knowledge. Ultimately, the model helps to build and develop activities that incrementally guide students in integrating new information into existing knowledge structures (schemas) within their long-term memory. It achieves this by minimizing working memory load through techniques like fading guidance, worked examples, and completion problems, all of which reduce the split-attention effect.
 
 [continue reading...](https://github.com/fqantonio/GoingInductive/blob/main/THEORY.md)
 
 # STATE OF THE ART
 
-This work offers a strategic perspective that fills a gap in the existing research. While much of the literature focuses on specific effects—which has certainly strengthened the model—it often overlooks the broader practical application and the real-world constraints that teachers face in their day-to-day professional lives.
+This work offers a strategic perspective that **fills a gap** in the existing research. While much of the literature focuses on specific effects—which has certainly strengthened the model—it often overlooks the broader practical application and the real-world constraints that teachers face in their day-to-day professional lives. This work **motivation** lies on the need to understand the impact of the professional strategic change decision within the educational work developed (flow charts, [^readme-2]): 
+
+> Was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
+
+[^readme-2]: cmap tools by ihmc <https://cmap.ihmc.us/>
+
+Most of the time the professional, specific, **day-to-day teacher work** data (see figure 2) is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is little or no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are devised and worse, it's normal not to share it.
+
 
 The 4C/ID model itself has being scrutinized in the last 40 years (van Merriënboer, Kirschner, Frèrejean, 2024), as well as the CLT theory's underlying, showing consistency, strategic application, falsifiability, and ability to generate new research. The same to Direct instruction, a much more older and wider model, applying around the world extensively.
 
@@ -95,15 +99,7 @@ The 4C/ID model advocates for a progressive approach, moving from simple to comp
 
 This work is based on real day-to-day teacher assessment data, for junior and junior high students of two different schools, from different regions and time periods, for the chemistry and physics subjects of the Portuguese curriculum.
 
-The data was gathered over 12 years, in the period 2003 to 2017, and includes students **Learning Transfer**, **Lab Practice**, **Classroom Behavior** (Social Skills), and **Academic Results** using four different random variables: TEST, LAB, BEHAV and CLASS.
-
-The **motivation** lies on the need to understand the impact of the professional strategic decision within the educational work developed (flow charts, [^readme-2]): 
-
-> Was it worth it? Did students benefit? What can be done better? What conclusions can be drawned?
-
-[^readme-2]: cmap tools by ihmc <https://cmap.ihmc.us/>
-
-Most of the time the professional, specific, **day-to-day teacher work** data (see figure 2) is rarely or never investigated, at least, in the Portuguese educational environment. For the teachers, there is little or no time to look back and work through the data results, the qualitative remarks, or through the statistics. And, as a consequence, no robust conclusions are devised and worse, it's normal not to share it.
+The data was gathered over 12 years, in the period 2003 to 2017, and includes students **Learning Transfer**, **Lab Practice**, **Classroom Behavior** (Social Skills), and **Academic Results** using four different random variables: TEST, LAB, BEHAV and CLASS. Data as well as R code and cmaptools planning examples are available online at the github https://github.com/fqantonio/GoingInductive.
 
 ## VARIABLES DESCRIPTION
 
@@ -260,14 +256,18 @@ There was a big difference regards to gender, female getting more benefits of 4C
 
 ???In my opinion, the ony struggle with this model is to make it more user friendly, for instance, to add a more strategic approach in order to make it moer user friendly. The elarning curve could be very steep..
 
-# Acronyms ???
+# Acronyms
 
 DI - Direct Instruction
 4C/ID - Four Components Instructional Design
-PTP
-JIT
-SI
-TC
+LT - Learning Tasks
+PTP - Part-task-Practice
+JIT - Just in Time
+SI - Suppotive Information
+TC - Task Class
+bLearning - blended learning
+EDA - exploratory data analysis
+LMS - Learning Management System
 
 # Funding
 The author received no funding from private or national entities for this work
