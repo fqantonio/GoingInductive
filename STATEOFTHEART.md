@@ -4,8 +4,5 @@ Direct Instruction (DI) model used in this work (Merrill, 2007), is a 200 years 
 
 The 4C/ID model has been increasingly used in face-to-face and online learning environments. In a wide-ranging meta-analysis, the authors concluded that this model should be promoted in both face-to-face and online learning environments, claiming that it has a high impact on performance, irrespective of the academic area, the study's design, or the specific outcome measured. The analysis further revealed that the higher-education level is particularly suitable for the application of the 4C/ID model (Costa, Miranda, Melo, 2022). The same authors showed results that revealed significant differences in learning transfer and a more marked decrease in the perceived mental effort by the students in the learning transfer tests (Melo, 2018).
 
-https://scholar.google.com/scholar_lookup?&title=Cognitive%20architecture%20and%20instructional%20design&journal=Educational%20Psychology%20Review&volume=10&pages=251-296&publication_year=1998&author=Sweller%2CJ&author=Merri%C3%ABnboer%2CJJG&author=Paas%2CF
-
-https://scholar.google.com/scholar_lookup?&title=Ten%20steps%20to%20complex%20learning%3A%20a%20systematic%20approach%20to%20four-component%20instructional%20design&publication_year=2018&author=Merri%C3%ABnboer%2CJJG&author=Kirschner%2CPA
 
 https://noic.com.br/wp-content/uploads/2022/02/Worked_Examples.pdf
