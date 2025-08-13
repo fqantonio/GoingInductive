@@ -59,4 +59,5 @@ Understanding the cognitive architecture, that is, how humans process informatio
 
 [^THEORY-4]: In cognitive load theory, "secondary learning" refers to the acquisition of knowledge and skills that are not naturally acquired through evolution and require explicit instruction. This contrasts with "primary learning," which involves skills like language acquisition, learned effortlessly and without formal teaching (Sweeler, 2023).
 
-<iframe src="https://cmapscloud.ihmc.us/viewer/cmap/21344Q0PH-T9XCH3-3KQFFY" width="1477" height="915" frameborder="0" ></iframe>
+I use cmaptools to get the all picture in more imagetic way. Starting here,
+https://cmapscloud.ihmc.us:443/rid=2130Z3YYB-H8699Q-3JQLQZ, where all the major components are present with links that get you to more specific theoretical structure.
