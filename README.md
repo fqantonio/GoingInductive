@@ -103,7 +103,9 @@ The 4C/ID model advocates for a progressive approach, moving from simple to comp
 
 This work is based on real day-to-day teacher assessment data, for junior and junior high students of two different schools, from different regions and time periods, for the chemistry and physics subjects of the Portuguese curriculum.
 
-The data was gathered over 12 years, in the period 2003 to 2017, with a break between 2009 and 2012, in order to study and prepare the aplication of the 4C/ID methodology. Data includes students **Learning Transfer**, **Lab Practice**, **Classroom Behavior** (Social Skills), and **Academic Results** using four different random variables: TEST, LAB, BEHAV and CLASS. Data as well as R code and cmaptools planning examples are available online at the github https://github.com/fqantonio/GoingInductive.
+The data was gathered over 12 years, in the period 2003 to 2017, with a break between 2009 and 2012, in order to study bLearning [^readme-5] and prepare the aplication of the 4C/ID methodology. Data includes students **Learning Transfer**, **Lab Practice**, **Classroom Behavior** (Social Skills), and **Academic Results** using four different random variables: TEST, LAB, BEHAV and CLASS. Data as well as R code and cmaptools planning examples are available online at the github https://github.com/fqantonio/GoingInductive.
+
+[^readme-5]:https://www.edx.org/learn/education/edx-blendedx-blended-learning-with-edx
 
 ## VARIABLES DESCRIPTION
 
