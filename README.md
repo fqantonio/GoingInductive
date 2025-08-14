@@ -97,7 +97,7 @@ The model emphasizes the crucial link between its underlying theories and its co
 
 The 4C/ID model advocates for a progressive approach, moving from simple to complex task classes within each LT, with gradually diminishing levels of support (scaffolding). Sufficient SI is provided for general learning tasks, while JIT information guides students toward automaticity in achieving learning goals. PTP activities are incorporated to train constituent skills to a high level of automaticity, crucial for overcoming working memory limitations in complex learning scenarios (Kalyuga, Paas, et al., 2010).
 
-[continue reading...](https://github.com/fqantonio/GoingInductive/blob/main/PROCEDURE)
+[continue reading...](https://github.com/fqantonio/GoingInductive/blob/main/PROCEDURE.md)
 
 # CONTEXT and DATA
 
