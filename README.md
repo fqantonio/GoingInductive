@@ -18,6 +18,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 # TO DO LIST
 
 - [ ] revisit references
+- [ ] bLearning!?!?
 - [ ] EDIT EDIT EDIT: final reading: revisit goals , hyphotesis, research questions, discussion and conclusion
 
 # Going Inductive: what is the impact on students learning?
