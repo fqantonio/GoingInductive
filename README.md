@@ -338,11 +338,9 @@ This text was originally written in English by the author, with revisions by Gem
  
 * Prince, M.; & Felder, R. (2007); The Many Faces of Inductive Teaching and Learning. The journal of college science teaching, https://www.pfw.edu/offices/celt/pdfs/Inductive(JCST).pdf;
 
-** ?????? Reiser, R.A. A history of instructional design and technology: Part I: A history of instructional media. ETR&D 49, 53–64 (2001). https://doi.org/10.1007/BF02504506
-
 * Rice, William (2006); Moodle, E-Learning Course Development, Packt Publishing, ISBN: 1-904811-29-9;
 
-** Sarfo, F.K., Elen, J. (2007); Developing technical expertise in secondary technical schools: The effect of 4C/ID learning environments. Learning Environ Res 10, 207–221. https://doi.org/10.1007/s10984-007-9031-2
+* Sarfo, F.K., Elen, J. (2007); Developing technical expertise in secondary technical schools: The effect of 4C/ID learning environments. Learning Environ Res 10, 207–221. https://doi.org/10.1007/s10984-007-9031-2
 
 * Silvester, Robert (1995) "A celebration of the neurons", ASCD, Alexandria, Virginia;
 
