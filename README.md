@@ -314,7 +314,7 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Kirschner, Paul (2002) Cognitive load theory: implications of cognitive load theory on the design of learning, Learning and Instruction, Volume 12, Issue 1, February 2002, Pages 1-10, https://doi.org/10.1016/S0959-4752(01)00014-7;
 
-** Klauer, Karl Josef; Phye, Gary; (2008) Inductive Reasoning: A Training Approach, Review of Educational Research, Volume 78, Issue 1, https://doi.org/10.3102/0034654307313402;
+* Klauer, Karl Josef; Phye, Gary; (2008) Inductive Reasoning: A Training Approach, Review of Educational Research, Volume 78, Issue 1, https://doi.org/10.3102/0034654307313402;
 
 ** Lim, J., Reiser, R.A. & Olina, Z. (2009); The effects of part-task and whole-task instructional approaches on acquisition and transfer of a complex cognitive skill. Education Tech Research Dev 57, 61–77; https://doi.org/10.1007/s11423-007-9085-y;
 
