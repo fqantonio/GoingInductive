@@ -309,7 +309,7 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Kalyuga, S. (2011). Cognitive Load Theory: How Many Types of Load Does It Really Need?. Educational Psychology Review, 23, 1-19. https://doi.org/10.1007/S10648-010-9150-7;
 
-** Kaur, S., & Niwas., D. (2016). EFFECTIVENESS OF DEDUCTIVE AND INDUCTIVE METHODS IN TEACHING ENGLISH GRAMMAR AT ELEMENTARY LEVEL.. International Journal of Approximate Reasoning, 4, 1241-1247. https://doi.org/10.21474/IJAR01/1027.
+* Kaur, S., & Niwas., D. (2016). EFFECTIVENESS OF DEDUCTIVE AND INDUCTIVE METHODS IN TEACHING ENGLISH GRAMMAR AT ELEMENTARY LEVEL.. International Journal of Approximate Reasoning, 4, 1241-1247. https://doi.org/10.21474/IJAR01/1027.
 
 ** Khan, I., Iftikhar, M., Hussain, S., Rehman, A., Gul, N., Jadoon, W., & Nazir, B. (2020). Redesign and validation of a computer programming course using Inductive Teaching Method. PLoS ONE, 15. https://doi.org/10.1371/journal.pone.0233716.
 
