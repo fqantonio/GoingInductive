@@ -28,3 +28,4 @@ While down I outline a procedure for implementing the 4C/ID design, it's crucial
 20. The activities were available weekly, allowing the students to view not all at the same time but in shunks of material to complete;
 21. Allow students to give feedback about their experience and identify errors, like, links that don't work or take them to activities already passed or to much ahead.
 
+The MOODLE activities used where the LESSON, ASSIGNMENTS, H5P activities, embeded VIDEO in those activities, Quizzes (TRANSFER Tests), FEEDBACK and activities used but that didn't have much sucess, FORUM discussions, WIKI and GLOSSARY.
