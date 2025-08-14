@@ -17,7 +17,8 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # TO DO LIST
 
-- [ ] bLearning: faltamn as referencias
+- [ ] bLearning: missing referencies in the theory anf state of the art
+- [ ] missing examples of cmap tools plan implemetatiom LMS
 - [ ] EDIT EDIT EDIT: final reading: revisit goals , hyphotesis, research questions, discussion and conclusion
 
 # Going Inductive: what is the impact on students learning?
