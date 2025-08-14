@@ -27,3 +27,6 @@ This is a possible procedure for the implementation of the 4C/ID design but it i
 19. For each activity, it was given a time of completion in order to measure the effort needed for each task and addapt to the classes time table;
 20. The activities were available weekly, allowing the students to view not all at the same time but in shunks of material to complete;
 21. Allow students to give feedback about their experience and identify errors, like, links that don't work or take them to activities already passed or to ahead.
+
+bLearning?!?!?!
+The MOODLE LMS implementation was cumbersome in what it concerns with the content production and revision. Its not a work for a professional alone. It mus be a team work. Sometimes, revision was done by the students itself when using the environment online.
