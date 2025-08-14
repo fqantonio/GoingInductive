@@ -53,6 +53,7 @@ It is crucial to note, as highlighted by Van  Merriënboer, that his 4C/ID model
 | Problem-based; simulation-based; scenario-based; | books; hypertext; lectures; video; | help; pop-up menus;ballons; | computer practice interactive media; worked-examples; completion problems |
 
 The concept of secondary learning [^THEORY-4] from Evolutionary Psychology Theory is also crucial, as it highlights that teachers are a primary source of instruction and information for students. The acquisition of new knowledge, regardless of its source, requires processing in working memory. This system has extreme limitations in both capacity and time scale, which is where Cognitive Load Theory (CLT) becomes critical.
+
 For information to be valuable, it must be stored in long-term memory, which is vast compared to short-term memory. The act of storing information in long-term memory transforms us; therefore, learning is a transformative process. This transformation allows people to perform tasks that would be impossible without this stored knowledge, forming a broad schematic foundation. According to Sweller, learning is the transfer of information to long-term memory (Sweller, 2023).
 
 Understanding the cognitive architecture, that is, how humans process information and how the mind works—is essential for designing effective learning activities.
