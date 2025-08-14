@@ -33,7 +33,7 @@ The MOODLE activities used where the LESSON, ASSIGNMENTS, H5P activities, embede
 Here some examples of the cmaps implementation road map plans (in Portuguese):
 
 | Lesson content | cmap  | Observations |
-|===|===|===|
+|:----------------:|-----------------|-----|
 |   |   |   |
 
 
