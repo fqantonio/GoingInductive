@@ -310,7 +310,7 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Gardner, Howard (2011) Frames Of Mind: The Theory Of Multiple Intelligences, ISBN-13: 978-0465024339;
 
-** Garrison, D.R.; Anderson, Terry (2003); E-Learning in the 21st Century, A framework for research and practice, RoutledgePalmer, ISBN: 978-0-415-26346-7;
+* Garrison, D.R.; Anderson, Terry (2003); E-Learning in the 21st Century, A framework for research and practice, RoutledgePalmer, ISBN: 978-0-415-26346-7;
 
 * Jensen, Eric (2005), Teaching with the Brain in Mind, ASCD, ISBN-10: 146600302; ISBN-13:978-1416600305;
 
