@@ -35,6 +35,6 @@ Here some examples of the cmaps implementation road map plans:
 | Lesson content | cmap  | Observations |
 |:----------------:|-----------------|-----|
 | Atom representation, LO_PTP_Atom_Representation_V4   | https://cmapscloud.ihmc.us:443/rid=2132H5GMP-16JV928-3KF4YS | english  |
-| Astronomy, Terra no Espaço 7ºAno 2011_2011 | https://cmapscloud.ihmc.us:443/rid=2130YD7M5-1YSPYJ7-3JQBLP | One of the first cmaps made; in portuguese |
+| Astronomy, Terra no Espaço 7ºAno 2011_2011 | https://cmapscloud.ihmc.us:443/rid=2130YD7M5-1YSPYJ7-3JQBLP | One of the first cmaps made; in portuguese, 7th grade |
 
 
