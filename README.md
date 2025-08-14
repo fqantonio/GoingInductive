@@ -298,23 +298,25 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Cole, Jason (2005), Using Moodle, O'relly Community Press, ISBN 0-596-00863-5;
 
-* Costa, J., Miranda, G., & Melo, M. (2021). Four-component instructional design (4C/ID) model: a meta-analysis on use and effect. Learning Environments Research, 25, 445 - 463, https://link.springer.com/article/10.1007/s10984-021-09373-y#citeas.
+* Collopy, Rachel & Arnold, Jackie. (2009). To Blend or Not to Blend: Online and Blended Learning Environments in Undergraduate Teacher Education. Issues in Teacher Education. 18;
 
-* Coughlin, Cristy (2011); Research Syntheses of Direct Instruction Outcomes, published in Lloyd, J., Carnine D., Slocum, T., Watkins, C. (Eds.) Does Direct Instruction Deserve Status as an Evidence-Based Practice? ADI Press.
+* Costa, J., Miranda, G., & Melo, M. (2021). Four-component instructional design (4C/ID) model: a meta-analysis on use and effect. Learning Environments Research, 25, 445 - 463, https://link.springer.com/article/10.1007/s10984-021-09373-y#citeas;
+
+* Coughlin, Cristy (2011); Research Syntheses of Direct Instruction Outcomes, published in Lloyd, J., Carnine D., Slocum, T., Watkins, C. (Eds.) Does Direct Instruction Deserve Status as an Evidence-Based Practice? ADI Press;
 
 * Felder, Richard (1993); Reaching the Second Tier: Learning and Teaching Styles in College Science Education, Journal of College Science Teaching 23(5);
 
 * Gardner, Howard (2011) Frames Of Mind: The Theory Of Multiple Intelligences, ISBN-13: 978-0465024339;
 
-** Garrison, D.R.; Anderson, Terry (2003); E-Learning in the 21st Century, A framework for research and practice, RoutledgePalmer, ISBN: 978-0-415-26346-7.
+** Garrison, D.R.; Anderson, Terry (2003); E-Learning in the 21st Century, A framework for research and practice, RoutledgePalmer, ISBN: 978-0-415-26346-7;
 
 * Jensen, Eric (2005), Teaching with the Brain in Mind, ASCD, ISBN-10: 146600302; ISBN-13:978-1416600305;
 
 * Kalyuga, S. (2011). Cognitive Load Theory: How Many Types of Load Does It Really Need?. Educational Psychology Review, 23, 1-19. https://doi.org/10.1007/S10648-010-9150-7;
 
-* Kaur, S., & Niwas., D. (2016). EFFECTIVENESS OF DEDUCTIVE AND INDUCTIVE METHODS IN TEACHING ENGLISH GRAMMAR AT ELEMENTARY LEVEL.. International Journal of Approximate Reasoning, 4, 1241-1247. https://doi.org/10.21474/IJAR01/1027.
+* Kaur, S., & Niwas., D. (2016). EFFECTIVENESS OF DEDUCTIVE AND INDUCTIVE METHODS IN TEACHING ENGLISH GRAMMAR AT ELEMENTARY LEVEL.. International Journal of Approximate Reasoning, 4, 1241-1247. https://doi.org/10.21474/IJAR01/1027;
 
-* Khan, I., Iftikhar, M., Hussain, S., Rehman, A., Gul, N., Jadoon, W., & Nazir, B. (2020). Redesign and validation of a computer programming course using Inductive Teaching Method. PLoS ONE, 15. https://doi.org/10.1371/journal.pone.0233716.
+* Khan, I., Iftikhar, M., Hussain, S., Rehman, A., Gul, N., Jadoon, W., & Nazir, B. (2020). Redesign and validation of a computer programming course using Inductive Teaching Method. PLoS ONE, 15. https://doi.org/10.1371/journal.pone.0233716;
 
 * Kirschner, Paul (2002) Cognitive load theory: implications of cognitive load theory on the design of learning, Learning and Instruction, Volume 12, Issue 1, February 2002, Pages 1-10, https://doi.org/10.1016/S0959-4752(01)00014-7;
 
@@ -322,40 +324,40 @@ This text was originally written in English by the author, with revisions by Gem
 
 * Lim, J., Reiser, R.A. & Olina, Z. (2009); The effects of part-task and whole-task instructional approaches on acquisition and transfer of a complex cognitive skill. Education Tech Research Dev 57, 61–77; https://doi.org/10.1007/s11423-007-9085-y;
 
-* Melo, M. (2018). The 4C/ID-Model in Physics Education: Instructional Design of a Digital Learning Environment to Teach Electrical Circuits. International Journal of Instruction, 11(1), 103-122. https://doi.org/10.12973/iji.2018.1118a
+* Melo, M. (2018). The 4C/ID-Model in Physics Education: Instructional Design of a Digital Learning Environment to Teach Electrical Circuits. International Journal of Instruction, 11(1), 103-122. https://doi.org/10.12973/iji.2018.1118a;
 
-* Mason L, Otero M. (2021); Just How Effective is Direct Instruction? Perspect Behav Sci. 2021 Jun 2;44(2-3):225-244. doi: 10.1007/s40614-021-00295-x. PMID: 34632277; PMCID: PMC8476697.
+* Mason L, Otero M. (2021); Just How Effective is Direct Instruction? Perspect Behav Sci. 2021 Jun 2;44(2-3):225-244. doi: 10.1007/s40614-021-00295-x. PMID: 34632277; PMCID: PMC8476697;
 
 * Mayer, Richard (editor)(2005); The Cambridge Handbook of Multimedia Learning, Cambridge University Press; ISBN: 0-521-83873-8;
 
-* Merrill, M.D. (2002) First principles of instruction. ETR&D 50, 43–59. https://doi.org/10.1007/BF02505024
+* Merrill, M.D. (2002) First principles of instruction. ETR&D 50, 43–59. https://doi.org/10.1007/BF02505024;
 
-* Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493
+* Merrill, M. David (2007) A Task-Centered Instructional Strategy, Journal of Research on Technology in Education, 40:1, 5-22, DOI: 10.1080/15391523.2007.10782493;
 
 * Plass, Jan; Moreno, Roxana; Brünken, Roland (editors) (2010), Cognitive Load Theory, ISBN: 978-0-521-67758-5, Cambridge university Press;
 
-* Prince, M.; Felder, R. (2006). Inductive Teaching and Learning Methods: Definitions, Comparisons, and Research Bases. Journal of Engineering Education, 95. https://doi.org/10.1002/j.2168-9830.2006.tb00884.x.
+* Prince, M.; Felder, R. (2006). Inductive Teaching and Learning Methods: Definitions, Comparisons, and Research Bases. Journal of Engineering Education, 95. https://doi.org/10.1002/j.2168-9830.2006.tb00884.x;
  
 * Prince, M.; & Felder, R. (2007); The Many Faces of Inductive Teaching and Learning. The journal of college science teaching, https://www.pfw.edu/offices/celt/pdfs/Inductive(JCST).pdf;
 
 * Rice, William (2006); Moodle, E-Learning Course Development, Packt Publishing, ISBN: 1-904811-29-9;
 
-* Sarfo, F.K., Elen, J. (2007); Developing technical expertise in secondary technical schools: The effect of 4C/ID learning environments. Learning Environ Res 10, 207–221. https://doi.org/10.1007/s10984-007-9031-2
+* Sarfo, F.K., Elen, J. (2007); Developing technical expertise in secondary technical schools: The effect of 4C/ID learning environments. Learning Environ Res 10, 207–221. https://doi.org/10.1007/s10984-007-9031-2;
 
 * Silvester, Robert (1995) "A celebration of the neurons", ASCD, Alexandria, Virginia;
 
-* Stockard, Jean; W. Wood, Timothy; Coughlin, Cristy; Khoury, Rasplica (2018); The Effectiveness of Direct Instruction Curricula: A Meta-Analysis of a Half Century of Research, Review of Educational Research, Vol. 88, No. 4 (August 2018), pp. 479-507 (29 pages), Published By: American Educational Research Association, https://www.jstor.org/stable/45277261
+* Stockard, Jean; W. Wood, Timothy; Coughlin, Cristy; Khoury, Rasplica (2018); The Effectiveness of Direct Instruction Curricula: A Meta-Analysis of a Half Century of Research, Review of Educational Research, Vol. 88, No. 4 (August 2018), pp. 479-507 (29 pages), Published By: American Educational Research Association, https://www.jstor.org/stable/45277261;
 
-* Sweller, John; van Merrienboer, Jeroen; Paas, Fred (1998); F.G.W.C. Cognitive Architecture and Instructional Design. Educational Psychology Review 10, 251–296. https://doi.org/10.1023/A:1022193728205
+* Sweller, John; van Merrienboer, Jeroen; Paas, Fred (1998); F.G.W.C. Cognitive Architecture and Instructional Design. Educational Psychology Review 10, 251–296. https://doi.org/10.1023/A:1022193728205;
 
-* Sweller, J.; van Merriënboer, Jeroen; Paas, Fred (2019); Cognitive Architecture and Instructional Design: 20 Years Later. Educ Psychol Rev 31, 261–292. https://doi.org/10.1007/s10648-019-09465-5
+* Sweller, J.; van Merriënboer, Jeroen; Paas, Fred (2019); Cognitive Architecture and Instructional Design: 20 Years Later. Educ Psychol Rev 31, 261–292. https://doi.org/10.1007/s10648-019-09465-5;
 
-* Sweller, J. (2023); Education needs to embrace the science of learning, Knowledge Society, https://www.youtube.com/watch?v=575i45cJLvM
+* Sweller, J. (2023); Education needs to embrace the science of learning, Knowledge Society, https://www.youtube.com/watch?v=575i45cJLvM;
 
 * Van Merriënboer, Jeroen J. G.; Clark, Richard; Croock, Marcel (2002) Blueprints for complex learning: The 4C/ID-model. Educational Technology Research and Development. 50. 39-61. 10.1007/BF02504993; https://www.researchgate.net/publication/225798787_Blueprints_for_complex_learning_The_4CID-model;
 
 * Van Merriënboer, Jeroen J. G.; Kirschner, Paul A. (2007) Ten Steps to Complex Learning, Routledge; 1st edition, SBN-10:0805857931; ISBN-13:978-0805857931;
 
-*  van Merriënboer, J.J.G., Kirschner, P.A., & Frèrejean, J. (2024). Ten Steps to Complex Learning: A Systematic Approach to Four-Component Instructional Design (4th ed.). Routledge. https://doi.org/10.4324/9781003322481
+*  van Merriënboer, J.J.G., Kirschner, P.A., & Frèrejean, J. (2024). Ten Steps to Complex Learning: A Systematic Approach to Four-Component Instructional Design (4th ed.). Routledge. https://doi.org/10.4324/9781003322481;
 
 # NOTES
