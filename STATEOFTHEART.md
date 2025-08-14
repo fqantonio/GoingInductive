@@ -6,11 +6,7 @@ The 4C/ID model has been increasingly used in face-to-face and online learning e
 
 In this work, the blended learning (bLearning) environment is defined as using the LMS autonomously in class rather than at home. The available activities were all guided. Students could revisit them, and this simple opportunity for repetition was a success. They were pleased that they could learn through trial and error, and in that way, they felt they were truly learning. Most students didn't use the LMS at home for two reasons: (1) few students had internet access, with rates only increasing from 25% to 50% between 2013 and 2017 [^STATEOFTHEART-1], and (2) the activities were designed to be completed in the school facilities, so there was no need to do them at home.
 
-[^STATEOFTHEART-1]:https://www.observatorio-das-desigualdades.com/2017/04/05/utilizacao-de-internet-em-portugal-mais-de-metade-da-populacao-teve-acesso-a-internet-em-2016/
-
-
-Collopy, Rachel & Arnold, Jackie. (2009).  
-
+[^STATEOFTHEART-1]:https://www.observatorio-das-desigualdades.com/2017/04/05/utilizacao-de-internet-em-portugal-mais-de-metade-da-populacao-teve-acesso-a-internet-em-2016/ 
 
 From the teacher's perspective, the autonomous nature of the students' work provided an opportunity to closely follow and assist with individual needs. This allowed the teacher to offer support on specific aspects of the activity and to help clarify a student's understanding of its overall goal.
 
