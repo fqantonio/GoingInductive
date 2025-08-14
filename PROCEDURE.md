@@ -34,13 +34,15 @@ Here some examples of the cmaps implementation road map plans:
 
 | Lesson content | cmap  | Observations |
 |:----------------:|-----------------|-----|
-| Atom representation, LO_PTP_Atom_Representation_V4   | https://cmapscloud.ihmc.us:443/rid=2132H5GMP-16JV928-3KF4YS | english  |
+| Atom representation, multimedia flash interactive film | https://cmapscloud.ihmc.us:443/rid=2132H5GMP-16JV928-3KF4YS | english  |
+| Dye Solar Cells, european project Engineous | https://cmapscloud.ihmc.us:443/rid=213443GZW-1JM09JF-3KQ3WF | in english |
+| Learning Objects Course, teacher trianinf 4C/ID | https://cmapscloud.ihmc.us:443/rid=21343Y3VK-K33WZN-3KQ0WZ | i english |
 | Astronomy, Terra no Espaço 2011/2012, 7th grade | https://cmapscloud.ihmc.us:443/rid=2130YD7M5-1YSPYJ7-3JQBLP | One of the first cmaps made; in portuguese |
 | Sound, 8th grade, 2012/2013 | 
 https://cmapscloud.ihmc.us:443/rid=2132GGM1G-17LNY6S-3KCWY6 | in portuguese |
 | Eletricity, 2011/2012, 9th grade | https://cmapscloud.ihmc.us:443/rid=21342XZKD-FC6928-3KPL6K | in portuguese |
 | Structure of matter, 2013/2014, 9th grade | https://cmapscloud.ihmc.us:443/rid=2132H3M6W-VY6SXS-3KF4CX | in portuguese |
 | Universe, 10th grade | https://cmapscloud.ihmc.us:443/rid=2132GNZ9J-5BRLV7-3KCZCR | in portuguese |
-
+| Chemistry, 2012/2013, 10th grade | https://cmapscloud.ihmc.us:443/rid=2132GPMRX-1PM5426-3KDX6 | in portuguese | 
 
 
