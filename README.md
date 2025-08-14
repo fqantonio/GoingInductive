@@ -118,7 +118,7 @@ The data was gathered over 12 years, in the period 2003 to 2017, and includes st
 | LAB | scale: 0-100: laboratory practical skills assessed by teacher recording observational forms in the classroom|
 | BEHAV | scale: 0-100: social skills assessed by teacher recording observational forms in the classroom |
 | CLASS | scale: 0 to 100: Learning success, weight average formula [^average] |
-|RANK | categories: 1 to 3: School adaptation [^readme-3] |
+| RANK | categories: 1 to 3: School adaptation [^readme-3] |
 | GRADE | categories 0 to 6, representing, respectively, grades 7,8,9,10,11, 10p (technical) and 11p (Technical) school grades |
 | M4CID | category 0 and 1, respectively, without 4C/ID and with 4CID;
 
