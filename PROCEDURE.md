@@ -34,7 +34,6 @@ Here some examples of the cmaps implementation road map plans:
 
 | Lesson content | cmap  | Observations |
 |:----------------:|-----------------|-----|
-| Atom representation  | LO_PTP_Atom_Representation_V4
-https://cmapscloud.ihmc.us:443/rid=2132H5GMP-16JV928-3KF4YS | english  |
+| Atom representation, LO_PTP_Atom_Representation_V4   | https://cmapscloud.ihmc.us:443/rid=2132H5GMP-16JV928-3KF4YS | english  |
 
 
