@@ -14,6 +14,6 @@ The available activities in the LMS were all guided. Students could revisit them
 
 From the teacher's perspective, the autonomous nature of the students' work provided an opportunity to closely follow and assist with individual needs. This allowed the teacher to offer support on specific aspects of the activity and to help clarify a student's understanding of its overall goal.
 
-The implementation and development of the MOODLE LMS was cumbersome and time-consuming, particularly when it came to content production and assessment revision. This task requires a team, as it is too demanding for a single professional, often leading to significant after-hours work and sleepless nights. In some cases, students even performed revisions themselves while engaging with the LMS activities.
+The implementation and development of the MOODLE LMS was cumbersome and time-consuming, particularly when it came to content production and assessment revision. This task requires a team, as it is too demanding for a single professional, often leading to significant after-hours work and sleepless nights. This was also reported in other research authors (Collopy, Arnold, 2009). In some cases, students even performed revisions themselves while engaging with the LMS activities.
 
 On the positive side, the fact that students were working autonomously gave the teacher the opportunity to monitor and address the specific needs of each individual.
