@@ -11,7 +11,7 @@ This is a **`Going Inductive`** learning educational strategy changing paper DRA
 1. Conclude about the impact on students learning of a strategic learning methodological major change, from direct instruction to inductive;
 2. to share the work done about the impact of a educational strategic change: from Direct Instruction to Four Components Instructional Design (4C/ID).
 
-[^readme-1]: This work, as well as the data, is also presented at the blog "<https://4cidchange.edublogs.org/>" and in the github repository <https://github.com/fqantonio/GoingInductive>.
+[^readme-1]: This work, as well as the data, is also presented at the blog "<https://4cidchange.edublogs.org/>" and in the github repository <https://github.com/fqantonio/GoingInductive>. Currently, working at a non-profit association, Lab Aberto FAB LAB (https://lababerto.pt/), that promotes the implementation of FAB LAB in schools.
 
 This **knowledge base source** contains the results, conclusions, procedures, exploratory data analysis (EDA), data, statistical methods, educational methodologies, learning flow and bLearning practice. Hopefully, there will be, at least, one paper based on this.
 
