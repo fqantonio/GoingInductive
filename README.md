@@ -18,6 +18,7 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 # TO DO LIST
 
 - [x] EDIT EDIT EDIT: final reading: revisit goals , hyphotesis, research questions, discussion and conclusion;
+- [ ] Verify the conclusion text
 - [ ] This work is prepared to be edited in a specialized journal;
 
 # Going Inductive: what is the impact on students learning?
