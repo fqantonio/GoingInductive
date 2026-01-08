@@ -17,7 +17,8 @@ This **knowledge base source** contains the results, conclusions, procedures, ex
 
 # TO DO LIST
 
-- [ ] EDIT EDIT EDIT: final reading: revisit goals , hyphotesis, research questions, discussion and conclusion
+- [x] EDIT EDIT EDIT: final reading: revisit goals , hyphotesis, research questions, discussion and conclusion;
+- [ ] This work is prepared to be edited in a specialized journal;
 
 # Going Inductive: what is the impact on students learning?
 Author: António Carlos Gonçalves, Teacher at the Portuguese Education Ministery (during this research), https://www.linkedin.com/in/fqantonio/
